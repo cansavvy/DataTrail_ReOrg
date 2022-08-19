@@ -4,7 +4,7 @@
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Your First data science project
+# Your first data science project
 
 We are using this definition of data science.
 

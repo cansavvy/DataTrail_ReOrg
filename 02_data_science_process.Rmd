@@ -52,15 +52,15 @@ As explained in the blog post, Hilary was interested in calculating the relative
 
 ![Hilary's GitHub repo for this project](https://docs.google.com/presentation/d/1SNT3SYuWJhjRYx7VmyFKWkuxESEx5THt-mWJ7Mx5Cr8/export/png?id=1SNT3SYuWJhjRYx7VmyFKWkuxESEx5THt-mWJ7Mx5Cr8&pageid=g39818b4900_0_32)
 
-##### Clean the data
+#### Clean the data
 
 What you don't see in the blog post is all of the code Hilary wrote to get the data from the [Social Security website](https://www.ssa.gov/OACT/babynames/), to get it in the format she needed to do the analysis, and to generate the figures. As mentioned above, she made all this code [available on GitHub](https://github.com/hilaryparker/names) so that others could see what she did and repeat her steps if they wanted.
 
-##### Explore and plot the data
+#### Explore and plot the data
 
 In addition to this code, data science projects often involve writing a lot of code and generating a lot of figures that aren't included in your final results. This is part of the data science process too. Figuring out *how* to do what you want to do to answer your question of interest is part of the process, doesn't always show up in your final project, and can be very time-consuming.
 
-##### Get stats
+#### Get stats
 
 That said, given that Hilary now had the necessary values calculated, she began to further analyze the data. The first thing she did was look at the names with the biggest drop in percentage from one year to the next. By this preliminary analysis, Hilary was sixth on the list, meaning there were five other names that had had a single year drop in popularity larger than the one the name "Hilary" experienced from 1992 to 1993.
 
@@ -109,7 +109,6 @@ The following are smaller projects than the example above, but data science proj
 ### Conclusions
 
 In this lesson, we hope we've conveyed that sometimes data science projects are tackling difficult questions ('Can we predict the risk of opioid overdose?') while other times the goal of the project is to answer a question you're interested in personally ('Is Hilary the most rapidly poisoned baby name in recorded American History?'). In either case, the process is similar. You have to form your question, get data, explore and analyze your data, and communicate your results. With the tools you'll learn in this series of courses, you will be able to set out and carry out your own data science projects, like the examples included in this lesson!
-
 
 ### Slides and Video
 

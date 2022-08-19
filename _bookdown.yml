@@ -14,7 +14,19 @@ rmd_files: ["index.Rmd",
             "09_google_sheets.Rmd",
             "10_rstudio_cloud.Rmd",
             "11_google_docs.Rmd",
-            "12_googleslides.Rmd"]
+            "12_googleslides.Rmd",
+            "13_what_is_a_chromebook.Rmd",
+            "14_chromebrowser.Rmd",
+            "15_chrome_os.Rmd",
+            "16_android.Rmd",
+            "17_chromebook_shortcuts.Rmd",
+            "18_filestorage.Rmd",
+            "19_working_offline.Rmd",
+            "20_security.Rmd",
+            "21_printing.Rmd",
+            "22_projecting.Rmd",
+            "23_useful_apps.Rmd",
+            "24_updating.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true

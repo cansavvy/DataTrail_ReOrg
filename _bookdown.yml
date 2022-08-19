@@ -26,7 +26,19 @@ rmd_files: ["index.Rmd",
             "21_printing.Rmd",
             "22_projecting.Rmd",
             "23_useful_apps.Rmd",
-            "24_updating.Rmd"]
+            "24_updating.Rmd",
+            "25_what_is_R.Rmd",
+            "26_rstudio_cloud_tour.Rmd",
+            "27_intro_to_packages.Rmd",
+            "28_objects.Rmd",
+            "29_basic_commands.Rmd",
+            "30_logicals.Rmd",
+            "31_lists.Rmd",
+            "32_functions.Rmd",
+            "33_Rmd.Rmd",
+            "34_help_in_R.Rmd",
+            "35_R_to_GitHub.Rmd",
+            "36_website.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true

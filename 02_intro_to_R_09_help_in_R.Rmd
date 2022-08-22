@@ -23,85 +23,79 @@ For example, earlier in this course, you were introduced to the function `summar
 In this documentation we see:
 
 * A general description of what the summary() function can be used for
-* what package the function is from -- "base" means it's part of the base installation in R, rather than from a specific package
-* the syntax you should use to carry out this function
-* some sample code
-
+* What package the function is from -- "base" means it's part of the base installation in R, rather than from a specific package
+* The syntax you should use to carry out this function
+* Some sample code
 
 As you work in R, you'll find that some documentation is more helpful than others. Some packages and functions have incredibly helpful documentation pages. Others are less helpful. A thing to remember is that humans are responsible for writing this documentation. It's great when someone who's really great at documenting software or who has the time to do so write great documentation pages. However, for those times when the documentation proves less than helpful, there are other places you can look to for help.
 
-### Stack Overflow
+### Debugging code
 
-[Stack Overflow](stackoverflow.com) is an "online community for programmers." Stack Overflow is not just a place for R programmers, but rather, is a place to ask and answer questions about any programming language. That said, Stack Overflow has hundreds of thousands of questions and and answers from R users.
+It is likely that after looking at R documentation, you still will have questions, or might not know exactly how to fix your code.
 
-#### How Stack Overflow works
+For more tips on debugging your code, go paraphrase [this guide originally written by the Childhood Cancer Data Lab](https://hutchdatascience.org/code_review/lab_developers.html#Tips_on_debugging).
 
-On Stack Overflow, people (who have logins on the website) can ask questions. Then, others on the site can provide answers. The user who originally posed the question can mark one answer as the "accepted" answer. Any user, however, can up-vote an answer, helping it rise to the top of the answer section. This means that when someone else comes across this question, they come across the best answers first.
+> #### 1) Carefully read any and all error messages
+This may seem like a silly thing to include as a tip, but it’s very easy to gloss over an error message without actually reading it. Often, R may be telling you exactly what is wrong, but if you don’t take the time to understand what the error message means, you will have trouble fixing the error. Error messages often refer to R terms (e.g.. “argument”, “directory”) so if you need a refresher on what some terms mean, we recommend going through one of the intro to R tutorials we recommend.
 
-Additionally, questions can be tagged with their subject area. For example, a user looking for help coding in R would tag their question with the "r" tag to help direct this question to the right community for answering.
+> Secondly, realize that just because you don’t receive an error message, doesn’t mean that your code did what you intended it to. You also will need to carefully review your code (and your results) to try to find “silent” bugs (situations where R did exactly what you asked, but you didn’t get what you intended).
 
+> #### 2) Identify which line and phrase of code is the source of the error.
+If you ran many lines of code, you may not know which part of your code is the origin of the error message. Isolating the source of the error and trying to better understand your problem should be your first course of action. The best way to determine this, is by running each line, and each phrase by itself, one at a time.
 
-![Stack Overflow Homepage](https://docs.google.com/presentation/d/1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk/export/png?id=1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk&pageid=g37af3c0ac8_0_81)
+> Chunk-out your code and test the individual bits of code. Do you have a lot of lines of code, a lot of arguments, or multiple functions at once? Try each piece by itself to narrow down what piece appears to be the origin of the problem.
 
-#### Getting Answers
+> #### 3) Be sure that the code you think you have run has all successfully run and in order.
+It could be that the problem with your code isn’t that it doesn’t work as it is written, but that you didn’t run it or didn’t run it in the correct order. This should be one of the first things you check, while checking that the objects that you believe should be in your environment, are in your environment.
 
-Stack Overflow is a place for specific coding questions and answers. It is *not* a discussion board nor is it a place for polling. This design is intended to help you quickly get an answer. In that spirit, anyone can search questions and answers, regardless of whether they have an account on the site. All that said, before asking a question on Stack Overflow, it's best to check to see if someone else has already asked a similar question.
+> It’s also good practice to be periodically quitting your current R session and starting a new one, in addition to clearing your R notebook output. If you are encountering problems and haven’t refreshed your R session, you may want to do that before further troubleshooting.
 
-For example, if you were trying to learn more about how to work with objects in R, you would maybe type "objects in R" into the search bar. The results would look something like this:
+> In the course of troubleshooting, you will want to re-run all of your code, perhaps many many many times in order to get to the bottom of the problem.
 
+> #### 4) Google your error message
+The main advantage to Googling your errors is that you are likely not the first person to encounter the problem. Certain phrases and terms in the error message will yield more fruitful search results then others.
 
-![Stack Overflow Search Output](https://docs.google.com/presentation/d/1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk/export/png?id=1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk&pageid=g37af3c0ac8_0_85)
+> #### 5) Look at the documentation for a function to make sure you are using it correctly
+Once you’ve better determined the origin of the problem, you should use whatever documentation is available to you regarding the problematic code. When using a new function from a package you are unfamiliar with, it’s worthwhile to skim through the documentation so you know how to properly use the functions. For base R functions, Tidyverse functions, and some Bioconductor packages, the documentation will give you a lot of the information you need. However, you will also likely find that not all documentation is thorough or clear.
 
-For each search result, you will see:
-* the question posed
-* the tags accompanying that post
-* the number of responses for the question
-* when the question was posted and by whom.
+> As we discussed, objects have structures and types. Having input that doesn’t match the requirements that a function has can be a common source of errors. Pay special attention to what the documentation says about what kind of input and output the function is designed to use.
 
-Clicking on the link will provide you with the full question and the posted answers. You'll most often find that the question you have has already been answered on Stack Overflow, which is great. This way you get an answer immediately and don't have to wait!
+> ##### Use the RStudio help bar
+Here’s a screenshot from the help window in RStudio. Note that here we searched for the levels function. R documentation includes information about what the expected arguments are as well as examples of how to use a function. Note here that this documentation tells us that the input for x is probably a factor. search_bar
 
-If, after searching questions that already exist, you still cannot find an answer to your question, you can post a question on Stack Overflow. this will require you to Sign Up for an account.
+> For Bioconductor package functions, look at their page on bioconductor.org The documentation on Bioconductor pages have information that can be valuable for troubleshooting. Vignettes can have good example workflows to get started with (can use the browseVignettes function for RStudio to open them). In addition, every Bioconductor package has a PDF reference where all the functions and objects for that package are described. They can take some getting used to, but generally can have helpful information.
 
-Once you've created an account and logged in, you will see a blue "Ask Question" box in the top right-hand of your screen.
+> 6) Google it again
+Because it’s unlikely your first attempt at Googling will lead you straight to an answer; this is something you should continue to try with different wordings. Through trial and error, and also Google algorithms learning about what you look for, your search results can eventually lead you to helpful examples and forums.
 
-
-![Ask Question](https://docs.google.com/presentation/d/1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk/export/png?id=1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk&pageid=g37af3c0ac8_0_91)
-
-Clicking on "Ask Question" will bring you to an additional screen reminding you of how to proceed before posting a question (search for existing answers!) and how to post a question
-
-
-![Posting a Question Guidelines](https://docs.google.com/presentation/d/1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk/export/png?id=1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk&pageid=g37af3c0ac8_0_105)
-
-#### Reproducible Examples (reprex)
-
-When posting a question on Stack Overflow, or anywhere really, it's always best to post what is known as a reproducible example, or **reprex**.
-
-A reprex is the simplest bit of code possible needed to ask your question from start to finish. By including this code in your question on Stack Overflow, others can see what issue you have run into and hopefully help you find a solution!
-
-By simplest bit of code possible, this means that the code:
-1. Must be **reproducible** -- it must run start to finish, up until the part where you're running into trouble (This includes any packages you've loaded and all necessary objects)
-2. Should be **minimal** -- Remove any code that is in your script but that is not directly related to the problem at hand. Often this requires making a smaller dataset than the one you're working with.
-
-By generating a reprex, you'll often figure out the answer to your question in the process, which is great! The rest of the time, by creating the reprex and including it in your question, others are able to help you as quickly as possible, which is also great!
-
-#### Providing Help to Others
-
-Stack Overflow allows users with a login to ask **and answer** questions on Stack Overflow. While in the beginning you'll likely just be searching for (and getting) answers to questions, as you become more of an expert, answering others' questions is a great way to help the community!
-
-That said, it's probably no surprise that sometimes people can be mean to others on the Internet. The R community does its best to be a welcoming community. Hopefully, you will never run into people who are mean on Stack Overflow, and even more importantly, when you become an expert in R and answer others' questions online, it's important to remember that everyone starts as a beginner. If someone's question isn't perfectly asked or their reprex isn't perfect, let it pass. Be as helpful and kind as you can as you interact with others online.
-
-### RStudio Community
-
-In addition to Stack Overflow, [RStudio Community](https://community.rstudio.com/) is an online community for questions and answers that is specifically geared toward R users.
+7) Ask for help!
 
 
-![RStudio Community](https://docs.google.com/presentation/d/1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk/export/png?id=1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk&pageid=g37af3c0ac8_0_123)
+### Tips on asking questions!
 
-With this interface, in addition to the Topic, you can see the Category (similar to tags in Stack Overflow) and the number of Replies and Views for each topic. You can sort by any of these categories by clicking on the label at the top. Or, you can search specific questions or topics. Clicking on any topic will direct you to a new window where you can sort through the answers for each question.
+In the introduction to this course, we discussed that asking questions is central to data science and its also a crucial part of learning programming!
+
+When you are working on something, you should first ask these questions to yourself. But data science is best done as a community effort, so before you reach the point of being crazily frustrated, ask a peer or a more experienced coder for help!
+
+When you are troubleshooting code there are few things you should ask yourself (and tell others you are asking). Having this information together will help you reach a solution more efficiently!
+
+#### Things to include in your request for help:
+
+1. **What is the goal of this code?**
+What are you trying to do? Is this the best or only way to do that? Often times in R there are many ways to achieve the same outcome, so it may be worth considering if there's another solution that bypasses the problem you are having.
+
+2.  **What is the code that is producing this error?**
+What part of the code is sending the error you are seeing? Try Chunking your code -- trying each part piece by piece, to zero in on the problematic part.
+
+3. **Is the code formatted correctly?**
+It only takes a single comma, incorrectly capitalized letter, missing quote, or parenthesis to break a whole set of code!  
+
+4. **What is the error or problematic outcome?**
+What are you seeing that is making you think something is wrong? Is it an error message? if so copy and paste that error message verbatim. Is it data that's formatted not how it should be? Show what that looks like either with a screenshot or example.
 
 ### Summary
 
-In this lesson we discussed documentation and help pages available directly in R that can be accessed using a question mark followed by the function or package name in question. We discussed two incredibly helpful online forums: Stack Overflow and RStudio community. And, finally, we highlighted the importance of creating a reprex when asking a question on any of these forums. Knowing where to find help and how to best ask for it is an important skill as you're learning a new programming language!
+In this lesson we discussed documentation, how to debug code and how to ask for help. All of these items can be tools in your tool belt for when your R programming adventures are not going as you hope. Remember that learning to program can be frustrating but with time and asking for help, you will get there!
 
 ### Additional Community Resources
 

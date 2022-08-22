@@ -1,6 +1,5 @@
 ---
 output: html_document
-date: '2022-04-06'
 ---
 
 ```{r setup, include=FALSE}
@@ -13,10 +12,9 @@ We've spent a lot of time getting R and RStudio working, learning about projects
 
 ### What is R Markdown?
 
-R Markdown is a type of document that allows you to generate fully reproducible reports. In these documents, text , code, and the results of the code can be easily combined. In fact, these lessons are written using what you've already learned about Markdown and all the R code you've recently mastered!
+R Markdown is a type of document that allows you to generate fully reproducible reports. In these documents, text , code, and the results of the code are all combined in one place. In fact, these lessons are written using what you've already learned about Markdown and all the R code you've recently mastered!
 
 To refresh your memory, this is how we use plain text in Markdown formatting:
-
 
 ![Markdown review](https://docs.google.com/presentation/d/1COQq29mnEWgt1NO0qC8tmurswmaDRJpBzmKhKKmJgiw/export/png?id=1COQq29mnEWgt1NO0qC8tmurswmaDRJpBzmKhKKmJgiw&pageid=g3b6f614dcf_0_0)
 

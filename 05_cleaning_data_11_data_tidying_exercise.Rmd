@@ -66,15 +66,6 @@ Once the .Rmd document is in the correct folder, you'll want to change the autho
 
 **Note**: If you're stuck on this, these steps were covered in detail in an earlier course: [Organizing Data Science Projects](https://leanpub.com/universities/courses/jhu/cbds-organizing). Refer to the materials in this course if you're stuck on this part of the project.
 
-
-#### Pushing to GitHub
-
-You'll want to save changes to your project regularly by pushing them to GitHub. Now that you've got your file structure set up and have added an R Markdown document to your code/raw_code directory, it's a good time to stage, commit, and push these changes to GitHub. Do so now, and then take a long on GitHub to see the changes on their website!
-
-- After this initial push, how many of the directories you created are visible on GitHub?
-
-**Note**: If you're stuck on this, these steps were covered in detail in an earlier course: [Version Control](https://leanpub.com/universities/courses/jhu/cbds-version-control). Refer to the materials in this course if you're stuck on this part of the project.
-
 #### The Data
 
 To get you started, let's get you acquainted with the data. The data you'll be working with are hosted at [data.world](data.world) and contain information about Sales in the US. You'll be working with two datasets.
@@ -116,7 +107,6 @@ To get you acquainted with the dataset, we'll first have you answer a few questi
 - How many rows are there in `df2`
 - How many columns are there in `df2`
 - In 2014, what were the sales for used car dealers?
-
 
 Now, the goal of wrangling these data will be to take this data frame, which is currently in the **wide** data format and wrangle it into a **long** data format.  The resulting data frame from your wrangling will have three columns: `business`, `year`, and `n`. In the `data_tidying_project.Rmd` document, you'll see the code required to accomplish this in the `wrangle-df2` code chunk.
 
@@ -212,10 +202,6 @@ Before finalizing your project you'll want to add some text outside of your code
 Last but not least, you'll want to Knit your .Rmd document into an HTML document. If you get an error, take a look at what the error says and edit your .Rmd document. Then, try to Knit again! Troubleshooting these error messages will teach you a lot about coding in R.
 
 
-#### Final `push` to GitHub
+#### Upload your Document to GoogleDrive
 
-Now that you've finalized your project, you'll do one final push to GitHub. add, commit, and push your work to GitHub. Navigate to your GitHub repository, and answer the final question below!
-
-**Note**: If you're stuck on this, these steps were covered in detail in an earlier course: [Version Control](https://leanpub.com/universities/courses/jhu/cbds-version-control). Refer to the materials in this course if you're stuck on this part of the project.
-
-**Congrats on finishing your first Data Science Project**
+In an upcoming chapter, we will show you how to more properly share your code using version control and a thing called GitHub, but for the time being, we will have you make this code more shareable by 

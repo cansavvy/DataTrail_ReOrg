@@ -6,8 +6,8 @@ In each project, we'll aim to get you started and to ask questions that will hel
 
 This first project will require you to:
 
-* use version control
-* demonstrate the skills you've learned programming in R
-* wrangle data
+* Read in data into R
+* Wrangle and clean data
+* Write data into a file
 
 You can access the first project by going to the exercise accompanying this lesson.

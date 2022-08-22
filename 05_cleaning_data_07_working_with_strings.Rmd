@@ -42,10 +42,10 @@ As we'll only cover a few of the functions within stringr in this lesson, it's i
 ### String basics
 
 When working with strings, some of the most frequent tasks you'll need to complete are to:
-* determine the length of a string
-* combine strings together
-* subset strings
 
+* Determine the length of a string
+* Combine strings together
+* Subset strings
 
 #### String length
 

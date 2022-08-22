@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 41 Ethical Data Science | Introduction to DataTrail</title>
+  <meta name="description" content="Chapter 41 Ethical Data Science | Introduction to DataTrail" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 41 Ethical Data Science | Introduction to DataTrail" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 41 Ethical Data Science | Introduction to DataTrail" />
+  
+  
+  
+
+
+
+<meta name="date" content="2022-04-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="data-privacy.html"/>
+
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/style_DataTrail.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style="padding-left: 0px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html"><i class="fa fa-check"></i><b>1</b> Welcome to DataTrail</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#course-details"><i class="fa fa-check"></i><b>1.0.1</b> Course Details</a></li>
+<li class="chapter" data-level="1.0.2" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#what-is-data-science"><i class="fa fa-check"></i><b>1.0.2</b> What is data science?</a></li>
+<li class="chapter" data-level="1.0.3" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#what-is-datatrail"><i class="fa fa-check"></i><b>1.0.3</b> What is DataTrail?</a></li>
+<li class="chapter" data-level="1.0.4" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#who-is-this-program-for"><i class="fa fa-check"></i><b>1.0.4</b> Who is this program for?</a></li>
+<li class="chapter" data-level="1.0.5" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#how-the-program-is-organized"><i class="fa fa-check"></i><b>1.0.5</b> How the program is organized</a></li>
+<li class="chapter" data-level="1.0.6" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#how-this-course-is-graded"><i class="fa fa-check"></i><b>1.0.6</b> How this course is graded</a></li>
+<li class="chapter" data-level="1.0.7" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#slides-and-video"><i class="fa fa-check"></i><b>1.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="program-philosophy.html"><a href="program-philosophy.html"><i class="fa fa-check"></i><b>2</b> Program Philosophy</a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="program-philosophy.html"><a href="program-philosophy.html#slides-and-video-1"><i class="fa fa-check"></i><b>2.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-data-science-process.html"><a href="the-data-science-process.html"><i class="fa fa-check"></i><b>3</b> The Data Science Process</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="the-data-science-process.html"><a href="the-data-science-process.html#the-parts-of-a-data-science-project"><i class="fa fa-check"></i><b>3.0.1</b> The Parts of a Data Science Project</a></li>
+<li class="chapter" data-level="3.0.2" data-path="the-data-science-process.html"><a href="the-data-science-process.html#a-data-science-project-example"><i class="fa fa-check"></i><b>3.0.2</b> A Data Science Project Example</a></li>
+<li class="chapter" data-level="3.0.3" data-path="the-data-science-process.html"><a href="the-data-science-process.html#what-you-can-build-using-r"><i class="fa fa-check"></i><b>3.0.3</b> What you can build using R</a></li>
+<li class="chapter" data-level="3.0.4" data-path="the-data-science-process.html"><a href="the-data-science-process.html#other-cool-data-science-projects"><i class="fa fa-check"></i><b>3.0.4</b> Other Cool Data Science Projects</a></li>
+<li class="chapter" data-level="3.0.5" data-path="the-data-science-process.html"><a href="the-data-science-process.html#conclusions"><i class="fa fa-check"></i><b>3.0.5</b> Conclusions</a></li>
+<li class="chapter" data-level="3.0.6" data-path="the-data-science-process.html"><a href="the-data-science-process.html#slides-and-video-2"><i class="fa fa-check"></i><b>3.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="how-to-learn.html"><a href="how-to-learn.html"><i class="fa fa-check"></i><b>4</b> How To Learn</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="how-to-learn.html"><a href="how-to-learn.html#learning-how-to-learn"><i class="fa fa-check"></i><b>4.0.1</b> Learning How To Learn</a></li>
+<li class="chapter" data-level="4.0.2" data-path="how-to-learn.html"><a href="how-to-learn.html#summary"><i class="fa fa-check"></i><b>4.0.2</b> Summary</a></li>
+<li class="chapter" data-level="4.0.3" data-path="how-to-learn.html"><a href="how-to-learn.html#slides-and-video-3"><i class="fa fa-check"></i><b>4.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="finding-help.html"><a href="finding-help.html"><i class="fa fa-check"></i><b>5</b> Finding Help</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="finding-help.html"><a href="finding-help.html#searching-the-internet"><i class="fa fa-check"></i><b>5.0.1</b> Searching the Internet</a></li>
+<li class="chapter" data-level="5.0.2" data-path="finding-help.html"><a href="finding-help.html#search-guidelines"><i class="fa fa-check"></i><b>5.0.2</b> Search Guidelines</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="account-setup.html"><a href="account-setup.html"><i class="fa fa-check"></i><b>6</b> Account Setup</a>
+<ul>
+<li class="chapter" data-level="6.0.1" data-path="account-setup.html"><a href="account-setup.html#choosing-a-username"><i class="fa fa-check"></i><b>6.0.1</b> Choosing a Username</a></li>
+<li class="chapter" data-level="6.0.2" data-path="account-setup.html"><a href="account-setup.html#using-a-consistent-username"><i class="fa fa-check"></i><b>6.0.2</b> Using a Consistent Username</a></li>
+<li class="chapter" data-level="6.0.3" data-path="account-setup.html"><a href="account-setup.html#accounts"><i class="fa fa-check"></i><b>6.0.3</b> Accounts</a></li>
+<li class="chapter" data-level="6.0.4" data-path="account-setup.html"><a href="account-setup.html#slides-and-video-4"><i class="fa fa-check"></i><b>6.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="google-account-setup.html"><a href="google-account-setup.html"><i class="fa fa-check"></i><b>7</b> Google Account Setup</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="google-account-setup.html"><a href="google-account-setup.html#getting-a-google-login"><i class="fa fa-check"></i><b>7.0.1</b> Getting a Google Login</a></li>
+<li class="chapter" data-level="7.0.2" data-path="google-account-setup.html"><a href="google-account-setup.html#log-off-guest-chromebook"><i class="fa fa-check"></i><b>7.0.2</b> Log Off Guest Chromebook</a></li>
+<li class="chapter" data-level="7.0.3" data-path="google-account-setup.html"><a href="google-account-setup.html#re-login-using-google-account"><i class="fa fa-check"></i><b>7.0.3</b> Re-Login using Google Account</a></li>
+<li class="chapter" data-level="7.0.4" data-path="google-account-setup.html"><a href="google-account-setup.html#slides-and-video-5"><i class="fa fa-check"></i><b>7.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html"><i class="fa fa-check"></i><b>8</b> Other Accounts Setup</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#linkedin-account"><i class="fa fa-check"></i><b>8.0.1</b> LinkedIn Account</a></li>
+<li class="chapter" data-level="8.0.2" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#twitter-account"><i class="fa fa-check"></i><b>8.0.2</b> Twitter Account</a></li>
+<li class="chapter" data-level="8.0.3" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#basecamp-account"><i class="fa fa-check"></i><b>8.0.3</b> Basecamp Account</a></li>
+<li class="chapter" data-level="8.0.4" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#rstudio-cloud-account"><i class="fa fa-check"></i><b>8.0.4</b> RStudio Cloud Account</a></li>
+<li class="chapter" data-level="8.0.5" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#github-account"><i class="fa fa-check"></i><b>8.0.5</b> GitHub Account</a></li>
+<li class="chapter" data-level="8.0.6" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#slides-and-video-6"><i class="fa fa-check"></i><b>8.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="your-first-data-science-project.html"><a href="your-first-data-science-project.html"><i class="fa fa-check"></i><b>9</b> Your first data science project</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="your-first-data-science-project.html"><a href="your-first-data-science-project.html#slides-and-video-7"><i class="fa fa-check"></i><b>9.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="google-sheets.html"><a href="google-sheets.html"><i class="fa fa-check"></i><b>10</b> Google Sheets</a>
+<ul>
+<li class="chapter" data-level="10.0.1" data-path="google-sheets.html"><a href="google-sheets.html#what-is-a-spreadsheet"><i class="fa fa-check"></i><b>10.0.1</b> What is a spreadsheet?</a></li>
+<li class="chapter" data-level="10.0.2" data-path="google-sheets.html"><a href="google-sheets.html#setting-up-your-spreadsheet"><i class="fa fa-check"></i><b>10.0.2</b> Setting up your spreadsheet</a></li>
+<li class="chapter" data-level="10.0.3" data-path="google-sheets.html"><a href="google-sheets.html#collecting-data"><i class="fa fa-check"></i><b>10.0.3</b> Collecting data</a></li>
+<li class="chapter" data-level="10.0.4" data-path="google-sheets.html"><a href="google-sheets.html#checking-your-data"><i class="fa fa-check"></i><b>10.0.4</b> Checking your data</a></li>
+<li class="chapter" data-level="10.0.5" data-path="google-sheets.html"><a href="google-sheets.html#publishing-to-the-web"><i class="fa fa-check"></i><b>10.0.5</b> Publishing to the web</a></li>
+<li class="chapter" data-level="10.0.6" data-path="google-sheets.html"><a href="google-sheets.html#making-the-sheet-public"><i class="fa fa-check"></i><b>10.0.6</b> Making the sheet public</a></li>
+<li class="chapter" data-level="10.0.7" data-path="google-sheets.html"><a href="google-sheets.html#slides-and-video-8"><i class="fa fa-check"></i><b>10.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html"><i class="fa fa-check"></i><b>11</b> RStudio Cloud</a>
+<ul>
+<li class="chapter" data-level="11.0.1" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html#rstudio-cloud-basics"><i class="fa fa-check"></i><b>11.0.1</b> RStudio Cloud Basics</a></li>
+<li class="chapter" data-level="11.0.2" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html#data-science-project-in-rstudio-cloud"><i class="fa fa-check"></i><b>11.0.2</b> Data Science Project in RStudio Cloud</a></li>
+<li class="chapter" data-level="11.0.3" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html#slides-and-video-9"><i class="fa fa-check"></i><b>11.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="getting-help-with-a-chromebook.html"><a href="getting-help-with-a-chromebook.html"><i class="fa fa-check"></i><b>12</b> Getting Help with a Chromebook</a>
+<ul>
+<li class="chapter" data-level="12.0.1" data-path="getting-help-with-a-chromebook.html"><a href="getting-help-with-a-chromebook.html#common-issues"><i class="fa fa-check"></i><b>12.0.1</b> Common Issues</a></li>
+<li class="chapter" data-level="12.0.2" data-path="getting-help-with-a-chromebook.html"><a href="getting-help-with-a-chromebook.html#chromebook-support"><i class="fa fa-check"></i><b>12.0.2</b> Chromebook Support</a></li>
+<li class="chapter" data-level="12.0.3" data-path="getting-help-with-a-chromebook.html"><a href="getting-help-with-a-chromebook.html#slides-and-video-10"><i class="fa fa-check"></i><b>12.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="google-docs.html"><a href="google-docs.html"><i class="fa fa-check"></i><b>13</b> Google Docs</a>
+<ul>
+<li class="chapter" data-level="13.0.1" data-path="google-docs.html"><a href="google-docs.html#getting-started-in-google-docs"><i class="fa fa-check"></i><b>13.0.1</b> Getting started in Google Docs</a></li>
+<li class="chapter" data-level="13.0.2" data-path="google-docs.html"><a href="google-docs.html#using-google-docs"><i class="fa fa-check"></i><b>13.0.2</b> Using Google Docs</a></li>
+<li class="chapter" data-level="13.0.3" data-path="google-docs.html"><a href="google-docs.html#sharing-your-google-doc"><i class="fa fa-check"></i><b>13.0.3</b> Sharing Your Google Doc</a></li>
+<li class="chapter" data-level="13.0.4" data-path="google-docs.html"><a href="google-docs.html#slides-and-video-11"><i class="fa fa-check"></i><b>13.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="google-slides.html"><a href="google-slides.html"><i class="fa fa-check"></i><b>14</b> Google Slides</a>
+<ul>
+<li class="chapter" data-level="14.0.1" data-path="google-slides.html"><a href="google-slides.html#what-is-a-slide-presentation"><i class="fa fa-check"></i><b>14.0.1</b> What is a slide presentation?</a></li>
+<li class="chapter" data-level="14.0.2" data-path="google-slides.html"><a href="google-slides.html#presentation-guidelines"><i class="fa fa-check"></i><b>14.0.2</b> Presentation Guidelines</a></li>
+<li class="chapter" data-level="14.0.3" data-path="google-slides.html"><a href="google-slides.html#getting-started-in-google-slides"><i class="fa fa-check"></i><b>14.0.3</b> Getting started in Google Slides</a></li>
+<li class="chapter" data-level="14.0.4" data-path="google-slides.html"><a href="google-slides.html#making-a-simple-presentation"><i class="fa fa-check"></i><b>14.0.4</b> Making a simple presentation</a></li>
+<li class="chapter" data-level="14.0.5" data-path="google-slides.html"><a href="google-slides.html#sharing-your-google-slides-presentation"><i class="fa fa-check"></i><b>14.0.5</b> Sharing your Google Slides Presentation</a></li>
+<li class="chapter" data-level="14.0.6" data-path="google-slides.html"><a href="google-slides.html#slides-and-video-12"><i class="fa fa-check"></i><b>14.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html"><i class="fa fa-check"></i><b>15</b> What is a Chromebook</a>
+<ul>
+<li class="chapter" data-level="15.0.1" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#slides-and-video-13"><i class="fa fa-check"></i><b>15.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="chrome-browser.html"><a href="chrome-browser.html"><i class="fa fa-check"></i><b>16</b> Chrome Browser</a>
+<ul>
+<li class="chapter" data-level="16.0.1" data-path="chrome-browser.html"><a href="chrome-browser.html#slides-and-video-14"><i class="fa fa-check"></i><b>16.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="chrome-os.html"><a href="chrome-os.html"><i class="fa fa-check"></i><b>17</b> Chrome OS</a>
+<ul>
+<li class="chapter" data-level="17.0.1" data-path="chrome-os.html"><a href="chrome-os.html#chrome-apps"><i class="fa fa-check"></i><b>17.0.1</b> Chrome “Apps”</a></li>
+<li class="chapter" data-level="17.0.2" data-path="chrome-os.html"><a href="chrome-os.html#where-do-chromebook-apps-live"><i class="fa fa-check"></i><b>17.0.2</b> Where do Chromebook Apps live?</a></li>
+<li class="chapter" data-level="17.0.3" data-path="chrome-os.html"><a href="chrome-os.html#the-shelf"><i class="fa fa-check"></i><b>17.0.3</b> The Shelf</a></li>
+<li class="chapter" data-level="17.0.4" data-path="chrome-os.html"><a href="chrome-os.html#websites-as-chrome-apps"><i class="fa fa-check"></i><b>17.0.4</b> Websites as Chrome Apps</a></li>
+<li class="chapter" data-level="17.0.5" data-path="chrome-os.html"><a href="chrome-os.html#the-chrome-web-store-and-chrome-apps"><i class="fa fa-check"></i><b>17.0.5</b> The Chrome Web Store and Chrome Apps</a></li>
+<li class="chapter" data-level="17.0.6" data-path="chrome-os.html"><a href="chrome-os.html#chrome-extensions"><i class="fa fa-check"></i><b>17.0.6</b> Chrome Extensions</a></li>
+<li class="chapter" data-level="17.0.7" data-path="chrome-os.html"><a href="chrome-os.html#slides-and-video-15"><i class="fa fa-check"></i><b>17.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="android-apps.html"><a href="android-apps.html"><i class="fa fa-check"></i><b>18</b> Android Apps</a>
+<ul>
+<li class="chapter" data-level="18.0.1" data-path="android-apps.html"><a href="android-apps.html#slides-and-video-16"><i class="fa fa-check"></i><b>18.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html"><i class="fa fa-check"></i><b>19</b> Chromebook Shortcuts</a>
+<ul>
+<li class="chapter" data-level="19.0.1" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html#taking-screenshots-on-a-chromebook"><i class="fa fa-check"></i><b>19.0.1</b> Taking Screenshots on a Chromebook</a></li>
+<li class="chapter" data-level="19.0.2" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html#zooming-in-and-out"><i class="fa fa-check"></i><b>19.0.2</b> Zooming in and out</a></li>
+<li class="chapter" data-level="19.0.3" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html#finding-a-word-on-a-page"><i class="fa fa-check"></i><b>19.0.3</b> Finding a word on a page</a></li>
+<li class="chapter" data-level="19.0.4" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html#text-formatting-shortcuts"><i class="fa fa-check"></i><b>19.0.4</b> Text formatting shortcuts</a></li>
+<li class="chapter" data-level="19.0.5" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html#slides-and-video-17"><i class="fa fa-check"></i><b>19.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="where-are-files-stored.html"><a href="where-are-files-stored.html"><i class="fa fa-check"></i><b>20</b> Where Are Files Stored?</a>
+<ul>
+<li class="chapter" data-level="20.0.1" data-path="where-are-files-stored.html"><a href="where-are-files-stored.html#where-is-the-local-storage"><i class="fa fa-check"></i><b>20.0.1</b> Where is the local storage?</a></li>
+<li class="chapter" data-level="20.0.2" data-path="where-are-files-stored.html"><a href="where-are-files-stored.html#slides-and-video-18"><i class="fa fa-check"></i><b>20.0.2</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="working-offline.html"><a href="working-offline.html"><i class="fa fa-check"></i><b>21</b> Working Offline</a>
+<ul>
+<li class="chapter" data-level="21.0.1" data-path="working-offline.html"><a href="working-offline.html#google-drive"><i class="fa fa-check"></i><b>21.0.1</b> Google Drive</a></li>
+<li class="chapter" data-level="21.0.2" data-path="working-offline.html"><a href="working-offline.html#example-editing-a-text-file-offline"><i class="fa fa-check"></i><b>21.0.2</b> Example: editing a text file offline</a></li>
+<li class="chapter" data-level="21.0.3" data-path="working-offline.html"><a href="working-offline.html#offline-apps"><i class="fa fa-check"></i><b>21.0.3</b> Offline Apps</a></li>
+<li class="chapter" data-level="21.0.4" data-path="working-offline.html"><a href="working-offline.html#slides-and-video-19"><i class="fa fa-check"></i><b>21.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="chromebook-security.html"><a href="chromebook-security.html"><i class="fa fa-check"></i><b>22</b> Chromebook Security</a>
+<ul>
+<li class="chapter" data-level="22.0.1" data-path="chromebook-security.html"><a href="chromebook-security.html#setting-your-chromebook-password"><i class="fa fa-check"></i><b>22.0.1</b> Setting your Chromebook password</a></li>
+<li class="chapter" data-level="22.0.2" data-path="chromebook-security.html"><a href="chromebook-security.html#requiring-password-to-wake-from-sleep"><i class="fa fa-check"></i><b>22.0.2</b> Requiring password to wake from sleep</a></li>
+<li class="chapter" data-level="22.0.3" data-path="chromebook-security.html"><a href="chromebook-security.html#managing-other-people"><i class="fa fa-check"></i><b>22.0.3</b> Managing other people</a></li>
+<li class="chapter" data-level="22.0.4" data-path="chromebook-security.html"><a href="chromebook-security.html#two-step-verification"><i class="fa fa-check"></i><b>22.0.4</b> Two step verification</a></li>
+<li class="chapter" data-level="22.0.5" data-path="chromebook-security.html"><a href="chromebook-security.html#managing-apps-and-devices"><i class="fa fa-check"></i><b>22.0.5</b> Managing apps and devices</a></li>
+<li class="chapter" data-level="22.0.6" data-path="chromebook-security.html"><a href="chromebook-security.html#slides-and-video-20"><i class="fa fa-check"></i><b>22.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="printing-with-a-chromebook.html"><a href="printing-with-a-chromebook.html"><i class="fa fa-check"></i><b>23</b> Printing with a Chromebook</a>
+<ul>
+<li class="chapter" data-level="23.0.1" data-path="printing-with-a-chromebook.html"><a href="printing-with-a-chromebook.html#slides-and-video-21"><i class="fa fa-check"></i><b>23.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html"><i class="fa fa-check"></i><b>24</b> Projecting from a Chromebook</a>
+<ul>
+<li class="chapter" data-level="24.0.1" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#finding-the-right-dongle"><i class="fa fa-check"></i><b>24.0.1</b> Finding the right dongle</a></li>
+<li class="chapter" data-level="24.0.2" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#projecting-from-your-chromebook"><i class="fa fa-check"></i><b>24.0.2</b> Projecting from your Chromebook</a></li>
+<li class="chapter" data-level="24.0.3" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#slides-and-video-22"><i class="fa fa-check"></i><b>24.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="useful-applications.html"><a href="useful-applications.html"><i class="fa fa-check"></i><b>25</b> Useful Applications</a>
+<ul>
+<li class="chapter" data-level="25.0.1" data-path="useful-applications.html"><a href="useful-applications.html#basecamp"><i class="fa fa-check"></i><b>25.0.1</b> Basecamp</a></li>
+<li class="chapter" data-level="25.0.2" data-path="useful-applications.html"><a href="useful-applications.html#google-calendar"><i class="fa fa-check"></i><b>25.0.2</b> Google Calendar</a></li>
+<li class="chapter" data-level="25.0.3" data-path="useful-applications.html"><a href="useful-applications.html#wunderlist"><i class="fa fa-check"></i><b>25.0.3</b> Wunderlist</a></li>
+<li class="chapter" data-level="25.0.4" data-path="useful-applications.html"><a href="useful-applications.html#tweetdeck"><i class="fa fa-check"></i><b>25.0.4</b> Tweetdeck</a></li>
+<li class="chapter" data-level="25.0.5" data-path="useful-applications.html"><a href="useful-applications.html#evernote"><i class="fa fa-check"></i><b>25.0.5</b> Evernote</a></li>
+<li class="chapter" data-level="25.0.6" data-path="useful-applications.html"><a href="useful-applications.html#swirl"><i class="fa fa-check"></i><b>25.0.6</b> Swirl</a></li>
+<li class="chapter" data-level="25.0.7" data-path="useful-applications.html"><a href="useful-applications.html#dochub"><i class="fa fa-check"></i><b>25.0.7</b> DocHub</a></li>
+<li class="chapter" data-level="25.0.8" data-path="useful-applications.html"><a href="useful-applications.html#slides-and-video-23"><i class="fa fa-check"></i><b>25.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="26" data-path="updating-your-chromebook.html"><a href="updating-your-chromebook.html"><i class="fa fa-check"></i><b>26</b> Updating your Chromebook</a>
+<ul>
+<li class="chapter" data-level="26.0.1" data-path="updating-your-chromebook.html"><a href="updating-your-chromebook.html#steps-to-update"><i class="fa fa-check"></i><b>26.0.1</b> Steps to Update</a></li>
+<li class="chapter" data-level="26.0.2" data-path="updating-your-chromebook.html"><a href="updating-your-chromebook.html#slides-and-video-24"><i class="fa fa-check"></i><b>26.0.2</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="27" data-path="what-is-r.html"><a href="what-is-r.html"><i class="fa fa-check"></i><b>27</b> What is R?</a>
+<ul>
+<li class="chapter" data-level="27.0.1" data-path="what-is-r.html"><a href="what-is-r.html#introduction-to-r"><i class="fa fa-check"></i><b>27.0.1</b> Introduction to R</a></li>
+<li class="chapter" data-level="27.0.2" data-path="what-is-r.html"><a href="what-is-r.html#rstudio"><i class="fa fa-check"></i><b>27.0.2</b> RStudio</a></li>
+<li class="chapter" data-level="27.0.3" data-path="what-is-r.html"><a href="what-is-r.html#rstudio-cloud-1"><i class="fa fa-check"></i><b>27.0.3</b> RStudio Cloud</a></li>
+<li class="chapter" data-level="27.0.4" data-path="what-is-r.html"><a href="what-is-r.html#basic-history"><i class="fa fa-check"></i><b>27.0.4</b> Basic History</a></li>
+<li class="chapter" data-level="27.0.5" data-path="what-is-r.html"><a href="what-is-r.html#learning-r"><i class="fa fa-check"></i><b>27.0.5</b> Learning R</a></li>
+<li class="chapter" data-level="27.0.6" data-path="what-is-r.html"><a href="what-is-r.html#slides-and-video-25"><i class="fa fa-check"></i><b>27.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="28" data-path="rstudio-cloud-tour.html"><a href="rstudio-cloud-tour.html"><i class="fa fa-check"></i><b>28</b> RStudio Cloud Tour</a>
+<ul>
+<li class="chapter" data-level="28.0.1" data-path="rstudio-cloud-tour.html"><a href="rstudio-cloud-tour.html#getting-started-in-rstudio-cloud"><i class="fa fa-check"></i><b>28.0.1</b> Getting Started in RStudio Cloud</a></li>
+<li class="chapter" data-level="28.0.2" data-path="rstudio-cloud-tour.html"><a href="rstudio-cloud-tour.html#the-tour"><i class="fa fa-check"></i><b>28.0.2</b> The Tour</a></li>
+<li class="chapter" data-level="28.0.3" data-path="rstudio-cloud-tour.html"><a href="rstudio-cloud-tour.html#source-script-editor-panel"><i class="fa fa-check"></i><b>28.0.3</b> Source: script editor panel</a></li>
+<li class="chapter" data-level="28.0.4" data-path="rstudio-cloud-tour.html"><a href="rstudio-cloud-tour.html#fileshelpplotspackagesviewer"><i class="fa fa-check"></i><b>28.0.4</b> Files/Help/Plots/Packages/Viewer</a></li>
+<li class="chapter" data-level="28.0.5" data-path="rstudio-cloud-tour.html"><a href="rstudio-cloud-tour.html#swirl-1"><i class="fa fa-check"></i><b>28.0.5</b> Swirl</a></li>
+<li class="chapter" data-level="28.0.6" data-path="rstudio-cloud-tour.html"><a href="rstudio-cloud-tour.html#summary-1"><i class="fa fa-check"></i><b>28.0.6</b> Summary</a></li>
+<li class="chapter" data-level="28.0.7" data-path="rstudio-cloud-tour.html"><a href="rstudio-cloud-tour.html#slides-and-video-26"><i class="fa fa-check"></i><b>28.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="29" data-path="r-packages.html"><a href="r-packages.html"><i class="fa fa-check"></i><b>29</b> R Packages</a>
+<ul>
+<li class="chapter" data-level="29.0.1" data-path="r-packages.html"><a href="r-packages.html#what-is-an-r-package"><i class="fa fa-check"></i><b>29.0.1</b> What is an R package?</a></li>
+<li class="chapter" data-level="29.0.2" data-path="r-packages.html"><a href="r-packages.html#what-are-repositories"><i class="fa fa-check"></i><b>29.0.2</b> What are repositories?</a></li>
+<li class="chapter" data-level="29.0.3" data-path="r-packages.html"><a href="r-packages.html#how-do-you-know-what-package-is-right-for-you"><i class="fa fa-check"></i><b>29.0.3</b> How do you know what package is right for you?</a></li>
+<li class="chapter" data-level="29.0.4" data-path="r-packages.html"><a href="r-packages.html#how-do-you-install-packages"><i class="fa fa-check"></i><b>29.0.4</b> How do you install packages?</a></li>
+<li class="chapter" data-level="29.0.5" data-path="r-packages.html"><a href="r-packages.html#loading-packages"><i class="fa fa-check"></i><b>29.0.5</b> Loading packages</a></li>
+<li class="chapter" data-level="29.0.6" data-path="r-packages.html"><a href="r-packages.html#updating-removing-unloading-packages"><i class="fa fa-check"></i><b>29.0.6</b> Updating, removing, unloading packages</a></li>
+<li class="chapter" data-level="29.0.7" data-path="r-packages.html"><a href="r-packages.html#using-the-commands-in-a-function"><i class="fa fa-check"></i><b>29.0.7</b> Using the commands in a function</a></li>
+<li class="chapter" data-level="29.0.8" data-path="r-packages.html"><a href="r-packages.html#summary-2"><i class="fa fa-check"></i><b>29.0.8</b> Summary</a></li>
+<li class="chapter" data-level="29.0.9" data-path="r-packages.html"><a href="r-packages.html#additional-resources"><i class="fa fa-check"></i><b>29.0.9</b> Additional Resources</a></li>
+<li class="chapter" data-level="29.0.10" data-path="r-packages.html"><a href="r-packages.html#slides-and-video-27"><i class="fa fa-check"></i><b>29.0.10</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="30" data-path="objects-in-r.html"><a href="objects-in-r.html"><i class="fa fa-check"></i><b>30</b> Objects in R</a>
+<ul>
+<li class="chapter" data-level="30.0.1" data-path="objects-in-r.html"><a href="objects-in-r.html#what-is-an-object"><i class="fa fa-check"></i><b>30.0.1</b> What is an object?</a></li>
+<li class="chapter" data-level="30.0.2" data-path="objects-in-r.html"><a href="objects-in-r.html#storing-objects"><i class="fa fa-check"></i><b>30.0.2</b> Storing objects</a></li>
+<li class="chapter" data-level="30.0.3" data-path="objects-in-r.html"><a href="objects-in-r.html#printing-objects"><i class="fa fa-check"></i><b>30.0.3</b> Printing objects</a></li>
+<li class="chapter" data-level="30.0.4" data-path="objects-in-r.html"><a href="objects-in-r.html#character"><i class="fa fa-check"></i><b>30.0.4</b> Character</a></li>
+<li class="chapter" data-level="30.0.5" data-path="objects-in-r.html"><a href="objects-in-r.html#integer"><i class="fa fa-check"></i><b>30.0.5</b> Integer</a></li>
+<li class="chapter" data-level="30.0.6" data-path="objects-in-r.html"><a href="objects-in-r.html#numeric"><i class="fa fa-check"></i><b>30.0.6</b> Numeric</a></li>
+<li class="chapter" data-level="30.0.7" data-path="objects-in-r.html"><a href="objects-in-r.html#logical"><i class="fa fa-check"></i><b>30.0.7</b> Logical</a></li>
+<li class="chapter" data-level="30.0.8" data-path="objects-in-r.html"><a href="objects-in-r.html#factor"><i class="fa fa-check"></i><b>30.0.8</b> Factor</a></li>
+<li class="chapter" data-level="30.0.9" data-path="objects-in-r.html"><a href="objects-in-r.html#data-frames"><i class="fa fa-check"></i><b>30.0.9</b> Data frames</a></li>
+<li class="chapter" data-level="30.0.10" data-path="objects-in-r.html"><a href="objects-in-r.html#missing-values"><i class="fa fa-check"></i><b>30.0.10</b> Missing values</a></li>
+<li class="chapter" data-level="30.0.11" data-path="objects-in-r.html"><a href="objects-in-r.html#determining-the-class-of-an-object"><i class="fa fa-check"></i><b>30.0.11</b> Determining the class of an object</a></li>
+<li class="chapter" data-level="30.0.12" data-path="objects-in-r.html"><a href="objects-in-r.html#summary-3"><i class="fa fa-check"></i><b>30.0.12</b> Summary</a></li>
+<li class="chapter" data-level="30.0.13" data-path="objects-in-r.html"><a href="objects-in-r.html#slides-and-video-28"><i class="fa fa-check"></i><b>30.0.13</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="31" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html"><i class="fa fa-check"></i><b>31</b> Basic Commands in R</a>
+<ul>
+<li class="chapter" data-level="31.0.1" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#functions"><i class="fa fa-check"></i><b>31.0.1</b> Functions</a></li>
+<li class="chapter" data-level="31.0.2" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#what-is-this-object"><i class="fa fa-check"></i><b>31.0.2</b> What is this object?</a></li>
+<li class="chapter" data-level="31.0.3" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#how-big-is-this-object"><i class="fa fa-check"></i><b>31.0.3</b> How big is this object?</a></li>
+<li class="chapter" data-level="31.0.4" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#are-there-named-features-of-this-object"><i class="fa fa-check"></i><b>31.0.4</b> Are there named features of this object?</a></li>
+<li class="chapter" data-level="31.0.5" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#what-does-this-object-look-like"><i class="fa fa-check"></i><b>31.0.5</b> What does this object look like?</a></li>
+<li class="chapter" data-level="31.0.6" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#errors-warnings-and-messages"><i class="fa fa-check"></i><b>31.0.6</b> Errors, Warnings, and Messages</a></li>
+<li class="chapter" data-level="31.0.7" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#summary-4"><i class="fa fa-check"></i><b>31.0.7</b> Summary</a></li>
+<li class="chapter" data-level="31.0.8" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#slides-and-video-29"><i class="fa fa-check"></i><b>31.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="32" data-path="working-with-logicals.html"><a href="working-with-logicals.html"><i class="fa fa-check"></i><b>32</b> Working with Logicals</a>
+<ul>
+<li class="chapter" data-level="32.0.1" data-path="working-with-logicals.html"><a href="working-with-logicals.html#logical-operators"><i class="fa fa-check"></i><b>32.0.1</b> Logical operators</a></li>
+<li class="chapter" data-level="32.0.2" data-path="working-with-logicals.html"><a href="working-with-logicals.html#logical-functions"><i class="fa fa-check"></i><b>32.0.2</b> Logical functions</a></li>
+<li class="chapter" data-level="32.0.3" data-path="working-with-logicals.html"><a href="working-with-logicals.html#summary-5"><i class="fa fa-check"></i><b>32.0.3</b> Summary</a></li>
+<li class="chapter" data-level="32.0.4" data-path="working-with-logicals.html"><a href="working-with-logicals.html#slides-and-video-30"><i class="fa fa-check"></i><b>32.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="33" data-path="data-frames-1.html"><a href="data-frames-1.html"><i class="fa fa-check"></i><b>33</b> Data Frames</a>
+<ul>
+<li class="chapter" data-level="33.0.1" data-path="data-frames-1.html"><a href="data-frames-1.html#slides-and-video-31"><i class="fa fa-check"></i><b>33.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="34" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>34</b> R Markdown</a>
+<ul>
+<li class="chapter" data-level="34.0.1" data-path="r-markdown.html"><a href="r-markdown.html#what-is-r-markdown"><i class="fa fa-check"></i><b>34.0.1</b> What is R Markdown?</a></li>
+<li class="chapter" data-level="34.0.2" data-path="r-markdown.html"><a href="r-markdown.html#why-use-r-markdown"><i class="fa fa-check"></i><b>34.0.2</b> Why use R Markdown?</a></li>
+<li class="chapter" data-level="34.0.3" data-path="r-markdown.html"><a href="r-markdown.html#getting-started-with-r-markdown"><i class="fa fa-check"></i><b>34.0.3</b> Getting started with R Markdown</a></li>
+<li class="chapter" data-level="34.0.4" data-path="r-markdown.html"><a href="r-markdown.html#knitting-documents"><i class="fa fa-check"></i><b>34.0.4</b> “Knitting” documents</a></li>
+<li class="chapter" data-level="34.0.5" data-path="r-markdown.html"><a href="r-markdown.html#summary-6"><i class="fa fa-check"></i><b>34.0.5</b> Summary</a></li>
+<li class="chapter" data-level="34.0.6" data-path="r-markdown.html"><a href="r-markdown.html#additional-resources-1"><i class="fa fa-check"></i><b>34.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="34.0.7" data-path="r-markdown.html"><a href="r-markdown.html#slides-and-video-32"><i class="fa fa-check"></i><b>34.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="35" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html"><i class="fa fa-check"></i><b>35</b> Getting Help in R</a>
+<ul>
+<li class="chapter" data-level="35.0.1" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#r-help"><i class="fa fa-check"></i><b>35.0.1</b> R Help: <code>?</code></a></li>
+<li class="chapter" data-level="35.0.2" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#debugging-code"><i class="fa fa-check"></i><b>35.0.2</b> Debugging code</a></li>
+<li class="chapter" data-level="35.0.3" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#tips-on-asking-questions"><i class="fa fa-check"></i><b>35.0.3</b> Tips on asking questions!</a></li>
+<li class="chapter" data-level="35.0.4" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#summary-7"><i class="fa fa-check"></i><b>35.0.4</b> Summary</a></li>
+<li class="chapter" data-level="35.0.5" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#additional-community-resources"><i class="fa fa-check"></i><b>35.0.5</b> Additional Community Resources</a></li>
+<li class="chapter" data-level="35.0.6" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#slides-and-video-33"><i class="fa fa-check"></i><b>35.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="36" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html"><i class="fa fa-check"></i><b>36</b> CSV, Excel, and TSV Files</a>
+<ul>
+<li class="chapter" data-level="36.0.1" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#csv-files"><i class="fa fa-check"></i><b>36.0.1</b> CSV files</a></li>
+<li class="chapter" data-level="36.0.2" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#downloading-csv-files"><i class="fa fa-check"></i><b>36.0.2</b> Downloading CSV files</a></li>
+<li class="chapter" data-level="36.0.3" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#reading-csv-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>36.0.3</b> Reading CSV files into RStudio Cloud</a></li>
+<li class="chapter" data-level="36.0.4" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#excel-files"><i class="fa fa-check"></i><b>36.0.4</b> Excel files</a></li>
+<li class="chapter" data-level="36.0.5" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#reading-excel-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>36.0.5</b> Reading Excel files into RStudio Cloud</a></li>
+<li class="chapter" data-level="36.0.6" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#text-files"><i class="fa fa-check"></i><b>36.0.6</b> Text files</a></li>
+<li class="chapter" data-level="36.0.7" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#reading-tsv-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>36.0.7</b> Reading TSV files into RStudio Cloud</a></li>
+<li class="chapter" data-level="36.0.8" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#reading-txt-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>36.0.8</b> Reading TXT files into RStudio Cloud</a></li>
+<li class="chapter" data-level="36.0.9" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#exporting-data-in-r-to-csv"><i class="fa fa-check"></i><b>36.0.9</b> Exporting Data in R to CSV</a></li>
+<li class="chapter" data-level="36.0.10" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#slides-and-video-34"><i class="fa fa-check"></i><b>36.0.10</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="37" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html"><i class="fa fa-check"></i><b>37</b> Importing Data from Google Sheets</a>
+<ul>
+<li class="chapter" data-level="37.0.1" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#the-googlesheets4-package"><i class="fa fa-check"></i><b>37.0.1</b> The <code>googlesheets4</code> package</a></li>
+<li class="chapter" data-level="37.0.2" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#importing-csv-files-from-the-web"><i class="fa fa-check"></i><b>37.0.2</b> Importing CSV files from the web</a></li>
+<li class="chapter" data-level="37.0.3" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#summary-8"><i class="fa fa-check"></i><b>37.0.3</b> Summary</a></li>
+<li class="chapter" data-level="37.0.4" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#additional-resources-2"><i class="fa fa-check"></i><b>37.0.4</b> Additional Resources</a></li>
+<li class="chapter" data-level="37.0.5" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#slides-and-video-35"><i class="fa fa-check"></i><b>37.0.5</b> Slides and Video</a></li>
+<li class="chapter" data-level="37.1" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#recommended-places-to-get-data"><i class="fa fa-check"></i><b>37.1</b> Recommended places to get data</a></li>
+</ul></li>
+<li class="chapter" data-level="38" data-path="finding-data.html"><a href="finding-data.html"><i class="fa fa-check"></i><b>38</b> Finding Data</a>
+<ul>
+<li class="chapter" data-level="38.0.1" data-path="finding-data.html"><a href="finding-data.html#public-versus-private-data"><i class="fa fa-check"></i><b>38.0.1</b> Public versus Private Data</a></li>
+<li class="chapter" data-level="38.0.2" data-path="finding-data.html"><a href="finding-data.html#publicly-available-data"><i class="fa fa-check"></i><b>38.0.2</b> Publicly-available data</a></li>
+<li class="chapter" data-level="38.0.3" data-path="finding-data.html"><a href="finding-data.html#data-you-already-have"><i class="fa fa-check"></i><b>38.0.3</b> Data You Already Have</a></li>
+<li class="chapter" data-level="38.0.4" data-path="finding-data.html"><a href="finding-data.html#summary-9"><i class="fa fa-check"></i><b>38.0.4</b> Summary</a></li>
+<li class="chapter" data-level="38.0.5" data-path="finding-data.html"><a href="finding-data.html#slides-and-video-36"><i class="fa fa-check"></i><b>38.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="39" data-path="internet-safety.html"><a href="internet-safety.html"><i class="fa fa-check"></i><b>39</b> Internet Safety</a>
+<ul>
+<li class="chapter" data-level="39.0.1" data-path="internet-safety.html"><a href="internet-safety.html#wifi"><i class="fa fa-check"></i><b>39.0.1</b> WiFi</a></li>
+<li class="chapter" data-level="39.0.2" data-path="internet-safety.html"><a href="internet-safety.html#passwords"><i class="fa fa-check"></i><b>39.0.2</b> Passwords</a></li>
+<li class="chapter" data-level="39.0.3" data-path="internet-safety.html"><a href="internet-safety.html#good-internet-behavior"><i class="fa fa-check"></i><b>39.0.3</b> Good Internet behavior</a></li>
+<li class="chapter" data-level="39.0.4" data-path="internet-safety.html"><a href="internet-safety.html#online-scams"><i class="fa fa-check"></i><b>39.0.4</b> Online Scams</a></li>
+<li class="chapter" data-level="39.0.5" data-path="internet-safety.html"><a href="internet-safety.html#malware-spyware"><i class="fa fa-check"></i><b>39.0.5</b> Malware &amp; Spyware</a></li>
+<li class="chapter" data-level="39.0.6" data-path="internet-safety.html"><a href="internet-safety.html#security-on-a-chromebook"><i class="fa fa-check"></i><b>39.0.6</b> Security on a Chromebook</a></li>
+<li class="chapter" data-level="39.0.7" data-path="internet-safety.html"><a href="internet-safety.html#slides-and-video-37"><i class="fa fa-check"></i><b>39.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="40" data-path="data-privacy.html"><a href="data-privacy.html"><i class="fa fa-check"></i><b>40</b> Data Privacy</a>
+<ul>
+<li class="chapter" data-level="40.0.1" data-path="data-privacy.html"><a href="data-privacy.html#what-is-data-privacy"><i class="fa fa-check"></i><b>40.0.1</b> What is Data Privacy?</a></li>
+<li class="chapter" data-level="40.0.2" data-path="data-privacy.html"><a href="data-privacy.html#personally-identifiable-information"><i class="fa fa-check"></i><b>40.0.2</b> Personally Identifiable Information</a></li>
+<li class="chapter" data-level="40.0.3" data-path="data-privacy.html"><a href="data-privacy.html#what-is-encryption"><i class="fa fa-check"></i><b>40.0.3</b> What is encryption?</a></li>
+<li class="chapter" data-level="40.0.4" data-path="data-privacy.html"><a href="data-privacy.html#human-security"><i class="fa fa-check"></i><b>40.0.4</b> Human Security</a></li>
+<li class="chapter" data-level="40.0.5" data-path="data-privacy.html"><a href="data-privacy.html#computer-security"><i class="fa fa-check"></i><b>40.0.5</b> Computer Security</a></li>
+<li class="chapter" data-level="40.0.6" data-path="data-privacy.html"><a href="data-privacy.html#open-science"><i class="fa fa-check"></i><b>40.0.6</b> Open Science</a></li>
+<li class="chapter" data-level="40.0.7" data-path="data-privacy.html"><a href="data-privacy.html#data-breaches"><i class="fa fa-check"></i><b>40.0.7</b> Data Breaches</a></li>
+<li class="chapter" data-level="40.0.8" data-path="data-privacy.html"><a href="data-privacy.html#conclusions-1"><i class="fa fa-check"></i><b>40.0.8</b> Conclusions</a></li>
+<li class="chapter" data-level="40.0.9" data-path="data-privacy.html"><a href="data-privacy.html#slides-and-video-38"><i class="fa fa-check"></i><b>40.0.9</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="41" data-path="ethical-data-science.html"><a href="ethical-data-science.html"><i class="fa fa-check"></i><b>41</b> Ethical Data Science</a>
+<ul>
+<li class="chapter" data-level="41.0.1" data-path="ethical-data-science.html"><a href="ethical-data-science.html#data-science-team"><i class="fa fa-check"></i><b>41.0.1</b> Data Science Team</a></li>
+<li class="chapter" data-level="41.0.2" data-path="ethical-data-science.html"><a href="ethical-data-science.html#the-data"><i class="fa fa-check"></i><b>41.0.2</b> The Data</a></li>
+<li class="chapter" data-level="41.0.3" data-path="ethical-data-science.html"><a href="ethical-data-science.html#the-analysis"><i class="fa fa-check"></i><b>41.0.3</b> The Analysis</a></li>
+<li class="chapter" data-level="41.0.4" data-path="ethical-data-science.html"><a href="ethical-data-science.html#after-the-algorithm"><i class="fa fa-check"></i><b>41.0.4</b> After the Algorithm</a></li>
+<li class="chapter" data-level="41.0.5" data-path="ethical-data-science.html"><a href="ethical-data-science.html#ethics-in-data-science"><i class="fa fa-check"></i><b>41.0.5</b> Ethics in Data Science</a></li>
+<li class="chapter" data-level="41.0.6" data-path="ethical-data-science.html"><a href="ethical-data-science.html#artificial-intelligence-in-the-military"><i class="fa fa-check"></i><b>41.0.6</b> Artificial Intelligence in the Military</a></li>
+<li class="chapter" data-level="41.0.7" data-path="ethical-data-science.html"><a href="ethical-data-science.html#additional-resources-3"><i class="fa fa-check"></i><b>41.0.7</b> Additional Resources</a></li>
+<li class="chapter" data-level="41.0.8" data-path="ethical-data-science.html"><a href="ethical-data-science.html#slides-and-video-39"><i class="fa fa-check"></i><b>41.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://www.datatrail.org/"> Data Trail </a></p>
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/VWaJYc3zATe3qxYC9"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to DataTrail</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style_DataTrail.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/DataTrail.jpg">
+</div>
+<div id="ethical-data-science" class="section level1" number="41">
+<h1><span class="header-section-number">Chapter 41</span> Ethical Data Science</h1>
+<p>From the emails automatically marked as spam in your Inbox and facial recognition on Facebook to the targeted advertisements you see whenever you’re online, data science has made its way into our everyday lives. Often, this is a positive because data scientists generally set out to improve the world (say, by analyzing crime data in hopes of reducing violent crime) or to make our lives easier (by preventing spams in our mailboxes, for example). However, data science projects are certainly not without negative consequences. We discussed some of the companies who have run up against issues properly securing user data in the last lesson; however, protecting the privacy of users’ data is not the only time data scientists should consider the ethics of their work. In fact, <strong>ethical considerations should be made from the start of a project and should never stop being made</strong>. We’ll discuss what we mean by that in this lesson.</p>
+<p>When we talk about the ethics of data science, we’re talking about how to use data to improve the lives of individuals in our society in the world without causing harm to any groups with our work. We’re talking about putting in the work ahead of time to avoid unintended negative consequences of our work. Rather than acting surprised when groups are inadvertently harmed or only dealing with unintended consequences after they occur and harm others, an ethical data scientist will consider whether they are doing any harm at each step along the way.</p>
+<div id="data-science-team" class="section level3" number="41.0.1">
+<h3><span class="header-section-number">41.0.1</span> Data Science Team</h3>
+<p>Data science projects can be done by an individual; however, more often, they are carried out by a team of individuals who are all interested in using data to answer an interesting question. Whether it’s one person setting out to answer the question or a team working to answer this question, it’s important at this outset of a project to really think about whether all the necessary individuals are on the team.</p>
+<p>For example, if a group of data scientists were setting out to reduce crime in a neighborhood, it would be in their best interest to either be very familiar with that neighborhood (say, live there themselves) or to talk to individuals who currently live in that neighborhood to be as informed as possible before they set out to analyze their data. By working with individuals who have more knowledge about the neighborhood than someone who has never been there, the team will be less likely to make incorrect assumptions or leave out critical pieces of information when analyzing the neighborhood’s data.</p>
+</div>
+<div id="the-data" class="section level3" number="41.0.2">
+<h3><span class="header-section-number">41.0.2</span> The Data</h3>
+<p>After ensuring that the team you’ve assembled to answer the question is the right team to do so, there are <em>many</em> considerations to be made when collecting data.</p>
+<div id="sampling-bias" class="section level4" number="41.0.2.1">
+<h4><span class="header-section-number">41.0.2.1</span> Sampling Bias</h4>
+<p>When data are collected, it’s difficult to ever get information about an entire population. Thus, when data are conducted, researchers will typically get data from a subset of individuals within the population (a process called sampling) and then <em>infer</em> something about the entire population using what they learned from the subset of individuals. They will try to ensure that their subset is a random subset of the population. However, whenever sampling of a population is done, there’s a chance for sampling bias.</p>
+<p>Sampling bias occurs whenever the sample of the population collected does not accurately reflect the population as a whole. For example, if the population you’re interested in studying is half female and half male, but the subset of people you’ve sampled is made up of 70% females and 30% males, then your sample is biased. Having a plan to avoid sampling bias is an important first step in the process of data collection.</p>
+<p>Checking the data after the data have been collected to ensure that the sample is not biased is an equally important step. When data are collected by survey for example, they may be sent out to an equal number of males and females; however, maybe more males respond than females. Even though your plan was solid, your responses are biased. This has to be accounted for during the analysis, as your responses do not accurately represent the population as a whole.</p>
+<p>And to be clear, gender is not the only consideration to make when sampling. Samples can be biased by many factors including (but not limited to) race and ethnicity, age, income, and education. Sampling bias should always be avoided both when planning to collect data and after the data are collected.</p>
+</div>
+<div id="informed-consent" class="section level4" number="41.0.2.2">
+<h4><span class="header-section-number">41.0.2.2</span> Informed Consent</h4>
+<p>In addition to collecting data in an unbiased manner, data must be collected ethically. This means that individuals must consent to participating in data collection. <strong>Informed consent</strong> requires that the individual agreeing to share their information knows what data are being collected, has been informed of any possible consequences, and has been provided full knowledge of any risks or benefits of participation.</p>
+<p>If data are collected on individuals and later on a data scientist wants to use those data for a different purpose, they can only do so if the initial consent allowed for the data to be used in this manner. Alternatively, if the data are de-identified, they may be able to be used for future analysis; however, this must be done with care.</p>
+</div>
+<div id="privacy" class="section level4" number="41.0.2.3">
+<h4><span class="header-section-number">41.0.2.3</span> Privacy</h4>
+<p>While discussed in a previous lesson, for completion’s sake, we’ll discuss again here. When collecting personally-identifiable information, these data must be protected. They should not be shared without the participants’ consent and they should be stored in a secure manner.</p>
+</div>
+<div id="withdrawal-of-consent" class="section level4" number="41.0.2.4">
+<h4><span class="header-section-number">41.0.2.4</span> Withdrawal of consent</h4>
+<p>If an individual consents to their data being collected and later changes their mind, they have every right to do so. It is your responsibility as the person collecting the data to have an effective plan for removing any data already collected from that individual.</p>
+</div>
+</div>
+<div id="the-analysis" class="section level3" number="41.0.3">
+<h3><span class="header-section-number">41.0.3</span> The Analysis</h3>
+<p>After avoiding sampling bias, collecting data ethically, avoiding privacy issues in data storage, there are still a number of ethical considerations to take into account during ones analysis. While we don’t discuss the details in these courses, machine learning is currently a popular way to analyze data. In general, it uses existing data to predict how individuals will behave in the future. This means that the any biases in the data used to build the model (the existing data) will likely be perpetuated in the predictions. This means that, for example, in predictive policing, where data scientists are trying to predict where crimes are more likely to happen, if the data used to build the model (often referred to as an <strong>algorithm</strong>) come from crimes that have occurred in primarily black neighborhoods, they are going to predict that crime happens more in primarily black neighborhoods. Then, if police officers are placed in these neighborhoods, they are going to find more crime, <em>not</em> because crime has increased, but just because there are more of them in the neighborhood now. Essentially, any biases in the data used initially are going to be perpetuated in the models they generate. This means that it is <em>critically</em> important that data scientists fully know and understand the data their working with, its biases, and its limitations.</p>
+<p>Further, even <em>when</em> something like race is predictive in the model, it’s important for a data scientist to consider whether or not that variable <em>should</em> be included. Are you <em>absolutely positive</em> that race is the important variable and it’s not just that you have a biased sample? Instead, if you’re trying to predict crimes, it’s likely best to use data about crimes that have occurred and where they have occurred in the model rather than race, since race is not a measure of what you’re interested in modeling. Considering the implications of ones work when carrying out an analysis is incredibly important, and making decisions that do not unnecessarily harm any group of people is critical</p>
+<p>It was previously common for analysts to say that “data do not lie” and “algorithms are impartial,” but recent history has shown that that is simply not the case. Data are collected by humans, and humans are not without their biases. The best way to avoid bias in your data is to be aware of this and constantly check to make sure you’re not disadvantaging groups of people with your analyses.</p>
+<p>Before considering any data analysis and publishing your results, make sure:</p>
+<ol style="list-style-type: decimal">
+<li>You have gone through your data and have made sure there is not any major flaw in your data collection. Data can be biased. You can’t use the result of a study that is mostly based on data from men to say anything about women.</li>
+<li>You have checked for common mistakes in your analysis and know that your methodology is valid and defensible. Messing up the data for a single variable can drastically change the result of your analysis.</li>
+<li>The results of your work can not be used to harass people, especially minorities, in any way.</li>
+<li>Your analysis is independent of your opinion about the specific problem you’re trying to solve using data. When carrying out an analysis, you should be looking for the answer to a question, but be careful not to <em>want</em> a specific answer. By wanting the analysis to go a certain way, you can subconsciously analyze the data to get that answer. It’s best just to collect the data ethically and analyze it carefully. Then, the answer is whatever the answer from the analysis says it is.</li>
+</ol>
+<p>You can do awesome things with your data science skills: cure diseases, analyze health data, prevent climate change, improve your city, or fact check politicians. Don’t let your biases or mistakes get in the way.</p>
+</div>
+<div id="after-the-algorithm" class="section level3" number="41.0.4">
+<h3><span class="header-section-number">41.0.4</span> After the Algorithm</h3>
+<p>Finally, after someone answers an awesome data science question with their really great analysis and tell the world, they often think their job is done. However, if you’ve designed an algorithm that is going to predict something going forward or that is going to continue to be used, it is your job to maintain that algorithm. That means that it’s your job to check for biases after the fact. Is your analysis disadvantaging groups of people? If it is, should it be? Does something need to be changed. There <em>has</em> to be a way for you to update your algorithm going forward. If something is continuing to be used by others, your job isn’t done once you’ve built the algorithm. It’s your job to check for biases after the fact and to update your algorithm should there be a need.</p>
+<div id="ethical-questions-to-answer" class="section level4" number="41.0.4.1">
+<h4><span class="header-section-number">41.0.4.1</span> Ethical Questions to Answer</h4>
+<p>To summarize this lesson up to this point, be sure to answer all of these questions for every data science project you carry out:</p>
+<ol style="list-style-type: decimal">
+<li>Does the <strong>team</strong> on this project include all the necessary individuals to avoid bias in our analysis?</li>
+<li>Does our data collection plan address ways to <strong>avoid sampling bias</strong>?</li>
+<li>Are the data we’ve collected / the data we’re using to answer the question of interest <strong>biased</strong>? In what ways?</li>
+<li>Has <strong>informed consent</strong> been obtained from all participants?</li>
+<li>Do we have a mechanism do <strong>remove an individual’s data</strong> from our dataset if they so choose?</li>
+<li>Are the variables we’ve chosen to use for our analysis appropriate? Do they <strong>discriminate</strong> against anyone?</li>
+<li>Is our analysis <strong>transparent</strong>? Do we understand <em>how</em> and <em>why</em> we’re getting the answer we’re getting?</li>
+<li>Have we considered possible negative or unintended consequences of our analysis and its results?</li>
+<li>Do we have a way to <strong>update</strong> our analysis/algorithm going forward should biases in the results be found?</li>
+</ol>
+</div>
+</div>
+<div id="ethics-in-data-science" class="section level3" number="41.0.5">
+<h3><span class="header-section-number">41.0.5</span> Ethics in Data Science</h3>
+<p>Now that we’ve discussed the ethical considerations to be made before and throughout every data science project, we’ll discuss a few data science projects that were recently covered the popular media due to the questionable ethics of the project.</p>
+<p>We present these examples not only to highlight the ethics of the particular project, but also to state the importance of considering the implications of your work. It is <strong>not</strong> enough to argue that you just “did the analysis” but “didn’t think of the implications” of the work. As a data scientist <strong>it is your responsibility to both do the analysis and consider the implications of your work</strong>.</p>
+<div id="data-science-in-sentencing" class="section level4" number="41.0.5.1">
+<h4><span class="header-section-number">41.0.5.1</span> Data Science in Sentencing</h4>
+<p>In April of 2017, Wired reported in an opinion piece that <a href="https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/">courts were using artificial intelligence to sentence criminals</a> and made the claim that such practices must be put to an end. The piece explained that courts and corrections departments across the United States collect data on defendants that are then used in an algorithm to determine the “risk” that defendant poses. This aim of this algorithm is to determine how likely it is that the individual will commit another crime.</p>
+<p>These likelihoods of reoffending from the algorithm are then used to make decisions about how to set bail, what the sentence should be, and the details of that individual’s parole. These tools are often built by private companies. This means that exactly <em>how</em> they work and what data are used to assess risk are not disclosed. The article in Wired highlights the use of <a href="http://www.equivant.com/challenges/supervision-and-compliance-monitoring">Compas</a>, one of these risk-assessment tools developed by a private company and used by the Department of Corrections in Wisconsin, in a judge’s decision to give a man a long sentence, in part because of his “high risk” score from the algorithm. In a courtroom, however, because the specifics of how this algorithm works are not disclosed, a judge and jury would <em>not</em> be able to determine whether or not the likelihood of reoffending was calculated accurately by the algorithm.</p>
+<p>Initially, arguments were made that removing human biases and judgment from bail, sentencing, and parole decisions would be for the benefit of society. This initial goal was a noble goal that would improve society. However, over time, biases in the data used to generate these algorithms that perpetuated into <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">biases in the algorithms’ outcomes</a>, the lack of transparency in how they work, and failure to check for inequities and biases in the algorithms after they were put in place have led to unfair decisions being made.</p>
+<p>While individuals <em>may</em> have been looking to improve society with their algorithm at the outset of this project (or at least that argument can be made), lack of considerations of the implications of their work and lack of transparency in the process of generating and using the algorithm have led to questionable ethics in the use of algorithms to make sentencing decisions.</p>
+</div>
+</div>
+<div id="artificial-intelligence-in-the-military" class="section level3" number="41.0.6">
+<h3><span class="header-section-number">41.0.6</span> Artificial Intelligence in the Military</h3>
+<p>In March of 2018, Gizmodo reported that <a href="https://gizmodo.com/google-is-helping-the-pentagon-build-ai-for-drones-1823464533">Google was helping the US Department of Defense use artificial intelligence to analyze drone footage</a>, a project that started in April of 2017. The project between Google and the Defense department is called Project Maven, and the goal of this project was initially to take drone footage and accurately identify objects (such as vehicles) and to track individuals in the footage collected.</p>
+<p>A number of Google employees were upset that Google would provide resources to the military that would be used for surveillance in drone operations. Due to the fact that in other non-military situations <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">the use of machine learning has led to biased outcomes</a>, other employees felt there needed to be further discussion about the ethics in developing and using machine learning technology before it was deployed by the military. In response to these concerns, a Google spokesperson stated that Google is working <a href="https://gizmodo.com/google-is-helping-the-pentagon-build-ai-for-drones-1823464533">“to develop policies and safeguards”</a>, that the technology is being used for “non-offensive uses only.”</p>
+<p>In this and many large data science projects where machine learning and artificial intelligence are being used in situations where lives could be negatively impacted, the project would benefit from taking ethical considerations into account and discussing these in a transparent way <em>before</em> deploying the technology. Developing policies and safeguards after the fact is not enough.</p>
+<div id="facial-recognition-in-law-enforcement" class="section level4" number="41.0.6.1">
+<h4><span class="header-section-number">41.0.6.1</span> Facial Recognition in Law Enforcement</h4>
+<p>In May of 2018, the <a href="https://www.aclunc.org/blog/amazon-teams-law-enforcement-deploy-dangerous-new-face-recognition-technology">ACLU reported</a> that Amazon had teamed up with law enforcement agencies to use Amazon’s face recognition technology, <a href="https://aws.amazon.com/rekognition/">Rekognition</a>. The ACLU called this new technology, which can quickly scan images to “identify, track, and analyze people in real time” both “powerful” and “dangerous.” This story was picked up by many news sources, including <a href="https://www.nytimes.com/2018/05/22/technology/amazon-facial-recognition.html">a piece</a> in the New York Times</p>
+<p>Proponents of using facial recognition technology in law enforcement cite that such technology can help locate and identify criminals more quickly than we would have been able to in the past and that it will help <a href="https://www.nytimes.com/2018/05/22/technology/amazon-facial-recognition.html">“keep residents and visitors…safe”</a>. Proponents also argue that those who use the technology do so within the limits of the law.</p>
+<p>Opponents, like the ACLU, however, cite the civil liberties and civil rights concerns that constant surveillance with using facial recognition technology pose. The ACLU argues that there is substantial “capacity for abuse” and due to this, that citizens should not be watched by the government any time they walk outside, that facial recognition systems threaten freedom, and that the deployment of these technologies post a greater threat to communities that are already unfairly targeted by the political climate.</p>
+<p>Concerns with the technology cite that anyone can be identified, not just criminals, a problem for civil liberties. Opponents further question the accuracy of the technology. Inaccuracies, which would misidentify individuals and suggest they were guilty of a crime when they were in fact not is clearly a problem. Further, there are concerns that accuracy varies based on gender and race, which if true, poses a clear bias in the use of this technology for the identification of criminals as certain groups of individuals would be misidentified more frequently than others.</p>
+</div>
+</div>
+<div id="additional-resources-3" class="section level3" number="41.0.7">
+<h3><span class="header-section-number">41.0.7</span> Additional Resources</h3>
+<ul>
+<li><a href="https://dssg.uchicago.edu/2015/09/18/an-ethical-checklist-for-data-science/">Ethical Checklist for Data Science</a>, by Alan Fritzler</li>
+<li><a href="https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815"><em>Weapons of Math Destruction</em></a>, by Cathy O’Neil</li>
+<li><a href="https://www.amazon.com/Automating-Inequality-High-Tech-Profile-Police/dp/1250074312/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1531417315&amp;sr=1-1&amp;keywords=automating+inequality"><em>Automating Inequality</em></a>, by Virginia Eubanks</li>
+<li><a href="https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/">Courts are Using AI to Sentence Criminals. That must Stop Now</a>, by Jason Tashea in Wired</li>
+<li><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">Machine Bias</a>, by Julia Angwin, Jeff Larson, Surya Mattu and Lauren Kirchner at ProPublica</li>
+<li><a href="https://www.aclunc.org/blog/amazon-teams-law-enforcement-deploy-dangerous-new-face-recognition-technology">Amazon Teams Up With Law Enforcement to Deploy Dangerous New Face Recognition Technology</a>, by Matt Cagle and Nicole A. Ozer with the ACLU</li>
+<li><a href="https://www.nytimes.com/2018/05/22/technology/amazon-facial-recognition.html">Amazon Pushes Facial Recognition to Police. Critics See Surveillance Risk.</a>, by Nick Wingfield at the New York Times</li>
+<li><a href="https://gizmodo.com/google-is-helping-the-pentagon-build-ai-for-drones-1823464533">Google Is Helping the Pentagon Build AI for Drones</a>, by Kate Conger and Dell Cameron at Gizmodo</li>
+</ul>
+</div>
+<div id="slides-and-video-39" class="section level3" number="41.0.8">
+<h3><span class="header-section-number">41.0.8</span> Slides and Video</h3>
+<div class="figure">
+<img src="https://www.youtube.com/watch?v=0GAFbE-W2Xs" alt="" />
+<p class="caption">Ethical Data Science</p>
+</div>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/16uo-gTCdjtWjdGOxejVTIz9JdZi-Gu7lgSsNx2SdPhU/edit?usp=sharing">Slides</a></li>
+</ul>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-privacy.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

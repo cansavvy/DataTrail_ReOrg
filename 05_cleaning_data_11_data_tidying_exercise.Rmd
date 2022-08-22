@@ -1,25 +1,9 @@
 
 # Data Tidying Project
 
-\* If you would like to know the answers to the questions in this exercise, then you can take this [course in Leanpub](https://leanpub.com/universities/courses/jhu/cbds-tidying).
-
-
 Often times, data scientists are handed data and asked to make sense of them. The data scientist may be asked to figure out why people are getting sick in a city or how their employer can save money. No matter the situation, these data aren't always in the most usable format. **Data wrangling** is required before any pretty visualizations can be made or interesting questions can be answered.
 
 As such, this exercise has been generated to practice your, GitHub, terminal navigation, RStudio, and data wrangling skills.
-
-#### GitHub Setup
-
-To get started, you'll want to go to GitHub and start a new repository:
-
-- Call this repository `data_tidying_project`.
-- Add a short description
-- Check the box to "Initialize this repository with a README.
-- Click `Create Repository`
-
-Once the repository has been created, Click on `Clone or download` and copy the "Clone with HTTPS" link provided. You'll use this to clone your repo in RStudio Cloud.
-
-**Note**: If you're stuck on this, these steps were covered in detail in an earlier course: [Version Control](https://leanpub.com/universities/courses/jhu/cbds-version-control). Refer to the materials in this course if you're stuck on this part of the project.
 
 #### RStudio Cloud Setup
 
@@ -178,11 +162,6 @@ OK, now it's your job to work line by line to change `function_name` to the appr
 - What function did you use to add the column name `value`?
 - What function did you use to reorder the column names?
 
-##### Pushing to GitHub
-
-You've written a lot of code at this point, so it'd be great to add this to GitHub at this point. Use `git add`, `git commit`, and `git push` to add the file changes to your GitHub repository.
-
-
 ##### Merging the data
 
 Once you have wrangled both `df1` and `df2`, you should be able to join them by binding the rows of `df_retail` and `df_department`. Change the code in the `merge-data` code chunk to generate an object called `df_total`. This should only take one function to accomplish.
@@ -204,4 +183,4 @@ Last but not least, you'll want to Knit your .Rmd document into an HTML document
 
 #### Upload your Document to GoogleDrive
 
-In an upcoming chapter, we will show you how to more properly share your code using version control and a thing called GitHub, but for the time being, we will have you make this code more shareable by 
+In an upcoming chapter, we will show you how to more properly share your code using version control and a thing called GitHub, but for the time being, we will have you make this code more shareable by

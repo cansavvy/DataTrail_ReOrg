@@ -152,7 +152,7 @@ RStudio Cloud will start a "project.Rproj" file within each project you start. T
 
 ![R Project files](https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&pageid=g3c53e17c93_1_116)
 
-Then, when you return to this project, your .Rroj file will:
+Then, when you return to this project, your .Rproj file will:
 
 * start a new R session
 * load the .RData file in your project's main directory file if there is one (this is the same directory where your .Rproj file is)

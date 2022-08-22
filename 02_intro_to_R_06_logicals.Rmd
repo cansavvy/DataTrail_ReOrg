@@ -40,7 +40,7 @@ indiv_cutoffs <- c(12, 12, 14, 14, 14)
 Do the students' ages equal the cutoff? To answer this, we would use the "equals" operator `==`. (*Note*: the equals operator requires two equals signs (`==`). You'll recall that a single equals sign (`=`) is used for object assignment and is equivalent to `<-` . Whenever you want to ask if two things are equal be sure you have both equals signs in your code!) Here, each number in the `ages` object is compared to 13. Only the fourth student meets this condition.
 
 ```text
-> ages==common_cutoff
+> ages == common_cutoff
 [1] FALSE FALSE FALSE  TRUE FALSE
 ```
 

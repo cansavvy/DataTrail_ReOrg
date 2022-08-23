@@ -26,7 +26,7 @@ If you entered the same values used above into Google Slides first and wanted to
 ![Download as CSV file](https://docs.google.com/presentation/d/199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM/export/png?id=199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM&pageid=g399e5a917a_0_56)
 
 
-### Reading CSV files into RStudio Cloud
+### Reading files into RStudio Cloud
 
 Now that you have a CSV file, let's discuss how to get it into RStudio Cloud! Log in to your RStudio Cloud account. Create a new project. On the RStudio workspace that you see, click on *Upload* under *Files* on the bottom right corner of the screen. On the window that pops up click on *Choose File*.
 
@@ -64,7 +64,30 @@ Above, you see the simplest way to import a CSV file. However, as with many func
 
 By default, `read_csv()` converts blank cells to missing data (NA).
 
-Finally, we introduce the function `read_csv` here and recommend that you use it, as it is the simplest and fastest way to read CSV files into R. However, we note that there *is* a function `read.csv` which is available by default in R. You will likely see this function in others' code, so we just want to make sure you're aware of it.
+Note that the `read_csv()` function is a part of a *family* of functions that all have similar names.
+
+For example, if you need to read in a **TSV** file, you can use `read_tsv()` function. If you need to read in an **RDS** file, you can use the `read_rds()` function.
+
+**Note** that there *is* a function `read.csv` which is available by default in R. It's not quite as nice to use, but you will likely see this function in others' code, so we just want to make sure you're aware of it.
+
+### Writing CSV files into RStudio Cloud
+
+The `readr` family of functions also includes _writing_ functions.
+
+If you want to **write** a **CSV**, **TSV**, or **RDS** file you can use the `write_csv()`, `write_tsv()` or `write_rds()` functions!
+
+
+In this example, we can write the `iris` data to a CSV file by providing two arguments.
+The first is what data frame we would like to write to a CSV file. In this case, we want to write `iris` data frame to a file.
+
+The second argument is what the filename we should save to this to a file named ` "iris_data.csv"`. Note that the 
+
+```r
+## install.packages("readr")
+library(readr)
+
+write_csv(iris, "iris_data.csv")
+```
 
 ### Excel files
 

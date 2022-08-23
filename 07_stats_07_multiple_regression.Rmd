@@ -79,7 +79,7 @@ ggplot(mtcars, aes(wt, mpg)) +
 ```
 
 
-![Scaterplot faceting for engine type](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g3daea37311_0_1339)
+![Scatterplot faceting for engine type](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g3daea37311_0_1339)
 
 From this plot, we can see that V-shaped engines (`vs`= 0), tend to be heavier and get fewer miles per gallon while straight engines (`vs` = 1) tend to weigh less and get more miles per gallon. Importantly, however, we see that a car that weighs 3000 points (`wt` = 3) and has a V-Shaped engine (`vs` = 0) gets fewer miles per gallon than a car of the same weight with a straight engine (`vs` = 1), suggesting that simply modeling a linear relationship between weight and mpg is not appropriate.
 

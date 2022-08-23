@@ -118,7 +118,21 @@ rmd_files: ["index.Rmd",
             "09_communication_05_blogpost.Rmd",
             "09_communication_06_meetings.Rmd",
             "09_communication_07_one_on_one.Rmd",
-            "09_communication_08_notebook.Rmd"]
+            "09_communication_08_notebook.Rmd",
+            "10_dsjobs_00_basics.Rmd",
+            "10_dsjobs_01_resume.Rmd",
+            "10_dsjobs_02_coverletter.Rmd",
+            "10_dsjobs_03_website.Rmd",
+            "10_dsjobs_04_projects.Rmd",
+            "10_dsjobs_05_github.Rmd",
+            "10_dsjobs_06_linkedin.Rmd",
+            "10_dsjobs_07_twitter.Rmd",
+            "10_dsjobs_08_jobs.Rmd",
+            "10_dsjobs_09_where_to_look.Rmd",
+            "10_dsjobs_10_remote_jobs.Rmd",
+            "10_dsjobs_11_interviews.Rmd",
+            "10_dsjobs_12_take_home.Rmd",
+            "10_dsjobs_13_meetups.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true

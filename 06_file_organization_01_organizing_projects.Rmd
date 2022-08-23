@@ -51,14 +51,14 @@ You should now see a folder called data in the file window.
 
 Next we will create a few more folders. For each one click the New Folder button, enter the name and click ok.
 
-Different projects may call for different organization schemes and folder set ups. The rules we give you here may not fit **every** project you work on. But this organizational scheme is a good start that you can iteratively evaluate and change as needed as you continue to work on your project. 
+Different projects may call for different organization schemes and folder set ups. The rules we give you here may not fit **every** project you work on. But this organizational scheme is a good start that you can iteratively evaluate and change as needed as you continue to work on your project.
 
 These folders represent the four parts of any data science project.
 
 * _raw_data_ - is the folder where you will put all the raw versions of the data you have collected or been given to analyze.
 * _tidy_data_ - is the folder where you will put cleaned versions of the data.
 * _results_ - is where you will put plots, data pictures, and other results you have created from your data.
-* _code_ - is where you will create code files for collecting, cleaning up, or analyzing data.
+* _util_ - code that is not in Rmds, but is more background code that doesn't need to be referenced as much is kept here.
 
 Now that we have these folders in place the next thing you need to create is a README file. This is a file where you will describe all of the data and projects you will be doing. Every project should have a README file so that you can keep notes on what you have done during your project. You will add to this README as your project expands.
 
@@ -104,7 +104,7 @@ The folders in this project are:
 * _raw_data_ - all the raw versions of the data are kept here.
 * _tidy_data_ - cleaned versions of the data are here.
 * _results_ - results, figures and plots from our data are kept here
-* _code_ - code that is not in Rmds, but is more background is kept here.
+* _util_ - code that is not in Rmds, but is more background is kept here.
 
 ```
 

@@ -31,6 +31,7 @@ eps
 Ferdio
 Fitbit
 FiveThirtyEight
+FiveThirtyEight's
 geoms
 Geoms
 gg
@@ -311,6 +312,11 @@ Sidenote
 Silge
 Simar
 SMS
+SES
+setosa
+SPAMs
+Spotify
+suming
 Solares
 stackedit
 Stackedit

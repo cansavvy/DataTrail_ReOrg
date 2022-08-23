@@ -141,7 +141,7 @@ In the exercise above, we looked at bilateral (two-way) relationships. For insta
 - What is the coefficient on gender now?
 - In the regression, the coefficient on the variable age means how much time spent with children changes if age increases by 1. Based on your results, what's the difference in minutes spent with children between two people with 10 years of age difference?
 
-In the next few questions, we are going to see whether time spent on different activities varies by age. However, we will only consider activities at the major category levels. There are 18 major categories in the data including personal care, household activities, caring for & helping household members, etc. Because each activity column in the data is at the 3rd tier, we will need to start by suming columns at the activity major categories levels. Save the resulting data frame as `df.wide`. Use code chunk `activity-cats` in the .Rmd file for this part.
+In the next few questions, we are going to see whether time spent on different activities varies by age. However, we will only consider activities at the major category levels. There are 18 major categories in the data including personal care, household activities, caring for & helping household members, etc. Because each activity column in the data is at the 3rd tier, we will need to start by summing columns at the activity major categories levels. Save the resulting data frame as `df.wide`. Use code chunk `activity-cats` in the .Rmd file for this part.
 
 - What activity group do people spent, on average, most time on?
 - Which is the second most time consuming activity for the respondents?

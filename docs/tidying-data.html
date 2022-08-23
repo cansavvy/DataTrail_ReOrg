@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 62 Tidying Data | Introduction to DataTrail</title>
+  <meta name="description" content="Chapter 62 Tidying Data | Introduction to DataTrail" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 62 Tidying Data | Introduction to DataTrail" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 62 Tidying Data | Introduction to DataTrail" />
+  
+  
+  
+
+
+
+<meta name="date" content="2022-04-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="reshaping-data-1.html"/>
+<link rel="next" href="working-with-strings.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/style_DataTrail.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style="padding-left: 0px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
+<li class="chapter" data-level="1" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html"><i class="fa fa-check"></i><b>1</b> Welcome to DataTrail</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#course-details"><i class="fa fa-check"></i><b>1.0.1</b> Course Details</a></li>
+<li class="chapter" data-level="1.0.2" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#what-is-data-science"><i class="fa fa-check"></i><b>1.0.2</b> What is data science?</a></li>
+<li class="chapter" data-level="1.0.3" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#what-is-datatrail"><i class="fa fa-check"></i><b>1.0.3</b> What is DataTrail?</a></li>
+<li class="chapter" data-level="1.0.4" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#who-is-this-program-for"><i class="fa fa-check"></i><b>1.0.4</b> Who is this program for?</a></li>
+<li class="chapter" data-level="1.0.5" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#how-the-program-is-organized"><i class="fa fa-check"></i><b>1.0.5</b> How the program is organized</a></li>
+<li class="chapter" data-level="1.0.6" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#how-this-course-is-graded"><i class="fa fa-check"></i><b>1.0.6</b> How this course is graded</a></li>
+<li class="chapter" data-level="1.0.7" data-path="welcome-to-datatrail.html"><a href="welcome-to-datatrail.html#slides-and-video"><i class="fa fa-check"></i><b>1.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="program-philosophy.html"><a href="program-philosophy.html"><i class="fa fa-check"></i><b>2</b> Program Philosophy</a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="program-philosophy.html"><a href="program-philosophy.html#slides-and-video-1"><i class="fa fa-check"></i><b>2.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-data-science-process.html"><a href="the-data-science-process.html"><i class="fa fa-check"></i><b>3</b> The Data Science Process</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="the-data-science-process.html"><a href="the-data-science-process.html#the-parts-of-a-data-science-project"><i class="fa fa-check"></i><b>3.0.1</b> The Parts of a Data Science Project</a></li>
+<li class="chapter" data-level="3.0.2" data-path="the-data-science-process.html"><a href="the-data-science-process.html#a-data-science-project-example"><i class="fa fa-check"></i><b>3.0.2</b> A Data Science Project Example</a></li>
+<li class="chapter" data-level="3.0.3" data-path="the-data-science-process.html"><a href="the-data-science-process.html#what-you-can-build-using-r"><i class="fa fa-check"></i><b>3.0.3</b> What you can build using R</a></li>
+<li class="chapter" data-level="3.0.4" data-path="the-data-science-process.html"><a href="the-data-science-process.html#other-cool-data-science-projects"><i class="fa fa-check"></i><b>3.0.4</b> Other Cool Data Science Projects</a></li>
+<li class="chapter" data-level="3.0.5" data-path="the-data-science-process.html"><a href="the-data-science-process.html#conclusions"><i class="fa fa-check"></i><b>3.0.5</b> Conclusions</a></li>
+<li class="chapter" data-level="3.0.6" data-path="the-data-science-process.html"><a href="the-data-science-process.html#slides-and-video-2"><i class="fa fa-check"></i><b>3.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="how-to-learn.html"><a href="how-to-learn.html"><i class="fa fa-check"></i><b>4</b> How To Learn</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="how-to-learn.html"><a href="how-to-learn.html#learning-how-to-learn"><i class="fa fa-check"></i><b>4.0.1</b> Learning How To Learn</a></li>
+<li class="chapter" data-level="4.0.2" data-path="how-to-learn.html"><a href="how-to-learn.html#summary"><i class="fa fa-check"></i><b>4.0.2</b> Summary</a></li>
+<li class="chapter" data-level="4.0.3" data-path="how-to-learn.html"><a href="how-to-learn.html#slides-and-video-3"><i class="fa fa-check"></i><b>4.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="finding-help.html"><a href="finding-help.html"><i class="fa fa-check"></i><b>5</b> Finding Help</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="finding-help.html"><a href="finding-help.html#searching-the-internet"><i class="fa fa-check"></i><b>5.0.1</b> Searching the Internet</a></li>
+<li class="chapter" data-level="5.0.2" data-path="finding-help.html"><a href="finding-help.html#search-guidelines"><i class="fa fa-check"></i><b>5.0.2</b> Search Guidelines</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="account-setup.html"><a href="account-setup.html"><i class="fa fa-check"></i><b>6</b> Account Setup</a>
+<ul>
+<li class="chapter" data-level="6.0.1" data-path="account-setup.html"><a href="account-setup.html#choosing-a-username"><i class="fa fa-check"></i><b>6.0.1</b> Choosing a Username</a></li>
+<li class="chapter" data-level="6.0.2" data-path="account-setup.html"><a href="account-setup.html#using-a-consistent-username"><i class="fa fa-check"></i><b>6.0.2</b> Using a Consistent Username</a></li>
+<li class="chapter" data-level="6.0.3" data-path="account-setup.html"><a href="account-setup.html#accounts"><i class="fa fa-check"></i><b>6.0.3</b> Accounts</a></li>
+<li class="chapter" data-level="6.0.4" data-path="account-setup.html"><a href="account-setup.html#slides-and-video-4"><i class="fa fa-check"></i><b>6.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="google-account-setup.html"><a href="google-account-setup.html"><i class="fa fa-check"></i><b>7</b> Google Account Setup</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="google-account-setup.html"><a href="google-account-setup.html#getting-a-google-login"><i class="fa fa-check"></i><b>7.0.1</b> Getting a Google Login</a></li>
+<li class="chapter" data-level="7.0.2" data-path="google-account-setup.html"><a href="google-account-setup.html#log-off-guest-chromebook"><i class="fa fa-check"></i><b>7.0.2</b> Log Off Guest Chromebook</a></li>
+<li class="chapter" data-level="7.0.3" data-path="google-account-setup.html"><a href="google-account-setup.html#re-login-using-google-account"><i class="fa fa-check"></i><b>7.0.3</b> Re-Login using Google Account</a></li>
+<li class="chapter" data-level="7.0.4" data-path="google-account-setup.html"><a href="google-account-setup.html#slides-and-video-5"><i class="fa fa-check"></i><b>7.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html"><i class="fa fa-check"></i><b>8</b> Other Accounts Setup</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#linkedin-account"><i class="fa fa-check"></i><b>8.0.1</b> LinkedIn Account</a></li>
+<li class="chapter" data-level="8.0.2" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#twitter-account"><i class="fa fa-check"></i><b>8.0.2</b> Twitter Account</a></li>
+<li class="chapter" data-level="8.0.3" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#basecamp-account"><i class="fa fa-check"></i><b>8.0.3</b> Basecamp Account</a></li>
+<li class="chapter" data-level="8.0.4" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#rstudio-cloud-account"><i class="fa fa-check"></i><b>8.0.4</b> RStudio Cloud Account</a></li>
+<li class="chapter" data-level="8.0.5" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#github-account"><i class="fa fa-check"></i><b>8.0.5</b> GitHub Account</a></li>
+<li class="chapter" data-level="8.0.6" data-path="other-accounts-setup.html"><a href="other-accounts-setup.html#slides-and-video-6"><i class="fa fa-check"></i><b>8.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="your-first-data-science-project.html"><a href="your-first-data-science-project.html"><i class="fa fa-check"></i><b>9</b> Your first data science project</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="your-first-data-science-project.html"><a href="your-first-data-science-project.html#slides-and-video-7"><i class="fa fa-check"></i><b>9.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="google-sheets.html"><a href="google-sheets.html"><i class="fa fa-check"></i><b>10</b> Google Sheets</a>
+<ul>
+<li class="chapter" data-level="10.0.1" data-path="google-sheets.html"><a href="google-sheets.html#what-is-a-spreadsheet"><i class="fa fa-check"></i><b>10.0.1</b> What is a spreadsheet?</a></li>
+<li class="chapter" data-level="10.0.2" data-path="google-sheets.html"><a href="google-sheets.html#setting-up-your-spreadsheet"><i class="fa fa-check"></i><b>10.0.2</b> Setting up your spreadsheet</a></li>
+<li class="chapter" data-level="10.0.3" data-path="google-sheets.html"><a href="google-sheets.html#collecting-data"><i class="fa fa-check"></i><b>10.0.3</b> Collecting data</a></li>
+<li class="chapter" data-level="10.0.4" data-path="google-sheets.html"><a href="google-sheets.html#checking-your-data"><i class="fa fa-check"></i><b>10.0.4</b> Checking your data</a></li>
+<li class="chapter" data-level="10.0.5" data-path="google-sheets.html"><a href="google-sheets.html#publishing-to-the-web"><i class="fa fa-check"></i><b>10.0.5</b> Publishing to the web</a></li>
+<li class="chapter" data-level="10.0.6" data-path="google-sheets.html"><a href="google-sheets.html#making-the-sheet-public"><i class="fa fa-check"></i><b>10.0.6</b> Making the sheet public</a></li>
+<li class="chapter" data-level="10.0.7" data-path="google-sheets.html"><a href="google-sheets.html#slides-and-video-8"><i class="fa fa-check"></i><b>10.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html"><i class="fa fa-check"></i><b>11</b> RStudio Cloud</a>
+<ul>
+<li class="chapter" data-level="11.0.1" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html#rstudio-cloud-basics"><i class="fa fa-check"></i><b>11.0.1</b> RStudio Cloud Basics</a></li>
+<li class="chapter" data-level="11.0.2" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html#data-science-project-in-rstudio-cloud"><i class="fa fa-check"></i><b>11.0.2</b> Data Science Project in RStudio Cloud</a></li>
+<li class="chapter" data-level="11.0.3" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html#slides-and-video-9"><i class="fa fa-check"></i><b>11.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="getting-help-with-a-chromebook.html"><a href="getting-help-with-a-chromebook.html"><i class="fa fa-check"></i><b>12</b> Getting Help with a Chromebook</a>
+<ul>
+<li class="chapter" data-level="12.0.1" data-path="getting-help-with-a-chromebook.html"><a href="getting-help-with-a-chromebook.html#common-issues"><i class="fa fa-check"></i><b>12.0.1</b> Common Issues</a></li>
+<li class="chapter" data-level="12.0.2" data-path="getting-help-with-a-chromebook.html"><a href="getting-help-with-a-chromebook.html#chromebook-support"><i class="fa fa-check"></i><b>12.0.2</b> Chromebook Support</a></li>
+<li class="chapter" data-level="12.0.3" data-path="getting-help-with-a-chromebook.html"><a href="getting-help-with-a-chromebook.html#slides-and-video-10"><i class="fa fa-check"></i><b>12.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="google-docs.html"><a href="google-docs.html"><i class="fa fa-check"></i><b>13</b> Google Docs</a>
+<ul>
+<li class="chapter" data-level="13.0.1" data-path="google-docs.html"><a href="google-docs.html#getting-started-in-google-docs"><i class="fa fa-check"></i><b>13.0.1</b> Getting started in Google Docs</a></li>
+<li class="chapter" data-level="13.0.2" data-path="google-docs.html"><a href="google-docs.html#using-google-docs"><i class="fa fa-check"></i><b>13.0.2</b> Using Google Docs</a></li>
+<li class="chapter" data-level="13.0.3" data-path="google-docs.html"><a href="google-docs.html#sharing-your-google-doc"><i class="fa fa-check"></i><b>13.0.3</b> Sharing Your Google Doc</a></li>
+<li class="chapter" data-level="13.0.4" data-path="google-docs.html"><a href="google-docs.html#slides-and-video-11"><i class="fa fa-check"></i><b>13.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="google-slides.html"><a href="google-slides.html"><i class="fa fa-check"></i><b>14</b> Google Slides</a>
+<ul>
+<li class="chapter" data-level="14.0.1" data-path="google-slides.html"><a href="google-slides.html#what-is-a-slide-presentation"><i class="fa fa-check"></i><b>14.0.1</b> What is a slide presentation?</a></li>
+<li class="chapter" data-level="14.0.2" data-path="google-slides.html"><a href="google-slides.html#presentation-guidelines"><i class="fa fa-check"></i><b>14.0.2</b> Presentation Guidelines</a></li>
+<li class="chapter" data-level="14.0.3" data-path="google-slides.html"><a href="google-slides.html#getting-started-in-google-slides"><i class="fa fa-check"></i><b>14.0.3</b> Getting started in Google Slides</a></li>
+<li class="chapter" data-level="14.0.4" data-path="google-slides.html"><a href="google-slides.html#making-a-simple-presentation"><i class="fa fa-check"></i><b>14.0.4</b> Making a simple presentation</a></li>
+<li class="chapter" data-level="14.0.5" data-path="google-slides.html"><a href="google-slides.html#sharing-your-google-slides-presentation"><i class="fa fa-check"></i><b>14.0.5</b> Sharing your Google Slides Presentation</a></li>
+<li class="chapter" data-level="14.0.6" data-path="google-slides.html"><a href="google-slides.html#slides-and-video-12"><i class="fa fa-check"></i><b>14.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html"><i class="fa fa-check"></i><b>15</b> What is a Chromebook</a>
+<ul>
+<li class="chapter" data-level="15.0.1" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#slides-and-video-13"><i class="fa fa-check"></i><b>15.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="chrome-browser.html"><a href="chrome-browser.html"><i class="fa fa-check"></i><b>16</b> Chrome Browser</a>
+<ul>
+<li class="chapter" data-level="16.0.1" data-path="chrome-browser.html"><a href="chrome-browser.html#slides-and-video-14"><i class="fa fa-check"></i><b>16.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="chrome-os.html"><a href="chrome-os.html"><i class="fa fa-check"></i><b>17</b> Chrome OS</a>
+<ul>
+<li class="chapter" data-level="17.0.1" data-path="chrome-os.html"><a href="chrome-os.html#chrome-apps"><i class="fa fa-check"></i><b>17.0.1</b> Chrome “Apps”</a></li>
+<li class="chapter" data-level="17.0.2" data-path="chrome-os.html"><a href="chrome-os.html#where-do-chromebook-apps-live"><i class="fa fa-check"></i><b>17.0.2</b> Where do Chromebook Apps live?</a></li>
+<li class="chapter" data-level="17.0.3" data-path="chrome-os.html"><a href="chrome-os.html#the-shelf"><i class="fa fa-check"></i><b>17.0.3</b> The Shelf</a></li>
+<li class="chapter" data-level="17.0.4" data-path="chrome-os.html"><a href="chrome-os.html#websites-as-chrome-apps"><i class="fa fa-check"></i><b>17.0.4</b> Websites as Chrome Apps</a></li>
+<li class="chapter" data-level="17.0.5" data-path="chrome-os.html"><a href="chrome-os.html#the-chrome-web-store-and-chrome-apps"><i class="fa fa-check"></i><b>17.0.5</b> The Chrome Web Store and Chrome Apps</a></li>
+<li class="chapter" data-level="17.0.6" data-path="chrome-os.html"><a href="chrome-os.html#chrome-extensions"><i class="fa fa-check"></i><b>17.0.6</b> Chrome Extensions</a></li>
+<li class="chapter" data-level="17.0.7" data-path="chrome-os.html"><a href="chrome-os.html#slides-and-video-15"><i class="fa fa-check"></i><b>17.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="android-apps.html"><a href="android-apps.html"><i class="fa fa-check"></i><b>18</b> Android Apps</a>
+<ul>
+<li class="chapter" data-level="18.0.1" data-path="android-apps.html"><a href="android-apps.html#slides-and-video-16"><i class="fa fa-check"></i><b>18.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html"><i class="fa fa-check"></i><b>19</b> Chromebook Shortcuts</a>
+<ul>
+<li class="chapter" data-level="19.0.1" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html#taking-screenshots-on-a-chromebook"><i class="fa fa-check"></i><b>19.0.1</b> Taking Screenshots on a Chromebook</a></li>
+<li class="chapter" data-level="19.0.2" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html#zooming-in-and-out"><i class="fa fa-check"></i><b>19.0.2</b> Zooming in and out</a></li>
+<li class="chapter" data-level="19.0.3" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html#finding-a-word-on-a-page"><i class="fa fa-check"></i><b>19.0.3</b> Finding a word on a page</a></li>
+<li class="chapter" data-level="19.0.4" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html#text-formatting-shortcuts"><i class="fa fa-check"></i><b>19.0.4</b> Text formatting shortcuts</a></li>
+<li class="chapter" data-level="19.0.5" data-path="chromebook-shortcuts.html"><a href="chromebook-shortcuts.html#slides-and-video-17"><i class="fa fa-check"></i><b>19.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="where-are-files-stored.html"><a href="where-are-files-stored.html"><i class="fa fa-check"></i><b>20</b> Where Are Files Stored?</a>
+<ul>
+<li class="chapter" data-level="20.0.1" data-path="where-are-files-stored.html"><a href="where-are-files-stored.html#where-is-the-local-storage"><i class="fa fa-check"></i><b>20.0.1</b> Where is the local storage?</a></li>
+<li class="chapter" data-level="20.0.2" data-path="where-are-files-stored.html"><a href="where-are-files-stored.html#slides-and-video-18"><i class="fa fa-check"></i><b>20.0.2</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="working-offline.html"><a href="working-offline.html"><i class="fa fa-check"></i><b>21</b> Working Offline</a>
+<ul>
+<li class="chapter" data-level="21.0.1" data-path="working-offline.html"><a href="working-offline.html#google-drive"><i class="fa fa-check"></i><b>21.0.1</b> Google Drive</a></li>
+<li class="chapter" data-level="21.0.2" data-path="working-offline.html"><a href="working-offline.html#example-editing-a-text-file-offline"><i class="fa fa-check"></i><b>21.0.2</b> Example: editing a text file offline</a></li>
+<li class="chapter" data-level="21.0.3" data-path="working-offline.html"><a href="working-offline.html#offline-apps"><i class="fa fa-check"></i><b>21.0.3</b> Offline Apps</a></li>
+<li class="chapter" data-level="21.0.4" data-path="working-offline.html"><a href="working-offline.html#slides-and-video-19"><i class="fa fa-check"></i><b>21.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="chromebook-security.html"><a href="chromebook-security.html"><i class="fa fa-check"></i><b>22</b> Chromebook Security</a>
+<ul>
+<li class="chapter" data-level="22.0.1" data-path="chromebook-security.html"><a href="chromebook-security.html#setting-your-chromebook-password"><i class="fa fa-check"></i><b>22.0.1</b> Setting your Chromebook password</a></li>
+<li class="chapter" data-level="22.0.2" data-path="chromebook-security.html"><a href="chromebook-security.html#requiring-password-to-wake-from-sleep"><i class="fa fa-check"></i><b>22.0.2</b> Requiring password to wake from sleep</a></li>
+<li class="chapter" data-level="22.0.3" data-path="chromebook-security.html"><a href="chromebook-security.html#managing-other-people"><i class="fa fa-check"></i><b>22.0.3</b> Managing other people</a></li>
+<li class="chapter" data-level="22.0.4" data-path="chromebook-security.html"><a href="chromebook-security.html#two-step-verification"><i class="fa fa-check"></i><b>22.0.4</b> Two step verification</a></li>
+<li class="chapter" data-level="22.0.5" data-path="chromebook-security.html"><a href="chromebook-security.html#managing-apps-and-devices"><i class="fa fa-check"></i><b>22.0.5</b> Managing apps and devices</a></li>
+<li class="chapter" data-level="22.0.6" data-path="chromebook-security.html"><a href="chromebook-security.html#slides-and-video-20"><i class="fa fa-check"></i><b>22.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="printing-with-a-chromebook.html"><a href="printing-with-a-chromebook.html"><i class="fa fa-check"></i><b>23</b> Printing with a Chromebook</a>
+<ul>
+<li class="chapter" data-level="23.0.1" data-path="printing-with-a-chromebook.html"><a href="printing-with-a-chromebook.html#slides-and-video-21"><i class="fa fa-check"></i><b>23.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html"><i class="fa fa-check"></i><b>24</b> Projecting from a Chromebook</a>
+<ul>
+<li class="chapter" data-level="24.0.1" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#finding-the-right-dongle"><i class="fa fa-check"></i><b>24.0.1</b> Finding the right dongle</a></li>
+<li class="chapter" data-level="24.0.2" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#projecting-from-your-chromebook"><i class="fa fa-check"></i><b>24.0.2</b> Projecting from your Chromebook</a></li>
+<li class="chapter" data-level="24.0.3" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#slides-and-video-22"><i class="fa fa-check"></i><b>24.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="useful-applications.html"><a href="useful-applications.html"><i class="fa fa-check"></i><b>25</b> Useful Applications</a>
+<ul>
+<li class="chapter" data-level="25.0.1" data-path="useful-applications.html"><a href="useful-applications.html#basecamp"><i class="fa fa-check"></i><b>25.0.1</b> Basecamp</a></li>
+<li class="chapter" data-level="25.0.2" data-path="useful-applications.html"><a href="useful-applications.html#google-calendar"><i class="fa fa-check"></i><b>25.0.2</b> Google Calendar</a></li>
+<li class="chapter" data-level="25.0.3" data-path="useful-applications.html"><a href="useful-applications.html#wunderlist"><i class="fa fa-check"></i><b>25.0.3</b> Wunderlist</a></li>
+<li class="chapter" data-level="25.0.4" data-path="useful-applications.html"><a href="useful-applications.html#tweetdeck"><i class="fa fa-check"></i><b>25.0.4</b> Tweetdeck</a></li>
+<li class="chapter" data-level="25.0.5" data-path="useful-applications.html"><a href="useful-applications.html#evernote"><i class="fa fa-check"></i><b>25.0.5</b> Evernote</a></li>
+<li class="chapter" data-level="25.0.6" data-path="useful-applications.html"><a href="useful-applications.html#swirl"><i class="fa fa-check"></i><b>25.0.6</b> Swirl</a></li>
+<li class="chapter" data-level="25.0.7" data-path="useful-applications.html"><a href="useful-applications.html#dochub"><i class="fa fa-check"></i><b>25.0.7</b> DocHub</a></li>
+<li class="chapter" data-level="25.0.8" data-path="useful-applications.html"><a href="useful-applications.html#slides-and-video-23"><i class="fa fa-check"></i><b>25.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="26" data-path="updating-your-chromebook.html"><a href="updating-your-chromebook.html"><i class="fa fa-check"></i><b>26</b> Updating your Chromebook</a>
+<ul>
+<li class="chapter" data-level="26.0.1" data-path="updating-your-chromebook.html"><a href="updating-your-chromebook.html#steps-to-update"><i class="fa fa-check"></i><b>26.0.1</b> Steps to Update</a></li>
+<li class="chapter" data-level="26.0.2" data-path="updating-your-chromebook.html"><a href="updating-your-chromebook.html#slides-and-video-24"><i class="fa fa-check"></i><b>26.0.2</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="27" data-path="what-is-the-cloud.html"><a href="what-is-the-cloud.html"><i class="fa fa-check"></i><b>27</b> What is the cloud</a>
+<ul>
+<li class="chapter" data-level="27.0.1" data-path="what-is-the-cloud.html"><a href="what-is-the-cloud.html#cloud-computing"><i class="fa fa-check"></i><b>27.0.1</b> Cloud computing</a></li>
+<li class="chapter" data-level="27.0.2" data-path="what-is-the-cloud.html"><a href="what-is-the-cloud.html#what-are-the-advantages-of-using-the-cloud"><i class="fa fa-check"></i><b>27.0.2</b> What are the advantages of using the cloud?</a></li>
+<li class="chapter" data-level="27.0.3" data-path="what-is-the-cloud.html"><a href="what-is-the-cloud.html#what-are-the-disadvantages-of-using-the-cloud"><i class="fa fa-check"></i><b>27.0.3</b> What are the disadvantages of using the cloud?</a></li>
+<li class="chapter" data-level="27.0.4" data-path="what-is-the-cloud.html"><a href="what-is-the-cloud.html#slides-and-video-25"><i class="fa fa-check"></i><b>27.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="28" data-path="using-gmail-for-email-communications.html"><a href="using-gmail-for-email-communications.html"><i class="fa fa-check"></i><b>28</b> Using Gmail for Email Communications</a>
+<ul>
+<li class="chapter" data-level="28.0.1" data-path="using-gmail-for-email-communications.html"><a href="using-gmail-for-email-communications.html#accessing-your-gmail-inbox"><i class="fa fa-check"></i><b>28.0.1</b> Accessing your Gmail Inbox</a></li>
+<li class="chapter" data-level="28.0.2" data-path="using-gmail-for-email-communications.html"><a href="using-gmail-for-email-communications.html#composing-and-sending-emails"><i class="fa fa-check"></i><b>28.0.2</b> Composing and Sending Emails</a></li>
+<li class="chapter" data-level="28.0.3" data-path="using-gmail-for-email-communications.html"><a href="using-gmail-for-email-communications.html#replying-to-a-message"><i class="fa fa-check"></i><b>28.0.3</b> Replying to a message</a></li>
+<li class="chapter" data-level="28.0.4" data-path="using-gmail-for-email-communications.html"><a href="using-gmail-for-email-communications.html#searching-for-specific-messages"><i class="fa fa-check"></i><b>28.0.4</b> Searching for specific messages</a></li>
+<li class="chapter" data-level="28.0.5" data-path="using-gmail-for-email-communications.html"><a href="using-gmail-for-email-communications.html#more-specifics-on-using-gmail"><i class="fa fa-check"></i><b>28.0.5</b> More specifics on using Gmail</a></li>
+<li class="chapter" data-level="28.0.6" data-path="using-gmail-for-email-communications.html"><a href="using-gmail-for-email-communications.html#slides-and-video-26"><i class="fa fa-check"></i><b>28.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="29" data-path="google-calendar-1.html"><a href="google-calendar-1.html"><i class="fa fa-check"></i><b>29</b> Google Calendar</a>
+<ul>
+<li class="chapter" data-level="29.0.1" data-path="google-calendar-1.html"><a href="google-calendar-1.html#accessing-your-google-calendar"><i class="fa fa-check"></i><b>29.0.1</b> Accessing your Google Calendar</a></li>
+<li class="chapter" data-level="29.0.2" data-path="google-calendar-1.html"><a href="google-calendar-1.html#scheduling-and-editing-events"><i class="fa fa-check"></i><b>29.0.2</b> Scheduling and editing events</a></li>
+<li class="chapter" data-level="29.0.3" data-path="google-calendar-1.html"><a href="google-calendar-1.html#adding-reminders-to-your-events"><i class="fa fa-check"></i><b>29.0.3</b> Adding reminders to your events</a></li>
+<li class="chapter" data-level="29.0.4" data-path="google-calendar-1.html"><a href="google-calendar-1.html#creating-and-editing-calendars"><i class="fa fa-check"></i><b>29.0.4</b> Creating and editing calendars</a></li>
+<li class="chapter" data-level="29.0.5" data-path="google-calendar-1.html"><a href="google-calendar-1.html#more-specifics-on-using-google-calendar"><i class="fa fa-check"></i><b>29.0.5</b> More specifics on using Google Calendar</a></li>
+<li class="chapter" data-level="29.0.6" data-path="google-calendar-1.html"><a href="google-calendar-1.html#slides-and-video-27"><i class="fa fa-check"></i><b>29.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="30" data-path="google-drive-1.html"><a href="google-drive-1.html"><i class="fa fa-check"></i><b>30</b> Google Drive</a>
+<ul>
+<li class="chapter" data-level="30.0.1" data-path="google-drive-1.html"><a href="google-drive-1.html#accessing-your-google-drive-account"><i class="fa fa-check"></i><b>30.0.1</b> Accessing your Google Drive account</a></li>
+<li class="chapter" data-level="30.0.2" data-path="google-drive-1.html"><a href="google-drive-1.html#organizing-files-in-google-drive"><i class="fa fa-check"></i><b>30.0.2</b> Organizing files in Google Drive</a></li>
+<li class="chapter" data-level="30.0.3" data-path="google-drive-1.html"><a href="google-drive-1.html#creating-files-in-google-drive"><i class="fa fa-check"></i><b>30.0.3</b> Creating files in Google Drive</a></li>
+<li class="chapter" data-level="30.0.4" data-path="google-drive-1.html"><a href="google-drive-1.html#uploading-files-to-google-drive"><i class="fa fa-check"></i><b>30.0.4</b> Uploading files to Google Drive</a></li>
+<li class="chapter" data-level="30.0.5" data-path="google-drive-1.html"><a href="google-drive-1.html#deleting-files-and-folders"><i class="fa fa-check"></i><b>30.0.5</b> Deleting Files and folders</a></li>
+<li class="chapter" data-level="30.0.6" data-path="google-drive-1.html"><a href="google-drive-1.html#file-recovery"><i class="fa fa-check"></i><b>30.0.6</b> File Recovery</a></li>
+<li class="chapter" data-level="30.0.7" data-path="google-drive-1.html"><a href="google-drive-1.html#file-sharing"><i class="fa fa-check"></i><b>30.0.7</b> File Sharing</a></li>
+<li class="chapter" data-level="30.0.8" data-path="google-drive-1.html"><a href="google-drive-1.html#working-offline-1"><i class="fa fa-check"></i><b>30.0.8</b> Working Offline</a></li>
+<li class="chapter" data-level="30.0.9" data-path="google-drive-1.html"><a href="google-drive-1.html#storage-limit"><i class="fa fa-check"></i><b>30.0.9</b> Storage limit</a></li>
+<li class="chapter" data-level="30.0.10" data-path="google-drive-1.html"><a href="google-drive-1.html#security"><i class="fa fa-check"></i><b>30.0.10</b> Security</a></li>
+<li class="chapter" data-level="30.0.11" data-path="google-drive-1.html"><a href="google-drive-1.html#more-specifics-on-using-google-drive"><i class="fa fa-check"></i><b>30.0.11</b> More specifics on using Google Drive</a></li>
+<li class="chapter" data-level="30.0.12" data-path="google-drive-1.html"><a href="google-drive-1.html#slides-and-video-28"><i class="fa fa-check"></i><b>30.0.12</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="31" data-path="google-docs-1.html"><a href="google-docs-1.html"><i class="fa fa-check"></i><b>31</b> Google Docs</a>
+<ul>
+<li class="chapter" data-level="31.0.1" data-path="google-docs-1.html"><a href="google-docs-1.html#auto-save-feature-and-working-offline"><i class="fa fa-check"></i><b>31.0.1</b> Auto-save feature and working offline</a></li>
+<li class="chapter" data-level="31.0.2" data-path="google-docs-1.html"><a href="google-docs-1.html#working-in-google-docs"><i class="fa fa-check"></i><b>31.0.2</b> Working in Google Docs</a></li>
+<li class="chapter" data-level="31.0.3" data-path="google-docs-1.html"><a href="google-docs-1.html#renaming-your-document"><i class="fa fa-check"></i><b>31.0.3</b> Renaming Your Document</a></li>
+<li class="chapter" data-level="31.0.4" data-path="google-docs-1.html"><a href="google-docs-1.html#download-documents-in-different-formats"><i class="fa fa-check"></i><b>31.0.4</b> Download documents in different formats</a></li>
+<li class="chapter" data-level="31.0.5" data-path="google-docs-1.html"><a href="google-docs-1.html#more-specifics-on-using-google-docs"><i class="fa fa-check"></i><b>31.0.5</b> More specifics on using Google Docs</a></li>
+<li class="chapter" data-level="31.0.6" data-path="google-docs-1.html"><a href="google-docs-1.html#additional-resources"><i class="fa fa-check"></i><b>31.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="31.0.7" data-path="google-docs-1.html"><a href="google-docs-1.html#slides-and-video-29"><i class="fa fa-check"></i><b>31.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="32" data-path="google-sheets-1.html"><a href="google-sheets-1.html"><i class="fa fa-check"></i><b>32</b> Google Sheets</a>
+<ul>
+<li class="chapter" data-level="32.0.1" data-path="google-sheets-1.html"><a href="google-sheets-1.html#entering-data"><i class="fa fa-check"></i><b>32.0.1</b> Entering Data</a></li>
+<li class="chapter" data-level="32.0.2" data-path="google-sheets-1.html"><a href="google-sheets-1.html#formatting-the-google-sheet"><i class="fa fa-check"></i><b>32.0.2</b> Formatting the Google Sheet</a></li>
+<li class="chapter" data-level="32.0.3" data-path="google-sheets-1.html"><a href="google-sheets-1.html#inserting-deleting-and-moving"><i class="fa fa-check"></i><b>32.0.3</b> Inserting, Deleting, and Moving</a></li>
+<li class="chapter" data-level="32.0.4" data-path="google-sheets-1.html"><a href="google-sheets-1.html#freezing-rows-and-columns"><i class="fa fa-check"></i><b>32.0.4</b> Freezing rows and columns</a></li>
+<li class="chapter" data-level="32.0.5" data-path="google-sheets-1.html"><a href="google-sheets-1.html#wrapping-text"><i class="fa fa-check"></i><b>32.0.5</b> Wrapping text</a></li>
+<li class="chapter" data-level="32.0.6" data-path="google-sheets-1.html"><a href="google-sheets-1.html#creating-multiple-sheets"><i class="fa fa-check"></i><b>32.0.6</b> Creating Multiple Sheets</a></li>
+<li class="chapter" data-level="32.0.7" data-path="google-sheets-1.html"><a href="google-sheets-1.html#a-note-on-merging-cells"><i class="fa fa-check"></i><b>32.0.7</b> A note on merging cells</a></li>
+<li class="chapter" data-level="32.0.8" data-path="google-sheets-1.html"><a href="google-sheets-1.html#accessing-downloading-and-sharing-your-spreadsheets"><i class="fa fa-check"></i><b>32.0.8</b> Accessing, downloading, and sharing your spreadsheets</a></li>
+<li class="chapter" data-level="32.0.9" data-path="google-sheets-1.html"><a href="google-sheets-1.html#more-specifics-on-using-google-sheets"><i class="fa fa-check"></i><b>32.0.9</b> More specifics on using Google Sheets</a></li>
+<li class="chapter" data-level="32.0.10" data-path="google-sheets-1.html"><a href="google-sheets-1.html#additional-resources-1"><i class="fa fa-check"></i><b>32.0.10</b> Additional resources:</a></li>
+<li class="chapter" data-level="32.0.11" data-path="google-sheets-1.html"><a href="google-sheets-1.html#slides-and-video-30"><i class="fa fa-check"></i><b>32.0.11</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="33" data-path="google-slides-1.html"><a href="google-slides-1.html"><i class="fa fa-check"></i><b>33</b> Google Slides</a>
+<ul>
+<li class="chapter" data-level="33.0.1" data-path="google-slides-1.html"><a href="google-slides-1.html#presentation-guidelines-1"><i class="fa fa-check"></i><b>33.0.1</b> Presentation Guidelines</a></li>
+<li class="chapter" data-level="33.0.2" data-path="google-slides-1.html"><a href="google-slides-1.html#accessing-google-slides"><i class="fa fa-check"></i><b>33.0.2</b> Accessing Google Slides</a></li>
+<li class="chapter" data-level="33.0.3" data-path="google-slides-1.html"><a href="google-slides-1.html#creating-a-full-slideshow"><i class="fa fa-check"></i><b>33.0.3</b> Creating a Full Slideshow</a></li>
+<li class="chapter" data-level="33.0.4" data-path="google-slides-1.html"><a href="google-slides-1.html#presenting-your-slideshow"><i class="fa fa-check"></i><b>33.0.4</b> Presenting Your Slideshow</a></li>
+<li class="chapter" data-level="33.0.5" data-path="google-slides-1.html"><a href="google-slides-1.html#accessing-downloading-and-sharing-your-slides"><i class="fa fa-check"></i><b>33.0.5</b> Accessing, downloading, and sharing your slides</a></li>
+<li class="chapter" data-level="33.0.6" data-path="google-slides-1.html"><a href="google-slides-1.html#more-specifics-on-using-google-slides"><i class="fa fa-check"></i><b>33.0.6</b> More specifics on using Google Slides</a></li>
+<li class="chapter" data-level="33.0.7" data-path="google-slides-1.html"><a href="google-slides-1.html#additional-resources-2"><i class="fa fa-check"></i><b>33.0.7</b> Additional Resources</a></li>
+<li class="chapter" data-level="33.0.8" data-path="google-slides-1.html"><a href="google-slides-1.html#slides-and-video-31"><i class="fa fa-check"></i><b>33.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="34" data-path="google-hangouts.html"><a href="google-hangouts.html"><i class="fa fa-check"></i><b>34</b> Google Hangouts</a>
+<ul>
+<li class="chapter" data-level="34.0.1" data-path="google-hangouts.html"><a href="google-hangouts.html#accessing-your-google-hangouts-account"><i class="fa fa-check"></i><b>34.0.1</b> Accessing your Google Hangouts account</a></li>
+<li class="chapter" data-level="34.0.2" data-path="google-hangouts.html"><a href="google-hangouts.html#video-chats"><i class="fa fa-check"></i><b>34.0.2</b> Video chats</a></li>
+<li class="chapter" data-level="34.0.3" data-path="google-hangouts.html"><a href="google-hangouts.html#phone-calls"><i class="fa fa-check"></i><b>34.0.3</b> Phone calls</a></li>
+<li class="chapter" data-level="34.0.4" data-path="google-hangouts.html"><a href="google-hangouts.html#messaging"><i class="fa fa-check"></i><b>34.0.4</b> Messaging</a></li>
+<li class="chapter" data-level="34.0.5" data-path="google-hangouts.html"><a href="google-hangouts.html#group-conversations"><i class="fa fa-check"></i><b>34.0.5</b> Group conversations</a></li>
+<li class="chapter" data-level="34.0.6" data-path="google-hangouts.html"><a href="google-hangouts.html#more-specifics-on-using-google-hangouts"><i class="fa fa-check"></i><b>34.0.6</b> More specifics on using Google Hangouts</a></li>
+<li class="chapter" data-level="34.0.7" data-path="google-hangouts.html"><a href="google-hangouts.html#slides-and-video-32"><i class="fa fa-check"></i><b>34.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="35" data-path="youtube.html"><a href="youtube.html"><i class="fa fa-check"></i><b>35</b> YouTube</a>
+<ul>
+<li class="chapter" data-level="35.0.1" data-path="youtube.html"><a href="youtube.html#accessing-youtube"><i class="fa fa-check"></i><b>35.0.1</b> Accessing YouTube</a></li>
+<li class="chapter" data-level="35.0.2" data-path="youtube.html"><a href="youtube.html#finding-videos"><i class="fa fa-check"></i><b>35.0.2</b> Finding videos</a></li>
+<li class="chapter" data-level="35.0.3" data-path="youtube.html"><a href="youtube.html#data-science-on-youtube"><i class="fa fa-check"></i><b>35.0.3</b> Data science on YouTube</a></li>
+<li class="chapter" data-level="35.0.4" data-path="youtube.html"><a href="youtube.html#how-to-save-videos-to-watch-later"><i class="fa fa-check"></i><b>35.0.4</b> How to save videos to watch later</a></li>
+<li class="chapter" data-level="35.0.5" data-path="youtube.html"><a href="youtube.html#slides-and-video-33"><i class="fa fa-check"></i><b>35.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="36" data-path="slack.html"><a href="slack.html"><i class="fa fa-check"></i><b>36</b> Slack</a>
+<ul>
+<li class="chapter" data-level="36.0.1" data-path="slack.html"><a href="slack.html#how-to-access-slack"><i class="fa fa-check"></i><b>36.0.1</b> How to Access Slack?</a></li>
+<li class="chapter" data-level="36.0.2" data-path="slack.html"><a href="slack.html#slack-is-organized-into-teams-and-projects"><i class="fa fa-check"></i><b>36.0.2</b> Slack is organized into teams and projects</a></li>
+<li class="chapter" data-level="36.0.3" data-path="slack.html"><a href="slack.html#creating-a-team"><i class="fa fa-check"></i><b>36.0.3</b> Creating a team</a></li>
+<li class="chapter" data-level="36.0.4" data-path="slack.html"><a href="slack.html#channels"><i class="fa fa-check"></i><b>36.0.4</b> Channels</a></li>
+<li class="chapter" data-level="36.0.5" data-path="slack.html"><a href="slack.html#joining-a-team"><i class="fa fa-check"></i><b>36.0.5</b> Joining a team</a></li>
+<li class="chapter" data-level="36.0.6" data-path="slack.html"><a href="slack.html#slack-can-work-with-other-tools"><i class="fa fa-check"></i><b>36.0.6</b> Slack can work with other tools</a></li>
+<li class="chapter" data-level="36.0.7" data-path="slack.html"><a href="slack.html#cost-of-slack"><i class="fa fa-check"></i><b>36.0.7</b> Cost of Slack</a></li>
+<li class="chapter" data-level="36.0.8" data-path="slack.html"><a href="slack.html#slides-and-video-34"><i class="fa fa-check"></i><b>36.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="37" data-path="basecamp-1.html"><a href="basecamp-1.html"><i class="fa fa-check"></i><b>37</b> BaseCamp</a></li>
+<li class="chapter" data-level="38" data-path="what-is-r.html"><a href="what-is-r.html"><i class="fa fa-check"></i><b>38</b> What is R?</a>
+<ul>
+<li class="chapter" data-level="38.0.1" data-path="what-is-r.html"><a href="what-is-r.html#introduction-to-r"><i class="fa fa-check"></i><b>38.0.1</b> Introduction to R</a></li>
+<li class="chapter" data-level="38.0.2" data-path="what-is-r.html"><a href="what-is-r.html#rstudio"><i class="fa fa-check"></i><b>38.0.2</b> RStudio</a></li>
+<li class="chapter" data-level="38.0.3" data-path="what-is-r.html"><a href="what-is-r.html#rstudio-cloud-1"><i class="fa fa-check"></i><b>38.0.3</b> RStudio Cloud</a></li>
+<li class="chapter" data-level="38.0.4" data-path="what-is-r.html"><a href="what-is-r.html#basic-history"><i class="fa fa-check"></i><b>38.0.4</b> Basic History</a></li>
+<li class="chapter" data-level="38.0.5" data-path="what-is-r.html"><a href="what-is-r.html#learning-r"><i class="fa fa-check"></i><b>38.0.5</b> Learning R</a></li>
+<li class="chapter" data-level="38.0.6" data-path="what-is-r.html"><a href="what-is-r.html#slides-and-video-35"><i class="fa fa-check"></i><b>38.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="39" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html"><i class="fa fa-check"></i><b>39</b> RStudio and Projects</a>
+<ul>
+<li class="chapter" data-level="39.0.1" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#logging-in-to-rstudio-cloud"><i class="fa fa-check"></i><b>39.0.1</b> Logging in to RStudio Cloud</a></li>
+<li class="chapter" data-level="39.0.2" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#getting-started-in-rstudio-cloud"><i class="fa fa-check"></i><b>39.0.2</b> Getting Started in RStudio Cloud</a></li>
+<li class="chapter" data-level="39.0.3" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#the-tour"><i class="fa fa-check"></i><b>39.0.3</b> The Tour</a></li>
+<li class="chapter" data-level="39.0.4" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#source-script-editor-panel"><i class="fa fa-check"></i><b>39.0.4</b> Source: script editor panel</a></li>
+<li class="chapter" data-level="39.0.5" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#fileshelpplotspackagesviewer"><i class="fa fa-check"></i><b>39.0.5</b> Files/Help/Plots/Packages/Viewer</a></li>
+<li class="chapter" data-level="39.0.6" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#swirl-1"><i class="fa fa-check"></i><b>39.0.6</b> Swirl</a></li>
+<li class="chapter" data-level="39.0.7" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#summary-1"><i class="fa fa-check"></i><b>39.0.7</b> Summary</a></li>
+<li class="chapter" data-level="39.0.8" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#slides-and-video-36"><i class="fa fa-check"></i><b>39.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="40" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html"><i class="fa fa-check"></i><b>40</b> Managing Files in the Terminal</a>
+<ul>
+<li class="chapter" data-level="40.0.1" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#what-is-the-terminal"><i class="fa fa-check"></i><b>40.0.1</b> What is the Terminal?</a></li>
+<li class="chapter" data-level="40.0.2" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#why-manage-files-in-the-terminal"><i class="fa fa-check"></i><b>40.0.2</b> Why manage files in the Terminal?</a></li>
+<li class="chapter" data-level="40.0.3" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#file-system-example-and-vocabulary"><i class="fa fa-check"></i><b>40.0.3</b> File system example and vocabulary</a></li>
+<li class="chapter" data-level="40.0.4" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#important-commands"><i class="fa fa-check"></i><b>40.0.4</b> Important commands</a></li>
+<li class="chapter" data-level="40.0.5" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#summary-2"><i class="fa fa-check"></i><b>40.0.5</b> Summary</a></li>
+<li class="chapter" data-level="40.0.6" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#additional-resources-3"><i class="fa fa-check"></i><b>40.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="40.0.7" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#slides-and-video-37"><i class="fa fa-check"></i><b>40.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="41" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html"><i class="fa fa-check"></i><b>41</b> Managing Files in R</a>
+<ul>
+<li class="chapter" data-level="41.0.1" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#why-manage-files-in-r"><i class="fa fa-check"></i><b>41.0.1</b> Why manage files in R?</a></li>
+<li class="chapter" data-level="41.0.2" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#navigating-to-r-in-rstudio-cloud"><i class="fa fa-check"></i><b>41.0.2</b> Navigating to R in RStudio Cloud</a></li>
+<li class="chapter" data-level="41.0.3" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#file-system-setup"><i class="fa fa-check"></i><b>41.0.3</b> File system setup</a></li>
+<li class="chapter" data-level="41.0.4" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#important-functions"><i class="fa fa-check"></i><b>41.0.4</b> Important functions</a></li>
+<li class="chapter" data-level="41.0.5" data-path="managing-files-in-r.html"><a href="managing-files-in-r.html#slides-and-video-38"><i class="fa fa-check"></i><b>41.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="42" data-path="r-packages.html"><a href="r-packages.html"><i class="fa fa-check"></i><b>42</b> R Packages</a>
+<ul>
+<li class="chapter" data-level="42.0.1" data-path="r-packages.html"><a href="r-packages.html#what-is-an-r-package"><i class="fa fa-check"></i><b>42.0.1</b> What is an R package?</a></li>
+<li class="chapter" data-level="42.0.2" data-path="r-packages.html"><a href="r-packages.html#what-are-repositories"><i class="fa fa-check"></i><b>42.0.2</b> What are repositories?</a></li>
+<li class="chapter" data-level="42.0.3" data-path="r-packages.html"><a href="r-packages.html#how-do-you-know-what-package-is-right-for-you"><i class="fa fa-check"></i><b>42.0.3</b> How do you know what package is right for you?</a></li>
+<li class="chapter" data-level="42.0.4" data-path="r-packages.html"><a href="r-packages.html#how-do-you-install-packages"><i class="fa fa-check"></i><b>42.0.4</b> How do you install packages?</a></li>
+<li class="chapter" data-level="42.0.5" data-path="r-packages.html"><a href="r-packages.html#loading-packages"><i class="fa fa-check"></i><b>42.0.5</b> Loading packages</a></li>
+<li class="chapter" data-level="42.0.6" data-path="r-packages.html"><a href="r-packages.html#updating-removing-unloading-packages"><i class="fa fa-check"></i><b>42.0.6</b> Updating, removing, unloading packages</a></li>
+<li class="chapter" data-level="42.0.7" data-path="r-packages.html"><a href="r-packages.html#using-the-commands-in-a-function"><i class="fa fa-check"></i><b>42.0.7</b> Using the commands in a function</a></li>
+<li class="chapter" data-level="42.0.8" data-path="r-packages.html"><a href="r-packages.html#summary-3"><i class="fa fa-check"></i><b>42.0.8</b> Summary</a></li>
+<li class="chapter" data-level="42.0.9" data-path="r-packages.html"><a href="r-packages.html#additional-resources-4"><i class="fa fa-check"></i><b>42.0.9</b> Additional Resources</a></li>
+<li class="chapter" data-level="42.0.10" data-path="r-packages.html"><a href="r-packages.html#slides-and-video-39"><i class="fa fa-check"></i><b>42.0.10</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="43" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html"><i class="fa fa-check"></i><b>43</b> Basic Commands in R</a>
+<ul>
+<li class="chapter" data-level="43.0.1" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#functions"><i class="fa fa-check"></i><b>43.0.1</b> Functions</a></li>
+<li class="chapter" data-level="43.0.2" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#what-is-this-object"><i class="fa fa-check"></i><b>43.0.2</b> What is this object?</a></li>
+<li class="chapter" data-level="43.0.3" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#how-big-is-this-object"><i class="fa fa-check"></i><b>43.0.3</b> How big is this object?</a></li>
+<li class="chapter" data-level="43.0.4" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#are-there-named-features-of-this-object"><i class="fa fa-check"></i><b>43.0.4</b> Are there named features of this object?</a></li>
+<li class="chapter" data-level="43.0.5" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#what-does-this-object-look-like"><i class="fa fa-check"></i><b>43.0.5</b> What does this object look like?</a></li>
+<li class="chapter" data-level="43.0.6" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#errors-warnings-and-messages"><i class="fa fa-check"></i><b>43.0.6</b> Errors, Warnings, and Messages</a></li>
+<li class="chapter" data-level="43.0.7" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#summary-4"><i class="fa fa-check"></i><b>43.0.7</b> Summary</a></li>
+<li class="chapter" data-level="43.0.8" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#slides-and-video-40"><i class="fa fa-check"></i><b>43.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="44" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html"><i class="fa fa-check"></i><b>44</b> Getting Help in R</a>
+<ul>
+<li class="chapter" data-level="44.0.1" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#r-help"><i class="fa fa-check"></i><b>44.0.1</b> R Help: <code>?</code></a></li>
+<li class="chapter" data-level="44.0.2" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#debugging-code"><i class="fa fa-check"></i><b>44.0.2</b> Debugging code</a></li>
+<li class="chapter" data-level="44.0.3" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#tips-on-asking-questions"><i class="fa fa-check"></i><b>44.0.3</b> Tips on asking questions!</a></li>
+<li class="chapter" data-level="44.0.4" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#summary-5"><i class="fa fa-check"></i><b>44.0.4</b> Summary</a></li>
+<li class="chapter" data-level="44.0.5" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#additional-community-resources"><i class="fa fa-check"></i><b>44.0.5</b> Additional Community Resources</a></li>
+<li class="chapter" data-level="44.0.6" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#slides-and-video-41"><i class="fa fa-check"></i><b>44.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="45" data-path="objects-in-r.html"><a href="objects-in-r.html"><i class="fa fa-check"></i><b>45</b> Objects in R</a>
+<ul>
+<li class="chapter" data-level="45.0.1" data-path="objects-in-r.html"><a href="objects-in-r.html#what-is-an-object"><i class="fa fa-check"></i><b>45.0.1</b> What is an object?</a></li>
+<li class="chapter" data-level="45.0.2" data-path="objects-in-r.html"><a href="objects-in-r.html#storing-objects"><i class="fa fa-check"></i><b>45.0.2</b> Storing objects</a></li>
+<li class="chapter" data-level="45.0.3" data-path="objects-in-r.html"><a href="objects-in-r.html#printing-objects"><i class="fa fa-check"></i><b>45.0.3</b> Printing objects</a></li>
+<li class="chapter" data-level="45.0.4" data-path="objects-in-r.html"><a href="objects-in-r.html#character"><i class="fa fa-check"></i><b>45.0.4</b> Character</a></li>
+<li class="chapter" data-level="45.0.5" data-path="objects-in-r.html"><a href="objects-in-r.html#integer"><i class="fa fa-check"></i><b>45.0.5</b> Integer</a></li>
+<li class="chapter" data-level="45.0.6" data-path="objects-in-r.html"><a href="objects-in-r.html#numeric"><i class="fa fa-check"></i><b>45.0.6</b> Numeric</a></li>
+<li class="chapter" data-level="45.0.7" data-path="objects-in-r.html"><a href="objects-in-r.html#logical"><i class="fa fa-check"></i><b>45.0.7</b> Logical</a></li>
+<li class="chapter" data-level="45.0.8" data-path="objects-in-r.html"><a href="objects-in-r.html#factor"><i class="fa fa-check"></i><b>45.0.8</b> Factor</a></li>
+<li class="chapter" data-level="45.0.9" data-path="objects-in-r.html"><a href="objects-in-r.html#data-frames"><i class="fa fa-check"></i><b>45.0.9</b> Data frames</a></li>
+<li class="chapter" data-level="45.0.10" data-path="objects-in-r.html"><a href="objects-in-r.html#missing-values"><i class="fa fa-check"></i><b>45.0.10</b> Missing values</a></li>
+<li class="chapter" data-level="45.0.11" data-path="objects-in-r.html"><a href="objects-in-r.html#determining-the-class-of-an-object"><i class="fa fa-check"></i><b>45.0.11</b> Determining the class of an object</a></li>
+<li class="chapter" data-level="45.0.12" data-path="objects-in-r.html"><a href="objects-in-r.html#summary-6"><i class="fa fa-check"></i><b>45.0.12</b> Summary</a></li>
+<li class="chapter" data-level="45.0.13" data-path="objects-in-r.html"><a href="objects-in-r.html#slides-and-video-42"><i class="fa fa-check"></i><b>45.0.13</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="46" data-path="working-with-logicals.html"><a href="working-with-logicals.html"><i class="fa fa-check"></i><b>46</b> Working with Logicals</a>
+<ul>
+<li class="chapter" data-level="46.0.1" data-path="working-with-logicals.html"><a href="working-with-logicals.html#logical-operators"><i class="fa fa-check"></i><b>46.0.1</b> Logical operators</a></li>
+<li class="chapter" data-level="46.0.2" data-path="working-with-logicals.html"><a href="working-with-logicals.html#logical-functions"><i class="fa fa-check"></i><b>46.0.2</b> Logical functions</a></li>
+<li class="chapter" data-level="46.0.3" data-path="working-with-logicals.html"><a href="working-with-logicals.html#summary-7"><i class="fa fa-check"></i><b>46.0.3</b> Summary</a></li>
+<li class="chapter" data-level="46.0.4" data-path="working-with-logicals.html"><a href="working-with-logicals.html#slides-and-video-43"><i class="fa fa-check"></i><b>46.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="47" data-path="data-frames-1.html"><a href="data-frames-1.html"><i class="fa fa-check"></i><b>47</b> Data Frames</a>
+<ul>
+<li class="chapter" data-level="47.0.1" data-path="data-frames-1.html"><a href="data-frames-1.html#slides-and-video-44"><i class="fa fa-check"></i><b>47.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="48" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>48</b> R Markdown</a>
+<ul>
+<li class="chapter" data-level="48.0.1" data-path="r-markdown.html"><a href="r-markdown.html#what-is-r-markdown"><i class="fa fa-check"></i><b>48.0.1</b> What is R Markdown?</a></li>
+<li class="chapter" data-level="48.0.2" data-path="r-markdown.html"><a href="r-markdown.html#why-use-r-markdown"><i class="fa fa-check"></i><b>48.0.2</b> Why use R Markdown?</a></li>
+<li class="chapter" data-level="48.0.3" data-path="r-markdown.html"><a href="r-markdown.html#getting-started-with-r-markdown"><i class="fa fa-check"></i><b>48.0.3</b> Getting started with R Markdown</a></li>
+<li class="chapter" data-level="48.0.4" data-path="r-markdown.html"><a href="r-markdown.html#knitting-documents"><i class="fa fa-check"></i><b>48.0.4</b> “Knitting” documents</a></li>
+<li class="chapter" data-level="48.0.5" data-path="r-markdown.html"><a href="r-markdown.html#summary-8"><i class="fa fa-check"></i><b>48.0.5</b> Summary</a></li>
+<li class="chapter" data-level="48.0.6" data-path="r-markdown.html"><a href="r-markdown.html#additional-resources-5"><i class="fa fa-check"></i><b>48.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="48.0.7" data-path="r-markdown.html"><a href="r-markdown.html#slides-and-video-45"><i class="fa fa-check"></i><b>48.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="49" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html"><i class="fa fa-check"></i><b>49</b> Using Paths in Code</a>
+<ul>
+<li class="chapter" data-level="49.0.1" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#relative-and-absolute-paths"><i class="fa fa-check"></i><b>49.0.1</b> Relative and absolute paths</a></li>
+<li class="chapter" data-level="49.0.2" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#directions-analogy"><i class="fa fa-check"></i><b>49.0.2</b> Directions analogy</a></li>
+<li class="chapter" data-level="49.0.3" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#paths-in-projects"><i class="fa fa-check"></i><b>49.0.3</b> Paths in projects</a></li>
+<li class="chapter" data-level="49.0.4" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#the-here-package"><i class="fa fa-check"></i><b>49.0.4</b> The <code>here</code> package</a></li>
+<li class="chapter" data-level="49.0.5" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#why-to-use-here"><i class="fa fa-check"></i><b>49.0.5</b> Why to use <code>here</code></a></li>
+<li class="chapter" data-level="49.0.6" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#additional-resources-6"><i class="fa fa-check"></i><b>49.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="49.0.7" data-path="using-paths-in-code.html"><a href="using-paths-in-code.html#slides-and-video-46"><i class="fa fa-check"></i><b>49.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="50" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html"><i class="fa fa-check"></i><b>50</b> Introduction to Markdown</a>
+<ul>
+<li class="chapter" data-level="50.0.1" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#how-to-use-markdown"><i class="fa fa-check"></i><b>50.0.1</b> How to use Markdown</a></li>
+<li class="chapter" data-level="50.0.2" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#markdown-example"><i class="fa fa-check"></i><b>50.0.2</b> Markdown Example</a></li>
+<li class="chapter" data-level="50.0.3" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#main-commands"><i class="fa fa-check"></i><b>50.0.3</b> Main commands</a></li>
+<li class="chapter" data-level="50.0.4" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#more-complicated-editing"><i class="fa fa-check"></i><b>50.0.4</b> More complicated editing</a></li>
+<li class="chapter" data-level="50.0.5" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#links"><i class="fa fa-check"></i><b>50.0.5</b> Links</a></li>
+<li class="chapter" data-level="50.0.6" data-path="introduction-to-markdown.html"><a href="introduction-to-markdown.html#slides-and-video-47"><i class="fa fa-check"></i><b>50.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="51" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html"><i class="fa fa-check"></i><b>51</b> CSV, Excel, and TSV Files</a>
+<ul>
+<li class="chapter" data-level="51.0.1" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#csv-files"><i class="fa fa-check"></i><b>51.0.1</b> CSV files</a></li>
+<li class="chapter" data-level="51.0.2" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#downloading-csv-files"><i class="fa fa-check"></i><b>51.0.2</b> Downloading CSV files</a></li>
+<li class="chapter" data-level="51.0.3" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#reading-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>51.0.3</b> Reading files into RStudio Cloud</a></li>
+<li class="chapter" data-level="51.0.4" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#writing-csv-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>51.0.4</b> Writing CSV files into RStudio Cloud</a></li>
+<li class="chapter" data-level="51.0.5" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#excel-files"><i class="fa fa-check"></i><b>51.0.5</b> Excel files</a></li>
+<li class="chapter" data-level="51.0.6" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#reading-excel-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>51.0.6</b> Reading Excel files into RStudio Cloud</a></li>
+<li class="chapter" data-level="51.0.7" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#text-files"><i class="fa fa-check"></i><b>51.0.7</b> Text files</a></li>
+<li class="chapter" data-level="51.0.8" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#reading-tsv-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>51.0.8</b> Reading TSV files into RStudio Cloud</a></li>
+<li class="chapter" data-level="51.0.9" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#reading-txt-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>51.0.9</b> Reading TXT files into RStudio Cloud</a></li>
+<li class="chapter" data-level="51.0.10" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#exporting-data-in-r-to-csv"><i class="fa fa-check"></i><b>51.0.10</b> Exporting Data in R to CSV</a></li>
+<li class="chapter" data-level="51.0.11" data-path="csv-excel-and-tsv-files.html"><a href="csv-excel-and-tsv-files.html#slides-and-video-48"><i class="fa fa-check"></i><b>51.0.11</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="52" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html"><i class="fa fa-check"></i><b>52</b> Importing Data from Google Sheets</a>
+<ul>
+<li class="chapter" data-level="52.0.1" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#the-googlesheets4-package"><i class="fa fa-check"></i><b>52.0.1</b> The <code>googlesheets4</code> package</a></li>
+<li class="chapter" data-level="52.0.2" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#importing-csv-files-from-the-web"><i class="fa fa-check"></i><b>52.0.2</b> Importing CSV files from the web</a></li>
+<li class="chapter" data-level="52.0.3" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#summary-9"><i class="fa fa-check"></i><b>52.0.3</b> Summary</a></li>
+<li class="chapter" data-level="52.0.4" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#additional-resources-7"><i class="fa fa-check"></i><b>52.0.4</b> Additional Resources</a></li>
+<li class="chapter" data-level="52.0.5" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#slides-and-video-49"><i class="fa fa-check"></i><b>52.0.5</b> Slides and Video</a></li>
+<li class="chapter" data-level="52.1" data-path="importing-data-from-google-sheets.html"><a href="importing-data-from-google-sheets.html#recommended-places-to-get-data"><i class="fa fa-check"></i><b>52.1</b> Recommended places to get data</a></li>
+</ul></li>
+<li class="chapter" data-level="53" data-path="finding-data.html"><a href="finding-data.html"><i class="fa fa-check"></i><b>53</b> Finding Data</a>
+<ul>
+<li class="chapter" data-level="53.0.1" data-path="finding-data.html"><a href="finding-data.html#public-versus-private-data"><i class="fa fa-check"></i><b>53.0.1</b> Public versus Private Data</a></li>
+<li class="chapter" data-level="53.0.2" data-path="finding-data.html"><a href="finding-data.html#publicly-available-data"><i class="fa fa-check"></i><b>53.0.2</b> Publicly-available data</a></li>
+<li class="chapter" data-level="53.0.3" data-path="finding-data.html"><a href="finding-data.html#data-you-already-have"><i class="fa fa-check"></i><b>53.0.3</b> Data You Already Have</a></li>
+<li class="chapter" data-level="53.0.4" data-path="finding-data.html"><a href="finding-data.html#summary-10"><i class="fa fa-check"></i><b>53.0.4</b> Summary</a></li>
+<li class="chapter" data-level="53.0.5" data-path="finding-data.html"><a href="finding-data.html#slides-and-video-50"><i class="fa fa-check"></i><b>53.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="54" data-path="internet-safety.html"><a href="internet-safety.html"><i class="fa fa-check"></i><b>54</b> Internet Safety</a>
+<ul>
+<li class="chapter" data-level="54.0.1" data-path="internet-safety.html"><a href="internet-safety.html#wifi"><i class="fa fa-check"></i><b>54.0.1</b> WiFi</a></li>
+<li class="chapter" data-level="54.0.2" data-path="internet-safety.html"><a href="internet-safety.html#passwords"><i class="fa fa-check"></i><b>54.0.2</b> Passwords</a></li>
+<li class="chapter" data-level="54.0.3" data-path="internet-safety.html"><a href="internet-safety.html#good-internet-behavior"><i class="fa fa-check"></i><b>54.0.3</b> Good Internet behavior</a></li>
+<li class="chapter" data-level="54.0.4" data-path="internet-safety.html"><a href="internet-safety.html#online-scams"><i class="fa fa-check"></i><b>54.0.4</b> Online Scams</a></li>
+<li class="chapter" data-level="54.0.5" data-path="internet-safety.html"><a href="internet-safety.html#malware-spyware"><i class="fa fa-check"></i><b>54.0.5</b> Malware &amp; Spyware</a></li>
+<li class="chapter" data-level="54.0.6" data-path="internet-safety.html"><a href="internet-safety.html#security-on-a-chromebook"><i class="fa fa-check"></i><b>54.0.6</b> Security on a Chromebook</a></li>
+<li class="chapter" data-level="54.0.7" data-path="internet-safety.html"><a href="internet-safety.html#slides-and-video-51"><i class="fa fa-check"></i><b>54.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="55" data-path="data-privacy.html"><a href="data-privacy.html"><i class="fa fa-check"></i><b>55</b> Data Privacy</a>
+<ul>
+<li class="chapter" data-level="55.0.1" data-path="data-privacy.html"><a href="data-privacy.html#what-is-data-privacy"><i class="fa fa-check"></i><b>55.0.1</b> What is Data Privacy?</a></li>
+<li class="chapter" data-level="55.0.2" data-path="data-privacy.html"><a href="data-privacy.html#personally-identifiable-information"><i class="fa fa-check"></i><b>55.0.2</b> Personally Identifiable Information</a></li>
+<li class="chapter" data-level="55.0.3" data-path="data-privacy.html"><a href="data-privacy.html#what-is-encryption"><i class="fa fa-check"></i><b>55.0.3</b> What is encryption?</a></li>
+<li class="chapter" data-level="55.0.4" data-path="data-privacy.html"><a href="data-privacy.html#human-security"><i class="fa fa-check"></i><b>55.0.4</b> Human Security</a></li>
+<li class="chapter" data-level="55.0.5" data-path="data-privacy.html"><a href="data-privacy.html#computer-security"><i class="fa fa-check"></i><b>55.0.5</b> Computer Security</a></li>
+<li class="chapter" data-level="55.0.6" data-path="data-privacy.html"><a href="data-privacy.html#open-science"><i class="fa fa-check"></i><b>55.0.6</b> Open Science</a></li>
+<li class="chapter" data-level="55.0.7" data-path="data-privacy.html"><a href="data-privacy.html#data-breaches"><i class="fa fa-check"></i><b>55.0.7</b> Data Breaches</a></li>
+<li class="chapter" data-level="55.0.8" data-path="data-privacy.html"><a href="data-privacy.html#conclusions-1"><i class="fa fa-check"></i><b>55.0.8</b> Conclusions</a></li>
+<li class="chapter" data-level="55.0.9" data-path="data-privacy.html"><a href="data-privacy.html#slides-and-video-52"><i class="fa fa-check"></i><b>55.0.9</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="56" data-path="ethical-data-science.html"><a href="ethical-data-science.html"><i class="fa fa-check"></i><b>56</b> Ethical Data Science</a>
+<ul>
+<li class="chapter" data-level="56.0.1" data-path="ethical-data-science.html"><a href="ethical-data-science.html#data-science-team"><i class="fa fa-check"></i><b>56.0.1</b> Data Science Team</a></li>
+<li class="chapter" data-level="56.0.2" data-path="ethical-data-science.html"><a href="ethical-data-science.html#the-data"><i class="fa fa-check"></i><b>56.0.2</b> The Data</a></li>
+<li class="chapter" data-level="56.0.3" data-path="ethical-data-science.html"><a href="ethical-data-science.html#the-analysis"><i class="fa fa-check"></i><b>56.0.3</b> The Analysis</a></li>
+<li class="chapter" data-level="56.0.4" data-path="ethical-data-science.html"><a href="ethical-data-science.html#after-the-algorithm"><i class="fa fa-check"></i><b>56.0.4</b> After the Algorithm</a></li>
+<li class="chapter" data-level="56.0.5" data-path="ethical-data-science.html"><a href="ethical-data-science.html#ethics-in-data-science"><i class="fa fa-check"></i><b>56.0.5</b> Ethics in Data Science</a></li>
+<li class="chapter" data-level="56.0.6" data-path="ethical-data-science.html"><a href="ethical-data-science.html#artificial-intelligence-in-the-military"><i class="fa fa-check"></i><b>56.0.6</b> Artificial Intelligence in the Military</a></li>
+<li class="chapter" data-level="56.0.7" data-path="ethical-data-science.html"><a href="ethical-data-science.html#additional-resources-8"><i class="fa fa-check"></i><b>56.0.7</b> Additional Resources</a></li>
+<li class="chapter" data-level="56.0.8" data-path="ethical-data-science.html"><a href="ethical-data-science.html#slides-and-video-53"><i class="fa fa-check"></i><b>56.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="57" data-path="data-in-r.html"><a href="data-in-r.html"><i class="fa fa-check"></i><b>57</b> Data in R</a>
+<ul>
+<li class="chapter" data-level="57.0.1" data-path="data-in-r.html"><a href="data-in-r.html#file-types-in-r"><i class="fa fa-check"></i><b>57.0.1</b> File Types in R</a></li>
+<li class="chapter" data-level="57.0.2" data-path="data-in-r.html"><a href="data-in-r.html#datasets-in-r"><i class="fa fa-check"></i><b>57.0.2</b> Datasets in R</a></li>
+<li class="chapter" data-level="57.0.3" data-path="data-in-r.html"><a href="data-in-r.html#datasets-in-packages"><i class="fa fa-check"></i><b>57.0.3</b> Datasets in Packages</a></li>
+<li class="chapter" data-level="57.0.4" data-path="data-in-r.html"><a href="data-in-r.html#other-types-of-data-in-r"><i class="fa fa-check"></i><b>57.0.4</b> Other types of data in R</a></li>
+<li class="chapter" data-level="57.0.5" data-path="data-in-r.html"><a href="data-in-r.html#summary-11"><i class="fa fa-check"></i><b>57.0.5</b> Summary</a></li>
+<li class="chapter" data-level="57.0.6" data-path="data-in-r.html"><a href="data-in-r.html#additional-resources-9"><i class="fa fa-check"></i><b>57.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="57.0.7" data-path="data-in-r.html"><a href="data-in-r.html#slides-and-video-54"><i class="fa fa-check"></i><b>57.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="58" data-path="tidy-data.html"><a href="tidy-data.html"><i class="fa fa-check"></i><b>58</b> Tidy Data</a>
+<ul>
+<li class="chapter" data-level="58.0.1" data-path="tidy-data.html"><a href="tidy-data.html#why-tidy-data"><i class="fa fa-check"></i><b>58.0.1</b> Why Tidy Data?</a></li>
+<li class="chapter" data-level="58.0.2" data-path="tidy-data.html"><a href="tidy-data.html#data-terminology"><i class="fa fa-check"></i><b>58.0.2</b> Data Terminology</a></li>
+<li class="chapter" data-level="58.0.3" data-path="tidy-data.html"><a href="tidy-data.html#principles-of-tidy-data"><i class="fa fa-check"></i><b>58.0.3</b> Principles of Tidy Data</a></li>
+<li class="chapter" data-level="58.0.4" data-path="tidy-data.html"><a href="tidy-data.html#rules-for-tidy-spreadsheets"><i class="fa fa-check"></i><b>58.0.4</b> Rules for Tidy Spreadsheets</a></li>
+<li class="chapter" data-level="58.0.5" data-path="tidy-data.html"><a href="tidy-data.html#additional-resources-10"><i class="fa fa-check"></i><b>58.0.5</b> Additional resources</a></li>
+<li class="chapter" data-level="58.0.6" data-path="tidy-data.html"><a href="tidy-data.html#slides-and-video-55"><i class="fa fa-check"></i><b>58.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="59" data-path="untidy-data.html"><a href="untidy-data.html"><i class="fa fa-check"></i><b>59</b> Untidy Data</a>
+<ul>
+<li class="chapter" data-level="59.0.1" data-path="untidy-data.html"><a href="untidy-data.html#common-problems-with-messy-data-sets"><i class="fa fa-check"></i><b>59.0.1</b> Common problems with messy data sets</a></li>
+<li class="chapter" data-level="59.0.2" data-path="untidy-data.html"><a href="untidy-data.html#examples-of-untidy-data"><i class="fa fa-check"></i><b>59.0.2</b> Examples of untidy data</a></li>
+<li class="chapter" data-level="59.0.3" data-path="untidy-data.html"><a href="untidy-data.html#tidying-untidy-data"><i class="fa fa-check"></i><b>59.0.3</b> Tidying untidy data</a></li>
+<li class="chapter" data-level="59.0.4" data-path="untidy-data.html"><a href="untidy-data.html#slides-and-video-56"><i class="fa fa-check"></i><b>59.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="60" data-path="reshaping-data.html"><a href="reshaping-data.html"><i class="fa fa-check"></i><b>60</b> Reshaping Data</a>
+<ul>
+<li class="chapter" data-level="60.0.1" data-path="reshaping-data.html"><a href="reshaping-data.html#data-formats"><i class="fa fa-check"></i><b>60.0.1</b> Data Formats</a></li>
+<li class="chapter" data-level="60.0.2" data-path="reshaping-data.html"><a href="reshaping-data.html#r-packages-1"><i class="fa fa-check"></i><b>60.0.2</b> R Packages</a></li>
+<li class="chapter" data-level="60.0.3" data-path="reshaping-data.html"><a href="reshaping-data.html#additional-resources-11"><i class="fa fa-check"></i><b>60.0.3</b> Additional Resources</a></li>
+<li class="chapter" data-level="60.0.4" data-path="reshaping-data.html"><a href="reshaping-data.html#slides-and-video-57"><i class="fa fa-check"></i><b>60.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="61" data-path="reshaping-data-1.html"><a href="reshaping-data-1.html"><i class="fa fa-check"></i><b>61</b> Reshaping Data</a>
+<ul>
+<li class="chapter" data-level="61.0.1" data-path="reshaping-data-1.html"><a href="reshaping-data-1.html#data-formats-1"><i class="fa fa-check"></i><b>61.0.1</b> Data Formats</a></li>
+<li class="chapter" data-level="61.0.2" data-path="reshaping-data-1.html"><a href="reshaping-data-1.html#r-packages-2"><i class="fa fa-check"></i><b>61.0.2</b> R Packages</a></li>
+<li class="chapter" data-level="61.0.3" data-path="reshaping-data-1.html"><a href="reshaping-data-1.html#additional-resources-12"><i class="fa fa-check"></i><b>61.0.3</b> Additional Resources</a></li>
+<li class="chapter" data-level="61.0.4" data-path="reshaping-data-1.html"><a href="reshaping-data-1.html#slides-and-video-58"><i class="fa fa-check"></i><b>61.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="62" data-path="tidying-data.html"><a href="tidying-data.html"><i class="fa fa-check"></i><b>62</b> Tidying Data</a>
+<ul>
+<li class="chapter" data-level="62.0.1" data-path="tidying-data.html"><a href="tidying-data.html#dplyr"><i class="fa fa-check"></i><b>62.0.1</b> dplyr</a></li>
+<li class="chapter" data-level="62.0.2" data-path="tidying-data.html"><a href="tidying-data.html#tidyr-2"><i class="fa fa-check"></i><b>62.0.2</b> tidyr</a></li>
+<li class="chapter" data-level="62.0.3" data-path="tidying-data.html"><a href="tidying-data.html#janitor"><i class="fa fa-check"></i><b>62.0.3</b> janitor</a></li>
+<li class="chapter" data-level="62.0.4" data-path="tidying-data.html"><a href="tidying-data.html#skimr"><i class="fa fa-check"></i><b>62.0.4</b> skimr</a></li>
+<li class="chapter" data-level="62.0.5" data-path="tidying-data.html"><a href="tidying-data.html#the-pipe-operator"><i class="fa fa-check"></i><b>62.0.5</b> The Pipe Operator</a></li>
+<li class="chapter" data-level="62.0.6" data-path="tidying-data.html"><a href="tidying-data.html#filtering-data"><i class="fa fa-check"></i><b>62.0.6</b> Filtering Data</a></li>
+<li class="chapter" data-level="62.0.7" data-path="tidying-data.html"><a href="tidying-data.html#reordering"><i class="fa fa-check"></i><b>62.0.7</b> Reordering</a></li>
+<li class="chapter" data-level="62.0.8" data-path="tidying-data.html"><a href="tidying-data.html#creating-new-columns"><i class="fa fa-check"></i><b>62.0.8</b> Creating new columns</a></li>
+<li class="chapter" data-level="62.0.9" data-path="tidying-data.html"><a href="tidying-data.html#separating-columns"><i class="fa fa-check"></i><b>62.0.9</b> Separating Columns</a></li>
+<li class="chapter" data-level="62.0.10" data-path="tidying-data.html"><a href="tidying-data.html#merging-columns"><i class="fa fa-check"></i><b>62.0.10</b> Merging Columns</a></li>
+<li class="chapter" data-level="62.0.11" data-path="tidying-data.html"><a href="tidying-data.html#cleaning-up-column-names"><i class="fa fa-check"></i><b>62.0.11</b> Cleaning up column names</a></li>
+<li class="chapter" data-level="62.0.12" data-path="tidying-data.html"><a href="tidying-data.html#combining-data-across-data-frames"><i class="fa fa-check"></i><b>62.0.12</b> Combining data across data frames</a></li>
+<li class="chapter" data-level="62.0.13" data-path="tidying-data.html"><a href="tidying-data.html#grouping-data"><i class="fa fa-check"></i><b>62.0.13</b> Grouping Data</a></li>
+<li class="chapter" data-level="62.0.14" data-path="tidying-data.html"><a href="tidying-data.html#summarizing-data"><i class="fa fa-check"></i><b>62.0.14</b> Summarizing Data</a></li>
+<li class="chapter" data-level="62.0.15" data-path="tidying-data.html"><a href="tidying-data.html#conclusion"><i class="fa fa-check"></i><b>62.0.15</b> Conclusion</a></li>
+<li class="chapter" data-level="62.0.16" data-path="tidying-data.html"><a href="tidying-data.html#additional-resources-13"><i class="fa fa-check"></i><b>62.0.16</b> Additional Resources</a></li>
+<li class="chapter" data-level="62.0.17" data-path="tidying-data.html"><a href="tidying-data.html#slides-and-video-59"><i class="fa fa-check"></i><b>62.0.17</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="63" data-path="working-with-strings.html"><a href="working-with-strings.html"><i class="fa fa-check"></i><b>63</b> Working with Strings</a>
+<ul>
+<li class="chapter" data-level="63.0.1" data-path="working-with-strings.html"><a href="working-with-strings.html#strings-review"><i class="fa fa-check"></i><b>63.0.1</b> Strings review</a></li>
+<li class="chapter" data-level="63.0.2" data-path="working-with-strings.html"><a href="working-with-strings.html#stringr"><i class="fa fa-check"></i><b>63.0.2</b> stringr</a></li>
+<li class="chapter" data-level="63.0.3" data-path="working-with-strings.html"><a href="working-with-strings.html#string-basics"><i class="fa fa-check"></i><b>63.0.3</b> String basics</a></li>
+<li class="chapter" data-level="63.0.4" data-path="working-with-strings.html"><a href="working-with-strings.html#regular-expressions"><i class="fa fa-check"></i><b>63.0.4</b> Regular expressions</a></li>
+<li class="chapter" data-level="63.0.5" data-path="working-with-strings.html"><a href="working-with-strings.html#conclusion-1"><i class="fa fa-check"></i><b>63.0.5</b> Conclusion</a></li>
+<li class="chapter" data-level="63.0.6" data-path="working-with-strings.html"><a href="working-with-strings.html#additional-resources-14"><i class="fa fa-check"></i><b>63.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="63.0.7" data-path="working-with-strings.html"><a href="working-with-strings.html#slides-and-video-60"><i class="fa fa-check"></i><b>63.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="64" data-path="working-with-factors.html"><a href="working-with-factors.html"><i class="fa fa-check"></i><b>64</b> Working with Factors</a>
+<ul>
+<li class="chapter" data-level="64.0.1" data-path="working-with-factors.html"><a href="working-with-factors.html#factor-basics"><i class="fa fa-check"></i><b>64.0.1</b> Factor basics</a></li>
+<li class="chapter" data-level="64.0.2" data-path="working-with-factors.html"><a href="working-with-factors.html#manually-change-the-labels-of-factor-levels-fct_relevel"><i class="fa fa-check"></i><b>64.0.2</b> Manually change the labels of factor levels : <code>fct_relevel()</code></a></li>
+<li class="chapter" data-level="64.0.3" data-path="working-with-factors.html"><a href="working-with-factors.html#keep-the-order-of-the-factor-levels-fct_inorder"><i class="fa fa-check"></i><b>64.0.3</b> Keep the order of the factor levels : <code>fct_inorder()</code></a></li>
+<li class="chapter" data-level="64.0.4" data-path="working-with-factors.html"><a href="working-with-factors.html#advanced-factoring"><i class="fa fa-check"></i><b>64.0.4</b> Advanced Factoring</a></li>
+<li class="chapter" data-level="64.0.5" data-path="working-with-factors.html"><a href="working-with-factors.html#re-ordering-factor-levels-by-frequency-fct_infreq"><i class="fa fa-check"></i><b>64.0.5</b> Re-ordering factor levels by frequency : <code>fct_infreq()</code></a></li>
+<li class="chapter" data-level="64.0.6" data-path="working-with-factors.html"><a href="working-with-factors.html#reversing-order-levels-fct_rev"><i class="fa fa-check"></i><b>64.0.6</b> Reversing order levels : <code>fct_rev()</code></a></li>
+<li class="chapter" data-level="64.0.7" data-path="working-with-factors.html"><a href="working-with-factors.html#re-ordering-factor-levels-by-another-variable-fct_reorder"><i class="fa fa-check"></i><b>64.0.7</b> Re-ordering factor levels by another variable : <code>fct_reorder()</code></a></li>
+<li class="chapter" data-level="64.0.8" data-path="working-with-factors.html"><a href="working-with-factors.html#combining-several-levels-into-one-fct_recode"><i class="fa fa-check"></i><b>64.0.8</b> Combining several levels into one: <code>fct_recode()</code></a></li>
+<li class="chapter" data-level="64.0.9" data-path="working-with-factors.html"><a href="working-with-factors.html#converting-numeric-levels-to-factors-ifelse-factor"><i class="fa fa-check"></i><b>64.0.9</b> Converting numeric levels to factors: <code>ifelse()</code> + <code>factor()</code></a></li>
+<li class="chapter" data-level="64.0.10" data-path="working-with-factors.html"><a href="working-with-factors.html#conclusions-2"><i class="fa fa-check"></i><b>64.0.10</b> Conclusions</a></li>
+<li class="chapter" data-level="64.0.11" data-path="working-with-factors.html"><a href="working-with-factors.html#additional-resources-15"><i class="fa fa-check"></i><b>64.0.11</b> Additional Resources</a></li>
+<li class="chapter" data-level="64.0.12" data-path="working-with-factors.html"><a href="working-with-factors.html#slides-and-video-61"><i class="fa fa-check"></i><b>64.0.12</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="65" data-path="working-with-dates.html"><a href="working-with-dates.html"><i class="fa fa-check"></i><b>65</b> Working with Dates</a>
+<ul>
+<li class="chapter" data-level="65.0.1" data-path="working-with-dates.html"><a href="working-with-dates.html#dates-and-time-basics"><i class="fa fa-check"></i><b>65.0.1</b> Dates and time basics</a></li>
+<li class="chapter" data-level="65.0.2" data-path="working-with-dates.html"><a href="working-with-dates.html#creating-dates-and-date-time-objects"><i class="fa fa-check"></i><b>65.0.2</b> Creating dates and date-time objects</a></li>
+<li class="chapter" data-level="65.0.3" data-path="working-with-dates.html"><a href="working-with-dates.html#working-with-dates-1"><i class="fa fa-check"></i><b>65.0.3</b> Working with dates</a></li>
+<li class="chapter" data-level="65.0.4" data-path="working-with-dates.html"><a href="working-with-dates.html#time-spans"><i class="fa fa-check"></i><b>65.0.4</b> Time spans</a></li>
+<li class="chapter" data-level="65.0.5" data-path="working-with-dates.html"><a href="working-with-dates.html#whats-not-covered-in-this-lesson"><i class="fa fa-check"></i><b>65.0.5</b> What’s not covered in this lesson</a></li>
+<li class="chapter" data-level="65.0.6" data-path="working-with-dates.html"><a href="working-with-dates.html#additional-resources-16"><i class="fa fa-check"></i><b>65.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="65.0.7" data-path="working-with-dates.html"><a href="working-with-dates.html#slides-and-video-62"><i class="fa fa-check"></i><b>65.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="66" data-path="data-tidying.html"><a href="data-tidying.html"><i class="fa fa-check"></i><b>66</b> Data Tidying</a></li>
+<li class="chapter" data-level="67" data-path="data-tidying-project.html"><a href="data-tidying-project.html"><i class="fa fa-check"></i><b>67</b> Data Tidying Project</a></li>
+<li class="chapter" data-level="68" data-path="motivation.html"><a href="motivation.html"><i class="fa fa-check"></i><b>68</b> Motivation</a>
+<ul>
+<li class="chapter" data-level="68.0.1" data-path="motivation.html"><a href="motivation.html#slides-and-video-63"><i class="fa fa-check"></i><b>68.0.1</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="69" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html"><i class="fa fa-check"></i><b>69</b> Setting Up Data Science Project Folders</a>
+<ul>
+<li class="chapter" data-level="69.0.1" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#a-project-organization-framework"><i class="fa fa-check"></i><b>69.0.1</b> A project organization framework</a></li>
+<li class="chapter" data-level="69.0.2" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#the-next-level-of-organization"><i class="fa fa-check"></i><b>69.0.2</b> The next level of organization</a></li>
+<li class="chapter" data-level="69.0.3" data-path="setting-up-data-science-project-folders.html"><a href="setting-up-data-science-project-folders.html#slides-and-video-64"><i class="fa fa-check"></i><b>69.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="70" data-path="how-to-work.html"><a href="how-to-work.html"><i class="fa fa-check"></i><b>70</b> How to Work</a>
+<ul>
+<li class="chapter" data-level="70.0.1" data-path="how-to-work.html"><a href="how-to-work.html#why-organize"><i class="fa fa-check"></i><b>70.0.1</b> Why Organize?</a></li>
+<li class="chapter" data-level="70.0.2" data-path="how-to-work.html"><a href="how-to-work.html#the-readme-file"><i class="fa fa-check"></i><b>70.0.2</b> The README File</a></li>
+<li class="chapter" data-level="70.0.3" data-path="how-to-work.html"><a href="how-to-work.html#using-comments"><i class="fa fa-check"></i><b>70.0.3</b> Using Comments</a></li>
+<li class="chapter" data-level="70.0.4" data-path="how-to-work.html"><a href="how-to-work.html#write-in-a-modular-way"><i class="fa fa-check"></i><b>70.0.4</b> Write in a Modular Way</a></li>
+<li class="chapter" data-level="70.0.5" data-path="how-to-work.html"><a href="how-to-work.html#slides-and-video-65"><i class="fa fa-check"></i><b>70.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://www.datatrail.org/"> Data Trail </a></p>
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/VWaJYc3zATe3qxYC9"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to DataTrail</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style_DataTrail.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/DataTrail.jpg">
+</div>
+<div id="tidying-data" class="section level1" number="62">
+<h1><span class="header-section-number">Chapter 62</span> Tidying Data</h1>
+<p>So far we’ve discussed what tidy and untidy data are. We’ve (hopefully) convinced you that tidy data are the right type of data to work with. And, more than that, hopefully we’ve explained that data are not always the tidiest when they come to you at the start of a project. An incredibly important skill of a data scientist is to be able to take data from an untidy format and get it into a tidy format. We’ve started to discuss how to do this in the last lesson where we learned to reshape data. In this lesson, we’ll discuss a number of other ways in which data can be tidied and the necessary tools to <strong>tidy data</strong>.</p>
+<p>These skills are often referred to as <strong>data wrangling</strong>. They are skills that allow you to wrangle data from the format they’re currently in into the format you actually want them in.</p>
+<p>As this is an incredibly important topic, this will be a long lesson covering a number of packages and topics. Take your time working through it and be sure to understand all of the examples!</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_1" alt="" />
+<p class="caption">data wrangling example</p>
+</div>
+<div id="dplyr" class="section level3" number="62.0.1">
+<h3><span class="header-section-number">62.0.1</span> dplyr</h3>
+<p>Within R, there is a package specifically designed for helping you wrangle data. This package is called <a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a> and will allow you to easily accomplish many of the data wrangling tasks necessary. In this lesson, we will cover a number of functions that will help you wrangle data using <code>dplyr</code>:</p>
+<ul>
+<li><code>%&gt;%</code> - pipe operator for chaining a sequence of operations</li>
+<li><code>glimpse()</code> - get an overview of what’s included in dataset</li>
+<li><code>filter()</code> - filter rows</li>
+<li><code>select()</code> - select, rename, and reorder columns</li>
+<li><code>rename()</code> - rename columns</li>
+<li><code>arrange()</code> - reorder rows</li>
+<li><code>mutate()</code> - create a new column</li>
+<li><code>group_by()</code> - group variables</li>
+<li><code>summarize()</code> - summarize information within a dataset</li>
+<li><code>left_join()</code> - combining data across data frame</li>
+</ul>
+<p>If you have not already, you’ll want to be sure this package is installed and loaded:</p>
+<div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="tidying-data.html#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;dplyr&#39;</span>)</span>
+<span id="cb117-2"><a href="tidying-data.html#cb117-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div>
+</div>
+<div id="tidyr-2" class="section level3" number="62.0.2">
+<h3><span class="header-section-number">62.0.2</span> tidyr</h3>
+<p>We will also return to the <code>tidyr</code> package. The same package that we used to reshape our data will be helpful when tidying data. The main functions we’ll cover from <code>tidyr</code> are:</p>
+<ul>
+<li><code>unite()</code> - combine contents of two or more columns into a single column</li>
+<li><code>separate()</code> - separate contents of a column into two or more columns</li>
+</ul>
+<p>If you have not already, you’ll want to be sure this package is installed and loaded:</p>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="tidying-data.html#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;tidyr&#39;</span>)</span>
+<span id="cb118-2"><a href="tidying-data.html#cb118-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span></code></pre></div>
+</div>
+<div id="janitor" class="section level3" number="62.0.3">
+<h3><span class="header-section-number">62.0.3</span> janitor</h3>
+<p>The third package we’ll include here is the <code>janitor</code> package. This package provides tools for cleaning messy data. The main functions we’ll cover from janitor are:</p>
+<ul>
+<li><code>clean_names()</code> - clean names of a data frame</li>
+<li><code>tabyl()</code> - get a helpful summary of a variable</li>
+</ul>
+<p>If you have not already, you’ll want to be sure this package is installed and loaded:</p>
+<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="tidying-data.html#cb119-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;janitor&#39;</span>)</span>
+<span id="cb119-2"><a href="tidying-data.html#cb119-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span></code></pre></div>
+</div>
+<div id="skimr" class="section level3" number="62.0.4">
+<h3><span class="header-section-number">62.0.4</span> skimr</h3>
+<p>The final package we’ll discuss here is the <code>skimr</code> package. This package provides a quick way to summarize a data frame. We’ll discuss its most useful function here:</p>
+<ul>
+<li><code>skim()</code> - summarize a data frame</li>
+</ul>
+<p>If you have not already, you’ll want to be sure this package is installed and loaded:</p>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="tidying-data.html#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;skimr&#39;</span>)</span>
+<span id="cb120-2"><a href="tidying-data.html#cb120-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(skimr)</span></code></pre></div>
+</div>
+<div id="the-pipe-operator" class="section level3" number="62.0.5">
+<h3><span class="header-section-number">62.0.5</span> The Pipe Operator</h3>
+<p>Before we get into the important functions within <code>dplyr</code>, it will be very useful to discuss what is known as the <strong>pipe operator</strong>. The pipe operator looks like this in R: <code>%&gt;%</code>. Whenever you see the pipe <code>%&gt;%</code>, think of the word “then”, so if you saw the sentence “I went to the the store and %&gt;% I went back to my house,” you would read this as I went to the store and <em>then</em> I went back to my house. The pipe tells you to do one thing and <em>then</em> do another.</p>
+<p>Generally, the pipe operator allows you to string a number of different functions together in a particular order. If you wanted to take data frame A and carry out function B on it in R, you could depict this with an arrow pointing from A to B:</p>
+<p>A –&gt; B</p>
+<p>Here you are saying, “Take A and <em>then</em> feed it into function B.”</p>
+<p>In R syntax, from what you’ve seen so far, what is depicted by the arrow above would be carried out by calling the function B on the data frame object A:</p>
+<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb121-1"><a href="tidying-data.html#cb121-1" aria-hidden="true" tabindex="-1"></a><span class="fu">B</span>(A)</span></code></pre></div>
+<p>Alternatively, you could use the pipe operator (<code>%&gt;%</code>):</p>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="tidying-data.html#cb122-1" aria-hidden="true" tabindex="-1"></a>A <span class="sc">%&gt;%</span> B</span></code></pre></div>
+<p>However, often you are not performing just one action on a data frame, but rather you are looking to carry out multiple functions. We can again depict this with an arrow diagram.</p>
+<p>A –&gt; B –&gt; C –&gt; D</p>
+<p>Here you are saying that you want to take data frame A and carry out function B, <em>then</em> you want to take the output from that and <em>then</em> carry out function C. Subsequently you want to take the output of that and <em>then</em> carry out function D. In R syntax, we would first apply function B to data frame A, then apply function C to this output, then apply function D to this output. This results in the following syntax that is hard to read because multiple calls to functions are nested within each other:</p>
+<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="tidying-data.html#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="fu">D</span>(<span class="fu">C</span>(<span class="fu">B</span>(A)))</span></code></pre></div>
+<p>Alternatively, you could use the pipe operator. Each time you want take the output of one function and carry out something new on that output, you will use the pipe operator:</p>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="tidying-data.html#cb124-1" aria-hidden="true" tabindex="-1"></a>A <span class="sc">%&gt;%</span> B <span class="sc">%&gt;%</span> C <span class="sc">%&gt;%</span> D</span></code></pre></div>
+<p>Below we’ll use this pipe operator a lot. Essentially, it takes output from the left hand side and feeds it into a function on the right hand side. You’ll get a better understanding of how it works as you run the code below. But, when in doubt remember that the pipe operator should be read as <em>then</em>.</p>
+</div>
+<div id="filtering-data" class="section level3" number="62.0.6">
+<h3><span class="header-section-number">62.0.6</span> Filtering Data</h3>
+<p>When working with a large dataset, you’re often interested in only working with a portion of the data at any one time. For example, if you had data on people from ages 0 to 100 years old, but you wanted to ask a question that only pertained to children, you would likely want to only work with data from those individuals who were less than 18 years old. To do this, you would want to <strong>filter</strong> your dataset to only include data from these select individuals. Filtering can be done by row or by column. We’ll discuss the syntax in R for doing both. Please note that the examples in this lesson and the organization for this lesson were adapted from <a href="https://suzan.rbind.io/">Suzan Baert’s</a> wonderful <code>dplyr</code> tutorials. Links to the all four tutorials can be found in the “Additional Resources” section at the bottom of this lesson.</p>
+<p>For the examples below, we’ll be using a dataset from the <code>ggplot2</code> package called <code>msleep</code>. (You’ll learn more about this package in a later course on data visualization.) This dataset includes sleep times and weights from a number of different mammals. It has 83 rows, with each row including information about a different type of animal, and 11 variables. As each row is a different animal and each column includes information about that animal, this is a <strong>wide</strong> dataset.</p>
+<p>To get an idea of what variables are included in this data frame, you can use <code>glimpse()</code>. This function summarizes how many rows there are (<code>Observations</code>) and how many columns there are (<code>Variables</code>). Additionally, it gives you a glimpse into the type of data contained in each column. Specifically, in this data set, we know that the first column is <code>name</code> and that it contains a character vector (<code>chr</code>) and that the first three entires are “Cheetah”, “Owl monkey”, and “Mountain beaver.” It works similarly to the <code>summary()</code> function covered in an earlier course.</p>
+<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="tidying-data.html#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install packages if you haven&#39;t already</span></span>
+<span id="cb125-2"><a href="tidying-data.html#cb125-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;ggplot2&#39;</span>)</span>
+<span id="cb125-3"><a href="tidying-data.html#cb125-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb125-4"><a href="tidying-data.html#cb125-4" aria-hidden="true" tabindex="-1"></a><span class="do">## load package</span></span>
+<span id="cb125-5"><a href="tidying-data.html#cb125-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb125-6"><a href="tidying-data.html#cb125-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb125-7"><a href="tidying-data.html#cb125-7" aria-hidden="true" tabindex="-1"></a><span class="do">## take a look at the data</span></span>
+<span id="cb125-8"><a href="tidying-data.html#cb125-8" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(msleep)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_133" alt="" />
+<p class="caption">Glimpse of msleep dataset</p>
+</div>
+<div id="filtering-rows" class="section level4" number="62.0.6.1">
+<h4><span class="header-section-number">62.0.6.1</span> Filtering Rows</h4>
+<p>If you were only interested in learning more about the sleep times of “Primates,” we could filter this dataset to include only data about those mammals that are also Primates. As we can see from <code>glimpse()</code>, this information is contained within the <code>order</code> variable. So to do this within R, we use the following syntax:</p>
+<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="tidying-data.html#cb126-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb126-2"><a href="tidying-data.html#cb126-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>)</span></code></pre></div>
+<p>Note that we are using the equality <code>==</code> comparison operator that you learned about in the previous course. Also note that we have used the pipe operator to feed the <code>msleep</code> data frame into the <code>filter()</code> function. This is shorthand for:</p>
+<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="tidying-data.html#cb127-1" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(msleep, order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_164" alt="" />
+<p class="caption">Filtered to only include Primates</p>
+</div>
+<p>Here, we have a smaller dataset of only 12 mammals (as opposed to the original 83) and we can see that the <code>order</code> variable column only includes “Primates.”</p>
+<p>But, what if we were only interested in Primates who sleep more than 10 hours total per night? This information is in the <code>sleep_total</code> column. Fortunately, <code>filter()</code> also works on numeric variables. To accomplish this, you would use the following syntax, separating the multiple filters you want to apply with a comma:</p>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="tidying-data.html#cb128-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb128-2"><a href="tidying-data.html#cb128-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>)</span></code></pre></div>
+<p>Note that we have used the “greater than” comparison operator with <code>sleep_total</code>.</p>
+<p>Now, we have a dataset focused in on only 5 mammals, all of which are primates who sleep for more than 10 hours a night total.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_179" alt="" />
+<p class="caption">Numerically filtered dataset</p>
+</div>
+<p>We can obtain the same result with the AND <code>&amp;</code> logical operator instead of separating filtering conditions with a comma:</p>
+<div class="sourceCode" id="cb129"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb129-1"><a href="tidying-data.html#cb129-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb129-2"><a href="tidying-data.html#cb129-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span> <span class="sc">&amp;</span> sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>)</span></code></pre></div>
+<p>Note that the number of columns hasn’t changed. All 11 variables are still shown in columns because the function <code>filter()</code> filters on rows, not columns.</p>
+</div>
+<div id="selecting-columns" class="section level4" number="62.0.6.2">
+<h4><span class="header-section-number">62.0.6.2</span> Selecting Columns</h4>
+<p>While <code>filter()</code> operates on rows, it <em>is</em> possible to filter your dataset to only include the columns you’re interested in. To select columns so that your dataset only includes variables you’re interested in, you will use <code>select()</code>.</p>
+<p>Let’s start with the code we just wrote to only include primates who sleep a lot. What if we only want to include the first column (the name of the mammal) and the sleep information (included in the columns <code>sleep_total</code>, <code>sleep_rem</code>, and <code>sleep_cycle</code>)? We would do this by starting with the code we just used, adding another pipe, and using the function <code>select()</code>. Within <code>select</code>, we specify which columns we want in our output.</p>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="tidying-data.html#cb130-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb130-2"><a href="tidying-data.html#cb130-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb130-3"><a href="tidying-data.html#cb130-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, sleep_total, sleep_rem, sleep_cycle)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_187" alt="" />
+<p class="caption">Data with selected columns</p>
+</div>
+<p>Now, using <code>select()</code> we see that we still have the five rows we filtered to before, but we only have the four columns specified using <code>select()</code>. Here you can hopefully see the power of the pipe operator to chain together several commands in a row. Without the pipe operator, the full command would look like this:</p>
+<div class="sourceCode" id="cb131"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb131-1"><a href="tidying-data.html#cb131-1" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(<span class="fu">filter</span>(msleep, order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>), name, sleep_total, sleep_rem, sleep_cycle)</span></code></pre></div>
+</div>
+<div id="renaming-columns" class="section level4" number="62.0.6.3">
+<h4><span class="header-section-number">62.0.6.3</span> Renaming Columns</h4>
+<p><code>select()</code> can also be used to rename columns. To do so, you use the syntax: <code>new_column_name = old_column_name</code> within <code>select</code>. For example, to select the same columns and rename them <code>total</code>, <code>rem</code> and <code>cycle</code>, you would use the following syntax:</p>
+<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="tidying-data.html#cb132-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb132-2"><a href="tidying-data.html#cb132-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb132-3"><a href="tidying-data.html#cb132-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, <span class="at">total=</span>sleep_total, <span class="at">rem=</span>sleep_rem, <span class="at">cycle=</span>sleep_cycle)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_194" alt="" />
+<p class="caption">Data with renamed columns names with <code>select()</code></p>
+</div>
+<p>It’s important to keep in mind that when using <code>select()</code> to rename columns, only the specified columns will be included and renamed in the output. If you, instead, want to change the names of a few columns but return <em>all</em> columns in your output, you’ll want to use <code>rename()</code>. For example, the following, returns a data frame with all 11 columns, where the column names for three columns specified within <code>rename()</code> function have been renamed.</p>
+<div class="sourceCode" id="cb133"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb133-1"><a href="tidying-data.html#cb133-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb133-2"><a href="tidying-data.html#cb133-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb133-3"><a href="tidying-data.html#cb133-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total=</span>sleep_total, <span class="at">rem=</span>sleep_rem, <span class="at">cycle=</span>sleep_cycle)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g4518ccec72_0_0" alt="" />
+<p class="caption">Data with renamed columns names using <code>rename()</code></p>
+</div>
+</div>
+</div>
+<div id="reordering" class="section level3" number="62.0.7">
+<h3><span class="header-section-number">62.0.7</span> Reordering</h3>
+<p>In addition to filtering rows and columns, often, you’ll want the data arranged in a particular order. It may order the columns in a logical way, or it could be to sort the data so that the data are sorted by value, with those having the smallest value in the first row and the largest value in the last row. All of this can be achieved with a few simple functions.</p>
+<div id="reordering-columns" class="section level4" number="62.0.7.1">
+<h4><span class="header-section-number">62.0.7.1</span> Reordering Columns</h4>
+<p>The <code>select()</code> function is powerful. Not only will it filter and rename columns, but it can also be used to reorder your columns. Using our example from above, if you wanted <code>sleep_rem</code> to be the first sleep column and <code>sleep_total</code> to be the last column, all you have to do is reorder them within <code>select()</code>. The output from <code>select()</code> would then be reordered to match the order specified within <code>select()</code>.</p>
+<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="tidying-data.html#cb134-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb134-2"><a href="tidying-data.html#cb134-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb134-3"><a href="tidying-data.html#cb134-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, sleep_rem, sleep_cycle, sleep_total)</span></code></pre></div>
+<p>Here we see that sleep_rem <code>name</code> is displayed first followed by <code>sleep_rem</code>, <code>sleep_cycle</code>, and <code>sleep_total</code>, just as it was specified within <code>select()</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_204" alt="" />
+<p class="caption">Data with reordered columns names</p>
+</div>
+</div>
+<div id="reordering-rows" class="section level4" number="62.0.7.2">
+<h4><span class="header-section-number">62.0.7.2</span> Reordering Rows</h4>
+<p>Rows can also be reordered. To reorder a variable in ascending order (from smallest to largest), you’ll want to use <code>arrange()</code>. Continuing on from our example above, to now sort our rows by the amount of total sleep each mammal gets, we would use the following syntax:</p>
+<div class="sourceCode" id="cb135"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb135-1"><a href="tidying-data.html#cb135-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb135-2"><a href="tidying-data.html#cb135-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb135-3"><a href="tidying-data.html#cb135-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, sleep_rem, sleep_cycle, sleep_total) <span class="sc">%&gt;%</span></span>
+<span id="cb135-4"><a href="tidying-data.html#cb135-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(sleep_total)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_215" alt="" />
+<p class="caption">Data arranged by total sleep in ascending order</p>
+</div>
+<p>While <code>arrange</code> sorts variables in ascending order, it’s also possible to sort in descending (largest to smallest) order. To do this you just use <code>desc()</code> with the following syntax:</p>
+<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="tidying-data.html#cb136-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb136-2"><a href="tidying-data.html#cb136-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb136-3"><a href="tidying-data.html#cb136-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, sleep_rem, sleep_cycle, sleep_total) <span class="sc">%&gt;%</span></span>
+<span id="cb136-4"><a href="tidying-data.html#cb136-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(sleep_total))</span></code></pre></div>
+<p>By putting <code>sleep_total</code> within <code>desc()</code>, <code>arrange()</code> will now sort your data from the primates with the longest total sleep to the shortest.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_215" alt="" />
+<p class="caption">Data arranged by total sleep in descending order</p>
+</div>
+<p><code>arrange()</code> can also be used to order non-numeric variables. For example, <code>arrange()</code> will sort character vectors alphabetically.</p>
+<div class="sourceCode" id="cb137"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb137-1"><a href="tidying-data.html#cb137-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb137-2"><a href="tidying-data.html#cb137-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb137-3"><a href="tidying-data.html#cb137-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, sleep_rem, sleep_cycle, sleep_total) <span class="sc">%&gt;%</span></span>
+<span id="cb137-4"><a href="tidying-data.html#cb137-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(name)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_234" alt="" />
+<p class="caption">Data arranged alphabetically by name</p>
+</div>
+<p>If you would like to reorder rows based on information in multiple columns, you can specify them separated by commas. This is useful if you have repeated labels in one column and want to sort within a category based on information in another column. In the example here, if there were repeated primates, this would sort the repeats based on their total sleep.</p>
+<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="tidying-data.html#cb138-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb138-2"><a href="tidying-data.html#cb138-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb138-3"><a href="tidying-data.html#cb138-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, sleep_rem, sleep_cycle, sleep_total) <span class="sc">%&gt;%</span></span>
+<span id="cb138-4"><a href="tidying-data.html#cb138-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(name, sleep_total)</span></code></pre></div>
+</div>
+</div>
+<div id="creating-new-columns" class="section level3" number="62.0.8">
+<h3><span class="header-section-number">62.0.8</span> Creating new columns</h3>
+<p>You will often find when working with data that you need an additional column. For example, if you had two datasets you wanted to combine, you may want to make a new column in each dataset called <code>dataset</code>. In one dataset you may put <code>datasetA</code> in each row. In the second dataset, you could put <code>datasetB</code>. This way, once you combined the data, you would be able to keep track of which dataset each row came from originally. More often, however, you’ll likely want to create a new column that calculates a new variable based on information in a column you already have. For example, in our mammal sleep dataset, <code>sleep_total</code> is in hours. What if you wanted to have that information in minutes? You could create a new column with this very information! The function <code>mutate()</code> was <em>made</em> for <strong>all</strong> of these new-column-creating situations. This function has a lot of capabilities. We’ll cover the basics here.</p>
+<p>Returning to our <code>msleep</code> dataset, after filtering and re-ordering, we can create a new column with <code>mutate()</code>. Within <code>mutate()</code>, we will calculate the number of minutes each mammal sleeps by multiplying the number of hours each animal sleeps by 60 minutes.</p>
+<div class="sourceCode" id="cb139"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb139-1"><a href="tidying-data.html#cb139-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb139-2"><a href="tidying-data.html#cb139-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(order <span class="sc">==</span> <span class="st">&quot;Primates&quot;</span>, sleep_total <span class="sc">&gt;</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb139-3"><a href="tidying-data.html#cb139-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, sleep_rem, sleep_cycle, sleep_total) <span class="sc">%&gt;%</span></span>
+<span id="cb139-4"><a href="tidying-data.html#cb139-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(name) <span class="sc">%&gt;%</span></span>
+<span id="cb139-5"><a href="tidying-data.html#cb139-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">sleep_total_min =</span> sleep_total <span class="sc">*</span> <span class="dv">60</span>)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_242" alt="" />
+<p class="caption">Mutate to add new column to data</p>
+</div>
+</div>
+<div id="separating-columns" class="section level3" number="62.0.9">
+<h3><span class="header-section-number">62.0.9</span> Separating Columns</h3>
+<p>Sometimes multiple pieces of information are merged within a single column even though it would be more useful during analysis to have those pieces of information in separate columns. To demonstrate, we’ll now move from the <code>msleep</code> dataset to talking about another <a href="https://raw.githubusercontent.com/suzanbaert/Dplyr_Tutorials/master/conservation_explanation.csv">dataset</a> that includes information about conservation abbreviations in a single column.</p>
+<p>To read this file into R, we’ll use the <code>httr</code> package, which will be discussed in detail in a future lesson. For now, however, know that we’re using this to read in a file from the Internet using the code below.</p>
+<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="tidying-data.html#cb140-1" aria-hidden="true" tabindex="-1"></a><span class="do">## if not already installed, you&#39;ll have to run the following line of code</span></span>
+<span id="cb140-2"><a href="tidying-data.html#cb140-2" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages(&#39;httr&#39;)</span></span>
+<span id="cb140-3"><a href="tidying-data.html#cb140-3" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages(&#39;readr&#39;)</span></span>
+<span id="cb140-4"><a href="tidying-data.html#cb140-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb140-5"><a href="tidying-data.html#cb140-5" aria-hidden="true" tabindex="-1"></a><span class="do">## load the libraries</span></span>
+<span id="cb140-6"><a href="tidying-data.html#cb140-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(httr)</span>
+<span id="cb140-7"><a href="tidying-data.html#cb140-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb140-8"><a href="tidying-data.html#cb140-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb140-9"><a href="tidying-data.html#cb140-9" aria-hidden="true" tabindex="-1"></a><span class="do">## download file</span></span>
+<span id="cb140-10"><a href="tidying-data.html#cb140-10" aria-hidden="true" tabindex="-1"></a><span class="fu">GET</span>(<span class="st">&quot;https://raw.githubusercontent.com/suzanbaert/Dplyr_Tutorials/master/conservation_explanation.csv&quot;</span>, <span class="fu">write_disk</span>(tf <span class="ot">&lt;-</span> <span class="fu">tempfile</span>(<span class="at">fileext =</span> <span class="st">&quot;.csv&quot;</span>)))</span>
+<span id="cb140-11"><a href="tidying-data.html#cb140-11" aria-hidden="true" tabindex="-1"></a>conservation <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(tf)</span>
+<span id="cb140-12"><a href="tidying-data.html#cb140-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb140-13"><a href="tidying-data.html#cb140-13" aria-hidden="true" tabindex="-1"></a><span class="do">## take a look at this file</span></span>
+<span id="cb140-14"><a href="tidying-data.html#cb140-14" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(conservation)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_250" alt="" />
+<p class="caption">Conservation data set</p>
+</div>
+<p>In this dataset, we see that there is a single column that includes <em>both</em> the abbreviation for the conservation term as well as what that abbreviation means. Recall that this violates one of the tidy data principles covered in the first lesson: Put just one thing in a cell. To work with these data, you could imagine that you may want these two pieces of information (the abbreviation and the description) in two different columns. To accomplish this in R, you’ll want to use <code>separate()</code> from <code>tidyr</code>.</p>
+<p>The <code>separate()</code> function requires the name of the existing column that you want to separate (<code>conservation abbreviation</code>), the desired column names of the resulting separated columns (<code>into = c("abbreviation", "description")</code>), and the characters that currently separate the pieces of information (<code>sep = " = "</code>). We have to put <code>conservation abbreviation</code> in back ticks in the code below because the column name contains a space. Without the back ticks, R would think that <code>conservation</code> and <code>abbreviation</code> were two separate things. This is another violation of tidy data! Variable names should have underscores, not spaces!</p>
+<div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="tidying-data.html#cb141-1" aria-hidden="true" tabindex="-1"></a>conservation <span class="sc">%&gt;%</span></span>
+<span id="cb141-2"><a href="tidying-data.html#cb141-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate</span>(<span class="st">`</span><span class="at">conservation abbreviation</span><span class="st">`</span>,</span>
+<span id="cb141-3"><a href="tidying-data.html#cb141-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">into =</span> <span class="fu">c</span>(<span class="st">&quot;abbreviation&quot;</span>, <span class="st">&quot;description&quot;</span>), <span class="at">sep =</span> <span class="st">&quot; = &quot;</span>)</span></code></pre></div>
+<p>The output of this code shows that we now have two separate columns with the information in the original column separated out into <code>abbreviation</code> and <code>description</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_261" alt="" />
+<p class="caption">Output of separate()</p>
+</div>
+</div>
+<div id="merging-columns" class="section level3" number="62.0.10">
+<h3><span class="header-section-number">62.0.10</span> Merging Columns</h3>
+<p>The opposite of <code>separate()</code> is <code>unite()</code>. So, if you have information in two or more different columns but wish it were in one single column, you’ll want to use <code>unite()</code>. Using the code forming the two separate columns above, we can then add on an extra line of <code>unite()</code> code to re-join these separate columns, returning what we started with.</p>
+<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="tidying-data.html#cb142-1" aria-hidden="true" tabindex="-1"></a>conservation <span class="sc">%&gt;%</span></span>
+<span id="cb142-2"><a href="tidying-data.html#cb142-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate</span>(<span class="st">`</span><span class="at">conservation abbreviation</span><span class="st">`</span>,</span>
+<span id="cb142-3"><a href="tidying-data.html#cb142-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">into =</span> <span class="fu">c</span>(<span class="st">&quot;abbreviation&quot;</span>, <span class="st">&quot;description&quot;</span>), <span class="at">sep =</span> <span class="st">&quot; = &quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb142-4"><a href="tidying-data.html#cb142-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unite</span>(united_col, abbreviation, description, <span class="at">sep =</span> <span class="st">&quot; = &quot;</span>)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_408" alt="" />
+<p class="caption">Output of unite()</p>
+</div>
+</div>
+<div id="cleaning-up-column-names" class="section level3" number="62.0.11">
+<h3><span class="header-section-number">62.0.11</span> Cleaning up column names</h3>
+<p>While maybe not quite as important as some of the other functions mentioned in this lesson, a function that will likely prove very helpful as you start analyzing lots of different datasets is <code>clean_names()</code> from the <code>janitor</code> package. This function takes the existing column names of your dataset, converts them all to lowercase letters and numbers, and separates all words using the underscore character. For example, there is a space in the column name for conservation. <code>clean_names()</code> will convert <code>conservation abbreviation</code> to <code>conservation_abbreviation</code>. These cleaned up column names are a lot easier to work with when you have large datasets.</p>
+<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="tidying-data.html#cb143-1" aria-hidden="true" tabindex="-1"></a>conservation <span class="sc">%&gt;%</span></span>
+<span id="cb143-2"><a href="tidying-data.html#cb143-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>()</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_329" alt="" />
+<p class="caption">clean_names() output</p>
+</div>
+</div>
+<div id="combining-data-across-data-frames" class="section level3" number="62.0.12">
+<h3><span class="header-section-number">62.0.12</span> Combining data across data frames</h3>
+<p>There is often information stored in two separate data frames that you’ll want in a single data frame. There are <em>many</em> different ways to join separate data frames. They are discussed in more detail in <a href="http://stat545.com/bit001_dplyr-cheatsheet.html">this tutorial</a> from <a href="https://www.stat.ubc.ca/~jenny/">Jenny Bryan</a>. Here, we’ll demonstrate how the <code>left_join()</code> function works, as this is used frequently.</p>
+<p>Let’s try to combine the information from the two different datasets we’ve used in this lesson. We have <code>msleep</code> and <code>conservation</code>. <code>msleep</code> contains a column called <code>conservation</code>. This column includes lowercase abbreviations that overlap with the uppercase abbreviations in the <code>abbreviation</code> column in the <code>conservation</code> dataset.</p>
+<p>To handle the fact that in one dataset the abbreviations are lowercase and the other they are uppercase, we’ll use <code>mutate()</code> to take all the lowercase abbreviations to uppercase abbreviations using the function <code>toupper()</code>.</p>
+<p>We’ll then use <code>left_join()</code> which takes all of the rows in the first dataset mentioned (<code>msleep</code>, below) and incorporates information from the second dataset mentioned (<code>conserve</code>, below), when information in the second dataset is available. The <code>by =</code> argument states what columns to join by in the first (“conservation”) and second (“abbreviation”) datasets. This join adds the <code>description</code> column from the <code>conserve</code> dataset onto the original dataset (<code>msleep</code>). Note that if there is no information in the second dataset that matches with the information in the first dataset, <code>left_join()</code> will add NA. Specifically, for rows where conservation is “DOMESTICATED” below, the <code>description</code> column will have NA because “DOMESTICATED”” is not an abbreviation in the <code>conserve</code> dataset.</p>
+<div class="sourceCode" id="cb144"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb144-1"><a href="tidying-data.html#cb144-1" aria-hidden="true" tabindex="-1"></a><span class="do">## take conservation dataset and separate information</span></span>
+<span id="cb144-2"><a href="tidying-data.html#cb144-2" aria-hidden="true" tabindex="-1"></a><span class="do">## into two columns</span></span>
+<span id="cb144-3"><a href="tidying-data.html#cb144-3" aria-hidden="true" tabindex="-1"></a><span class="do">## call that new object `conserve`</span></span>
+<span id="cb144-4"><a href="tidying-data.html#cb144-4" aria-hidden="true" tabindex="-1"></a>conserve <span class="ot">&lt;-</span> conservation <span class="sc">%&gt;%</span></span>
+<span id="cb144-5"><a href="tidying-data.html#cb144-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate</span>(<span class="st">`</span><span class="at">conservation abbreviation</span><span class="st">`</span>,</span>
+<span id="cb144-6"><a href="tidying-data.html#cb144-6" aria-hidden="true" tabindex="-1"></a>           <span class="at">into =</span> <span class="fu">c</span>(<span class="st">&quot;abbreviation&quot;</span>, <span class="st">&quot;description&quot;</span>), <span class="at">sep =</span> <span class="st">&quot; = &quot;</span>)</span>
+<span id="cb144-7"><a href="tidying-data.html#cb144-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-8"><a href="tidying-data.html#cb144-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-9"><a href="tidying-data.html#cb144-9" aria-hidden="true" tabindex="-1"></a><span class="do">## now lets join the two datasets together</span></span>
+<span id="cb144-10"><a href="tidying-data.html#cb144-10" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb144-11"><a href="tidying-data.html#cb144-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">conservation =</span> <span class="fu">toupper</span>(conservation)) <span class="sc">%&gt;%</span></span>
+<span id="cb144-12"><a href="tidying-data.html#cb144-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(conserve, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">&quot;conservation&quot;</span> <span class="ot">=</span> <span class="st">&quot;abbreviation&quot;</span>))</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_265" alt="" />
+<p class="caption">Data resulting from left_join</p>
+</div>
+<p>It’s important to note that there are many other ways to join data, which are covered in more detail on this <a href="http://stat545.com/bit001_dplyr-cheatsheet.html">dplyr join cheatsheet</a> from Jenny Bryan. For now, it’s important to know that joining datasets is done easily in R using tools in <code>dplyr</code>. As you join data frames in your own work, it’s a good idea to refer back to this cheatsheet for assistance.</p>
+</div>
+<div id="grouping-data" class="section level3" number="62.0.13">
+<h3><span class="header-section-number">62.0.13</span> Grouping Data</h3>
+<p>Often, data scientists will want to summarize information in their dataset. You may want to know how many people are in a dataset. However, more often, you’ll want to know how many people there are within a group in your dataset. For example, you may want to know how many males and how many females there are. To do this, grouping your data is necessary. Rather than looking at the total number of individuals, to accomplish this, you first have to <strong>group the data</strong> by the gender of the individuals. Then, you count within those groups. Grouping by variables within <code>dplyr</code> is straightforward.</p>
+<div id="group_by" class="section level4" number="62.0.13.1">
+<h4><span class="header-section-number">62.0.13.1</span> group_by()</h4>
+<p>There is an incredibly helpful function within <code>dplyr</code> called <code>group_by()</code>. <code>group_by()</code> groups a dataset by one or more variables. On its own, it does not appear to change the dataset very much. The difference between the two outputs below is subtle:</p>
+<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="tidying-data.html#cb145-1" aria-hidden="true" tabindex="-1"></a>msleep</span>
+<span id="cb145-2"><a href="tidying-data.html#cb145-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb145-3"><a href="tidying-data.html#cb145-3" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb145-4"><a href="tidying-data.html#cb145-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(order)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_278" alt="" />
+<p class="caption">group_by() output</p>
+</div>
+<p>In fact, the only aspect of the output that is different is that the number of different orders is now printed on your screen. However, in the next section, you’ll see that the output from any further functions you carry out at this point will differ between the two datasets.</p>
+</div>
+</div>
+<div id="summarizing-data" class="section level3" number="62.0.14">
+<h3><span class="header-section-number">62.0.14</span> Summarizing Data</h3>
+<p>Throughout data cleaning and analysis it will be important to summarize information in your dataset. This may be for a formal report or for checking the results of a data tidying operation.</p>
+<div id="summarize" class="section level4" number="62.0.14.1">
+<h4><span class="header-section-number">62.0.14.1</span> summarize()</h4>
+<p>Continuing on from the previous examples, if you wanted to figure out how many samples are present in your dataset, you could use the <code>summarize()</code> function.</p>
+<div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="tidying-data.html#cb146-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb146-2"><a href="tidying-data.html#cb146-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(order) <span class="sc">%&gt;%</span></span>
+<span id="cb146-3"><a href="tidying-data.html#cb146-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">N=</span><span class="fu">n</span>())</span></code></pre></div>
+<p>This provides a summary of the data with the new column name we specified above (<code>N</code>) and the number of samples in the dataset. Note that we could also obtain the same information by directly obtaining the number of rows in the data frame with <code>nrow(msleep)</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_285" alt="" />
+<p class="caption">Summarize with n()</p>
+</div>
+<p>However, if you wanted to count how many of each different <code>order</code> of mammal you had. You would first <code>group_by(order)</code> and then use <code>summarize()</code>. This will summarize within group.</p>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="tidying-data.html#cb147-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb147-2"><a href="tidying-data.html#cb147-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(order) <span class="sc">%&gt;%</span></span>
+<span id="cb147-3"><a href="tidying-data.html#cb147-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(order) <span class="sc">%&gt;%</span></span>
+<span id="cb147-4"><a href="tidying-data.html#cb147-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">N=</span><span class="fu">n</span>())</span></code></pre></div>
+<p>The output from this, like above, includes the column name we specified in summarize (<code>N</code>). However, it includes the number of samples in the group_by variable we specified (<code>order</code>).</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_293" alt="" />
+<p class="caption">group_by() and summarize with n()</p>
+</div>
+<p>There are other ways in which the data can be summarized using <code>summarize()</code>. In addition to using n() to count the number of samples within a group, you can also summarize using other helpful functions within R, such as <code>mean()</code>, <code>median()</code>, <code>min()</code>, and <code>max()</code>.</p>
+<p>For example, if we wanted to calculate the average (mean) total sleep each order of mammal got, we could use the following syntax:</p>
+<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="tidying-data.html#cb148-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb148-2"><a href="tidying-data.html#cb148-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(order) <span class="sc">%&gt;%</span></span>
+<span id="cb148-3"><a href="tidying-data.html#cb148-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(order, sleep_total) <span class="sc">%&gt;%</span></span>
+<span id="cb148-4"><a href="tidying-data.html#cb148-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">N=</span><span class="fu">n</span>(), <span class="at">mean_sleep=</span><span class="fu">mean</span>(sleep_total))</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_300" alt="" />
+<p class="caption">summarize using mean()</p>
+</div>
+</div>
+<div id="tabyl" class="section level4" number="62.0.14.2">
+<h4><span class="header-section-number">62.0.14.2</span> tabyl()</h4>
+<p>In addition to using <code>summarize()</code> from <code>dplyr</code>, the <code>tabyl()</code> function from the <code>janitor</code> package can be incredibly helpful for summarizing categorical variables quickly and discerning the output at a glance. Again returning to our <code>msleep</code> dataset, if we wanted to get a summary of how many samples are in each order category and what percent of the data fall into each category we could call tabyl on that variable. For example, if we use the following syntax, we easily get a quick snapshot of this variable.</p>
+<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="tidying-data.html#cb149-1" aria-hidden="true" tabindex="-1"></a>msleep <span class="sc">%&gt;%</span></span>
+<span id="cb149-2"><a href="tidying-data.html#cb149-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(order)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_304" alt="" />
+<p class="caption">summarize using tabyl() from janitor</p>
+</div>
+<p>Note, that <code>tabyl</code> assumes categorical variables. If you want to summarize numeric variables <code>summary()</code> works well. For example, this code will summarize the values in <code>msleep$awake</code> for you.</p>
+<div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="tidying-data.html#cb150-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(msleep<span class="sc">$</span>awake)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_320" alt="" />
+<p class="caption">summarize numeric variables</p>
+</div>
+</div>
+<div id="skim" class="section level4" number="62.0.14.3">
+<h4><span class="header-section-number">62.0.14.3</span> skim()</h4>
+<p>When you would rather get a snapshot of the entire dataset, rather than just one variable, the <code>skim()</code> function from the <code>skimr</code> package can be very helpful. The output from <code>skim()</code> breaks the data up by variable type. For example, the <code>msleep</code> data set is broken up into <code>character</code> and <code>numeric</code> variable types. The data are then summarized in a meaningful way for each. This function provides a lot of information about the entire data set. So, when you want a summarize a dataset and quickly get a sense of your data, <code>skim()</code> is a great option!</p>
+<div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="tidying-data.html#cb151-1" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(msleep)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/export/png?id=1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4&amp;pageid=g38bb68a535_0_313" alt="" />
+<p class="caption">summarize entire dataset using skim() from skimr</p>
+</div>
+</div>
+</div>
+<div id="conclusion" class="section level3" number="62.0.15">
+<h3><span class="header-section-number">62.0.15</span> Conclusion</h3>
+<p>We have gone through a number of ways to work with data in this lesson. Mastering the skills in this lesson will provide you with a number of critical data science skills. Thus, running the examples in this lesson and practicing on your own with other data sets will be essential to succeeding as a data scientist.</p>
+</div>
+<div id="additional-resources-13" class="section level3" number="62.0.16">
+<h3><span class="header-section-number">62.0.16</span> Additional Resources</h3>
+<ul>
+<li><a href="https://dplyr.tidyverse.org/">dplyr</a>, part of the <a href="https://www.tidyverse.org/">tidyverse</a></li>
+<li><a href="https://cran.r-project.org/web/packages/janitor/index.html">janitor</a>, from <a href="http://samfirke.com/">Sam Firke</a></li>
+<li>dplyr tutorials by <a href="https://suzan.rbind.io/">Suzan Baert</a> <a href="https://suzan.rbind.io/2018/01/dplyr-tutorial-1/">Part 1</a> <a href="https://suzan.rbind.io/2018/02/dplyr-tutorial-2/">Part 2</a> <a href="https://suzan.rbind.io/2018/02/dplyr-tutorial-3/">Part 3</a> <a href="https://suzan.rbind.io/2018/04/dplyr-tutorial-4/">Part 4</a></li>
+<li><a href="https://medium.com/@verajosemanuel/janitor-a-good-r-package-for-data-cleaning-f3c733632ad9">janitor tutorial</a> by</li>
+<li><a href="http://stat545.com/bit001_dplyr-cheatsheet.html">dplyr join cheatsheet</a> by <a href="https://www.stat.ubc.ca/~jenny/">Jenny Bryan</a></li>
+</ul>
+<p><strong>Note</strong>: a lot of the examples in this lesson were modified from the dplyr tutorials by <a href="https://suzan.rbind.io/">Suzan Baert</a>. To get an even <strong>deeper</strong> understanding of how to tidy data using <code>dplyr</code>, take a look at all of her dplyr tutorials.</p>
+</div>
+<div id="slides-and-video-59" class="section level3" number="62.0.17">
+<h3><span class="header-section-number">62.0.17</span> Slides and Video</h3>
+<div class="figure">
+<img src="https://youtu.be/-B_jdAi6Eds" alt="" />
+<p class="caption">Tidying Data</p>
+</div>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/edit?usp=sharing">Slides</a></li>
+</ul>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="reshaping-data-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="working-with-strings.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

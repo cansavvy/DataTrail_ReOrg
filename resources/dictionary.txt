@@ -13,6 +13,7 @@ docx
 don'ts
 Don'ts
 DropBox
+experimentalists
 JaneEverydayDoe
 jtleek
 jtleek's
@@ -79,9 +80,11 @@ gg
 gganimate
 ggplotly
 ggtitle
+GIFs
 glms
 gridlines
 Grolemund
+Harshita
 hc
 Healthways
 HH
@@ -91,6 +94,8 @@ Homoscedasticity
 htm
 iPhones
 iPods
+IDF
+io
 Jager
 jpeg
 kable

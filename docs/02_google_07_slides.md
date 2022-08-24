@@ -21,7 +21,7 @@ Like Docs and Sheets, Google Slides can be accessed from within Google Drive.  T
 
 ![Slides on Google Drive](https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&pageid=g3acdf2805f_0_0)
 
-Like Docs and Sheets, however, you can also access Google Slides directly through its own URL, [https://slides.google.com](https://slides.google.com).  Remember, Google Drive contains all of the files you have stored on the cloud, while Google Slides will only contain your presentation files.  Your Google Slides homepage will have the same structure as for Docs and Sheets.  You can see there is a TEMPLATE GALLERY at the top of the screen and recent presentations at the bottom.  To start a new presentation, you can select the "Blank" option or any of the available templates.
+Like Docs and Sheets, however, you can also access Google Slides directly through its own URL, [slides.google.com](https://slides.google.com).  Remember, Google Drive contains all of the files you have stored on the cloud, while Google Slides will only contain your presentation files.  Your Google Slides homepage will have the same structure as for Docs and Sheets.  You can see there is a TEMPLATE GALLERY at the top of the screen and recent presentations at the bottom.  To start a new presentation, you can select the "Blank" option or any of the available templates.
 
 
 ![Google Slides Page](https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&pageid=g3acdf2805f_0_78)

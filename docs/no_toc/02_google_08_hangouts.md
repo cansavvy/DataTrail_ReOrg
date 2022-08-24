@@ -6,7 +6,7 @@ An additional bonus feature of Hangouts is that it syncs automatically across di
 
 ### Accessing your Google Hangouts account
 
-Like the other Google services we've talked about, you need a Google account in order to use Hangouts. To access your Hangouts account, You can either go to the Hangouts URL at [https://hangouts.google.com](https://hangouts.google.com) or click on the start menu located on the lower left hand corner of your Chromebook and searching for "Hangouts".  If you're not already logged in to your Google account, first you'll need to log in. Here's a screenshot of Jane's Google Hangouts screen:
+Like the other Google services we've talked about, you need a Google account in order to use Hangouts. To access your Hangouts account, You can either go to the Hangouts URL at [hangouts.google.com](https://hangouts.google.com) or click on the start menu located on the lower left hand corner of your Chromebook and searching for "Hangouts".  If you're not already logged in to your Google account, first you'll need to log in. Here's a screenshot of Jane's Google Hangouts screen:
 
 
 ![Google Hangouts Picture](https://docs.google.com/presentation/d/14u2fp3D2t-umKnFOSfIxyDwfjIDMKJ9cBtqYUh_E93o/export/png?id=14u2fp3D2t-umKnFOSfIxyDwfjIDMKJ9cBtqYUh_E93o&pageid=g350281495f_0_0)

@@ -1,10 +1,6 @@
 
 # Stats Project Exercise
 
-\* If you would like to know the answers to the questions in this exercise, then you can take this [course in Leanpub](https://leanpub.com/universities/courses/jhu/cbds-analysis).
-
-This exercise has been generated to practice everything you have learned in this course set.
-
 ### GitHub Setup
 
 To get started, you'll want to go to GitHub and start a new repository:

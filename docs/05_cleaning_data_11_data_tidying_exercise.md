@@ -80,8 +80,6 @@ Add the code to do this to the `save-data` code chunk in your `data_tidying_proj
 
 We'll now work with the two datasets you read in, so that they're in a usable (long) data format and can be merged into a single data frame.
 
-The wrangling portion of this project will use the skills you learned in [Introduction to R](https://leanpub.com/universities/courses/jhu/cbds-intro-r) and this course [Data Tidying](https://leanpub.com/universities/courses/jhu/cbds-tidying). Feel free to refer back to these materials for reference as you complete the project.
-
 ##### The retail data: `df2`
 
 Now that you have the data in RStudio Cloud and have saved the raw data to your data/raw_data file, we're ready to start wrangling data.

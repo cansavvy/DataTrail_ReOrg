@@ -1,8 +1,6 @@
 
 # Data Visualization Project
 
-\* If you would like to know the answers to the questions in this exercise, then you can take this [course in Leanpub](https://leanpub.com/universities/courses/jhu/cbds-visualization).
-
 Data Visualization is an incredibly important skill for a data scientist. Being able to generate exploratory visualizations that help you understand the data and explanatory visualizations so that your findings
 
 As such, this exercise has been generated to practice your, GitHub, terminal navigation, RStudio, and data wrangling skills.

@@ -1,6 +1,5 @@
 # Making Your Website More Professional
 
-
 TODO: Add creating website steps here!
 
 In this lesson, now that you have these skills and are more comfortable, we'll update the look of your website using the `blogdown` package. In this lesson, we'll cover both how to add more information to your website and how to make it more professional. In doing this, we'll provide examples from others' websites. We hope that by the end of this lesson you'll have a website is helpful to those interested in hiring you!

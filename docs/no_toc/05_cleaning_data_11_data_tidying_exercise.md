@@ -48,8 +48,6 @@ Now that your directories are set up you'll want to use the Terminal (or 'More' 
 
 Once the .Rmd document is in the correct folder, you'll want to change the author of this document to your name at the top of the .Rmd document (in the YAML). Save this change before moving to the next step.
 
-**Note**: If you're stuck on this, these steps were covered in detail in an earlier course: [Organizing Data Science Projects](https://leanpub.com/universities/courses/jhu/cbds-organizing). Refer to the materials in this course if you're stuck on this part of the project.
-
 #### The Data
 
 To get you started, let's get you acquainted with the data. The data you'll be working with are hosted at [data.world](data.world) and contain information about Sales in the US. You'll be working with two datasets.
@@ -79,8 +77,6 @@ Add the code to do this to the `save-data` code chunk in your `data_tidying_proj
 #### Wrangle the Data
 
 We'll now work with the two datasets you read in, so that they're in a usable (long) data format and can be merged into a single data frame.
-
-The wrangling portion of this project will use the skills you learned in [Introduction to R](https://leanpub.com/universities/courses/jhu/cbds-intro-r) and this course [Data Tidying](https://leanpub.com/universities/courses/jhu/cbds-tidying). Feel free to refer back to these materials for reference as you complete the project.
 
 ##### The retail data: `df2`
 
@@ -174,7 +170,9 @@ While data visualization is coming up in a later course, we've included a few li
 
 Before finalizing your project you'll want to add some text outside of your code chunks to explain what you're doing in each code chunk. These explanations are incredibly helpful for someone who doesn't code.
 
-**Note**: If you're stuck on this, these steps were covered in detail in an earlier course: [Introduction to R](https://leanpub.com/universities/courses/jhu/cbds-intro-r). Refer to the R Markdown lesson in this course if you're stuck on this part (or the next part) of the project.
+TODO: Link to markdown lesson
+
+**Note**: If you're stuck on this, refer to the R Markdown lesson in this course if you're stuck on this part (or the next part) of the project.
 
 #### Knit your R Markdown Document
 

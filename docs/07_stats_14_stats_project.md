@@ -1,8 +1,6 @@
 
 # Stats Project Exercise
 
-This exercise has been generated to practice everything you have learned in this course set.
-
 ### GitHub Setup
 
 To get started, you'll want to go to GitHub and start a new repository:

@@ -475,12 +475,6 @@ Many of the text formatting shortcuts are nearly the same as on other types of c
 
 One thing that is somewhat unusual about a Chromebook is that there is not a caps lock key. If you want to turn on caps lock you will need to use the command `alt+launcher`. To turn caps lock back off again you can simply click on the `shift` key.
 
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Chromebook Security
 
 In some ways a Chromebook provides some security for you. Chrome OS has a number of [security features](https://support.google.com/chromebook/answer/3438631?hl=en) that are constantly being improved by Google. We will discuss updating your Chromebook in a later section, but the updates ensure that at a basic level your Chromebook will have good security features. For example, data will be encrypted when passing through a web browser and each browser window will be sandboxed so a web app open in one browser window can't access data from another window.
@@ -630,11 +624,6 @@ If you click on a particular app you can take away the permission of that app to
 
 ![You can remove access for specific apps by clicking on them.](https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&pageid=g3aa77a56e4_0_111)
 
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## Getting Help with a Chromebook
 

@@ -84,9 +84,3 @@ Clicking on the red 'NEW TOPIC' button will bring you to a new window where you 
 ![New Topic Empty Box](https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&pageid=g34b7710eec_0_66)
 
 You're now all up-to-date!
-
-### Slides and Video
-
-![Getting Help](https://www.youtube.com/watch?v=oOy07oW4SIs)
-
-* [Slides](https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/edit?usp=sharing)

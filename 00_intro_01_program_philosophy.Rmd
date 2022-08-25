@@ -31,10 +31,3 @@ We took this approach because we want data science to be accessible to everyone.
 We also believe that the future of data science is increasingly cloud based. So this educational choice matches a trend we see in the field that we can help you take advantage of. It is less and less likely that you will work only on your laptop as a data scientist. Through the internet you will access data and computing power so that you can magnify the impact of what you are working on. We hope to show you how to use those resources to maximize the value you can bring as a new data scientist.
 
 We do recognize that internet access is also a limiting factor for many people. We have tried to make it so that you don't have to download data so hopefully the broadband requirements will be minimal. We hope that if internet access is a challenge for you that you can leverage the resources you have - whether they are local libraries, coffee shops, or internet cafes to complete this program. If that isn't an option for you we'd love to hear from you and see if we can find ways to make data science accessible to everyone, everywhere.
-
-
-### Slides and Video
-
-![Program Philosophy](https://youtu.be/7yZBE_FAeYY)
-
-* [Slides](https://docs.google.com/presentation/d/1s7sLqa0GAUqVaD9TE63ntBKJfXm2Ac2dG90G_41egLI/edit?usp=sharing)

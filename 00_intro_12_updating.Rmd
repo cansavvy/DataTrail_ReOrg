@@ -50,9 +50,3 @@ To complete the update, you will have to restart your Chromebook. To do so, clic
 
 
 At this point, your screen will go black for a few seconds. Your Chromebook will then restart and you'll be brought back to the login screen. Login back in here using your Google username and password.  
-
-### Slides and Video
-
-![Updating Your Chromebook](https://www.youtube.com/watch?v=6vUGdEP20PA)
-
-* [Slides](https://docs.google.com/presentation/d/1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o/edit?usp=sharing)

@@ -187,10 +187,3 @@ This will save the page for later so that you can read it offline.
 
 
 Extensions, like Chrome Web Apps, can improve the way that Chrome OS functions in the same way that installing software on your local computer works. Extensions and Apps help you use your Chromebook to accomplish tasks that would not otherwise be possible.
-
-
-### Slides and Video
-
-![Chromebook OS](https://youtu.be/PSNZ9YGg1G4)
-
-* [Slides](https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/edit?usp=sharing)

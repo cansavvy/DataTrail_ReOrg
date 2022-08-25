@@ -57,10 +57,3 @@ Android Apps are not Chrome Apps so are not accessed through the web browser. In
 
 
 ![The app is working in a window, but not a Chrome Browser](https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/export/png?id=1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU&pageid=g39fa753dc8_1_99)
-
-
-### Slides and Video
-
-![Android Apps](https://www.youtube.com/watch?v=TcgFb_4ghAQ)
-
-* [Slides](https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/edit?usp=sharing)

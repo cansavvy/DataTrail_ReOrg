@@ -70,10 +70,3 @@ This will place your cursor on the file name which will now be editable. If you 
 ![Type in the new name and hit return, but don't change the extension.](https://docs.google.com/presentation/d/1k9e4UEhxg63DWSFkV71u1ewQQe-4DopdXAMG35O0hkc/export/png?id=1k9e4UEhxg63DWSFkV71u1ewQQe-4DopdXAMG35O0hkc&pageid=g3a97bbbaae_0_61)
 
 Usually it is a good idea to leave the file extension the same even if you rename a file. The extension is all of the characters after the period that tells your computer what type of file it is - a code file, a data file, a text file, or something else. For example if your file is named "file.png" then the extension is ".png". So you might change the file name to something like "new_file.png" but you would want to leave the ".png" at the end.
-
-
-### Slides and Video
-
-![File Storage](https://www.youtube.com/watch?v=6V0MNlMYlg0)
-
-* [Slides](https://docs.google.com/presentation/d/1k9e4UEhxg63DWSFkV71u1ewQQe-4DopdXAMG35O0hkc/edit?usp=sharing)

@@ -152,10 +152,3 @@ If you click on a particular app you can take away the permission of that app to
 
 
 ![You can remove access for specific apps by clicking on them.](https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&pageid=g3aa77a56e4_0_111)
-
-
-### Slides and Video
-
-![Chromebook Security](https://www.youtube.com/watch?v=S5TN3jlKIfk)
-
-* [Slides](https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/edit?usp=sharing)

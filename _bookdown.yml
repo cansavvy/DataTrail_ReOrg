@@ -4,6 +4,7 @@ repo: https://github.com/jhudsl/OTTR_Template/
 rmd_files: ["index.Rmd",
             "00_intro_00_welcome.Rmd",
             "00_intro_01_program_philosophy.Rmd",
+            "01_forming_questions.Rmd",
             "00_intro_02_data_science_process.Rmd",
             "00_intro_03_types_of_questions.Rmd",
             "00_intro_04_how_to_learn.Rmd",

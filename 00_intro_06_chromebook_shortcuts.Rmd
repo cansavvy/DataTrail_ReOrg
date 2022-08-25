@@ -15,7 +15,6 @@ In our Chrome Browser lesson we taught you the commands:
 * `Ctrl+w` - close an open Chrome Window or tab
 * `Ctrl+d` - this will bookmark a page
 
-
 There are in fact a large number of keyboard shortcuts. Depending on what you do most often with your Chromebook some may be more or less useful to you.
 
 
@@ -123,11 +122,3 @@ Many of the text formatting shortcuts are nearly the same as on other types of c
 * `ctrl+z` - undoes the previous action you did when editing a file
 
 One thing that is somewhat unusual about a Chromebook is that there is not a caps lock key. If you want to turn on caps lock you will need to use the command `alt+launcher`. To turn caps lock back off again you can simply click on the `shift` key.
-
-
-
-### Slides and Video
-
-![Chromebook Shortcuts](https://www.youtube.com/watch?v=PTuBxc1h0AE)
-
-* [Slides](https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/edit?usp=sharing)

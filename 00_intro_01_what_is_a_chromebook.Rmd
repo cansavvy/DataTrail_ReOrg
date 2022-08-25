@@ -33,10 +33,3 @@ If you are used to using a "normal" computer it can take a little getting used t
 If you restrict yourself to only working in web browsers, doing everything will feel a little weird at first. It is sort of like writing a [Haiku](https://en.wikipedia.org/wiki/Haiku) - a type of poem with a very specific set of rules. When you first start writing these poems it can be difficult to remember the rules. But after you get used to it the rules begin to come much more naturally. In a similar way, using a web browser for everything becomes second nature after a period of "learning the rules".
 
 Using Chromebooks to do data science is a relatively [new idea](https://simplystatistics.org/posts/2018-10-01-chromebook-data-science-an-online-data-science-program-for-anyone-with-a-web-browser/) and is only possible in the last few years. But increasingly the tools for doing data science are available through the web. It is more and more common to have to use the Internet to rent computers, do analyses, or distribute your results. So by learning to do data science on a Chromebook, you are preparing for a future where most analysis is done online.
-
-
-### Slides and Video
-
-![What is a Chromebook](https://youtu.be/5x8d7F6_rSk)
-
-* [Slides](https://docs.google.com/presentation/d/1GMZhK8UFRljEGRFfcj2Uy358E7DYUf3Asi_UtPeYY88/edit?usp=sharing)

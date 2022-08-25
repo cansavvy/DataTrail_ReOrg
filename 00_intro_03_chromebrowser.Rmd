@@ -87,11 +87,3 @@ If you click on "Done", the bookmark will be saved to the Bookmarks bar. Next ti
 ![Bookmarks](https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&pageid=g325fd519ca_0_5)
 
 Those are the basics of how you manipulate windows and tabs in the Chrome browser. In the following lessons we'll learn more about how you can use these windows to take advantage of the web through your Chromebook.
-
-
-
-### Slides and Video
-
-![Chrome Browser](https://youtu.be/Xeoh5Sgly4Y)
-
-* [Slides](https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/edit?usp=sharing)

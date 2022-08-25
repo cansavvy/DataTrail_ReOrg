@@ -12,8 +12,19 @@ default-random-choice-order: true
 default-quiz-show-answers: none
 }
 
-# Welcome to DataTrail
+# Intro -- Welcome to DataTrail
+
 Hello and welcome! This is the first course in the _DataTrail_ program. The goal of _DataTrail_ is to help anyone with an internet connection and a computer learn to do data science. The program will start with the very basics of using a computer on the internet and work all the way up to doing data science and data analysis. We hope that by building this program we can help people get into the exciting tech world in one of the [fastest growing](https://insights.dice.com/2020/02/13/fastest-growing-tech-occupations-data-scientist-engineer/) and [most satisfying](https://www.techrepublic.com/article/is-data-scientist-the-most-rewarding-tech-job-new-report-says-yes/) jobs in the United States. There are only going to be more and more jobs asking for [data science skills](https://www.forbes.com/sites/louiscolumbus/2017/05/13/ibm-predicts-demand-for-data-scientists-will-soar-28-by-2020/) in the future. We believe that by making this career accessible to anyone we can have a positive impact on the world.
+
+## Learning objectives for this section
+
+In this section our goal is for you to be able to:
+
+- Understand the components of this DataTrail course
+- Navigate the basic use of your chromebook and its operating system
+- Acknowledge the expectations and requirements for completing this course
+- Describe what data science is
+- Setup the basic accounts you will need to complete this course 
 
 ### Course Details
 
@@ -24,7 +35,7 @@ Before we jump into the content, we just wanted to orient you to how this course
 * **Videos** - At the end of each lesson there will be a link to a YouTube video. This video contains the same information as what is included in the text of the lesson; however, we know that some people learn better by listening. Sometimes you may find the videos more helpful. Sometimes you may find the text more helpful. These are included in case they are more helpful than the text to you personally.
 * **Slides** - Each lesson also has link at the bottom to an accompanying slide show. Feel free to look through these slides if you find them helpful. They are the same images that were used to generate the video.
 * **Quizzes** - Most lessons will have a quiz to evaluate your understanding of the material in that lesson. Successful completion of these quizzes is required for receipt of the certificate at the end of each course.
-* **Exercise** - A few of the courses will have associated exercises. Think of these as larger projects. They won't be required to receive the certificate at the end of the course; however, the skills the exercises require will be essential if you're interested in getting a job in data science, so we highly suggest you complete them.
+* **Exercise** - Some courses will have associated exercises. Think of these as larger projects. They won't be required to receive the certificate at the end of the course; however, the skills the exercises require will be essential if you're interested in getting a job in data science, so we highly suggest you complete them.
 
 ### What is data science?
 
@@ -43,7 +54,6 @@ But to make data valuable we need to be able to study it and separate the intere
 > "Data science is asking a question that can be answered with data, collecting and cleaning the data, studying the data, creating models to help understand and answer the question, and sharing the answer to the question with other people."
 
 The reason this field is growing so fast is that nearly every government, company, and organization is now collecting data. As the data have become cheaper and cheaper, the ability to analyze that data and find useful information has become a more and more valuable skill. But most people don't have training or experience sifting through big piles of data to make interesting and valuable discoveries. The people who can do this well are called data scientists. They have a job that is exciting, interesting, and promises to be in high demand for years to come.
-
 
 ### What is DataTrail?
 
@@ -100,8 +110,4 @@ To keep up on the latest information about the program, courses and more go to h
 
 ### How this course is graded
 
-This first class is designed to get you set up with the accounts you will use as you learn to become a data scientist. You will also complete your first data science project. Each lesson will have a short quiz at the end. To pass the course you need to get 70% of the questions in the course correct. If you receive more than 90% of the points across all quizzes you will pass with honors.
-
-### Slides and Video
-
-[Slides](https://docs.google.com/presentation/d/18q2gRHXGZxBL7pSWcQg_HThmgoo5qDeO9O372QkAnYU/edit?usp=sharing)
+Each lesson will have a short quiz at the end. To pass the course you need to get 70% of the questions in the course correct. If you receive more than 90% of the points across all quizzes you will pass with honors.

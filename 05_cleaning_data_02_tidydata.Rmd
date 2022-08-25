@@ -139,9 +139,3 @@ Most importantly, however, remember that tidy data are rectangular data. The dat
 - [How to Share Data for Collaboration](https://doi.org/10.7287/peerj.preprints.3139v5)
 - [Data Carpentry's Data Organization in Spreadsheets](http://www.datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/)
 - [Karl Broman's Data Organization blog post](http://kbroman.org/dataorg/)
-
-### Slides and Video
-
-![Tidy Data](https://youtu.be/zdbw5RDeT3c)
-
-* [Slides](https://docs.google.com/presentation/d/1JTG8Kt9htfyNsGQcsleHZNNXHKLe1zUlOb-SsnVNf54/edit?usp=sharing)

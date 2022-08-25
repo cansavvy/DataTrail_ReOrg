@@ -44,9 +44,3 @@ To address this, these data can be split into two different spreadsheets, one fo
 
 
 ![Tidy version of the messy data set](https://docs.google.com/presentation/d/1SS0PYUE9_dE1MIWt6CZePEMUFL2P2Zy_3BidNWSq7hs/export/png?id=1SS0PYUE9_dE1MIWt6CZePEMUFL2P2Zy_3BidNWSq7hs&pageid=g326b2fc90a_0_16)
-
-### Slides and Video
-
-![Tidy Data](https://youtu.be/XO-goK_loFw)
-
-* [Slides](https://docs.google.com/presentation/d/1SS0PYUE9_dE1MIWt6CZePEMUFL2P2Zy_3BidNWSq7hs/edit?usp=sharing)

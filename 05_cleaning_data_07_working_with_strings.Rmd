@@ -406,10 +406,3 @@ This lesson set out to introduce you to how to work with strings within RStudio,
 
 * [r4ds : Chapter 14 - Strings](http://r4ds.had.co.nz/strings.html) by [Hadley Wickham](http://hadley.nz/)
 * [stringr documentation](http://stringr.tidyverse.org/articles/regular-expressions.html), part of the [tidyverse](https://www.tidyverse.org/)
-
-
-### Slides and Video
-
-![Working with Strings](https://youtu.be/F1YuVyHGwEQ)
-
-* [Slides](https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/edit?usp=sharing)

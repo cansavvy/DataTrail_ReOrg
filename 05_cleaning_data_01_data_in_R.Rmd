@@ -226,9 +226,3 @@ In this lesson we've covered the main file formats that are used within R. Make 
 
 * [R Studio Projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
 * [R Data files](https://thepracticalr.wordpress.com/2017/04/27/load-save-and-rda-files/)
-
-### Slides and Video
-
-![Data in R](https://youtu.be/fPt9faKdhP8)
-
-* [Slides](https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/edit?usp=sharing)

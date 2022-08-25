@@ -52,9 +52,3 @@ Note that the first line describes what the function does. Commenting is helpful
 ### Write in a Modular Way
 
 One mistake in writing code is to have everything in one file. This is bad practice since fixing bugs and replicating the analysis would be much harder. Therefore, it is recommended that you write code in a modular way so that each group of code that do similar things can be put in a single file and the master file calls these individual files. The result is a much cleaner and shorter master file.
-
-### Slides and Video
-
-![How To Work](https://www.youtube.com/watch?v=kKXOHJRZGdE)
-
-* [Slides](https://docs.google.com/presentation/d/1vn8Lb8YNvo1zha7GmJMlQSBRSAryRms6xy5HUtafH2A/edit?usp=sharing)  

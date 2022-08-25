@@ -174,9 +174,3 @@ write_csv(df_csv, path = "my_csv_file.csv")
 You could similar save your data as a TSV file using the function `write_tsv()` function.
 
 We'll finally note that there are default R functions `write.csv()` and `write.table()` that accomplish similar goals. You may see these in others' code; however, we recommend sticking to the intuitive and quick `readr` functions discussed in this lesson.
-
-### Slides and Video
-
-![CSV, Excel, and TSV Files](https://www.youtube.com/watch?v=qzo8RLJfy_U)
-
-* [Slides](https://docs.google.com/presentation/d/199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM/edit?usp=sharing)

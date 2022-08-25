@@ -133,9 +133,3 @@ This lesson has not covered how to work with times, much detail about how to ope
 * [r4ds : Chapter 16 - Dates and times](http://r4ds.had.co.nz/dates-and-times.html) by [Hadley Wickham](http://hadley.nz/)
 * [lubridate](http://lubridate.tidyverse.org/), part of the [tidyverse](https://www.tidyverse.org/)
 * [hms](https://github.com/tidyverse/hms) package, for working with time objects. This package is also part of the [tidyverse](https://www.tidyverse.org/)
-
-### Slides and Video
-
-![Working with Dates](https://youtu.be/OaVuMHSR0T0)
-
-* [Slides](https://docs.google.com/presentation/d/1iLU-H6-GZw7EhL2syFZnjn_tC_cI6s9PmKRxcSOjg1c/edit?usp=sharing)

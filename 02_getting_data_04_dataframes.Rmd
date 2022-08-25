@@ -11,7 +11,7 @@ A majority of the time that you are working with data in R you will have it in t
 Data frames can contain different types of variables in a rectangular format, much like how spreadsheets are.
 A data frames' size can be describe in terms of rows (across) and columns (up/down). Rows are often called *observations* and columns are called *variables*.
 
-```{r, out.width = 100%}
+```{r, out.width = "100%"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc/edit#slide=id.g313d649efe_0_38")
 ```
 
@@ -107,7 +107,7 @@ iris[, 3]
 
 Now that we have some basics down, let's preview how we can easily make visuals with R. "A picture is worth a thousand words" is also true when it comes to data!
 
-In this quick plot example, we can show how `Sepal Length` is related to `Sepal Width` by extracting the data using `$`. Additionally we can color code the data points by `Species` by using the `col` arugment. 
+In this quick plot example, we can show how `Sepal Length` is related to `Sepal Width` by extracting the data using `$`. Additionally we can color code the data points by `Species` by using the `col` arugment.
 
 ```{r}
 plot(iris$Sepal.Length, iris$Sepal.Width, col = iris$Species)

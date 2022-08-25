@@ -3,7 +3,7 @@
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Introduction to Markdown
+## Introduction to Markdown
 
 Markdown is a basic markup language designed to be displayed on the web and is part of writing an R Markdown document.  With a few basic commands, you can create polished documents that can be used to:
 

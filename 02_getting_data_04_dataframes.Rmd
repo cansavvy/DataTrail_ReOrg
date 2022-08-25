@@ -1,0 +1,42 @@
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Data Frames
+
+A majority of the time that you are working with data in R you will have it in the form of a data frame.
+
+Data frames can contain different types of variables in a rectangular format, much like how spreadsheets are.
+A data frames' size can be describe in terms of rows (across) and columns (up/down). Rows are often called *observations* and columns are called *variables*.
+
+```{r, out.width = 100%}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc/edit#slide=id.g313d649efe_0_38")
+```
+
+*Much of this chapter is paraphrased or inspired by [content from the Childhood Cancer Data Lab](https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/01-intro_to_base_R.Rmd).
+
+## Exploring data frames
+
+In R there are built in data frames that you can use to play with. In this lesson, we will use some of these to get comfortable with data frames.
+
+As a data scientist, one of your main skills will be constantly looking at and evaluating your data! In RStudio, you can see your data frame by clicking on the name of your data frame in the *Environment* pane.
+
+Some useful functions for exploring our data frame include:
+
+- `head()` to see the first 6 rows of a data frame. Additional arguments supplied can change the number of rows.
+- `tail()` to see the last 6 rows of a data frame. Additional arguments supplied can change the number of rows.
+- `names()` to see the column names of the data frame.
+- `nrow()` to see how many rows are in the data frame
+- `ncol()` to see how many columns are in the data frame.
+
+We can additionally explore overall properties of the data frame with two different functions: `summary()` and `str()`.
+
+```{r}
+head(iris)
+```
+
+### Variables
+
+Each column in this data frame can behave as a vector and we can easily pull it out from the data frame by using a `$`.

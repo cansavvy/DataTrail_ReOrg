@@ -1,7 +1,3 @@
----
-output: html_document
-date: '2022-04-06'
----
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -106,9 +102,3 @@ The R community is a welcoming and helpful community. Many people go years as R 
 * [ROpenSci](https://ropensci.org/) - an online community of developers developing tools for open science
 * [R Project Help in R](https://www.r-project.org/help.html)
 * [Tidyverse Help Documentation](https://www.tidyverse.org/help/) - more details on creating a reprex
-
-### Slides and Video
-
-![Getting Help in R](https://youtu.be/xOww087Vp9g)
-
-* [Slides](https://docs.google.com/presentation/d/1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk/edit?usp=sharing)

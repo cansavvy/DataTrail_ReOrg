@@ -1,7 +1,3 @@
----
-output: html_document
-date: '2022-04-06'
----
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -164,9 +160,3 @@ If you still want to learn more about R packages, here is a great resource: [Int
 * [**BioConductor:**](https://bioconductor.org/packages/release/BiocViews.html#___Software)
 * [**GitHub:**](https://github.com/collections)
 * [Introduction to R Packages](http://faculty.washington.edu/kenrice/rintro/sess08.pdf), from Ken Rice and Timothy Thornton
-
-### Slides and Video
-
-![R Packages](https://youtu.be/2vtK6pbPBJU)
-
-* [Slides](https://docs.google.com/presentation/d/1sVQJJELq39ctr29VXQGLqb5hw5lGzmbVMgI0ehFa_zo/edit?usp=sharing)

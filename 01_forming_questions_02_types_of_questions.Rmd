@@ -1,18 +1,31 @@
 
-# Types of data science questions
+# Forming a question
 
-We will look at a few different types of questions that you might want to answer from data. This flowchart gives some questions you can ask to figure out what type of question your analysis focuses on. Each type of question has different goals.
+```{r, fig.alt = "Data Science process involves", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g145cde68be4_0_10")
+```
+
+### How to start a data analysis
+
+The way to start a data analysis project is to start with a question. Asking questions is central to data science. In this chapter we will start to get comfortable with the types of questions that data science can answer.
+
+It's very likely that in a data science project you will start out with one question that will give rise to many more questions! 
+
+After you have asked your general question, the next step is to turn it into a data science question. This usually involves making the question more concrete, identifying what type of question you are asking, and identifying the parts of the data that you will use to answer the question.
 
 
-There are four classes of question that we will focus on in this class.
+## Types of data science questions
 
-* Descriptive: The goal of descriptive data science questions is to understand the components of a data set, describe what they are, and explain that description to others who might want to understand the data. This is the simplest type of data analysis.
+We will look at a few different types of questions that you might want to answer from data.
+There are four classes of data science questions we will talk about.
 
-* Exploratory: The goal of exploratory data science questions is to find unknown relationships between the different variables you have measured in your data set. Exploratory analysis is open ended and designed to find expected or unexpected relationships between different measurements.
+* **Descriptive**: The goal of descriptive data science questions is to understand the components of a data set, describe what they are, and explain that description to others who might want to understand the data. This is the simplest type of data analysis.
 
-* Inferential: The goal of inferential data science questions is to is to use a small sample of data to say something about what would happen if we collected more data. Inferential questions come up because we want to understand the relationships between different variables but it is too expensive or difficult to collect data on every person or object.
+* **Exploratory**: The goal of exploratory data science questions is to find unknown relationships between the different variables you have measured in your data set. Exploratory analysis is open ended and designed to find expected or unexpected relationships between different measurements.
 
-* Predictive: The goal of predictive data science question is to use data from a large collection to predict values for new individuals. This might be predicting what will happen in the future or predicting characteristics that are difficult to measure. Predictive data science is sometimes called machine learning.
+* **Inferential**: The goal of inferential data science questions is to is to use a small sample of data to say something about what would happen if we collected more data. Inferential questions come up because we want to understand the relationships between different variables but it is too expensive or difficult to collect data on every person or object.
+
+* **Predictive**: The goal of predictive data science question is to use data from a large collection to predict values for new individuals. This might be predicting what will happen in the future or predicting characteristics that are difficult to measure. Predictive data science is sometimes called machine learning.
 
 
 ![Types of Data Analysis](https://docs.google.com/presentation/d/1VIyLthjLSXikF1euqPNA71cnT_C1kSZhDbIPe8uzg9I/export/png?id=1VIyLthjLSXikF1euqPNA71cnT_C1kSZhDbIPe8uzg9I&pageid=g3ec461ec74_0_22)
@@ -53,12 +66,3 @@ Sesame Street is a children's entertainment and educational program. Scientists 
 - **Problem:** Does Sesame Street affect kids brain development?
 - **Data science question:** Is there a relationship between watching Sesame Street and test scores among children?
 - **Type of analysis:** Inferential analysis
-
-
-### How to start a data analysis
-
-The way to start a data analysis project is to start with a question. As we saw in the above examples, the questions should not start with the data. They should start with a general question that you want to start to answer. This approach is called ["problem forward, not solution backward"](https://simplystatistics.org/2013/05/29/what-statistics-should-do-about-big-data-problem-forward-not-solution-backward/).
-
-After you have asked your general question, the next step is to turn it into a data science question. This usually involves making the question more concrete, identifying what type of question you are asking, and identifying the parts of the data that you will use to answer the question. We will cover how to convert general questions to data science questions in a future lesson.
-
-The next steps involve exploring and analyzing the data. The bulk of the rest of this course will focus on the tools you can use to analyze data and find summaries or relationships that answer the questions you ask when starting a data analysis.

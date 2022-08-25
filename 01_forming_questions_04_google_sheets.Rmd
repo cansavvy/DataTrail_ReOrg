@@ -131,9 +131,3 @@ Your screen will update so that this document can now be viewed by anyone, as lo
 ![Shareable](https://docs.google.com/presentation/d/1EPt7DuMZOqJMElDNMi3PWO66OytMlWPoc-RsopdVxNM/export/png?id=1EPt7DuMZOqJMElDNMi3PWO66OytMlWPoc-RsopdVxNM&pageid=g2f8abafabb_0_89)
 
 Congrats!! You have successfully made this spreadsheet shareable and the link has been copied. You'll be asked to paste this link in the quiz for this lesson, and we'll use this spreadsheet link in the next lesson when you get started using RStudio Cloud, so don't close your Google Sheets tab quite yet.
-
-### Slides and Video
-
-![Google Sheets](https://youtu.be/-Mh2AbCisQA)
-
-* [Slides](https://docs.google.com/presentation/d/1EPt7DuMZOqJMElDNMi3PWO66OytMlWPoc-RsopdVxNM/edit?usp=sharing)

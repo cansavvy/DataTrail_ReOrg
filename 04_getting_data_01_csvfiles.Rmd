@@ -1,3 +1,4 @@
+
 # CSV, Excel, and TSV Files
 
 In this lesson, we'll discuss a few of the main file types used to store tabular data. To review briefly, **tabular data** are the type of data stored in spreadsheets. Information from different variables are stored in **columns** and each observation is stored in a different **row**. The values for each observation is stored in its respective **cell**.
@@ -80,7 +81,7 @@ If you want to **write** a **CSV**, **TSV**, or **RDS** file you can use the `wr
 In this example, we can write the `iris` data to a CSV file by providing two arguments.
 The first is what data frame we would like to write to a CSV file. In this case, we want to write `iris` data frame to a file.
 
-The second argument is what the filename we should save to this to a file named ` "iris_data.csv"`. Note that the 
+The second argument is what the filename we should save to this to a file named ` "iris_data.csv"`. Note that the
 
 ```r
 ## install.packages("readr")

@@ -5,6 +5,7 @@ Addins
 Airbnb's
 Arial
 Averick
+Bcc
 blogdown
 Blogdown
 Calibri
@@ -21,7 +22,10 @@ FlowingData
 Glassdoor
 Glassdoor
 Goldmeier
+Googlesheet
 HelioCampus
+Hotmail
+iCloud
 JSM
 Komoot
 NLP
@@ -36,6 +40,7 @@ skillset
 smushed
 StackOverflow's
 strategize
+SSL
 Teate
 Teate's
 toml

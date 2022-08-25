@@ -231,9 +231,3 @@ If you're already familiar with Microsoft Word, Google Docs also operates very s
 
 * [Google's Google Doc Tutorial](https://gsuite.google.com/learning-center/products/docs/get-started/#!/)
 * [GCF Learn Tutorial](https://www.gcflearnfree.org/googledocuments/creating-google-docs/1/)
-
-### Slides and Video
-
-![Google Docs](https://www.youtube.com/watch?v=W-hoROrz7tE)
-
-* [Slides](https://docs.google.com/presentation/d/1Z8iXcc046CvMC7dbCItTSBT2-yBVuuNSEDGKAe3FYhM/edit?usp=sharing)

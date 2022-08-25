@@ -29,7 +29,7 @@ Mentors engage in anti-racism and mentorship training needed to be impactful men
 
 The social connections created along the way will fuel job opportunities for scholars and foster a more diverse, equitable, and inclusive climate at the mentors' institutions.
 
-# Program Philosophy
+## Program Philosophy
 
 Our philosophy with building this course and this program is to try to make data science accessible to the widest audience possible.
 

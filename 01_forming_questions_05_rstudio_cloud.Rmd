@@ -132,9 +132,3 @@ If you don't see any red Xs in your code, there is likely an error with how you 
 ![RStudio Cloud after running the code in leanpub_googlesheets_analysis.R](https://docs.google.com/presentation/d/1FFaIAQO7qtUANdHApu4fFCcB0KT9FNo5oQCWLULqsdY/export/png?id=1FFaIAQO7qtUANdHApu4fFCcB0KT9FNo5oQCWLULqsdY&pageid=g2dfb08b5b0_0_8)
 
 Once you have your plot, you have what you need to make the Google Doc and finish your project in the next lesson. Keep this tab open so that you can copy your plot in the next lesson!
-
-### Slides and Video
-
-![RStudio Cloud](https://youtu.be/O0QeE37cs3Y)
-
-* [Slides](https://docs.google.com/presentation/d/1FFaIAQO7qtUANdHApu4fFCcB0KT9FNo5oQCWLULqsdY/edit?usp=sharing)

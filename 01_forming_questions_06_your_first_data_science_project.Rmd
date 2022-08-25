@@ -10,8 +10,6 @@ We are using this definition of data science.
 
 > "Data science is asking a question that can be answered with data, collecting and cleaning the data, studying the data, creating models to help understand and answer the question, and sharing the answer to the question with other people."
 
-Rather than try to explain data science with examples made by other people, we are going to show you the process of data science through a project that you will complete.
-
 The first step in any data science project is to come up with a question. You are taking this course on [Leanpub](https://leanpub.com/). Leanpub is a website where you can sell books and courses. For this first project the question we are trying to answer is:
 
 > "How does the price of a bestselling book relate to how much the author is charging for that book?"
@@ -50,10 +48,3 @@ But one nice thing about Leanpub is that you can set up a "pay what you want" mo
 We could do this for each book and then we'd have a nice data set that would tell us something about the number of readers for a book and the price of that book. Then we could start to look at the numbers we collected and see if we see any patterns to the data that we have collected to try to answer our question.
 
 We'll go through the steps necessary to do all of this and answer the project question "How does the price of a bestselling book relate to how much the author is charging for that book?" in the following lessons.
-
-
-### Slides and Video
-
-![Your First Data Science Project](https://youtu.be/bnwV4TdQ9_Q)
-
-[Slides](https://docs.google.com/presentation/d/1auByZV5pghzELH-SMKLwxrZtigtXd-PC4Q5SrcT4qlE/edit?usp=sharing)

@@ -15,7 +15,7 @@ A data frames' size can be describe in terms of rows (across) and columns (up/do
 ottrpal::include_slide("https://docs.google.com/presentation/d/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc/edit#slide=id.g313d649efe_0_38")
 ```
 
-*Much of this chapter is paraphrased or inspired by [content from the Childhood Cancer Data Lab](https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/01-intro_to_base_R.Rmd).
+\*Much of this chapter is paraphrased or inspired by [content from the Childhood Cancer Data Lab](https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/01-intro_to_base_R.Rmd).
 
 ## Exploring data frames
 

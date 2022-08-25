@@ -53,6 +53,12 @@ google-account-setup
 getting-a-google-login
 log-off-guest-chromebook
 re-login-using-google-account
+using-gmail-for-email-communications
+accessing-your-gmail-inbox
+composing-and-sending-emails
+replying-to-a-message
+searching-for-specific-messages
+more-specifics-on-using-gmail
 google-drive-1
 accessing-your-google-drive-account
 organizing-files-in-google-drive
@@ -71,12 +77,6 @@ twitter-account
 basecamp-account
 rstudio-cloud-account
 github-account
-using-gmail-for-email-communications
-accessing-your-gmail-inbox
-composing-and-sending-emails
-replying-to-a-message
-searching-for-specific-messages
-more-specifics-on-using-gmail
 forming-questions
 learning-objectives
 the-data-science-process

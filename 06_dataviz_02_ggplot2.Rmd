@@ -258,9 +258,3 @@ In this lesson, we've walked through the basics of generating plots in `ggplot2`
 * [R For Data Science by Hadley Wickham](http://r4ds.had.co.nz/data-visualisation.html#introduction-1)
 * [ggplot2](http://ggplot2.tidyverse.org/)
 * [ggplot2 reference](http://ggplot2.tidyverse.org/reference/)
-
-### Slides and Video
-
-![Introduction to ggplot2](https://youtu.be/ulBMgttWU7A)
-
-* [Slides](https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/edit?usp=sharing)

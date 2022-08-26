@@ -87,9 +87,3 @@ In all, sometimes getting the data just means realizing the data you already hav
 ### Summary
 
 In this lesson, our goal was to give you an idea of where to *find data* so that you can start working on interesting data science projects. Once you've located an interesting dataset, use the skills learned throughout this course to get the data into R. Then, get wrangling! Before you know it you'll be more than halfway through an interesting data science project. Often finding and wrangling the data take up the most time!
-
-### Slides and Video
-
-![Finding Data](https://www.youtube.com/watch?v=-gAROtsR5dY)
-
-* [Slides](https://docs.google.com/presentation/d/1G0lA8z561VirAggV4MxMXu2dwCudolXjeFZWO6P_3F8/edit?usp=sharing)

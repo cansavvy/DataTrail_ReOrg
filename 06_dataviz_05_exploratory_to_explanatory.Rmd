@@ -372,10 +372,3 @@ As we walked through this example, you saw that it can take a lot of code to gen
 
 
 ![It can take a lot of code](https://docs.google.com/presentation/d/1HZFgSe0m8_Ehwvd674AkdpOnnGiir5oluvIi68C_icI/export/png?id=1HZFgSe0m8_Ehwvd674AkdpOnnGiir5oluvIi68C_icI&pageid=g3a0d0ecc6f_0_174)
-
-
-### Slides and Video
-
-![From Exploratory To Explanatory](https://youtu.be/0QZFG7uluq8)
-
- * [Slides](https://docs.google.com/presentation/d/1HZFgSe0m8_Ehwvd674AkdpOnnGiir5oluvIi68C_icI/edit?usp=sharing)

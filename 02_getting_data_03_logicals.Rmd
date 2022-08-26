@@ -1,6 +1,4 @@
----
-output: html_document
----
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -231,9 +229,3 @@ Here, the sum of the `meets_indiv_cut` is 4. When you sum a logical, R returns t
 ### Summary
 
 This lesson walked you through how to work with operators and logical objects. This will be incredibly helpful as you start to manipulate and clean data. Having a thorough understanding of this class of objects and how to work with them will serve you well going forward.
-
-### Slides and Video
-
-![Working with Logicals](https://youtu.be/EQYYXuPpVdE)
-
-* [Slides](https://docs.google.com/presentation/d/1aAtIEkECvpYeOCa1lg6BXEvlw_mvkGhbhRJMVeBlBg4/edit?usp=sharing)

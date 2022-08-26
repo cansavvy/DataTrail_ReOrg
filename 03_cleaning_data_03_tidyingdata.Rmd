@@ -22,7 +22,6 @@ Within R, there is a package specifically designed for helping you wrangle data.
 * `mutate()` - create a new column
 * `group_by()` - group variables
 * `summarize()` - summarize information within a dataset
-* `left_join()` - combining data across data frame
 
 If you have not already, you'll want to be sure this package is installed and loaded:
 
@@ -516,9 +515,3 @@ We have gone through a number of ways to work with data in this lesson. Masterin
 * [dplyr join cheatsheet](http://stat545.com/bit001_dplyr-cheatsheet.html) by [Jenny Bryan](https://www.stat.ubc.ca/~jenny/)
 
 **Note**: a lot of the examples in this lesson were modified from the dplyr tutorials by [Suzan Baert](https://suzan.rbind.io/). To get an even **deeper** understanding of how to tidy data using `dplyr`, take a look at all of her dplyr tutorials.
-
-### Slides and Video
-
-![Tidying Data](https://youtu.be/-B_jdAi6Eds)
-
-* [Slides](https://docs.google.com/presentation/d/1Z1pukaF-HrZHEwSfr3SV8N2Slo2rMEJxpgl1qJv-QL4/edit?usp=sharing)

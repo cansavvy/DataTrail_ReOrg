@@ -26,6 +26,10 @@ This long dataset includes the exact same information as the previous wide datas
 
 While long data formats are less readable than wide data at a glance, they are a lot easier to work with during analysis. Most of the tools we'll be working with use long data. Thus, to go from how data are often stored (wide) to working with the data during analysis (long), we'll need to understand what tools are needed to do this and how to work with them.
 
+## Transposing data
+
+TODO: fill in this section 
+
 ### R Packages
 
 Converting your data from wide-to-long or from long-to-wide data formats is referred to as **reshaping** your data. There are two primary packages in R that will help you reshape your data: [tidyr](https://tidyr.tidyverse.org/) and [reshape2](https://stat.ethz.ch/pipermail/r-packages/2010/001169.html). We'll walk through the important functions of these two packages and work through a few examples using the functions in each. However, as with most helpful packages in R, there is more functionality than what is discussed here, so feel free to explore the additional resources at the bottom to learn even more.
@@ -214,9 +218,3 @@ While reshaping data may not be the most exciting topic, having this skill will 
 * [tidyr tutorial](https://blog.rstudio.com/2014/07/22/introducing-tidyr/) by [Hadley Wickham](http://hadley.nz/)
 * [reshape2 tutorial](http://seananderson.ca/2013/10/19/reshape/) by [Sean C. Anderson](http://seananderson.ca/)
 * [tidyr vs reshape2](https://www.r-bloggers.com/2016/06/how-to-reshape-data-in-r-tidyr-vs-reshape2/) by [Alberto Giudici](https://www.erim.eur.nl/people/alberto-giudici/)
-
-### Slides and Video
-
-![Reshaping Data](https://youtu.be/4Y-AdchVDXo)
-
-* [Slides](https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/edit?usp=sharing)

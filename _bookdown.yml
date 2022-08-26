@@ -40,7 +40,7 @@ rmd_files: ["index.Rmd",
             "03_cleaning_data_07_working_with_dates.Rmd",
             "03_cleaning_data_08_data_tidying.Rmd",
             "03_cleaning_data_09_project_organization.Rmd",
-            "03_cleaning_data_10_data_tidying_exercise.Rmd,"
+            "03_cleaning_data_10_data_tidying_exercise.Rmd",
             "05_get_stats.Rmd",
             "06_dataviz_00_intro_visualization.Rmd",
             "06_dataviz_01_good_plots.Rmd",

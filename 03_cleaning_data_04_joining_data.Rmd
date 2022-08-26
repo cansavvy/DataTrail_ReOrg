@@ -47,11 +47,11 @@ Lastly, let's try a `full_join`. This will keep all data from both sets, but mat
 
 ### Row binding
 
-In some cases it may be more apporpriate to merely stack rows on top of each other instead of doing a join.
+In some cases it may be more appropriate to merely stack rows on top of each other instead of doing a join.
 
 To do this, we could use a row bind. Look up `?dplyr::bind_rows` to see this function's help page. Let's use this function.
 
-If we want to keep track of which row of data came from where, we should use the `.id` argument to specify a column name where this info will be kepy.
+If we want to keep track of which row of data came from where, we should use the `.id` argument to specify a column name where this info will be kept.
 
 ```{r}
 

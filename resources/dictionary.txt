@@ -200,6 +200,7 @@ Taub
 tex
 Tierney
 Timsit
+transferrable
 tus
 versicolor
 vjust

@@ -149,7 +149,6 @@ Before finalizing your project you'll want to add some text outside of your code
 
 Last but not least, you'll want to Knit your .Rmd document into an HTML document. If you get an error, take a look at what the error says and edit your .Rmd document. Then, try to Knit again! Troubleshooting these error messages will teach you a lot about coding in R.
 
-
 #### Upload your Document to GoogleDrive
 
 In an upcoming chapter, we will show you how to more properly share your code using version control and a thing called GitHub, but for the time being, we will have you make this code more shareable by

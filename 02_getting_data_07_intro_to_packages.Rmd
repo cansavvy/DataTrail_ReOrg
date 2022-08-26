@@ -78,11 +78,38 @@ In the event you want to do this, you first must find the package you want on Gi
 
 ### Loading packages
 
-Installing a package does *not* make its functions immediately available to you. First you must **load** the package into R; to do so, use the `library()` function. Think of this like any other software you install on your computer. Just because you've *installed* a program, doesn't mean it's automatically running - you have to open the program. Same with R. You've installed it, but now you have to "open" it. For example, to "open" the "ggplot2" package, you would run:`library(ggplot2)`
+Installing a package does *not* make its functions immediately available to you. You need to tell R in what library to find those functions.
 
-**NOTE:** Unlike when you're installing a package, when loading a package, you do *not* have to put the package name in quotes.
+There's two ways to do this:
 
-There is an order to loading packages - some packages require other packages to be loaded first. These other packages are known as **dependencies**. When you install a new package, that new package's manual/help pages will automatically determine what packages this new package is dependent upon and will install those packages as well.
+- **Use the `library()` function** - Let's say I want to use the `write_csv()` function from the `readr` function. I need to first run `library(readr)` before I can use the `write_csv()` function that is from that package.
+
+```{r}
+library(readr)
+write_csv(iris, "iris.csv")
+```
+
+- **Use the `::` notation** - The only downside from the strategy above is that I might only need to use one function from a package and loading in the whole package would be unnecessary. In this case I can also just use `::` to tell R what package a function is from: `readr::write_csv()` (If I use this, I do _not_ have to run `library(readr)`). So in this case the code above would be this instead:
+
+```{r}
+readr::write_csv(iris, "iris.csv")
+```
+
+Another note about `::`, sometimes multiple packages might have functions called the same thing. For example, there is a function called `filter` in a package called `dplyr` as well as in the base package `stats`.  If you load a library, one or the other function will be used preferentially. This may not be clear to you or others which function is being used. If you use `::` there is no confusion.
+
+This being said, writing `::` a billion times in your code may also not be ideal if you are using one package heavily. In this case you may want to use the `library()` function.
+
+In summary, you can use either strategy depending on what your situation calls for! But you must use at least one of the strategies or else R will tell you an error message like this:
+
+```
+Error in function_name() : could not find function "function_name"
+```
+
+This is R saying "I don't know where to find this function!". This means you've done neither the `::` or the `library()` for the function you are using and you need to do that!
+
+### Dependencies
+
+There is an order to installing packages - some packages require other packages to be loaded first. These other packages are known as **dependencies**. When you install a new package, that new package's manual/help pages will automatically determine what packages this new package is dependent upon and will install those packages as well.
 
 If you want to load a package using the RStudio interface, in the lower right quadrant there is a tab called "Packages" that lists out all of the packages and a brief description, as well as the version number, of all of the packages you have installed. To load a package just click on the checkbox beside the package name
 

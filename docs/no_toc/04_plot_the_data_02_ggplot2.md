@@ -1,7 +1,6 @@
 
 
 
-
 # Introduction to ggplot2
 
 R was initially developed for statisticians, who often are interested in generating plots or figures to visualize their data. As such, a few basic plotting features were built in when R was first developed. These are all still available; however, over time, a new approach to graphing in R was developed. This new approach implemented what is known as the [grammar of graphics](http://vita.had.co.nz/papers/layered-grammar.pdf), which allows you to develop elegant graphs flexibly in R. Making plots with this set of rules requires the R package `ggplot2`. To get started using ggplot2 requires you to install and load the package into R.

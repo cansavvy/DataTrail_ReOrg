@@ -1,3 +1,4 @@
+
 # Improving Your LinkedIn Profile
 
 Having a LinkedIn profile is important because it allows recruiters and those responsible for hiring to find you. Recruiters who pay to use LinkedIn can search by terms (such as "data scientist" or "R programmer") and will be able to identify you as a possible job candidate! Additionally, based on your profile, LinkedIn will be able to suggest possible jobs that may be of interest given the information you've provided!

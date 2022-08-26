@@ -1,3 +1,4 @@
+
 # Joining Data
 
 Often times, you may find yourself with two datasets that contain overlapping sets of information. In many cases, it may make the most sense to combine multiple datasets into one datasets for easier handling and reading.

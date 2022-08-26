@@ -1,3 +1,4 @@
+
 # Data Analysis Pipelines
 
 In data science jobs in industry, often you're analyzing a dataset over time. What this means is that the dataset's structure doesn't change -- the variables you're collecting remain the same -- but the observations do. Maybe you're collecting sales figures for a company, and each month you're reanalyzing the dataset to see if trends have changed or if your predictions need to be altered. Or, possibly, you're analyzing user data where the demographics and number of users of your product change over time. In these cases, where the variables don't change but the observations do, pipelines can be incredibly helpful.
@@ -219,10 +220,3 @@ This lesson has covered what a data science pipeline is, when you'd want to gene
 * [Parameterized R Markdown reports with RStudio Connect](https://www.rstudio.com/resources/videos/parameterized-r-markdown-reports-with-rstudio-connect/)
 * [RMarkdown Parameterized Reports](https://rmarkdown.rstudio.com/developer_parameterized_reports)
 * [Chapter 15: Parameterized Reports in R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html), by Yihui Xie, J.J. Allaire, and Garrett Grolemund
-
-
-### Slides and Video
-
-![Data Analysis Pipelines](https://www.youtube.com/watch?v=zE_doXeNENc)
-
-* [Slides](https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/edit?usp=sharing)

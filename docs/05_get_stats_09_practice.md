@@ -1,11 +1,5 @@
+
 # Inference: Practice
-
-<!-- Google Slide ID -->
-<!-- 1w-nLXrBvfKHc-AgjCfSfUGE1a6Vy7ogFoTu7ZiDSDFU -->
-
-<!-- Include a slide PNG with Page_ID from this Slide Deck: -->
-<!-- ![](https://docs.google.com/presentation/d/1w-nLXrBvfKHc-AgjCfSfUGE1a6Vy7ogFoTu7ZiDSDFU/export/png?id=1w-nLXrBvfKHc-AgjCfSfUGE1a6Vy7ogFoTu7ZiDSDFU&pageid=PAGE_ID) -->
-<!-- or use  `didactr::gs_slide_df("1w-nLXrBvfKHc-AgjCfSfUGE1a6Vy7ogFoTu7ZiDSDFU")$png_markdown` -->
 
 Often when we're learning new concepts we get focused on one part of the process (getting the code to run!) and lose sight of the big picture (why are we doing this analysis again?). In the last few lessons we've discussed a lot. We've discussed regression conceptually, gone through examples of running simple and multiple regression, and saw a few examples of regression in the real world. Now it's time to make sure we're able to carry out our own regression analysis from start to finish! The goal of this lesson is to ask an inference-focused question and use data to answer that question. In this we'll explore a dataset (EDA!) and fit a regression model (using linear regression!)
 
@@ -412,7 +406,7 @@ par(mfrow = c(2,2))
 plot(fit2)
 ```
 
- 
+
 ![model diagnostics](https://docs.google.com/presentation/d/1w-nLXrBvfKHc-AgjCfSfUGE1a6Vy7ogFoTu7ZiDSDFU/export/png?id=1w-nLXrBvfKHc-AgjCfSfUGE1a6Vy7ogFoTu7ZiDSDFU&pageid=g5df245fced_0_242)
 
 We're looking here for:
@@ -438,9 +432,3 @@ In this lesson, we've put a whole lot together. We walked through how to carry o
 * [join cheatsheet](http://stat545.com/bit001_dplyr-cheatsheet.html), by Jenny Bryan
 * [DataTrail Getting Data Course](https://leanpub.com/universities/courses/jhu/DataTrail-getting-data)
 * [DataTrail Data Tidying Course](https://leanpub.com/universities/courses/jhu/DataTrail-tidying)
-
-### Slides and Video
-
-![Inference: Practice](https://youtu.be/RuVXyAqI4vU)
-
-  - [Slides](https://docs.google.com/presentation/d/1w-nLXrBvfKHc-AgjCfSfUGE1a6Vy7ogFoTu7ZiDSDFU/edit?usp=sharing)

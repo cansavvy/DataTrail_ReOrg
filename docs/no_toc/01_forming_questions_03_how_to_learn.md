@@ -1,7 +1,5 @@
 
 
-
-
 # How To Learn
 
 In the last lesson we walked through a few interesting data science projects. Eventually, using the foundational skills learned, with practice on your own, and with other skills you pick up along the way, you'll be completing your own, equally-awesome data science projects.

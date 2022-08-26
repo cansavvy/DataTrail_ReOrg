@@ -1,3 +1,4 @@
+
 # Data Science Interviews
 
 After applying to jobs, there's a waiting period. The company has to look over the application materials they've received and decide who amongst their applicant pool they want to interview. After they decide if you're one of the people they've decided to interview, they'll reach out to you via email or phone call. During this phone call or in this email they'll likely describe their interview process and schedule the next step. If they don't explain the interview process on this initial call, you should ask.

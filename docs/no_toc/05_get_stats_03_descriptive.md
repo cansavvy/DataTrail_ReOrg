@@ -1,3 +1,4 @@
+
 # Descriptive Analysis
 
 The goal of descriptive analysis is to **describe** or **summarize** a set of data. Whenever you get a new dataset to examine, this is the first analysis you will perform. In fact, if you never summarize the data, it's *not* a data analysis.
@@ -482,9 +483,3 @@ This lesson covered the necessary parts of carrying out a descriptive analysis. 
 * [Getting Started with the `naniar` package](https://cran.r-project.org/web/packages/naniar/vignettes/getting-started-w-naniar.html), from [Nicholas Tierney](http://www.njtierney.com)
 * [`visdat` package](https://github.com/ropensci/visdat), also from [Nicholas Tierney](http://www.njtierney.com) to further visualize datasets during exploratory and descriptive analyses
 * [Using the `skimr` package](https://cran.r-project.org/web/packages/skimr/vignettes/Using_skimr.html), by [Elin Waring](https://elinwaring.org/)
-
-### Slides and Video
-
-![Descriptive Analysis](https://www.youtube.com/watch?v=ahzGpe7ts0s)
-
-* [Slides](https://docs.google.com/presentation/d/1sDojkPrY2T5_qwT2bLD-8DRGcUHie1N9I95e6U2Jimc/edit?usp=sharing)

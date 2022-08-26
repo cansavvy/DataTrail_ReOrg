@@ -1,7 +1,6 @@
 
 
 
-
 # Good Plots
 
 The goal of data visualization in data analysis is to improve understanding of the data. As mentioned in the last lesson, this could mean improving our own understanding of the data *or* using visualization to improve someone else's understanding of the data.

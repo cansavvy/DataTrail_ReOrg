@@ -1,7 +1,6 @@
 
 
 
-
 # Multiple Plots in R
 
 When generating reports for a data science project, there is often more than one plot that you want to display at a time. To accomplish this in R, we will use the R package [patchwork](https://github.com/thomasp85/patchwork) from [Thomas Lin Pedersen](https://www.data-imaginist.com/), which simplifies this process.

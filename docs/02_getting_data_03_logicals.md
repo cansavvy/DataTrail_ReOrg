@@ -1,7 +1,6 @@
 
 
 
-
 # Working with Logicals
 
 Earlier in this course, you learned that one of the basic classes of objects in R is the class of logical objects which contain TRUE and FALSE values. Logicals come up very frequently in data management and analysis because they form the basis of conditional operations (if a condition is met, perform a task) and are instrumental in data exploration, visualization, and analysis. In this lesson, we will cover the tools you will need to work with logical values in R.

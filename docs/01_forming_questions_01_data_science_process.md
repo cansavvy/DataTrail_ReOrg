@@ -1,7 +1,5 @@
 
 
-
-
 # The Data Science Process
 
 As a data scientist, what steps are involved in answering a question with data? In this course, we aim to frame everything in the context of the data science process.
@@ -21,7 +19,7 @@ The first part of the a data science process is **forming a question**. Sometime
 - **Get stats** - You can use statistics and models to try to use your data to get to the bottom of your question.
 - **Interpret and report results** - Given everything you are seeing with your data, how do we interpret this? What's our conclusion when it comes to our initial question?
 
-<img src="01_forming_questions_01_data_science_process_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_p.png" title="Data Science process involves" alt="Data Science process involves" width="100%" />
+<img src="resources/images/01_forming_questions_01_data_science_process_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_p.png" title="Data Science process involves" alt="Data Science process involves" width="100%" />
 
 In the upcoming chapters and courses we will further dive into each of these steps!
 

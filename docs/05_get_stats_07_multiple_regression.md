@@ -1,11 +1,7 @@
+
+
 # Inference: Multiple Regression
 
-<!-- Google Slide ID -->
-<!-- SLIDEID -->
-
-<!-- Include a slide PNG with Page_ID from this Slide Deck: -->
-<!-- ![](https://docs.google.com/presentation/d/SLIDEID/export/png?id=SLIDEID&pageid=PAGE_ID) -->
-<!-- or use  `didactr::gs_slide_df("SLIDEID")$png_markdown` -->
 
 In the last lesson, we finished discussing how to use `lm()` to assess the association between two numeric variables. However, there is one *incredibly* important topic that we have to discuss before moving on from linear regression. **Confounding** in something to watch out for in any analysis you're doing that looks at the relationship between two more more variables. So...what is confounding?
 
@@ -219,11 +215,3 @@ In these few lessons on inference, we have covered *a lot*. We started off discu
 ### Additional Resources
 
 * [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear), blog post by Jonas Kristoffer Lindelov
-
-
-
-### Slides and Video
-
-![Inference: Multiple Regression](https://youtu.be/1kGutQNzP6M)
-
-  - [Slides](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/edit?usp=sharing)

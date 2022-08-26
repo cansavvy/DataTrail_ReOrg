@@ -1,3 +1,4 @@
+
 # Resumes
 
 When applying to jobs, you'll almost certainly be asked to submit a resume. Anyone can write a resume, but it's *critical* that you submit a good resume when applying to jobs. We'll discuss how to generate a good data science resume in this lesson.
@@ -28,7 +29,7 @@ To ensure that your resume is formatted appropriately, we'll discuss a few guide
 
 #### Fonts
 
-The font you use on your resume should be **easy too read**. Avoid script fonts or ones that look like something a small child would write. Stick to fonts that can be read with ease. Times New Roman has been used historically; however, Helvetica, Arial, Verdana, and Calibri are also easy to read. 
+The font you use on your resume should be **easy too read**. Avoid script fonts or ones that look like something a small child would write. Stick to fonts that can be read with ease. Times New Roman has been used historically; however, Helvetica, Arial, Verdana, and Calibri are also easy to read.
 
 #### Font Size
 
@@ -61,13 +62,13 @@ While the general rule for resumes is that bullet points are ok, the summary is 
 
 In addition to stating who you are, how to get in contact with you, and where to learn more about you, it's imperative that your resume highlight the pertinent skills you have for the job to which you're applying. For data science positions, this section should specifically explain your programming and data analysis skills.
 
-If you've completed the courses in this course set, you'd be sure to include that you are comfortable in R and are skilled at data wrangling, data visualization, and basic data analysis. However, for any skill you state you possess, you should demonstrate examples of actually having and applying these skills in your experience section (discussed below). 
+If you've completed the courses in this course set, you'd be sure to include that you are comfortable in R and are skilled at data wrangling, data visualization, and basic data analysis. However, for any skill you state you possess, you should demonstrate examples of actually having and applying these skills in your experience section (discussed below).
 
 #### Education
 
-Your educational history should be included on your resume. Each entry should include the institution, what degree or diploma you earned, the years in which you attended the institution, and the city and state where that institution is located. 
+Your educational history should be included on your resume. Each entry should include the institution, what degree or diploma you earned, the years in which you attended the institution, and the city and state where that institution is located.
 
-This section should also **include online programs** (such as this one, once you've fully completed it!) and **any pertinent other job training**, such as workshops attended or other pertinent certificates earned. Note that you should *not* include certificates you've earned that are not related to the job to which you're applying. 
+This section should also **include online programs** (such as this one, once you've fully completed it!) and **any pertinent other job training**, such as workshops attended or other pertinent certificates earned. Note that you should *not* include certificates you've earned that are not related to the job to which you're applying.
 
 Once completed, this Course Set should be included in this section. However, you should not include this on your resume until you've completed the entire Course Set.
 
@@ -81,9 +82,9 @@ If you don't yet have pertinent job experience, this section should include info
 
 #### Projects
 
-This section is not generally required, as the bullet points explaining what you've done at previous jobs should explain the projects you've worked on and the role you played. *However*, if you don't have formal data science experience working with a company, it's incredibly important to demonstrates what projects you've worked on. These could be projects you've worked on throughout your coursework in this course set. 
+This section is not generally required, as the bullet points explaining what you've done at previous jobs should explain the projects you've worked on and the role you played. *However*, if you don't have formal data science experience working with a company, it's incredibly important to demonstrates what projects you've worked on. These could be projects you've worked on throughout your coursework in this course set.
 
-*Or*, these could be projects you've worked on on your own. We'll talk about your project gallery and what it should include in a later lesson; however, it's important to show to employers that you're interested in data science work and have worked on projects on your own time. These projects should certainly be included and described on your resume, especially if you do not yet have official data science experience. 
+*Or*, these could be projects you've worked on on your own. We'll talk about your project gallery and what it should include in a later lesson; however, it's important to show to employers that you're interested in data science work and have worked on projects on your own time. These projects should certainly be included and described on your resume, especially if you do not yet have official data science experience.
 
 ### Example Resumes
 
@@ -91,16 +92,16 @@ To demonstrate how to format a data science resume, we'll walk through a few exa
 
 #### Classic
 
-Historically, resumes have *not* been visually stunning. They've been clear and well-organized with a focus on formatting; however, they have been visually standard with one section after another. Bold and underlined text have been used to highlight text with section headers sometimes being a different color and generally being a larger font size. 
+Historically, resumes have *not* been visually stunning. They've been clear and well-organized with a focus on formatting; however, they have been visually standard with one section after another. Bold and underlined text have been used to highlight text with section headers sometimes being a different color and generally being a larger font size.
 
 Here, we see an example of one such resume:
 
 
 ![classic resume](https://docs.google.com/presentation/d/163yY-dxZnMIdH9x-xf6hqoQxRDGlb-XpAX1NoRZc6Jc/export/png?id=163yY-dxZnMIdH9x-xf6hqoQxRDGlb-XpAX1NoRZc6Jc&pageid=g3fe2ca85f0_0_185)
 
-We'll highlight a number of features of this type of resume to draw your attention to important aspects of a data science resume. 
+We'll highlight a number of features of this type of resume to draw your attention to important aspects of a data science resume.
 
-First, notice that the applicants name and contact information are right at the top of the resume, and the name in particular stands out. 
+First, notice that the applicants name and contact information are right at the top of the resume, and the name in particular stands out.
 
 
 ![Name and Contact Information are prominent](https://docs.google.com/presentation/d/163yY-dxZnMIdH9x-xf6hqoQxRDGlb-XpAX1NoRZc6Jc/export/png?id=163yY-dxZnMIdH9x-xf6hqoQxRDGlb-XpAX1NoRZc6Jc&pageid=g3fe2ca85f0_0_7)
@@ -153,7 +154,7 @@ Last, once your resume has been written and formatted, you're all ready to send 
 
 ### Summary
 
-In this lesson we've reviewed the general guidelines for resume writing, the important features of any resume, and a few examples of data science resumes. It's best at this point to get working on your resume. You'll be asked to submit a link to your resume in a lesson later in this course as a quiz response. And, while you'll always have to update this document and there will always be ways to improve its appearance, the hardest part is getting a first draft, so get working on that now! 
+In this lesson we've reviewed the general guidelines for resume writing, the important features of any resume, and a few examples of data science resumes. It's best at this point to get working on your resume. You'll be asked to submit a link to your resume in a lesson later in this course as a quiz response. And, while you'll always have to update this document and there will always be ways to improve its appearance, the hardest part is getting a first draft, so get working on that now!
 
 ### Additional Resources
 
@@ -174,7 +175,7 @@ In this lesson we've reviewed the general guidelines for resume writing, the imp
 ### Resumes quiz
 
 {choose-answers: 4}
-? Fill in the blank: The typical resume is \_\_\_\_\_\_\_\_ page(s) long. If I feel I have too much information to fit in this length, I should \_\_\_\_\_\_\_\_\_\_\_\_. 
+? Fill in the blank: The typical resume is \_\_\_\_\_\_\_\_ page(s) long. If I feel I have too much information to fit in this length, I should \_\_\_\_\_\_\_\_\_\_\_\_.
 
 C) one, reformat and edit what I have
 o) two, reformat and edit what I have
@@ -236,4 +237,3 @@ A) True
 b) False
 
 {/quiz}
-

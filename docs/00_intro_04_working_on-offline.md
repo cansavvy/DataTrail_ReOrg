@@ -1,7 +1,6 @@
 
 
 
-
 # Working Offline vs Online
 
 You may have heard the term *cloud computing* before, and data scientists often talk about working on the *cloud*. But what exactly is the cloud?

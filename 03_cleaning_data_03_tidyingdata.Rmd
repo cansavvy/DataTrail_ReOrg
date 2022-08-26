@@ -22,7 +22,6 @@ Within R, there is a package specifically designed for helping you wrangle data.
 * `mutate()` - create a new column
 * `group_by()` - group variables
 * `summarize()` - summarize information within a dataset
-* `left_join()` - combining data across data frame
 
 If you have not already, you'll want to be sure this package is installed and loaded:
 

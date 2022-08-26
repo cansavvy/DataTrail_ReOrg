@@ -4,6 +4,8 @@ Often times, you may find yourself with two datasets that contain overlapping se
 
 In this chapter, we will discuss the different methods for combining multiple datasets.
 
+TODO: This chapter needs code and more fleshing out
+
 ## dplyr join family of functions
 
 There are different kinds of joins - let's discuss what they do.

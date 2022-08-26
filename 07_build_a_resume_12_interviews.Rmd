@@ -174,10 +174,3 @@ In this lesson, we've covered a lot about interviewing for a data science positi
 * [Two Sides of Getting a Job as a Data Scientist](https://towardsdatascience.com/the-two-sides-of-getting-a-job-as-a-data-scientist-a4571acc58bc)
 * [What We Learned Analyzing Hundreds of Data Science Interviews](https://www.springboard.com/blog/data-science-interviews-lessons/)
 * [VIDEO: Live Breakdown of Common Data Science Interview Questions](https://www.youtube.com/watch?v=aXUsrKPTBvY&index=6&list=PLqFaTIg4myu-dNobDHQZPrD2wH27PthCG%29)
-
-
-### Slides and Video
-
-![Data Science Interviews](https://www.youtube.com/watch?v=Dlt-ikUoNh8)
-
-* [Slides](https://docs.google.com/presentation/d/13GoiYDh5LhD2WUJ_xqxKHxUBktXX8Rw-hBxA4sE-_UI/edit?usp=sharing)

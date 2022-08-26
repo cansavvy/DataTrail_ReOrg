@@ -129,9 +129,3 @@ In this lesson we discussed why Twitter can be a great place to learn more about
 
 * [How to be a modern scientist](https://leanpub.com/modernscientist), by Jeff Leek
 * _Phrasing: Communicating data science through tweets, gifs, and classic misdirection_ [video](https://rud.is/b/2018/08/27/simplifying-world-tile-grid-creation-with-geom_wtg/), by [Mara Averick]
-
-### Slides and Video
-
-![Using Twitter For Data Science](https://www.youtube.com/watch?v=7Zw95c4bS2U)
-
-* [Slides](https://docs.google.com/presentation/d/1iJ_ONxlP8SBZK6oAoeP7regVVmT5l9FIuZkMjAd-Y8Q/edit?usp=sharing)

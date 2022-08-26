@@ -98,9 +98,3 @@ In this lesson we discussed the importance of having a complete GitHub profile a
 
 * [You Do Not Need to Tell Me I Have a Typo in My Documentation](https://yihui.name/en/2013/06/fix-typo-in-documentation/), by [Yihui Xie](https://yihui.name/en/about/)
 * [Contributing to `ggplot2` development](https://github.com/tidyverse/ggplot2/blob/master/CONTRIBUTING.md)
-
-### Slides and Video
-
-![Improving Your GitHub Profile](https://www.youtube.com/watch?v=2OvDFxPXKEQ)
-
-* [Slides](https://docs.google.com/presentation/d/10VRTUHsYh8hdYBily8cexSdP-sviYCIo_gzh1y8PsRs/edit?usp=sharing)

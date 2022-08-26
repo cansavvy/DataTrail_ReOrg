@@ -203,10 +203,3 @@ Google also has extensive information on getting started with Slides on their G 
 * [Transitions and animation](https://www.gcflearnfree.org/googleslides/adding-transitions-and-animations/1/)
 * [Editing the Master Template](https://www.gcflearnfree.org/googleslides/editing-master-slides-and-layouts/1/)
 * [How to Insert A YouTube Video into Google Slides (video)](https://www.youtube.com/watch?v=a-gpgX7RQ48)
-
-
-### Slides and Video
-
-![Google Slides](https://www.youtube.com/watch?v=wCWGYFWLHxE)
-
-* [Slides](https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/edit?usp=sharing)

@@ -111,10 +111,3 @@ In this lesson we covered what types of terms to use for job searches, where to 
 ### Additional Resources
 
 * [Advice For Applying To Data Science Jobs](http://hookedondata.org/Advice-for-Applying-to-Data-Science-Jobs/)
-
-
-### Slides and Video
-
-![Where To Look for Data Science Jobs](https://www.youtube.com/watch?v=LSINF4lDkuM)
-
-* [Slides](https://docs.google.com/presentation/d/1bOnA2S_dXQypd4CaGeFux-yQLwS9EzY9fPOqutPZJQg/edit?usp=sharing)

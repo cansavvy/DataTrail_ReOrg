@@ -224,9 +224,3 @@ In this lesson we've discussed the basic parts of job descriptions and walked th
 * [What Do Companies Look for In Entry-Level Data Scientists /Analysts?](https://www.quora.com/What-do-companies-look-for-in-entry-level-data-scientists-analysts)
 * [One Data Science Job Doesn't Fit All](https://www.linkedin.com/pulse/one-data-science-job-doesnt-fit-all-elena-grewal/)
 * [What Data Scientists Really Do](https://hbr.org/2018/08/what-data-scientists-really-do-according-to-35-data-scientists)
-
-### Slides and Video
-
-![Data Science Job Descriptions](https://www.youtube.com/watch?v=PWwNPR5iDSw)
-
-* [Slides](https://docs.google.com/presentation/d/1VOu82HOB5ngB-Mmc0Y2s__QIs0U5nSM4P7kniiQVBCw/edit?usp=sharing)

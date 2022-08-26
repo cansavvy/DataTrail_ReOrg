@@ -1,7 +1,3 @@
----
-output: html_document
----
-
 
 
 # Setting Up A Project on GitHub

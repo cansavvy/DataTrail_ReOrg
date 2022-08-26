@@ -1,3 +1,4 @@
+
 # Do I Have The Data I Need?
 
 After identifying your problem and transforming it into a data science question, your next step is to identify and ensure that you have access to the data necessary to answer the question. However, good data can be hard to come by. Depending on your question, it can be costly or simply infeasible to obtain the data you need.
@@ -135,15 +136,15 @@ All that said, once you have your data science question *and* the data you want 
 
 For example, data downloaded from other resources often need to be cleaned and wrangled. (Note: If the data that you obtain, however, are pre-processed, make sure you understand how the processing was done!) To clean your data, you'll always want to record the steps you take to reformat the data. We suggest the following steps to check and tidy the data for your analysis. Make sure:
 
-* each variable forms a column
-* each observation forms a row
-* each table/file stores data about one kind of observation (e.g. people/hospitals).
-* if variables are collected from multiple sources, they are merged properly
-* column names are easy to use and informative
-* apparent mistakes in the data have been removed
-* missing values are formatted uniformly and correctly
-* variable values are internally consistent
-* appropriate transformed variables have been added
+* Each variable forms a column
+* Each observation forms a row
+* Each table/file stores data about one kind of observation (e.g. people/hospitals).
+* If variables are collected from multiple sources, they are merged properly
+* Column names are easy to use and informative
+* Apparent mistakes in the data have been removed
+* Missing values are formatted uniformly and correctly
+* Variable values are internally consistent
+* Appropriate transformed variables have been added
 
 These are the concepts previously discussed in the Data Tidying lessons in an earlier course in this Course Set, so many of them should be familiar. Cleaning data to make sure the dataset is in a tidy format, that the variables are all appropriately-named, and that the values within each variable are as you expect them to be is an important step in determining whether or not the data you have will be useful in answering your data science question. These topics will be further discussed in the Descriptive Analysis and Exploratory Analysis lessons in the later lessons in this course.
 
@@ -236,10 +237,3 @@ Once you've honed in on a good data science question, it's important to determin
 7. Analyze the data and answer the data science question!
 
 All in all, the data and how they're collected matters. There is a term in statistics that says "**garbage in, garbage out**," which means poor quality input will always produce poor output. A data analysis that is based on faulty data produces faulty results. Be cautious about the data that you use in your analysis, ensure that the data you need to answer your question of interest are the data you have, and *always* tell your listeners and readers about the deficiencies of your data. After all, you will know your data better than anyone else!
-
-
-### Slides and Video
-
-![Do I Have The Data I Need](https://www.youtube.com/watch?v=90SP7w_6SYo)
-
-* [Slides](https://docs.google.com/presentation/d/1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o/edit?usp=sharing)

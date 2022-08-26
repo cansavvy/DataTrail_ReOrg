@@ -222,10 +222,3 @@ This lesson has covered what a data science pipeline is, when you'd want to gene
 * [Parameterized R Markdown reports with RStudio Connect](https://www.rstudio.com/resources/videos/parameterized-r-markdown-reports-with-rstudio-connect/)
 * [RMarkdown Parameterized Reports](https://rmarkdown.rstudio.com/developer_parameterized_reports)
 * [Chapter 15: Parameterized Reports in R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html), by Yihui Xie, J.J. Allaire, and Garrett Grolemund
-
-
-### Slides and Video
-
-![Data Analysis Pipelines](https://www.youtube.com/watch?v=zE_doXeNENc)
-
-* [Slides](https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/edit?usp=sharing)

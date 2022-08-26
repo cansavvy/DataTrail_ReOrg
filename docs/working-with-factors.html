@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 31 Working with Factors | DataTrail</title>
+  <meta name="description" content="Chapter 31 Working with Factors | DataTrail" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 31 Working with Factors | DataTrail" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 31 Working with Factors | DataTrail" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="working-with-strings.html"/>
+<link rel="next" href="working-with-dates.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="assets/style_DataTrail.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style="padding-left: 0px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#program-philosophy"><i class="fa fa-check"></i><b>0.1</b> Program Philosophy</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro-welcome-to-datatrail.html"><a href="intro-welcome-to-datatrail.html"><i class="fa fa-check"></i><b>1</b> <strong>Intro – Welcome to DataTrail</strong></a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro-welcome-to-datatrail.html"><a href="intro-welcome-to-datatrail.html#learning-objectives-for-this-section"><i class="fa fa-check"></i><b>1.1</b> Learning objectives for this section</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="intro-welcome-to-datatrail.html"><a href="intro-welcome-to-datatrail.html#course-details"><i class="fa fa-check"></i><b>1.1.1</b> Course Details</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro-welcome-to-datatrail.html"><a href="intro-welcome-to-datatrail.html#what-is-data-science"><i class="fa fa-check"></i><b>1.1.2</b> What is data science?</a></li>
+<li class="chapter" data-level="1.1.3" data-path="intro-welcome-to-datatrail.html"><a href="intro-welcome-to-datatrail.html#what-is-datatrail"><i class="fa fa-check"></i><b>1.1.3</b> What is DataTrail?</a></li>
+<li class="chapter" data-level="1.1.4" data-path="intro-welcome-to-datatrail.html"><a href="intro-welcome-to-datatrail.html#who-is-this-program-for"><i class="fa fa-check"></i><b>1.1.4</b> Who is this program for?</a></li>
+<li class="chapter" data-level="1.1.5" data-path="intro-welcome-to-datatrail.html"><a href="intro-welcome-to-datatrail.html#how-the-program-is-organized"><i class="fa fa-check"></i><b>1.1.5</b> How the program is organized</a></li>
+<li class="chapter" data-level="1.1.6" data-path="intro-welcome-to-datatrail.html"><a href="intro-welcome-to-datatrail.html#how-this-course-is-graded"><i class="fa fa-check"></i><b>1.1.6</b> How this course is graded</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="finding-help.html"><a href="finding-help.html"><i class="fa fa-check"></i><b>2</b> Finding Help</a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="finding-help.html"><a href="finding-help.html#searching-the-internet"><i class="fa fa-check"></i><b>2.0.1</b> Searching the Internet</a></li>
+<li class="chapter" data-level="2.0.2" data-path="finding-help.html"><a href="finding-help.html#search-guidelines"><i class="fa fa-check"></i><b>2.0.2</b> Search Guidelines</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html"><i class="fa fa-check"></i><b>3</b> What is a Chromebook</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#chrome-os"><i class="fa fa-check"></i><b>3.1</b> Chrome OS</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#chrome-apps"><i class="fa fa-check"></i><b>3.1.1</b> Chrome “Apps”</a></li>
+<li class="chapter" data-level="3.1.2" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#where-do-chromebook-apps-live"><i class="fa fa-check"></i><b>3.1.2</b> Where do Chromebook Apps live?</a></li>
+<li class="chapter" data-level="3.1.3" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#the-shelf"><i class="fa fa-check"></i><b>3.1.3</b> The Shelf</a></li>
+<li class="chapter" data-level="3.1.4" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#websites-as-chrome-apps"><i class="fa fa-check"></i><b>3.1.4</b> Websites as Chrome Apps</a></li>
+<li class="chapter" data-level="3.1.5" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#the-chrome-web-store-and-chrome-apps"><i class="fa fa-check"></i><b>3.1.5</b> The Chrome Web Store and Chrome Apps</a></li>
+<li class="chapter" data-level="3.1.6" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#chrome-extensions"><i class="fa fa-check"></i><b>3.1.6</b> Chrome Extensions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#chrome-browser"><i class="fa fa-check"></i><b>3.2</b> Chrome Browser</a></li>
+<li class="chapter" data-level="3.3" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#android-apps"><i class="fa fa-check"></i><b>3.3</b> Android Apps</a></li>
+<li class="chapter" data-level="3.4" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#chromebook-shortcuts"><i class="fa fa-check"></i><b>3.4</b> Chromebook Shortcuts</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#taking-screenshots-on-a-chromebook"><i class="fa fa-check"></i><b>3.4.1</b> Taking Screenshots on a Chromebook</a></li>
+<li class="chapter" data-level="3.4.2" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#zooming-in-and-out"><i class="fa fa-check"></i><b>3.4.2</b> Zooming in and out</a></li>
+<li class="chapter" data-level="3.4.3" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#finding-a-word-on-a-page"><i class="fa fa-check"></i><b>3.4.3</b> Finding a word on a page</a></li>
+<li class="chapter" data-level="3.4.4" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#text-formatting-shortcuts"><i class="fa fa-check"></i><b>3.4.4</b> Text formatting shortcuts</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#chromebook-security"><i class="fa fa-check"></i><b>3.5</b> Chromebook Security</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#setting-your-chromebook-password"><i class="fa fa-check"></i><b>3.5.1</b> Setting your Chromebook password</a></li>
+<li class="chapter" data-level="3.5.2" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#requiring-password-to-wake-from-sleep"><i class="fa fa-check"></i><b>3.5.2</b> Requiring password to wake from sleep</a></li>
+<li class="chapter" data-level="3.5.3" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#managing-other-people"><i class="fa fa-check"></i><b>3.5.3</b> Managing other people</a></li>
+<li class="chapter" data-level="3.5.4" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#two-step-verification"><i class="fa fa-check"></i><b>3.5.4</b> Two step verification</a></li>
+<li class="chapter" data-level="3.5.5" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#managing-apps-and-devices"><i class="fa fa-check"></i><b>3.5.5</b> Managing apps and devices</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#updating-your-chromebook"><i class="fa fa-check"></i><b>3.6</b> Updating your Chromebook</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#steps-to-update"><i class="fa fa-check"></i><b>3.6.1</b> Steps to Update</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#getting-help-with-a-chromebook"><i class="fa fa-check"></i><b>3.7</b> Getting Help with a Chromebook</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#common-issues"><i class="fa fa-check"></i><b>3.7.1</b> Common Issues</a></li>
+<li class="chapter" data-level="3.7.2" data-path="what-is-a-chromebook.html"><a href="what-is-a-chromebook.html#chromebook-support"><i class="fa fa-check"></i><b>3.7.2</b> Chromebook Support</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="working-offline-vs-online.html"><a href="working-offline-vs-online.html"><i class="fa fa-check"></i><b>4</b> Working Offline vs Online</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="working-offline-vs-online.html"><a href="working-offline-vs-online.html#cloud-computing"><i class="fa fa-check"></i><b>4.0.1</b> Cloud computing</a></li>
+<li class="chapter" data-level="4.0.2" data-path="working-offline-vs-online.html"><a href="working-offline-vs-online.html#what-are-the-advantages-of-using-the-cloud"><i class="fa fa-check"></i><b>4.0.2</b> What are the advantages of using the cloud?</a></li>
+<li class="chapter" data-level="4.0.3" data-path="working-offline-vs-online.html"><a href="working-offline-vs-online.html#what-are-the-disadvantages-of-using-the-cloud"><i class="fa fa-check"></i><b>4.0.3</b> What are the disadvantages of using the cloud?</a></li>
+<li class="chapter" data-level="4.0.4" data-path="working-offline-vs-online.html"><a href="working-offline-vs-online.html#google-drive"><i class="fa fa-check"></i><b>4.0.4</b> Google Drive</a></li>
+<li class="chapter" data-level="4.0.5" data-path="working-offline-vs-online.html"><a href="working-offline-vs-online.html#example-editing-a-text-file-offline"><i class="fa fa-check"></i><b>4.0.5</b> Example: editing a text file offline</a></li>
+<li class="chapter" data-level="4.0.6" data-path="working-offline-vs-online.html"><a href="working-offline-vs-online.html#offline-apps"><i class="fa fa-check"></i><b>4.0.6</b> Offline Apps</a></li>
+<li class="chapter" data-level="4.1" data-path="working-offline-vs-online.html"><a href="working-offline-vs-online.html#where-are-files-stored"><i class="fa fa-check"></i><b>4.1</b> Where Are Files Stored?</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="working-offline-vs-online.html"><a href="working-offline-vs-online.html#where-is-the-local-storage"><i class="fa fa-check"></i><b>4.1.1</b> Where is the local storage?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="account-setup.html"><a href="account-setup.html"><i class="fa fa-check"></i><b>5</b> Account Setup</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="account-setup.html"><a href="account-setup.html#choosing-a-username"><i class="fa fa-check"></i><b>5.0.1</b> Choosing a Username</a></li>
+<li class="chapter" data-level="5.0.2" data-path="account-setup.html"><a href="account-setup.html#using-a-consistent-username"><i class="fa fa-check"></i><b>5.0.2</b> Using a Consistent Username</a></li>
+<li class="chapter" data-level="5.0.3" data-path="account-setup.html"><a href="account-setup.html#accounts"><i class="fa fa-check"></i><b>5.0.3</b> Accounts</a></li>
+<li class="chapter" data-level="5.1" data-path="account-setup.html"><a href="account-setup.html#google-account-setup"><i class="fa fa-check"></i><b>5.1</b> Google Account Setup</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="account-setup.html"><a href="account-setup.html#getting-a-google-login"><i class="fa fa-check"></i><b>5.1.1</b> Getting a Google Login</a></li>
+<li class="chapter" data-level="5.1.2" data-path="account-setup.html"><a href="account-setup.html#log-off-guest-chromebook"><i class="fa fa-check"></i><b>5.1.2</b> Log Off Guest Chromebook</a></li>
+<li class="chapter" data-level="5.1.3" data-path="account-setup.html"><a href="account-setup.html#re-login-using-google-account"><i class="fa fa-check"></i><b>5.1.3</b> Re-Login using Google Account</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="account-setup.html"><a href="account-setup.html#using-gmail-for-email-communications"><i class="fa fa-check"></i><b>5.2</b> Using Gmail for Email Communications</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="account-setup.html"><a href="account-setup.html#accessing-your-gmail-inbox"><i class="fa fa-check"></i><b>5.2.1</b> Accessing your Gmail Inbox</a></li>
+<li class="chapter" data-level="5.2.2" data-path="account-setup.html"><a href="account-setup.html#composing-and-sending-emails"><i class="fa fa-check"></i><b>5.2.2</b> Composing and Sending Emails</a></li>
+<li class="chapter" data-level="5.2.3" data-path="account-setup.html"><a href="account-setup.html#replying-to-a-message"><i class="fa fa-check"></i><b>5.2.3</b> Replying to a message</a></li>
+<li class="chapter" data-level="5.2.4" data-path="account-setup.html"><a href="account-setup.html#searching-for-specific-messages"><i class="fa fa-check"></i><b>5.2.4</b> Searching for specific messages</a></li>
+<li class="chapter" data-level="5.2.5" data-path="account-setup.html"><a href="account-setup.html#more-specifics-on-using-gmail"><i class="fa fa-check"></i><b>5.2.5</b> More specifics on using Gmail</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="account-setup.html"><a href="account-setup.html#google-drive-1"><i class="fa fa-check"></i><b>5.3</b> Google Drive</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="account-setup.html"><a href="account-setup.html#accessing-your-google-drive-account"><i class="fa fa-check"></i><b>5.3.1</b> Accessing your Google Drive account</a></li>
+<li class="chapter" data-level="5.3.2" data-path="account-setup.html"><a href="account-setup.html#organizing-files-in-google-drive"><i class="fa fa-check"></i><b>5.3.2</b> Organizing files in Google Drive</a></li>
+<li class="chapter" data-level="5.3.3" data-path="account-setup.html"><a href="account-setup.html#creating-files-in-google-drive"><i class="fa fa-check"></i><b>5.3.3</b> Creating files in Google Drive</a></li>
+<li class="chapter" data-level="5.3.4" data-path="account-setup.html"><a href="account-setup.html#uploading-files-to-google-drive"><i class="fa fa-check"></i><b>5.3.4</b> Uploading files to Google Drive</a></li>
+<li class="chapter" data-level="5.3.5" data-path="account-setup.html"><a href="account-setup.html#deleting-files-and-folders"><i class="fa fa-check"></i><b>5.3.5</b> Deleting Files and folders</a></li>
+<li class="chapter" data-level="5.3.6" data-path="account-setup.html"><a href="account-setup.html#file-recovery"><i class="fa fa-check"></i><b>5.3.6</b> File Recovery</a></li>
+<li class="chapter" data-level="5.3.7" data-path="account-setup.html"><a href="account-setup.html#file-sharing"><i class="fa fa-check"></i><b>5.3.7</b> File Sharing</a></li>
+<li class="chapter" data-level="5.3.8" data-path="account-setup.html"><a href="account-setup.html#working-offline"><i class="fa fa-check"></i><b>5.3.8</b> Working Offline</a></li>
+<li class="chapter" data-level="5.3.9" data-path="account-setup.html"><a href="account-setup.html#storage-limit"><i class="fa fa-check"></i><b>5.3.9</b> Storage limit</a></li>
+<li class="chapter" data-level="5.3.10" data-path="account-setup.html"><a href="account-setup.html#security"><i class="fa fa-check"></i><b>5.3.10</b> Security</a></li>
+<li class="chapter" data-level="5.3.11" data-path="account-setup.html"><a href="account-setup.html#more-specifics-on-using-google-drive"><i class="fa fa-check"></i><b>5.3.11</b> More specifics on using Google Drive</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="account-setup.html"><a href="account-setup.html#other-accounts-setup"><i class="fa fa-check"></i><b>5.4</b> Other Accounts Setup</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="account-setup.html"><a href="account-setup.html#linkedin-account"><i class="fa fa-check"></i><b>5.4.1</b> LinkedIn Account</a></li>
+<li class="chapter" data-level="5.4.2" data-path="account-setup.html"><a href="account-setup.html#twitter-account"><i class="fa fa-check"></i><b>5.4.2</b> Twitter Account</a></li>
+<li class="chapter" data-level="5.4.3" data-path="account-setup.html"><a href="account-setup.html#basecamp-account"><i class="fa fa-check"></i><b>5.4.3</b> Basecamp Account</a></li>
+<li class="chapter" data-level="5.4.4" data-path="account-setup.html"><a href="account-setup.html#rstudio-cloud-account"><i class="fa fa-check"></i><b>5.4.4</b> RStudio Cloud Account</a></li>
+<li class="chapter" data-level="5.4.5" data-path="account-setup.html"><a href="account-setup.html#github-account"><i class="fa fa-check"></i><b>5.4.5</b> GitHub Account</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="forming-questions.html"><a href="forming-questions.html"><i class="fa fa-check"></i><b>6</b> <strong>Forming questions</strong></a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="forming-questions.html"><a href="forming-questions.html#learning-objectives"><i class="fa fa-check"></i><b>6.1</b> Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="the-data-science-process.html"><a href="the-data-science-process.html"><i class="fa fa-check"></i><b>7</b> The Data Science Process</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="the-data-science-process.html"><a href="the-data-science-process.html#the-parts-of-a-data-science-project"><i class="fa fa-check"></i><b>7.0.1</b> The Parts of a Data Science Project</a></li>
+<li class="chapter" data-level="7.0.2" data-path="the-data-science-process.html"><a href="the-data-science-process.html#a-data-science-project-example"><i class="fa fa-check"></i><b>7.0.2</b> A Data Science Project Example</a></li>
+<li class="chapter" data-level="7.0.3" data-path="the-data-science-process.html"><a href="the-data-science-process.html#what-you-can-build-using-r"><i class="fa fa-check"></i><b>7.0.3</b> What you can build using R</a></li>
+<li class="chapter" data-level="7.0.4" data-path="the-data-science-process.html"><a href="the-data-science-process.html#other-cool-data-science-projects"><i class="fa fa-check"></i><b>7.0.4</b> Other Cool Data Science Projects</a></li>
+<li class="chapter" data-level="7.0.5" data-path="the-data-science-process.html"><a href="the-data-science-process.html#conclusions"><i class="fa fa-check"></i><b>7.0.5</b> Conclusions</a></li>
+<li class="chapter" data-level="7.1" data-path="the-data-science-process.html"><a href="the-data-science-process.html#types-of-data-science-questions"><i class="fa fa-check"></i><b>7.1</b> Types of data science questions</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="the-data-science-process.html"><a href="the-data-science-process.html#examples-of-data-science-questions"><i class="fa fa-check"></i><b>7.1.1</b> Examples of data science questions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="how-to-learn.html"><a href="how-to-learn.html"><i class="fa fa-check"></i><b>8</b> How To Learn</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="how-to-learn.html"><a href="how-to-learn.html#learning-how-to-learn"><i class="fa fa-check"></i><b>8.0.1</b> Learning How To Learn</a></li>
+<li class="chapter" data-level="8.0.2" data-path="how-to-learn.html"><a href="how-to-learn.html#summary"><i class="fa fa-check"></i><b>8.0.2</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="google-sheets.html"><a href="google-sheets.html"><i class="fa fa-check"></i><b>9</b> Google Sheets</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="google-sheets.html"><a href="google-sheets.html#what-is-a-spreadsheet"><i class="fa fa-check"></i><b>9.0.1</b> What is a spreadsheet?</a></li>
+<li class="chapter" data-level="9.0.2" data-path="google-sheets.html"><a href="google-sheets.html#setting-up-your-spreadsheet"><i class="fa fa-check"></i><b>9.0.2</b> Setting up your spreadsheet</a></li>
+<li class="chapter" data-level="9.0.3" data-path="google-sheets.html"><a href="google-sheets.html#collecting-data"><i class="fa fa-check"></i><b>9.0.3</b> Collecting data</a></li>
+<li class="chapter" data-level="9.0.4" data-path="google-sheets.html"><a href="google-sheets.html#checking-your-data"><i class="fa fa-check"></i><b>9.0.4</b> Checking your data</a></li>
+<li class="chapter" data-level="9.0.5" data-path="google-sheets.html"><a href="google-sheets.html#publishing-to-the-web"><i class="fa fa-check"></i><b>9.0.5</b> Publishing to the web</a></li>
+<li class="chapter" data-level="9.0.6" data-path="google-sheets.html"><a href="google-sheets.html#making-the-sheet-public"><i class="fa fa-check"></i><b>9.0.6</b> Making the sheet public</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html"><i class="fa fa-check"></i><b>10</b> RStudio Cloud</a>
+<ul>
+<li class="chapter" data-level="10.0.1" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html#rstudio-cloud-basics"><i class="fa fa-check"></i><b>10.0.1</b> RStudio Cloud Basics</a></li>
+<li class="chapter" data-level="10.0.2" data-path="rstudio-cloud.html"><a href="rstudio-cloud.html#data-science-project-in-rstudio-cloud"><i class="fa fa-check"></i><b>10.0.2</b> Data Science Project in RStudio Cloud</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html"><i class="fa fa-check"></i><b>11</b> RStudio and Projects</a>
+<ul>
+<li class="chapter" data-level="11.0.1" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#logging-in-to-rstudio-cloud"><i class="fa fa-check"></i><b>11.0.1</b> Logging in to RStudio Cloud</a></li>
+<li class="chapter" data-level="11.0.2" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#getting-started-in-rstudio-cloud"><i class="fa fa-check"></i><b>11.0.2</b> Getting Started in RStudio Cloud</a></li>
+<li class="chapter" data-level="11.0.3" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#the-tour"><i class="fa fa-check"></i><b>11.0.3</b> The Tour</a></li>
+<li class="chapter" data-level="11.0.4" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#source-script-editor-panel"><i class="fa fa-check"></i><b>11.0.4</b> Source: script editor panel</a></li>
+<li class="chapter" data-level="11.0.5" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#fileshelpplotspackagesviewer"><i class="fa fa-check"></i><b>11.0.5</b> Files/Help/Plots/Packages/Viewer</a></li>
+<li class="chapter" data-level="11.0.6" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#swirl"><i class="fa fa-check"></i><b>11.0.6</b> Swirl</a></li>
+<li class="chapter" data-level="11.0.7" data-path="rstudio-and-projects.html"><a href="rstudio-and-projects.html#summary-1"><i class="fa fa-check"></i><b>11.0.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="your-first-data-science-project.html"><a href="your-first-data-science-project.html"><i class="fa fa-check"></i><b>12</b> Your first data science project</a></li>
+<li class="chapter" data-level="13" data-path="getting-data.html"><a href="getting-data.html"><i class="fa fa-check"></i><b>13</b> <strong>Getting Data</strong></a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="getting-data.html"><a href="getting-data.html#learning-objectives-1"><i class="fa fa-check"></i><b>13.1</b> Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="what-is-r.html"><a href="what-is-r.html"><i class="fa fa-check"></i><b>14</b> What is R?</a>
+<ul>
+<li class="chapter" data-level="14.0.1" data-path="what-is-r.html"><a href="what-is-r.html#introduction-to-r"><i class="fa fa-check"></i><b>14.0.1</b> Introduction to R</a></li>
+<li class="chapter" data-level="14.0.2" data-path="what-is-r.html"><a href="what-is-r.html#rstudio"><i class="fa fa-check"></i><b>14.0.2</b> RStudio</a></li>
+<li class="chapter" data-level="14.0.3" data-path="what-is-r.html"><a href="what-is-r.html#rstudio-cloud-1"><i class="fa fa-check"></i><b>14.0.3</b> RStudio Cloud</a></li>
+<li class="chapter" data-level="14.0.4" data-path="what-is-r.html"><a href="what-is-r.html#basic-history"><i class="fa fa-check"></i><b>14.0.4</b> Basic History</a></li>
+<li class="chapter" data-level="14.0.5" data-path="what-is-r.html"><a href="what-is-r.html#learning-r"><i class="fa fa-check"></i><b>14.0.5</b> Learning R</a></li>
+<li class="chapter" data-level="14.1" data-path="what-is-r.html"><a href="what-is-r.html#managing-files-in-r"><i class="fa fa-check"></i><b>14.1</b> Managing Files in R</a>
+<ul>
+<li class="chapter" data-level="14.1.1" data-path="what-is-r.html"><a href="what-is-r.html#why-manage-files-in-r"><i class="fa fa-check"></i><b>14.1.1</b> Why manage files in R?</a></li>
+<li class="chapter" data-level="14.1.2" data-path="what-is-r.html"><a href="what-is-r.html#navigating-to-r-in-rstudio-cloud"><i class="fa fa-check"></i><b>14.1.2</b> Navigating to R in RStudio Cloud</a></li>
+<li class="chapter" data-level="14.1.3" data-path="what-is-r.html"><a href="what-is-r.html#important-functions"><i class="fa fa-check"></i><b>14.1.3</b> Important functions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html"><i class="fa fa-check"></i><b>15</b> Managing Files in the Terminal</a>
+<ul>
+<li class="chapter" data-level="15.0.1" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#what-is-the-terminal"><i class="fa fa-check"></i><b>15.0.1</b> What is the Terminal?</a></li>
+<li class="chapter" data-level="15.0.2" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#why-manage-files-in-the-terminal"><i class="fa fa-check"></i><b>15.0.2</b> Why manage files in the Terminal?</a></li>
+<li class="chapter" data-level="15.0.3" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#file-system-example-and-vocabulary"><i class="fa fa-check"></i><b>15.0.3</b> File system example and vocabulary</a></li>
+<li class="chapter" data-level="15.0.4" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#important-terminal-commands"><i class="fa fa-check"></i><b>15.0.4</b> Important Terminal Commands</a></li>
+<li class="chapter" data-level="15.0.5" data-path="managing-files-in-the-terminal.html"><a href="managing-files-in-the-terminal.html#additional-resources"><i class="fa fa-check"></i><b>15.0.5</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="objects-in-r.html"><a href="objects-in-r.html"><i class="fa fa-check"></i><b>16</b> Objects in R</a>
+<ul>
+<li class="chapter" data-level="16.0.1" data-path="objects-in-r.html"><a href="objects-in-r.html#what-is-an-object"><i class="fa fa-check"></i><b>16.0.1</b> What is an object?</a></li>
+<li class="chapter" data-level="16.0.2" data-path="objects-in-r.html"><a href="objects-in-r.html#storing-objects"><i class="fa fa-check"></i><b>16.0.2</b> Storing objects</a></li>
+<li class="chapter" data-level="16.0.3" data-path="objects-in-r.html"><a href="objects-in-r.html#printing-objects"><i class="fa fa-check"></i><b>16.0.3</b> Printing objects</a></li>
+<li class="chapter" data-level="16.0.4" data-path="objects-in-r.html"><a href="objects-in-r.html#character"><i class="fa fa-check"></i><b>16.0.4</b> Character</a></li>
+<li class="chapter" data-level="16.0.5" data-path="objects-in-r.html"><a href="objects-in-r.html#integer"><i class="fa fa-check"></i><b>16.0.5</b> Integer</a></li>
+<li class="chapter" data-level="16.0.6" data-path="objects-in-r.html"><a href="objects-in-r.html#numeric"><i class="fa fa-check"></i><b>16.0.6</b> Numeric</a></li>
+<li class="chapter" data-level="16.0.7" data-path="objects-in-r.html"><a href="objects-in-r.html#logical"><i class="fa fa-check"></i><b>16.0.7</b> Logical</a></li>
+<li class="chapter" data-level="16.0.8" data-path="objects-in-r.html"><a href="objects-in-r.html#factor"><i class="fa fa-check"></i><b>16.0.8</b> Factor</a></li>
+<li class="chapter" data-level="16.0.9" data-path="objects-in-r.html"><a href="objects-in-r.html#data-frames"><i class="fa fa-check"></i><b>16.0.9</b> Data frames</a></li>
+<li class="chapter" data-level="16.0.10" data-path="objects-in-r.html"><a href="objects-in-r.html#missing-values"><i class="fa fa-check"></i><b>16.0.10</b> Missing values</a></li>
+<li class="chapter" data-level="16.0.11" data-path="objects-in-r.html"><a href="objects-in-r.html#determining-the-class-of-an-object"><i class="fa fa-check"></i><b>16.0.11</b> Determining the class of an object</a></li>
+<li class="chapter" data-level="16.0.12" data-path="objects-in-r.html"><a href="objects-in-r.html#summary-2"><i class="fa fa-check"></i><b>16.0.12</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="working-with-logicals.html"><a href="working-with-logicals.html"><i class="fa fa-check"></i><b>17</b> Working with Logicals</a>
+<ul>
+<li class="chapter" data-level="17.0.1" data-path="working-with-logicals.html"><a href="working-with-logicals.html#logical-operators"><i class="fa fa-check"></i><b>17.0.1</b> Logical operators</a></li>
+<li class="chapter" data-level="17.0.2" data-path="working-with-logicals.html"><a href="working-with-logicals.html#logical-functions"><i class="fa fa-check"></i><b>17.0.2</b> Logical functions</a></li>
+<li class="chapter" data-level="17.0.3" data-path="working-with-logicals.html"><a href="working-with-logicals.html#summary-3"><i class="fa fa-check"></i><b>17.0.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="data-frames-1.html"><a href="data-frames-1.html"><i class="fa fa-check"></i><b>18</b> Data Frames</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="data-frames-1.html"><a href="data-frames-1.html#exploring-data-frames"><i class="fa fa-check"></i><b>18.1</b> Exploring data frames</a>
+<ul>
+<li class="chapter" data-level="18.1.1" data-path="data-frames-1.html"><a href="data-frames-1.html#subsetting-data-frames"><i class="fa fa-check"></i><b>18.1.1</b> Subsetting data frames</a></li>
+<li class="chapter" data-level="18.1.2" data-path="data-frames-1.html"><a href="data-frames-1.html#first-plot"><i class="fa fa-check"></i><b>18.1.2</b> First plot!</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html"><i class="fa fa-check"></i><b>19</b> Basic Commands in R</a>
+<ul>
+<li class="chapter" data-level="19.0.1" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#functions"><i class="fa fa-check"></i><b>19.0.1</b> Functions</a></li>
+<li class="chapter" data-level="19.0.2" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#what-is-this-object"><i class="fa fa-check"></i><b>19.0.2</b> What is this object?</a></li>
+<li class="chapter" data-level="19.0.3" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#how-big-is-this-object"><i class="fa fa-check"></i><b>19.0.3</b> How big is this object?</a></li>
+<li class="chapter" data-level="19.0.4" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#are-there-named-features-of-this-object"><i class="fa fa-check"></i><b>19.0.4</b> Are there named features of this object?</a></li>
+<li class="chapter" data-level="19.0.5" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#what-does-this-object-look-like"><i class="fa fa-check"></i><b>19.0.5</b> What does this object look like?</a></li>
+<li class="chapter" data-level="19.0.6" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#errors-warnings-and-messages"><i class="fa fa-check"></i><b>19.0.6</b> Errors, Warnings, and Messages</a></li>
+<li class="chapter" data-level="19.0.7" data-path="basic-commands-in-r.html"><a href="basic-commands-in-r.html#summary-4"><i class="fa fa-check"></i><b>19.0.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html"><i class="fa fa-check"></i><b>20</b> Getting Help in R</a>
+<ul>
+<li class="chapter" data-level="20.0.1" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#r-help"><i class="fa fa-check"></i><b>20.0.1</b> R Help: <code>?</code></a></li>
+<li class="chapter" data-level="20.0.2" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#debugging-code"><i class="fa fa-check"></i><b>20.0.2</b> Debugging code</a></li>
+<li class="chapter" data-level="20.0.3" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#tips-on-asking-questions"><i class="fa fa-check"></i><b>20.0.3</b> Tips on asking questions!</a></li>
+<li class="chapter" data-level="20.0.4" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#summary-5"><i class="fa fa-check"></i><b>20.0.4</b> Summary</a></li>
+<li class="chapter" data-level="20.0.5" data-path="getting-help-in-r.html"><a href="getting-help-in-r.html#additional-community-resources"><i class="fa fa-check"></i><b>20.0.5</b> Additional Community Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="r-packages.html"><a href="r-packages.html"><i class="fa fa-check"></i><b>21</b> R Packages</a>
+<ul>
+<li class="chapter" data-level="21.0.1" data-path="r-packages.html"><a href="r-packages.html#what-is-an-r-package"><i class="fa fa-check"></i><b>21.0.1</b> What is an R package?</a></li>
+<li class="chapter" data-level="21.0.2" data-path="r-packages.html"><a href="r-packages.html#what-are-repositories"><i class="fa fa-check"></i><b>21.0.2</b> What are repositories?</a></li>
+<li class="chapter" data-level="21.0.3" data-path="r-packages.html"><a href="r-packages.html#how-do-you-know-what-package-is-right-for-you"><i class="fa fa-check"></i><b>21.0.3</b> How do you know what package is right for you?</a></li>
+<li class="chapter" data-level="21.0.4" data-path="r-packages.html"><a href="r-packages.html#how-do-you-install-packages"><i class="fa fa-check"></i><b>21.0.4</b> How do you install packages?</a></li>
+<li class="chapter" data-level="21.0.5" data-path="r-packages.html"><a href="r-packages.html#loading-packages"><i class="fa fa-check"></i><b>21.0.5</b> Loading packages</a></li>
+<li class="chapter" data-level="21.0.6" data-path="r-packages.html"><a href="r-packages.html#dependencies"><i class="fa fa-check"></i><b>21.0.6</b> Dependencies</a></li>
+<li class="chapter" data-level="21.0.7" data-path="r-packages.html"><a href="r-packages.html#updating-removing-unloading-packages"><i class="fa fa-check"></i><b>21.0.7</b> Updating, removing, unloading packages</a></li>
+<li class="chapter" data-level="21.0.8" data-path="r-packages.html"><a href="r-packages.html#using-the-commands-in-a-function"><i class="fa fa-check"></i><b>21.0.8</b> Using the commands in a function</a></li>
+<li class="chapter" data-level="21.0.9" data-path="r-packages.html"><a href="r-packages.html#summary-6"><i class="fa fa-check"></i><b>21.0.9</b> Summary</a></li>
+<li class="chapter" data-level="21.0.10" data-path="r-packages.html"><a href="r-packages.html#additional-resources-1"><i class="fa fa-check"></i><b>21.0.10</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>22</b> R Markdown</a>
+<ul>
+<li class="chapter" data-level="22.0.1" data-path="r-markdown.html"><a href="r-markdown.html#what-is-r-markdown"><i class="fa fa-check"></i><b>22.0.1</b> What is R Markdown?</a></li>
+<li class="chapter" data-level="22.0.2" data-path="r-markdown.html"><a href="r-markdown.html#why-use-r-markdown"><i class="fa fa-check"></i><b>22.0.2</b> Why use R Markdown?</a></li>
+<li class="chapter" data-level="22.0.3" data-path="r-markdown.html"><a href="r-markdown.html#getting-started-with-r-markdown"><i class="fa fa-check"></i><b>22.0.3</b> Getting started with R Markdown</a></li>
+<li class="chapter" data-level="22.0.4" data-path="r-markdown.html"><a href="r-markdown.html#file-paths-in-r-markdowns"><i class="fa fa-check"></i><b>22.0.4</b> File paths in R Markdowns</a></li>
+<li class="chapter" data-level="22.0.5" data-path="r-markdown.html"><a href="r-markdown.html#knitting-documents"><i class="fa fa-check"></i><b>22.0.5</b> “Knitting” documents</a></li>
+<li class="chapter" data-level="22.0.6" data-path="r-markdown.html"><a href="r-markdown.html#summary-7"><i class="fa fa-check"></i><b>22.0.6</b> Summary</a></li>
+<li class="chapter" data-level="22.0.7" data-path="r-markdown.html"><a href="r-markdown.html#additional-resources-2"><i class="fa fa-check"></i><b>22.0.7</b> Additional Resources</a></li>
+<li class="chapter" data-level="22.1" data-path="r-markdown.html"><a href="r-markdown.html#introduction-to-markdown"><i class="fa fa-check"></i><b>22.1</b> Introduction to Markdown</a>
+<ul>
+<li class="chapter" data-level="22.1.1" data-path="r-markdown.html"><a href="r-markdown.html#how-to-use-markdown"><i class="fa fa-check"></i><b>22.1.1</b> How to use Markdown</a></li>
+<li class="chapter" data-level="22.1.2" data-path="r-markdown.html"><a href="r-markdown.html#markdown-example"><i class="fa fa-check"></i><b>22.1.2</b> Markdown Example</a></li>
+<li class="chapter" data-level="22.1.3" data-path="r-markdown.html"><a href="r-markdown.html#main-commands"><i class="fa fa-check"></i><b>22.1.3</b> Main commands</a></li>
+<li class="chapter" data-level="22.1.4" data-path="r-markdown.html"><a href="r-markdown.html#more-complicated-editing"><i class="fa fa-check"></i><b>22.1.4</b> More complicated editing</a></li>
+<li class="chapter" data-level="22.1.5" data-path="r-markdown.html"><a href="r-markdown.html#links"><i class="fa fa-check"></i><b>22.1.5</b> Links</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="dataset-file-types.html"><a href="dataset-file-types.html"><i class="fa fa-check"></i><b>23</b> Dataset file types</a>
+<ul>
+<li class="chapter" data-level="23.0.1" data-path="dataset-file-types.html"><a href="dataset-file-types.html#tabular-data-files"><i class="fa fa-check"></i><b>23.0.1</b> Tabular data files</a></li>
+<li class="chapter" data-level="23.0.2" data-path="dataset-file-types.html"><a href="dataset-file-types.html#csv-files"><i class="fa fa-check"></i><b>23.0.2</b> CSV files</a></li>
+<li class="chapter" data-level="23.0.3" data-path="dataset-file-types.html"><a href="dataset-file-types.html#downloading-csv-files"><i class="fa fa-check"></i><b>23.0.3</b> Downloading CSV files</a></li>
+<li class="chapter" data-level="23.0.4" data-path="dataset-file-types.html"><a href="dataset-file-types.html#reading-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>23.0.4</b> Reading files into RStudio Cloud</a></li>
+<li class="chapter" data-level="23.0.5" data-path="dataset-file-types.html"><a href="dataset-file-types.html#writing-csv-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>23.0.5</b> Writing CSV files into RStudio Cloud</a></li>
+<li class="chapter" data-level="23.0.6" data-path="dataset-file-types.html"><a href="dataset-file-types.html#excel-files"><i class="fa fa-check"></i><b>23.0.6</b> Excel files</a></li>
+<li class="chapter" data-level="23.0.7" data-path="dataset-file-types.html"><a href="dataset-file-types.html#reading-excel-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>23.0.7</b> Reading Excel files into RStudio Cloud</a></li>
+<li class="chapter" data-level="23.0.8" data-path="dataset-file-types.html"><a href="dataset-file-types.html#text-files"><i class="fa fa-check"></i><b>23.0.8</b> Text files</a></li>
+<li class="chapter" data-level="23.0.9" data-path="dataset-file-types.html"><a href="dataset-file-types.html#reading-tsv-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>23.0.9</b> Reading TSV files into RStudio Cloud</a></li>
+<li class="chapter" data-level="23.0.10" data-path="dataset-file-types.html"><a href="dataset-file-types.html#reading-txt-files-into-rstudio-cloud"><i class="fa fa-check"></i><b>23.0.10</b> Reading TXT files into RStudio Cloud</a></li>
+<li class="chapter" data-level="23.0.11" data-path="dataset-file-types.html"><a href="dataset-file-types.html#exporting-data-in-r-to-csv"><i class="fa fa-check"></i><b>23.0.11</b> Exporting Data in R to CSV</a></li>
+<li class="chapter" data-level="23.1" data-path="dataset-file-types.html"><a href="dataset-file-types.html#special-r-data-files"><i class="fa fa-check"></i><b>23.1</b> Special R data files</a>
+<ul>
+<li class="chapter" data-level="23.1.1" data-path="dataset-file-types.html"><a href="dataset-file-types.html#datasets-in-r"><i class="fa fa-check"></i><b>23.1.1</b> Datasets in R</a></li>
+<li class="chapter" data-level="23.1.2" data-path="dataset-file-types.html"><a href="dataset-file-types.html#datasets-in-packages"><i class="fa fa-check"></i><b>23.1.2</b> Datasets in Packages</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="finding-data.html"><a href="finding-data.html"><i class="fa fa-check"></i><b>24</b> Finding Data</a>
+<ul>
+<li class="chapter" data-level="24.0.1" data-path="finding-data.html"><a href="finding-data.html#public-versus-private-data"><i class="fa fa-check"></i><b>24.0.1</b> Public versus Private Data</a></li>
+<li class="chapter" data-level="24.0.2" data-path="finding-data.html"><a href="finding-data.html#publicly-available-data"><i class="fa fa-check"></i><b>24.0.2</b> Publicly-available data</a></li>
+<li class="chapter" data-level="24.0.3" data-path="finding-data.html"><a href="finding-data.html#data-you-already-have"><i class="fa fa-check"></i><b>24.0.3</b> Data You Already Have</a></li>
+<li class="chapter" data-level="24.1" data-path="finding-data.html"><a href="finding-data.html#where-to-get-open-source-data"><i class="fa fa-check"></i><b>24.1</b> Where to get open source data</a></li>
+<li class="chapter" data-level="24.2" data-path="finding-data.html"><a href="finding-data.html#dslabs"><i class="fa fa-check"></i><b>24.2</b> dslabs</a></li>
+<li class="chapter" data-level="24.3" data-path="finding-data.html"><a href="finding-data.html#fivethirtyeight-data"><i class="fa fa-check"></i><b>24.3</b> FiveThirtyEight Data</a></li>
+<li class="chapter" data-level="24.4" data-path="finding-data.html"><a href="finding-data.html#kaggle"><i class="fa fa-check"></i><b>24.4</b> Kaggle</a></li>
+<li class="chapter" data-level="24.5" data-path="finding-data.html"><a href="finding-data.html#more-places-to-get-data"><i class="fa fa-check"></i><b>24.5</b> More places to get data</a></li>
+<li class="chapter" data-level="24.6" data-path="finding-data.html"><a href="finding-data.html#ethical-data-science"><i class="fa fa-check"></i><b>24.6</b> Ethical Data Science</a>
+<ul>
+<li class="chapter" data-level="24.6.1" data-path="finding-data.html"><a href="finding-data.html#data-science-team"><i class="fa fa-check"></i><b>24.6.1</b> Data Science Team</a></li>
+<li class="chapter" data-level="24.6.2" data-path="finding-data.html"><a href="finding-data.html#the-data"><i class="fa fa-check"></i><b>24.6.2</b> The Data</a></li>
+<li class="chapter" data-level="24.6.3" data-path="finding-data.html"><a href="finding-data.html#the-analysis"><i class="fa fa-check"></i><b>24.6.3</b> The Analysis</a></li>
+<li class="chapter" data-level="24.6.4" data-path="finding-data.html"><a href="finding-data.html#after-the-algorithm"><i class="fa fa-check"></i><b>24.6.4</b> After the Algorithm</a></li>
+<li class="chapter" data-level="24.6.5" data-path="finding-data.html"><a href="finding-data.html#ethics-in-data-science"><i class="fa fa-check"></i><b>24.6.5</b> Ethics in Data Science</a></li>
+<li class="chapter" data-level="24.6.6" data-path="finding-data.html"><a href="finding-data.html#artificial-intelligence-in-the-military"><i class="fa fa-check"></i><b>24.6.6</b> Artificial Intelligence in the Military</a></li>
+<li class="chapter" data-level="24.6.7" data-path="finding-data.html"><a href="finding-data.html#additional-resources-3"><i class="fa fa-check"></i><b>24.6.7</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="24.7" data-path="finding-data.html"><a href="finding-data.html#internet-safety"><i class="fa fa-check"></i><b>24.7</b> Internet Safety</a>
+<ul>
+<li class="chapter" data-level="24.7.1" data-path="finding-data.html"><a href="finding-data.html#wifi"><i class="fa fa-check"></i><b>24.7.1</b> WiFi</a></li>
+<li class="chapter" data-level="24.7.2" data-path="finding-data.html"><a href="finding-data.html#passwords"><i class="fa fa-check"></i><b>24.7.2</b> Passwords</a></li>
+<li class="chapter" data-level="24.7.3" data-path="finding-data.html"><a href="finding-data.html#good-internet-behavior"><i class="fa fa-check"></i><b>24.7.3</b> Good Internet behavior</a></li>
+<li class="chapter" data-level="24.7.4" data-path="finding-data.html"><a href="finding-data.html#online-scams"><i class="fa fa-check"></i><b>24.7.4</b> Online Scams</a></li>
+<li class="chapter" data-level="24.7.5" data-path="finding-data.html"><a href="finding-data.html#malware-spyware"><i class="fa fa-check"></i><b>24.7.5</b> Malware &amp; Spyware</a></li>
+<li class="chapter" data-level="24.7.6" data-path="finding-data.html"><a href="finding-data.html#security-on-a-chromebook"><i class="fa fa-check"></i><b>24.7.6</b> Security on a Chromebook</a></li>
+</ul></li>
+<li class="chapter" data-level="24.8" data-path="finding-data.html"><a href="finding-data.html#data-privacy"><i class="fa fa-check"></i><b>24.8</b> Data Privacy</a>
+<ul>
+<li class="chapter" data-level="24.8.1" data-path="finding-data.html"><a href="finding-data.html#what-is-data-privacy"><i class="fa fa-check"></i><b>24.8.1</b> What is Data Privacy?</a></li>
+<li class="chapter" data-level="24.8.2" data-path="finding-data.html"><a href="finding-data.html#personally-identifiable-information"><i class="fa fa-check"></i><b>24.8.2</b> Personally Identifiable Information</a></li>
+<li class="chapter" data-level="24.8.3" data-path="finding-data.html"><a href="finding-data.html#what-is-encryption"><i class="fa fa-check"></i><b>24.8.3</b> What is encryption?</a></li>
+<li class="chapter" data-level="24.8.4" data-path="finding-data.html"><a href="finding-data.html#human-security"><i class="fa fa-check"></i><b>24.8.4</b> Human Security</a></li>
+<li class="chapter" data-level="24.8.5" data-path="finding-data.html"><a href="finding-data.html#computer-security"><i class="fa fa-check"></i><b>24.8.5</b> Computer Security</a></li>
+<li class="chapter" data-level="24.8.6" data-path="finding-data.html"><a href="finding-data.html#open-science"><i class="fa fa-check"></i><b>24.8.6</b> Open Science</a></li>
+<li class="chapter" data-level="24.8.7" data-path="finding-data.html"><a href="finding-data.html#data-breaches"><i class="fa fa-check"></i><b>24.8.7</b> Data Breaches</a></li>
+<li class="chapter" data-level="24.8.8" data-path="finding-data.html"><a href="finding-data.html#conclusions-1"><i class="fa fa-check"></i><b>24.8.8</b> Conclusions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="cleaning-the-data.html"><a href="cleaning-the-data.html"><i class="fa fa-check"></i><b>25</b> <strong>Cleaning the Data</strong></a>
+<ul>
+<li class="chapter" data-level="25.1" data-path="cleaning-the-data.html"><a href="cleaning-the-data.html#learning-objectives-2"><i class="fa fa-check"></i><b>25.1</b> Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="26" data-path="what-is-tidy-data.html"><a href="what-is-tidy-data.html"><i class="fa fa-check"></i><b>26</b> What is Tidy Data?</a>
+<ul>
+<li class="chapter" data-level="26.0.1" data-path="what-is-tidy-data.html"><a href="what-is-tidy-data.html#why-tidy-data"><i class="fa fa-check"></i><b>26.0.1</b> Why Tidy Data?</a></li>
+<li class="chapter" data-level="26.0.2" data-path="what-is-tidy-data.html"><a href="what-is-tidy-data.html#data-terminology"><i class="fa fa-check"></i><b>26.0.2</b> Data Terminology</a></li>
+<li class="chapter" data-level="26.0.3" data-path="what-is-tidy-data.html"><a href="what-is-tidy-data.html#principles-of-tidy-data"><i class="fa fa-check"></i><b>26.0.3</b> Principles of Tidy Data</a></li>
+<li class="chapter" data-level="26.0.4" data-path="what-is-tidy-data.html"><a href="what-is-tidy-data.html#rules-for-tidy-spreadsheets"><i class="fa fa-check"></i><b>26.0.4</b> Rules for Tidy Spreadsheets</a></li>
+<li class="chapter" data-level="26.1" data-path="what-is-tidy-data.html"><a href="what-is-tidy-data.html#untidy-data"><i class="fa fa-check"></i><b>26.1</b> Untidy Data</a>
+<ul>
+<li class="chapter" data-level="26.1.1" data-path="what-is-tidy-data.html"><a href="what-is-tidy-data.html#common-problems-with-messy-data-sets"><i class="fa fa-check"></i><b>26.1.1</b> Common problems with messy data sets</a></li>
+<li class="chapter" data-level="26.1.2" data-path="what-is-tidy-data.html"><a href="what-is-tidy-data.html#examples-of-untidy-data"><i class="fa fa-check"></i><b>26.1.2</b> Examples of untidy data</a></li>
+<li class="chapter" data-level="26.1.3" data-path="what-is-tidy-data.html"><a href="what-is-tidy-data.html#tidying-untidy-data"><i class="fa fa-check"></i><b>26.1.3</b> Tidying untidy data</a></li>
+<li class="chapter" data-level="26.1.4" data-path="what-is-tidy-data.html"><a href="what-is-tidy-data.html#additional-resources-4"><i class="fa fa-check"></i><b>26.1.4</b> Additional resources</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="27" data-path="reshaping-data.html"><a href="reshaping-data.html"><i class="fa fa-check"></i><b>27</b> Reshaping Data</a>
+<ul>
+<li class="chapter" data-level="27.0.1" data-path="reshaping-data.html"><a href="reshaping-data.html#data-formats"><i class="fa fa-check"></i><b>27.0.1</b> Data Formats</a></li>
+<li class="chapter" data-level="27.0.2" data-path="reshaping-data.html"><a href="reshaping-data.html#r-packages-1"><i class="fa fa-check"></i><b>27.0.2</b> R Packages</a></li>
+<li class="chapter" data-level="27.1" data-path="reshaping-data.html"><a href="reshaping-data.html#transposing-data"><i class="fa fa-check"></i><b>27.1</b> Transposing data</a>
+<ul>
+<li class="chapter" data-level="27.1.1" data-path="reshaping-data.html"><a href="reshaping-data.html#additional-resources-5"><i class="fa fa-check"></i><b>27.1.1</b> Additional Resources</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="28" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html"><i class="fa fa-check"></i><b>28</b> How to Tidy Data</a>
+<ul>
+<li class="chapter" data-level="28.0.1" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#dplyr"><i class="fa fa-check"></i><b>28.0.1</b> dplyr</a></li>
+<li class="chapter" data-level="28.0.2" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#tidyr-1"><i class="fa fa-check"></i><b>28.0.2</b> tidyr</a></li>
+<li class="chapter" data-level="28.0.3" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#janitor"><i class="fa fa-check"></i><b>28.0.3</b> janitor</a></li>
+<li class="chapter" data-level="28.0.4" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#skimr"><i class="fa fa-check"></i><b>28.0.4</b> skimr</a></li>
+<li class="chapter" data-level="28.0.5" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#the-pipe-operator"><i class="fa fa-check"></i><b>28.0.5</b> The Pipe Operator</a></li>
+<li class="chapter" data-level="28.0.6" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#filtering-data"><i class="fa fa-check"></i><b>28.0.6</b> Filtering Data</a></li>
+<li class="chapter" data-level="28.0.7" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#reordering"><i class="fa fa-check"></i><b>28.0.7</b> Reordering</a></li>
+<li class="chapter" data-level="28.0.8" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#creating-new-columns"><i class="fa fa-check"></i><b>28.0.8</b> Creating new columns</a></li>
+<li class="chapter" data-level="28.0.9" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#separating-columns"><i class="fa fa-check"></i><b>28.0.9</b> Separating Columns</a></li>
+<li class="chapter" data-level="28.0.10" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#merging-columns"><i class="fa fa-check"></i><b>28.0.10</b> Merging Columns</a></li>
+<li class="chapter" data-level="28.0.11" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#cleaning-up-column-names"><i class="fa fa-check"></i><b>28.0.11</b> Cleaning up column names</a></li>
+<li class="chapter" data-level="28.0.12" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#combining-data-across-data-frames"><i class="fa fa-check"></i><b>28.0.12</b> Combining data across data frames</a></li>
+<li class="chapter" data-level="28.0.13" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#grouping-data"><i class="fa fa-check"></i><b>28.0.13</b> Grouping Data</a></li>
+<li class="chapter" data-level="28.0.14" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#summarizing-data"><i class="fa fa-check"></i><b>28.0.14</b> Summarizing Data</a></li>
+<li class="chapter" data-level="28.0.15" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#conclusion"><i class="fa fa-check"></i><b>28.0.15</b> Conclusion</a></li>
+<li class="chapter" data-level="28.0.16" data-path="how-to-tidy-data.html"><a href="how-to-tidy-data.html#additional-resources-6"><i class="fa fa-check"></i><b>28.0.16</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="29" data-path="joining-data.html"><a href="joining-data.html"><i class="fa fa-check"></i><b>29</b> Joining Data</a>
+<ul>
+<li class="chapter" data-level="29.1" data-path="joining-data.html"><a href="joining-data.html#dplyr-join-family-of-functions"><i class="fa fa-check"></i><b>29.1</b> dplyr join family of functions</a>
+<ul>
+<li class="chapter" data-level="29.1.1" data-path="joining-data.html"><a href="joining-data.html#row-binding"><i class="fa fa-check"></i><b>29.1.1</b> Row binding</a></li>
+<li class="chapter" data-level="29.1.2" data-path="joining-data.html"><a href="joining-data.html#column-binding"><i class="fa fa-check"></i><b>29.1.2</b> Column binding</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="30" data-path="working-with-strings.html"><a href="working-with-strings.html"><i class="fa fa-check"></i><b>30</b> Working with Strings</a>
+<ul>
+<li class="chapter" data-level="30.0.1" data-path="working-with-strings.html"><a href="working-with-strings.html#strings-review"><i class="fa fa-check"></i><b>30.0.1</b> Strings review</a></li>
+<li class="chapter" data-level="30.0.2" data-path="working-with-strings.html"><a href="working-with-strings.html#stringr"><i class="fa fa-check"></i><b>30.0.2</b> stringr</a></li>
+<li class="chapter" data-level="30.0.3" data-path="working-with-strings.html"><a href="working-with-strings.html#string-basics"><i class="fa fa-check"></i><b>30.0.3</b> String basics</a></li>
+<li class="chapter" data-level="30.0.4" data-path="working-with-strings.html"><a href="working-with-strings.html#regular-expressions"><i class="fa fa-check"></i><b>30.0.4</b> Regular expressions</a></li>
+<li class="chapter" data-level="30.0.5" data-path="working-with-strings.html"><a href="working-with-strings.html#conclusion-1"><i class="fa fa-check"></i><b>30.0.5</b> Conclusion</a></li>
+<li class="chapter" data-level="30.0.6" data-path="working-with-strings.html"><a href="working-with-strings.html#additional-resources-7"><i class="fa fa-check"></i><b>30.0.6</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="31" data-path="working-with-factors.html"><a href="working-with-factors.html"><i class="fa fa-check"></i><b>31</b> Working with Factors</a>
+<ul>
+<li class="chapter" data-level="31.0.1" data-path="working-with-factors.html"><a href="working-with-factors.html#factor-basics"><i class="fa fa-check"></i><b>31.0.1</b> Factor basics</a></li>
+<li class="chapter" data-level="31.0.2" data-path="working-with-factors.html"><a href="working-with-factors.html#manually-change-the-labels-of-factor-levels-fct_relevel"><i class="fa fa-check"></i><b>31.0.2</b> Manually change the labels of factor levels : <code>fct_relevel()</code></a></li>
+<li class="chapter" data-level="31.0.3" data-path="working-with-factors.html"><a href="working-with-factors.html#keep-the-order-of-the-factor-levels-fct_inorder"><i class="fa fa-check"></i><b>31.0.3</b> Keep the order of the factor levels : <code>fct_inorder()</code></a></li>
+<li class="chapter" data-level="31.0.4" data-path="working-with-factors.html"><a href="working-with-factors.html#advanced-factoring"><i class="fa fa-check"></i><b>31.0.4</b> Advanced Factoring</a></li>
+<li class="chapter" data-level="31.0.5" data-path="working-with-factors.html"><a href="working-with-factors.html#re-ordering-factor-levels-by-frequency-fct_infreq"><i class="fa fa-check"></i><b>31.0.5</b> Re-ordering factor levels by frequency : <code>fct_infreq()</code></a></li>
+<li class="chapter" data-level="31.0.6" data-path="working-with-factors.html"><a href="working-with-factors.html#reversing-order-levels-fct_rev"><i class="fa fa-check"></i><b>31.0.6</b> Reversing order levels : <code>fct_rev()</code></a></li>
+<li class="chapter" data-level="31.0.7" data-path="working-with-factors.html"><a href="working-with-factors.html#re-ordering-factor-levels-by-another-variable-fct_reorder"><i class="fa fa-check"></i><b>31.0.7</b> Re-ordering factor levels by another variable : <code>fct_reorder()</code></a></li>
+<li class="chapter" data-level="31.0.8" data-path="working-with-factors.html"><a href="working-with-factors.html#combining-several-levels-into-one-fct_recode"><i class="fa fa-check"></i><b>31.0.8</b> Combining several levels into one: <code>fct_recode()</code></a></li>
+<li class="chapter" data-level="31.0.9" data-path="working-with-factors.html"><a href="working-with-factors.html#converting-numeric-levels-to-factors-ifelse-factor"><i class="fa fa-check"></i><b>31.0.9</b> Converting numeric levels to factors: <code>ifelse()</code> + <code>factor()</code></a></li>
+<li class="chapter" data-level="31.0.10" data-path="working-with-factors.html"><a href="working-with-factors.html#conclusions-2"><i class="fa fa-check"></i><b>31.0.10</b> Conclusions</a></li>
+<li class="chapter" data-level="31.0.11" data-path="working-with-factors.html"><a href="working-with-factors.html#additional-resources-8"><i class="fa fa-check"></i><b>31.0.11</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="32" data-path="working-with-dates.html"><a href="working-with-dates.html"><i class="fa fa-check"></i><b>32</b> Working with Dates</a>
+<ul>
+<li class="chapter" data-level="32.0.1" data-path="working-with-dates.html"><a href="working-with-dates.html#dates-and-time-basics"><i class="fa fa-check"></i><b>32.0.1</b> Dates and time basics</a></li>
+<li class="chapter" data-level="32.0.2" data-path="working-with-dates.html"><a href="working-with-dates.html#creating-dates-and-date-time-objects"><i class="fa fa-check"></i><b>32.0.2</b> Creating dates and date-time objects</a></li>
+<li class="chapter" data-level="32.0.3" data-path="working-with-dates.html"><a href="working-with-dates.html#working-with-dates-1"><i class="fa fa-check"></i><b>32.0.3</b> Working with dates</a></li>
+<li class="chapter" data-level="32.0.4" data-path="working-with-dates.html"><a href="working-with-dates.html#time-spans"><i class="fa fa-check"></i><b>32.0.4</b> Time spans</a></li>
+<li class="chapter" data-level="32.0.5" data-path="working-with-dates.html"><a href="working-with-dates.html#whats-not-covered-in-this-lesson"><i class="fa fa-check"></i><b>32.0.5</b> What’s not covered in this lesson</a></li>
+<li class="chapter" data-level="32.0.6" data-path="working-with-dates.html"><a href="working-with-dates.html#additional-resources-9"><i class="fa fa-check"></i><b>32.0.6</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="33" data-path="project-organization.html"><a href="project-organization.html"><i class="fa fa-check"></i><b>33</b> Project organization</a>
+<ul>
+<li class="chapter" data-level="33.1" data-path="project-organization.html"><a href="project-organization.html#setting-up-data-science-project-folders"><i class="fa fa-check"></i><b>33.1</b> Setting Up Data Science Project Folders</a>
+<ul>
+<li class="chapter" data-level="33.1.1" data-path="project-organization.html"><a href="project-organization.html#a-project-organization-framework"><i class="fa fa-check"></i><b>33.1.1</b> A project organization framework</a></li>
+<li class="chapter" data-level="33.1.2" data-path="project-organization.html"><a href="project-organization.html#the-next-level-of-organization"><i class="fa fa-check"></i><b>33.1.2</b> The next level of organization</a></li>
+<li class="chapter" data-level="33.1.3" data-path="project-organization.html"><a href="project-organization.html#the-readme-file"><i class="fa fa-check"></i><b>33.1.3</b> The README File</a></li>
+<li class="chapter" data-level="33.1.4" data-path="project-organization.html"><a href="project-organization.html#using-comments"><i class="fa fa-check"></i><b>33.1.4</b> Using Comments</a></li>
+<li class="chapter" data-level="33.1.5" data-path="project-organization.html"><a href="project-organization.html#write-in-a-modular-way"><i class="fa fa-check"></i><b>33.1.5</b> Write in a modular way</a></li>
+<li class="chapter" data-level="33.1.6" data-path="project-organization.html"><a href="project-organization.html#follow-a-style-guide"><i class="fa fa-check"></i><b>33.1.6</b> Follow a style guide</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="34" data-path="data-tidying.html"><a href="data-tidying.html"><i class="fa fa-check"></i><b>34</b> Data Tidying</a></li>
+<li class="chapter" data-level="35" data-path="data-tidying-project.html"><a href="data-tidying-project.html"><i class="fa fa-check"></i><b>35</b> Data Tidying Project</a></li>
+<li class="chapter" data-level="36" data-path="plotting-the-data.html"><a href="plotting-the-data.html"><i class="fa fa-check"></i><b>36</b> <strong>Plotting the Data</strong></a>
+<ul>
+<li class="chapter" data-level="36.1" data-path="plotting-the-data.html"><a href="plotting-the-data.html#learning-objectives-3"><i class="fa fa-check"></i><b>36.1</b> Learning Objectives</a>
+<ul>
+<li class="chapter" data-level="36.1.1" data-path="plotting-the-data.html"><a href="plotting-the-data.html#data-visualization"><i class="fa fa-check"></i><b>36.1.1</b> Data Visualization</a></li>
+<li class="chapter" data-level="36.1.2" data-path="plotting-the-data.html"><a href="plotting-the-data.html#explanatory-plots"><i class="fa fa-check"></i><b>36.1.2</b> Explanatory Plots</a></li>
+<li class="chapter" data-level="36.1.3" data-path="plotting-the-data.html"><a href="plotting-the-data.html#types-of-plots"><i class="fa fa-check"></i><b>36.1.3</b> Types of Plots</a></li>
+<li class="chapter" data-level="36.1.4" data-path="plotting-the-data.html"><a href="plotting-the-data.html#tables"><i class="fa fa-check"></i><b>36.1.4</b> Tables</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="37" data-path="good-plots.html"><a href="good-plots.html"><i class="fa fa-check"></i><b>37</b> Good Plots</a>
+<ul>
+<li class="chapter" data-level="37.0.1" data-path="good-plots.html"><a href="good-plots.html#tips-for-making-good-plots"><i class="fa fa-check"></i><b>37.0.1</b> Tips for Making Good Plots</a></li>
+<li class="chapter" data-level="37.0.2" data-path="good-plots.html"><a href="good-plots.html#what-to-consider-when-making-plots"><i class="fa fa-check"></i><b>37.0.2</b> What To Consider When Making Plots</a></li>
+<li class="chapter" data-level="37.0.3" data-path="good-plots.html"><a href="good-plots.html#making-the-iphone-plot-in-r"><i class="fa fa-check"></i><b>37.0.3</b> Making The iPhone Plot in R</a></li>
+<li class="chapter" data-level="37.0.4" data-path="good-plots.html"><a href="good-plots.html#additional-resources-10"><i class="fa fa-check"></i><b>37.0.4</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="38" data-path="introduction-to-ggplot2.html"><a href="introduction-to-ggplot2.html"><i class="fa fa-check"></i><b>38</b> Introduction to ggplot2</a>
+<ul>
+<li class="chapter" data-level="38.0.1" data-path="introduction-to-ggplot2.html"><a href="introduction-to-ggplot2.html#the-basics"><i class="fa fa-check"></i><b>38.0.1</b> The basics</a></li>
+<li class="chapter" data-level="38.0.2" data-path="introduction-to-ggplot2.html"><a href="introduction-to-ggplot2.html#example-dataset-diamonds"><i class="fa fa-check"></i><b>38.0.2</b> Example dataset: <code>diamonds</code></a></li>
+<li class="chapter" data-level="38.0.3" data-path="introduction-to-ggplot2.html"><a href="introduction-to-ggplot2.html#scatterplots-geom_point"><i class="fa fa-check"></i><b>38.0.3</b> Scatterplots: <code>geom_point</code></a></li>
+<li class="chapter" data-level="38.0.4" data-path="introduction-to-ggplot2.html"><a href="introduction-to-ggplot2.html#aesthetics"><i class="fa fa-check"></i><b>38.0.4</b> Aesthetics</a></li>
+<li class="chapter" data-level="38.0.5" data-path="introduction-to-ggplot2.html"><a href="introduction-to-ggplot2.html#facets"><i class="fa fa-check"></i><b>38.0.5</b> Facets</a></li>
+<li class="chapter" data-level="38.0.6" data-path="introduction-to-ggplot2.html"><a href="introduction-to-ggplot2.html#geoms"><i class="fa fa-check"></i><b>38.0.6</b> Geoms</a></li>
+<li class="chapter" data-level="38.0.7" data-path="introduction-to-ggplot2.html"><a href="introduction-to-ggplot2.html#summary-8"><i class="fa fa-check"></i><b>38.0.7</b> Summary</a></li>
+<li class="chapter" data-level="38.0.8" data-path="introduction-to-ggplot2.html"><a href="introduction-to-ggplot2.html#additional-resources-11"><i class="fa fa-check"></i><b>38.0.8</b> Additional Resources:</a></li>
+</ul></li>
+<li class="chapter" data-level="39" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html"><i class="fa fa-check"></i><b>39</b> Customization in ggplot2</a>
+<ul>
+<li class="chapter" data-level="39.0.1" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html#colors"><i class="fa fa-check"></i><b>39.0.1</b> Colors</a></li>
+<li class="chapter" data-level="39.0.2" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html#labels"><i class="fa fa-check"></i><b>39.0.2</b> Labels</a></li>
+<li class="chapter" data-level="39.0.3" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html#themes"><i class="fa fa-check"></i><b>39.0.3</b> Themes</a></li>
+<li class="chapter" data-level="39.0.4" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html#theme"><i class="fa fa-check"></i><b>39.0.4</b> Theme</a></li>
+<li class="chapter" data-level="39.0.5" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html#legends"><i class="fa fa-check"></i><b>39.0.5</b> Legends</a></li>
+<li class="chapter" data-level="39.0.6" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html#scales"><i class="fa fa-check"></i><b>39.0.6</b> Scales</a></li>
+<li class="chapter" data-level="39.0.7" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html#coordinate-adjustment"><i class="fa fa-check"></i><b>39.0.7</b> Coordinate Adjustment</a></li>
+<li class="chapter" data-level="39.0.8" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html#annotation"><i class="fa fa-check"></i><b>39.0.8</b> Annotation</a></li>
+<li class="chapter" data-level="39.0.9" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html#summary-9"><i class="fa fa-check"></i><b>39.0.9</b> Summary</a></li>
+<li class="chapter" data-level="39.0.10" data-path="customization-in-ggplot2.html"><a href="customization-in-ggplot2.html#additional-references"><i class="fa fa-check"></i><b>39.0.10</b> Additional References</a></li>
+</ul></li>
+<li class="chapter" data-level="40" data-path="saving-plots.html"><a href="saving-plots.html"><i class="fa fa-check"></i><b>40</b> Saving Plots</a>
+<ul>
+<li class="chapter" data-level="40.0.1" data-path="saving-plots.html"><a href="saving-plots.html#image-types"><i class="fa fa-check"></i><b>40.0.1</b> Image Types</a></li>
+<li class="chapter" data-level="40.0.2" data-path="saving-plots.html"><a href="saving-plots.html#saving-plots-ggsave"><i class="fa fa-check"></i><b>40.0.2</b> Saving Plots: <code>ggsave()</code></a></li>
+<li class="chapter" data-level="40.0.3" data-path="saving-plots.html"><a href="saving-plots.html#alternative-approach"><i class="fa fa-check"></i><b>40.0.3</b> Alternative Approach</a></li>
+<li class="chapter" data-level="40.0.4" data-path="saving-plots.html"><a href="saving-plots.html#additional-resources-12"><i class="fa fa-check"></i><b>40.0.4</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="41" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html"><i class="fa fa-check"></i><b>41</b> From Exploratory To Explanatory</a>
+<ul>
+<li class="chapter" data-level="41.0.1" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html#apple-product-sales-data"><i class="fa fa-check"></i><b>41.0.1</b> Apple Product Sales Data</a></li>
+<li class="chapter" data-level="41.0.2" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html#exploratory-plot"><i class="fa fa-check"></i><b>41.0.2</b> Exploratory Plot</a></li>
+<li class="chapter" data-level="41.0.3" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html#increasing-line-thickness"><i class="fa fa-check"></i><b>41.0.3</b> Increasing Line Thickness</a></li>
+<li class="chapter" data-level="41.0.4" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html#adding-a-title"><i class="fa fa-check"></i><b>41.0.4</b> Adding a Title</a></li>
+<li class="chapter" data-level="41.0.5" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html#changing-line-colors"><i class="fa fa-check"></i><b>41.0.5</b> Changing Line Colors</a></li>
+<li class="chapter" data-level="41.0.6" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html#specifying-a-theme"><i class="fa fa-check"></i><b>41.0.6</b> Specifying a Theme</a></li>
+<li class="chapter" data-level="41.0.7" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html#customizing-the-theme"><i class="fa fa-check"></i><b>41.0.7</b> Customizing the Theme</a></li>
+<li class="chapter" data-level="41.0.8" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html#customizing-axis-labels"><i class="fa fa-check"></i><b>41.0.8</b> Customizing Axis Labels</a></li>
+<li class="chapter" data-level="41.0.9" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html#adding-direct-labels"><i class="fa fa-check"></i><b>41.0.9</b> Adding direct labels</a></li>
+<li class="chapter" data-level="41.0.10" data-path="from-exploratory-to-explanatory.html"><a href="from-exploratory-to-explanatory.html#explanatory-plot"><i class="fa fa-check"></i><b>41.0.10</b> Explanatory Plot</a></li>
+</ul></li>
+<li class="chapter" data-level="42" data-path="data-tables.html"><a href="data-tables.html"><i class="fa fa-check"></i><b>42</b> Data Tables</a>
+<ul>
+<li class="chapter" data-level="42.0.1" data-path="data-tables.html"><a href="data-tables.html#what-are-data-tables"><i class="fa fa-check"></i><b>42.0.1</b> What are Data Tables?</a></li>
+<li class="chapter" data-level="42.0.2" data-path="data-tables.html"><a href="data-tables.html#when-to-make-a-table"><i class="fa fa-check"></i><b>42.0.2</b> When to Make a Table</a></li>
+<li class="chapter" data-level="42.0.3" data-path="data-tables.html"><a href="data-tables.html#what-to-consider-when-making-a-table"><i class="fa fa-check"></i><b>42.0.3</b> What to Consider When Making A Table</a></li>
+<li class="chapter" data-level="42.0.4" data-path="data-tables.html"><a href="data-tables.html#additional-resources-13"><i class="fa fa-check"></i><b>42.0.4</b> Additional resources</a></li>
+</ul></li>
+<li class="chapter" data-level="43" data-path="tables-in-r.html"><a href="tables-in-r.html"><i class="fa fa-check"></i><b>43</b> Tables in R</a>
+<ul>
+<li class="chapter" data-level="43.0.1" data-path="tables-in-r.html"><a href="tables-in-r.html#getting-the-data-in-order"><i class="fa fa-check"></i><b>43.0.1</b> Getting the data in order</a></li>
+<li class="chapter" data-level="43.0.2" data-path="tables-in-r.html"><a href="tables-in-r.html#an-exploratory-table"><i class="fa fa-check"></i><b>43.0.2</b> An exploratory table</a></li>
+<li class="chapter" data-level="43.0.3" data-path="tables-in-r.html"><a href="tables-in-r.html#improving-the-table-output"><i class="fa fa-check"></i><b>43.0.3</b> Improving the table output</a></li>
+<li class="chapter" data-level="43.0.4" data-path="tables-in-r.html"><a href="tables-in-r.html#annotating-your-table"><i class="fa fa-check"></i><b>43.0.4</b> Annotating your table</a></li>
+<li class="chapter" data-level="43.0.5" data-path="tables-in-r.html"><a href="tables-in-r.html#tables-in-rmarkdown"><i class="fa fa-check"></i><b>43.0.5</b> Tables in RMarkdown</a></li>
+<li class="chapter" data-level="43.0.6" data-path="tables-in-r.html"><a href="tables-in-r.html#additional-resources-14"><i class="fa fa-check"></i><b>43.0.6</b> Additional resources</a></li>
+</ul></li>
+<li class="chapter" data-level="44" data-path="multiple-plots-in-r.html"><a href="multiple-plots-in-r.html"><i class="fa fa-check"></i><b>44</b> Multiple Plots in R</a>
+<ul>
+<li class="chapter" data-level="44.0.1" data-path="multiple-plots-in-r.html"><a href="multiple-plots-in-r.html#installing-patchwork"><i class="fa fa-check"></i><b>44.0.1</b> Installing patchwork</a></li>
+<li class="chapter" data-level="44.0.2" data-path="multiple-plots-in-r.html"><a href="multiple-plots-in-r.html#basic-plotting-using-patchwork"><i class="fa fa-check"></i><b>44.0.2</b> Basic plotting using patchwork</a></li>
+<li class="chapter" data-level="44.0.3" data-path="multiple-plots-in-r.html"><a href="multiple-plots-in-r.html#altering-the-layout"><i class="fa fa-check"></i><b>44.0.3</b> Altering the layout</a></li>
+<li class="chapter" data-level="44.0.4" data-path="multiple-plots-in-r.html"><a href="multiple-plots-in-r.html#nesting-plots"><i class="fa fa-check"></i><b>44.0.4</b> Nesting plots</a></li>
+<li class="chapter" data-level="44.0.5" data-path="multiple-plots-in-r.html"><a href="multiple-plots-in-r.html#additional-operators"><i class="fa fa-check"></i><b>44.0.5</b> Additional operators</a></li>
+<li class="chapter" data-level="44.0.6" data-path="multiple-plots-in-r.html"><a href="multiple-plots-in-r.html#additional-resources-15"><i class="fa fa-check"></i><b>44.0.6</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="45" data-path="advanced-data-visualization.html"><a href="advanced-data-visualization.html"><i class="fa fa-check"></i><b>45</b> Advanced Data Visualization</a>
+<ul>
+<li class="chapter" data-level="45.0.1" data-path="advanced-data-visualization.html"><a href="advanced-data-visualization.html#interactive-graphics"><i class="fa fa-check"></i><b>45.0.1</b> Interactive Graphics</a></li>
+<li class="chapter" data-level="45.0.2" data-path="advanced-data-visualization.html"><a href="advanced-data-visualization.html#animated-graphics"><i class="fa fa-check"></i><b>45.0.2</b> Animated Graphics</a></li>
+<li class="chapter" data-level="45.0.3" data-path="advanced-data-visualization.html"><a href="advanced-data-visualization.html#advanced-graphics-in-r"><i class="fa fa-check"></i><b>45.0.3</b> Advanced Graphics In R</a></li>
+<li class="chapter" data-level="45.0.4" data-path="advanced-data-visualization.html"><a href="advanced-data-visualization.html#additional-resources-16"><i class="fa fa-check"></i><b>45.0.4</b> Additional resources</a></li>
+</ul></li>
+<li class="chapter" data-level="46" data-path="data-visualization-1.html"><a href="data-visualization-1.html"><i class="fa fa-check"></i><b>46</b> Data Visualization</a></li>
+<li class="chapter" data-level="47" data-path="data-visualization-project.html"><a href="data-visualization-project.html"><i class="fa fa-check"></i><b>47</b> Data Visualization Project</a>
+<ul>
+<li class="chapter" data-level="47.0.1" data-path="data-visualization-project.html"><a href="data-visualization-project.html#part-1-exploratory-data-visualization"><i class="fa fa-check"></i><b>47.0.1</b> Part 1: Exploratory Data Visualization</a></li>
+<li class="chapter" data-level="47.0.2" data-path="data-visualization-project.html"><a href="data-visualization-project.html#part-2-explanatory-data-visualization"><i class="fa fa-check"></i><b>47.0.2</b> Part 2: Explanatory Data Visualization</a></li>
+<li class="chapter" data-level="47.0.3" data-path="data-visualization-project.html"><a href="data-visualization-project.html#add-markdown-text-to-.rmd-1"><i class="fa fa-check"></i><b>47.0.3</b> Add Markdown Text to .Rmd</a></li>
+<li class="chapter" data-level="47.0.4" data-path="data-visualization-project.html"><a href="data-visualization-project.html#knit-your-r-markdown-document-1"><i class="fa fa-check"></i><b>47.0.4</b> Knit your R Markdown Document</a></li>
+<li class="chapter" data-level="47.0.5" data-path="data-visualization-project.html"><a href="data-visualization-project.html#a-few-final-checks"><i class="fa fa-check"></i><b>47.0.5</b> A Few Final Checks</a></li>
+</ul></li>
+<li class="chapter" data-level="48" data-path="getting-statistics.html"><a href="getting-statistics.html"><i class="fa fa-check"></i><b>48</b> <strong>Getting statistics</strong></a>
+<ul>
+<li class="chapter" data-level="48.1" data-path="getting-statistics.html"><a href="getting-statistics.html#learning-objectives-4"><i class="fa fa-check"></i><b>48.1</b> Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="49" data-path="translating-questions-to-data-science-questions.html"><a href="translating-questions-to-data-science-questions.html"><i class="fa fa-check"></i><b>49</b> Translating Questions to Data Science Questions</a>
+<ul>
+<li class="chapter" data-level="49.0.1" data-path="translating-questions-to-data-science-questions.html"><a href="translating-questions-to-data-science-questions.html#a-real-example"><i class="fa fa-check"></i><b>49.0.1</b> A real example</a></li>
+<li class="chapter" data-level="49.0.2" data-path="translating-questions-to-data-science-questions.html"><a href="translating-questions-to-data-science-questions.html#slides-and-video"><i class="fa fa-check"></i><b>49.0.2</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="50" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html"><i class="fa fa-check"></i><b>50</b> Do I Have The Data I Need?</a>
+<ul>
+<li class="chapter" data-level="50.0.1" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#the-data-science-question"><i class="fa fa-check"></i><b>50.0.1</b> The Data Science Question</a></li>
+<li class="chapter" data-level="50.0.2" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#the-perfect-dataset-the-data-we-want"><i class="fa fa-check"></i><b>50.0.2</b> The Perfect Dataset: The Data We Want</a></li>
+<li class="chapter" data-level="50.0.3" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#the-data-we-have"><i class="fa fa-check"></i><b>50.0.3</b> The Data We Have</a></li>
+<li class="chapter" data-level="50.0.4" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#the-data-we-can-get-easily"><i class="fa fa-check"></i><b>50.0.4</b> The Data We Can Get (Easily)</a></li>
+<li class="chapter" data-level="50.0.5" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#data-collection"><i class="fa fa-check"></i><b>50.0.5</b> Data Collection</a></li>
+<li class="chapter" data-level="50.0.6" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#the-data-we-cant-get"><i class="fa fa-check"></i><b>50.0.6</b> The Data We Can’t Get</a></li>
+<li class="chapter" data-level="50.0.7" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#questions-to-ask-ourselves"><i class="fa fa-check"></i><b>50.0.7</b> Questions to Ask Ourselves</a></li>
+<li class="chapter" data-level="50.0.8" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#are-the-data-we-have-good-data"><i class="fa fa-check"></i><b>50.0.8</b> Are the Data We Have Good Data?</a></li>
+<li class="chapter" data-level="50.0.9" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#a-case-study-why-were-polls-so-wrong-about-the-2016-us-election"><i class="fa fa-check"></i><b>50.0.9</b> A case study: Why were polls so wrong about the 2016 US election?</a></li>
+<li class="chapter" data-level="50.0.10" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#summary-10"><i class="fa fa-check"></i><b>50.0.10</b> Summary</a></li>
+<li class="chapter" data-level="50.0.11" data-path="do-i-have-the-data-i-need.html"><a href="do-i-have-the-data-i-need.html#slides-and-video-1"><i class="fa fa-check"></i><b>50.0.11</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="51" data-path="descriptive-analysis.html"><a href="descriptive-analysis.html"><i class="fa fa-check"></i><b>51</b> Descriptive Analysis</a>
+<ul>
+<li class="chapter" data-level="51.0.1" data-path="descriptive-analysis.html"><a href="descriptive-analysis.html#how-to-describe-a-dataset"><i class="fa fa-check"></i><b>51.0.1</b> How to Describe a Dataset</a></li>
+<li class="chapter" data-level="51.0.2" data-path="descriptive-analysis.html"><a href="descriptive-analysis.html#summarizing-your-data"><i class="fa fa-check"></i><b>51.0.2</b> Summarizing Your Data</a></li>
+<li class="chapter" data-level="51.0.3" data-path="descriptive-analysis.html"><a href="descriptive-analysis.html#summary-11"><i class="fa fa-check"></i><b>51.0.3</b> Summary</a></li>
+<li class="chapter" data-level="51.0.4" data-path="descriptive-analysis.html"><a href="descriptive-analysis.html#additional-resources-17"><i class="fa fa-check"></i><b>51.0.4</b> Additional Resources</a></li>
+<li class="chapter" data-level="51.0.5" data-path="descriptive-analysis.html"><a href="descriptive-analysis.html#slides-and-video-2"><i class="fa fa-check"></i><b>51.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="52" data-path="exploratory-analysis.html"><a href="exploratory-analysis.html"><i class="fa fa-check"></i><b>52</b> Exploratory Analysis</a>
+<ul>
+<li class="chapter" data-level="52.0.1" data-path="exploratory-analysis.html"><a href="exploratory-analysis.html#general-principles-of-exploratory-analysis"><i class="fa fa-check"></i><b>52.0.1</b> General principles of exploratory analysis</a></li>
+<li class="chapter" data-level="52.0.2" data-path="exploratory-analysis.html"><a href="exploratory-analysis.html#slides-and-video-3"><i class="fa fa-check"></i><b>52.0.2</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="53" data-path="inference-overview.html"><a href="inference-overview.html"><i class="fa fa-check"></i><b>53</b> Inference: Overview</a>
+<ul>
+<li class="chapter" data-level="53.0.1" data-path="inference-overview.html"><a href="inference-overview.html#getting-started-with-inference"><i class="fa fa-check"></i><b>53.0.1</b> Getting Started with Inference</a></li>
+<li class="chapter" data-level="53.0.2" data-path="inference-overview.html"><a href="inference-overview.html#uncertainty"><i class="fa fa-check"></i><b>53.0.2</b> Uncertainty</a></li>
+<li class="chapter" data-level="53.0.3" data-path="inference-overview.html"><a href="inference-overview.html#random-sampling"><i class="fa fa-check"></i><b>53.0.3</b> Random Sampling</a></li>
+<li class="chapter" data-level="53.0.4" data-path="inference-overview.html"><a href="inference-overview.html#a-real-life-example-of-inferential-data-analysis"><i class="fa fa-check"></i><b>53.0.4</b> A real-life example of inferential data analysis</a></li>
+<li class="chapter" data-level="53.0.5" data-path="inference-overview.html"><a href="inference-overview.html#summary-12"><i class="fa fa-check"></i><b>53.0.5</b> Summary</a></li>
+<li class="chapter" data-level="53.0.6" data-path="inference-overview.html"><a href="inference-overview.html#additional-resources-18"><i class="fa fa-check"></i><b>53.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="53.0.7" data-path="inference-overview.html"><a href="inference-overview.html#slides-and-video-4"><i class="fa fa-check"></i><b>53.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="54" data-path="inference-linear-regression.html"><a href="inference-linear-regression.html"><i class="fa fa-check"></i><b>54</b> Inference: Linear Regression</a>
+<ul>
+<li class="chapter" data-level="54.0.1" data-path="inference-linear-regression.html"><a href="inference-linear-regression.html#what-can-linear-regression-infer"><i class="fa fa-check"></i><b>54.0.1</b> What can linear regression infer?</a></li>
+<li class="chapter" data-level="54.0.2" data-path="inference-linear-regression.html"><a href="inference-linear-regression.html#summary-13"><i class="fa fa-check"></i><b>54.0.2</b> Summary</a></li>
+<li class="chapter" data-level="54.0.3" data-path="inference-linear-regression.html"><a href="inference-linear-regression.html#slides-and-video-5"><i class="fa fa-check"></i><b>54.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="55" data-path="inference-multiple-regression.html"><a href="inference-multiple-regression.html"><i class="fa fa-check"></i><b>55</b> Inference: Multiple Regression</a>
+<ul>
+<li class="chapter" data-level="55.0.1" data-path="inference-multiple-regression.html"><a href="inference-multiple-regression.html#confounding"><i class="fa fa-check"></i><b>55.0.1</b> Confounding</a></li>
+<li class="chapter" data-level="55.0.2" data-path="inference-multiple-regression.html"><a href="inference-multiple-regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>55.0.2</b> Multiple Linear Regression</a></li>
+<li class="chapter" data-level="55.0.3" data-path="inference-multiple-regression.html"><a href="inference-multiple-regression.html#correlation-is-not-causation"><i class="fa fa-check"></i><b>55.0.3</b> Correlation is not Causation</a></li>
+<li class="chapter" data-level="55.0.4" data-path="inference-multiple-regression.html"><a href="inference-multiple-regression.html#beyond-linear-regression"><i class="fa fa-check"></i><b>55.0.4</b> Beyond Linear Regression</a></li>
+<li class="chapter" data-level="55.0.5" data-path="inference-multiple-regression.html"><a href="inference-multiple-regression.html#mean-different-from-expectation"><i class="fa fa-check"></i><b>55.0.5</b> Mean different from expectation?</a></li>
+<li class="chapter" data-level="55.0.6" data-path="inference-multiple-regression.html"><a href="inference-multiple-regression.html#more-statistical-tests"><i class="fa fa-check"></i><b>55.0.6</b> More Statistical Tests</a></li>
+<li class="chapter" data-level="55.0.7" data-path="inference-multiple-regression.html"><a href="inference-multiple-regression.html#summary-14"><i class="fa fa-check"></i><b>55.0.7</b> Summary</a></li>
+<li class="chapter" data-level="55.0.8" data-path="inference-multiple-regression.html"><a href="inference-multiple-regression.html#additional-resources-19"><i class="fa fa-check"></i><b>55.0.8</b> Additional Resources</a></li>
+<li class="chapter" data-level="55.0.9" data-path="inference-multiple-regression.html"><a href="inference-multiple-regression.html#slides-and-video-6"><i class="fa fa-check"></i><b>55.0.9</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="56" data-path="inference-examples.html"><a href="inference-examples.html"><i class="fa fa-check"></i><b>56</b> Inference: Examples</a>
+<ul>
+<li class="chapter" data-level="56.0.1" data-path="inference-examples.html"><a href="inference-examples.html#introduction"><i class="fa fa-check"></i><b>56.0.1</b> Introduction</a></li>
+<li class="chapter" data-level="56.0.2" data-path="inference-examples.html"><a href="inference-examples.html#case-study-1-the-effects-of-watching-sesame-street-on-educational-outcomes"><i class="fa fa-check"></i><b>56.0.2</b> Case Study #1: The Effects of Watching <em>Sesame Street</em> on Educational Outcomes</a></li>
+<li class="chapter" data-level="56.0.3" data-path="inference-examples.html"><a href="inference-examples.html#case-study-2-effects-of-religion-on-happiness"><i class="fa fa-check"></i><b>56.0.3</b> Case Study #2: Effects of Religion on Happiness</a></li>
+<li class="chapter" data-level="56.0.4" data-path="inference-examples.html"><a href="inference-examples.html#summary-15"><i class="fa fa-check"></i><b>56.0.4</b> Summary</a></li>
+<li class="chapter" data-level="56.0.5" data-path="inference-examples.html"><a href="inference-examples.html#additional-resources-20"><i class="fa fa-check"></i><b>56.0.5</b> Additional Resources</a></li>
+<li class="chapter" data-level="56.0.6" data-path="inference-examples.html"><a href="inference-examples.html#slides-and-video-7"><i class="fa fa-check"></i><b>56.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="57" data-path="inference-practice.html"><a href="inference-practice.html"><i class="fa fa-check"></i><b>57</b> Inference: Practice</a>
+<ul>
+<li class="chapter" data-level="57.0.1" data-path="inference-practice.html"><a href="inference-practice.html#the-question"><i class="fa fa-check"></i><b>57.0.1</b> The Question</a></li>
+<li class="chapter" data-level="57.0.2" data-path="inference-practice.html"><a href="inference-practice.html#the-data-4"><i class="fa fa-check"></i><b>57.0.2</b> The Data</a></li>
+<li class="chapter" data-level="57.0.3" data-path="inference-practice.html"><a href="inference-practice.html#descriptive-analysis-1"><i class="fa fa-check"></i><b>57.0.3</b> Descriptive Analysis</a></li>
+<li class="chapter" data-level="57.0.4" data-path="inference-practice.html"><a href="inference-practice.html#eda"><i class="fa fa-check"></i><b>57.0.4</b> EDA</a></li>
+<li class="chapter" data-level="57.0.5" data-path="inference-practice.html"><a href="inference-practice.html#linear-regression"><i class="fa fa-check"></i><b>57.0.5</b> Linear Regression</a></li>
+<li class="chapter" data-level="57.0.6" data-path="inference-practice.html"><a href="inference-practice.html#summary-16"><i class="fa fa-check"></i><b>57.0.6</b> Summary</a></li>
+<li class="chapter" data-level="57.0.7" data-path="inference-practice.html"><a href="inference-practice.html#additional-resources-21"><i class="fa fa-check"></i><b>57.0.7</b> Additional Resources</a></li>
+<li class="chapter" data-level="57.0.8" data-path="inference-practice.html"><a href="inference-practice.html#slides-and-video-8"><i class="fa fa-check"></i><b>57.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="58" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html"><i class="fa fa-check"></i><b>58</b> Prediction and Machine Learning</a>
+<ul>
+<li class="chapter" data-level="58.0.1" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#what-is-machine-learning"><i class="fa fa-check"></i><b>58.0.1</b> What is Machine Learning?</a></li>
+<li class="chapter" data-level="58.0.2" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#machine-learning"><i class="fa fa-check"></i><b>58.0.2</b> Machine Learning</a></li>
+<li class="chapter" data-level="58.0.3" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#data-splitting"><i class="fa fa-check"></i><b>58.0.3</b> Data Splitting</a></li>
+<li class="chapter" data-level="58.0.4" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#variable-selection"><i class="fa fa-check"></i><b>58.0.4</b> Variable Selection</a></li>
+<li class="chapter" data-level="58.0.5" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#model-selection"><i class="fa fa-check"></i><b>58.0.5</b> Model Selection</a></li>
+<li class="chapter" data-level="58.0.6" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#model-accuracy"><i class="fa fa-check"></i><b>58.0.6</b> Model Accuracy</a></li>
+<li class="chapter" data-level="58.0.7" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#machine-learning-examples"><i class="fa fa-check"></i><b>58.0.7</b> Machine Learning Examples</a></li>
+<li class="chapter" data-level="58.0.8" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#summary-17"><i class="fa fa-check"></i><b>58.0.8</b> Summary</a></li>
+<li class="chapter" data-level="58.0.9" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#additional-resources-22"><i class="fa fa-check"></i><b>58.0.9</b> Additional Resources</a></li>
+<li class="chapter" data-level="58.0.10" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#slides-and-video-9"><i class="fa fa-check"></i><b>58.0.10</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="59" data-path="data-analysis-workflow.html"><a href="data-analysis-workflow.html"><i class="fa fa-check"></i><b>59</b> Data Analysis Workflow</a>
+<ul>
+<li class="chapter" data-level="59.0.1" data-path="data-analysis-workflow.html"><a href="data-analysis-workflow.html#what-are-the-steps"><i class="fa fa-check"></i><b>59.0.1</b> What are the steps?</a></li>
+<li class="chapter" data-level="59.0.2" data-path="data-analysis-workflow.html"><a href="data-analysis-workflow.html#an-example"><i class="fa fa-check"></i><b>59.0.2</b> An example</a></li>
+<li class="chapter" data-level="59.0.3" data-path="data-analysis-workflow.html"><a href="data-analysis-workflow.html#slides-and-video-10"><i class="fa fa-check"></i><b>59.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="60" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html"><i class="fa fa-check"></i><b>60</b> Data Analysis Pipelines</a>
+<ul>
+<li class="chapter" data-level="60.0.1" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#pipelines"><i class="fa fa-check"></i><b>60.0.1</b> Pipelines</a></li>
+<li class="chapter" data-level="60.0.2" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#considerations"><i class="fa fa-check"></i><b>60.0.2</b> Considerations</a></li>
+<li class="chapter" data-level="60.0.3" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#parameterized-reports"><i class="fa fa-check"></i><b>60.0.3</b> Parameterized Reports</a></li>
+<li class="chapter" data-level="60.0.4" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#pipeline-example-survey-results"><i class="fa fa-check"></i><b>60.0.4</b> Pipeline Example Survey Results</a></li>
+<li class="chapter" data-level="60.0.5" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#summary-18"><i class="fa fa-check"></i><b>60.0.5</b> Summary</a></li>
+<li class="chapter" data-level="60.0.6" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#additional-resources-23"><i class="fa fa-check"></i><b>60.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="60.0.7" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#slides-and-video-11"><i class="fa fa-check"></i><b>60.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="61" data-path="stats-project.html"><a href="stats-project.html"><i class="fa fa-check"></i><b>61</b> Stats Project</a></li>
+<li class="chapter" data-level="62" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html"><i class="fa fa-check"></i><b>62</b> Stats Project Exercise</a>
+<ul>
+<li class="chapter" data-level="62.0.1" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#rstudio-cloud-setup-2"><i class="fa fa-check"></i><b>62.0.1</b> RStudio Cloud Setup</a></li>
+<li class="chapter" data-level="62.0.2" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#the-data-6"><i class="fa fa-check"></i><b>62.0.2</b> The Data</a></li>
+<li class="chapter" data-level="62.0.3" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#accessing-the-data"><i class="fa fa-check"></i><b>62.0.3</b> Accessing the Data</a></li>
+<li class="chapter" data-level="62.0.4" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#loading-the-data-into-r"><i class="fa fa-check"></i><b>62.0.4</b> Loading the Data into R</a></li>
+<li class="chapter" data-level="62.0.5" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#analyze-the-data"><i class="fa fa-check"></i><b>62.0.5</b> Analyze the Data</a></li>
+<li class="chapter" data-level="62.0.6" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#add-markdown-text-to-.rmd-2"><i class="fa fa-check"></i><b>62.0.6</b> Add Markdown Text to .Rmd</a></li>
+<li class="chapter" data-level="62.0.7" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#knit-your-r-markdown-document-2"><i class="fa fa-check"></i><b>62.0.7</b> Knit your R Markdown Document</a></li>
+<li class="chapter" data-level="62.0.8" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#a-few-final-checks-1"><i class="fa fa-check"></i><b>62.0.8</b> A Few Final Checks</a></li>
+</ul></li>
+<li class="chapter" data-level="63" data-path="reporting-results.html"><a href="reporting-results.html"><i class="fa fa-check"></i><b>63</b> <strong>Reporting results</strong></a>
+<ul>
+<li class="chapter" data-level="63.1" data-path="reporting-results.html"><a href="reporting-results.html#learning-objectives-5"><i class="fa fa-check"></i><b>63.1</b> Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="64" data-path="version-control.html"><a href="version-control.html"><i class="fa fa-check"></i><b>64</b> Version Control</a>
+<ul>
+<li class="chapter" data-level="64.0.1" data-path="version-control.html"><a href="version-control.html#what-is-version-control"><i class="fa fa-check"></i><b>64.0.1</b> What is version control?</a></li>
+<li class="chapter" data-level="64.0.2" data-path="version-control.html"><a href="version-control.html#version-control-on-your-own"><i class="fa fa-check"></i><b>64.0.2</b> Version control on your own</a></li>
+<li class="chapter" data-level="64.0.3" data-path="version-control.html"><a href="version-control.html#version-control-for-collaboration-or-sharing"><i class="fa fa-check"></i><b>64.0.3</b> Version control for collaboration or sharing</a></li>
+<li class="chapter" data-level="64.0.4" data-path="version-control.html"><a href="version-control.html#summarizing-the-benefits-of-version-control-systems"><i class="fa fa-check"></i><b>64.0.4</b> Summarizing the benefits of version control systems</a></li>
+<li class="chapter" data-level="64.0.5" data-path="version-control.html"><a href="version-control.html#what-is-git-why-should-you-use-it"><i class="fa fa-check"></i><b>64.0.5</b> What is Git? Why should you use it?</a></li>
+<li class="chapter" data-level="64.0.6" data-path="version-control.html"><a href="version-control.html#what-is-github"><i class="fa fa-check"></i><b>64.0.6</b> What is GitHub?</a></li>
+<li class="chapter" data-level="64.0.7" data-path="version-control.html"><a href="version-control.html#version-control-vocabulary"><i class="fa fa-check"></i><b>64.0.7</b> Version control vocabulary</a></li>
+<li class="chapter" data-level="64.0.8" data-path="version-control.html"><a href="version-control.html#best-practices"><i class="fa fa-check"></i><b>64.0.8</b> Best practices</a></li>
+<li class="chapter" data-level="64.0.9" data-path="version-control.html"><a href="version-control.html#summary-19"><i class="fa fa-check"></i><b>64.0.9</b> Summary</a></li>
+<li class="chapter" data-level="64.0.10" data-path="version-control.html"><a href="version-control.html#slides-and-video-12"><i class="fa fa-check"></i><b>64.0.10</b> Slides and video</a></li>
+</ul></li>
+<li class="chapter" data-level="65" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>65</b> GitHub</a>
+<ul>
+<li class="chapter" data-level="65.0.1" data-path="github.html"><a href="github.html#logging-in-to-github"><i class="fa fa-check"></i><b>65.0.1</b> Logging in to GitHub</a></li>
+<li class="chapter" data-level="65.0.2" data-path="github.html"><a href="github.html#the-homepage"><i class="fa fa-check"></i><b>65.0.2</b> The Homepage</a></li>
+<li class="chapter" data-level="65.0.3" data-path="github.html"><a href="github.html#user-settings"><i class="fa fa-check"></i><b>65.0.3</b> User Settings</a></li>
+<li class="chapter" data-level="65.0.4" data-path="github.html"><a href="github.html#notifications"><i class="fa fa-check"></i><b>65.0.4</b> Notifications</a></li>
+<li class="chapter" data-level="65.0.5" data-path="github.html"><a href="github.html#help-files"><i class="fa fa-check"></i><b>65.0.5</b> Help Files</a></li>
+<li class="chapter" data-level="65.0.6" data-path="github.html"><a href="github.html#summary-20"><i class="fa fa-check"></i><b>65.0.6</b> Summary</a></li>
+<li class="chapter" data-level="65.0.7" data-path="github.html"><a href="github.html#slides-and-video-13"><i class="fa fa-check"></i><b>65.0.7</b> Slides and video</a></li>
+</ul></li>
+<li class="chapter" data-level="66" data-path="creating-a-repository.html"><a href="creating-a-repository.html"><i class="fa fa-check"></i><b>66</b> Creating A Repository</a>
+<ul>
+<li class="chapter" data-level="66.0.1" data-path="creating-a-repository.html"><a href="creating-a-repository.html#what-is-a-repository"><i class="fa fa-check"></i><b>66.0.1</b> What is a Repository?</a></li>
+<li class="chapter" data-level="66.0.2" data-path="creating-a-repository.html"><a href="creating-a-repository.html#how-do-i-create-a-github-repository"><i class="fa fa-check"></i><b>66.0.2</b> How Do I Create a GitHub Repository?</a></li>
+<li class="chapter" data-level="66.0.3" data-path="creating-a-repository.html"><a href="creating-a-repository.html#adding-a-readme-file"><i class="fa fa-check"></i><b>66.0.3</b> Adding a README File</a></li>
+<li class="chapter" data-level="66.0.4" data-path="creating-a-repository.html"><a href="creating-a-repository.html#the-github-guide"><i class="fa fa-check"></i><b>66.0.4</b> The GitHub Guide</a></li>
+<li class="chapter" data-level="66.0.5" data-path="creating-a-repository.html"><a href="creating-a-repository.html#slides-and-video-14"><i class="fa fa-check"></i><b>66.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="67" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html"><i class="fa fa-check"></i><b>67</b> Cloning A Repository</a>
+<ul>
+<li class="chapter" data-level="67.0.1" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#step-1-obtain-the-url-for-the-repository-to-clone"><i class="fa fa-check"></i><b>67.0.1</b> Step 1: Obtain the URL for the repository to clone</a></li>
+<li class="chapter" data-level="67.0.2" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#step-2-use-the-rstudio-interface-to-clone-the-repository"><i class="fa fa-check"></i><b>67.0.2</b> Step 2: Use the RStudio interface to clone the repository</a></li>
+<li class="chapter" data-level="67.0.3" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#step-3-set-up-github-credentials"><i class="fa fa-check"></i><b>67.0.3</b> Step 3: Set up GitHub Credentials</a></li>
+<li class="chapter" data-level="67.0.4" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#directoryfolder-organization"><i class="fa fa-check"></i><b>67.0.4</b> Directory/Folder Organization</a></li>
+<li class="chapter" data-level="67.0.5" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#slides-and-video-15"><i class="fa fa-check"></i><b>67.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="68" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html"><i class="fa fa-check"></i><b>68</b> Pushing and Pulling Changes</a>
+<ul>
+<li class="chapter" data-level="68.0.1" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#pushing"><i class="fa fa-check"></i><b>68.0.1</b> Pushing</a></li>
+<li class="chapter" data-level="68.0.2" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#pulling"><i class="fa fa-check"></i><b>68.0.2</b> Pulling</a></li>
+<li class="chapter" data-level="68.0.3" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#practice"><i class="fa fa-check"></i><b>68.0.3</b> Practice</a></li>
+<li class="chapter" data-level="68.0.4" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#slides-and-video-16"><i class="fa fa-check"></i><b>68.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="69" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html"><i class="fa fa-check"></i><b>69</b> Organization with Issues on GitHub</a>
+<ul>
+<li class="chapter" data-level="69.0.1" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html#what-are-issues"><i class="fa fa-check"></i><b>69.0.1</b> What are Issues?</a></li>
+<li class="chapter" data-level="69.0.2" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html#creating-an-issue"><i class="fa fa-check"></i><b>69.0.2</b> Creating an Issue</a></li>
+<li class="chapter" data-level="69.0.3" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html#slides-and-video-17"><i class="fa fa-check"></i><b>69.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="70" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html"><i class="fa fa-check"></i><b>70</b> Setting Up A Project on GitHub</a>
+<ul>
+<li class="chapter" data-level="70.0.1" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#setting-up-a-github-repository"><i class="fa fa-check"></i><b>70.0.1</b> Setting up a GitHub Repository</a></li>
+<li class="chapter" data-level="70.0.2" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#creating-a-new-project-from-a-github-repository"><i class="fa fa-check"></i><b>70.0.2</b> Creating a New Project from a GitHub Repository</a></li>
+<li class="chapter" data-level="70.0.3" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#pushing-local-changes-to-the-remote-repository-in-rstudio-cloud"><i class="fa fa-check"></i><b>70.0.3</b> Pushing Local Changes to the Remote Repository in RStudio Cloud</a></li>
+<li class="chapter" data-level="70.0.4" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#slides-and-video-18"><i class="fa fa-check"></i><b>70.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="71" data-path="pull-requests.html"><a href="pull-requests.html"><i class="fa fa-check"></i><b>71</b> Pull Requests</a>
+<ul>
+<li class="chapter" data-level="71.0.1" data-path="pull-requests.html"><a href="pull-requests.html#what-is-a-pull-request"><i class="fa fa-check"></i><b>71.0.1</b> What is a pull request</a></li>
+<li class="chapter" data-level="71.0.2" data-path="pull-requests.html"><a href="pull-requests.html#forking-a-repo"><i class="fa fa-check"></i><b>71.0.2</b> Forking a repo</a></li>
+<li class="chapter" data-level="71.0.3" data-path="pull-requests.html"><a href="pull-requests.html#making-edits"><i class="fa fa-check"></i><b>71.0.3</b> Making edits</a></li>
+<li class="chapter" data-level="71.0.4" data-path="pull-requests.html"><a href="pull-requests.html#pushing-your-changes-to-your-fork"><i class="fa fa-check"></i><b>71.0.4</b> Pushing your changes to your fork</a></li>
+<li class="chapter" data-level="71.0.5" data-path="pull-requests.html"><a href="pull-requests.html#sending-a-pull-request"><i class="fa fa-check"></i><b>71.0.5</b> Sending a pull request</a></li>
+<li class="chapter" data-level="71.0.6" data-path="pull-requests.html"><a href="pull-requests.html#when-it-gets-more-complicated"><i class="fa fa-check"></i><b>71.0.6</b> When it gets more complicated</a></li>
+<li class="chapter" data-level="71.0.7" data-path="pull-requests.html"><a href="pull-requests.html#summary-21"><i class="fa fa-check"></i><b>71.0.7</b> Summary</a></li>
+<li class="chapter" data-level="71.0.8" data-path="pull-requests.html"><a href="pull-requests.html#slides-and-video-19"><i class="fa fa-check"></i><b>71.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="72" data-path="version-control-help.html"><a href="version-control-help.html"><i class="fa fa-check"></i><b>72</b> Version Control Help</a>
+<ul>
+<li class="chapter" data-level="72.0.1" data-path="version-control-help.html"><a href="version-control-help.html#google-for-git-help"><i class="fa fa-check"></i><b>72.0.1</b> Google for git help</a></li>
+<li class="chapter" data-level="72.0.2" data-path="version-control-help.html"><a href="version-control-help.html#burn-it-down"><i class="fa fa-check"></i><b>72.0.2</b> Burn it Down</a></li>
+<li class="chapter" data-level="72.0.3" data-path="version-control-help.html"><a href="version-control-help.html#summary-22"><i class="fa fa-check"></i><b>72.0.3</b> Summary</a></li>
+<li class="chapter" data-level="72.0.4" data-path="version-control-help.html"><a href="version-control-help.html#additional-resources-24"><i class="fa fa-check"></i><b>72.0.4</b> Additional Resources</a></li>
+<li class="chapter" data-level="72.0.5" data-path="version-control-help.html"><a href="version-control-help.html#slides-and-video-20"><i class="fa fa-check"></i><b>72.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="73" data-path="types-of-communication.html"><a href="types-of-communication.html"><i class="fa fa-check"></i><b>73</b> Types of Communication</a>
+<ul>
+<li class="chapter" data-level="73.0.1" data-path="types-of-communication.html"><a href="types-of-communication.html#opinionated-communication"><i class="fa fa-check"></i><b>73.0.1</b> Opinionated Communication</a></li>
+<li class="chapter" data-level="73.0.2" data-path="types-of-communication.html"><a href="types-of-communication.html#types-of-communication-1"><i class="fa fa-check"></i><b>73.0.2</b> Types of Communication</a></li>
+<li class="chapter" data-level="73.0.3" data-path="types-of-communication.html"><a href="types-of-communication.html#reports"><i class="fa fa-check"></i><b>73.0.3</b> Reports</a></li>
+<li class="chapter" data-level="73.0.4" data-path="types-of-communication.html"><a href="types-of-communication.html#presentations"><i class="fa fa-check"></i><b>73.0.4</b> Presentations</a></li>
+<li class="chapter" data-level="73.0.5" data-path="types-of-communication.html"><a href="types-of-communication.html#blog-posts"><i class="fa fa-check"></i><b>73.0.5</b> Blog Posts</a></li>
+<li class="chapter" data-level="73.0.6" data-path="types-of-communication.html"><a href="types-of-communication.html#meetings"><i class="fa fa-check"></i><b>73.0.6</b> Meetings</a></li>
+<li class="chapter" data-level="73.0.7" data-path="types-of-communication.html"><a href="types-of-communication.html#slides-and-video-21"><i class="fa fa-check"></i><b>73.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="74" data-path="data-science-reports.html"><a href="data-science-reports.html"><i class="fa fa-check"></i><b>74</b> Data Science Reports</a>
+<ul>
+<li class="chapter" data-level="74.0.1" data-path="data-science-reports.html"><a href="data-science-reports.html#what-to-include"><i class="fa fa-check"></i><b>74.0.1</b> What To Include</a></li>
+<li class="chapter" data-level="74.0.2" data-path="data-science-reports.html"><a href="data-science-reports.html#what-to-avoid"><i class="fa fa-check"></i><b>74.0.2</b> What to Avoid</a></li>
+<li class="chapter" data-level="74.0.3" data-path="data-science-reports.html"><a href="data-science-reports.html#brief-reports"><i class="fa fa-check"></i><b>74.0.3</b> Brief Reports</a></li>
+<li class="chapter" data-level="74.0.4" data-path="data-science-reports.html"><a href="data-science-reports.html#full-report"><i class="fa fa-check"></i><b>74.0.4</b> Full Report</a></li>
+<li class="chapter" data-level="74.0.5" data-path="data-science-reports.html"><a href="data-science-reports.html#summary-23"><i class="fa fa-check"></i><b>74.0.5</b> Summary</a></li>
+<li class="chapter" data-level="74.0.6" data-path="data-science-reports.html"><a href="data-science-reports.html#additional-resources-25"><i class="fa fa-check"></i><b>74.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="74.0.7" data-path="data-science-reports.html"><a href="data-science-reports.html#slides-and-video-22"><i class="fa fa-check"></i><b>74.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="75" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html"><i class="fa fa-check"></i><b>75</b> How To Give a Presentation</a>
+<ul>
+<li class="chapter" data-level="75.0.1" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#presentation-goals"><i class="fa fa-check"></i><b>75.0.1</b> Presentation Goals</a></li>
+<li class="chapter" data-level="75.0.2" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#know-your-audience"><i class="fa fa-check"></i><b>75.0.2</b> Know your Audience</a></li>
+<li class="chapter" data-level="75.0.3" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#mind-your-audience"><i class="fa fa-check"></i><b>75.0.3</b> Mind your Audience</a></li>
+<li class="chapter" data-level="75.0.4" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#prepare"><i class="fa fa-check"></i><b>75.0.4</b> Prepare</a></li>
+<li class="chapter" data-level="75.0.5" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#tell-a-story"><i class="fa fa-check"></i><b>75.0.5</b> Tell a Story</a></li>
+<li class="chapter" data-level="75.0.6" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#slide-design"><i class="fa fa-check"></i><b>75.0.6</b> Slide Design</a></li>
+<li class="chapter" data-level="75.0.7" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#presenting"><i class="fa fa-check"></i><b>75.0.7</b> Presenting</a></li>
+<li class="chapter" data-level="75.0.8" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#practice-1"><i class="fa fa-check"></i><b>75.0.8</b> Practice</a></li>
+<li class="chapter" data-level="75.0.9" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#handling-questions"><i class="fa fa-check"></i><b>75.0.9</b> Handling Questions</a></li>
+<li class="chapter" data-level="75.0.10" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#example-presentation-apis"><i class="fa fa-check"></i><b>75.0.10</b> Example Presentation: APIs</a></li>
+<li class="chapter" data-level="75.0.11" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#example-presentation-analysis"><i class="fa fa-check"></i><b>75.0.11</b> Example Presentation: Analysis</a></li>
+<li class="chapter" data-level="75.0.12" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#summary-24"><i class="fa fa-check"></i><b>75.0.12</b> Summary</a></li>
+<li class="chapter" data-level="75.0.13" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#additional-resources-26"><i class="fa fa-check"></i><b>75.0.13</b> Additional Resources</a></li>
+<li class="chapter" data-level="75.0.14" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#slides-and-video-23"><i class="fa fa-check"></i><b>75.0.14</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="76" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html"><i class="fa fa-check"></i><b>76</b> How To Present to a General Audience</a>
+<ul>
+<li class="chapter" data-level="76.0.1" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#the-audience"><i class="fa fa-check"></i><b>76.0.1</b> The Audience</a></li>
+<li class="chapter" data-level="76.0.2" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#the-goal"><i class="fa fa-check"></i><b>76.0.2</b> The Goal</a></li>
+<li class="chapter" data-level="76.0.3" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#the-presentation"><i class="fa fa-check"></i><b>76.0.3</b> The Presentation</a></li>
+<li class="chapter" data-level="76.0.4" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#general-presentation-example"><i class="fa fa-check"></i><b>76.0.4</b> General Presentation Example</a></li>
+<li class="chapter" data-level="76.0.5" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#summary-25"><i class="fa fa-check"></i><b>76.0.5</b> Summary</a></li>
+<li class="chapter" data-level="76.0.6" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#slides-and-video-24"><i class="fa fa-check"></i><b>76.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="77" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html"><i class="fa fa-check"></i><b>77</b> How To Present to a Technical Audience</a>
+<ul>
+<li class="chapter" data-level="77.0.1" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#the-audience-1"><i class="fa fa-check"></i><b>77.0.1</b> The Audience</a></li>
+<li class="chapter" data-level="77.0.2" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#the-goal-1"><i class="fa fa-check"></i><b>77.0.2</b> The Goal</a></li>
+<li class="chapter" data-level="77.0.3" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#the-presentation-1"><i class="fa fa-check"></i><b>77.0.3</b> The Presentation</a></li>
+<li class="chapter" data-level="77.0.4" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#emphasize-1"><i class="fa fa-check"></i><b>77.0.4</b> Emphasize</a></li>
+<li class="chapter" data-level="77.0.5" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#de-emphasize-1"><i class="fa fa-check"></i><b>77.0.5</b> De-emphasize</a></li>
+<li class="chapter" data-level="77.0.6" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#technical-presentation-example"><i class="fa fa-check"></i><b>77.0.6</b> Technical Presentation Example</a></li>
+<li class="chapter" data-level="77.0.7" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#general-vs-technical"><i class="fa fa-check"></i><b>77.0.7</b> General vs Technical</a></li>
+<li class="chapter" data-level="77.0.8" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#summary-26"><i class="fa fa-check"></i><b>77.0.8</b> Summary</a></li>
+<li class="chapter" data-level="77.0.9" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#slides-and-video-25"><i class="fa fa-check"></i><b>77.0.9</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="78" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html"><i class="fa fa-check"></i><b>78</b> How To Write a Blog Post</a>
+<ul>
+<li class="chapter" data-level="78.0.1" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#general-outline"><i class="fa fa-check"></i><b>78.0.1</b> General Outline</a></li>
+<li class="chapter" data-level="78.0.2" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#types-of-blog-posts"><i class="fa fa-check"></i><b>78.0.2</b> Types of Blog Posts</a></li>
+<li class="chapter" data-level="78.0.3" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#why-blog"><i class="fa fa-check"></i><b>78.0.3</b> Why Blog?</a></li>
+<li class="chapter" data-level="78.0.4" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#blog-etiquette"><i class="fa fa-check"></i><b>78.0.4</b> Blog Etiquette</a></li>
+<li class="chapter" data-level="78.0.5" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#summary-27"><i class="fa fa-check"></i><b>78.0.5</b> Summary</a></li>
+<li class="chapter" data-level="78.0.6" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#additional-resources-27"><i class="fa fa-check"></i><b>78.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="78.0.7" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#slides-and-video-26"><i class="fa fa-check"></i><b>78.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="79" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html"><i class="fa fa-check"></i><b>79</b> Participating in Meetings</a>
+<ul>
+<li class="chapter" data-level="79.0.1" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#meeting-etiquette"><i class="fa fa-check"></i><b>79.0.1</b> Meeting Etiquette</a></li>
+<li class="chapter" data-level="79.0.2" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#how-to-host-a-meeting"><i class="fa fa-check"></i><b>79.0.2</b> How to Host A Meeting</a></li>
+<li class="chapter" data-level="79.0.3" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#how-to-participate-in-a-meeting"><i class="fa fa-check"></i><b>79.0.3</b> How to Participate in a Meeting</a></li>
+<li class="chapter" data-level="79.0.4" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#summary-28"><i class="fa fa-check"></i><b>79.0.4</b> Summary</a></li>
+<li class="chapter" data-level="79.0.5" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#additional-resources-28"><i class="fa fa-check"></i><b>79.0.5</b> Additional Resources</a></li>
+<li class="chapter" data-level="79.0.6" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#slides-and-video-27"><i class="fa fa-check"></i><b>79.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="80" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html"><i class="fa fa-check"></i><b>80</b> How To Have a One-on-One Meeting</a>
+<ul>
+<li class="chapter" data-level="80.0.1" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#consulting"><i class="fa fa-check"></i><b>80.0.1</b> Consulting</a></li>
+<li class="chapter" data-level="80.0.2" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#what-to-expect"><i class="fa fa-check"></i><b>80.0.2</b> What to Expect</a></li>
+<li class="chapter" data-level="80.0.3" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#follow-up-meetings"><i class="fa fa-check"></i><b>80.0.3</b> Follow-up Meetings</a></li>
+<li class="chapter" data-level="80.0.4" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#common-pitfalls"><i class="fa fa-check"></i><b>80.0.4</b> Common Pitfalls</a></li>
+<li class="chapter" data-level="80.0.5" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#data-science-ethics"><i class="fa fa-check"></i><b>80.0.5</b> Data Science Ethics</a></li>
+<li class="chapter" data-level="80.0.6" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#summary-29"><i class="fa fa-check"></i><b>80.0.6</b> Summary</a></li>
+<li class="chapter" data-level="80.0.7" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#slides-and-video-28"><i class="fa fa-check"></i><b>80.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="81" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html"><i class="fa fa-check"></i><b>81</b> How To Keep a Data Science Lab Notebook</a>
+<ul>
+<li class="chapter" data-level="81.0.1" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#why-keep-a-lab-notebook"><i class="fa fa-check"></i><b>81.0.1</b> Why Keep a Lab Notebook</a></li>
+<li class="chapter" data-level="81.0.2" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#what-to-put-in-your-lab-notebook"><i class="fa fa-check"></i><b>81.0.2</b> What to Put in Your Lab Notebook</a></li>
+<li class="chapter" data-level="81.0.3" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#when-to-update"><i class="fa fa-check"></i><b>81.0.3</b> When To Update</a></li>
+<li class="chapter" data-level="81.0.4" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#benchling-data-science-lab-notebook"><i class="fa fa-check"></i><b>81.0.4</b> Benchling: Data Science Lab Notebook</a></li>
+<li class="chapter" data-level="81.0.5" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#slides-and-video-29"><i class="fa fa-check"></i><b>81.0.5</b> Slides and Video</a></li>
+<li class="chapter" data-level="81.0.6" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#how-to-keep-a-data-science-lab-notebook-quiz"><i class="fa fa-check"></i><b>81.0.6</b> How To Keep a Data Science Lab Notebook quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="82" data-path="which-graph-to-use-when.html"><a href="which-graph-to-use-when.html"><i class="fa fa-check"></i><b>82</b> Which Graph to Use When</a>
+<ul>
+<li class="chapter" data-level="82.0.1" data-path="which-graph-to-use-when.html"><a href="which-graph-to-use-when.html#exploratory-vs.-explanatory"><i class="fa fa-check"></i><b>82.0.1</b> Exploratory vs. Explanatory</a></li>
+<li class="chapter" data-level="82.0.2" data-path="which-graph-to-use-when.html"><a href="which-graph-to-use-when.html#which-graph"><i class="fa fa-check"></i><b>82.0.2</b> Which Graph</a></li>
+<li class="chapter" data-level="82.0.3" data-path="which-graph-to-use-when.html"><a href="which-graph-to-use-when.html#summary-31"><i class="fa fa-check"></i><b>82.0.3</b> Summary</a></li>
+<li class="chapter" data-level="82.0.4" data-path="which-graph-to-use-when.html"><a href="which-graph-to-use-when.html#slides-and-video-30"><i class="fa fa-check"></i><b>82.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="83" data-path="building-a-resume.html"><a href="building-a-resume.html"><i class="fa fa-check"></i><b>83</b> <strong>Building a resume</strong></a>
+<ul>
+<li class="chapter" data-level="83.1" data-path="building-a-resume.html"><a href="building-a-resume.html#learning-objectives-6"><i class="fa fa-check"></i><b>83.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="83.2" data-path="building-a-resume.html"><a href="building-a-resume.html#what-you-need-to-find-a-data-science-job"><i class="fa fa-check"></i><b>83.2</b> What You Need to Find a Data Science Job</a>
+<ul>
+<li class="chapter" data-level="83.2.1" data-path="building-a-resume.html"><a href="building-a-resume.html#job-applications"><i class="fa fa-check"></i><b>83.2.1</b> Job Applications</a></li>
+<li class="chapter" data-level="83.2.2" data-path="building-a-resume.html"><a href="building-a-resume.html#online-presence"><i class="fa fa-check"></i><b>83.2.2</b> Online Presence</a></li>
+<li class="chapter" data-level="83.2.3" data-path="building-a-resume.html"><a href="building-a-resume.html#additional-resources-29"><i class="fa fa-check"></i><b>83.2.3</b> Additional Resources</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="84" data-path="resumes-1.html"><a href="resumes-1.html"><i class="fa fa-check"></i><b>84</b> Resumes</a>
+<ul>
+<li class="chapter" data-level="84.0.1" data-path="resumes-1.html"><a href="resumes-1.html#what-is-a-resume"><i class="fa fa-check"></i><b>84.0.1</b> What is a Resume?</a></li>
+<li class="chapter" data-level="84.0.2" data-path="resumes-1.html"><a href="resumes-1.html#general-features"><i class="fa fa-check"></i><b>84.0.2</b> General Features</a></li>
+<li class="chapter" data-level="84.0.3" data-path="resumes-1.html"><a href="resumes-1.html#formatting"><i class="fa fa-check"></i><b>84.0.3</b> Formatting</a></li>
+<li class="chapter" data-level="84.0.4" data-path="resumes-1.html"><a href="resumes-1.html#what-to-include-1"><i class="fa fa-check"></i><b>84.0.4</b> What to Include</a></li>
+<li class="chapter" data-level="84.0.5" data-path="resumes-1.html"><a href="resumes-1.html#example-resumes"><i class="fa fa-check"></i><b>84.0.5</b> Example Resumes</a></li>
+<li class="chapter" data-level="84.0.6" data-path="resumes-1.html"><a href="resumes-1.html#sharing-your-resume"><i class="fa fa-check"></i><b>84.0.6</b> Sharing your resume</a></li>
+<li class="chapter" data-level="84.0.7" data-path="resumes-1.html"><a href="resumes-1.html#summary-32"><i class="fa fa-check"></i><b>84.0.7</b> Summary</a></li>
+<li class="chapter" data-level="84.0.8" data-path="resumes-1.html"><a href="resumes-1.html#additional-resources-30"><i class="fa fa-check"></i><b>84.0.8</b> Additional Resources</a></li>
+<li class="chapter" data-level="84.0.9" data-path="resumes-1.html"><a href="resumes-1.html#slides-and-video-31"><i class="fa fa-check"></i><b>84.0.9</b> Slides and Video</a></li>
+<li class="chapter" data-level="84.0.10" data-path="resumes-1.html"><a href="resumes-1.html#resumes-quiz"><i class="fa fa-check"></i><b>84.0.10</b> Resumes quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="85" data-path="cover-letters-1.html"><a href="cover-letters-1.html"><i class="fa fa-check"></i><b>85</b> Cover Letters</a>
+<ul>
+<li class="chapter" data-level="85.0.1" data-path="cover-letters-1.html"><a href="cover-letters-1.html#format"><i class="fa fa-check"></i><b>85.0.1</b> Format</a></li>
+<li class="chapter" data-level="85.0.2" data-path="cover-letters-1.html"><a href="cover-letters-1.html#content"><i class="fa fa-check"></i><b>85.0.2</b> Content</a></li>
+<li class="chapter" data-level="85.0.3" data-path="cover-letters-1.html"><a href="cover-letters-1.html#what-to-avoid-1"><i class="fa fa-check"></i><b>85.0.3</b> What to Avoid</a></li>
+<li class="chapter" data-level="85.0.4" data-path="cover-letters-1.html"><a href="cover-letters-1.html#summary-33"><i class="fa fa-check"></i><b>85.0.4</b> Summary</a></li>
+<li class="chapter" data-level="85.0.5" data-path="cover-letters-1.html"><a href="cover-letters-1.html#additional-resources-31"><i class="fa fa-check"></i><b>85.0.5</b> Additional Resources</a></li>
+<li class="chapter" data-level="85.0.6" data-path="cover-letters-1.html"><a href="cover-letters-1.html#slides-and-video-32"><i class="fa fa-check"></i><b>85.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="86" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html"><i class="fa fa-check"></i><b>86</b> Making Your Website More Professional</a>
+<ul>
+<li class="chapter" data-level="86.1" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#make-your-own-website"><i class="fa fa-check"></i><b>86.1</b> Make your own website!</a></li>
+<li class="chapter" data-level="86.2" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#more-customization-of-your-website"><i class="fa fa-check"></i><b>86.2</b> More customization of your website</a>
+<ul>
+<li class="chapter" data-level="86.2.1" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#blogdown"><i class="fa fa-check"></i><b>86.2.1</b> Blogdown</a></li>
+<li class="chapter" data-level="86.2.2" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#getting-started"><i class="fa fa-check"></i><b>86.2.2</b> Getting Started</a></li>
+<li class="chapter" data-level="86.2.3" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#website-content"><i class="fa fa-check"></i><b>86.2.3</b> Website Content</a></li>
+<li class="chapter" data-level="86.2.4" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#website-appearance"><i class="fa fa-check"></i><b>86.2.4</b> Website Appearance</a></li>
+<li class="chapter" data-level="86.2.5" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#posts"><i class="fa fa-check"></i><b>86.2.5</b> Posts</a></li>
+<li class="chapter" data-level="86.2.6" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#projects-1"><i class="fa fa-check"></i><b>86.2.6</b> Projects</a></li>
+<li class="chapter" data-level="86.2.7" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#deployment"><i class="fa fa-check"></i><b>86.2.7</b> Deployment</a></li>
+<li class="chapter" data-level="86.2.8" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#additional-resources-32"><i class="fa fa-check"></i><b>86.2.8</b> Additional Resources</a></li>
+<li class="chapter" data-level="86.2.9" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#slides-and-video-33"><i class="fa fa-check"></i><b>86.2.9</b> Slides and Video</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="87" data-path="project-gallery.html"><a href="project-gallery.html"><i class="fa fa-check"></i><b>87</b> Project Gallery</a>
+<ul>
+<li class="chapter" data-level="87.0.1" data-path="project-gallery.html"><a href="project-gallery.html#project-list"><i class="fa fa-check"></i><b>87.0.1</b> Project List</a></li>
+<li class="chapter" data-level="87.0.2" data-path="project-gallery.html"><a href="project-gallery.html#project-gallery-1"><i class="fa fa-check"></i><b>87.0.2</b> Project Gallery</a></li>
+<li class="chapter" data-level="87.0.3" data-path="project-gallery.html"><a href="project-gallery.html#what-to-include-2"><i class="fa fa-check"></i><b>87.0.3</b> What To Include</a></li>
+<li class="chapter" data-level="87.0.4" data-path="project-gallery.html"><a href="project-gallery.html#what-not-to-include"><i class="fa fa-check"></i><b>87.0.4</b> What Not To Include</a></li>
+<li class="chapter" data-level="87.0.5" data-path="project-gallery.html"><a href="project-gallery.html#your-final-project"><i class="fa fa-check"></i><b>87.0.5</b> Your Final Project</a></li>
+<li class="chapter" data-level="87.0.6" data-path="project-gallery.html"><a href="project-gallery.html#push-to-github"><i class="fa fa-check"></i><b>87.0.6</b> Push to GitHub</a></li>
+<li class="chapter" data-level="87.0.7" data-path="project-gallery.html"><a href="project-gallery.html#your-own-project"><i class="fa fa-check"></i><b>87.0.7</b> Your <em>Own</em> Project</a></li>
+<li class="chapter" data-level="87.0.8" data-path="project-gallery.html"><a href="project-gallery.html#slides-and-video-34"><i class="fa fa-check"></i><b>87.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="88" data-path="google-docs.html"><a href="google-docs.html"><i class="fa fa-check"></i><b>88</b> Google Docs</a>
+<ul>
+<li class="chapter" data-level="88.0.1" data-path="google-docs.html"><a href="google-docs.html#auto-save-feature-and-working-offline"><i class="fa fa-check"></i><b>88.0.1</b> Auto-save feature and working offline</a></li>
+<li class="chapter" data-level="88.0.2" data-path="google-docs.html"><a href="google-docs.html#working-in-google-docs"><i class="fa fa-check"></i><b>88.0.2</b> Working in Google Docs</a></li>
+<li class="chapter" data-level="88.0.3" data-path="google-docs.html"><a href="google-docs.html#renaming-your-document"><i class="fa fa-check"></i><b>88.0.3</b> Renaming Your Document</a></li>
+<li class="chapter" data-level="88.0.4" data-path="google-docs.html"><a href="google-docs.html#download-documents-in-different-formats"><i class="fa fa-check"></i><b>88.0.4</b> Download documents in different formats</a></li>
+<li class="chapter" data-level="88.0.5" data-path="google-docs.html"><a href="google-docs.html#more-specifics-on-using-google-docs"><i class="fa fa-check"></i><b>88.0.5</b> More specifics on using Google Docs</a></li>
+<li class="chapter" data-level="88.0.6" data-path="google-docs.html"><a href="google-docs.html#additional-resources-33"><i class="fa fa-check"></i><b>88.0.6</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="89" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html"><i class="fa fa-check"></i><b>89</b> Improving Your GitHub Profile</a>
+<ul>
+<li class="chapter" data-level="89.0.1" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#profile"><i class="fa fa-check"></i><b>89.0.1</b> Profile</a></li>
+<li class="chapter" data-level="89.0.2" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#pinned-repos"><i class="fa fa-check"></i><b>89.0.2</b> Pinned Repos</a></li>
+<li class="chapter" data-level="89.0.3" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#github-contributions"><i class="fa fa-check"></i><b>89.0.3</b> GitHub Contributions</a></li>
+<li class="chapter" data-level="89.0.4" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#summary-34"><i class="fa fa-check"></i><b>89.0.4</b> Summary</a></li>
+<li class="chapter" data-level="89.0.5" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#additional-resources-34"><i class="fa fa-check"></i><b>89.0.5</b> Additional Resources</a></li>
+<li class="chapter" data-level="89.0.6" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#slides-and-video-35"><i class="fa fa-check"></i><b>89.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="90" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html"><i class="fa fa-check"></i><b>90</b> Improving Your LinkedIn Profile</a>
+<ul>
+<li class="chapter" data-level="90.0.1" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#linkedin-profile"><i class="fa fa-check"></i><b>90.0.1</b> LinkedIn Profile</a></li>
+<li class="chapter" data-level="90.0.2" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#connecting-to-others"><i class="fa fa-check"></i><b>90.0.2</b> Connecting to Others</a></li>
+<li class="chapter" data-level="90.0.3" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#summary-35"><i class="fa fa-check"></i><b>90.0.3</b> Summary</a></li>
+<li class="chapter" data-level="90.0.4" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#additional-resources-35"><i class="fa fa-check"></i><b>90.0.4</b> Additional Resources</a></li>
+<li class="chapter" data-level="90.0.5" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#slides-and-video-36"><i class="fa fa-check"></i><b>90.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="91" data-path="google-slides.html"><a href="google-slides.html"><i class="fa fa-check"></i><b>91</b> Google Slides</a>
+<ul>
+<li class="chapter" data-level="91.0.1" data-path="google-slides.html"><a href="google-slides.html#presentation-guidelines-1"><i class="fa fa-check"></i><b>91.0.1</b> Presentation Guidelines</a></li>
+<li class="chapter" data-level="91.0.2" data-path="google-slides.html"><a href="google-slides.html#accessing-google-slides"><i class="fa fa-check"></i><b>91.0.2</b> Accessing Google Slides</a></li>
+<li class="chapter" data-level="91.0.3" data-path="google-slides.html"><a href="google-slides.html#creating-a-full-slideshow"><i class="fa fa-check"></i><b>91.0.3</b> Creating a Full Slideshow</a></li>
+<li class="chapter" data-level="91.0.4" data-path="google-slides.html"><a href="google-slides.html#presenting-your-slideshow"><i class="fa fa-check"></i><b>91.0.4</b> Presenting Your Slideshow</a></li>
+<li class="chapter" data-level="91.0.5" data-path="google-slides.html"><a href="google-slides.html#accessing-downloading-and-sharing-your-slides"><i class="fa fa-check"></i><b>91.0.5</b> Accessing, downloading, and sharing your slides</a></li>
+<li class="chapter" data-level="91.0.6" data-path="google-slides.html"><a href="google-slides.html#more-specifics-on-using-google-slides"><i class="fa fa-check"></i><b>91.0.6</b> More specifics on using Google Slides</a></li>
+<li class="chapter" data-level="91.0.7" data-path="google-slides.html"><a href="google-slides.html#additional-resources-36"><i class="fa fa-check"></i><b>91.0.7</b> Additional Resources</a></li>
+<li class="chapter" data-level="91.0.8" data-path="google-slides.html"><a href="google-slides.html#slides-and-video-37"><i class="fa fa-check"></i><b>91.0.8</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="92" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html"><i class="fa fa-check"></i><b>92</b> Using Twitter For Data Science</a>
+<ul>
+<li class="chapter" data-level="92.0.1" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#profile-1"><i class="fa fa-check"></i><b>92.0.1</b> Profile</a></li>
+<li class="chapter" data-level="92.0.2" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#who-what-to-follow"><i class="fa fa-check"></i><b>92.0.2</b> Who &amp; What To Follow</a></li>
+<li class="chapter" data-level="92.0.3" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#tweeting"><i class="fa fa-check"></i><b>92.0.3</b> Tweeting</a></li>
+<li class="chapter" data-level="92.0.4" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#summary-36"><i class="fa fa-check"></i><b>92.0.4</b> Summary</a></li>
+<li class="chapter" data-level="92.0.5" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#additional-resources-37"><i class="fa fa-check"></i><b>92.0.5</b> Additional Resources</a></li>
+<li class="chapter" data-level="92.0.6" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#slides-and-video-38"><i class="fa fa-check"></i><b>92.0.6</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="93" data-path="google-hangouts.html"><a href="google-hangouts.html"><i class="fa fa-check"></i><b>93</b> Google Hangouts</a>
+<ul>
+<li class="chapter" data-level="93.0.1" data-path="google-hangouts.html"><a href="google-hangouts.html#accessing-your-google-hangouts-account"><i class="fa fa-check"></i><b>93.0.1</b> Accessing your Google Hangouts account</a></li>
+<li class="chapter" data-level="93.0.2" data-path="google-hangouts.html"><a href="google-hangouts.html#video-chats"><i class="fa fa-check"></i><b>93.0.2</b> Video chats</a></li>
+<li class="chapter" data-level="93.0.3" data-path="google-hangouts.html"><a href="google-hangouts.html#phone-calls"><i class="fa fa-check"></i><b>93.0.3</b> Phone calls</a></li>
+<li class="chapter" data-level="93.0.4" data-path="google-hangouts.html"><a href="google-hangouts.html#messaging"><i class="fa fa-check"></i><b>93.0.4</b> Messaging</a></li>
+<li class="chapter" data-level="93.0.5" data-path="google-hangouts.html"><a href="google-hangouts.html#group-conversations"><i class="fa fa-check"></i><b>93.0.5</b> Group conversations</a></li>
+<li class="chapter" data-level="93.0.6" data-path="google-hangouts.html"><a href="google-hangouts.html#more-specifics-on-using-google-hangouts"><i class="fa fa-check"></i><b>93.0.6</b> More specifics on using Google Hangouts</a></li>
+<li class="chapter" data-level="93.0.7" data-path="google-hangouts.html"><a href="google-hangouts.html#slides-and-video-39"><i class="fa fa-check"></i><b>93.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="94" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html"><i class="fa fa-check"></i><b>94</b> Data Science Job Descriptions</a>
+<ul>
+<li class="chapter" data-level="94.0.1" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#what-data-scientists-do"><i class="fa fa-check"></i><b>94.0.1</b> What Data Scientists Do</a></li>
+<li class="chapter" data-level="94.0.2" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#skills-for-entry-level-positions"><i class="fa fa-check"></i><b>94.0.2</b> Skills for entry-level positions</a></li>
+<li class="chapter" data-level="94.0.3" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#job-descriptions"><i class="fa fa-check"></i><b>94.0.3</b> Job Descriptions</a></li>
+<li class="chapter" data-level="94.0.4" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#which-job-is-right-for-you"><i class="fa fa-check"></i><b>94.0.4</b> Which Job is Right For You?</a></li>
+<li class="chapter" data-level="94.0.5" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#summary-37"><i class="fa fa-check"></i><b>94.0.5</b> Summary</a></li>
+<li class="chapter" data-level="94.0.6" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#additional-resources-38"><i class="fa fa-check"></i><b>94.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="94.0.7" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#slides-and-video-40"><i class="fa fa-check"></i><b>94.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="95" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html"><i class="fa fa-check"></i><b>95</b> Where To Look for Data Science Jobs</a>
+<ul>
+<li class="chapter" data-level="95.0.1" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#what-jobs-to-look-for"><i class="fa fa-check"></i><b>95.0.1</b> What Jobs to Look For</a></li>
+<li class="chapter" data-level="95.0.2" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#additional-considerations"><i class="fa fa-check"></i><b>95.0.2</b> Additional Considerations</a></li>
+<li class="chapter" data-level="95.0.3" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#job-titles-to-search"><i class="fa fa-check"></i><b>95.0.3</b> Job Titles to Search</a></li>
+<li class="chapter" data-level="95.0.4" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#stackoverflow-jobs"><i class="fa fa-check"></i><b>95.0.4</b> StackOverflow Jobs</a></li>
+<li class="chapter" data-level="95.0.5" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#linkedin"><i class="fa fa-check"></i><b>95.0.5</b> LinkedIn</a></li>
+<li class="chapter" data-level="95.0.6" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#job-boards"><i class="fa fa-check"></i><b>95.0.6</b> Job Boards</a></li>
+<li class="chapter" data-level="95.0.7" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#company-websites"><i class="fa fa-check"></i><b>95.0.7</b> Company websites</a></li>
+<li class="chapter" data-level="95.0.8" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#twitter"><i class="fa fa-check"></i><b>95.0.8</b> Twitter</a></li>
+<li class="chapter" data-level="95.0.9" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#remote-work"><i class="fa fa-check"></i><b>95.0.9</b> Remote Work</a></li>
+<li class="chapter" data-level="95.0.10" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#applying"><i class="fa fa-check"></i><b>95.0.10</b> Applying</a></li>
+<li class="chapter" data-level="95.0.11" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#summary-38"><i class="fa fa-check"></i><b>95.0.11</b> Summary</a></li>
+<li class="chapter" data-level="95.0.12" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#additional-resources-39"><i class="fa fa-check"></i><b>95.0.12</b> Additional Resources</a></li>
+<li class="chapter" data-level="95.0.13" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#slides-and-video-41"><i class="fa fa-check"></i><b>95.0.13</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="96" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html"><i class="fa fa-check"></i><b>96</b> Projecting from a Chromebook</a>
+<ul>
+<li class="chapter" data-level="96.0.1" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#finding-the-right-dongle"><i class="fa fa-check"></i><b>96.0.1</b> Finding the right dongle</a></li>
+<li class="chapter" data-level="96.0.2" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#projecting-from-your-chromebook"><i class="fa fa-check"></i><b>96.0.2</b> Projecting from your Chromebook</a></li>
+<li class="chapter" data-level="96.0.3" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#slides-and-video-42"><i class="fa fa-check"></i><b>96.0.3</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="97" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html"><i class="fa fa-check"></i><b>97</b> Where To Find Remote Data Science Jobs</a>
+<ul>
+<li class="chapter" data-level="97.0.1" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#general-postings"><i class="fa fa-check"></i><b>97.0.1</b> General Postings</a></li>
+<li class="chapter" data-level="97.0.2" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#remote-ok"><i class="fa fa-check"></i><b>97.0.2</b> Remote OK</a></li>
+<li class="chapter" data-level="97.0.3" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#summary-39"><i class="fa fa-check"></i><b>97.0.3</b> Summary</a></li>
+<li class="chapter" data-level="97.0.4" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#slides-and-video-43"><i class="fa fa-check"></i><b>97.0.4</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="98" data-path="data-science-interviews.html"><a href="data-science-interviews.html"><i class="fa fa-check"></i><b>98</b> Data Science Interviews</a>
+<ul>
+<li class="chapter" data-level="98.0.1" data-path="data-science-interviews.html"><a href="data-science-interviews.html#pre-interview-phone-calls"><i class="fa fa-check"></i><b>98.0.1</b> Pre-Interview Phone Calls</a></li>
+<li class="chapter" data-level="98.0.2" data-path="data-science-interviews.html"><a href="data-science-interviews.html#interview-preparation"><i class="fa fa-check"></i><b>98.0.2</b> Interview Preparation</a></li>
+<li class="chapter" data-level="98.0.3" data-path="data-science-interviews.html"><a href="data-science-interviews.html#the-day-of-the-interview"><i class="fa fa-check"></i><b>98.0.3</b> The Day of the Interview</a></li>
+<li class="chapter" data-level="98.0.4" data-path="data-science-interviews.html"><a href="data-science-interviews.html#after-the-interview"><i class="fa fa-check"></i><b>98.0.4</b> After The Interview</a></li>
+<li class="chapter" data-level="98.0.5" data-path="data-science-interviews.html"><a href="data-science-interviews.html#summary-40"><i class="fa fa-check"></i><b>98.0.5</b> Summary</a></li>
+<li class="chapter" data-level="98.0.6" data-path="data-science-interviews.html"><a href="data-science-interviews.html#additional-resources-40"><i class="fa fa-check"></i><b>98.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="98.0.7" data-path="data-science-interviews.html"><a href="data-science-interviews.html#slides-and-video-44"><i class="fa fa-check"></i><b>98.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="99" data-path="data-science-meetups.html"><a href="data-science-meetups.html"><i class="fa fa-check"></i><b>99</b> Data Science Meetups</a>
+<ul>
+<li class="chapter" data-level="99.0.1" data-path="data-science-meetups.html"><a href="data-science-meetups.html#where-to-look"><i class="fa fa-check"></i><b>99.0.1</b> Where to Look</a></li>
+<li class="chapter" data-level="99.0.2" data-path="data-science-meetups.html"><a href="data-science-meetups.html#what-to-expect-1"><i class="fa fa-check"></i><b>99.0.2</b> What to Expect</a></li>
+<li class="chapter" data-level="99.0.3" data-path="data-science-meetups.html"><a href="data-science-meetups.html#meetups-and-jobs"><i class="fa fa-check"></i><b>99.0.3</b> Meetups and Jobs</a></li>
+<li class="chapter" data-level="99.0.4" data-path="data-science-meetups.html"><a href="data-science-meetups.html#summary-41"><i class="fa fa-check"></i><b>99.0.4</b> Summary</a></li>
+<li class="chapter" data-level="99.0.5" data-path="data-science-meetups.html"><a href="data-science-meetups.html#slides-and-video-45"><i class="fa fa-check"></i><b>99.0.5</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://www.datatrail.org/"> Data Trail </a></p>
+<a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/VWaJYc3zATe3qxYC9"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DataTrail</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style_DataTrail.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/DataTrail.jpg">
+</div>
+<div id="working-with-factors" class="section level1" number="31">
+<h1><span class="header-section-number">Chapter 31</span> Working with Factors</h1>
+<p>In R, categorical data are handled as factors. By definition, categorical data are limited in that they have a set number of possible values they can take. For example, there are 12 months in a calendar year. In a month variable, each observation is limited to taking one of these twelve values. Thus, with a limited number of possible values, month is a categorical variable. Categorical data, which will be referred to as factors for the rest of this lesson, are regularly found in data. Learning how to work with this type of variable effectively will be incredibly helpful.</p>
+<p>To make working with factors simpler, we’ll utilize the <code>forcats</code> package. Similar to the <code>stringr</code> package, all functions within <code>forcats</code> begin with <code>fct_</code>. As before, to see available functions you can type <code>?fct_</code> in your RStudio console. A drop-down menu will appear with all the possible forcats functions. Before working through this lesson, you’ll want to be sure that <code>forcats</code> has been installed and loaded in:</p>
+<div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="working-with-factors.html#cb228-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;forcats&#39;</span>)</span>
+<span id="cb228-2"><a href="working-with-factors.html#cb228-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(forcats)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_0" alt="" />
+<p class="caption">fct_ output from RStudio</p>
+</div>
+<div id="factor-basics" class="section level3" number="31.0.1">
+<h3><span class="header-section-number">31.0.1</span> Factor basics</h3>
+<p>In R, factors are comprised of two components: the actual <strong>values</strong> of the data and the possible <strong>levels</strong> within the factor. Thus, to create a factor, you need to supply both these pieces of information.</p>
+<p>For example, if we were to create a character vector of the twelve months, we could certainly do that:</p>
+<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="working-with-factors.html#cb229-1" aria-hidden="true" tabindex="-1"></a><span class="do">## all 12 months</span></span>
+<span id="cb229-2"><a href="working-with-factors.html#cb229-2" aria-hidden="true" tabindex="-1"></a>all_months <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Jan&quot;</span>, <span class="st">&quot;Feb&quot;</span>, <span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;May&quot;</span>, <span class="st">&quot;Jun&quot;</span>, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>, <span class="st">&quot;Sep&quot;</span>, <span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>, <span class="st">&quot;Dec&quot;</span>)</span>
+<span id="cb229-3"><a href="working-with-factors.html#cb229-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb229-4"><a href="working-with-factors.html#cb229-4" aria-hidden="true" tabindex="-1"></a><span class="do">## our data</span></span>
+<span id="cb229-5"><a href="working-with-factors.html#cb229-5" aria-hidden="true" tabindex="-1"></a>some_months <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Dec&quot;</span>, <span class="st">&quot;Jan&quot;</span>,  <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;Jul&quot;</span>)</span></code></pre></div>
+<p>However, if we were to sort this vector, R would sort this vector alphabetically.</p>
+<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="working-with-factors.html#cb230-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(some_months)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_12" alt="" />
+<p class="caption">sort sorts variable alphabetically</p>
+</div>
+<p>While you and I know that this is not how months should be ordered, we haven’t yet told R that. To do so, we need to let R know that it’s a factor variable and what the levels of that factor variable should be.</p>
+<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="working-with-factors.html#cb231-1" aria-hidden="true" tabindex="-1"></a>mon <span class="ot">&lt;-</span> <span class="fu">factor</span>(some_months, <span class="at">levels =</span> all_months)</span>
+<span id="cb231-2"><a href="working-with-factors.html#cb231-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb231-3"><a href="working-with-factors.html#cb231-3" aria-hidden="true" tabindex="-1"></a>mon</span>
+<span id="cb231-4"><a href="working-with-factors.html#cb231-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb231-5"><a href="working-with-factors.html#cb231-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(mon)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_16" alt="" />
+<p class="caption">defining the factor levels sorts this variable sensibly</p>
+</div>
+<p>Here, we specify all the possible values that the factor could take in the <code>levels = all_months</code> argument. So, even though not all twelve months are included in the some_months object, we’ve stated that all of the months are possible values. Further, when you sort this variable, it now sorts in the sensical way!</p>
+</div>
+<div id="manually-change-the-labels-of-factor-levels-fct_relevel" class="section level3" number="31.0.2">
+<h3><span class="header-section-number">31.0.2</span> Manually change the labels of factor levels : <code>fct_relevel()</code></h3>
+<p>What if you wanted your months to start with July first? That can be accomplished using <code>fct_relevel()</code>. To use this function, you simply need to state what you’d like to relevel (<code>mon</code>) followed by the levels you want to relevel. If you want these to be placed in the beginning, the after argument should be <code>after = 0</code>. You can play around with this setting to see how changing <code>after</code> affects the levels in your output.</p>
+<div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="working-with-factors.html#cb232-1" aria-hidden="true" tabindex="-1"></a>mon_relevel <span class="ot">&lt;-</span> <span class="fu">fct_relevel</span>(mon, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>, <span class="st">&quot;Sep&quot;</span>, <span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>, <span class="st">&quot;Dec&quot;</span>, <span class="at">after =</span> <span class="dv">0</span>)</span>
+<span id="cb232-2"><a href="working-with-factors.html#cb232-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb232-3"><a href="working-with-factors.html#cb232-3" aria-hidden="true" tabindex="-1"></a>mon_relevel</span>
+<span id="cb232-4"><a href="working-with-factors.html#cb232-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb232-5"><a href="working-with-factors.html#cb232-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(mon_relevel)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_47" alt="" />
+<p class="caption">fct_relevel enables you to change the order of your factor levels</p>
+</div>
+<p>After re-leveling, when we sort this factor, we see that Jul is placed first, as specified by the level re-ordering.</p>
+</div>
+<div id="keep-the-order-of-the-factor-levels-fct_inorder" class="section level3" number="31.0.3">
+<h3><span class="header-section-number">31.0.3</span> Keep the order of the factor levels : <code>fct_inorder()</code></h3>
+<p>Now, if you’re not interested in the months being in calendar year order, you can always state that you want the levels to stay in the same order as the data you started with, you simply specify <code>fct_inorder</code>.</p>
+<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="working-with-factors.html#cb233-1" aria-hidden="true" tabindex="-1"></a>mon_inorder <span class="ot">&lt;-</span> <span class="fu">fct_inorder</span>(some_months)</span>
+<span id="cb233-2"><a href="working-with-factors.html#cb233-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb233-3"><a href="working-with-factors.html#cb233-3" aria-hidden="true" tabindex="-1"></a>mon_inorder</span>
+<span id="cb233-4"><a href="working-with-factors.html#cb233-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb233-5"><a href="working-with-factors.html#cb233-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(mon_inorder)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_52" alt="" />
+<p class="caption">fct_inorder assigns levels in the same order the level is seen in the data</p>
+</div>
+<p>We see now with <code>fct_inorder</code> that even when we sort the output, it does not sort the factor alphabetically, nor does it put it in calendar order. In fact, it stays in the same order as the input, just as we specified.</p>
+</div>
+<div id="advanced-factoring" class="section level3" number="31.0.4">
+<h3><span class="header-section-number">31.0.4</span> Advanced Factoring</h3>
+<p>For the remainder of this lesson, we’re going to return to using a dataset that’s in R by default. We’ll use the <code>chickwts</code> dataset for exploring the remaining advanced functions. This data set includes data from an experiment that was looking to compare the “effectiveness of various feed supplements on the growth rate of chickens.”</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_24" alt="" />
+<p class="caption">chickwts dataset</p>
+</div>
+</div>
+<div id="re-ordering-factor-levels-by-frequency-fct_infreq" class="section level3" number="31.0.5">
+<h3><span class="header-section-number">31.0.5</span> Re-ordering factor levels by frequency : <code>fct_infreq()</code></h3>
+<p>To re-order factor levels by frequency of the value in the dataset, you’ll want to use <code>fct_infreq()</code>. Below, we see from the output from <code>tabyl()</code> that ‘soybean’ is the most frequent feed in the data set while ‘horsebean’ is the least frequent. Thus, when we order by frequency, we can expect these two feeds to be at opposite ends for our levels.</p>
+<div class="sourceCode" id="cb234"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb234-1"><a href="working-with-factors.html#cb234-1" aria-hidden="true" tabindex="-1"></a><span class="do">## take a look at frequency of each level</span></span>
+<span id="cb234-2"><a href="working-with-factors.html#cb234-2" aria-hidden="true" tabindex="-1"></a><span class="do">## using tabyl() from `janitor` package</span></span>
+<span id="cb234-3"><a href="working-with-factors.html#cb234-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb234-4"><a href="working-with-factors.html#cb234-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tabyl</span>(chickwts<span class="sc">$</span>feed)</span>
+<span id="cb234-5"><a href="working-with-factors.html#cb234-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb234-6"><a href="working-with-factors.html#cb234-6" aria-hidden="true" tabindex="-1"></a><span class="do">## order levels by frequency</span></span>
+<span id="cb234-7"><a href="working-with-factors.html#cb234-7" aria-hidden="true" tabindex="-1"></a><span class="fu">fct_infreq</span>(chickwts<span class="sc">$</span>feed) <span class="sc">%&gt;%</span> <span class="fu">head</span>()</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_56" alt="" />
+<p class="caption">fct_infreq orders levels based on frequency in dataset</p>
+</div>
+<p>As expected, soybean, the most frequent level, appears as the first level and horsebean, the least frequent level, appears last. The rest of the levels are sorted by frequency.</p>
+</div>
+<div id="reversing-order-levels-fct_rev" class="section level3" number="31.0.6">
+<h3><span class="header-section-number">31.0.6</span> Reversing order levels : <code>fct_rev()</code></h3>
+<p>If we wanted to sort the levels from least frequent to most frequent, we could just put <code>fct_rev()</code> around the code we just used to reverse the factor level order.</p>
+<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="working-with-factors.html#cb235-1" aria-hidden="true" tabindex="-1"></a><span class="do">## reverse factor level order</span></span>
+<span id="cb235-2"><a href="working-with-factors.html#cb235-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fct_rev</span>(<span class="fu">fct_infreq</span>(chickwts<span class="sc">$</span>feed)) <span class="sc">%&gt;%</span> <span class="fu">head</span>()</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_20" alt="" />
+<p class="caption">fct_rev() reverses the factor level order</p>
+</div>
+</div>
+<div id="re-ordering-factor-levels-by-another-variable-fct_reorder" class="section level3" number="31.0.7">
+<h3><span class="header-section-number">31.0.7</span> Re-ordering factor levels by another variable : <code>fct_reorder()</code></h3>
+<p>At times you may want to reorder levels of a factor by another variable in your dataset. This is often helpful when generating plots (which we’ll get to in a future lesson!). To do this you specify the variable you want to reorder, followed by the numeric variable by which you’d like the factor to be re-leveled. Here, we see that we’re re-leveling feed by the weight of the chickens. While we haven’t discussed plotting yet, the best way to demonstrate how this works is by plotting the feed against the weights. We can see that the order of the factor is such that those chickens with the lowest median weight (horsebean) are to the left, while those with the highest median weight (casein) are to the right.</p>
+<pre><code>## order levels by a second numeric variable
+chickwts %&gt;%
+  mutate(newfeed = fct_reorder(feed, weight)) %&gt;%
+  ggplot(., aes(newfeed,weight)) +
+  geom_point()</code></pre>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_69" alt="" />
+<p class="caption">fct_reorder allows you to re-level a factor based on a secondary numeric variable</p>
+</div>
+</div>
+<div id="combining-several-levels-into-one-fct_recode" class="section level3" number="31.0.8">
+<h3><span class="header-section-number">31.0.8</span> Combining several levels into one: <code>fct_recode()</code></h3>
+<p>To demonstrate how to combine several factor levels into a single level, we’ll continue to use our ‘chickwts’ dataset. Now, I don’t know much about chicken feed, and there’s a good chance you know a lot more. However, let’s <em>assume</em> (even if it doesn’t make good sense with regards to chicken feed) you wanted to combine all the feeds with the name “bean” in it to a single category and you wanted to combine “linseed” and “sunflower”” into the category “seed”. This can be simply accomplished with <code>fct_recode</code>. In fact, below, you see we can rename all the levels to a simpler term (the values on the left side of the equals sign) by re-naming the original level names (the right side of the equals sign). This code will create a new column, called <code>feed_recode</code> (accomplished with <code>mutate()</code>). This new column will combine “horsebean” and “soybean feeds”, grouping them both into the larger level “bean”. It will similarly group “sunflower” and “linseed” into the larger level “seed.” All other feed types will also be renamed. When we look at the summary of this new column by using <code>tabyl()</code>, we see that all of the feeds have been recoded, just as we specified! We now have four different feed types, rather than the original six.</p>
+<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="working-with-factors.html#cb237-1" aria-hidden="true" tabindex="-1"></a><span class="do">## we can use mutate to create a new column</span></span>
+<span id="cb237-2"><a href="working-with-factors.html#cb237-2" aria-hidden="true" tabindex="-1"></a><span class="do">## and fct_recode() to:</span></span>
+<span id="cb237-3"><a href="working-with-factors.html#cb237-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 1. group horsebean and soybean into a single level</span></span>
+<span id="cb237-4"><a href="working-with-factors.html#cb237-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 2. rename all the other levels.</span></span>
+<span id="cb237-5"><a href="working-with-factors.html#cb237-5" aria-hidden="true" tabindex="-1"></a>chickwts <span class="sc">%&gt;%</span></span>
+<span id="cb237-6"><a href="working-with-factors.html#cb237-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">feed_recode =</span> <span class="fu">fct_recode</span>(feed,</span>
+<span id="cb237-7"><a href="working-with-factors.html#cb237-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;seed&quot;</span>    <span class="ot">=</span>   <span class="st">&quot;linseed&quot;</span>,</span>
+<span id="cb237-8"><a href="working-with-factors.html#cb237-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;bean&quot;</span>    <span class="ot">=</span>   <span class="st">&quot;horsebean&quot;</span>,</span>
+<span id="cb237-9"><a href="working-with-factors.html#cb237-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;bean&quot;</span>    <span class="ot">=</span>   <span class="st">&quot;soybean&quot;</span>,</span>
+<span id="cb237-10"><a href="working-with-factors.html#cb237-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;meal&quot;</span>    <span class="ot">=</span>   <span class="st">&quot;meatmeal&quot;</span>,</span>
+<span id="cb237-11"><a href="working-with-factors.html#cb237-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;seed&quot;</span>    <span class="ot">=</span>   <span class="st">&quot;sunflower&quot;</span>,</span>
+<span id="cb237-12"><a href="working-with-factors.html#cb237-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;casein&quot;</span>  <span class="ot">=</span>   <span class="st">&quot;casein&quot;</span></span>
+<span id="cb237-13"><a href="working-with-factors.html#cb237-13" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
+<span id="cb237-14"><a href="working-with-factors.html#cb237-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(feed_recode)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_79" alt="" />
+<p class="caption">fct_recode() can be used to group multiple levels into a single level and/or to rename levels</p>
+</div>
+</div>
+<div id="converting-numeric-levels-to-factors-ifelse-factor" class="section level3" number="31.0.9">
+<h3><span class="header-section-number">31.0.9</span> Converting numeric levels to factors: <code>ifelse()</code> + <code>factor()</code></h3>
+<p>Finally, when working with factors, there are times when you want to convert a numeric variable into a factor. For example, if you were talking about a dataset with BMI for a number of individuals, you may want to categorize people based on whether or not they are underweight (BMI &lt; 18.5), of a healthy weight (BMI between 18.5 and 29.9), or obese (BMI &gt;= 30). When you want to take a numeric variable and turn it into a categorical factor variable, you can accomplish this easily by using <code>ifelse()</code> statements. <code>if{}</code> statements and <code>else{}</code> statements were covered in an earlier lesson. Here we combine those two ideas. Within a single statement we provide R with a condition: <code>weight &lt;= 200</code>. With this, we are stating that the condition is if a chicken’s weight is less than or equal to 200 grams. Then, if that condition is true, meaning if a chicken’s weight is less than or equal to 200 grams, let’s assign that chicken to the category <code>low</code>. Otherwise, and this is the <code>else{}</code> part of the <code>ifelse()</code> function, assign that chicken to the category <code>high</code>. Finally, we have to let R know that weight_recode is a factor variable, so we call factor() on this new column. This way we take a numeric variable (<code>weight</code>), and turn it into a factor variable (<code>weight_recode</code>).</p>
+<div class="sourceCode" id="cb238"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb238-1"><a href="working-with-factors.html#cb238-1" aria-hidden="true" tabindex="-1"></a><span class="do">## convert numeric variable to factor</span></span>
+<span id="cb238-2"><a href="working-with-factors.html#cb238-2" aria-hidden="true" tabindex="-1"></a>chickwts <span class="sc">%&gt;%</span></span>
+<span id="cb238-3"><a href="working-with-factors.html#cb238-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">weight_recode =</span> <span class="fu">ifelse</span>(weight <span class="sc">&lt;=</span> <span class="dv">200</span>, <span class="st">&quot;low&quot;</span>, <span class="st">&quot;high&quot;</span>),</span>
+<span id="cb238-4"><a href="working-with-factors.html#cb238-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">weight_recode =</span> <span class="fu">factor</span>(weight_recode)) <span class="sc">%&gt;%</span></span>
+<span id="cb238-5"><a href="working-with-factors.html#cb238-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabyl</span>(weight_recode)</span></code></pre></div>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_84" alt="" />
+<p class="caption">converting a numeric type variable to a factor</p>
+</div>
+</div>
+<div id="conclusions-2" class="section level3" number="31.0.10">
+<h3><span class="header-section-number">31.0.10</span> Conclusions</h3>
+<p>This lesson has covered how to work with factors (categorical) variables in R using the <code>forcats</code> package in R. In line with the previous few lessons, the best way to learn how to work with factors, is to actually work with factors. Play around with the examples here and continue to practice using this type of variable! You’ll come across factors regularly as you analyze data!</p>
+</div>
+<div id="additional-resources-8" class="section level3" number="31.0.11">
+<h3><span class="header-section-number">31.0.11</span> Additional Resources</h3>
+<ul>
+<li><a href="http://r4ds.had.co.nz/factors.html">r4ds : Chapter 15 - Factors</a> by <a href="http://hadley.nz/">Hadley Wickham</a></li>
+<li><a href="https://forcats.tidyverse.org/">forcats</a>, part of the <a href="https://www.tidyverse.org/">tidyverse</a></li>
+<li><a href="https://blog.rstudio.com/2016/08/31/forcats-0-1-0/">forcats blog post</a> by <a href="http://hadley.nz/">Hadley Wickham</a></li>
+<li><a href="https://peerj.com/preprints/3163/">Wrangling Categorical Data in R</a> by <a href="http://www.science.smith.edu/~amcnamara/">Amelia McNamara</a> &amp; <a href="https://www.smith.edu/academics/faculty/nicholas-horton">Nicholas J Horton</a></li>
+</ul>
+<p>Note: <a href="https://peerj.com/preprints/3163/">Wrangling Categorical Data in R</a> is <strong>full</strong> of really great examples and goes into further depth than what is covered here. This is a <em>great</em> resource to get more practice working with categorical data (factors) in R.</p>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="working-with-strings.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="working-with-dates.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"toc_depth": 4
+});
+});
+</script>
+
+</body>
+
+</html>

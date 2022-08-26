@@ -7,6 +7,10 @@ bibliography: book.bib
 biblio-style: apalike
 link-citations: yes
 favicon: assets/DataTrail_favicon.ico
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
 ---
 
 

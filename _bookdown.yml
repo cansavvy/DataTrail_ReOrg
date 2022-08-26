@@ -103,7 +103,6 @@ rmd_files: ["index.Rmd",
             "07_build_a_resume_11_remote_jobs.Rmd",
             "07_build_a_resume_12_interviews.Rmd",
             "07_build_a_resume_13_meetups.Rmd",
-            "07_build_a_resume_14_take_home.Rmd",
             "About.Rmd"]
 new_session: yes
 bibliography: [book.bib]

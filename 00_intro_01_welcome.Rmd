@@ -91,19 +91,9 @@ Our goal here is also to create a supportive and inclusive learning experience. 
 
 ### How the program is organized
 
-This program is a series of online classes. They are designed to be used in many different ways so they can be useful for the most people possible. The courses and projects can be completed entirely online using nothing more than a web browser. The program is organized into
-
-* __Courses__: Courses are designed to be able to be done in about a month working in your spare time or day or two working full time. You can receive a certificate for each course and all courses are based on a pay-what-you-can model. Each course consists of:
-    * Text based tutorials and lessons
-    * Slides with the images from the tutorials
-    * Video tutorials that cover the same information as the lessons
-    * Ungraded exercises to practice what you have learned
-    * Graded quizzes to measure what you have learned
-    * Projects to help you build a portfolio for showing what you've learned
-* __Course Set__: A Course Set is a group of courses that form credentials.
+This program is a series of online classes. They are designed to be used in many different ways so they can be useful for the most people possible. The courses and projects can be completed entirely online using nothing more than a web browser.
 
 To keep up on the latest information about the program, courses and more go to https://www.DataTrail.org/.
-
 
 ### How this course is graded
 

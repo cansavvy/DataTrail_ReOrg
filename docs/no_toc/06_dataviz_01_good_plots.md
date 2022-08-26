@@ -245,9 +245,3 @@ To see examples of beautiful data visualizations, check out Nathan Yau's [Flowin
 To read more about red-green color blindness, read more information [here](http://www.colourblindawareness.org/colour-blindness/).
 
 To read more about Data Visualization and the goals of Data Visualization read Elijah Meek's [Data Visualization Fast and Slow](https://medium.com/@Elijah_Meeks/data-visualization-fast-and-slow-d2653d4850b0) - links to the rest of the posts in this series are included there.
-
-### Slides and Video
-
-![Good Plots](https://youtu.be/-QDzybJJExc)
-
-* [Slides](https://docs.google.com/presentation/d/1j6GOwIwvDwwmec6PaQlQGyYORn3a0j4EiZHoUbQN5_w/edit?usp=sharing)

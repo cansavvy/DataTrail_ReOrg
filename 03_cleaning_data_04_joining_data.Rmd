@@ -105,20 +105,63 @@ But, to make these decisions, you will need to be aware of what your data look l
 
 ### Row binding
 
-In some cases it may be more appropriate to merely stack rows on top of each other instead of doing a join. Let's say our datasets have most of the same columns but different 
+In some cases it may be more appropriate to merely stack rows on top of each other instead of doing a join. Let's say our datasets have most of the same columns but different rows.
+
+![](https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&pageid=g1483518923e_0_0)
 
 To do this, we could use a row bind. Look up `?dplyr::bind_rows` to see this function's help page. Let's use this function.
+
+```{r}
+bind_rows(df_a, df_b)
+```
 
 If we want to keep track of which row of data came from where, we should use the `.id` argument to specify a column name where this info will be kept.
 
 ```{r}
-
+bind_rows(df_a, df_b, .id = "dataset")
 ```
 
-Note that the `id` column is not super easy to understand in that it has `"1"` and `"2"` when it really means `ffood` and `ffood_may`. So to fix this, we can specify these names of these dataframes. Look at the examples in the documentation and try to do this so that the `id` column says `ffood` and `ffood_may` instead of `"1"` and `"2"`.
+Note that the `dataset` column is not super easy to understand in that it has `"1"` and `"2"` when it really means `df_a` and `df_b`. So to fix this, we can specify these names of these dataframes. Look at the examples in the documentation and try to do this so that the `id` column says `ffood` and `ffood_may` instead of `"1"` and `"2"`.
 
 ```{r}
-
+bind_rows("df_a" = df_a, "df_b" = df_b, .id = "dataset")
 ```
 
 ### Column binding
+
+Let's say we have information about the same rows, but different variables. This would be a good use of the `dplyr::bind_cols()`
+
+![](https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&pageid=g1483518923e_0_6)
+
+For this example, we will need a different dataset. We need two datasets that represent the same cases (or samples). Note that when we make `df_c` below, we know that the samples are the same in both datasets and that they are in the same order.
+
+```{r}
+df_a <- data.frame(sample = c("A", "B", "C", "D"),
+                   number = c(2, 4, 4.4, 3.1))
+df_c <- data.frame(sample = c("A", "B", "C", "D"),
+                   animal = c("dog", "cat", "bird", "snake"))
+```
+
+Before we merge these two datasets, we would want to make aboslutely sure that our samples are in the same order in each. Otherwise we will be combining data in a way that doesn't make sense and could throw off the rest of our analysis! (Eeek!)
+
+We can use our friend, the function `all.equal()` to check that we are working with the same samples and in the same order.
+
+```{r}
+all.equal(df_a$sample, df_c$sample)
+```
+
+Now we know we can bind_cols() of `df_a` and `df_c` safely.
+
+```{r}
+bind_cols(df_a, df_c)
+```
+
+Note that because our `sample` columns are named the same thing in both datasets, they've now been renamed to `sample...1` and `sample...3`. But this isn't super helpful or descriptive. We will probably want to use `dplyr::rename()` to make these names more informative OR since we've confirmed that they contain identical information, its probably best we drop one of them using `dplyr::select()`.
+
+```{r}
+bind_cols(df_a, df_c) %>%
+  rename(sample = sample...1) %>%
+  select(-sample...3)
+```
+
+Now we have all these data in one dataset! Now you have all of these different tools in your tool belt to combine data frames that contain related information!

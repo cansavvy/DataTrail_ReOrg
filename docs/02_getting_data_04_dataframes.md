@@ -1,7 +1,6 @@
 
 
 
-
 # Data Frames
 
 A majority of the time that you are working with data in R you will have it in the form of a data frame.
@@ -14,7 +13,7 @@ A data frames' size can be describe in terms of rows (across) and columns (up/do
 ottrpal::include_slide("https://docs.google.com/presentation/d/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc/edit#slide=id.g313d649efe_0_38")
 ```
 
-<img src="02_getting_data_04_dataframes_files/figure-html//1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc_g313d649efe_0_38.png" width="100%" />
+<img src="resources/images/02_getting_data_04_dataframes_files/figure-html//1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc_g313d649efe_0_38.png" width="100%" />
 
 \*Much of this chapter is paraphrased or inspired by [content from the Childhood Cancer Data Lab](https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/01-intro_to_base_R.Rmd).
 
@@ -202,6 +201,6 @@ In this quick plot example, we can show how `Sepal Length` is related to `Sepal 
 plot(iris$Sepal.Length, iris$Sepal.Width, col = iris$Species)
 ```
 
-<img src="02_getting_data_04_dataframes_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+<img src="resources/images/02_getting_data_04_dataframes_files/figure-html/unnamed-chunk-10-1.png" width="672" />
 
 Don't worry too much about the specifics of plotting. We will go into much more detail about how to make visuals of your data later. This is just to illustrate how R makes data visuals easy to make!

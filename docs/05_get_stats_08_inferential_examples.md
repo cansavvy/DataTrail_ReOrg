@@ -1,11 +1,6 @@
+
+
 # Inference: Examples
-
-<!-- Google Slide ID -->
-<!-- 11rrwsdm99qI2VMXAr59cHV6J-0Njk5-tfDtsjz_zGpQ -->
-
-<!-- Include a slide PNG with Page_ID from this Slide Deck: -->
-<!-- ![](https://docs.google.com/presentation/d/11rrwsdm99qI2VMXAr59cHV6J-0Njk5-tfDtsjz_zGpQ/export/png?id=11rrwsdm99qI2VMXAr59cHV6J-0Njk5-tfDtsjz_zGpQ&pageid=PAGE_ID) -->
-<!-- or use  `didactr::gs_slide_df("11rrwsdm99qI2VMXAr59cHV6J-0Njk5-tfDtsjz_zGpQ")$png_markdown` -->
 
 In the last lesson, we went through a number of the basics of simple linear regression, discussed confounding, introduced multiple linear regression, and discussed analytical approaches built off of linear regression. Through that lesson and in the swirl modules in the quiz, we went through a few simple examples; however, since linear regression is the foundation of *tons* of work being done in the real world, we wanted to walk through two additional examples - which we'll call case studies - in this lesson.
 

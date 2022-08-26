@@ -1,7 +1,6 @@
 
 
 
-
 # Projecting from a Chromebook
 
 As a data scientist you will often be asked to give presentations on your findings to your employers, to your colleagues, or at workshops or conferences. So you will need to learn to connect your Chromebook to a projector.

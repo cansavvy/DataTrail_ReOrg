@@ -131,10 +131,3 @@ gganimate(gg, "output.gif")
 
 * [plotly](https://plotly-book.cpsievert.me/) documentation
 * [gganimate](https://github.com/dgrtwo/gganimate) documentation
-
-
-### Slides and Video
-
-![Advanced Data Visualization](https://youtu.be/JNQy0y5NUX4)
-
-  * [Slides](https://docs.google.com/presentation/d/1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0/edit?usp=sharing)

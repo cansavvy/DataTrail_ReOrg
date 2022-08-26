@@ -12,9 +12,9 @@ In each project, we'll aim to get you started and to ask questions that will hel
 
 This project will require you to:
 
-* carry out an exploratory data analysis
-* wrangle data
-* generate exploratory plots
-* generate explanatory plots
+* Carry out an exploratory data analysis
+* Wrangle data
+* Generate exploratory plots
+* Generate explanatory plots
 
 You can access the project by going to the exercise accompanying this lesson.

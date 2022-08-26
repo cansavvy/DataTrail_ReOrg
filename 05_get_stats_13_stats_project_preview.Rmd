@@ -4,14 +4,10 @@ In each project, we'll aim to get you started and to ask questions that will hel
 
 This project will require you to:
 
-* import data from the American Time Use Survey
-* clean and tidy the data
-* visualize the data
-* carry out an exploratory data analysis
-* carry out an inferential analysis
+* Import data from the American Time Use Survey
+* Clean and tidy the data
+* Visualize the data
+* Carry out an exploratory data analysis
+* Carry out an inferential analysis
 
 You can access the project by going to the exercise accompanying this lesson.
-
-### Slides
-
-* [Slides](https://docs.google.com/presentation/d/1HwadkXFrjPNRdQ1NKN8fW92vSBgsD4MK_sjhvnWrVac/edit?usp=sharing)

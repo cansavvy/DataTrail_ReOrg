@@ -112,10 +112,3 @@ Similar to how we approached learning about making figures in R, we've demonstra
 [Karl Broman's approach to tables in R](http://kbroman.org/knitr_knutshell/pages/figs_tables.html)
 [knitr documentation](https://cran.r-project.org/web/packages/knitr/knitr.pdf)
 [kableExtra package documentation](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html)
-
-
-### Slides and Video
-
-![Tables in R](https://youtu.be/EQUi8P1CQLY)
-
-* [Slides](https://docs.google.com/presentation/d/1vjyG1vibsmtXrPA1hs2HS3MfjsPMjRDEmBEsVlgkIxg/edit?usp=sharing)

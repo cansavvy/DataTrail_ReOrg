@@ -7,7 +7,7 @@ As such, this exercise has been generated to practice your, GitHub, terminal nav
 
 #### RStudio Cloud Setup
 
-- Go to the [Cloud-based Data Science Space on RStudio Cloud](https://rstudio.cloud/spaces/20345/join?access_code=n4b8J1s0XmWctSy83%2BEXbGAwj7rKcuFMI7WJEJFD){target="_blank"}
+- Go to the [DataTrail Space on RStudio Cloud](https://rstudio.cloud/spaces/20345/join?access_code=n4b8J1s0XmWctSy83%2BEXbGAwj7rKcuFMI7WJEJFD){target="_blank"}
 - Click on the "Projects" tab at the top of the workspace
 - Make a copy of the project: `data_tidying_project`
 

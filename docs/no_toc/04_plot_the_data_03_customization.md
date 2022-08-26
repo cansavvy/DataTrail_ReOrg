@@ -1,7 +1,6 @@
 
 
 
-
 # Customization in ggplot2
 
 In the previous lesson, we walked through the steps of generating a number of different graphs (using different `geoms`) in `ggplot2`. We discussed the basics of mapping variables to your graph to customize its appearance or aesthetic (using size, shape, and color within `aes()`. In this lesson, we'll build on what we've previously learned to really get down to how to customize your plots so that they're as clear as possible for communicating your results to others.

@@ -1,3 +1,4 @@
+
 # How To Write a Blog Post
 
 Blog posts are pieces of writing that are posted to and shared on the Internet. For data scientists, writing blog posts can help to share ideas, projects, and information with others while reading blog posts can help you learn how others analyze data, figure out what new tools are out there, and obtain new skills and tools that will be helpful to you as a data scientist. Thus, learning where to find data science blogs and how to write a good blog post is an important skill.

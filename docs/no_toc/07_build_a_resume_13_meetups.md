@@ -1,3 +1,4 @@
+
 # Data Science Meetups
 
 A lesson on attending data science meetups is included in this course since these gatherings can be great places to meet people in the field, to network, and *possibly* to find jobs. However, the main purpose of meetups is not to find a job, thus, we've included this lesson at the end of the course. Here, we suggest attending meetups if you're looking for a job but more importantly *before* you start looking for a job. Having connections and a network to help you *before* you actually need one can be incredibly helpful. In this lesson, we'll discuss where to look for data science meetups and what you can expect if you attend one. We'll finish off by briefly discussing what data science meetups have to do with job searches

@@ -1,3 +1,4 @@
+
 # Reshaping Data
 
 ### Data Formats
@@ -216,7 +217,7 @@ To do this, you can use the `t()` function. But! Note that although the `t()` fu
 
 
 ```r
-# We need to load this so we can use %>% 
+# We need to load this so we can use %>%
 library(magrittr)
 
 iris_transposed <- iris %>%

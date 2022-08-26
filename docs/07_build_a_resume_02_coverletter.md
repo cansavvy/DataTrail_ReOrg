@@ -1,3 +1,4 @@
+
 # Cover Letters
 
 Cover letters are a supplement to your resume with a different goal. While the goal of your resume is to provide hiring managers with information about your qualifications for the position, the goal of a cover letter is meant to **demonstrate that you are the right person for the job and convey your personality while still being professional**. As such, the cover letter you write should be tailored specifically for each and every job application you submit.

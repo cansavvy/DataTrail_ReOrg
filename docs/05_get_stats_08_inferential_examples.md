@@ -1,11 +1,6 @@
+
+
 # Inference: Examples
-
-<!-- Google Slide ID -->
-<!-- 11rrwsdm99qI2VMXAr59cHV6J-0Njk5-tfDtsjz_zGpQ -->
-
-<!-- Include a slide PNG with Page_ID from this Slide Deck: -->
-<!-- ![](https://docs.google.com/presentation/d/11rrwsdm99qI2VMXAr59cHV6J-0Njk5-tfDtsjz_zGpQ/export/png?id=11rrwsdm99qI2VMXAr59cHV6J-0Njk5-tfDtsjz_zGpQ&pageid=PAGE_ID) -->
-<!-- or use  `didactr::gs_slide_df("11rrwsdm99qI2VMXAr59cHV6J-0Njk5-tfDtsjz_zGpQ")$png_markdown` -->
 
 In the last lesson, we went through a number of the basics of simple linear regression, discussed confounding, introduced multiple linear regression, and discussed analytical approaches built off of linear regression. Through that lesson and in the swirl modules in the quiz, we went through a few simple examples; however, since linear regression is the foundation of *tons* of work being done in the real world, we wanted to walk through two additional examples - which we'll call case studies - in this lesson.
 
@@ -206,9 +201,3 @@ In this lesson we walked through two real-life examples of inference being used 
 - [Early Childhood Education by Television: Lessons from *Sesame Street*](https://pubs.aeaweb.org/doi/pdfplus/10.1257/app.20170300), by Melissa S. Kearney and Phillip B. Levine
 - [Why Kids Who Watched *Sesame Street* Did Better In School](https://qz.com/1554895/why-kids-who-watched-sesame-street-did-better-in-school/), article in Quartz by Annabelle Timsit
 - [Two Happiness Puzzles](https://www.aeaweb.org/articles?id=10.1257/aer.103.3.591), by Angus Deaton and Arthur A. Stone
-
-### Slides and Video
-
-![Inference: Examples](https://youtu.be/Xpef4tULTH4)
-
-  - [Slides](https://docs.google.com/presentation/d/11rrwsdm99qI2VMXAr59cHV6J-0Njk5-tfDtsjz_zGpQ/edit?usp=sharing)

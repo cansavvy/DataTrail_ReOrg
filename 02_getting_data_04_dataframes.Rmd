@@ -107,7 +107,7 @@ iris[, 3]
 
 Now that we have some basics down, let's preview how we can easily make visuals with R. "A picture is worth a thousand words" is also true when it comes to data!
 
-In this quick plot example, we can show how `Sepal Length` is related to `Sepal Width` by extracting the data using `$`. Additionally we can color code the data points by `Species` by using the `col` arugment.
+In this quick plot example, we can show how `Sepal Length` is related to `Sepal Width` by extracting the data using `$`. Additionally we can color code the data points by `Species` by using the `col` argument.
 
 ```{r}
 plot(iris$Sepal.Length, iris$Sepal.Width, col = iris$Species)

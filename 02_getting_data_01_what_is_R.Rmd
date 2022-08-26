@@ -78,12 +78,6 @@ When you open a project in RStudio Cloud, you will see a Console pane that is im
 
 ![Locating the Console in RStudio Cloud](https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&pageid=g3aa507622a_0_0)
 
-### File system setup
-
-We're going to be using the same file system setup as in the previous lesson. The file system is shown below. Only the `raw_data` and `raw_code` folders contain files. In this lesson, we will be working within this file system to illustrate useful file manipulation functions within R.
-
-
-![Example file system](https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&pageid=g3aa507622a_0_104)
 
 ### Important functions
 

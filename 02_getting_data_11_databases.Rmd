@@ -63,3 +63,4 @@ There are endless numbers of places on the internet to get data. Above are some 
 - [Mapping police violence](https://mappingpoliceviolence.us/)
 - [Center for Disease Control Data](https://www.cdc.gov/datastatistics/index.html)
 - [Forensic science data portal](https://forensicstats.org/data/)
+- [Google Public Data Explorer](https://www.google.com/publicdata/directory)

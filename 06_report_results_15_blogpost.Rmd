@@ -150,22 +150,22 @@ Now that we've walked through the main types of blog posts and why you would wan
 
 #### Do
 
-* have an informative title
-* include hyperlinks and references to others' work
-* separate sections with headers
-* include good figures
-* use clear, concise language
-* proofread
-* blog about things that are interesting to you!
+* Have an informative title
+* Include hyperlinks and references to others' work
+* Separate sections with headers
+* Include good figures
+* Use clear, concise language
+* Proofread
+* Blog about things that are interesting to you!
 
 #### Don't
 
-* be a jerk
-* use a click-baity title
-* spend all your time making sure it's absolutely perfect
-* leave out important details
-* disparage others' work
-* be afraid to put your work out there!
+* Be a jerk
+* Use a click-baity title
+* Spend all your time making sure it's absolutely perfect
+* Leave out important details
+* Disparage others' work
+* Be afraid to put your work out there!
 
 
 ### Additional Resources
@@ -174,10 +174,3 @@ For access to blog posts written by R users, check out the following two resourc
 
 * [R-bloggers](https://www.r-bloggers.com/)
 * [R Weekly](https://rweekly.org/)
-
-
-### Slides and Video
-
-![How To Write a Blog Post](https://www.youtube.com/watch?v=fkfn9ZRKYc0)
-
-* [Slides](https://docs.google.com/presentation/d/1CoJJ4zEULcwzIcII6YU_ymO5mmdgD-HjVDdWEPwnm5U/edit?usp=sharing)

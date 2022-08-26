@@ -1,0 +1,483 @@
+
+
+
+
+# Account Setup
+
+Before we can get started doing fun things with data we need to make sure you are set up to use all of the different accounts that you will need throughout the course. We will tell you briefly what each of these accounts is used for and how to set it up now. If you don't know what each of these accounts is for exactly, don't worry! We will walk you through everything you need to know.
+
+### Choosing a Username
+
+Choosing an appropriate username is important. Some combination of your first and last name is a good idea. For example, if your name were Jane Doe, a username such as "JaneDoe" or "Jane.Doe" would work. If the first username you attempt is taken, you can try another, similar username. In this case, maybe try  "JDoe".
+
+But, be sure that whatever name you choose, you would be comfortable sharing it with your boss or family member. Usernames with nicknames or profanity are *not* a good idea.
+
+
+![What to Avoid in Usernames](https://docs.google.com/presentation/d/1mQMEdR4opFzuReP9i7te5v8T-kyDNNklHPvQ2OnzZpQ/export/png?id=1mQMEdR4opFzuReP9i7te5v8T-kyDNNklHPvQ2OnzZpQ&pageid=g2f53e3b687_0_60)
+
+### Using a Consistent Username
+
+Remembering different usernames for different accounts is difficult. It is best to make your life easy and use the same username whenever possible. We will make your life easy by using the Google Account you set up in the next section whenever possible. When it's not possible to log in with Google, then we suggest you try to use the same username for each account.
+
+### Accounts
+
+To give you an idea of where we're going, the first account (and arguably the most important account) you set up in the next lesson will be a [Google account](https://mail.google.com/mail). After that we will walk you through the steps to get you set up with accounts on:
+
+*  [LinkedIn](https://www.linkedin.com) - this is a site to share information about yourself with employers.
+*  [Twitter](https://twitter.com/) - this is a social media site that we will use to share our data science products and get support from the data science community.
+*  [Basecamp](https://Basecamp.com/) - this is a website where you will be able to chat online with your fellow students and instructors.
+*  [RStudio Cloud](rstudio.cloud) - this is a website where you can use Rstudio, the main tool to learn data science.
+*  [GitHub](https://github.com) - this is a website where we will share the results of our data science projects with each other and the world.
+
+
+![Accounts](https://docs.google.com/presentation/d/1mQMEdR4opFzuReP9i7te5v8T-kyDNNklHPvQ2OnzZpQ/export/png?id=1mQMEdR4opFzuReP9i7te5v8T-kyDNNklHPvQ2OnzZpQ&pageid=g2f5b6fa674_0_0)
+
+
+## Google Account Setup
+
+The first and most important account we need to set up will be a Google account. You will need a Google account to be able to use free Google products. These Google products, such as Gmail, Google Docs, Google Sheets, and Google Slides will be useful in many of the Data Science projects you complete. The Google account will also be useful for letting you get access to other
+websites we will use in the program.
+
+
+![Google Products](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2dda417cfe_0_1)
+
+If you already have a Google account with an appropriate username that you would like to use throughout this course, you can skip the next section and move to the "Log off Guest Chromebook" section. However, it's probably best to create a new account dedicated to all your Data Science accounts, many of which you will set up in the next lesson.
+
+### Getting a Google Login
+
+To get a Google account, you will first want to open a new tab in your current Chrome session. To do this, you'll first click on the small gray box to the right of the tab you currently have open.
+
+
+![Google website](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2dd9e5795f_0_1)
+
+Once this new tab is open, type in 'www.gmail.com' in the web address bar at the top of your Chrome session. After clicking enter, you will be brought to a Login screen. Here, you will click on "More options"
+
+
+![Google Sign in](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2dda417cfe_0_13)
+
+You will then click on "Create account" to start the process of getting a Google Login.
+
+
+![Google Create Account](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2dd9e5795f_0_11)
+
+Begin filling in the blank spaces in the box to the right with your information. Google will alert you if the username you've chosen has already been taken. Once you've filled out all the blanks, click on "Next Step" at the bottom right.
+
+
+![Google Blank Form](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2dd9e5795f_0_24)
+
+You'll be asked to read the "Privacy and Terms." To scroll through the entire document, click on the blue arrow in the middle at the bottom of the document. After reading over the Privacy and Terms, click "I AGREE" to continue.
+
+You will then be asked to verify your account. To do so, ensure that a valid phone number for you is in the 'Phone number' box. Select whether you prefer to be contacted by "Text message (SMS)" or 'Voice Call'. Click 'Continue' once the information has been entered. You will then be sent a verification code by text message or by phone call, depending on your choice to this question. Enter the verification code into the box on the screen and click "Continue".
+
+Congratulations!! You now have a Google username and account! Be sure to remember your username and password! This will be used for your email address (Gmail) and all other Google products.
+
+
+![Google Welcome!](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2dd9e5795f_0_67)
+
+### Log Off Guest Chromebook
+
+At this point, you'll want to log off the Chromebook you're using as a Guest and sign in using your Google Username. To do so, click on 'Guest' at the very bottom right-hand of the screen. Click 'Exit guest' on the screen that pops up. This will log you off of the Chromebook so you can re-login in using your Google account.
+
+
+![Chromebook Log Off](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2f9811c9b5_0_0)
+
+### Re-Login using Google Account
+
+You will now be on the Chromebook login screen. To sign in using your Google account, click 'Add person' at the bottom of the login screen.
+
+
+![Chromebook Add Person](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2f9811c9b5_0_4)
+
+A 'Sign in to your Chromebook' screen will open.
+
+
+![Chromebook Sign in](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2f9811c9b5_0_19)
+
+Enter your new Google account name here. Click 'Next'. Enter your password. Click 'Next.' You will now be logged on. Anytime you work on this Chromebook now, you will simply log in using your new Google account.
+
+
+## Using Gmail for Email Communications
+
+Communication with your clients or your employer is an important part of being a data scientist.  E-mail, short for electronic mail, is an important part of the communication picture because of its flexibility.  You can write messages of varying lengths, use formatting if you desire, and attach documents as needed.  Depending on your particular work situation, email may be your main means of communicating about your work.
+
+When using a Chromebook on the cloud, the email application of choice is Gmail.  [Gmail](https://www.gmail.com/) is a free e-mail service provided by Google that provides users with a gigabyte of free storage for messages and includes the ability to easily search for specific emails. Gmail also automatically organizes related emails into a conversational thread, meaning that a message and all replies to that message are stored together.
+
+Gmail has many of similarities with other web-based email clients, such as Hotmail and Yahoo! Mail.  If you regularly use email through an internet browser, much of the following will be review.
+
+### Accessing your Gmail Inbox
+
+Gmail is included with your Google account, so you should already have access to Gmail through the account you set up in your first introductory course.  Your email address will be **username@gmail.com**, where username is the username of your Google account.  For example, if your user name is Jane.Doe then your email address would be Jane.Doe@gmail.com.  This is one reason to choose an appropriate user name, since this email address will be visible to anyone you communicate with over email!
+
+You can access Gmail by going to the address ["https://www.gmail.com"](https://www.gmail.com) or by clicking on the start menu located on the lower left hand corner of your Chromebook and searching for "Gmail". If you are not already logged into your account, you will see a prompt similar to the one here.  
+
+
+![Login screen](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g34ff7bbfc9_0_5)
+
+After inputting your Google username and password you will be able to see your inbox.  If you are already logged into your Google account, you will be brought immediately to your inbox without the need to first log in.
+
+
+![Inbox](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g34ff7bbfc9_0_10)
+
+Your inbox shows you all of the messages you've received through Gmail.  Messages you have already read are shaded gray, while those you haven't read yet are white.  You can open a message to read it by clicking on the message stripe.  
+
+By default, Gmail organizes your emails into three groups: Primary, Social, and Promotions.  You can switch between these groups using the tabs at the top of the screen.  
+
+
+![Tabs](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_31)
+
+The "Primary" tab will contain the majority of the email messages that you will care about reading and responding to.  The "Social" tab will contain messages related to social media, such as messages from Twitter, LinkedIn, and Facebook.  The "Promotions" tab will contain messages that include offers for purchasing products or signing up for services.  Gmail uses machine learning to put new messages into the appropriate tab.  As mentioned before, the "Primary" tab will be the main focus of using your email as a data scientist.
+
+One nice feature of Gmail is that it organizes related emails into a conversational thread.  The message indicated by the red arrow is an example of a conversational thread, where an original message and all of its replies are grouped together.
+
+
+![Inbox indicating thread](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_23)
+
+By clicking on this message, you can see all of the individual messages that make up the email conversation, and can open each individual message by clicking on it.
+
+
+![Example email thread](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_16)
+
+### Composing and Sending Emails
+
+Let's say you want to send an email to a client. The first step is to start a new message by pressing the "Compose" button on the top left corner of your inbox.
+
+
+![Compose button](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_43)
+
+A box will pop-up where you can enter the recipient's email address (in the *To* field), the subject of the email, and the content of the email.
+
+
+![New message](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g34ff7bbfc9_0_15)
+
+You can send an email to multiple people by entering all the emails one after another in front of *To*. You can also add recipients in the Cc (carbon copy) or Bcc (blind carbon copy) fields by clicking on either of these links to the right of the *To* area. Recipients who are copied (Cc) will receive the email as if it is addressed to them; this option in usually used if you want them to be aware of the message but aren't expecting them to take any action or reply.  Recipients who are blind copied (Bcc) will receive the message, but their email addresses won't be visible to other recipients of the email.  This option is often used when sending an email to a long list of recipients where you don't want each individual to see the other people on the email.
+
+You should also include a short informative subject in the *Subject* area so that the recipient will know what the contents of the email are about.  This is also helpful later when you may want to search your email to find a particular message.
+
+There are also a few buttons in the menu bar at the very bottom of the email box that are very helpful. The attachment button, which looks like a paperclip, can be used to attach a file from your computer (such as an image, a document, or a video) to your email message.  
+
+
+![Attachment from computer](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_51)
+
+You can also attach a file from Google Drive to your message by clicking on the Google Drive button, which looks like a triangle. Google Drive is Google's file hosting service and you will learn more about it in a later lesson.
+
+
+![Attachment from Google Drive](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_64)
+
+You can send attachments up to 25 MB in size through Gmail. If you have more than one attachment, they can't add up to more than 25 total. If your file is greater than 25 MB, you can instead upload the file to Google Drive and share a link to the file over email instead of including it as an attachment.  
+
+Other options in this menu bar include inserting a photo (with the picture button), inserting a link (with the chain button), emojis (with the smiley face button), or even sending money (with the dollar sign button).
+
+
+![Other menu options](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_72)
+
+There are also many formatting options available for your email message, such as changing the font type and size, bolding text, including bullet lists, and more. These formatting options are similar to those available through Google Docs, which you will see in a later lesson, so we won't spend time on them now.  But you can find these options under the format button, which looks like an uppercase A with a line under it.
+
+
+![Formatting options](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_80)
+
+Finally, once you are ready to send your message, click the "Send" button at the bottom left of the message box. If you type an email but change your mind about sending it, you can delete the email by clicking on the trash can button in the bottom right corner of the new message box.  
+
+
+![Send or discard draft](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_92)
+
+If you close the new message box without deleting it, it will automatically be saved as a *draft* message, and you can find it under the "Drafts" link in the list of link on the left-hand side of your inbox.
+
+
+![Drafts](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_104)
+
+### Replying to a message
+
+To read an email message, simply click on the message stripe.  If you want to reply to the message, you can scroll to the bottom of the message to the reply box.  To reply, simply click in the box and start typing your response. After writing your response to the email click the send button and you are done!
+
+
+![Reply](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g34ff7bbfc9_0_45)
+
+To forward the message to someone else, click on the "Forward" link and type the new recipient's email address in the "To" area.  You can then click in the message box to add a note to the forwarded message.
+
+If there is more than one other person on the email, you will also have any option to "Reply to all", which means that your response will be sent to all the people who were on the original email. Use this option with caution, and only when you need all of the people to see your response.
+
+### Searching for specific messages
+
+To find a particular email message in your inbox, you can search using the search box at the top of the Gmail screen.  Searching your Gmail inbox is very similar to searching the internet using Google.  You can search by a word in subject of the email, the name of the person who sent the email, or the content of the email.  For example, to find all messages from John Doe, you could type "from:john.everyday.doe@gmail.com" in this search box.  To find messages that include the words "cancer data", you could type "cancer data" in this search box.
+
+
+![Search Box](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g34ff7bbfc9_0_50)
+
+If you click the down arrow next to the search box, you will open a window that allows more specific options, such as searching by either sender or recipient, searching for specific words in the subject line, or searching by whether the message includes or doesn't include certain words.  You can also specify specific dates to search for messages.
+
+
+![Advanced search](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g39e04bf3bc_2_130)
+
+### More specifics on using Gmail
+
+We have touched very briefly on some of the basics of using Gmail: accessing your account, sending and replying to messages, and searching for a particular message.  There are lots of other features of Gmail that you may want to explore now or at a future time. There are many good beginner tutorials on using Gmail on YouTube.com.
+
+Google also has extensive information on getting started with Gmail on their G Suite Learning Center, which can be found at the following web address: https://gsuite.google.com/learning-center/products/gmail/get-started/#!/
+In this tutorial, you can find additional information about creating and sending email messages, organizing your inbox, searching your email, and more!
+
+
+## Google Drive
+
+[Google Drive](https://www.google.com/drive/)  is a cloud storage service. It enables you to store files (including documents, data, images, videos, and presentation slides) online. You can also edit many of these files directly online, without needing to download them to your computer or upload them back to the cloud.  One of the major benefits of Google Drive is the ability for multiple people to edit the same files at the same time.  This makes Drive a useful tool for collaboration, with is very important to a data scientist.  
+
+### Accessing your Google Drive account
+
+Like Gmail and Calendar, Google Drive is included with your Google Account.  You can access your Drive account by going to the address ["https://www.google.com/drive/"](https://www.google.com/drive/) or by clicking on the start menu located on the lower left hand corner of your Chromebook and searching for "Drive". You will see a welcome screen like this.  
+
+
+![Drive welcome screen](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g350059f510_0_0)
+
+Click the "Go to Google Drive" button to be taken to your Drive account.  If you are already logged in to your Google account, you will go directly to Drive.  If not, you will be prompted to log in with the username and password for your Google account.  Here you can see Jane's Drive directory.  She currently has four documents stored on her Google Drive: a presentation in Google Slides, a dataset in Google Sheets, an image, and a document in Google Docs.  To open any document from drive, simply double-click on the document itself.
+
+
+![Google Drive directory](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g350059f510_0_10)
+
+### Organizing files in Google Drive
+
+In Jane's Drive account, you can see that she simply has each document shown individually without any file organization structure. This is fine when you have only a small number of documents.  However, if you use Google Drive to store lots of documents you will need a file structure to keep things organized and to quickly find the documents you need.  In general, we strongly suggest that you create folders to keep similar files together.
+
+In this course, we will simply go over the basics of organization in Google Drive. You will learn about good practices for organizing files for projects in a later course, which will include how to chose a folder structure and naming conventions for files and folders.  
+
+First, let's create a new folder.  Click the "New" button in the top left corner of the Google Drive home page and then select "Folder." A new window will open. Type the name of your folder, in this case "Cancer project," and click the blue "CREATE" button.
+
+
+![Create folder](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_12)
+
+You can now see this new folder under the "Folders" section of your Google Drive home page.  To access the files in this folder, you would double-click on the folder name.
+
+
+![Folders section](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_32)
+
+Now that you have created a folder, you can start adding files to it. Suppose you want to move the Google Slides presentation "Exploratory plots for cancer project" to this "Cancer project" folder. In the Google Drive home page find this presentation file and right click on it. A menu will open; choose the "Move to" option and then select the folder, "Cancer projects," that you want to move it to.  If don't already have a folder, you can create one in the menu by clicking on the folder icon.
+
+
+![Moving a File to a Folder on Google Drive](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_46)
+
+You can also drag a file to a folder. Just click the mouse button to select a file and while keeping the mouse button pushed down move the file over to the folder and release the button.
+
+### Creating files in Google Drive
+
+So far we have only moved existing files to a folder.  You can create a new file in Google Drive by clicking the "New" button in the top left corner of the Google Drive home page and then selecting the type of file you want to create.  You can choose a "Google Doc" for a word-processing document, a "Google Sheet" for a spreadsheet, a "Google Slides" for a presentation, or other choices from the "More" menu. Once you've selected your file type, a new window will open with your new file.  From here you can begin to edit your file; specific types of Google files will be covered in later lessons.  Files in Google Drive are automatically saved to the folder you are in when the file is created.  So if you create a new file from your home page, the file will be saved there.  If you create a new file the "Cancer project," the file will be saved to that folder.  Remember that you can always move a file to a particular folder as shown before.
+
+
+![Create file](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_62)
+
+### Uploading files to Google Drive
+
+You can also upload files or folders from your computer to Google Drive.  To do this, you again click the "New" button in the top left corner of the Google Drive home page and then select either "File upload" or "Folder upload."  Once selected, a window will open that will allow you to navigate to the file or folder you'd like to upload.
+
+
+![Upload file or folder](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_73)
+
+### Deleting Files and folders
+
+Deleting files and folders is easy on Google Drive. Simply right-click on the file you would like to delete and choose "Remove" from the menu. Be careful when deleting folders, though!  If you delete a folder, all the files in it will be deleted as well.
+
+
+![Delete file](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_84)
+
+You can delete multiple files or folders at once by first selecting them all while holding the Ctrl key. Once selected, you can right-click and delete them with the "Remove" option on the menu.
+
+### File Recovery
+
+If you do accidentally delete a file or change your mind once it's deleted, recovering a removed file on Google Drive is straight-forward. Deleted files are moved to the Trash folders within Google drive.  To recover a file, simply click on the "Trash" link on the left-hand menu.
+
+
+![Trash folder](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_93)
+
+In Trash you can see a list of all the files that you have previously removed. Right-click on the file you want to recover and select "Restore."  The file when they be returned to its original folder on Google Drive.  If you're sure that you won't need the file ever again, you can clear some storage space by right-clicking on the file and choosing "Delete forever" from the menu. This option is *only* available within the "Trash" folder.  Use this option with caution!  By doing this your files will be deleted forever from your drive and can no longer be recovered.
+
+### File Sharing
+
+One of the biggest advantages of Google Drive is the ability to share files and folders with other people. You can share individual files and folders that you store in Google Drive with anyone by using their email address (preferably their Gmail account). You can allow those people the permission to either edit, comment on, or only view the file. Permission to edit gives the person freedom to delete the file or change it in any way.  Permission to view will only allow the other person to read the file, but they won't be able to change it.  Permission to comment allows the other person to insert comments on the file, but they won't be able to edit the file itself. To share a file or folder, just right click on the file or folder and select "Share" from the menu.
+
+
+![Sharing files and folders on Google Drive](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_108)
+
+In the window that opens, enter the email address of the person you want to share the file/folder with and choose whether the person can edit, comment, or only view the content.
+
+If for some reason you want to stop sharing a file or folder that you have already shared, right click on the file and choose "Share" again. In the bottom right corner of the window that pops up, click on Advanced. There you'll see a list of people with whom you've shared the file. To the right of each name or email there is an X. By clicking on it, you will remove access of that person to the file. Click "Save changes" when you've finished removing access.
+
+### Working Offline
+
+The main advantage of cloud storage like Google Drive is that all of your files are stored online and are accessible whenever you want them. But what do you do when you don't have access to the Internet and want to access your files offline?  If you know in advance you will be without internet access, you can easily make Google Drive files available offline on your Chromebook. To do so, follow these steps:
+
+First, when online, install the [Google Docs Offline extension](https://chrome.google.com/webstore/detail/google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi) by clicking on 'Add to Chrome'. If the button says "Added to Chrome," you've already installed the extension.
+
+
+![Google Drive extension for Chrome](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g350059f510_0_15)
+
+Next, go to [Google Drive settings](drive.google.com/drive/settings) and in the "Offline" area, check the box. It might take a few minutes for the offline access setting to turn on.
+
+
+![Offline settings for Drive](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_129)
+
+You are now ready to work on your files offline! Any changes will sync to Google Drive the next time your Chromebook connects to the Internet.
+
+### Storage limit
+
+Your Google Drive account comes with 15GB of free storage. If this is not enough space, you can pay for more space: $1.99 per month buys  100GB of storage and $9.99 (as of February 2018) buys  1TB of storage. Note that the free 15GB is shared among all Google services, including Gmail and Drive, so, part of your storage may be used by your email attachments.  You can see how much storage you are using in the lower part of the left-hand menu on your home page.  There is also a link here to purchase additional storage.
+
+
+![Storage information](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_302)
+
+### Security
+
+Google Drive encrypts your data before storing it. Encryption is any method that converts data to to encoded version for security purposes. Drive is encrypted using SSL, the same security protocol used on Gmail and other Google services. However, you're still responsible for securing your Google account.
+
+Two-Step Verification (also known as two-factor authentication), provides an extra layer of security to your account. This requires you to enter your password and on top of that enter a code that is sent to your phone or email. You've learned about two-step verification in a previous lesson; we strongly recommend you use Google's two-step verification to secure your files on Google Drive.
+
+
+![Two-Step Verification setup](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g350059f510_0_51)
+
+### More specifics on using Google Drive
+
+In this lesson, we have talked briefly about how to create files and folders in Google Drive, as well as how to delete, recover, and share your files.  There are many other features of Drive that you may want to eventually explore.  There are many tutorials for using Drive on YouTube.com.
+
+Google also has extensive information on getting started with Drive on their G Suite Learning Center, which can be found at the following web address: https://gsuite.google.com/learning-center/products/drive/get-started/#!/
+
+## Other Accounts Setup
+
+In addition to having a Google username, there are a number of other accounts to which you'll need access. By the end of this lesson, you will have set up a number of different accounts. While this may seem like a lot of work now, it will get you set up with *all* the accounts you'll need throughout this series of courses. The time you spend now will pay off later! Right now, we'll walk through each one briefly, get you set up with an account, and discuss what the account is used for.
+
+### LinkedIn Account
+
+[LinkedIn](http://www.linkedin.com) is a social networking site for employment. Think of it as Facebook for getting a job. It allows you to put your qualifications online (like an online resume), has a space where you can look for jobs, and can put you in contact with employers. Don't worry about the details now. Through this program, you will have the chance to set up your LinkedIn gradually. For right now, we're just worried about getting this account set up.
+
+To begin set up, you'll go to the web address bar in your Chrome browser. You will type www.linkedin.com and hit 'Enter.'
+
+
+![LinkedIn website](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_2)
+
+This will bring you to LinkedIn's login screen. On this screen you'll begin filling out the boxes in the middle of the screen. Be sure to use the Gmail username you just created in the last chapter when asked for your Email address. Choose a password that cannot be easily guessed by someone else. Once the four boxes are filled in, click "Join now".
+
+
+![LinkedIn Blank Form](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_7)
+
+A screen may pop up asking you to verify that you're not a robot. Whenever this happens, just click on the empty square box to let the computer know you're a real person.
+
+
+![Not a robot](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_17)
+
+After clicking "Join now" (and maybe after you verify that you are a human) you will be brought to a new screen. Here, at the top, it will show you that you almost have a LinkedIn login but that first you have to confirm your email address.
+
+To do so, you will open a new tab at the top of the Chrome browser window. You will then type in 'www.gmail.com' and click 'Enter.'
+
+
+![gmail website](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_44)
+
+This will bring you to your email account. An email from 'LinkedIn Messages' should be there. Click on that email to open it.
+
+
+![Verify email from LinkedIn](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_143)
+
+In that email there will be a button where you can click to 'Confirm your email'.
+
+
+![LinkedIn Confirm Your Email](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_150)
+
+This will open a new screen where your google username will be in the box already. Click 'Continue' on this screen.
+
+
+![LinkedIn Continue](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_159)
+
+While other boxes may pop up for you to go further on LinkedIn and get your profile set up, this is all you have to do for now. You now have a LinkedIn username and account! We will now go through similar processes for the other accounts needed in this program.
+
+### Twitter Account
+
+The second account you will need will be a [Twitter](http://www.twitter.com) account. You may already be familiar with Twitter; however, data scientists tend to use Twitter for work rather than socializing. Twitter is a social media platform where users can "post and interact with messages." These messages are known as 'tweets.' Twitter is a great place to learn new things, connect with other data scientists, and to ask/answer questions quickly.
+
+You will need a professional Twitter account for our program. If you already have a Twitter account you use for personal tweets and communicating with friends you should still create a new, professional account where you will only post professional links and interact with other data scientists.
+
+To get a Twitter account, first type 'www.twitter.com' in the search bar at the top of your Chrome session.
+
+
+![Twitter website](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_194)
+
+This will bring you to a screen where at the top right you'll want to click 'Sign up'.
+
+
+![Twitter sign in](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_172)
+
+This will bring you to a screen that prompts you for some information and asks you to create a new password. After filling out the information, you will click 'Sign up.'
+
+
+![Twitter sign in](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_201)
+
+You will be brought to a screen asking for your phone number. After entering your phone number, you will click 'Next.'
+
+
+![Twitter phone number](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_208)
+
+This will bring you to a screen where you will choose a username. This will be what your Twitter 'handle' will be. For simplicity, it would be best for your Gmail username and Twitter handle to be the same (ie if your Gmail address is Jane.Doe@gmail.com, 'Jane.Doe' would be a great Twitter username). If that name is unavailable, choose a different, but appropriate and simple, Twitter username. Once you have chosen a Twitter username, click 'Next'.
+
+
+![Twitter username](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_212)
+
+At this point you will be brought to a screen that will have a button saying 'Let's go!' This will lead you to set up your profile further, which is not needed at this time. Instead, go to your gmail, look for an email from 'Twitter' and click on the email.
+
+
+![Twitter Let's go!](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_246)
+
+In this email, there will be a 'Confirm now' button to click. To verify your Twitter account, click on this button.
+
+
+![Twitter Confirm now](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_263)
+
+
+Congrats! You now have a Twitter account!
+
+### Basecamp Account
+
+[Slack](http://www.Basecamp.com) is a place where teams of people can easily communicate and work together on a project. As a data scientist, you are often working in a group on a project. Basecamp is a place where everyone working on that project can communicate. Basecamp is where communication throughout this course will happen. You will be able to ask questions, answer questions, and communicate with others on Basecamp about the things you are learning and the projects you are working on.
+
+To get a Basecamp account, you will first open a new tab in your browser by typing _ctrl_ and _t_. Once you have a new tab open, you will type 'www.Basecamp.com' at the top of your browser in the web address bar.
+
+
+![Basecamp Web Address](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_386)
+
+On this webpage, type your Gmail address in the 'email address' box, and click 'GET STARTED.'
+
+
+![Basecamp Get Started!](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_391)
+
+We won't be signing into any workspaces yet; however, later in the program, when we do, you will have an account! That's all you need to do with Basecamp for now!
+
+### RStudio Cloud Account
+
+As a data scientist A LOT of your work will be done in something called RStudio. In this program, you will be learning the basics of the programming language, R. R is a free programming language for statistical computing and graphics. In other words, the code you write to work with data will all be done in R. RStudio Cloud is the place (or 'platform') where you will type this code and make basic plots.
+
+Luckily, RStudio Cloud makes it easy to sign up. You will first go to 'rstudio.cloud'. Note: This web address does not start with 'www.'
+
+
+![rstudio.cloud web address](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_309)
+
+This will bring you to a screen where you can click on 'Get Started.' This will bring you to a login screen where, instead of typing in your information, since you already have a Google account, just click on 'Sign up with Google.'
+
+
+![rstudio.cloud sign up with Google](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_279)
+
+You will be prompted to choose which Google account you want to use. Choose your professional Google account. Then, you will be brought to a screen where you will have to enter a username. Again, for simplicity, try to use the same username across all accounts.
+
+
+![rstudio.cloud choose account](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_286)
+
+Then, click 'Create Account' and you're all set! You now have an RStudio Cloud account!
+
+
+### GitHub Account
+
+[GitHub](http://www.github.com) is a website that hosts computer code and allows for version control. We'll get back to what version control is later, but as for now, know that GitHub is where you'll be 'saving' all of the code you write. It's also a place where you can look at other people's code. And, throughout this program, you'll realize that you can learn a lot from other people's code!
+
+To get a GitHub account, first type www.github.com into the web address bar at the top of your Chrome window and hit 'Enter'.
+
+
+![GitHub web address](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_418)
+
+You will be brought to a page where you should fill in your information. As with the other accounts, try to use the same Username if possible. Enter your Gmail Email address. And, create a password that cannot be easily guessed by others. Then, click 'Sign up for GitHub.'
+
+
+![GitHub sign up](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_423)
+One final note about GitHub usernames in particular. This will be used for your website (which you'll build later) and *all* the code you write. You'll use GitHub a lot, so this is a case where it is particularly helpful to choose a good username, particularly one that has something to do with your name and not much else. For example, the person writing this lesson is named Shannon Ellis. Her GitHub username is "ShanEllis." While it is *possible* to change your GitHub username down the line, it's a bit of a pain, so choose wisely now!
+
+You now have a GitHub account *and* all of the online accounts needed for this program!

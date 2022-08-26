@@ -1,0 +1,3 @@
+https://www.someurl.html
+https://jhudatascience.org/{Course_Name}}
+https://url_to_reference.com

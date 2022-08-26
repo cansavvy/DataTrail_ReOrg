@@ -66,6 +66,14 @@ And finally, you will see **code chunks**. These are bounded by the triple backt
 
 The easiest way to see how each of these sections behave is to produce the HTML! To do so, you'll learn how to knit the document below.
 
+### File paths in R Markdowns
+
+Remember how earlier we talked about **relative** vs **absolute** file paths. R Markdowns automatically use relative file paths starting from **wherever the .Rmd file is located**.
+
+In other words, things like `setwd()` will not work in an .Rmd file. This is for good reason! If you share this Rmd with someone else, you want the file paths in your Rmd to be relative. (Remember how we said absolute file paths do not work on other people's computers?)
+
+Because of this, you can share an Rmd and its associated files and other should be able to run the Rmd and completely reproduce your results -- reproducibility is very important, we'll talk about more reproducibility techniques as we go through this course.
+
 ### "Knitting" documents
 
 When you want to preview an R Markdown document and when you are finished with an R Markdown document, you'll want to **"knit"** the plain text and code from your .Rmd into your final document.

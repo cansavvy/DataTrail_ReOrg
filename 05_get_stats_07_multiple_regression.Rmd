@@ -217,11 +217,3 @@ In these few lessons on inference, we have covered *a lot*. We started off discu
 ### Additional Resources
 
 * [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear), blog post by Jonas Kristoffer Lindelov
-
-
-
-### Slides and Video
-
-![Inference: Multiple Regression](https://youtu.be/1kGutQNzP6M)
-
-  - [Slides](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/edit?usp=sharing)

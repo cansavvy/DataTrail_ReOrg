@@ -1,3 +1,13 @@
+dslabs
+fullscreen
+Fullscreen
+multipanel
+Powerpoint
+ppt
+pptx
+GCF
+rtf
+UCI
 Eeek
 dIsTraCTING
 hasWEird

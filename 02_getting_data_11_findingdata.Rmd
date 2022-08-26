@@ -106,7 +106,7 @@ data(admissions)
 admissions
 ```
 
-## FiveThiryEight Data
+## FiveThirtyEight Data
 
 There's a variety of datasets available as CSVs.
 

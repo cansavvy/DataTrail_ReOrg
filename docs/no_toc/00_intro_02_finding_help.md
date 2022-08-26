@@ -1,7 +1,6 @@
 
 
 
-
 # Finding Help
 
 In data science and computer-related work in general, it is common to ask for help multiple times per day. While sometimes we ask our colleagues for help in-person, most of the time we search the web.

@@ -1,7 +1,6 @@
 
 
 
-
 # Google Sheets
 
 Google Sheets is a free, online spreadsheet program. If you're familiar with Excel, it is similar to Excel. If you are unfamiliar with Excel, that's ok! We'll go through everything you need to know to get started on the project here. And, later in the program, we will go into more details to get you fully comfortable working with Google Sheets. As for right now, just know that when you have data that you want to input into a spreadsheet, Google Sheets is an ok place to start. Google Sheets is also great because you never have to worry about saving your work. If you are online, Google Sheets automatically saves your work.

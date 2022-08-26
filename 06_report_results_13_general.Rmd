@@ -142,11 +142,3 @@ Here, we've presented an example of one presentation. This is to describe how pr
 ### Summary
 
 In this lesson we discussed the approach to and specifics of presenting to a general audience. We walked through an example of a presentation used to present to a general audience and broke down what parts of that example presentation were spent on what aspect of presentation. We highlighted the need to present background information and the need to teach the audience necessary concepts (at a high level!) so that the results you present will be understood.
-
-
-
-### Slides and Video
-
-![How To Present to a General Audience](https://www.youtube.com/watch?v=LzaYhyKbu8c)
-
-* [Slides](https://docs.google.com/presentation/d/1DW4eO4oQ_0qhAXs0IB-FBp790qeM8gH3ZLq-z58jBYg/edit?usp=sharing)

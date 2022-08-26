@@ -1,6 +1,5 @@
 
 
-
 # Basic Commands in R
 
 Now that we've covered some essentials about R objects, we'll go over some basic commands that will be helpful in working with data.

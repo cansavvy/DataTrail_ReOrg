@@ -1,7 +1,6 @@
 
 
 
-
 # Account Setup
 
 Before we can get started doing fun things with data we need to make sure you are set up to use all of the different accounts that you will need throughout the course. We will tell you briefly what each of these accounts is used for and how to set it up now. If you don't know what each of these accounts is for exactly, don't worry! We will walk you through everything you need to know.

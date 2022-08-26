@@ -1,3 +1,4 @@
+
 # Prediction and Machine Learning
 
 In the last lesson, we discussed that inferential data analysis looks to learn something about a population by making inferences from a representative sample. While the goal in inference is to learn something about the population, when we're talking about **prediction**, the focus is on the individual. The goal of predictive analysis and machine learning approaches is to **train a model using data** to make predictions about an *individual*.
@@ -386,9 +387,3 @@ In this lesson we have covered the basics of what predictive analysis is, what t
 
 * [The `caret` Package book](http://topepo.github.io/caret/index.html)
 * [Example of machine learning using `caret` and the `iris` dataset for classification](https://rstudio-pubs-static.s3.amazonaws.com/261616_3097bfd3aa4341faafede5ed2ca7bb39.html)
-
-### Slides and Video
-
-![Prediction & Machine Learning](https://www.youtube.com/watch?v=qNC5OGra4d8)
-
-* [Slides](https://docs.google.com/presentation/d/1GF3WXmqtbP8Ha2xnOEe9UZZ6MnSQwNL_-BeKA10hixQ/edit?usp=sharing)

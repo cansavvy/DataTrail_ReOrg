@@ -1,3 +1,4 @@
+
 # How To Give a Presentation
 
 Data Scientists are often asked to present their work. This could be in a meeting with other co-workers or at a large conference amongst colleagues with similar interests. Regardless of where you're presenting, there are general and important guidelines to consider when preparing the materials for your presentation.

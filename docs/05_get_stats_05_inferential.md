@@ -1,3 +1,4 @@
+
 # Inference: Overview
 
 Inferential Analysis is what analysts carry out *after* they've described and explored their data set. After understanding your dataset better, analysts often try to infer something from the data. This is done using **statistical tests**. While we'll only be discussing **linear regression** in this lesson, there are *many* different statistical tests, each of which (when appropriately applied) can be used for inferential data analysis.
@@ -99,13 +100,3 @@ To answer this question, a subset of the US population was studied, and the rese
 ### Summary
 
 In this first inference lesson, we introduced simply an overview of inferential thinking. We introduced the idea that if you want to learn something about a population, often analyzing a representative sample of the population can help get you to your answer. With this conceptual overview, in the following lessons we'll see what that looks like at the level of code and how to interpret the output.
-
-
-### Additional Resources
-
-
-### Slides and Video
-
-![Inferential Analysis](https://youtu.be/fOv0epNcVqA)
-
-* [Slides](https://docs.google.com/presentation/d/1wxCLy3ZQWCc28PsENi83qgKESkH-44nc0tuISMRlRvc/edit?usp=sharing)

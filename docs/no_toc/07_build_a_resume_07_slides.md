@@ -1,3 +1,4 @@
+
 # Google Slides
 
 In addition to Google Docs for word documents and Google Sheets for spreadsheets, Google also has a web-based slide presentation editor called Google Slides. Google Slides allows users to format and edit slide presentations online and with Slide's sharing capabilities, multiple people can edit the slides at the same time.  As a data scientist, Google Slides can be a powerful tool to present your work to your employer or contribute to a presentation with your colleagues.

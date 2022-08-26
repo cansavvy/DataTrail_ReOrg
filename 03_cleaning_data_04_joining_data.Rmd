@@ -4,50 +4,108 @@ Often times, you may find yourself with two datasets that contain overlapping se
 
 In this chapter, we will discuss the different methods for combining multiple datasets.
 
-TODO: This chapter needs code and more fleshing out
-
 ## dplyr join family of functions
 
 There are different kinds of joins - let's discuss what they do.
 
-`inner_join()`: includes all rows in x and y.
-`left_join()`: includes all rows in x.
-`right_join()`: includes all rows in y.
-`full_join()`: includes all rows in x or y.
-
-These join functions all have a `by` argument that you can specify what column to use as a key to match the two datasets by. In this instance, we'll want to use the columns `id` to match the datasets rows.
-
-First, let's try an `inner_join()`. This will **only** keep the `id`s common to both datasets.
+Let's say you have to data frames. One is called `df_a` and the other, `df_b`.
+We can create these data frames using this code:
 
 ```{r}
-
+df_a <- data.frame(sample = c("A", "B", "C", "D"),
+                   number = c(2, 4, 4.4, 3.1))
+df_b <- data.frame(sample = c("A", "B", "E", "F"),
+                   color = c("blue", "blue", "red", "green"))
 ```
 
-Note that all the columns end in an `x` or a `y`. This is because these datasets have columns with the same name. We can use an argument, `suffix` to specify what we'd like these to be called. Let's re-run `inner_join` but this time specify that we want `suffix = c("", "_may")`. This will make it so that the `May19` dataset's columns end in `_may` after we join, but the other dataset' will have no suffix.
+Let's print these toy tables out to see what they look like.
+Here's `df_a`.
+```{r}
+df_a
+```
+And here's `df_b`
+```{r}
+df_b
+```
 
+Notice that both table contain information about samples, `A` and `B` but each also contain information that the other table doesn't have.
+
+Join functions can be great for situation like these to make one bigger table that contains the information you want to use.
+
+
+`join` family of functions include these (which we will go over in this chapter):   
+
+- `inner_join()`: includes only rows that have matches in `df_a` and `df_b`.
+- `left_join()`: includes all rows in `df_a` but not any of `df_b` that doesn't have a match to `df_a`.
+- `right_join()`: includes all rows in `df_b` but not any of `df_a` that doesn't have a match to `df_b`.
+- `full_join()`: includes all rows in of `df_a` and `df_b`, regardless if they have matches in the other data frame or not.
+
+#### inner_join()
+
+First, let's try an `inner_join()`. This will **only** keep the `rows`s common to both datasets.
+
+Note that we can try to have the function guess what column we would like to match the rows by, OR we should probably use the argument `by` to tell the function which column should be used as a `key`.
+
+In our example above, we want to use the `sample` column to match rows by. Aka the sample column is what has the IDs that indicate what rows are related to which in the two data data frames.
 
 ```{r}
+# Need to load in these functions first before we can use them
+library(dplyr)
 
+inner_join(df_a, df_b, by = "sample")
 ```
 
-We can also try a different kind of join. Let's say we mainly care about the `ffood`'s data and don't care so much about the `ffood_may` data. In this case we could do a left join so that we keep *everything* in the one dataset but only things that have a match in the other. Let's try it out.
+Notice that now we only have the rows `A` and `B` because those were in both datasets. This is how inner_join() works. If we don't like dropping all that other data, we might want to use a different join function.
+
+#### left_join()
+
+Let's say we mostly care about the data in `df_a` and want to keep all that data, but want to join data from `df_b` only if there are matches. This is a great case for a `left_join`.
+
+Let's try it:
+```{r}
+left_join(df_a, df_b, by = "sample")
+```
+
+See that now we have all the rows of `df_a` but an added column, `color`,  from `df_b`. You'll see that the way the join deals with this is that it puts `NA`s for the rows it doesn't have information for `color` -- these will be the rows that are in `df_b` but not in `df_a`.
+
+#### right_join()
+
+What if instead we mostly care about `df_b`'s data but are wanting to add on `df_a`'s data ONLY if it matches to `df_b`? This is where we can do a `right_join()`
 
 ```{r}
-
+right_join(df_a, df_b, by = "sample")
 ```
 
-Note that if we don't switch the order of `ffood` and `ffood_may` in our code, we could use a `right_join()` which would keep everything in `ffood_may` but only keep data in `ffood` that has a match.
-Alternatively, we could just switch the order of the datasets we are providing.
-
-Lastly, let's try a `full_join`. This will keep all data from both sets, but match those together that are in both. This is the biggest resulting dataset we would have.
+Note that the above is also equivalent to a `left_join()` if we switch the order that we are providing the data frames. Aka if we list `df_b` first and `df_a` second.
 
 ```{r}
+all.equal(
+right_join(df_a, df_b, by = "sample"),
 
+# A left join, where we have df_b listed first
+left_join(df_b, df_a, by = "sample")
+)
 ```
+
+In summary, the left or right in the function name just refers to which data frame is listed first (on the left) or second (on the right).
+
+#### full_join()
+
+In the situation where we want to keep all data from both datasets, we'll want to use a `full_join`.
+
+```{r}
+full_join(df_a, df_b, by = "sample")
+```
+
+This is the biggest data frame of the joins, and will always be that way, because we have not dropped any data. Instead we've just fill in `NA`s where we don't have information after we've combined `df_a` and `df_b`.
+
+Having a bunch of `NA`s may be okay depending on what you are hoping to do with these data. But it goes back to the idea that a lot of data science decisions, including those about tidying data, will be largely dependent on the context and goals of what you are working on.
+
+But, to make these decisions, you will need to be aware of what your data look like so: Always be looking at your data!
 
 ### Row binding
 
-In some cases it may be more appropriate to merely stack rows on top of each other instead of doing a join.
+In some cases it may be more appropriate to merely stack rows on top of each other instead of doing a join. Let's say our datasets have most of the same columns but different 
 
 To do this, we could use a row bind. Look up `?dplyr::bind_rows` to see this function's help page. Let's use this function.
 

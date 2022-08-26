@@ -1,3 +1,4 @@
+
 # How To Keep a Data Science Lab Notebook
 
 Lab notebooks are used by every experimental scientist - these are the people who work in a laboratory, carry out experiments, and often wear lab coats and safety goggles. Lab notebooks are used daily to track the details of how each experiment was carried out *and* the results of the experiment. The goal of lab notebooks for experimentalists is to track the details of what they've done in the lab so that *they or anyone else* else could repeat what had been done previously, given only what has been included in that scientists' laboratory notebook. As such, they are *not* polished reports that only include what conditions were eventually used and a clean version of the reports. Rather, they include both successful and failed experiments, messy tables of results, successful projects, failed projects, and information that never ends up getting published. The **laboratory notebook is a complete history** of an experimentalists' work.
@@ -8,7 +9,7 @@ In this lesson we'll discuss *why* you should keep a lab notebook, *what* you sh
 
 ### Why Keep a Lab Notebook
 
-You've already got email, a Google account, notes you've jotted down on random post-it notes, and discussions happening on Slack -- why add something else on top of what you've already got? Well, first of all, a lab notebook helps **pull all the sources of information into one single location**. Your data science lab notebook will contain information discussed in email, projects whose results you've posted to Slack, and conclusions that you include in presentations you've saved in Google Slides. However, it will **all** be saved in one single place: your lab notebook. 
+You've already got email, a Google account, notes you've jotted down on random post-it notes, and discussions happening on Slack -- why add something else on top of what you've already got? Well, first of all, a lab notebook helps **pull all the sources of information into one single location**. Your data science lab notebook will contain information discussed in email, projects whose results you've posted to Slack, and conclusions that you include in presentations you've saved in Google Slides. However, it will **all** be saved in one single place: your lab notebook.
 
 In addition to pulling all the different sources of information into a single location, keeping a lab notebook is important because the **human memory is fallible**. There *will* be a situation where you assume you're going to remember a discussion you had or something your boss asked you do to; however, when you return to it, you'll forget the details of the conversation. By keeping this type of information in your lab notebook, you will not have to go back to the other person and explain that you forgot what they said. Rather, you'll be able to reference what's in your lab notebook and move on with your life. Your **data science lab notebook will be your memory**.
 
@@ -26,7 +27,7 @@ First of all, like GitHub, your data science lab notebook should be organized by
 * What you Did
   * what technology you used
   * why you used the approach you used
-* Results 
+* Results
   * any problems you had
   * any solutions you came up with
 * Links to Outside Resources
@@ -36,13 +37,13 @@ First of all, like GitHub, your data science lab notebook should be organized by
   * etc.
 * Future Plans
 
-By including this information, when you look back in the future, you'll have the full picture of what you did for that project on the day. 
+By including this information, when you look back in the future, you'll have the full picture of what you did for that project on the day.
 
 Additionally, because this will all be stored electronically, this information will be searchable. So, if in the future you run into a problem and remember having run into a similar problem previously, you can search electronically to remind yourself how you solved the problem the last time you encountered it -- this will save you *so* much time. Be sure to **always include problems you ran into and solutions you figured out to those problems**. It will be worth the time and effort down the line.  
 
 ### When To Update
 
-Your electronic lab notebook should be **updated daily**. In fact, after you finish working on a project for the day, it's good to get in the habit of completing your lab notebook entry before moving onto the next project you'll be working on that day. In fact, it's OK to update your lab notebook for a project more than once a day. 
+Your electronic lab notebook should be **updated daily**. In fact, after you finish working on a project for the day, it's good to get in the habit of completing your lab notebook entry before moving onto the next project you'll be working on that day. In fact, it's OK to update your lab notebook for a project more than once a day.
 
 That said, it's *not* ok to update everything at the end of the week or once a month. This is because you won't remember the details of what you did or the problems you ran into and solutions you came up with at this point in time. The sooner you update your lab notebook the more accurate your notebook will be and the more helpful that document will be in the future.
 
@@ -61,12 +62,12 @@ To get started with your own data science lab notebook, you'll first need an acc
 
 ![SIGN UP](https://docs.google.com/presentation/d/1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA/export/png?id=1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA&pageid=g3fd086c2d1_0_187)
 
-You'll be brought to a new screen. It's easiest to simply click "SIGN IN WITH GOOGLE." 
+You'll be brought to a new screen. It's easiest to simply click "SIGN IN WITH GOOGLE."
 
 
 ![SIGN IN WITH GOOGLE](https://docs.google.com/presentation/d/1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA/export/png?id=1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA&pageid=g3fd086c2d1_0_2)
 
-On the next screen, enter your Google email address and click "Next". 
+On the next screen, enter your Google email address and click "Next".
 
 
 ![Enter Google Username](https://docs.google.com/presentation/d/1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA/export/png?id=1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA&pageid=g3fd086c2d1_0_8)
@@ -112,19 +113,19 @@ You'll then be prompted to create your first entry. We'll call this entry "data 
 
 ![Create Entry](https://docs.google.com/presentation/d/1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA/export/png?id=1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA&pageid=g3fd086c2d1_0_44)
 
-You've now got your data science lab notebook set up and ready to go. There will be circles on your screen to help you orient yourself to the Benchling platform. Click on these to learn more about what you're looking at. Once you click on them and click "Got It" in the box that appears, these circles will disappear. 
+You've now got your data science lab notebook set up and ready to go. There will be circles on your screen to help you orient yourself to the Benchling platform. Click on these to learn more about what you're looking at. Once you click on them and click "Got It" in the box that appears, these circles will disappear.
 
 
 ![Benchling Screen](https://docs.google.com/presentation/d/1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA/export/png?id=1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA&pageid=g3fd086c2d1_0_53)
 
 What you're looking at here is the screen you'll become very familiar with as you get used wot working within an electronic lab notebook. We'll walk through a few important pieces for our purposes now!
 
-Within each entry, you'll add information. All notes you add a project should be entered under the date on which the analysis or step was completed. 
+Within each entry, you'll add information. All notes you add a project should be entered under the date on which the analysis or step was completed.
 
 
 ![Add notes under appropriate date](https://docs.google.com/presentation/d/1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA/export/png?id=1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA&pageid=g3fd086c2d1_0_61)
 
-To add a new date within an entry, click on "Insert" and select "New day" from the drop down menu. 
+To add a new date within an entry, click on "Insert" and select "New day" from the drop down menu.
 
 
 ![Insert New Date](https://docs.google.com/presentation/d/1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA/export/png?id=1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA&pageid=g3fd086c2d1_0_49)
@@ -153,7 +154,7 @@ Then, click on the hyperlink icon along the menu at the top, and then enter the 
 
 The hyperlink will appear in the text.
 
-Code and Attachments (images, etc.) can be added from the "Insert" drop-down menu. For example, to include code, you would click on "Insert" and then select "Code". 
+Code and Attachments (images, etc.) can be added from the "Insert" drop-down menu. For example, to include code, you would click on "Insert" and then select "Code".
 
 
 ![Insert Code](https://docs.google.com/presentation/d/1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA/export/png?id=1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA&pageid=g3fd086c2d1_0_103)
@@ -200,7 +201,7 @@ Now that we've discussed projects and entries, there's an additional nice featur
 
 ![Click on home icon](https://docs.google.com/presentation/d/1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA/export/png?id=1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA&pageid=g3fd086c2d1_0_130)
 
-Then, click on today's date. 
+Then, click on today's date.
 
 
 ![Click on today's date](https://docs.google.com/presentation/d/1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA/export/png?id=1w3UMgvE-5As8xTybcEITs29UIllaMH8kCTzX0XeSRfA&pageid=g3fd086c2d1_0_136)
@@ -270,4 +271,3 @@ o) including multiple entries within a project
 
 
 {/quiz}
-

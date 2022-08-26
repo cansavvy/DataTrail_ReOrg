@@ -1,3 +1,4 @@
+
 # Project Gallery
 
 When looking for a job in data science, it's best that those interested in hiring you can get a sense for your work easily on the Internet. By displaying projects you've worked on on your website, hiring managers can quickly see what skills you have and what you're interested in.

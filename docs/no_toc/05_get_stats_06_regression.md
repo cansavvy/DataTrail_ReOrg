@@ -1,11 +1,6 @@
+
+
 # Inference: Linear Regression
-
-<!-- Google Slide ID -->
-<!-- SLIDEID -->
-
-<!-- Include a slide PNG with Page_ID from this Slide Deck: -->
-<!-- ![](https://docs.google.com/presentation/d/SLIDEID/export/png?id=SLIDEID&pageid=PAGE_ID) -->
-<!-- or use  `didactr::gs_slide_df("SLIDEID")$png_markdown` -->
 
 Inferential analysis is commonly the goal of statistical modeling, where you have a small amount of information to extrapolate and generalize that information to a larger group. One of the most common approaches used in statistical modeling is known as **linear regression**. Here, we'll discuss when using linear regression is appropriate, how to carry out the analysis in R, and how to interpret the results from this statistical approach.
 
@@ -301,9 +296,3 @@ For now, however, in response to our question, can we infer a tree's height from
 ### Summary
 
 In this lesson we've discussed not just what inference is generally, but how to carry out an inferential analysis using simple linear regression. We've discussed assumptions of linear regression and the interpretation of both the linear regression model itself and the diagnostic plots that accompany this type of analysis. In the following lesson we'll extend this concept further to discuss confounding, multiple regression, and additional statistical tests.
-
-### Slides and Video
-
-![Inference: Linear Regression](https://youtu.be/mTn1L45trSQ)
-
-  - [Slides](https://docs.google.com/presentation/d/1vu3AaIDedC0Zd3GTsjaLtPrCufrQACorML4wdXudAcg/edit?usp=sharing)

@@ -1,3 +1,4 @@
+
 # Which Graph to Use When
 
 When communicating your data science work, it's always good to be concise and clear in your writing or speech. However, it's *also* important to be sure the figures you use to tell your story are *also* clear and appropriate. You always want to be sure you're displaying your data with the right type of graph. We've discussed this previously in an earlier course, but we'll review it in the context of effective communication now in this lesson as well.

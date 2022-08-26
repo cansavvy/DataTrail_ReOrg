@@ -1,6 +1,4 @@
 
-
-
 # GitHub
 
 Now that we have a handle on what version control is and how we can interface with it, we'll take some time to look at GitHub and get familiar with their website.

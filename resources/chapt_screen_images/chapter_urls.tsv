@@ -7,111 +7,96 @@ https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/working-offline-vs-online
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/account-setup.html	5 Account Setup	resources/chapt_screen_images/account-setup.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/forming-questions.html	6 Forming questions	resources/chapt_screen_images/forming-questions.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/the-data-science-process.html	7 The Data Science Process	resources/chapt_screen_images/the-data-science-process.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/forming-a-question.html	8 Forming a question	resources/chapt_screen_images/forming-a-question.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-learn.html	9 How To Learn	resources/chapt_screen_images/how-to-learn.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-sheets.html	10 Google Sheets	resources/chapt_screen_images/google-sheets.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/rstudio-cloud.html	11 RStudio Cloud	resources/chapt_screen_images/rstudio-cloud.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-learn.html	8 How To Learn	resources/chapt_screen_images/how-to-learn.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-sheets.html	9 Google Sheets	resources/chapt_screen_images/google-sheets.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/rstudio-cloud.html	10 RStudio Cloud	resources/chapt_screen_images/rstudio-cloud.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/rstudio-and-projects.html	11 RStudio and Projects	resources/chapt_screen_images/rstudio-and-projects.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/your-first-data-science-project.html	12 Your first data science project	resources/chapt_screen_images/your-first-data-science-project.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/getting-data.html	13 Getting Data	resources/chapt_screen_images/getting-data.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/cleaning-the-data.html	14 Cleaning the Data	resources/chapt_screen_images/cleaning-the-data.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/what-is-r.html	15 What is R?	resources/chapt_screen_images/what-is-r.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/rstudio-and-projects.html	16 RStudio and Projects	resources/chapt_screen_images/rstudio-and-projects.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/managing-files-in-the-terminal.html	17 Managing Files in the Terminal	resources/chapt_screen_images/managing-files-in-the-terminal.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/managing-files-in-r.html	18 Managing Files in R	resources/chapt_screen_images/managing-files-in-r.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/r-packages.html	19 R Packages	resources/chapt_screen_images/r-packages.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/basic-commands-in-r.html	20 Basic Commands in R	resources/chapt_screen_images/basic-commands-in-r.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/getting-help-in-r.html	21 Getting Help in R	resources/chapt_screen_images/getting-help-in-r.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/objects-in-r.html	22 Objects in R	resources/chapt_screen_images/objects-in-r.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/working-with-logicals.html	23 Working with Logicals	resources/chapt_screen_images/working-with-logicals.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-frames-1.html	24 Data Frames	resources/chapt_screen_images/data-frames-1.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/r-markdown.html	25 R Markdown	resources/chapt_screen_images/r-markdown.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/using-paths-in-code.html	26 Using Paths in Code	resources/chapt_screen_images/using-paths-in-code.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/introduction-to-markdown.html	27 Introduction to Markdown	resources/chapt_screen_images/introduction-to-markdown.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/csv-excel-and-tsv-files.html	28 CSV, Excel, and TSV Files	resources/chapt_screen_images/csv-excel-and-tsv-files.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/importing-data-from-google-sheets.html	29 Importing Data from Google Sheets	resources/chapt_screen_images/importing-data-from-google-sheets.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/finding-data.html	30 Finding Data	resources/chapt_screen_images/finding-data.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/internet-safety.html	31 Internet Safety	resources/chapt_screen_images/internet-safety.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-privacy.html	32 Data Privacy	resources/chapt_screen_images/data-privacy.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/ethical-data-science.html	33 Ethical Data Science	resources/chapt_screen_images/ethical-data-science.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/plotting-the-data.html	34 Plotting the Data	resources/chapt_screen_images/plotting-the-data.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-in-r.html	35 Data in R	resources/chapt_screen_images/data-in-r.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/tidy-data.html	36 Tidy Data	resources/chapt_screen_images/tidy-data.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/untidy-data.html	37 Untidy Data	resources/chapt_screen_images/untidy-data.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/reshaping-data.html	38 Reshaping Data	resources/chapt_screen_images/reshaping-data.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/reshaping-data-1.html	39 Reshaping Data	resources/chapt_screen_images/reshaping-data-1.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/tidying-data.html	40 Tidying Data	resources/chapt_screen_images/tidying-data.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/working-with-strings.html	41 Working with Strings	resources/chapt_screen_images/working-with-strings.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/working-with-factors.html	42 Working with Factors	resources/chapt_screen_images/working-with-factors.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/working-with-dates.html	43 Working with Dates	resources/chapt_screen_images/working-with-dates.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-tidying.html	44 Data Tidying	resources/chapt_screen_images/data-tidying.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-tidying-project.html	45 Data Tidying Project	resources/chapt_screen_images/data-tidying-project.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/motivation.html	46 Motivation	resources/chapt_screen_images/motivation.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/setting-up-data-science-project-folders.html	47 Setting Up Data Science Project Folders	resources/chapt_screen_images/setting-up-data-science-project-folders.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-work.html	48 How to Work	resources/chapt_screen_images/how-to-work.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/getting-statistics.html	49 Getting statistics	resources/chapt_screen_images/getting-statistics.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/intro-to-data-visualization.html	50 Intro to Data Visualization	resources/chapt_screen_images/intro-to-data-visualization.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/good-plots.html	51 Good Plots	resources/chapt_screen_images/good-plots.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/introduction-to-ggplot2.html	52 Introduction to ggplot2	resources/chapt_screen_images/introduction-to-ggplot2.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/customization-in-ggplot2.html	53 Customization in ggplot2	resources/chapt_screen_images/customization-in-ggplot2.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/saving-plots.html	54 Saving Plots	resources/chapt_screen_images/saving-plots.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/from-exploratory-to-explanatory.html	55 From Exploratory To Explanatory	resources/chapt_screen_images/from-exploratory-to-explanatory.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-tables.html	56 Data Tables	resources/chapt_screen_images/data-tables.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/tables-in-r.html	57 Tables in R	resources/chapt_screen_images/tables-in-r.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/multiple-plots-in-r.html	58 Multiple Plots in R	resources/chapt_screen_images/multiple-plots-in-r.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/advanced-data-visualization.html	59 Advanced Data Visualization	resources/chapt_screen_images/advanced-data-visualization.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-visualization-1.html	60 Data Visualization	resources/chapt_screen_images/data-visualization-1.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-visualization-project.html	61 Data Visualization Project	resources/chapt_screen_images/data-visualization-project.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/reporting-results.html	62 Reporting results	resources/chapt_screen_images/reporting-results.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/building-a-resume.html	63 Building a resume	resources/chapt_screen_images/building-a-resume.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/translating-questions-to-data-science-questions.html	64 Translating Questions to Data Science Questions	resources/chapt_screen_images/translating-questions-to-data-science-questions.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/do-i-have-the-data-i-need.html	65 Do I Have The Data I Need?	resources/chapt_screen_images/do-i-have-the-data-i-need.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/descriptive-analysis.html	66 Descriptive Analysis	resources/chapt_screen_images/descriptive-analysis.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/exploratory-analysis.html	67 Exploratory Analysis	resources/chapt_screen_images/exploratory-analysis.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-overview.html	68 Inference: Overview	resources/chapt_screen_images/inference-overview.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-linear-regression.html	69 Inference: Linear Regression	resources/chapt_screen_images/inference-linear-regression.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-multiple-regression.html	70 Inference: Multiple Regression	resources/chapt_screen_images/inference-multiple-regression.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-examples.html	71 Inference: Examples	resources/chapt_screen_images/inference-examples.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-practice.html	72 Inference: Practice	resources/chapt_screen_images/inference-practice.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/prediction-and-machine-learning.html	73 Prediction and Machine Learning	resources/chapt_screen_images/prediction-and-machine-learning.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-analysis-workflow.html	74 Data Analysis Workflow	resources/chapt_screen_images/data-analysis-workflow.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-analysis-pipelines.html	75 Data Analysis Pipelines	resources/chapt_screen_images/data-analysis-pipelines.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/stats-project.html	76 Stats Project	resources/chapt_screen_images/stats-project.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/stats-project-exercise.html	77 Stats Project Exercise	resources/chapt_screen_images/stats-project-exercise.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/version-control.html	78 Version Control	resources/chapt_screen_images/version-control.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/github.html	79 GitHub	resources/chapt_screen_images/github.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/creating-a-repository.html	80 Creating A Repository	resources/chapt_screen_images/creating-a-repository.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/cloning-a-repository.html	81 Cloning A Repository	resources/chapt_screen_images/cloning-a-repository.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/pushing-and-pulling-changes.html	82 Pushing and Pulling Changes	resources/chapt_screen_images/pushing-and-pulling-changes.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/organization-with-issues-on-github.html	83 Organization with Issues on GitHub	resources/chapt_screen_images/organization-with-issues-on-github.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/setting-up-a-project-on-github.html	84 Setting Up A Project on GitHub	resources/chapt_screen_images/setting-up-a-project-on-github.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/pull-requests.html	85 Pull Requests	resources/chapt_screen_images/pull-requests.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/version-control-help.html	86 Version Control Help	resources/chapt_screen_images/version-control-help.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/types-of-communication.html	87 Types of Communication	resources/chapt_screen_images/types-of-communication.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-reports.html	88 Data Science Reports	resources/chapt_screen_images/data-science-reports.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-give-a-presentation.html	89 How To Give a Presentation	resources/chapt_screen_images/how-to-give-a-presentation.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-present-to-a-general-audience.html	90 How To Present to a General Audience	resources/chapt_screen_images/how-to-present-to-a-general-audience.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-present-to-a-technical-audience.html	91 How To Present to a Technical Audience	resources/chapt_screen_images/how-to-present-to-a-technical-audience.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-write-a-blog-post.html	92 How To Write a Blog Post	resources/chapt_screen_images/how-to-write-a-blog-post.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/participating-in-meetings.html	93 Participating in Meetings	resources/chapt_screen_images/participating-in-meetings.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-have-a-one-on-one-meeting.html	94 How To Have a One-on-One Meeting	resources/chapt_screen_images/how-to-have-a-one-on-one-meeting.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-keep-a-data-science-lab-notebook.html	95 How To Keep a Data Science Lab Notebook	resources/chapt_screen_images/how-to-keep-a-data-science-lab-notebook.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/which-graph-to-use-when.html	96 Which Graph to Use When	resources/chapt_screen_images/which-graph-to-use-when.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/what-you-need-to-find-a-data-science-job.html	97 What You Need to Find a Data Science Job	resources/chapt_screen_images/what-you-need-to-find-a-data-science-job.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/resumes-1.html	98 Resumes	resources/chapt_screen_images/resumes-1.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/cover-letters-1.html	99 Cover Letters	resources/chapt_screen_images/cover-letters-1.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/making-your-website-more-professional.html	100 Making Your Website More Professional	resources/chapt_screen_images/making-your-website-more-professional.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/project-gallery.html	101 Project Gallery	resources/chapt_screen_images/project-gallery.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-docs.html	102 Google Docs	resources/chapt_screen_images/google-docs.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/improving-your-github-profile.html	103 Improving Your GitHub Profile	resources/chapt_screen_images/improving-your-github-profile.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/improving-your-linkedin-profile.html	104 Improving Your LinkedIn Profile	resources/chapt_screen_images/improving-your-linkedin-profile.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-slides.html	105 Google Slides	resources/chapt_screen_images/google-slides.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/using-twitter-for-data-science.html	106 Using Twitter For Data Science	resources/chapt_screen_images/using-twitter-for-data-science.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-hangouts.html	107 Google Hangouts	resources/chapt_screen_images/google-hangouts.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-job-descriptions.html	108 Data Science Job Descriptions	resources/chapt_screen_images/data-science-job-descriptions.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/where-to-look-for-data-science-jobs.html	109 Where To Look for Data Science Jobs	resources/chapt_screen_images/where-to-look-for-data-science-jobs.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/projecting-from-a-chromebook.html	110 Projecting from a Chromebook	resources/chapt_screen_images/projecting-from-a-chromebook.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/where-to-find-remote-data-science-jobs.html	111 Where To Find Remote Data Science Jobs	resources/chapt_screen_images/where-to-find-remote-data-science-jobs.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-interviews.html	112 Data Science Interviews	resources/chapt_screen_images/data-science-interviews.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/practice-take-home-data-analysis.html	113 Practice Take-Home Data Analysis	resources/chapt_screen_images/practice-take-home-data-analysis.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-meetups.html	114 Data Science Meetups	resources/chapt_screen_images/data-science-meetups.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/what-is-r.html	14 What is R?	resources/chapt_screen_images/what-is-r.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/managing-files-in-the-terminal.html	15 Managing Files in the Terminal	resources/chapt_screen_images/managing-files-in-the-terminal.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/objects-in-r.html	16 Objects in R	resources/chapt_screen_images/objects-in-r.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/working-with-logicals.html	17 Working with Logicals	resources/chapt_screen_images/working-with-logicals.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-frames-1.html	18 Data Frames	resources/chapt_screen_images/data-frames-1.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/basic-commands-in-r.html	19 Basic Commands in R	resources/chapt_screen_images/basic-commands-in-r.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/getting-help-in-r.html	20 Getting Help in R	resources/chapt_screen_images/getting-help-in-r.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/r-packages.html	21 R Packages	resources/chapt_screen_images/r-packages.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/r-markdown.html	22 R Markdown	resources/chapt_screen_images/r-markdown.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/dataset-file-types.html	23 Dataset file types	resources/chapt_screen_images/dataset-file-types.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/finding-data.html	24 Finding Data	resources/chapt_screen_images/finding-data.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/cleaning-the-data.html	25 Cleaning the Data	resources/chapt_screen_images/cleaning-the-data.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/what-is-tidy-data.html	26 What is Tidy Data?	resources/chapt_screen_images/what-is-tidy-data.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/reshaping-data.html	27 Reshaping Data	resources/chapt_screen_images/reshaping-data.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-tidy-data.html	28 How to Tidy Data	resources/chapt_screen_images/how-to-tidy-data.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/joining-data.html	29 Joining Data	resources/chapt_screen_images/joining-data.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/working-with-strings.html	30 Working with Strings	resources/chapt_screen_images/working-with-strings.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/working-with-factors.html	31 Working with Factors	resources/chapt_screen_images/working-with-factors.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/working-with-dates.html	32 Working with Dates	resources/chapt_screen_images/working-with-dates.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/project-organization.html	33 Project organization	resources/chapt_screen_images/project-organization.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-tidying.html	34 Data Tidying	resources/chapt_screen_images/data-tidying.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-tidying-project.html	35 Data Tidying Project	resources/chapt_screen_images/data-tidying-project.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/plotting-the-data.html	36 Plotting the Data	resources/chapt_screen_images/plotting-the-data.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/good-plots.html	37 Good Plots	resources/chapt_screen_images/good-plots.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/introduction-to-ggplot2.html	38 Introduction to ggplot2	resources/chapt_screen_images/introduction-to-ggplot2.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/customization-in-ggplot2.html	39 Customization in ggplot2	resources/chapt_screen_images/customization-in-ggplot2.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/saving-plots.html	40 Saving Plots	resources/chapt_screen_images/saving-plots.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/from-exploratory-to-explanatory.html	41 From Exploratory To Explanatory	resources/chapt_screen_images/from-exploratory-to-explanatory.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-tables.html	42 Data Tables	resources/chapt_screen_images/data-tables.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/tables-in-r.html	43 Tables in R	resources/chapt_screen_images/tables-in-r.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/multiple-plots-in-r.html	44 Multiple Plots in R	resources/chapt_screen_images/multiple-plots-in-r.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/advanced-data-visualization.html	45 Advanced Data Visualization	resources/chapt_screen_images/advanced-data-visualization.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-visualization-1.html	46 Data Visualization	resources/chapt_screen_images/data-visualization-1.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-visualization-project.html	47 Data Visualization Project	resources/chapt_screen_images/data-visualization-project.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/getting-statistics.html	48 Getting statistics	resources/chapt_screen_images/getting-statistics.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/translating-questions-to-data-science-questions.html	49 Translating Questions to Data Science Questions	resources/chapt_screen_images/translating-questions-to-data-science-questions.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/do-i-have-the-data-i-need.html	50 Do I Have The Data I Need?	resources/chapt_screen_images/do-i-have-the-data-i-need.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/descriptive-analysis.html	51 Descriptive Analysis	resources/chapt_screen_images/descriptive-analysis.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/exploratory-analysis.html	52 Exploratory Analysis	resources/chapt_screen_images/exploratory-analysis.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-overview.html	53 Inference: Overview	resources/chapt_screen_images/inference-overview.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-linear-regression.html	54 Inference: Linear Regression	resources/chapt_screen_images/inference-linear-regression.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-multiple-regression.html	55 Inference: Multiple Regression	resources/chapt_screen_images/inference-multiple-regression.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-examples.html	56 Inference: Examples	resources/chapt_screen_images/inference-examples.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-practice.html	57 Inference: Practice	resources/chapt_screen_images/inference-practice.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/prediction-and-machine-learning.html	58 Prediction and Machine Learning	resources/chapt_screen_images/prediction-and-machine-learning.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-analysis-workflow.html	59 Data Analysis Workflow	resources/chapt_screen_images/data-analysis-workflow.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-analysis-pipelines.html	60 Data Analysis Pipelines	resources/chapt_screen_images/data-analysis-pipelines.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/stats-project.html	61 Stats Project	resources/chapt_screen_images/stats-project.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/stats-project-exercise.html	62 Stats Project Exercise	resources/chapt_screen_images/stats-project-exercise.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/reporting-results.html	63 Reporting results	resources/chapt_screen_images/reporting-results.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/version-control.html	64 Version Control	resources/chapt_screen_images/version-control.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/github.html	65 GitHub	resources/chapt_screen_images/github.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/creating-a-repository.html	66 Creating A Repository	resources/chapt_screen_images/creating-a-repository.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/cloning-a-repository.html	67 Cloning A Repository	resources/chapt_screen_images/cloning-a-repository.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/pushing-and-pulling-changes.html	68 Pushing and Pulling Changes	resources/chapt_screen_images/pushing-and-pulling-changes.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/organization-with-issues-on-github.html	69 Organization with Issues on GitHub	resources/chapt_screen_images/organization-with-issues-on-github.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/setting-up-a-project-on-github.html	70 Setting Up A Project on GitHub	resources/chapt_screen_images/setting-up-a-project-on-github.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/pull-requests.html	71 Pull Requests	resources/chapt_screen_images/pull-requests.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/version-control-help.html	72 Version Control Help	resources/chapt_screen_images/version-control-help.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/types-of-communication.html	73 Types of Communication	resources/chapt_screen_images/types-of-communication.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-reports.html	74 Data Science Reports	resources/chapt_screen_images/data-science-reports.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-give-a-presentation.html	75 How To Give a Presentation	resources/chapt_screen_images/how-to-give-a-presentation.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-present-to-a-general-audience.html	76 How To Present to a General Audience	resources/chapt_screen_images/how-to-present-to-a-general-audience.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-present-to-a-technical-audience.html	77 How To Present to a Technical Audience	resources/chapt_screen_images/how-to-present-to-a-technical-audience.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-write-a-blog-post.html	78 How To Write a Blog Post	resources/chapt_screen_images/how-to-write-a-blog-post.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/participating-in-meetings.html	79 Participating in Meetings	resources/chapt_screen_images/participating-in-meetings.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-have-a-one-on-one-meeting.html	80 How To Have a One-on-One Meeting	resources/chapt_screen_images/how-to-have-a-one-on-one-meeting.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-keep-a-data-science-lab-notebook.html	81 How To Keep a Data Science Lab Notebook	resources/chapt_screen_images/how-to-keep-a-data-science-lab-notebook.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/which-graph-to-use-when.html	82 Which Graph to Use When	resources/chapt_screen_images/which-graph-to-use-when.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/building-a-resume.html	83 Building a resume	resources/chapt_screen_images/building-a-resume.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/resumes-1.html	84 Resumes	resources/chapt_screen_images/resumes-1.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/cover-letters-1.html	85 Cover Letters	resources/chapt_screen_images/cover-letters-1.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/making-your-website-more-professional.html	86 Making Your Website More Professional	resources/chapt_screen_images/making-your-website-more-professional.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/project-gallery.html	87 Project Gallery	resources/chapt_screen_images/project-gallery.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-docs.html	88 Google Docs	resources/chapt_screen_images/google-docs.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/improving-your-github-profile.html	89 Improving Your GitHub Profile	resources/chapt_screen_images/improving-your-github-profile.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/improving-your-linkedin-profile.html	90 Improving Your LinkedIn Profile	resources/chapt_screen_images/improving-your-linkedin-profile.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-slides.html	91 Google Slides	resources/chapt_screen_images/google-slides.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/using-twitter-for-data-science.html	92 Using Twitter For Data Science	resources/chapt_screen_images/using-twitter-for-data-science.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-hangouts.html	93 Google Hangouts	resources/chapt_screen_images/google-hangouts.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-job-descriptions.html	94 Data Science Job Descriptions	resources/chapt_screen_images/data-science-job-descriptions.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/where-to-look-for-data-science-jobs.html	95 Where To Look for Data Science Jobs	resources/chapt_screen_images/where-to-look-for-data-science-jobs.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/projecting-from-a-chromebook.html	96 Projecting from a Chromebook	resources/chapt_screen_images/projecting-from-a-chromebook.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/where-to-find-remote-data-science-jobs.html	97 Where To Find Remote Data Science Jobs	resources/chapt_screen_images/where-to-find-remote-data-science-jobs.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-interviews.html	98 Data Science Interviews	resources/chapt_screen_images/data-science-interviews.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-meetups.html	99 Data Science Meetups	resources/chapt_screen_images/data-science-meetups.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/about-the-authors.html	About the Authors	resources/chapt_screen_images/about-the-authors.png

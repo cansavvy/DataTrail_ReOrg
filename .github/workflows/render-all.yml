@@ -107,7 +107,9 @@ jobs:
       # This job creates a shared scaffold for both.
       - name: Run TOC-less version of render
         id: tocless
-        run: Rscript -e "ottrpal::render_without_toc()"
+        run: |
+          mkdir -p docs/no_toc
+          Rscript -e "ottrpal::render_without_toc()"
 
       # Commit the TOC-less version files
       - name: Commit tocless bookdown files

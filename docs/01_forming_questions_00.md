@@ -2,7 +2,7 @@
 
 
 
-# Forming questions
+# **Forming questions**
 
 <img src="01_forming_questions_00_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g145cde68be4_0_10.png" title="Data Science process involves" alt="Data Science process involves" width="100%" />
 

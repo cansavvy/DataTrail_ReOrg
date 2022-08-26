@@ -4,7 +4,7 @@
 
 # How To Learn
 
-In the last lesson we walked through a few interesting data science projects. Eventually, using the foundational skills learned in the courses throughout this Course Set, with practice on your own, and with other skills you pick up along the way, you'll be completing your own, equally-awesome data science projects.
+In the last lesson we walked through a few interesting data science projects. Eventually, using the foundational skills learned, with practice on your own, and with other skills you pick up along the way, you'll be completing your own, equally-awesome data science projects.
 
 However, what many people don't tell you early on is that that path will be paved with a lot of failure. This isn't a bad thing! Data scientists fail *all the time*. They write code that produces an error they have to figure out. And they regularly have to abandon projects that aren't going to work out. **Failure is part of the process**.
 
@@ -64,9 +64,3 @@ While we'll point out where to find help when you're stuck throughout this cours
 ### Summary
 
 Learning how to learn and asking questions may seem simple when you read this lesson, but in practice it can be tough. It's *hard* to admit you don't know something and it can be difficult sometimes to explain what it is you don't know. Try anyway! Everyone was a beginner at some point. Those who moved from beginner to advanced did so because they learned the material, practiced *and* because they asked questions along the way. We'll remind you of the information included in this lesson throughout the course set because while it's easy to read the information here, it's not always easy to remember it when you're struggling!
-
-### Slides and Video
-
-![How To Learn](https://youtu.be/6FVNLlM7Hv8)
-
-* [Slides](https://docs.google.com/presentation/d/1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY/edit?usp=sharing)

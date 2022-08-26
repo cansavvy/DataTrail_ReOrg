@@ -75,9 +75,3 @@ Similar to above, the `height`, `width` can again be specified, as above. For jp
 ### Additional Resources
 
 * [R Cookbook](http://www.cookbook-r.com/Graphs/Output_to_a_file/)  - Further reading on file formats in R
-
-### Slides and Video
-
-![Saving Plots](https://youtu.be/1z3m_9ZXp0M)
-
-  * [Slides](https://docs.google.com/presentation/d/1O_10dR6Nb273S0bF-Xv3VCCHweagVzRJVv7HI1NPMBs/edit?usp=sharing)

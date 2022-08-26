@@ -118,9 +118,3 @@ A few things to keep in mind when making tables is that it's best to:
 
 
 ![Table](https://docs.google.com/presentation/d/1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE/export/png?id=1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE&pageid=g313d6498b0_0_207)
-
-### Slides and Video
-
-![Intro to Data Visualization](https://youtu.be/pJn1_SXYjRI)
-
-* [Slides](https://docs.google.com/presentation/d/1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE/edit?usp=sharing)

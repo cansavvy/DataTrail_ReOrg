@@ -1,7 +1,6 @@
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
 ```
 
 # **Getting statistics**
@@ -14,4 +13,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tl
 
 Through the completion of this section our goal is that you will be able to:
 
--
+- Translate your data science questions into a statistical test
+- Interpret statistical output toward the conclusion of your
+- Understand the strengths and limitations of the most common statistical tests

@@ -1,9 +1,5 @@
----
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
 ```
 
 # RStudio and Projects

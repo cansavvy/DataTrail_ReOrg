@@ -1,3 +1,6 @@
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
 # Descriptive Analysis
 
 The goal of descriptive analysis is to **describe** or **summarize** a set of data. Whenever you get a new dataset to examine, this is the first analysis you will perform. In fact, if you never summarize the data, it's *not* a data analysis.

@@ -1,8 +1,6 @@
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
 ```
-
 # GitHub
 
 Now that we have a handle on what version control is and how we can interface with it, we'll take some time to look at GitHub and get familiar with their website.

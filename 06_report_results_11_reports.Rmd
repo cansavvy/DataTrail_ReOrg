@@ -1,3 +1,6 @@
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
 # Data Science Reports
 
 The goal of a written report is to effectively communicate your full analysis to your readers. This means that your writing should be clear, your figures should be helpful, and your audience should be able to understand what you did to reach the conclusions your presenting.

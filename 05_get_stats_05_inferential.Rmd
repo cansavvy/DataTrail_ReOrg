@@ -1,3 +1,6 @@
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
 # Inference: Overview
 
 Inferential Analysis is what analysts carry out *after* they've described and explored their data set. After understanding your dataset better, analysts often try to infer something from the data. This is done using **statistical tests**. While we'll only be discussing **linear regression** in this lesson, there are *many* different statistical tests, each of which (when appropriately applied) can be used for inferential data analysis.

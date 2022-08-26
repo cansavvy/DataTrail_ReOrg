@@ -1,3 +1,6 @@
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
 # Data Analysis Pipelines
 
 In data science jobs in industry, often you're analyzing a dataset over time. What this means is that the dataset's structure doesn't change -- the variables you're collecting remain the same -- but the observations do. Maybe you're collecting sales figures for a company, and each month you're reanalyzing the dataset to see if trends have changed or if your predictions need to be altered. Or, possibly, you're analyzing user data where the demographics and number of users of your product change over time. In these cases, where the variables don't change but the observations do, pipelines can be incredibly helpful.

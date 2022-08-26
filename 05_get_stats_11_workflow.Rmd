@@ -1,3 +1,6 @@
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
 # Data Analysis Workflow
 
 In previous lessons, we went over the basics of data analysis. We went from how to ask data science questions and finding data to inferential and predictive data analysis. Since as a data scientist you may end up working on different projects at the same time. To prevent forgetting important steps that you learned in this course it's crucial that you follow all the steps. In this lesson, we're going to talk about a workflow for your data analysis projects.

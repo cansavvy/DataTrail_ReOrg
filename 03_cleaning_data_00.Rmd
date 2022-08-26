@@ -1,9 +1,6 @@
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
 ```
-
 # **Cleaning the Data**
 
 ```{r, fig.alt = "Data Science process", out.width = "100%", echo = FALSE}

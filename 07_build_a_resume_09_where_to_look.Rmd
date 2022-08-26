@@ -1,3 +1,6 @@
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
 # Where To Look for Data Science Jobs
 
 Now that we've discussed what you'll need to apply to jobs, including a resume and cover letter, what steps to take to update your professional social media presence, including an updated website, GitHub, LinkedIn and active Twitter, and what a job description looks like, we're ready to discuss where you actually find data science jobs. There are a number of locations where jobs are posted. We'll walk through them now and discuss the strengths of each platform.

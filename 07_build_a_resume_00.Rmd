@@ -1,7 +1,5 @@
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
 ```
 
 # **Building a resume**
@@ -12,7 +10,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tl
 
 ## Learning Objectives
 
-- 
+-
 
 ## What You Need to Find a Data Science Job
 

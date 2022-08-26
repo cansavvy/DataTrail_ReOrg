@@ -1,3 +1,6 @@
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
 # How To Present to a General Audience
 
 In the last lesson we discussed general guidelines for presenting data science projects and discussed the fact that considering who is in your audience is essential. In this lesson we'll break that down a little further to discuss how to approach presenting a data science project to a general audience and what considerations to make when preparing such a presentation. (In the next lesson we'll dive into presenting to a technical audience.)

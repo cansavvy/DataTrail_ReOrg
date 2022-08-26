@@ -142,7 +142,7 @@ df_c <- data.frame(sample = c("A", "B", "C", "D"),
                    animal = c("dog", "cat", "bird", "snake"))
 ```
 
-Before we merge these two datasets, we would want to make aboslutely sure that our samples are in the same order in each. Otherwise we will be combining data in a way that doesn't make sense and could throw off the rest of our analysis! (Eeek!)
+Before we merge these two datasets, we would want to make absolutely sure that our samples are in the same order in each. Otherwise we will be combining data in a way that doesn't make sense and could throw off the rest of our analysis! (Eeek!)
 
 We can use our friend, the function `all.equal()` to check that we are working with the same samples and in the same order.
 

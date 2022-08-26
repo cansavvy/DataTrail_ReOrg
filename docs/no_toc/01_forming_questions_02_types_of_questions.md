@@ -1,5 +1,6 @@
 
 
+
 ## Types of data science questions
 
 The way to start a data analysis project is to start with a question. Asking questions is central to data science. In this chapter we will start to get comfortable with the types of questions that data science can answer.

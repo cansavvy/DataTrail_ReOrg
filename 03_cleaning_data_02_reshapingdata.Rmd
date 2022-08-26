@@ -215,6 +215,9 @@ You may find you need your rows to be columns and your columns to be rows. In ot
 To do this, you can use the `t()` function. But! Note that although the `t()` function can be given a data frame, it will return a matrix. This means if you want your data frame to stay a data frame you need to follow your `t()` function with a `as.data.frame()`. This might look like this:
 
 ```{r}
+# We need to load this so we can use %>% 
+library(magrittr)
+
 iris_transposed <- iris %>%
   t() %>%
   as.data.frame()

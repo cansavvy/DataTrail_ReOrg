@@ -1,4 +1,5 @@
 
+
 ## Ethical Data Science
 
 From the emails automatically marked as spam in your Inbox and facial recognition on Facebook to the targeted advertisements you see whenever you're online, data science has made its way into our everyday lives. Often, this is a positive because data scientists generally set out to improve the world (say, by analyzing crime data in hopes of reducing violent crime) or to make our lives easier (by preventing spams in our mailboxes, for example). However, data science projects are certainly not without negative consequences. We discussed some of the companies who have run up against issues properly securing user data in the last lesson; however, protecting the privacy of users' data is not the only time data scientists should consider the ethics of their work. In fact, **ethical considerations should be made from the start of a project and should never stop being made**. We'll discuss what we mean by that in this lesson.

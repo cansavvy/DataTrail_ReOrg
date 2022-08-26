@@ -1,3 +1,4 @@
+
 # Participating in Meetings
 
 Most data scientists spend a fair amount of their time in meetings, either running them or as a participant. In this lesson we'll cover when to have a meeting, how to run a meeting, and how to participate in a meeting as a data scientist.

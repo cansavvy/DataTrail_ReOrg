@@ -1,3 +1,4 @@
+
 # Google Docs
 
 One of the benefits to using Google on the cloud is its suite of document editors, which are completely free to use and accessible anywhere online. One of these editors is Google Docs, which is a web-based word document and text editor.  If you've ever used Microsoft Word to create and edit documents, then you can think of Google Docs as an online version of Word, since it has many of the same capabilities.  In fact, it is compatible with Microsoft Word files (.docx and older) as well as plain text files (.txt).  A major benefit of Google Docs over Microsoft Word, however, is the cloud capability.  Because documents are edited online, multiple users can format and edit a word document at the same time.

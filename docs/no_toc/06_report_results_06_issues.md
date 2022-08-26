@@ -1,7 +1,3 @@
----
-output: html_document
----
-
 
 
 # Organization with Issues on GitHub

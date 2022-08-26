@@ -1,3 +1,4 @@
+
 # Improving Your GitHub Profile
 
 After discussing the required application materials, such as a resume and cover letter, and your personal website and the projects you've worked on, the next step in getting ready to apply to jobs is to be sure that your professional social media presence is complete and up-to-date. While this may not be a *requirement* of a job application, it is likely that your social media presence will be looked at during the interview process. Thus, while not required, it is incredibly important. In this and the following few lessons in this course, we'll walk through the necessary steps to get each of your professional social media platforms up-to-date. In this lesson, our focus will be on ensuring your GitHub presence and profile is ready for the job market.

@@ -44,7 +44,7 @@ When using a "normal" computer you usually download software that makes it possi
 * __Chrome Extensions__: These are actually pieces of software that modify the way the Chrome Browser itself works. An example would be an ad blocker that prevents ads on webpages you visit in Chrome from being shown.
 * __Android Apps__: Many modern Chromebooks now support installing Android Apps. These are the same apps that you would get if you had an Android phone. These apps won't run inside of a web browser, but will function just like an app on your phone.
 
-You can think of all three of these extensions to Chrome OS as "Apps". Not all Chromebooks support Android Apps and we want anyone to be able to complete the Cloud-based Data Science Program if they have a Chrome web browser and an Internet connection. So we will mostly focus on Chrome Apps and Extensions for this course. But if you have Android Apps that you like on your phone and have a [Chromebook that supports Android Apps](https://www.androidcentral.com/these-are-chromebooks-can-run-android-apps) then you can install those apps as well as we discuss in the next section.  
+You can think of all three of these extensions to Chrome OS as "Apps". Not all Chromebooks support Android Apps and we want anyone to be able to complete the DataTrail Program if they have a Chrome web browser and an Internet connection. So we will mostly focus on Chrome Apps and Extensions for this course. But if you have Android Apps that you like on your phone and have a [Chromebook that supports Android Apps](https://www.androidcentral.com/these-are-chromebooks-can-run-android-apps) then you can install those apps as well as we discuss in the next section.  
 
 
 
@@ -157,7 +157,7 @@ We already talked about how you can install any webpage as a Chrome App directly
 
 
 You will be taken to the Chrome Web Store in your browser.
-You can filter by whether they are free, built by Google, or are able to run offline. The first thing we will do is click on _Apps_ to ensure that we are searching only among Chrome Apps.  As an example we will find and install the [StackEdit](https://stackedit.io/) app, which is useful for writing markdown documents that you will use throughout the Cloud-based Data Science courses. One nice feature of _StackEdit_ is that it can be used even when your Chromebook is offline. To find the app, we will search for _StackEdit_ and then click return.
+You can filter by whether they are free, built by Google, or are able to run offline. The first thing we will do is click on _Apps_ to ensure that we are searching only among Chrome Apps.  As an example we will find and install the [StackEdit](https://stackedit.io/) app, which is useful for writing markdown documents that you will use throughout the DataTrail courses. One nice feature of _StackEdit_ is that it can be used even when your Chromebook is offline. To find the app, we will search for _StackEdit_ and then click return.
 
 
 

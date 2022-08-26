@@ -1,0 +1,116 @@
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Data Frames
+
+A majority of the time that you are working with data in R you will have it in the form of a data frame.
+
+Data frames can contain different types of variables in a rectangular format, much like how spreadsheets are.
+A data frames' size can be describe in terms of rows (across) and columns (up/down). Rows are often called *observations* and columns are called *variables*.
+
+```{r, out.width = "100%"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc/edit#slide=id.g313d649efe_0_38")
+```
+
+\*Much of this chapter is paraphrased or inspired by [content from the Childhood Cancer Data Lab](https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/01-intro_to_base_R.Rmd).
+
+## Exploring data frames
+
+In R there are built in data frames that you can use to play with. In this lesson, we will use some of these to get comfortable with data frames.
+
+As a data scientist, one of your main skills will be constantly looking at and evaluating your data! In RStudio, you can see your data frame by clicking on the name of your data frame in the *Environment* pane.
+
+Some useful functions for exploring our data frame include:
+
+- `head()` to see the first 6 rows of a data frame. Additional arguments supplied can change the number of rows.
+- `tail()` to see the last 6 rows of a data frame. Additional arguments supplied can change the number of rows.
+- `names()` to see the column names of the data frame.
+- `nrow()` to see how many rows are in the data frame
+- `ncol()` to see how many columns are in the data frame.
+
+Try out these functions to explore your data frame by putting the iris data frame in them.
+
+```
+head(iris)
+
+Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+1          5.1         3.5          1.4         0.2  setosa
+2          4.9         3.0          1.4         0.2  setosa
+3          4.7         3.2          1.3         0.2  setosa
+4          4.6         3.1          1.5         0.2  setosa
+5          5.0         3.6          1.4         0.2  setosa
+6          5.4         3.9          1.7         0.4  setosa
+```
+
+
+We can additionally explore overall properties of the data frame with two different functions: `summary()` and `str()`.
+
+The `summary()` function gives us a summary of each variable in the data frame.
+
+```{r}
+summary(iris)
+```
+
+`str()` function gives us information about the structure and variables included in the `iris` data frame.
+
+```{r}
+str(iris)
+```
+
+### Subsetting data frames
+
+There are multiple ways you can subset your data frame if you want to only look at certain parts of it.
+
+#### $ for extracting columns
+
+Each column in this data frame can behave as a vector and we can easily pull it out from the data frame by using a `$`.
+
+```{r}
+iris$Species
+```
+
+Note that `$` work for any R objects that have names. But don't work if there aren't names. when you look at a data frame you will see there are names to the columns. Try using the `colnames()` function to explore the column names of the `iris` data frame.
+
+```{r}
+colnames(iris)
+```
+
+#### Brackets for indexing
+
+Brackets can be used to index data frames or other objects. In the case of data frames, you can subset data frames like below:
+
+In this example, this will extract the second row's data and the 1st column.
+
+```{r}
+iris[2, 1]
+```
+
+Subsetting always goes `[row, column]`.
+
+If we want the whole row or whole column to be extract we can leave the other spot blank like this:
+
+In this example, the first row and all the columns of that row will be extracted.
+```{r}
+iris[1, ]
+```
+
+In this example, all rows of the 3rd column will be extracted.
+
+```{r}
+iris[, 3]
+```
+
+### First plot!
+
+Now that we have some basics down, let's preview how we can easily make visuals with R. "A picture is worth a thousand words" is also true when it comes to data!
+
+In this quick plot example, we can show how `Sepal Length` is related to `Sepal Width` by extracting the data using `$`. Additionally we can color code the data points by `Species` by using the `col` argument.
+
+```{r}
+plot(iris$Sepal.Length, iris$Sepal.Width, col = iris$Species)
+```
+
+Don't worry too much about the specifics of plotting. We will go into much more detail about how to make visuals of your data later. This is just to illustrate how R makes data visuals easy to make!

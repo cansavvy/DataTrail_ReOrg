@@ -212,7 +212,7 @@ Throughout this Course Set, whenever you're asked to complete a Swirl module, yo
 
 
 
-![Cloud-based Data Science on RStudio Cloud](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g3f1d06ac70_0_0)
+![DataTrail on RStudio Cloud](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g3f1d06ac70_0_0)
 
 Among the projects listed you'll see one called "swirl" (You may have to scroll down on the list to see it.). To the right of swirl, you'll want to click on "Copy".
 

@@ -117,11 +117,3 @@ In this lesson we've covered the basics of participating in and running meetings
 ### Additional Resources
 * [Twitter Thread on Meetings](https://twitter.com/gvwilson/status/994553693772099589), by [Greg Wilson](http://third-bit.com/)
 * [How to Run a Meting](https://hbr.org/1976/03/how-to-run-a-meeting), by Antony Jay
-
-
-
-### Slides and Video
-
-![Participating in Meetings](https://www.youtube.com/watch?v=LdQUpDb70mk)
-
-* [Slides](https://docs.google.com/presentation/d/16yj4ui-329oiX0Fqk4hZemEx-lw0Z3sw7xPx4hEvh0M/edit?usp=sharing)

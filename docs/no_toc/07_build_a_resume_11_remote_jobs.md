@@ -53,11 +53,3 @@ Thus, there won't be much difference between the job postings that allow remote 
 ### Summary
 
 In this lesson we discuss how and where to look for remote positions, should you be unable to relocate or prefer working from your own home.
-
-
-
-### Slides and Video
-
-![Where To Find Remote Data Science Jobs](https://www.youtube.com/watch?v=RRr5eQeqJlU)
-
-* [Slides](https://docs.google.com/presentation/d/1Ug8GIBwIQME8C68jVa0rPwEryW30Vn5PT-IM0LKFDNw/edit?usp=sharing)

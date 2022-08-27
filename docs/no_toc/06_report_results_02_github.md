@@ -92,9 +92,3 @@ Along the bottom of *every. single. page.* there is the ["Help" button](https://
 ### Summary
 
 In this lesson we looked at GitHub and its interface. We took a tour of the website and its interface. We customized your profile to give people some more information on who you are. We made our very first repository by following the GitHub guide and explored the various options GitHub provides for exploring repositories.  
-
-### Slides and video
-
-![GitHub](https://youtu.be/HJUiSgqAqEQ)
-
-* [Slides](https://docs.google.com/presentation/d/1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo/edit?usp=sharing)  

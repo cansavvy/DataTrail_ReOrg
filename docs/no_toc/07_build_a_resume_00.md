@@ -6,7 +6,7 @@
 
 ## Learning Objectives
 
--
+- 
 
 ## What You Need to Find a Data Science Job
 

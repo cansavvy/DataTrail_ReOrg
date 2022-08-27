@@ -141,9 +141,3 @@ When we run the `git pull` command, the changes present in the remote repository
 ### Practice
 
 To get more practice with these concepts, as we know they are not the easiest, we suggest you go practice at [GitHub Learning Lab](https://lab.github.com/). Here you can practices your git commands and get feedback as to what you've done correctly and where you steered off course. It's a great way to get better at using git commands before you move onto the quiz!
-
-### Slides and Video
-
-![Pushing and Pulling Changes](https://www.youtube.com/watch?v=zQ5HYo9qcB8)
-
-* [Slides](https://docs.google.com/presentation/d/1syZGx4saIzmiWVGZzIjqBjQaGkFXyC_Hlo5Pq-edYs8/edit?usp=sharing)

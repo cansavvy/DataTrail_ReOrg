@@ -28,4 +28,84 @@ Through the completion of this section our goal is that you will be able to:
 
 # Reproducibility
 
-TODO: write about reproducibility and why its important
+A key aspect of science, and by extension data science, is that it should be consistent. For a finding to be considered scientific, it should be able to be repeated and found again. If you drop the apple and it falls to the ground because of gravity, you should find observe the same thing if you drop the apple again.
+
+The more a scientific result can be found again and again and the inferences from it applied elsewhere, the more we can trust that result! When it comes to a data analysis however, the methods are a bit more involved than dropping an apple. So making a data science result repeatable is not something that happens without a lot of meticulous work and well thought out methods.
+
+- A **repeatable** analysis is one that can be repeated by the **same researcher**, with the _same code_ and _same data_ and achieve the _same result_.
+
+However, a result being repeatable is not enough! As mentioned previously, data science is best done as a part of a community. This means, once you know you can reliable repeat your analysis and get the same result, you will want others to investigate the result for themselves. Other people will be able to see things that you have missed or may have different perspectives that are valuable (another reason why community is helpful in data science). If you can't achieve the same result twice, then others won't be able to replicate your result either.
+
+This means that you want others to be able to take your code and data and be able to re-run your analysis AND achieve the same result!
+
+- A **reproducible** analysis is one that can be repeated by a **different researcher**, with the _same code_ and _same data_ and achieve the _same result_.
+
+```{r, fig.alt = "Data Science process", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_0_289")
+```
+
+## Examples about reproducibility
+
+Let's say that Maria is a data scientist who's found a really cool result in her data. She's very excited about this result, done some polishing and now shares her analysis code and original data with a fellow data scientist, Avi. Avi is going to attempt to re-run Maria's analysis. If he is able to get the same result, then Maria's result will have been reproduced and considered that much more reliable.
+
+```{r, fig.alt = "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results?
+Maria sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer. Will Avi get the same scatterplot and results?", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_0_289")
+```
+
+Reproducing an analysis result may seem like it should be easy and straightforward. But unfortunately it often is a very frustrating process for the person trying to run someone else's code. Avi in this scenario is struggling to re-run Maria's code.
+
+```{r, fig.alt = "Avi the associate is confused and sweating. His computer has the word ‘error’ written all over it and its on fire trying to use Maria’s code on Maria’s data. This is using a substantial amount of time and effort on Avi’s part. ", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_1_638")
+```
+
+Perhaps eventually, with some help from Maria, Avi does finally get the code running and the data re-analyzed. Just because code doesn't throw an error doesn't mean it ran the same way or was successful. It's also not uncommon that Avi will obtain a different result. Even if the result is only slightly different, this is worth Maria digging into; because now we don't know whether Maria's run of the analysis or Avi's run is more reliable. And it could be the source of the difference is something we care about.
+
+```{r, fig.alt = "Maria has a particular computing environment she has developed her code from. This computing environment is represented as a bubble above her computer with various hexagons with version numbers as well as Rstudio and R installed on her computer. Her code ran just fine on her particular computing environment. Avi attempted to run Maria’s code on his very different local computing environment and got an error. His computer runs the same code but came up with a different result!", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_1_220")
+```
+
+Reproducibility and repeatability is not only important when working with other scientists, but it's also important working with your future/past self! If you recall, we mentioned one of your closest collaborators is you of yesterday! But past you doesn't reply to emails! This is why working toward reproducible analyses is also so important! It will save future you time and stress.
+
+```{r, fig.alt = "Just because your analysis runs for you today, doesn’t mean it will run the same for you tomorrow! Two computers are shown. One from now that works and one from the future that says error", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_0_997")
+```
+
+At this point you may be thinking -- my code runs fine right now, what could possibly happen between now and then that would cause it to break?
+We will discuss a variety of aspects of your analysis that you should keep in mind that will affect reproducibility.
+
+### Things that affect reproducibility
+
+#### Frequency of re-running code
+
+#### Documentation
+
+#### Manual steps
+
+#### Software and package versions
+
+#### Usage
+
+#### Data changed
+
+#### File organization
+
+#### Version control
+
+
+## Reproducibility doesn't happen overnight!
+
+This may sound overwhelming to implement. But don't fear! A reproducible analysis is not written on the 1st try (or the second, third fourth... 10th edits to your analysis). No analysis is perfect! The idea here is to encourage you to think about these things and work on them iteratively, over time so that the analyses you work on will become more and more reproducible sooner into your projects.
+
+```{r, fig.alt = "Reproducibility is on a continuum. This graph shows a two sided arrow with a gradient. On the very left is a ‘not repeatable analysis’ it was ran once. To the right of that is an analysis that ‘re-runs sometimes’. To the right of this, is an analysis that ‘Re-runs reliably in most contexts’.  And all the way to the right is a ‘perfectly reproducible analysis’ that ‘Re-runs in every situation and gets the same result every time’. In red lettering we note that every analysis is started by being run once but no analysis is ‘perfectly reproducible’.", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_0_854")
+```
+
+No analysis is perfect! But the best advice for making your analyses more reproducible is by working with other data scientists! Share your results and ask lots of questions! After all, data science is all about questions!
+
+### Additional Resources
+
+* [Building a Data Pipeline from Scratch](https://medium.com/the-data-experience/building-a-data-pipeline-from-scratch-32b712cfb1db), by [Alan Marazzi](https://www.rdisorder.eu/)
+* [Parameterized R Markdown reports with RStudio Connect](https://www.rstudio.com/resources/videos/parameterized-r-markdown-reports-with-rstudio-connect/)
+* [RMarkdown Parameterized Reports](https://rmarkdown.rstudio.com/developer_parameterized_reports)
+* [Chapter 15: Parameterized Reports in R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html), by Yihui Xie, J.J. Allaire, and Garrett Grolemund

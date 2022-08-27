@@ -36,9 +36,3 @@ Over the course of the project, you can come back to the Issues tab on your repo
 
 
 ![Main board for all issues](https://docs.google.com/presentation/d/1G8ftZ6_UzNyYfcDoLKHhp2GpDtd20cln0vnJpHiUpFE/export/png?id=1G8ftZ6_UzNyYfcDoLKHhp2GpDtd20cln0vnJpHiUpFE&pageid=g3917a587ee_0_44)
-
-### Slides and Video
-
-![Issues on GitHub](https://www.youtube.com/watch?v=f_SlMKNNmIA)
-
-* [Slides](https://docs.google.com/presentation/d/1G8ftZ6_UzNyYfcDoLKHhp2GpDtd20cln0vnJpHiUpFE/edit?usp=sharing)

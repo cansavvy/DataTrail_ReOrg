@@ -174,9 +174,3 @@ A big part of staying organized with your files is understanding how folders in 
 ottrpal::include_slide("https://docs.google.com/presentation/d/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8/edit#slide=id.g12feb92770a_22_8")
 ```
 Congratulations! You have cloned your first repository!
-
-### Slides and Video
-
-![Cloning A Repository](https://www.youtube.com/watch?v=RrajGWw_3wM)
-
-* [Slides](https://docs.google.com/presentation/d/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8/edit?usp=sharing)

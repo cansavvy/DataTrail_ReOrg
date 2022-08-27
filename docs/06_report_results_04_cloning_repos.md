@@ -158,9 +158,3 @@ A big part of staying organized with your files is understanding how folders in 
 
 <img src="resources/images/06_report_results_04_cloning_repos_files/figure-html//1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_22_8.png" title="Working directories" alt="Working directories" width="480" style="display: block; margin: auto;" />
 Congratulations! You have cloned your first repository!
-
-### Slides and Video
-
-![Cloning A Repository](https://www.youtube.com/watch?v=RrajGWw_3wM)
-
-* [Slides](https://docs.google.com/presentation/d/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8/edit?usp=sharing)

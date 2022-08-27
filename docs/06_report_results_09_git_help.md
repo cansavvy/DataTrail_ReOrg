@@ -46,10 +46,3 @@ This lesson is intentionally short. There are lots of ways that git and GitHub w
 
 * [Happy Git and GitHub for the useR](http://happygitwithr.com/reset.html), by Jenny Bryan
 * [GitHub Help](https://help.github.com/)
-
-
-### Slides and Video
-
-![Version Control Help](https://www.youtube.com/watch?v=EeeC-UrIiCQ)
-
-* [Slides](https://docs.google.com/presentation/d/1Aj1Y0lIYdKftZVzAjWCWkOd8c0-IxnxtPbBmIUOdYC4/edit?usp=sharing)

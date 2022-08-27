@@ -246,16 +246,14 @@ So far in this Course set, you've been told what data to work with, how to explo
 
 To be considered complete, this project must demonstrate your ability to:
 
-* form a data science question
-* get data
-* tidy data
-* explore data
-* analyze data
-* visualize data
-* communicate your analysis effectively
+* Form a data science question
+* Get data
+* Clean the data
+* Plot data
+* Get stats
+* Report results
 
-Carry out a data science project on your own about a topic you care about or find interesting! Then **add this project to your `blogdown` website**. Push the changes to GitHub and include the link to your project in the quiz below.
-
+Carry out a data science project on your own about a topic you care about or find interesting! Then **add this project to your website**. Push the changes to GitHub and include the link to your project in the quiz below.
 
 ### Slides and Video
 

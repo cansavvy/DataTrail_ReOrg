@@ -48,8 +48,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7Uf
 
 Let's say that Maria is a data scientist who's found a really cool result in her data. She's very excited about this result, done some polishing and now shares her analysis code and original data with a fellow data scientist, Avi. Avi is going to attempt to re-run Maria's analysis. If he is able to get the same result, then Maria's result will have been reproduced and considered that much more reliable.
 
-```{r, fig.alt = "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results?
-Maria sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer. Will Avi get the same scatterplot and results?", out.width = "100%", echo = FALSE}
+```{r, fig.alt = "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results? Maria sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer. Will Avi get the same scatterplot and results?", out.width = "100%", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_0_289")
 ```
 

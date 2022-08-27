@@ -97,9 +97,3 @@ Finally, be cognizant of the version of files you are working on. Check that you
 ### Summary
 
 Now that we've covered what version control is and some of the benefits, you should be able to understand why we have an entire course dedicated to understanding it! Additionally, we looked at what Git and GitHub are, and then covered much of the commonly used (and sometimes confusing!) vocabulary inherent to version control work. We then quickly went over some best practices to using Git -- but the best way to get a hang of this all is to use it! Hopefully you feel like you have a better handle on how Git works than the people in [this xkcd comic](https://xkcd.com/1597/)!
-
-### Slides and video
-
-![Version Control](https://youtu.be/KpMkrFPuGc8)
-
-* [Slides](https://docs.google.com/presentation/d/1nBgMcaXeF-hz5hX6712d_LC9Zm04s2mSCjuGECuht0M/edit?usp=sharing)

@@ -10,7 +10,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tl
 
 ## Learning Objectives
 
--
+- 
 
 ## What You Need to Find a Data Science Job
 

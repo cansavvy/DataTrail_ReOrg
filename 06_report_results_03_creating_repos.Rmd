@@ -66,11 +66,3 @@ Congratulations! You have created and set up your first repository!
 ### The GitHub Guide
 
 GitHub also recognizes that this can be an overwhelming process for new users, and as such have developed a mini tutorial to get you started with GitHub. You can go through [this guide](https://guides.github.com/activities/hello-world/) to get further process setting up repositories on GitHub!
-
-
-
-### Slides and Video
-
-![Creating A Repository](https://www.youtube.com/watch?v=mC6xwXaUZmk)
-
-* [Slides](https://docs.google.com/presentation/d/1Dxf8VZi4RAf4BA8Xb__gbnTxFLIJKM-mxSy_BMA48DU/edit?usp=sharing)

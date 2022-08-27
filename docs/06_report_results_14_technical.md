@@ -109,11 +109,3 @@ Finally, we've also broken down the presentation by percent of slides dedicated 
 ### Summary
 
 In this lesson we discussed the approach to and specifics of presenting to a technical audience. We walked through an example of a presentation used to present to a technical audience and broke down what parts of that example presentation were spent on what aspect of presentation. We highlighted the need to present the details of your analysis and to discuss your thoughts about the analysis and tools used in your presentation. Additionally, we've compared the general and technical presentations visually to really drive home the shift in focus from a high-level general audience presentation to a detailed, include the nitty-gritty technical audience presentation.
-
-
-
-### Slides and Video
-
-![How To Present to a Technical Audience](https://www.youtube.com/watch?v=niZ2fkeqwY4)
-
-* [Slides](https://docs.google.com/presentation/d/1EromtzNJS1mzKLOHzV4Cwes4XhrMR23dMXtjqOCUVzk/edit?usp=sharing)

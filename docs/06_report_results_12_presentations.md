@@ -254,10 +254,3 @@ In this lesson we've discussed the important pieces to designing and presenting 
 
 * [Harnessing the Power of the Web Via R Clients for Web APIs](https://www.lucymcgowan.com/talk/asa_joint_statistical_meeting_2018/), by [Lucy D'Agostino McGowan](https://www.lucymcgowan.com/)
 * Text Mining the tidy Way [video](https://www.rstudio.com/resources/videos/text-mining-the-tidy-way/) [visual](https://speakerd.s3.amazonaws.com/presentations/d6041c6b704d4bf7bfa9d0973ae2d006/rstudio_conf.pdf), from [Julia Silge](https://juliasilge.com/about/)
-
-
-### Slides and Video
-
-![How To Give a Presentation](https://www.youtube.com/watch?v=H3mogwsaU-M)
-
-* [Slides](https://docs.google.com/presentation/d/1SNcN3sJoZ7i7zXieS5MTRpzrgEi_RFInFp9teYFqpIg/edit?usp=sharing)

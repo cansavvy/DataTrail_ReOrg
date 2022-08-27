@@ -28,10 +28,7 @@ In this section our goal is for you to be able to:
 
 Before we jump into the content, we just wanted to orient you to how this course and all the courses in this program will be laid out:
 
-* **Courses** - There are multiple courses in the _DataTrail_ program. The first one is "Introduction to DataTrail", which is the course you're in right now.
 * **Lessons** - Each course will consist of lessons. You're looking at the first lesson here. It's called "Welcome to DataTrail". You can see a list of all the lessons in this course in the left panel. The lessons will contain text and images to walk you through every lesson of each course.
-* **Videos** - At the end of each lesson there will be a link to a YouTube video. This video contains the same information as what is included in the text of the lesson; however, we know that some people learn better by listening. Sometimes you may find the videos more helpful. Sometimes you may find the text more helpful. These are included in case they are more helpful than the text to you personally.
-* **Slides** - Each lesson also has link at the bottom to an accompanying slide show. Feel free to look through these slides if you find them helpful. They are the same images that were used to generate the video.
 * **Quizzes** - Most lessons will have a quiz to evaluate your understanding of the material in that lesson. Successful completion of these quizzes is required for receipt of the certificate at the end of each course.
 * **Exercise** - Some courses will have associated exercises. Think of these as larger projects. They won't be required to receive the certificate at the end of the course; however, the skills the exercises require will be essential if you're interested in getting a job in data science, so we highly suggest you complete them.
 
@@ -92,19 +89,9 @@ Our goal here is also to create a supportive and inclusive learning experience. 
 
 ### How the program is organized
 
-This program is a series of online classes. They are designed to be used in many different ways so they can be useful for the most people possible. The courses and projects can be completed entirely online using nothing more than a web browser. The program is organized into
-
-* __Courses__: Courses are designed to be able to be done in about a month working in your spare time or day or two working full time. You can receive a certificate for each course and all courses are based on a pay-what-you-can model. Each course consists of:
-    * Text based tutorials and lessons
-    * Slides with the images from the tutorials
-    * Video tutorials that cover the same information as the lessons
-    * Ungraded exercises to practice what you have learned
-    * Graded quizzes to measure what you have learned
-    * Projects to help you build a portfolio for showing what you've learned
-* __Course Set__: A Course Set is a group of courses that form credentials.
+This program is a series of online classes. They are designed to be used in many different ways so they can be useful for the most people possible. The courses and projects can be completed entirely online using nothing more than a web browser.
 
 To keep up on the latest information about the program, courses and more go to https://www.DataTrail.org/.
-
 
 ### How this course is graded
 

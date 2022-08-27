@@ -98,9 +98,3 @@ In Hangouts, you can have a video/audio/text conversation with multiple people a
 ### More specifics on using Google Hangouts
 
 Google Hangouts is an excellent way to communicate with others about your work, all through a web browser or your Chromebook!  We've covered some of the main features of Hangouts here.  If you want to know more, you can search for tutorials on YouTube.com or check out Google's guide to getting started with Hangouts at the following web address: https://gsuite.google.com/learning-center/products/hangouts/get-started/#!/
-
-### Slides and Video
-
-![Google Hangouts](https://www.youtube.com/watch?v=gutFsKYyuIA)
-
-* [Slides](https://docs.google.com/presentation/d/14u2fp3D2t-umKnFOSfIxyDwfjIDMKJ9cBtqYUh_E93o/edit?usp=sharing)

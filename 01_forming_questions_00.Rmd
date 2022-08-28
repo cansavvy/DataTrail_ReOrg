@@ -14,5 +14,6 @@ Through the completion of this section our goal is that you will be able to:
 
 - Recognize the general steps in involved in a data science projects
 - Practice forming data science questions
+- Understand the general categories for types of data science questions
 - Create a dataset using Googlesheet
 - Look at data and ask questions based on its contents

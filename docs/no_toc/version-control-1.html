@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 60 Data Analysis Pipelines | DataTrail</title>
-  <meta name="description" content="Chapter 60 Data Analysis Pipelines | DataTrail" />
+  <title>Chapter 63 Version Control | DataTrail</title>
+  <meta name="description" content="Chapter 63 Version Control | DataTrail" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 60 Data Analysis Pipelines | DataTrail" />
+  <meta property="og:title" content="Chapter 63 Version Control | DataTrail" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 60 Data Analysis Pipelines | DataTrail" />
+  <meta name="twitter:title" content="Chapter 63 Version Control | DataTrail" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="data-analysis-workflow.html"/>
-<link rel="next" href="stats-project.html"/>
+<link rel="prev" href="reproducibility.html"/>
+<link rel="next" href="github.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -747,388 +747,344 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="58.0.8" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#summary-17"><i class="fa fa-check"></i><b>58.0.8</b> Summary</a></li>
 <li class="chapter" data-level="58.0.9" data-path="prediction-and-machine-learning.html"><a href="prediction-and-machine-learning.html#additional-resources-21"><i class="fa fa-check"></i><b>58.0.9</b> Additional Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="59" data-path="data-analysis-workflow.html"><a href="data-analysis-workflow.html"><i class="fa fa-check"></i><b>59</b> Data Analysis Workflow</a>
+<li class="chapter" data-level="59" data-path="stats-project.html"><a href="stats-project.html"><i class="fa fa-check"></i><b>59</b> Stats Project</a></li>
+<li class="chapter" data-level="60" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html"><i class="fa fa-check"></i><b>60</b> Stats Project Exercise</a>
 <ul>
-<li class="chapter" data-level="59.0.1" data-path="data-analysis-workflow.html"><a href="data-analysis-workflow.html#what-are-the-steps"><i class="fa fa-check"></i><b>59.0.1</b> What are the steps?</a></li>
-<li class="chapter" data-level="59.0.2" data-path="data-analysis-workflow.html"><a href="data-analysis-workflow.html#an-example"><i class="fa fa-check"></i><b>59.0.2</b> An example</a></li>
+<li class="chapter" data-level="60.0.1" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#rstudio-cloud-setup-2"><i class="fa fa-check"></i><b>60.0.1</b> RStudio Cloud Setup</a></li>
+<li class="chapter" data-level="60.0.2" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#the-data-5"><i class="fa fa-check"></i><b>60.0.2</b> The Data</a></li>
+<li class="chapter" data-level="60.0.3" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#accessing-the-data"><i class="fa fa-check"></i><b>60.0.3</b> Accessing the Data</a></li>
+<li class="chapter" data-level="60.0.4" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#loading-the-data-into-r"><i class="fa fa-check"></i><b>60.0.4</b> Loading the Data into R</a></li>
+<li class="chapter" data-level="60.0.5" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#analyze-the-data"><i class="fa fa-check"></i><b>60.0.5</b> Analyze the Data</a></li>
+<li class="chapter" data-level="60.0.6" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#add-markdown-text-to-.rmd-2"><i class="fa fa-check"></i><b>60.0.6</b> Add Markdown Text to .Rmd</a></li>
+<li class="chapter" data-level="60.0.7" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#knit-your-r-markdown-document-2"><i class="fa fa-check"></i><b>60.0.7</b> Knit your R Markdown Document</a></li>
+<li class="chapter" data-level="60.0.8" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#a-few-final-checks-1"><i class="fa fa-check"></i><b>60.0.8</b> A Few Final Checks</a></li>
 </ul></li>
-<li class="chapter" data-level="60" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html"><i class="fa fa-check"></i><b>60</b> Data Analysis Pipelines</a>
+<li class="chapter" data-level="61" data-path="sharing-results.html"><a href="sharing-results.html"><i class="fa fa-check"></i><b>61</b> <strong>Sharing results</strong></a>
 <ul>
-<li class="chapter" data-level="60.0.1" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#pipelines"><i class="fa fa-check"></i><b>60.0.1</b> Pipelines</a></li>
-<li class="chapter" data-level="60.0.2" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#considerations"><i class="fa fa-check"></i><b>60.0.2</b> Considerations</a></li>
-<li class="chapter" data-level="60.0.3" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#parameterized-reports"><i class="fa fa-check"></i><b>60.0.3</b> Parameterized Reports</a></li>
-<li class="chapter" data-level="60.0.4" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#pipeline-example-survey-results"><i class="fa fa-check"></i><b>60.0.4</b> Pipeline Example Survey Results</a></li>
-<li class="chapter" data-level="60.0.5" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#summary-18"><i class="fa fa-check"></i><b>60.0.5</b> Summary</a></li>
-<li class="chapter" data-level="60.0.6" data-path="data-analysis-pipelines.html"><a href="data-analysis-pipelines.html#additional-resources-22"><i class="fa fa-check"></i><b>60.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="61.1" data-path="sharing-results.html"><a href="sharing-results.html#learning-objectives-5"><i class="fa fa-check"></i><b>61.1</b> Learning Objectives</a></li>
 </ul></li>
-<li class="chapter" data-level="61" data-path="stats-project.html"><a href="stats-project.html"><i class="fa fa-check"></i><b>61</b> Stats Project</a></li>
-<li class="chapter" data-level="62" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html"><i class="fa fa-check"></i><b>62</b> Stats Project Exercise</a>
+<li class="chapter" data-level="62" data-path="reproducibility.html"><a href="reproducibility.html"><i class="fa fa-check"></i><b>62</b> Reproducibility</a>
 <ul>
-<li class="chapter" data-level="62.0.1" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#rstudio-cloud-setup-2"><i class="fa fa-check"></i><b>62.0.1</b> RStudio Cloud Setup</a></li>
-<li class="chapter" data-level="62.0.2" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#the-data-6"><i class="fa fa-check"></i><b>62.0.2</b> The Data</a></li>
-<li class="chapter" data-level="62.0.3" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#accessing-the-data"><i class="fa fa-check"></i><b>62.0.3</b> Accessing the Data</a></li>
-<li class="chapter" data-level="62.0.4" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#loading-the-data-into-r"><i class="fa fa-check"></i><b>62.0.4</b> Loading the Data into R</a></li>
-<li class="chapter" data-level="62.0.5" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#analyze-the-data"><i class="fa fa-check"></i><b>62.0.5</b> Analyze the Data</a></li>
-<li class="chapter" data-level="62.0.6" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#add-markdown-text-to-.rmd-2"><i class="fa fa-check"></i><b>62.0.6</b> Add Markdown Text to .Rmd</a></li>
-<li class="chapter" data-level="62.0.7" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#knit-your-r-markdown-document-2"><i class="fa fa-check"></i><b>62.0.7</b> Knit your R Markdown Document</a></li>
-<li class="chapter" data-level="62.0.8" data-path="stats-project-exercise.html"><a href="stats-project-exercise.html#a-few-final-checks-1"><i class="fa fa-check"></i><b>62.0.8</b> A Few Final Checks</a></li>
+<li class="chapter" data-level="62.1" data-path="reproducibility.html"><a href="reproducibility.html#examples-about-reproducibility"><i class="fa fa-check"></i><b>62.1</b> Examples about reproducibility</a>
+<ul>
+<li class="chapter" data-level="62.1.1" data-path="reproducibility.html"><a href="reproducibility.html#things-that-affect-reproducibility"><i class="fa fa-check"></i><b>62.1.1</b> Things that affect reproducibility</a></li>
 </ul></li>
-<li class="chapter" data-level="63" data-path="reporting-results.html"><a href="reporting-results.html"><i class="fa fa-check"></i><b>63</b> <strong>Reporting results</strong></a>
+<li class="chapter" data-level="62.2" data-path="reproducibility.html"><a href="reproducibility.html#reproducibility-doesnt-happen-overnight"><i class="fa fa-check"></i><b>62.2</b> Reproducibility doesn’t happen overnight!</a>
 <ul>
-<li class="chapter" data-level="63.1" data-path="reporting-results.html"><a href="reporting-results.html#learning-objectives-5"><i class="fa fa-check"></i><b>63.1</b> Learning Objectives</a></li>
-</ul></li>
-<li class="chapter" data-level="64" data-path="version-control.html"><a href="version-control.html"><i class="fa fa-check"></i><b>64</b> Version Control</a>
-<ul>
-<li class="chapter" data-level="64.0.1" data-path="version-control.html"><a href="version-control.html#what-is-version-control"><i class="fa fa-check"></i><b>64.0.1</b> What is version control?</a></li>
-<li class="chapter" data-level="64.0.2" data-path="version-control.html"><a href="version-control.html#version-control-on-your-own"><i class="fa fa-check"></i><b>64.0.2</b> Version control on your own</a></li>
-<li class="chapter" data-level="64.0.3" data-path="version-control.html"><a href="version-control.html#version-control-for-collaboration-or-sharing"><i class="fa fa-check"></i><b>64.0.3</b> Version control for collaboration or sharing</a></li>
-<li class="chapter" data-level="64.0.4" data-path="version-control.html"><a href="version-control.html#summarizing-the-benefits-of-version-control-systems"><i class="fa fa-check"></i><b>64.0.4</b> Summarizing the benefits of version control systems</a></li>
-<li class="chapter" data-level="64.0.5" data-path="version-control.html"><a href="version-control.html#what-is-git-why-should-you-use-it"><i class="fa fa-check"></i><b>64.0.5</b> What is Git? Why should you use it?</a></li>
-<li class="chapter" data-level="64.0.6" data-path="version-control.html"><a href="version-control.html#what-is-github"><i class="fa fa-check"></i><b>64.0.6</b> What is GitHub?</a></li>
-<li class="chapter" data-level="64.0.7" data-path="version-control.html"><a href="version-control.html#version-control-vocabulary"><i class="fa fa-check"></i><b>64.0.7</b> Version control vocabulary</a></li>
-<li class="chapter" data-level="64.0.8" data-path="version-control.html"><a href="version-control.html#best-practices"><i class="fa fa-check"></i><b>64.0.8</b> Best practices</a></li>
-<li class="chapter" data-level="64.0.9" data-path="version-control.html"><a href="version-control.html#summary-19"><i class="fa fa-check"></i><b>64.0.9</b> Summary</a></li>
-<li class="chapter" data-level="64.0.10" data-path="version-control.html"><a href="version-control.html#slides-and-video-1"><i class="fa fa-check"></i><b>64.0.10</b> Slides and video</a></li>
-</ul></li>
-<li class="chapter" data-level="65" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>65</b> GitHub</a>
-<ul>
-<li class="chapter" data-level="65.0.1" data-path="github.html"><a href="github.html#logging-in-to-github"><i class="fa fa-check"></i><b>65.0.1</b> Logging in to GitHub</a></li>
-<li class="chapter" data-level="65.0.2" data-path="github.html"><a href="github.html#the-homepage"><i class="fa fa-check"></i><b>65.0.2</b> The Homepage</a></li>
-<li class="chapter" data-level="65.0.3" data-path="github.html"><a href="github.html#user-settings"><i class="fa fa-check"></i><b>65.0.3</b> User Settings</a></li>
-<li class="chapter" data-level="65.0.4" data-path="github.html"><a href="github.html#notifications"><i class="fa fa-check"></i><b>65.0.4</b> Notifications</a></li>
-<li class="chapter" data-level="65.0.5" data-path="github.html"><a href="github.html#help-files"><i class="fa fa-check"></i><b>65.0.5</b> Help Files</a></li>
-<li class="chapter" data-level="65.0.6" data-path="github.html"><a href="github.html#summary-20"><i class="fa fa-check"></i><b>65.0.6</b> Summary</a></li>
-<li class="chapter" data-level="65.0.7" data-path="github.html"><a href="github.html#slides-and-video-2"><i class="fa fa-check"></i><b>65.0.7</b> Slides and video</a></li>
-</ul></li>
-<li class="chapter" data-level="66" data-path="creating-a-repository.html"><a href="creating-a-repository.html"><i class="fa fa-check"></i><b>66</b> Creating A Repository</a>
-<ul>
-<li class="chapter" data-level="66.0.1" data-path="creating-a-repository.html"><a href="creating-a-repository.html#what-is-a-repository"><i class="fa fa-check"></i><b>66.0.1</b> What is a Repository?</a></li>
-<li class="chapter" data-level="66.0.2" data-path="creating-a-repository.html"><a href="creating-a-repository.html#how-do-i-create-a-github-repository"><i class="fa fa-check"></i><b>66.0.2</b> How Do I Create a GitHub Repository?</a></li>
-<li class="chapter" data-level="66.0.3" data-path="creating-a-repository.html"><a href="creating-a-repository.html#adding-a-readme-file"><i class="fa fa-check"></i><b>66.0.3</b> Adding a README File</a></li>
-<li class="chapter" data-level="66.0.4" data-path="creating-a-repository.html"><a href="creating-a-repository.html#the-github-guide"><i class="fa fa-check"></i><b>66.0.4</b> The GitHub Guide</a></li>
-<li class="chapter" data-level="66.0.5" data-path="creating-a-repository.html"><a href="creating-a-repository.html#slides-and-video-3"><i class="fa fa-check"></i><b>66.0.5</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="67" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html"><i class="fa fa-check"></i><b>67</b> Cloning A Repository</a>
-<ul>
-<li class="chapter" data-level="67.0.1" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#step-1-obtain-the-url-for-the-repository-to-clone"><i class="fa fa-check"></i><b>67.0.1</b> Step 1: Obtain the URL for the repository to clone</a></li>
-<li class="chapter" data-level="67.0.2" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#step-2-use-the-rstudio-interface-to-clone-the-repository"><i class="fa fa-check"></i><b>67.0.2</b> Step 2: Use the RStudio interface to clone the repository</a></li>
-<li class="chapter" data-level="67.0.3" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#step-3-set-up-github-credentials"><i class="fa fa-check"></i><b>67.0.3</b> Step 3: Set up GitHub Credentials</a></li>
-<li class="chapter" data-level="67.0.4" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#directoryfolder-organization"><i class="fa fa-check"></i><b>67.0.4</b> Directory/Folder Organization</a></li>
-<li class="chapter" data-level="67.0.5" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#slides-and-video-4"><i class="fa fa-check"></i><b>67.0.5</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="68" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html"><i class="fa fa-check"></i><b>68</b> Pushing and Pulling Changes</a>
-<ul>
-<li class="chapter" data-level="68.0.1" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#pushing"><i class="fa fa-check"></i><b>68.0.1</b> Pushing</a></li>
-<li class="chapter" data-level="68.0.2" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#pulling"><i class="fa fa-check"></i><b>68.0.2</b> Pulling</a></li>
-<li class="chapter" data-level="68.0.3" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#practice"><i class="fa fa-check"></i><b>68.0.3</b> Practice</a></li>
-<li class="chapter" data-level="68.0.4" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#slides-and-video-5"><i class="fa fa-check"></i><b>68.0.4</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="69" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html"><i class="fa fa-check"></i><b>69</b> Organization with Issues on GitHub</a>
-<ul>
-<li class="chapter" data-level="69.0.1" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html#what-are-issues"><i class="fa fa-check"></i><b>69.0.1</b> What are Issues?</a></li>
-<li class="chapter" data-level="69.0.2" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html#creating-an-issue"><i class="fa fa-check"></i><b>69.0.2</b> Creating an Issue</a></li>
-<li class="chapter" data-level="69.0.3" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html#slides-and-video-6"><i class="fa fa-check"></i><b>69.0.3</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="70" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html"><i class="fa fa-check"></i><b>70</b> Setting Up A Project on GitHub</a>
-<ul>
-<li class="chapter" data-level="70.0.1" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#setting-up-a-github-repository"><i class="fa fa-check"></i><b>70.0.1</b> Setting up a GitHub Repository</a></li>
-<li class="chapter" data-level="70.0.2" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#creating-a-new-project-from-a-github-repository"><i class="fa fa-check"></i><b>70.0.2</b> Creating a New Project from a GitHub Repository</a></li>
-<li class="chapter" data-level="70.0.3" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#pushing-local-changes-to-the-remote-repository-in-rstudio-cloud"><i class="fa fa-check"></i><b>70.0.3</b> Pushing Local Changes to the Remote Repository in RStudio Cloud</a></li>
-<li class="chapter" data-level="70.0.4" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#slides-and-video-7"><i class="fa fa-check"></i><b>70.0.4</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="71" data-path="pull-requests.html"><a href="pull-requests.html"><i class="fa fa-check"></i><b>71</b> Pull Requests</a>
-<ul>
-<li class="chapter" data-level="71.0.1" data-path="pull-requests.html"><a href="pull-requests.html#what-is-a-pull-request"><i class="fa fa-check"></i><b>71.0.1</b> What is a pull request</a></li>
-<li class="chapter" data-level="71.0.2" data-path="pull-requests.html"><a href="pull-requests.html#forking-a-repo"><i class="fa fa-check"></i><b>71.0.2</b> Forking a repo</a></li>
-<li class="chapter" data-level="71.0.3" data-path="pull-requests.html"><a href="pull-requests.html#making-edits"><i class="fa fa-check"></i><b>71.0.3</b> Making edits</a></li>
-<li class="chapter" data-level="71.0.4" data-path="pull-requests.html"><a href="pull-requests.html#pushing-your-changes-to-your-fork"><i class="fa fa-check"></i><b>71.0.4</b> Pushing your changes to your fork</a></li>
-<li class="chapter" data-level="71.0.5" data-path="pull-requests.html"><a href="pull-requests.html#sending-a-pull-request"><i class="fa fa-check"></i><b>71.0.5</b> Sending a pull request</a></li>
-<li class="chapter" data-level="71.0.6" data-path="pull-requests.html"><a href="pull-requests.html#when-it-gets-more-complicated"><i class="fa fa-check"></i><b>71.0.6</b> When it gets more complicated</a></li>
-<li class="chapter" data-level="71.0.7" data-path="pull-requests.html"><a href="pull-requests.html#summary-21"><i class="fa fa-check"></i><b>71.0.7</b> Summary</a></li>
-<li class="chapter" data-level="71.0.8" data-path="pull-requests.html"><a href="pull-requests.html#slides-and-video-8"><i class="fa fa-check"></i><b>71.0.8</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="72" data-path="version-control-help.html"><a href="version-control-help.html"><i class="fa fa-check"></i><b>72</b> Version Control Help</a>
-<ul>
-<li class="chapter" data-level="72.0.1" data-path="version-control-help.html"><a href="version-control-help.html#google-for-git-help"><i class="fa fa-check"></i><b>72.0.1</b> Google for git help</a></li>
-<li class="chapter" data-level="72.0.2" data-path="version-control-help.html"><a href="version-control-help.html#burn-it-down"><i class="fa fa-check"></i><b>72.0.2</b> Burn it Down</a></li>
-<li class="chapter" data-level="72.0.3" data-path="version-control-help.html"><a href="version-control-help.html#summary-22"><i class="fa fa-check"></i><b>72.0.3</b> Summary</a></li>
-<li class="chapter" data-level="72.0.4" data-path="version-control-help.html"><a href="version-control-help.html#additional-resources-23"><i class="fa fa-check"></i><b>72.0.4</b> Additional Resources</a></li>
-<li class="chapter" data-level="72.0.5" data-path="version-control-help.html"><a href="version-control-help.html#slides-and-video-9"><i class="fa fa-check"></i><b>72.0.5</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="73" data-path="types-of-communication.html"><a href="types-of-communication.html"><i class="fa fa-check"></i><b>73</b> Types of Communication</a>
-<ul>
-<li class="chapter" data-level="73.0.1" data-path="types-of-communication.html"><a href="types-of-communication.html#opinionated-communication"><i class="fa fa-check"></i><b>73.0.1</b> Opinionated Communication</a></li>
-<li class="chapter" data-level="73.0.2" data-path="types-of-communication.html"><a href="types-of-communication.html#types-of-communication-1"><i class="fa fa-check"></i><b>73.0.2</b> Types of Communication</a></li>
-<li class="chapter" data-level="73.0.3" data-path="types-of-communication.html"><a href="types-of-communication.html#reports"><i class="fa fa-check"></i><b>73.0.3</b> Reports</a></li>
-<li class="chapter" data-level="73.0.4" data-path="types-of-communication.html"><a href="types-of-communication.html#presentations"><i class="fa fa-check"></i><b>73.0.4</b> Presentations</a></li>
-<li class="chapter" data-level="73.0.5" data-path="types-of-communication.html"><a href="types-of-communication.html#blog-posts"><i class="fa fa-check"></i><b>73.0.5</b> Blog Posts</a></li>
-<li class="chapter" data-level="73.0.6" data-path="types-of-communication.html"><a href="types-of-communication.html#meetings"><i class="fa fa-check"></i><b>73.0.6</b> Meetings</a></li>
-<li class="chapter" data-level="73.0.7" data-path="types-of-communication.html"><a href="types-of-communication.html#slides-and-video-10"><i class="fa fa-check"></i><b>73.0.7</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="74" data-path="data-science-reports.html"><a href="data-science-reports.html"><i class="fa fa-check"></i><b>74</b> Data Science Reports</a>
-<ul>
-<li class="chapter" data-level="74.0.1" data-path="data-science-reports.html"><a href="data-science-reports.html#what-to-include"><i class="fa fa-check"></i><b>74.0.1</b> What To Include</a></li>
-<li class="chapter" data-level="74.0.2" data-path="data-science-reports.html"><a href="data-science-reports.html#what-to-avoid"><i class="fa fa-check"></i><b>74.0.2</b> What to Avoid</a></li>
-<li class="chapter" data-level="74.0.3" data-path="data-science-reports.html"><a href="data-science-reports.html#brief-reports"><i class="fa fa-check"></i><b>74.0.3</b> Brief Reports</a></li>
-<li class="chapter" data-level="74.0.4" data-path="data-science-reports.html"><a href="data-science-reports.html#full-report"><i class="fa fa-check"></i><b>74.0.4</b> Full Report</a></li>
-<li class="chapter" data-level="74.0.5" data-path="data-science-reports.html"><a href="data-science-reports.html#summary-23"><i class="fa fa-check"></i><b>74.0.5</b> Summary</a></li>
-<li class="chapter" data-level="74.0.6" data-path="data-science-reports.html"><a href="data-science-reports.html#additional-resources-24"><i class="fa fa-check"></i><b>74.0.6</b> Additional Resources</a></li>
-<li class="chapter" data-level="74.0.7" data-path="data-science-reports.html"><a href="data-science-reports.html#slides-and-video-11"><i class="fa fa-check"></i><b>74.0.7</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="75" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html"><i class="fa fa-check"></i><b>75</b> How To Give a Presentation</a>
-<ul>
-<li class="chapter" data-level="75.0.1" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#presentation-goals"><i class="fa fa-check"></i><b>75.0.1</b> Presentation Goals</a></li>
-<li class="chapter" data-level="75.0.2" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#know-your-audience"><i class="fa fa-check"></i><b>75.0.2</b> Know your Audience</a></li>
-<li class="chapter" data-level="75.0.3" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#mind-your-audience"><i class="fa fa-check"></i><b>75.0.3</b> Mind your Audience</a></li>
-<li class="chapter" data-level="75.0.4" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#prepare"><i class="fa fa-check"></i><b>75.0.4</b> Prepare</a></li>
-<li class="chapter" data-level="75.0.5" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#tell-a-story"><i class="fa fa-check"></i><b>75.0.5</b> Tell a Story</a></li>
-<li class="chapter" data-level="75.0.6" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#slide-design"><i class="fa fa-check"></i><b>75.0.6</b> Slide Design</a></li>
-<li class="chapter" data-level="75.0.7" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#presenting"><i class="fa fa-check"></i><b>75.0.7</b> Presenting</a></li>
-<li class="chapter" data-level="75.0.8" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#practice-1"><i class="fa fa-check"></i><b>75.0.8</b> Practice</a></li>
-<li class="chapter" data-level="75.0.9" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#handling-questions"><i class="fa fa-check"></i><b>75.0.9</b> Handling Questions</a></li>
-<li class="chapter" data-level="75.0.10" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#example-presentation-apis"><i class="fa fa-check"></i><b>75.0.10</b> Example Presentation: APIs</a></li>
-<li class="chapter" data-level="75.0.11" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#example-presentation-analysis"><i class="fa fa-check"></i><b>75.0.11</b> Example Presentation: Analysis</a></li>
-<li class="chapter" data-level="75.0.12" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#summary-24"><i class="fa fa-check"></i><b>75.0.12</b> Summary</a></li>
-<li class="chapter" data-level="75.0.13" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#additional-resources-25"><i class="fa fa-check"></i><b>75.0.13</b> Additional Resources</a></li>
-<li class="chapter" data-level="75.0.14" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#slides-and-video-12"><i class="fa fa-check"></i><b>75.0.14</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="76" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html"><i class="fa fa-check"></i><b>76</b> How To Present to a General Audience</a>
-<ul>
-<li class="chapter" data-level="76.0.1" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#the-audience"><i class="fa fa-check"></i><b>76.0.1</b> The Audience</a></li>
-<li class="chapter" data-level="76.0.2" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#the-goal"><i class="fa fa-check"></i><b>76.0.2</b> The Goal</a></li>
-<li class="chapter" data-level="76.0.3" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#the-presentation"><i class="fa fa-check"></i><b>76.0.3</b> The Presentation</a></li>
-<li class="chapter" data-level="76.0.4" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#general-presentation-example"><i class="fa fa-check"></i><b>76.0.4</b> General Presentation Example</a></li>
-<li class="chapter" data-level="76.0.5" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#summary-25"><i class="fa fa-check"></i><b>76.0.5</b> Summary</a></li>
-<li class="chapter" data-level="76.0.6" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#slides-and-video-13"><i class="fa fa-check"></i><b>76.0.6</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="77" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html"><i class="fa fa-check"></i><b>77</b> How To Present to a Technical Audience</a>
-<ul>
-<li class="chapter" data-level="77.0.1" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#the-audience-1"><i class="fa fa-check"></i><b>77.0.1</b> The Audience</a></li>
-<li class="chapter" data-level="77.0.2" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#the-goal-1"><i class="fa fa-check"></i><b>77.0.2</b> The Goal</a></li>
-<li class="chapter" data-level="77.0.3" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#the-presentation-1"><i class="fa fa-check"></i><b>77.0.3</b> The Presentation</a></li>
-<li class="chapter" data-level="77.0.4" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#emphasize-1"><i class="fa fa-check"></i><b>77.0.4</b> Emphasize</a></li>
-<li class="chapter" data-level="77.0.5" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#de-emphasize-1"><i class="fa fa-check"></i><b>77.0.5</b> De-emphasize</a></li>
-<li class="chapter" data-level="77.0.6" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#technical-presentation-example"><i class="fa fa-check"></i><b>77.0.6</b> Technical Presentation Example</a></li>
-<li class="chapter" data-level="77.0.7" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#general-vs-technical"><i class="fa fa-check"></i><b>77.0.7</b> General vs Technical</a></li>
-<li class="chapter" data-level="77.0.8" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#summary-26"><i class="fa fa-check"></i><b>77.0.8</b> Summary</a></li>
-<li class="chapter" data-level="77.0.9" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#slides-and-video-14"><i class="fa fa-check"></i><b>77.0.9</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="78" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html"><i class="fa fa-check"></i><b>78</b> How To Write a Blog Post</a>
-<ul>
-<li class="chapter" data-level="78.0.1" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#general-outline"><i class="fa fa-check"></i><b>78.0.1</b> General Outline</a></li>
-<li class="chapter" data-level="78.0.2" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#types-of-blog-posts"><i class="fa fa-check"></i><b>78.0.2</b> Types of Blog Posts</a></li>
-<li class="chapter" data-level="78.0.3" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#why-blog"><i class="fa fa-check"></i><b>78.0.3</b> Why Blog?</a></li>
-<li class="chapter" data-level="78.0.4" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#blog-etiquette"><i class="fa fa-check"></i><b>78.0.4</b> Blog Etiquette</a></li>
-<li class="chapter" data-level="78.0.5" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#summary-27"><i class="fa fa-check"></i><b>78.0.5</b> Summary</a></li>
-<li class="chapter" data-level="78.0.6" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#additional-resources-26"><i class="fa fa-check"></i><b>78.0.6</b> Additional Resources</a></li>
-<li class="chapter" data-level="78.0.7" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#slides-and-video-15"><i class="fa fa-check"></i><b>78.0.7</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="79" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html"><i class="fa fa-check"></i><b>79</b> Participating in Meetings</a>
-<ul>
-<li class="chapter" data-level="79.0.1" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#meeting-etiquette"><i class="fa fa-check"></i><b>79.0.1</b> Meeting Etiquette</a></li>
-<li class="chapter" data-level="79.0.2" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#how-to-host-a-meeting"><i class="fa fa-check"></i><b>79.0.2</b> How to Host A Meeting</a></li>
-<li class="chapter" data-level="79.0.3" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#how-to-participate-in-a-meeting"><i class="fa fa-check"></i><b>79.0.3</b> How to Participate in a Meeting</a></li>
-<li class="chapter" data-level="79.0.4" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#summary-28"><i class="fa fa-check"></i><b>79.0.4</b> Summary</a></li>
-<li class="chapter" data-level="79.0.5" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#additional-resources-27"><i class="fa fa-check"></i><b>79.0.5</b> Additional Resources</a></li>
-<li class="chapter" data-level="79.0.6" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#slides-and-video-16"><i class="fa fa-check"></i><b>79.0.6</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="80" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html"><i class="fa fa-check"></i><b>80</b> How To Have a One-on-One Meeting</a>
-<ul>
-<li class="chapter" data-level="80.0.1" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#consulting"><i class="fa fa-check"></i><b>80.0.1</b> Consulting</a></li>
-<li class="chapter" data-level="80.0.2" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#what-to-expect"><i class="fa fa-check"></i><b>80.0.2</b> What to Expect</a></li>
-<li class="chapter" data-level="80.0.3" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#follow-up-meetings"><i class="fa fa-check"></i><b>80.0.3</b> Follow-up Meetings</a></li>
-<li class="chapter" data-level="80.0.4" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#common-pitfalls"><i class="fa fa-check"></i><b>80.0.4</b> Common Pitfalls</a></li>
-<li class="chapter" data-level="80.0.5" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#data-science-ethics"><i class="fa fa-check"></i><b>80.0.5</b> Data Science Ethics</a></li>
-<li class="chapter" data-level="80.0.6" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#summary-29"><i class="fa fa-check"></i><b>80.0.6</b> Summary</a></li>
-<li class="chapter" data-level="80.0.7" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#slides-and-video-17"><i class="fa fa-check"></i><b>80.0.7</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="81" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html"><i class="fa fa-check"></i><b>81</b> How To Keep a Data Science Lab Notebook</a>
-<ul>
-<li class="chapter" data-level="81.0.1" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#why-keep-a-lab-notebook"><i class="fa fa-check"></i><b>81.0.1</b> Why Keep a Lab Notebook</a></li>
-<li class="chapter" data-level="81.0.2" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#what-to-put-in-your-lab-notebook"><i class="fa fa-check"></i><b>81.0.2</b> What to Put in Your Lab Notebook</a></li>
-<li class="chapter" data-level="81.0.3" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#when-to-update"><i class="fa fa-check"></i><b>81.0.3</b> When To Update</a></li>
-<li class="chapter" data-level="81.0.4" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#benchling-data-science-lab-notebook"><i class="fa fa-check"></i><b>81.0.4</b> Benchling: Data Science Lab Notebook</a></li>
-<li class="chapter" data-level="81.0.5" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#slides-and-video-18"><i class="fa fa-check"></i><b>81.0.5</b> Slides and Video</a></li>
-<li class="chapter" data-level="81.0.6" data-path="how-to-keep-a-data-science-lab-notebook.html"><a href="how-to-keep-a-data-science-lab-notebook.html#how-to-keep-a-data-science-lab-notebook-quiz"><i class="fa fa-check"></i><b>81.0.6</b> How To Keep a Data Science Lab Notebook quiz</a></li>
-</ul></li>
-<li class="chapter" data-level="82" data-path="which-graph-to-use-when.html"><a href="which-graph-to-use-when.html"><i class="fa fa-check"></i><b>82</b> Which Graph to Use When</a>
-<ul>
-<li class="chapter" data-level="82.0.1" data-path="which-graph-to-use-when.html"><a href="which-graph-to-use-when.html#exploratory-vs.-explanatory"><i class="fa fa-check"></i><b>82.0.1</b> Exploratory vs. Explanatory</a></li>
-<li class="chapter" data-level="82.0.2" data-path="which-graph-to-use-when.html"><a href="which-graph-to-use-when.html#which-graph"><i class="fa fa-check"></i><b>82.0.2</b> Which Graph</a></li>
-<li class="chapter" data-level="82.0.3" data-path="which-graph-to-use-when.html"><a href="which-graph-to-use-when.html#summary-31"><i class="fa fa-check"></i><b>82.0.3</b> Summary</a></li>
-<li class="chapter" data-level="82.0.4" data-path="which-graph-to-use-when.html"><a href="which-graph-to-use-when.html#slides-and-video-19"><i class="fa fa-check"></i><b>82.0.4</b> Slides and Video</a></li>
-</ul></li>
-<li class="chapter" data-level="83" data-path="building-a-resume.html"><a href="building-a-resume.html"><i class="fa fa-check"></i><b>83</b> <strong>Building a resume</strong></a>
-<ul>
-<li class="chapter" data-level="83.1" data-path="building-a-resume.html"><a href="building-a-resume.html#learning-objectives-6"><i class="fa fa-check"></i><b>83.1</b> Learning Objectives</a></li>
-<li class="chapter" data-level="83.2" data-path="building-a-resume.html"><a href="building-a-resume.html#what-you-need-to-find-a-data-science-job"><i class="fa fa-check"></i><b>83.2</b> What You Need to Find a Data Science Job</a>
-<ul>
-<li class="chapter" data-level="83.2.1" data-path="building-a-resume.html"><a href="building-a-resume.html#job-applications"><i class="fa fa-check"></i><b>83.2.1</b> Job Applications</a></li>
-<li class="chapter" data-level="83.2.2" data-path="building-a-resume.html"><a href="building-a-resume.html#online-presence"><i class="fa fa-check"></i><b>83.2.2</b> Online Presence</a></li>
-<li class="chapter" data-level="83.2.3" data-path="building-a-resume.html"><a href="building-a-resume.html#additional-resources-28"><i class="fa fa-check"></i><b>83.2.3</b> Additional Resources</a></li>
+<li class="chapter" data-level="62.2.1" data-path="reproducibility.html"><a href="reproducibility.html#additional-resources-22"><i class="fa fa-check"></i><b>62.2.1</b> Additional Resources</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="84" data-path="resumes-1.html"><a href="resumes-1.html"><i class="fa fa-check"></i><b>84</b> Resumes</a>
+<li class="chapter" data-level="63" data-path="version-control-1.html"><a href="version-control-1.html"><i class="fa fa-check"></i><b>63</b> Version Control</a>
 <ul>
-<li class="chapter" data-level="84.0.1" data-path="resumes-1.html"><a href="resumes-1.html#what-is-a-resume"><i class="fa fa-check"></i><b>84.0.1</b> What is a Resume?</a></li>
-<li class="chapter" data-level="84.0.2" data-path="resumes-1.html"><a href="resumes-1.html#general-features"><i class="fa fa-check"></i><b>84.0.2</b> General Features</a></li>
-<li class="chapter" data-level="84.0.3" data-path="resumes-1.html"><a href="resumes-1.html#formatting"><i class="fa fa-check"></i><b>84.0.3</b> Formatting</a></li>
-<li class="chapter" data-level="84.0.4" data-path="resumes-1.html"><a href="resumes-1.html#what-to-include-1"><i class="fa fa-check"></i><b>84.0.4</b> What to Include</a></li>
-<li class="chapter" data-level="84.0.5" data-path="resumes-1.html"><a href="resumes-1.html#example-resumes"><i class="fa fa-check"></i><b>84.0.5</b> Example Resumes</a></li>
-<li class="chapter" data-level="84.0.6" data-path="resumes-1.html"><a href="resumes-1.html#sharing-your-resume"><i class="fa fa-check"></i><b>84.0.6</b> Sharing your resume</a></li>
-<li class="chapter" data-level="84.0.7" data-path="resumes-1.html"><a href="resumes-1.html#summary-32"><i class="fa fa-check"></i><b>84.0.7</b> Summary</a></li>
-<li class="chapter" data-level="84.0.8" data-path="resumes-1.html"><a href="resumes-1.html#additional-resources-29"><i class="fa fa-check"></i><b>84.0.8</b> Additional Resources</a></li>
-<li class="chapter" data-level="84.0.9" data-path="resumes-1.html"><a href="resumes-1.html#slides-and-video-20"><i class="fa fa-check"></i><b>84.0.9</b> Slides and Video</a></li>
-<li class="chapter" data-level="84.0.10" data-path="resumes-1.html"><a href="resumes-1.html#resumes-quiz"><i class="fa fa-check"></i><b>84.0.10</b> Resumes quiz</a></li>
+<li class="chapter" data-level="63.0.1" data-path="version-control-1.html"><a href="version-control-1.html#what-is-version-control"><i class="fa fa-check"></i><b>63.0.1</b> What is version control?</a></li>
+<li class="chapter" data-level="63.0.2" data-path="version-control-1.html"><a href="version-control-1.html#version-control-on-your-own"><i class="fa fa-check"></i><b>63.0.2</b> Version control on your own</a></li>
+<li class="chapter" data-level="63.0.3" data-path="version-control-1.html"><a href="version-control-1.html#version-control-for-collaboration-or-sharing"><i class="fa fa-check"></i><b>63.0.3</b> Version control for collaboration or sharing</a></li>
+<li class="chapter" data-level="63.0.4" data-path="version-control-1.html"><a href="version-control-1.html#summarizing-the-benefits-of-version-control-systems"><i class="fa fa-check"></i><b>63.0.4</b> Summarizing the benefits of version control systems</a></li>
+<li class="chapter" data-level="63.0.5" data-path="version-control-1.html"><a href="version-control-1.html#what-is-git-why-should-you-use-it"><i class="fa fa-check"></i><b>63.0.5</b> What is Git? Why should you use it?</a></li>
+<li class="chapter" data-level="63.0.6" data-path="version-control-1.html"><a href="version-control-1.html#what-is-github"><i class="fa fa-check"></i><b>63.0.6</b> What is GitHub?</a></li>
+<li class="chapter" data-level="63.0.7" data-path="version-control-1.html"><a href="version-control-1.html#version-control-vocabulary"><i class="fa fa-check"></i><b>63.0.7</b> Version control vocabulary</a></li>
+<li class="chapter" data-level="63.0.8" data-path="version-control-1.html"><a href="version-control-1.html#best-practices"><i class="fa fa-check"></i><b>63.0.8</b> Best practices</a></li>
+<li class="chapter" data-level="63.0.9" data-path="version-control-1.html"><a href="version-control-1.html#summary-18"><i class="fa fa-check"></i><b>63.0.9</b> Summary</a></li>
 </ul></li>
-<li class="chapter" data-level="85" data-path="cover-letters-1.html"><a href="cover-letters-1.html"><i class="fa fa-check"></i><b>85</b> Cover Letters</a>
+<li class="chapter" data-level="64" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>64</b> GitHub</a>
 <ul>
-<li class="chapter" data-level="85.0.1" data-path="cover-letters-1.html"><a href="cover-letters-1.html#format"><i class="fa fa-check"></i><b>85.0.1</b> Format</a></li>
-<li class="chapter" data-level="85.0.2" data-path="cover-letters-1.html"><a href="cover-letters-1.html#content"><i class="fa fa-check"></i><b>85.0.2</b> Content</a></li>
-<li class="chapter" data-level="85.0.3" data-path="cover-letters-1.html"><a href="cover-letters-1.html#what-to-avoid-1"><i class="fa fa-check"></i><b>85.0.3</b> What to Avoid</a></li>
-<li class="chapter" data-level="85.0.4" data-path="cover-letters-1.html"><a href="cover-letters-1.html#summary-33"><i class="fa fa-check"></i><b>85.0.4</b> Summary</a></li>
-<li class="chapter" data-level="85.0.5" data-path="cover-letters-1.html"><a href="cover-letters-1.html#additional-resources-30"><i class="fa fa-check"></i><b>85.0.5</b> Additional Resources</a></li>
-<li class="chapter" data-level="85.0.6" data-path="cover-letters-1.html"><a href="cover-letters-1.html#slides-and-video-21"><i class="fa fa-check"></i><b>85.0.6</b> Slides and Video</a></li>
+<li class="chapter" data-level="64.0.1" data-path="github.html"><a href="github.html#logging-in-to-github"><i class="fa fa-check"></i><b>64.0.1</b> Logging in to GitHub</a></li>
+<li class="chapter" data-level="64.0.2" data-path="github.html"><a href="github.html#the-homepage"><i class="fa fa-check"></i><b>64.0.2</b> The Homepage</a></li>
+<li class="chapter" data-level="64.0.3" data-path="github.html"><a href="github.html#user-settings"><i class="fa fa-check"></i><b>64.0.3</b> User Settings</a></li>
+<li class="chapter" data-level="64.0.4" data-path="github.html"><a href="github.html#notifications"><i class="fa fa-check"></i><b>64.0.4</b> Notifications</a></li>
+<li class="chapter" data-level="64.0.5" data-path="github.html"><a href="github.html#help-files"><i class="fa fa-check"></i><b>64.0.5</b> Help Files</a></li>
+<li class="chapter" data-level="64.0.6" data-path="github.html"><a href="github.html#summary-19"><i class="fa fa-check"></i><b>64.0.6</b> Summary</a></li>
 </ul></li>
-<li class="chapter" data-level="86" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html"><i class="fa fa-check"></i><b>86</b> Making Your Website More Professional</a>
+<li class="chapter" data-level="65" data-path="creating-a-repository.html"><a href="creating-a-repository.html"><i class="fa fa-check"></i><b>65</b> Creating A Repository</a>
 <ul>
-<li class="chapter" data-level="86.1" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#make-your-own-website"><i class="fa fa-check"></i><b>86.1</b> Make your own website!</a></li>
-<li class="chapter" data-level="86.2" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#more-customization-of-your-website"><i class="fa fa-check"></i><b>86.2</b> More customization of your website</a>
+<li class="chapter" data-level="65.0.1" data-path="creating-a-repository.html"><a href="creating-a-repository.html#what-is-a-repository"><i class="fa fa-check"></i><b>65.0.1</b> What is a Repository?</a></li>
+<li class="chapter" data-level="65.0.2" data-path="creating-a-repository.html"><a href="creating-a-repository.html#how-do-i-create-a-github-repository"><i class="fa fa-check"></i><b>65.0.2</b> How Do I Create a GitHub Repository?</a></li>
+<li class="chapter" data-level="65.0.3" data-path="creating-a-repository.html"><a href="creating-a-repository.html#adding-a-readme-file"><i class="fa fa-check"></i><b>65.0.3</b> Adding a README File</a></li>
+<li class="chapter" data-level="65.0.4" data-path="creating-a-repository.html"><a href="creating-a-repository.html#the-github-guide"><i class="fa fa-check"></i><b>65.0.4</b> The GitHub Guide</a></li>
+</ul></li>
+<li class="chapter" data-level="66" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html"><i class="fa fa-check"></i><b>66</b> Cloning A Repository</a>
 <ul>
-<li class="chapter" data-level="86.2.1" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#blogdown"><i class="fa fa-check"></i><b>86.2.1</b> Blogdown</a></li>
-<li class="chapter" data-level="86.2.2" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#getting-started"><i class="fa fa-check"></i><b>86.2.2</b> Getting Started</a></li>
-<li class="chapter" data-level="86.2.3" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#website-content"><i class="fa fa-check"></i><b>86.2.3</b> Website Content</a></li>
-<li class="chapter" data-level="86.2.4" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#website-appearance"><i class="fa fa-check"></i><b>86.2.4</b> Website Appearance</a></li>
-<li class="chapter" data-level="86.2.5" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#posts"><i class="fa fa-check"></i><b>86.2.5</b> Posts</a></li>
-<li class="chapter" data-level="86.2.6" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#projects-1"><i class="fa fa-check"></i><b>86.2.6</b> Projects</a></li>
-<li class="chapter" data-level="86.2.7" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#deployment"><i class="fa fa-check"></i><b>86.2.7</b> Deployment</a></li>
-<li class="chapter" data-level="86.2.8" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#additional-resources-31"><i class="fa fa-check"></i><b>86.2.8</b> Additional Resources</a></li>
-<li class="chapter" data-level="86.2.9" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#slides-and-video-22"><i class="fa fa-check"></i><b>86.2.9</b> Slides and Video</a></li>
+<li class="chapter" data-level="66.0.1" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#step-1-obtain-the-url-for-the-repository-to-clone"><i class="fa fa-check"></i><b>66.0.1</b> Step 1: Obtain the URL for the repository to clone</a></li>
+<li class="chapter" data-level="66.0.2" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#step-2-use-the-rstudio-interface-to-clone-the-repository"><i class="fa fa-check"></i><b>66.0.2</b> Step 2: Use the RStudio interface to clone the repository</a></li>
+<li class="chapter" data-level="66.0.3" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#step-3-set-up-github-credentials"><i class="fa fa-check"></i><b>66.0.3</b> Step 3: Set up GitHub Credentials</a></li>
+<li class="chapter" data-level="66.0.4" data-path="cloning-a-repository.html"><a href="cloning-a-repository.html#directoryfolder-organization"><i class="fa fa-check"></i><b>66.0.4</b> Directory/Folder Organization</a></li>
+</ul></li>
+<li class="chapter" data-level="67" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html"><i class="fa fa-check"></i><b>67</b> Pushing and Pulling Changes</a>
+<ul>
+<li class="chapter" data-level="67.0.1" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#pushing"><i class="fa fa-check"></i><b>67.0.1</b> Pushing</a></li>
+<li class="chapter" data-level="67.0.2" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#pulling"><i class="fa fa-check"></i><b>67.0.2</b> Pulling</a></li>
+<li class="chapter" data-level="67.0.3" data-path="pushing-and-pulling-changes.html"><a href="pushing-and-pulling-changes.html#practice"><i class="fa fa-check"></i><b>67.0.3</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="68" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html"><i class="fa fa-check"></i><b>68</b> Organization with Issues on GitHub</a>
+<ul>
+<li class="chapter" data-level="68.0.1" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html#what-are-issues"><i class="fa fa-check"></i><b>68.0.1</b> What are Issues?</a></li>
+<li class="chapter" data-level="68.0.2" data-path="organization-with-issues-on-github.html"><a href="organization-with-issues-on-github.html#creating-an-issue"><i class="fa fa-check"></i><b>68.0.2</b> Creating an Issue</a></li>
+</ul></li>
+<li class="chapter" data-level="69" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html"><i class="fa fa-check"></i><b>69</b> Setting Up A Project on GitHub</a>
+<ul>
+<li class="chapter" data-level="69.0.1" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#setting-up-a-github-repository"><i class="fa fa-check"></i><b>69.0.1</b> Setting up a GitHub Repository</a></li>
+<li class="chapter" data-level="69.0.2" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#creating-a-new-project-from-a-github-repository"><i class="fa fa-check"></i><b>69.0.2</b> Creating a New Project from a GitHub Repository</a></li>
+<li class="chapter" data-level="69.0.3" data-path="setting-up-a-project-on-github.html"><a href="setting-up-a-project-on-github.html#pushing-local-changes-to-the-remote-repository-in-rstudio-cloud"><i class="fa fa-check"></i><b>69.0.3</b> Pushing Local Changes to the Remote Repository in RStudio Cloud</a></li>
+</ul></li>
+<li class="chapter" data-level="70" data-path="pull-requests.html"><a href="pull-requests.html"><i class="fa fa-check"></i><b>70</b> Pull Requests</a>
+<ul>
+<li class="chapter" data-level="70.0.1" data-path="pull-requests.html"><a href="pull-requests.html#what-is-a-pull-request"><i class="fa fa-check"></i><b>70.0.1</b> What is a pull request</a></li>
+<li class="chapter" data-level="70.0.2" data-path="pull-requests.html"><a href="pull-requests.html#forking-a-repo"><i class="fa fa-check"></i><b>70.0.2</b> Forking a repo</a></li>
+<li class="chapter" data-level="70.0.3" data-path="pull-requests.html"><a href="pull-requests.html#making-edits"><i class="fa fa-check"></i><b>70.0.3</b> Making edits</a></li>
+<li class="chapter" data-level="70.0.4" data-path="pull-requests.html"><a href="pull-requests.html#pushing-your-changes-to-your-fork"><i class="fa fa-check"></i><b>70.0.4</b> Pushing your changes to your fork</a></li>
+<li class="chapter" data-level="70.0.5" data-path="pull-requests.html"><a href="pull-requests.html#sending-a-pull-request"><i class="fa fa-check"></i><b>70.0.5</b> Sending a pull request</a></li>
+<li class="chapter" data-level="70.0.6" data-path="pull-requests.html"><a href="pull-requests.html#when-it-gets-more-complicated"><i class="fa fa-check"></i><b>70.0.6</b> When it gets more complicated</a></li>
+<li class="chapter" data-level="70.0.7" data-path="pull-requests.html"><a href="pull-requests.html#summary-20"><i class="fa fa-check"></i><b>70.0.7</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="71" data-path="version-control-help.html"><a href="version-control-help.html"><i class="fa fa-check"></i><b>71</b> Version Control Help</a>
+<ul>
+<li class="chapter" data-level="71.0.1" data-path="version-control-help.html"><a href="version-control-help.html#google-for-git-help"><i class="fa fa-check"></i><b>71.0.1</b> Google for git help</a></li>
+<li class="chapter" data-level="71.0.2" data-path="version-control-help.html"><a href="version-control-help.html#burn-it-down"><i class="fa fa-check"></i><b>71.0.2</b> Burn it Down</a></li>
+<li class="chapter" data-level="71.0.3" data-path="version-control-help.html"><a href="version-control-help.html#summary-21"><i class="fa fa-check"></i><b>71.0.3</b> Summary</a></li>
+<li class="chapter" data-level="71.0.4" data-path="version-control-help.html"><a href="version-control-help.html#additional-resources-23"><i class="fa fa-check"></i><b>71.0.4</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="72" data-path="types-of-communication.html"><a href="types-of-communication.html"><i class="fa fa-check"></i><b>72</b> Types of Communication</a>
+<ul>
+<li class="chapter" data-level="72.0.1" data-path="types-of-communication.html"><a href="types-of-communication.html#opinionated-communication"><i class="fa fa-check"></i><b>72.0.1</b> Opinionated Communication</a></li>
+<li class="chapter" data-level="72.0.2" data-path="types-of-communication.html"><a href="types-of-communication.html#types-of-communication-1"><i class="fa fa-check"></i><b>72.0.2</b> Types of Communication</a></li>
+<li class="chapter" data-level="72.0.3" data-path="types-of-communication.html"><a href="types-of-communication.html#reports"><i class="fa fa-check"></i><b>72.0.3</b> Reports</a></li>
+<li class="chapter" data-level="72.0.4" data-path="types-of-communication.html"><a href="types-of-communication.html#presentations"><i class="fa fa-check"></i><b>72.0.4</b> Presentations</a></li>
+<li class="chapter" data-level="72.0.5" data-path="types-of-communication.html"><a href="types-of-communication.html#blog-posts"><i class="fa fa-check"></i><b>72.0.5</b> Blog Posts</a></li>
+<li class="chapter" data-level="72.0.6" data-path="types-of-communication.html"><a href="types-of-communication.html#meetings"><i class="fa fa-check"></i><b>72.0.6</b> Meetings</a></li>
+</ul></li>
+<li class="chapter" data-level="73" data-path="data-science-reports.html"><a href="data-science-reports.html"><i class="fa fa-check"></i><b>73</b> Data Science Reports</a>
+<ul>
+<li class="chapter" data-level="73.0.1" data-path="data-science-reports.html"><a href="data-science-reports.html#what-to-include"><i class="fa fa-check"></i><b>73.0.1</b> What To Include</a></li>
+<li class="chapter" data-level="73.0.2" data-path="data-science-reports.html"><a href="data-science-reports.html#what-to-avoid"><i class="fa fa-check"></i><b>73.0.2</b> What to Avoid</a></li>
+<li class="chapter" data-level="73.0.3" data-path="data-science-reports.html"><a href="data-science-reports.html#brief-reports"><i class="fa fa-check"></i><b>73.0.3</b> Brief Reports</a></li>
+<li class="chapter" data-level="73.0.4" data-path="data-science-reports.html"><a href="data-science-reports.html#full-report"><i class="fa fa-check"></i><b>73.0.4</b> Full Report</a></li>
+<li class="chapter" data-level="73.0.5" data-path="data-science-reports.html"><a href="data-science-reports.html#summary-22"><i class="fa fa-check"></i><b>73.0.5</b> Summary</a></li>
+<li class="chapter" data-level="73.0.6" data-path="data-science-reports.html"><a href="data-science-reports.html#additional-resources-24"><i class="fa fa-check"></i><b>73.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="73.0.7" data-path="data-science-reports.html"><a href="data-science-reports.html#slides-and-video-1"><i class="fa fa-check"></i><b>73.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="74" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html"><i class="fa fa-check"></i><b>74</b> How To Give a Presentation</a>
+<ul>
+<li class="chapter" data-level="74.0.1" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#presentation-goals"><i class="fa fa-check"></i><b>74.0.1</b> Presentation Goals</a></li>
+<li class="chapter" data-level="74.0.2" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#know-your-audience"><i class="fa fa-check"></i><b>74.0.2</b> Know your Audience</a></li>
+<li class="chapter" data-level="74.0.3" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#mind-your-audience"><i class="fa fa-check"></i><b>74.0.3</b> Mind your Audience</a></li>
+<li class="chapter" data-level="74.0.4" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#prepare"><i class="fa fa-check"></i><b>74.0.4</b> Prepare</a></li>
+<li class="chapter" data-level="74.0.5" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#tell-a-story"><i class="fa fa-check"></i><b>74.0.5</b> Tell a Story</a></li>
+<li class="chapter" data-level="74.0.6" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#slide-design"><i class="fa fa-check"></i><b>74.0.6</b> Slide Design</a></li>
+<li class="chapter" data-level="74.0.7" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#presenting"><i class="fa fa-check"></i><b>74.0.7</b> Presenting</a></li>
+<li class="chapter" data-level="74.0.8" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#practice-1"><i class="fa fa-check"></i><b>74.0.8</b> Practice</a></li>
+<li class="chapter" data-level="74.0.9" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#handling-questions"><i class="fa fa-check"></i><b>74.0.9</b> Handling Questions</a></li>
+<li class="chapter" data-level="74.0.10" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#example-presentation-apis"><i class="fa fa-check"></i><b>74.0.10</b> Example Presentation: APIs</a></li>
+<li class="chapter" data-level="74.0.11" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#example-presentation-analysis"><i class="fa fa-check"></i><b>74.0.11</b> Example Presentation: Analysis</a></li>
+<li class="chapter" data-level="74.0.12" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#summary-23"><i class="fa fa-check"></i><b>74.0.12</b> Summary</a></li>
+<li class="chapter" data-level="74.0.13" data-path="how-to-give-a-presentation.html"><a href="how-to-give-a-presentation.html#additional-resources-25"><i class="fa fa-check"></i><b>74.0.13</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="75" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html"><i class="fa fa-check"></i><b>75</b> How To Present to a General Audience</a>
+<ul>
+<li class="chapter" data-level="75.0.1" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#the-audience"><i class="fa fa-check"></i><b>75.0.1</b> The Audience</a></li>
+<li class="chapter" data-level="75.0.2" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#the-goal"><i class="fa fa-check"></i><b>75.0.2</b> The Goal</a></li>
+<li class="chapter" data-level="75.0.3" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#the-presentation"><i class="fa fa-check"></i><b>75.0.3</b> The Presentation</a></li>
+<li class="chapter" data-level="75.0.4" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#general-presentation-example"><i class="fa fa-check"></i><b>75.0.4</b> General Presentation Example</a></li>
+<li class="chapter" data-level="75.0.5" data-path="how-to-present-to-a-general-audience.html"><a href="how-to-present-to-a-general-audience.html#summary-24"><i class="fa fa-check"></i><b>75.0.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="76" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html"><i class="fa fa-check"></i><b>76</b> How To Present to a Technical Audience</a>
+<ul>
+<li class="chapter" data-level="76.0.1" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#the-audience-1"><i class="fa fa-check"></i><b>76.0.1</b> The Audience</a></li>
+<li class="chapter" data-level="76.0.2" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#the-goal-1"><i class="fa fa-check"></i><b>76.0.2</b> The Goal</a></li>
+<li class="chapter" data-level="76.0.3" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#the-presentation-1"><i class="fa fa-check"></i><b>76.0.3</b> The Presentation</a></li>
+<li class="chapter" data-level="76.0.4" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#emphasize-1"><i class="fa fa-check"></i><b>76.0.4</b> Emphasize</a></li>
+<li class="chapter" data-level="76.0.5" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#de-emphasize-1"><i class="fa fa-check"></i><b>76.0.5</b> De-emphasize</a></li>
+<li class="chapter" data-level="76.0.6" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#technical-presentation-example"><i class="fa fa-check"></i><b>76.0.6</b> Technical Presentation Example</a></li>
+<li class="chapter" data-level="76.0.7" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#general-vs-technical"><i class="fa fa-check"></i><b>76.0.7</b> General vs Technical</a></li>
+<li class="chapter" data-level="76.0.8" data-path="how-to-present-to-a-technical-audience.html"><a href="how-to-present-to-a-technical-audience.html#summary-25"><i class="fa fa-check"></i><b>76.0.8</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="77" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html"><i class="fa fa-check"></i><b>77</b> How To Write a Blog Post</a>
+<ul>
+<li class="chapter" data-level="77.0.1" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#general-outline"><i class="fa fa-check"></i><b>77.0.1</b> General Outline</a></li>
+<li class="chapter" data-level="77.0.2" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#types-of-blog-posts"><i class="fa fa-check"></i><b>77.0.2</b> Types of Blog Posts</a></li>
+<li class="chapter" data-level="77.0.3" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#why-blog"><i class="fa fa-check"></i><b>77.0.3</b> Why Blog?</a></li>
+<li class="chapter" data-level="77.0.4" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#blog-etiquette"><i class="fa fa-check"></i><b>77.0.4</b> Blog Etiquette</a></li>
+<li class="chapter" data-level="77.0.5" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#summary-26"><i class="fa fa-check"></i><b>77.0.5</b> Summary</a></li>
+<li class="chapter" data-level="77.0.6" data-path="how-to-write-a-blog-post.html"><a href="how-to-write-a-blog-post.html#additional-resources-26"><i class="fa fa-check"></i><b>77.0.6</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="78" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html"><i class="fa fa-check"></i><b>78</b> Participating in Meetings</a>
+<ul>
+<li class="chapter" data-level="78.0.1" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#meeting-etiquette"><i class="fa fa-check"></i><b>78.0.1</b> Meeting Etiquette</a></li>
+<li class="chapter" data-level="78.0.2" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#how-to-host-a-meeting"><i class="fa fa-check"></i><b>78.0.2</b> How to Host A Meeting</a></li>
+<li class="chapter" data-level="78.0.3" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#how-to-participate-in-a-meeting"><i class="fa fa-check"></i><b>78.0.3</b> How to Participate in a Meeting</a></li>
+<li class="chapter" data-level="78.0.4" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#summary-27"><i class="fa fa-check"></i><b>78.0.4</b> Summary</a></li>
+<li class="chapter" data-level="78.0.5" data-path="participating-in-meetings.html"><a href="participating-in-meetings.html#additional-resources-27"><i class="fa fa-check"></i><b>78.0.5</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="79" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html"><i class="fa fa-check"></i><b>79</b> How To Have a One-on-One Meeting</a>
+<ul>
+<li class="chapter" data-level="79.0.1" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#consulting"><i class="fa fa-check"></i><b>79.0.1</b> Consulting</a></li>
+<li class="chapter" data-level="79.0.2" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#what-to-expect"><i class="fa fa-check"></i><b>79.0.2</b> What to Expect</a></li>
+<li class="chapter" data-level="79.0.3" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#follow-up-meetings"><i class="fa fa-check"></i><b>79.0.3</b> Follow-up Meetings</a></li>
+<li class="chapter" data-level="79.0.4" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#common-pitfalls"><i class="fa fa-check"></i><b>79.0.4</b> Common Pitfalls</a></li>
+<li class="chapter" data-level="79.0.5" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#data-science-ethics"><i class="fa fa-check"></i><b>79.0.5</b> Data Science Ethics</a></li>
+<li class="chapter" data-level="79.0.6" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#summary-28"><i class="fa fa-check"></i><b>79.0.6</b> Summary</a></li>
+<li class="chapter" data-level="79.0.7" data-path="how-to-have-a-one-on-one-meeting.html"><a href="how-to-have-a-one-on-one-meeting.html#slides-and-video-2"><i class="fa fa-check"></i><b>79.0.7</b> Slides and Video</a></li>
+</ul></li>
+<li class="chapter" data-level="80" data-path="building-a-resume.html"><a href="building-a-resume.html"><i class="fa fa-check"></i><b>80</b> <strong>Building a resume</strong></a>
+<ul>
+<li class="chapter" data-level="80.1" data-path="building-a-resume.html"><a href="building-a-resume.html#learning-objectives-6"><i class="fa fa-check"></i><b>80.1</b> Learning Objectives</a></li>
+<li class="chapter" data-level="80.2" data-path="building-a-resume.html"><a href="building-a-resume.html#what-you-need-to-find-a-data-science-job"><i class="fa fa-check"></i><b>80.2</b> What You Need to Find a Data Science Job</a>
+<ul>
+<li class="chapter" data-level="80.2.1" data-path="building-a-resume.html"><a href="building-a-resume.html#job-applications"><i class="fa fa-check"></i><b>80.2.1</b> Job Applications</a></li>
+<li class="chapter" data-level="80.2.2" data-path="building-a-resume.html"><a href="building-a-resume.html#online-presence"><i class="fa fa-check"></i><b>80.2.2</b> Online Presence</a></li>
+<li class="chapter" data-level="80.2.3" data-path="building-a-resume.html"><a href="building-a-resume.html#additional-resources-28"><i class="fa fa-check"></i><b>80.2.3</b> Additional Resources</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="87" data-path="project-gallery.html"><a href="project-gallery.html"><i class="fa fa-check"></i><b>87</b> Project Gallery</a>
+<li class="chapter" data-level="81" data-path="resumes-1.html"><a href="resumes-1.html"><i class="fa fa-check"></i><b>81</b> Resumes</a>
 <ul>
-<li class="chapter" data-level="87.0.1" data-path="project-gallery.html"><a href="project-gallery.html#project-list"><i class="fa fa-check"></i><b>87.0.1</b> Project List</a></li>
-<li class="chapter" data-level="87.0.2" data-path="project-gallery.html"><a href="project-gallery.html#project-gallery-1"><i class="fa fa-check"></i><b>87.0.2</b> Project Gallery</a></li>
-<li class="chapter" data-level="87.0.3" data-path="project-gallery.html"><a href="project-gallery.html#what-to-include-2"><i class="fa fa-check"></i><b>87.0.3</b> What To Include</a></li>
-<li class="chapter" data-level="87.0.4" data-path="project-gallery.html"><a href="project-gallery.html#what-not-to-include"><i class="fa fa-check"></i><b>87.0.4</b> What Not To Include</a></li>
-<li class="chapter" data-level="87.0.5" data-path="project-gallery.html"><a href="project-gallery.html#your-final-project"><i class="fa fa-check"></i><b>87.0.5</b> Your Final Project</a></li>
-<li class="chapter" data-level="87.0.6" data-path="project-gallery.html"><a href="project-gallery.html#push-to-github"><i class="fa fa-check"></i><b>87.0.6</b> Push to GitHub</a></li>
-<li class="chapter" data-level="87.0.7" data-path="project-gallery.html"><a href="project-gallery.html#your-own-project"><i class="fa fa-check"></i><b>87.0.7</b> Your <em>Own</em> Project</a></li>
-<li class="chapter" data-level="87.0.8" data-path="project-gallery.html"><a href="project-gallery.html#slides-and-video-23"><i class="fa fa-check"></i><b>87.0.8</b> Slides and Video</a></li>
+<li class="chapter" data-level="81.0.1" data-path="resumes-1.html"><a href="resumes-1.html#what-is-a-resume"><i class="fa fa-check"></i><b>81.0.1</b> What is a Resume?</a></li>
+<li class="chapter" data-level="81.0.2" data-path="resumes-1.html"><a href="resumes-1.html#general-features"><i class="fa fa-check"></i><b>81.0.2</b> General Features</a></li>
+<li class="chapter" data-level="81.0.3" data-path="resumes-1.html"><a href="resumes-1.html#formatting"><i class="fa fa-check"></i><b>81.0.3</b> Formatting</a></li>
+<li class="chapter" data-level="81.0.4" data-path="resumes-1.html"><a href="resumes-1.html#what-to-include-1"><i class="fa fa-check"></i><b>81.0.4</b> What to Include</a></li>
+<li class="chapter" data-level="81.0.5" data-path="resumes-1.html"><a href="resumes-1.html#example-resumes"><i class="fa fa-check"></i><b>81.0.5</b> Example Resumes</a></li>
+<li class="chapter" data-level="81.0.6" data-path="resumes-1.html"><a href="resumes-1.html#sharing-your-resume"><i class="fa fa-check"></i><b>81.0.6</b> Sharing your resume</a></li>
+<li class="chapter" data-level="81.0.7" data-path="resumes-1.html"><a href="resumes-1.html#summary-29"><i class="fa fa-check"></i><b>81.0.7</b> Summary</a></li>
+<li class="chapter" data-level="81.0.8" data-path="resumes-1.html"><a href="resumes-1.html#additional-resources-29"><i class="fa fa-check"></i><b>81.0.8</b> Additional Resources</a></li>
+<li class="chapter" data-level="81.0.9" data-path="resumes-1.html"><a href="resumes-1.html#slides-and-video-3"><i class="fa fa-check"></i><b>81.0.9</b> Slides and Video</a></li>
+<li class="chapter" data-level="81.0.10" data-path="resumes-1.html"><a href="resumes-1.html#resumes-quiz"><i class="fa fa-check"></i><b>81.0.10</b> Resumes quiz</a></li>
 </ul></li>
-<li class="chapter" data-level="88" data-path="google-docs.html"><a href="google-docs.html"><i class="fa fa-check"></i><b>88</b> Google Docs</a>
+<li class="chapter" data-level="82" data-path="cover-letters-1.html"><a href="cover-letters-1.html"><i class="fa fa-check"></i><b>82</b> Cover Letters</a>
 <ul>
-<li class="chapter" data-level="88.0.1" data-path="google-docs.html"><a href="google-docs.html#auto-save-feature-and-working-offline"><i class="fa fa-check"></i><b>88.0.1</b> Auto-save feature and working offline</a></li>
-<li class="chapter" data-level="88.0.2" data-path="google-docs.html"><a href="google-docs.html#working-in-google-docs"><i class="fa fa-check"></i><b>88.0.2</b> Working in Google Docs</a></li>
-<li class="chapter" data-level="88.0.3" data-path="google-docs.html"><a href="google-docs.html#renaming-your-document"><i class="fa fa-check"></i><b>88.0.3</b> Renaming Your Document</a></li>
-<li class="chapter" data-level="88.0.4" data-path="google-docs.html"><a href="google-docs.html#download-documents-in-different-formats"><i class="fa fa-check"></i><b>88.0.4</b> Download documents in different formats</a></li>
-<li class="chapter" data-level="88.0.5" data-path="google-docs.html"><a href="google-docs.html#more-specifics-on-using-google-docs"><i class="fa fa-check"></i><b>88.0.5</b> More specifics on using Google Docs</a></li>
-<li class="chapter" data-level="88.0.6" data-path="google-docs.html"><a href="google-docs.html#additional-resources-32"><i class="fa fa-check"></i><b>88.0.6</b> Additional Resources</a></li>
+<li class="chapter" data-level="82.0.1" data-path="cover-letters-1.html"><a href="cover-letters-1.html#format"><i class="fa fa-check"></i><b>82.0.1</b> Format</a></li>
+<li class="chapter" data-level="82.0.2" data-path="cover-letters-1.html"><a href="cover-letters-1.html#content"><i class="fa fa-check"></i><b>82.0.2</b> Content</a></li>
+<li class="chapter" data-level="82.0.3" data-path="cover-letters-1.html"><a href="cover-letters-1.html#what-to-avoid-1"><i class="fa fa-check"></i><b>82.0.3</b> What to Avoid</a></li>
+<li class="chapter" data-level="82.0.4" data-path="cover-letters-1.html"><a href="cover-letters-1.html#summary-30"><i class="fa fa-check"></i><b>82.0.4</b> Summary</a></li>
+<li class="chapter" data-level="82.0.5" data-path="cover-letters-1.html"><a href="cover-letters-1.html#additional-resources-30"><i class="fa fa-check"></i><b>82.0.5</b> Additional Resources</a></li>
+<li class="chapter" data-level="82.0.6" data-path="cover-letters-1.html"><a href="cover-letters-1.html#slides-and-video-4"><i class="fa fa-check"></i><b>82.0.6</b> Slides and Video</a></li>
 </ul></li>
-<li class="chapter" data-level="89" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html"><i class="fa fa-check"></i><b>89</b> Improving Your GitHub Profile</a>
+<li class="chapter" data-level="83" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html"><i class="fa fa-check"></i><b>83</b> Making Your Website More Professional</a>
 <ul>
-<li class="chapter" data-level="89.0.1" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#profile"><i class="fa fa-check"></i><b>89.0.1</b> Profile</a></li>
-<li class="chapter" data-level="89.0.2" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#pinned-repos"><i class="fa fa-check"></i><b>89.0.2</b> Pinned Repos</a></li>
-<li class="chapter" data-level="89.0.3" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#github-contributions"><i class="fa fa-check"></i><b>89.0.3</b> GitHub Contributions</a></li>
-<li class="chapter" data-level="89.0.4" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#summary-34"><i class="fa fa-check"></i><b>89.0.4</b> Summary</a></li>
-<li class="chapter" data-level="89.0.5" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#additional-resources-33"><i class="fa fa-check"></i><b>89.0.5</b> Additional Resources</a></li>
-<li class="chapter" data-level="89.0.6" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#slides-and-video-24"><i class="fa fa-check"></i><b>89.0.6</b> Slides and Video</a></li>
+<li class="chapter" data-level="83.1" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#make-your-own-website"><i class="fa fa-check"></i><b>83.1</b> Make your own website!</a></li>
+<li class="chapter" data-level="83.2" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#more-customization-of-your-website"><i class="fa fa-check"></i><b>83.2</b> More customization of your website</a>
+<ul>
+<li class="chapter" data-level="83.2.1" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#blogdown"><i class="fa fa-check"></i><b>83.2.1</b> Blogdown</a></li>
+<li class="chapter" data-level="83.2.2" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#getting-started"><i class="fa fa-check"></i><b>83.2.2</b> Getting Started</a></li>
+<li class="chapter" data-level="83.2.3" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#website-content"><i class="fa fa-check"></i><b>83.2.3</b> Website Content</a></li>
+<li class="chapter" data-level="83.2.4" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#website-appearance"><i class="fa fa-check"></i><b>83.2.4</b> Website Appearance</a></li>
+<li class="chapter" data-level="83.2.5" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#posts"><i class="fa fa-check"></i><b>83.2.5</b> Posts</a></li>
+<li class="chapter" data-level="83.2.6" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#projects-1"><i class="fa fa-check"></i><b>83.2.6</b> Projects</a></li>
+<li class="chapter" data-level="83.2.7" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#deployment"><i class="fa fa-check"></i><b>83.2.7</b> Deployment</a></li>
+<li class="chapter" data-level="83.2.8" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#additional-resources-31"><i class="fa fa-check"></i><b>83.2.8</b> Additional Resources</a></li>
+<li class="chapter" data-level="83.2.9" data-path="making-your-website-more-professional.html"><a href="making-your-website-more-professional.html#slides-and-video-5"><i class="fa fa-check"></i><b>83.2.9</b> Slides and Video</a></li>
 </ul></li>
-<li class="chapter" data-level="90" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html"><i class="fa fa-check"></i><b>90</b> Improving Your LinkedIn Profile</a>
-<ul>
-<li class="chapter" data-level="90.0.1" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#linkedin-profile"><i class="fa fa-check"></i><b>90.0.1</b> LinkedIn Profile</a></li>
-<li class="chapter" data-level="90.0.2" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#connecting-to-others"><i class="fa fa-check"></i><b>90.0.2</b> Connecting to Others</a></li>
-<li class="chapter" data-level="90.0.3" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#summary-35"><i class="fa fa-check"></i><b>90.0.3</b> Summary</a></li>
-<li class="chapter" data-level="90.0.4" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#additional-resources-34"><i class="fa fa-check"></i><b>90.0.4</b> Additional Resources</a></li>
-<li class="chapter" data-level="90.0.5" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#slides-and-video-25"><i class="fa fa-check"></i><b>90.0.5</b> Slides and Video</a></li>
 </ul></li>
-<li class="chapter" data-level="91" data-path="google-slides.html"><a href="google-slides.html"><i class="fa fa-check"></i><b>91</b> Google Slides</a>
+<li class="chapter" data-level="84" data-path="project-gallery.html"><a href="project-gallery.html"><i class="fa fa-check"></i><b>84</b> Project Gallery</a>
 <ul>
-<li class="chapter" data-level="91.0.1" data-path="google-slides.html"><a href="google-slides.html#presentation-guidelines-1"><i class="fa fa-check"></i><b>91.0.1</b> Presentation Guidelines</a></li>
-<li class="chapter" data-level="91.0.2" data-path="google-slides.html"><a href="google-slides.html#accessing-google-slides"><i class="fa fa-check"></i><b>91.0.2</b> Accessing Google Slides</a></li>
-<li class="chapter" data-level="91.0.3" data-path="google-slides.html"><a href="google-slides.html#creating-a-full-slideshow"><i class="fa fa-check"></i><b>91.0.3</b> Creating a Full Slideshow</a></li>
-<li class="chapter" data-level="91.0.4" data-path="google-slides.html"><a href="google-slides.html#presenting-your-slideshow"><i class="fa fa-check"></i><b>91.0.4</b> Presenting Your Slideshow</a></li>
-<li class="chapter" data-level="91.0.5" data-path="google-slides.html"><a href="google-slides.html#accessing-downloading-and-sharing-your-slides"><i class="fa fa-check"></i><b>91.0.5</b> Accessing, downloading, and sharing your slides</a></li>
-<li class="chapter" data-level="91.0.6" data-path="google-slides.html"><a href="google-slides.html#more-specifics-on-using-google-slides"><i class="fa fa-check"></i><b>91.0.6</b> More specifics on using Google Slides</a></li>
-<li class="chapter" data-level="91.0.7" data-path="google-slides.html"><a href="google-slides.html#additional-resources-35"><i class="fa fa-check"></i><b>91.0.7</b> Additional Resources</a></li>
-<li class="chapter" data-level="91.0.8" data-path="google-slides.html"><a href="google-slides.html#slides-and-video-26"><i class="fa fa-check"></i><b>91.0.8</b> Slides and Video</a></li>
+<li class="chapter" data-level="84.0.1" data-path="project-gallery.html"><a href="project-gallery.html#project-list"><i class="fa fa-check"></i><b>84.0.1</b> Project List</a></li>
+<li class="chapter" data-level="84.0.2" data-path="project-gallery.html"><a href="project-gallery.html#project-gallery-1"><i class="fa fa-check"></i><b>84.0.2</b> Project Gallery</a></li>
+<li class="chapter" data-level="84.0.3" data-path="project-gallery.html"><a href="project-gallery.html#what-to-include-2"><i class="fa fa-check"></i><b>84.0.3</b> What To Include</a></li>
+<li class="chapter" data-level="84.0.4" data-path="project-gallery.html"><a href="project-gallery.html#what-not-to-include"><i class="fa fa-check"></i><b>84.0.4</b> What Not To Include</a></li>
+<li class="chapter" data-level="84.0.5" data-path="project-gallery.html"><a href="project-gallery.html#your-final-project"><i class="fa fa-check"></i><b>84.0.5</b> Your Final Project</a></li>
+<li class="chapter" data-level="84.0.6" data-path="project-gallery.html"><a href="project-gallery.html#push-to-github"><i class="fa fa-check"></i><b>84.0.6</b> Push to GitHub</a></li>
+<li class="chapter" data-level="84.0.7" data-path="project-gallery.html"><a href="project-gallery.html#your-own-project"><i class="fa fa-check"></i><b>84.0.7</b> Your <em>Own</em> Project</a></li>
+<li class="chapter" data-level="84.0.8" data-path="project-gallery.html"><a href="project-gallery.html#slides-and-video-6"><i class="fa fa-check"></i><b>84.0.8</b> Slides and Video</a></li>
 </ul></li>
-<li class="chapter" data-level="92" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html"><i class="fa fa-check"></i><b>92</b> Using Twitter For Data Science</a>
+<li class="chapter" data-level="85" data-path="google-docs.html"><a href="google-docs.html"><i class="fa fa-check"></i><b>85</b> Google Docs</a>
 <ul>
-<li class="chapter" data-level="92.0.1" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#profile-1"><i class="fa fa-check"></i><b>92.0.1</b> Profile</a></li>
-<li class="chapter" data-level="92.0.2" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#who-what-to-follow"><i class="fa fa-check"></i><b>92.0.2</b> Who &amp; What To Follow</a></li>
-<li class="chapter" data-level="92.0.3" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#tweeting"><i class="fa fa-check"></i><b>92.0.3</b> Tweeting</a></li>
-<li class="chapter" data-level="92.0.4" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#summary-36"><i class="fa fa-check"></i><b>92.0.4</b> Summary</a></li>
-<li class="chapter" data-level="92.0.5" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#additional-resources-36"><i class="fa fa-check"></i><b>92.0.5</b> Additional Resources</a></li>
-<li class="chapter" data-level="92.0.6" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#slides-and-video-27"><i class="fa fa-check"></i><b>92.0.6</b> Slides and Video</a></li>
+<li class="chapter" data-level="85.0.1" data-path="google-docs.html"><a href="google-docs.html#auto-save-feature-and-working-offline"><i class="fa fa-check"></i><b>85.0.1</b> Auto-save feature and working offline</a></li>
+<li class="chapter" data-level="85.0.2" data-path="google-docs.html"><a href="google-docs.html#working-in-google-docs"><i class="fa fa-check"></i><b>85.0.2</b> Working in Google Docs</a></li>
+<li class="chapter" data-level="85.0.3" data-path="google-docs.html"><a href="google-docs.html#renaming-your-document"><i class="fa fa-check"></i><b>85.0.3</b> Renaming Your Document</a></li>
+<li class="chapter" data-level="85.0.4" data-path="google-docs.html"><a href="google-docs.html#download-documents-in-different-formats"><i class="fa fa-check"></i><b>85.0.4</b> Download documents in different formats</a></li>
+<li class="chapter" data-level="85.0.5" data-path="google-docs.html"><a href="google-docs.html#more-specifics-on-using-google-docs"><i class="fa fa-check"></i><b>85.0.5</b> More specifics on using Google Docs</a></li>
+<li class="chapter" data-level="85.0.6" data-path="google-docs.html"><a href="google-docs.html#additional-resources-32"><i class="fa fa-check"></i><b>85.0.6</b> Additional Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="93" data-path="google-hangouts.html"><a href="google-hangouts.html"><i class="fa fa-check"></i><b>93</b> Google Hangouts</a>
+<li class="chapter" data-level="86" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html"><i class="fa fa-check"></i><b>86</b> Improving Your GitHub Profile</a>
 <ul>
-<li class="chapter" data-level="93.0.1" data-path="google-hangouts.html"><a href="google-hangouts.html#accessing-your-google-hangouts-account"><i class="fa fa-check"></i><b>93.0.1</b> Accessing your Google Hangouts account</a></li>
-<li class="chapter" data-level="93.0.2" data-path="google-hangouts.html"><a href="google-hangouts.html#video-chats"><i class="fa fa-check"></i><b>93.0.2</b> Video chats</a></li>
-<li class="chapter" data-level="93.0.3" data-path="google-hangouts.html"><a href="google-hangouts.html#phone-calls"><i class="fa fa-check"></i><b>93.0.3</b> Phone calls</a></li>
-<li class="chapter" data-level="93.0.4" data-path="google-hangouts.html"><a href="google-hangouts.html#messaging"><i class="fa fa-check"></i><b>93.0.4</b> Messaging</a></li>
-<li class="chapter" data-level="93.0.5" data-path="google-hangouts.html"><a href="google-hangouts.html#group-conversations"><i class="fa fa-check"></i><b>93.0.5</b> Group conversations</a></li>
-<li class="chapter" data-level="93.0.6" data-path="google-hangouts.html"><a href="google-hangouts.html#more-specifics-on-using-google-hangouts"><i class="fa fa-check"></i><b>93.0.6</b> More specifics on using Google Hangouts</a></li>
-<li class="chapter" data-level="93.0.7" data-path="google-hangouts.html"><a href="google-hangouts.html#slides-and-video-28"><i class="fa fa-check"></i><b>93.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="86.0.1" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#profile"><i class="fa fa-check"></i><b>86.0.1</b> Profile</a></li>
+<li class="chapter" data-level="86.0.2" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#pinned-repos"><i class="fa fa-check"></i><b>86.0.2</b> Pinned Repos</a></li>
+<li class="chapter" data-level="86.0.3" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#github-contributions"><i class="fa fa-check"></i><b>86.0.3</b> GitHub Contributions</a></li>
+<li class="chapter" data-level="86.0.4" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#summary-31"><i class="fa fa-check"></i><b>86.0.4</b> Summary</a></li>
+<li class="chapter" data-level="86.0.5" data-path="improving-your-github-profile.html"><a href="improving-your-github-profile.html#additional-resources-33"><i class="fa fa-check"></i><b>86.0.5</b> Additional Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="94" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html"><i class="fa fa-check"></i><b>94</b> Data Science Job Descriptions</a>
+<li class="chapter" data-level="87" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html"><i class="fa fa-check"></i><b>87</b> Improving Your LinkedIn Profile</a>
 <ul>
-<li class="chapter" data-level="94.0.1" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#what-data-scientists-do"><i class="fa fa-check"></i><b>94.0.1</b> What Data Scientists Do</a></li>
-<li class="chapter" data-level="94.0.2" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#skills-for-entry-level-positions"><i class="fa fa-check"></i><b>94.0.2</b> Skills for entry-level positions</a></li>
-<li class="chapter" data-level="94.0.3" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#job-descriptions"><i class="fa fa-check"></i><b>94.0.3</b> Job Descriptions</a></li>
-<li class="chapter" data-level="94.0.4" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#which-job-is-right-for-you"><i class="fa fa-check"></i><b>94.0.4</b> Which Job is Right For You?</a></li>
-<li class="chapter" data-level="94.0.5" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#summary-37"><i class="fa fa-check"></i><b>94.0.5</b> Summary</a></li>
-<li class="chapter" data-level="94.0.6" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#additional-resources-37"><i class="fa fa-check"></i><b>94.0.6</b> Additional Resources</a></li>
-<li class="chapter" data-level="94.0.7" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#slides-and-video-29"><i class="fa fa-check"></i><b>94.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="87.0.1" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#linkedin-profile"><i class="fa fa-check"></i><b>87.0.1</b> LinkedIn Profile</a></li>
+<li class="chapter" data-level="87.0.2" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#connecting-to-others"><i class="fa fa-check"></i><b>87.0.2</b> Connecting to Others</a></li>
+<li class="chapter" data-level="87.0.3" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#summary-32"><i class="fa fa-check"></i><b>87.0.3</b> Summary</a></li>
+<li class="chapter" data-level="87.0.4" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#additional-resources-34"><i class="fa fa-check"></i><b>87.0.4</b> Additional Resources</a></li>
+<li class="chapter" data-level="87.0.5" data-path="improving-your-linkedin-profile.html"><a href="improving-your-linkedin-profile.html#slides-and-video-7"><i class="fa fa-check"></i><b>87.0.5</b> Slides and Video</a></li>
 </ul></li>
-<li class="chapter" data-level="95" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html"><i class="fa fa-check"></i><b>95</b> Where To Look for Data Science Jobs</a>
+<li class="chapter" data-level="88" data-path="google-slides.html"><a href="google-slides.html"><i class="fa fa-check"></i><b>88</b> Google Slides</a>
 <ul>
-<li class="chapter" data-level="95.0.1" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#what-jobs-to-look-for"><i class="fa fa-check"></i><b>95.0.1</b> What Jobs to Look For</a></li>
-<li class="chapter" data-level="95.0.2" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#additional-considerations"><i class="fa fa-check"></i><b>95.0.2</b> Additional Considerations</a></li>
-<li class="chapter" data-level="95.0.3" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#job-titles-to-search"><i class="fa fa-check"></i><b>95.0.3</b> Job Titles to Search</a></li>
-<li class="chapter" data-level="95.0.4" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#stackoverflow-jobs"><i class="fa fa-check"></i><b>95.0.4</b> StackOverflow Jobs</a></li>
-<li class="chapter" data-level="95.0.5" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#linkedin"><i class="fa fa-check"></i><b>95.0.5</b> LinkedIn</a></li>
-<li class="chapter" data-level="95.0.6" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#job-boards"><i class="fa fa-check"></i><b>95.0.6</b> Job Boards</a></li>
-<li class="chapter" data-level="95.0.7" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#company-websites"><i class="fa fa-check"></i><b>95.0.7</b> Company websites</a></li>
-<li class="chapter" data-level="95.0.8" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#twitter"><i class="fa fa-check"></i><b>95.0.8</b> Twitter</a></li>
-<li class="chapter" data-level="95.0.9" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#remote-work"><i class="fa fa-check"></i><b>95.0.9</b> Remote Work</a></li>
-<li class="chapter" data-level="95.0.10" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#applying"><i class="fa fa-check"></i><b>95.0.10</b> Applying</a></li>
-<li class="chapter" data-level="95.0.11" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#summary-38"><i class="fa fa-check"></i><b>95.0.11</b> Summary</a></li>
-<li class="chapter" data-level="95.0.12" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#additional-resources-38"><i class="fa fa-check"></i><b>95.0.12</b> Additional Resources</a></li>
-<li class="chapter" data-level="95.0.13" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#slides-and-video-30"><i class="fa fa-check"></i><b>95.0.13</b> Slides and Video</a></li>
+<li class="chapter" data-level="88.0.1" data-path="google-slides.html"><a href="google-slides.html#presentation-guidelines-1"><i class="fa fa-check"></i><b>88.0.1</b> Presentation Guidelines</a></li>
+<li class="chapter" data-level="88.0.2" data-path="google-slides.html"><a href="google-slides.html#accessing-google-slides"><i class="fa fa-check"></i><b>88.0.2</b> Accessing Google Slides</a></li>
+<li class="chapter" data-level="88.0.3" data-path="google-slides.html"><a href="google-slides.html#creating-a-full-slideshow"><i class="fa fa-check"></i><b>88.0.3</b> Creating a Full Slideshow</a></li>
+<li class="chapter" data-level="88.0.4" data-path="google-slides.html"><a href="google-slides.html#presenting-your-slideshow"><i class="fa fa-check"></i><b>88.0.4</b> Presenting Your Slideshow</a></li>
+<li class="chapter" data-level="88.0.5" data-path="google-slides.html"><a href="google-slides.html#accessing-downloading-and-sharing-your-slides"><i class="fa fa-check"></i><b>88.0.5</b> Accessing, downloading, and sharing your slides</a></li>
+<li class="chapter" data-level="88.0.6" data-path="google-slides.html"><a href="google-slides.html#more-specifics-on-using-google-slides"><i class="fa fa-check"></i><b>88.0.6</b> More specifics on using Google Slides</a></li>
+<li class="chapter" data-level="88.0.7" data-path="google-slides.html"><a href="google-slides.html#additional-resources-35"><i class="fa fa-check"></i><b>88.0.7</b> Additional Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="96" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html"><i class="fa fa-check"></i><b>96</b> Projecting from a Chromebook</a>
+<li class="chapter" data-level="89" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html"><i class="fa fa-check"></i><b>89</b> Using Twitter For Data Science</a>
 <ul>
-<li class="chapter" data-level="96.0.1" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#finding-the-right-dongle"><i class="fa fa-check"></i><b>96.0.1</b> Finding the right dongle</a></li>
-<li class="chapter" data-level="96.0.2" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#projecting-from-your-chromebook"><i class="fa fa-check"></i><b>96.0.2</b> Projecting from your Chromebook</a></li>
-<li class="chapter" data-level="96.0.3" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#slides-and-video-31"><i class="fa fa-check"></i><b>96.0.3</b> Slides and Video</a></li>
+<li class="chapter" data-level="89.0.1" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#profile-1"><i class="fa fa-check"></i><b>89.0.1</b> Profile</a></li>
+<li class="chapter" data-level="89.0.2" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#who-what-to-follow"><i class="fa fa-check"></i><b>89.0.2</b> Who &amp; What To Follow</a></li>
+<li class="chapter" data-level="89.0.3" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#tweeting"><i class="fa fa-check"></i><b>89.0.3</b> Tweeting</a></li>
+<li class="chapter" data-level="89.0.4" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#summary-33"><i class="fa fa-check"></i><b>89.0.4</b> Summary</a></li>
+<li class="chapter" data-level="89.0.5" data-path="using-twitter-for-data-science.html"><a href="using-twitter-for-data-science.html#additional-resources-36"><i class="fa fa-check"></i><b>89.0.5</b> Additional Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="97" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html"><i class="fa fa-check"></i><b>97</b> Where To Find Remote Data Science Jobs</a>
+<li class="chapter" data-level="90" data-path="google-hangouts.html"><a href="google-hangouts.html"><i class="fa fa-check"></i><b>90</b> Google Hangouts</a>
 <ul>
-<li class="chapter" data-level="97.0.1" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#general-postings"><i class="fa fa-check"></i><b>97.0.1</b> General Postings</a></li>
-<li class="chapter" data-level="97.0.2" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#remote-ok"><i class="fa fa-check"></i><b>97.0.2</b> Remote OK</a></li>
-<li class="chapter" data-level="97.0.3" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#summary-39"><i class="fa fa-check"></i><b>97.0.3</b> Summary</a></li>
-<li class="chapter" data-level="97.0.4" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#slides-and-video-32"><i class="fa fa-check"></i><b>97.0.4</b> Slides and Video</a></li>
+<li class="chapter" data-level="90.0.1" data-path="google-hangouts.html"><a href="google-hangouts.html#accessing-your-google-hangouts-account"><i class="fa fa-check"></i><b>90.0.1</b> Accessing your Google Hangouts account</a></li>
+<li class="chapter" data-level="90.0.2" data-path="google-hangouts.html"><a href="google-hangouts.html#video-chats"><i class="fa fa-check"></i><b>90.0.2</b> Video chats</a></li>
+<li class="chapter" data-level="90.0.3" data-path="google-hangouts.html"><a href="google-hangouts.html#phone-calls"><i class="fa fa-check"></i><b>90.0.3</b> Phone calls</a></li>
+<li class="chapter" data-level="90.0.4" data-path="google-hangouts.html"><a href="google-hangouts.html#messaging"><i class="fa fa-check"></i><b>90.0.4</b> Messaging</a></li>
+<li class="chapter" data-level="90.0.5" data-path="google-hangouts.html"><a href="google-hangouts.html#group-conversations"><i class="fa fa-check"></i><b>90.0.5</b> Group conversations</a></li>
+<li class="chapter" data-level="90.0.6" data-path="google-hangouts.html"><a href="google-hangouts.html#more-specifics-on-using-google-hangouts"><i class="fa fa-check"></i><b>90.0.6</b> More specifics on using Google Hangouts</a></li>
 </ul></li>
-<li class="chapter" data-level="98" data-path="data-science-interviews.html"><a href="data-science-interviews.html"><i class="fa fa-check"></i><b>98</b> Data Science Interviews</a>
+<li class="chapter" data-level="91" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html"><i class="fa fa-check"></i><b>91</b> Data Science Job Descriptions</a>
 <ul>
-<li class="chapter" data-level="98.0.1" data-path="data-science-interviews.html"><a href="data-science-interviews.html#pre-interview-phone-calls"><i class="fa fa-check"></i><b>98.0.1</b> Pre-Interview Phone Calls</a></li>
-<li class="chapter" data-level="98.0.2" data-path="data-science-interviews.html"><a href="data-science-interviews.html#interview-preparation"><i class="fa fa-check"></i><b>98.0.2</b> Interview Preparation</a></li>
-<li class="chapter" data-level="98.0.3" data-path="data-science-interviews.html"><a href="data-science-interviews.html#the-day-of-the-interview"><i class="fa fa-check"></i><b>98.0.3</b> The Day of the Interview</a></li>
-<li class="chapter" data-level="98.0.4" data-path="data-science-interviews.html"><a href="data-science-interviews.html#after-the-interview"><i class="fa fa-check"></i><b>98.0.4</b> After The Interview</a></li>
-<li class="chapter" data-level="98.0.5" data-path="data-science-interviews.html"><a href="data-science-interviews.html#summary-40"><i class="fa fa-check"></i><b>98.0.5</b> Summary</a></li>
-<li class="chapter" data-level="98.0.6" data-path="data-science-interviews.html"><a href="data-science-interviews.html#additional-resources-39"><i class="fa fa-check"></i><b>98.0.6</b> Additional Resources</a></li>
-<li class="chapter" data-level="98.0.7" data-path="data-science-interviews.html"><a href="data-science-interviews.html#slides-and-video-33"><i class="fa fa-check"></i><b>98.0.7</b> Slides and Video</a></li>
+<li class="chapter" data-level="91.0.1" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#what-data-scientists-do"><i class="fa fa-check"></i><b>91.0.1</b> What Data Scientists Do</a></li>
+<li class="chapter" data-level="91.0.2" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#skills-for-entry-level-positions"><i class="fa fa-check"></i><b>91.0.2</b> Skills for entry-level positions</a></li>
+<li class="chapter" data-level="91.0.3" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#job-descriptions"><i class="fa fa-check"></i><b>91.0.3</b> Job Descriptions</a></li>
+<li class="chapter" data-level="91.0.4" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#which-job-is-right-for-you"><i class="fa fa-check"></i><b>91.0.4</b> Which Job is Right For You?</a></li>
+<li class="chapter" data-level="91.0.5" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#summary-34"><i class="fa fa-check"></i><b>91.0.5</b> Summary</a></li>
+<li class="chapter" data-level="91.0.6" data-path="data-science-job-descriptions.html"><a href="data-science-job-descriptions.html#additional-resources-37"><i class="fa fa-check"></i><b>91.0.6</b> Additional Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="99" data-path="data-science-meetups.html"><a href="data-science-meetups.html"><i class="fa fa-check"></i><b>99</b> Data Science Meetups</a>
+<li class="chapter" data-level="92" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html"><i class="fa fa-check"></i><b>92</b> Where To Look for Data Science Jobs</a>
 <ul>
-<li class="chapter" data-level="99.0.1" data-path="data-science-meetups.html"><a href="data-science-meetups.html#where-to-look"><i class="fa fa-check"></i><b>99.0.1</b> Where to Look</a></li>
-<li class="chapter" data-level="99.0.2" data-path="data-science-meetups.html"><a href="data-science-meetups.html#what-to-expect-1"><i class="fa fa-check"></i><b>99.0.2</b> What to Expect</a></li>
-<li class="chapter" data-level="99.0.3" data-path="data-science-meetups.html"><a href="data-science-meetups.html#meetups-and-jobs"><i class="fa fa-check"></i><b>99.0.3</b> Meetups and Jobs</a></li>
-<li class="chapter" data-level="99.0.4" data-path="data-science-meetups.html"><a href="data-science-meetups.html#summary-41"><i class="fa fa-check"></i><b>99.0.4</b> Summary</a></li>
-<li class="chapter" data-level="99.0.5" data-path="data-science-meetups.html"><a href="data-science-meetups.html#slides-and-video-34"><i class="fa fa-check"></i><b>99.0.5</b> Slides and Video</a></li>
+<li class="chapter" data-level="92.0.1" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#what-jobs-to-look-for"><i class="fa fa-check"></i><b>92.0.1</b> What Jobs to Look For</a></li>
+<li class="chapter" data-level="92.0.2" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#additional-considerations"><i class="fa fa-check"></i><b>92.0.2</b> Additional Considerations</a></li>
+<li class="chapter" data-level="92.0.3" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#job-titles-to-search"><i class="fa fa-check"></i><b>92.0.3</b> Job Titles to Search</a></li>
+<li class="chapter" data-level="92.0.4" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#stackoverflow-jobs"><i class="fa fa-check"></i><b>92.0.4</b> StackOverflow Jobs</a></li>
+<li class="chapter" data-level="92.0.5" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#linkedin"><i class="fa fa-check"></i><b>92.0.5</b> LinkedIn</a></li>
+<li class="chapter" data-level="92.0.6" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#job-boards"><i class="fa fa-check"></i><b>92.0.6</b> Job Boards</a></li>
+<li class="chapter" data-level="92.0.7" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#company-websites"><i class="fa fa-check"></i><b>92.0.7</b> Company websites</a></li>
+<li class="chapter" data-level="92.0.8" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#twitter"><i class="fa fa-check"></i><b>92.0.8</b> Twitter</a></li>
+<li class="chapter" data-level="92.0.9" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#remote-work"><i class="fa fa-check"></i><b>92.0.9</b> Remote Work</a></li>
+<li class="chapter" data-level="92.0.10" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#applying"><i class="fa fa-check"></i><b>92.0.10</b> Applying</a></li>
+<li class="chapter" data-level="92.0.11" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#summary-35"><i class="fa fa-check"></i><b>92.0.11</b> Summary</a></li>
+<li class="chapter" data-level="92.0.12" data-path="where-to-look-for-data-science-jobs.html"><a href="where-to-look-for-data-science-jobs.html#additional-resources-38"><i class="fa fa-check"></i><b>92.0.12</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="93" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html"><i class="fa fa-check"></i><b>93</b> Projecting from a Chromebook</a>
+<ul>
+<li class="chapter" data-level="93.0.1" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#finding-the-right-dongle"><i class="fa fa-check"></i><b>93.0.1</b> Finding the right dongle</a></li>
+<li class="chapter" data-level="93.0.2" data-path="projecting-from-a-chromebook.html"><a href="projecting-from-a-chromebook.html#projecting-from-your-chromebook"><i class="fa fa-check"></i><b>93.0.2</b> Projecting from your Chromebook</a></li>
+</ul></li>
+<li class="chapter" data-level="94" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html"><i class="fa fa-check"></i><b>94</b> Where To Find Remote Data Science Jobs</a>
+<ul>
+<li class="chapter" data-level="94.0.1" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#general-postings"><i class="fa fa-check"></i><b>94.0.1</b> General Postings</a></li>
+<li class="chapter" data-level="94.0.2" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#remote-ok"><i class="fa fa-check"></i><b>94.0.2</b> Remote OK</a></li>
+<li class="chapter" data-level="94.0.3" data-path="where-to-find-remote-data-science-jobs.html"><a href="where-to-find-remote-data-science-jobs.html#summary-36"><i class="fa fa-check"></i><b>94.0.3</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="95" data-path="data-science-interviews.html"><a href="data-science-interviews.html"><i class="fa fa-check"></i><b>95</b> Data Science Interviews</a>
+<ul>
+<li class="chapter" data-level="95.0.1" data-path="data-science-interviews.html"><a href="data-science-interviews.html#pre-interview-phone-calls"><i class="fa fa-check"></i><b>95.0.1</b> Pre-Interview Phone Calls</a></li>
+<li class="chapter" data-level="95.0.2" data-path="data-science-interviews.html"><a href="data-science-interviews.html#interview-preparation"><i class="fa fa-check"></i><b>95.0.2</b> Interview Preparation</a></li>
+<li class="chapter" data-level="95.0.3" data-path="data-science-interviews.html"><a href="data-science-interviews.html#the-day-of-the-interview"><i class="fa fa-check"></i><b>95.0.3</b> The Day of the Interview</a></li>
+<li class="chapter" data-level="95.0.4" data-path="data-science-interviews.html"><a href="data-science-interviews.html#after-the-interview"><i class="fa fa-check"></i><b>95.0.4</b> After The Interview</a></li>
+<li class="chapter" data-level="95.0.5" data-path="data-science-interviews.html"><a href="data-science-interviews.html#summary-37"><i class="fa fa-check"></i><b>95.0.5</b> Summary</a></li>
+<li class="chapter" data-level="95.0.6" data-path="data-science-interviews.html"><a href="data-science-interviews.html#additional-resources-39"><i class="fa fa-check"></i><b>95.0.6</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="96" data-path="data-science-meetups.html"><a href="data-science-meetups.html"><i class="fa fa-check"></i><b>96</b> Data Science Meetups</a>
+<ul>
+<li class="chapter" data-level="96.0.1" data-path="data-science-meetups.html"><a href="data-science-meetups.html#where-to-look"><i class="fa fa-check"></i><b>96.0.1</b> Where to Look</a></li>
+<li class="chapter" data-level="96.0.2" data-path="data-science-meetups.html"><a href="data-science-meetups.html#what-to-expect-1"><i class="fa fa-check"></i><b>96.0.2</b> What to Expect</a></li>
+<li class="chapter" data-level="96.0.3" data-path="data-science-meetups.html"><a href="data-science-meetups.html#meetups-and-jobs"><i class="fa fa-check"></i><b>96.0.3</b> Meetups and Jobs</a></li>
+<li class="chapter" data-level="96.0.4" data-path="data-science-meetups.html"><a href="data-science-meetups.html#summary-38"><i class="fa fa-check"></i><b>96.0.4</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="divider"></li>
@@ -1167,207 +1123,82 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/DataTrail.jpg">
 </div>
-<div id="data-analysis-pipelines" class="section level1" number="60">
-<h1><span class="header-section-number">Chapter 60</span> Data Analysis Pipelines</h1>
-<p>In data science jobs in industry, often you’re analyzing a dataset over time. What this means is that the dataset’s structure doesn’t change – the variables you’re collecting remain the same – but the observations do. Maybe you’re collecting sales figures for a company, and each month you’re reanalyzing the dataset to see if trends have changed or if your predictions need to be altered. Or, possibly, you’re analyzing user data where the demographics and number of users of your product change over time. In these cases, where the variables don’t change but the observations do, pipelines can be incredibly helpful.</p>
-<div id="pipelines" class="section level3" number="60.0.1">
-<h3><span class="header-section-number">60.0.1</span> Pipelines</h3>
-<p>Pipelines are a series of steps that can be applied to a dataset. It’s helpful to generate a pipeline whenever you come across a dataset that you expect to encounter again. A pipeline could read in a dataset, process that dataset to get it into a tidy format, generate figures to summarize the data, and generate predictions. This pipeline could then be set to run any time new data are generated or on a time table, say every month. In this sense, data science pipelines should be <strong>automated</strong>. In other words, after you build the pipeline, you shouldn’t have to do any additional work each time you run the pipelines.</p>
-<p>Additionally, pipelines have the additional benefit that they are <strong>reproducible</strong>. This is helpful to you, since you’ll be able to reproduce your results at any point in time. But, this is also helpful because they can be used by anyone who has access to the data. The pipeline will work if you leave the company and someone takes over for you or if you’re sick and need to take a day off.</p>
+<div id="version-control-1" class="section level1" number="63">
+<h1><span class="header-section-number">Chapter 63</span> Version Control</h1>
+<p>In this lesson, we’ll give you a basic understanding of version control. We’ll look at what version control is, some of its benefits, and give an introduction to Git and GitHub, the main way you will interface with version control systems in these courses.</p>
+<div id="what-is-version-control" class="section level3" number="63.0.1">
+<h3><span class="header-section-number">63.0.1</span> What is version control?</h3>
+<p>One common mantra from data analysis and writing code is “save early, save often”. What is meant by this is that you do not want to create content without saving it frequently. This way, if you lose your internet connection, or your computer crashes, you will not lose the hard work you have put in. On the other hand, sometimes we create some content, only to realize that it is not what we want, and we want to undo the changes we have just made. Version control allows us to save frequently, while also taking snapshots of our work at any point in time, allowing us to go back to a previous version if necessary. A good version control system will do this without you having to save multiple copies of your work (avoiding having “myFile_version1”, “myFile_version2”, etc. saved to your computer) or having to keep track of what the latest version of the file is.</p>
+<p>If you’ve ever used the “Track changes” feature in Microsoft Word, you have seen a rudimentary type of version control, in which the changes to a file are tracked, and you can either chose to keep those edits or revert to the original format. Version control systems, like <a href="https://git-scm.com/">Git</a>, can be thought of as a more sophisticated “Track changes” - in that they are far more powerful and are capable of meticulously tracking successive changes on many files, with potentially many people working on the same groups of files at the same time.</p>
+<p>If you’ve ever worked collaboratively on a document before, <a href="http://phdcomics.com/comics/archive.php?comicid=1531">this comic</a> from PHD Comics might resonate with you. Hopefully, once you’ve mastered version control software, Paper_Final_FINAL2_actually_FINAL.docx will be a thing of the past for you!</p>
 </div>
-<div id="considerations" class="section level3" number="60.0.2">
-<h3><span class="header-section-number">60.0.2</span> Considerations</h3>
-<p>When generating a pipeline, there are a number of considerations to take into account before and while you’re developing the pipelines. Here, we’ll discuss when to consider a pipeline, what to consider while you’re generating the pipeline, and how to track changes that are made to the pipeline.</p>
-<div id="when-to-make-a-pipeline" class="section level4" number="60.0.2.1">
-<h4><span class="header-section-number">60.0.2.1</span> When to make a pipeline</h4>
-<p>Pipelines are helpful when you have a question that you will answer more than once. For example, if you have data that will be updated over time, a pipeline may be helpful. If, however, you’re doing a quick analysis on a single set of data to answer a question that you will not likely have to answer again in the future, then just do the analysis and get your answer. This is not the time to generate a pipeline. <em>But</em>, if you’ll likely run the analysis again in the future once more data has been collected, once you have updated numbers, or once you have data from more people, then generate a pipeline. Generally, <strong>pipelines are helpful when there is a single question you will have to answer more than once</strong>.</p>
+<div id="version-control-on-your-own" class="section level3" number="63.0.2">
+<h3><span class="header-section-number">63.0.2</span> Version control on your own</h3>
+<p>As mentioned above, even if you are the only one working on a project, saving frequently and preserving snapshots of your work at a specific time prevents you from losing work or making changes that cause the work you have already done to not work anymore. Or, you might be keeping multiple, very similar, copies of a file. And this could be dangerous - you might start editing the wrong version, not recognizing that the document labelled “FINAL” has been further edited to “FINAL2” - and now all your new changes have been applied to the wrong file! Version control systems help to solve this problem by keeping a single, updated version of each file, with a record of <em>all</em> previous versions AND a record of exactly what changed between the versions.</p>
 </div>
-<div id="including-appropriate-checks" class="section level4" number="60.0.2.2">
-<h4><span class="header-section-number">60.0.2.2</span> Including appropriate checks</h4>
-<p>Once you’ve decided that a pipeline will be helpful, the goal is that you’ll generate a pipeline that, once you click a button, the entire analysis process will run and you’ll get your answer. In order for this to happen, your pipeline will require checks before it gets started. These checks should look to see:</p>
-<ul>
-<li>are the data in the **expected format*? - Are we expecting tabular data with 10 columns? If so, does in the input data look as expected?</li>
-<li>are the <strong>necessary variables included</strong> in the dataset? - If we’re going to be using the variable <code>sex</code>, is that in there? If not, is there a column called <code>Sex</code> or <code>gender</code>, and is that the column we want to use?</li>
-<li>are the <strong>observations for the variables coded</strong> as we expect? - if we’re expecting females to be coded as <code>female</code>, is that what’s in the data? Or are they coded as <code>F</code>, or even <code>0</code>?)</li>
-</ul>
-<p>Checks to ensure that the input data is the right type of data for the pipeline to run are incredibly important. These are just a few checks you may want to run on your data. You may also want to check to ensure that the data are from the dates expected or check to be sure that the data aren’t unexpectedly truncated. Considering what checks you’ll need to make on your data is an important first step to generating a pipeline.</p>
+<div id="version-control-for-collaboration-or-sharing" class="section level3" number="63.0.3">
+<h3><span class="header-section-number">63.0.3</span> Version control for collaboration or sharing</h3>
+<p>One advantage of using version control for your projects is that multiple users can work on different parts of the same project at the same time. Each individual can edit different files that make up a project simultaneously, and all the results can be saved in the same place. Two (or more) individuals can even work on editing the same file simultaneously, and a good version control system will allow them to then resolve any differences between the two file versions that result.</p>
+<p>Additionally, since version control systems keep a record of all changes made to the files, this can be of great help when you are collaborating with many people on the same files - the version control software keeps track of who, when, and why those specific changes were made. It’s like “Track changes” to the extreme!</p>
 </div>
-<div id="avoiding-hard-coding" class="section level4" number="60.0.2.3">
-<h4><span class="header-section-number">60.0.2.3</span> Avoiding Hard-Coding</h4>
-<p>In developing pipelines, you’ll generally want to avoid hard coding whenever possible. Hard coding in a pipeline refers to setting a parameter in a pipeline that can not be altered without going in and editing the code. For example, if while generating a pipeline for the first time you’re working with a dataset that has 100 observations. What if you specify that the expected dataset should have 100 rows and write a check for that. Well, the next time you go to run the report and you get an error because your new dataset has 150 observations. By hard-coding in the number “100” as a parameter in your pipeline, you would forced your pipeline to fail unnecessarily. <strong>Avoiding hard-coding whenever possible is a good rule of thumb</strong> as you generate pipelines. This means that you will just specify the input to your pipeline (which could include multiple parameters!) and your pipeline will run using the data you’ve input and the code in your pipeline to generate the results. You won’t have to go in and change any numbers that you’ve hard-coded in your pipeline.</p>
+<div id="summarizing-the-benefits-of-version-control-systems" class="section level3" number="63.0.4">
+<h3><span class="header-section-number">63.0.4</span> Summarizing the benefits of version control systems</h3>
+<ol style="list-style-type: decimal">
+<li>It gives you an easy way of saving a backup of your work as you go, making sure you don’t lose anything you have created.</li>
+<li>It allows you to go back to an earlier version of your work if something gets broken due to the changes you have made.</li>
+<li>It allows multiple people to edit code at the same time, without worrying that what they’re doing might be messing someone else’s code up.</li>
+</ol>
 </div>
-<div id="scalability" class="section level4" number="60.0.2.4">
-<h4><span class="header-section-number">60.0.2.4</span> Scalability</h4>
-<p>Additionally, your pipeline should be scalable. A <em>scalable</em> pipeline is one that will function on a small dataset and will continue to function as the dataset gets larger. It’s best to ensure that your pipeline has been generated so that it will run on your dataset as well as larger datasets that may be generated in the future.</p>
-</div>
-<div id="versioning" class="section level4" number="60.0.2.5">
-<h4><span class="header-section-number">60.0.2.5</span> Versioning</h4>
-<p>Finally, pipelines should be versioned. If the format of the dataset changes in the future, you’ll want to be able to update your pipeline, but you don’t want to loose the original pipeline, since that’s what works on the older datasets. Or, if an API changes (which they do!), you’ll need to update your pipeline to account for these changes. Again, you don’t want to lose the older version. <strong>Versioning</strong> here refers to the process of tracking changes in your pipeline.</p>
-<p>Every time you’ve pushed to GitHub, you’ve been using a type of versioning. GitHub tracks commits, which keeps track of every version of your work. However, in pipeline development, it’s best to explicitly track the versions of your pipelines.</p>
-<p>In software each version of a piece of software is often tracked by a set of three numbers, each of which is separated by a decimal place. A general scheme used in software versioning is to version a piece of software as <code>major.minor.patch</code>. In this scheme, a large release with <strong>breaking changes</strong> (changes that could cause previous versions of the software to be incompatible with the current version) will increase the first number in the sequence (<code>major</code>). The second value (<code>minor</code>) will be increased when a version of the software is released that includes new features that are non-breaking. Versions where the the third value (<code>patch</code>) in the sequence are increased include non-breaking changes that tend to be minimal fixes to the software.</p>
+<div id="what-is-git-why-should-you-use-it" class="section level3" number="63.0.5">
+<h3><span class="header-section-number">63.0.5</span> What is Git? Why should you use it?</h3>
+<p>In this course, we will introduce version control software called Git. Git is a free and open source version control system. It was developed in 2005 and has since become <em>the</em> most commonly used version control system around! StackOverflow surveyed over 60,000 respondents on which version control system they use, and as you can tell from the chart below, <a href="https://insights.stackoverflow.com/survey/2017#work-version-control">Git is by far the winner</a>.</p>
 <div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_101" alt="" />
-<p class="caption">major.minor.patch</p>
+<img src="https://docs.google.com/presentation/d/1nBgMcaXeF-hz5hX6712d_LC9Zm04s2mSCjuGECuht0M/export/png?id=1nBgMcaXeF-hz5hX6712d_LC9Zm04s2mSCjuGECuht0M&amp;pageid=g31227c4b83_1_9" alt="" />
+<p class="caption">Git is far and away the most commonly used version control system according to StackOverflow</p>
 </div>
-<p>In this scheme, 0.9.0 would represent software that is in development (referred to as the beta version). Incremental improvements on the beta version would be versions 0.9.1 and 0.9.2, etc. The <code>major</code> number remains a zero until the first major release. Upon release, the first version of the software would be 1.0.0. Small non-breaking changes to this version would increase the <code>patch</code> number, making versions like 1.0.1 and 1.0.2. When new features are added to this piece of software that are non-breaking, the second <code>minor</code> number will be increased, and version 1.1.0 would be released. The next time a non-breaking feature was added, version 1.2.0 would be released. Finally, when a big breaking change were made in the future to improve the software overall, a new version would be released. This would be version 2.0.0.</p>
+<p>As you become more familiar with Git and how it works and interfaces with your projects, you’ll begin to see why it has risen to the height of popularity. One of the main benefits of Git is that it keeps a local copy of your work and revisions, which you can then edit offline, and then once you return to internet service, you can sync your copy of the work, with all of your new edits and tracked changes to the main repository online. And since Git is automatically taking these snapshots, there is no need for you to save your own copy with different versions or different dates. Additionally, since all collaborators on a project have their own local copy of the code, everybody can simultaneously work on their own parts of the code, without disturbing that common repository.</p>
+<p>Another big benefit that we’ll definitely be taking advantage of is the ease with which RStudio and Git interface with each other.</p>
+</div>
+<div id="what-is-github" class="section level3" number="63.0.6">
+<h3><span class="header-section-number">63.0.6</span> What is GitHub?</h3>
+<p>GitHub is a website that provides an interface to a cloud-based repository management system. In other words, GitHub is an online interface for Git. Git is software used locally on your computer to record changes. GitHub is a host for your files and the records of the changes made. You can sort of think of it as being similar to DropBox - the files are on your computer, but they are also hosted online and are accessible from any computer. GitHub has the added benefit of interfacing with Git to keep track of all of your file versions and changes.</p>
+<p>Another way of thinking of it is as a big room with lots of large filing cabinets. Each filing cabinet contains the files associated with a particular project. These files have been created and are being edited by one or more people who have access to that particular filing cabinet or repository. GitHub allows you to control who can see and access your files.</p>
+<p>GitHub uses the version control system Git, described above, to manage version control, and provides users with a web-based interface for creating projects, sharing them, updating code, etc. In this course, we will be teaching you how to do version control using GitHub. We will introduce you to the basics of working with GitHub, both through your browser and through RStudio. For our purposes, you will not need to think about Git itself, and will instead just use GitHub.</p>
+</div>
+<div id="version-control-vocabulary" class="section level3" number="63.0.7">
+<h3><span class="header-section-number">63.0.7</span> Version control vocabulary</h3>
+<p>There is a lot of vocabulary involved in working with Git, and often the understanding of one word relies on your understanding of a different Git concept. Take some time to familiarize yourself with the words below and read over it a few times to see how the concepts relate.</p>
+<p><strong>Repository:</strong> Equivalent to the project’s folder/directory - all of your version controlled files (and the recorded changes) are located in a repository. This is often shortened to <strong>repo</strong>. Repositories are what are hosted on GitHub and through this interface you can either keep your repositories private and share them with select collaborators, or you can make them public - anybody can see your files and their history.</p>
+<p><strong>Commit:</strong> To commit is to save your edits and the changes made. A commit is like a snapshot of your files. Git compares the previous version of all of your files in the repo to the current version and identifies those that have changed since then. For those that have not changed, Git maintains that previously stored file, leaving it untouched. For those that have changed, Git compares the files, logs the changes and uploads the new version of your file to GitHub. We’ll touch on this in the next section, but when you commit a file, typically you accompany that file change with a little note about what you changed and why.</p>
+<p>When we talk about version control systems, commits are at the heart of them. If you find a mistake, you revert your files to a previous <em>commit.</em> If you want to see what has changed in a file over, you compare the <em>commits</em> and look at the messages to see why the changes were made and who made them.</p>
+<p><strong>Push:</strong> Updating the repository with your edits. Since Git involves making changes locally, you need to be able to share your changes with the common, online, repository. Pushing is sending those committed changes to that repository, so now everybody has access to your edits.</p>
+<p><strong>Pull:</strong> Updating your local version of the repository to the current version, since others may have edited in the meanwhile. Because the shared repository is hosted online and any of your collaborators (or even yourself on a different computer!) could have made changes to the files and then pushed them to the shared repository, you are behind the times! The files you have locally on <em>your</em> computer may be outdated, so you pull to check if you are up to date with the main repository.</p>
+<p><strong>Staging:</strong> The act of preparing a file for a commit. For example, if since your last commit you have edited three files for completely different reasons, you don’t want to commit all of the changes in one go, or your message on why you are making the commit and what has changed will be complicated, since three files have been changed for different reasons. So instead, you can stage just one of the files and prepare it for committing. Once you’ve committed that file, you can stage the second file and commit it. And so on. Staging allows you to separate out file changes into separate commits. Very helpful!</p>
+<p>To summarize these commonly used terms so far and to test whether you’ve got the hang of this, files are hosted in a <strong>repository</strong> that is shared online with collaborators. You <strong>pull</strong> the repository’s contents so that you have a local copy of the files that you can edit. Once you are happy with your changes to a file, you <strong>stage</strong> the file and then <strong>commit</strong> it. You <strong>push</strong> this commit to the shared repository. This uploads your new file and all of the changes and is accompanied by a message explaining what changed, why and by whom.</p>
 <div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_180" alt="" />
-<p class="caption">versioning scheme</p>
+<img src="https://docs.google.com/presentation/d/1nBgMcaXeF-hz5hX6712d_LC9Zm04s2mSCjuGECuht0M/export/png?id=1nBgMcaXeF-hz5hX6712d_LC9Zm04s2mSCjuGECuht0M&amp;pageid=g3495af98e4_1_102" alt="" />
+<p class="caption">Visual representation summarizing repository, commit, push, and pull</p>
 </div>
-<p>This scheme from software development can be very helpful in pipeline development. While in development, a pipeline should be versioned such that the first version of the pipeline is 0.9.0. As improvements are made, the pipeline can increase its versioned as discussed above (0.9.1, 0.9.2, etc.). When the pipeline is ready to be officially deployed, its version will be 1.0.0. Then, as changes are made and the pipeline improved, versioning will allow for these changes to be tracked.</p>
-</div>
-</div>
-<div id="parameterized-reports" class="section level3" number="60.0.3">
-<h3><span class="header-section-number">60.0.3</span> Parameterized Reports</h3>
-<p>In R, one of the simplest ways to generate a pipeline is to write a <strong>parameterized</strong> report. Parameterized reports can be generated by starting with an R Markdown document (with which you’re already familiar!) and adding additional information to the YAML at the top of the document. Parameters can be defined at the top of the report using the <code>params</code> field. For example, if you wanted to specify the file you were using in your report, you could define a parameter <code>filename</code> within the <code>params</code> field. Then, when rendering the report, you would specify which file to use to generate the report, as you see here:</p>
-<pre><code>---
-title: My Document
-
-params:
-   filename: filename_filedate.csv
----</code></pre>
-<p>This file could then be rendered as an argument within the <code>rmarkdown::render()</code> function. The <code>filename</code> argument could be updated to use whichever file you want to use to generate the report:</p>
-<div class="sourceCode" id="cb395"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb395-1"><a href="data-analysis-pipelines.html#cb395-1" aria-hidden="true" tabindex="-1"></a>rmarkdown<span class="sc">::</span><span class="fu">render</span>(<span class="st">&quot;MyDocument.Rmd&quot;</span>, <span class="at">params =</span> <span class="fu">list</span>(</span>
-<span id="cb395-2"><a href="data-analysis-pipelines.html#cb395-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">filename =</span> <span class="st">&quot;filename_filedate.csv&quot;</span>)</span>
-<span id="cb395-3"><a href="data-analysis-pipelines.html#cb395-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
-<p>Note that for any parameter not specified within <code>rmarkdown::render()</code>, the default value within the R Markdown document will be used.</p>
-</div>
-<div id="pipeline-example-survey-results" class="section level3" number="60.0.4">
-<h3><span class="header-section-number">60.0.4</span> Pipeline Example Survey Results</h3>
-<p>To really understand how a pipeline would be generated, let’s work with an example set of data. In a previous lesson, we talked about how you can read in a Google Sheet using the <code>googlesheets</code> package to read in the most up-to-date version of the spreadsheet. In this previous lesson we talked about surveying your friends about how many hours they spend each day working, sleeping, having fun, eating, socializing, and other. We’ll use this example again here to generate a parameterized report that will analyze these data as they’re updated.</p>
-<div id="the-data-5" class="section level4" number="60.0.4.1">
-<h4><span class="header-section-number">60.0.4.1</span> The Data</h4>
-<p>The data we’ll use for this example can be viewed <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTuPnBT7Y6emAamDSaXo_RV-X54c0a6nJh4e-bqurRsNW_EIm6ygq90UVfySQbSg0Ue9-U4wSykQqKF/pubhtml">here</a>. For our purposes, we’re going to say that the first Sheet (<code>Sheet1</code>) is the data that were collected after the first week the survey ran, while <code>Sheet 2</code> contains all data collected in the first two weeks.</p>
+<p><strong>Branch:</strong> When the same file has two simultaneous copies. When you are working locally and editing a file, you have created a branch where your edits are not shared with the main repository (<em>yet</em>) - so there are two versions of the file: the version that everybody has access to on the repository and your local edited version of the file. Until you push your changes and merge them back into the main repository, you are working on a branch. Following a branch point, the version history splits into two and tracks the independent changes made to both the original file in the repository that others may be editing, and tracking your changes on your branch, and then merges the files together.</p>
+<p><strong>Merge:</strong> Independent edits of the same file are incorporated into a single, unified file. Independent edits are identified by Git and are brought together into a single file, with both sets of edits incorporated. But, you can see a potential problem here! If both people made an edit to the same sentence that precludes one of the edits from being possible, we have a problem! Git recognizes this disparity (<strong>conflict</strong>) and asks for user assistance in picking which edit to keep.</p>
+<p><strong>Conflict:</strong> When multiple people make changes to the same file and Git is unable to merge the edits. You are presented with the option to manually try and merge the edits or to keep one edit over the other.</p>
 <div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_129" alt="" />
-<p class="caption">Google Sheets data</p>
+<img src="https://docs.google.com/presentation/d/1nBgMcaXeF-hz5hX6712d_LC9Zm04s2mSCjuGECuht0M/export/png?id=1nBgMcaXeF-hz5hX6712d_LC9Zm04s2mSCjuGECuht0M&amp;pageid=g3495af98e4_1_183" alt="" />
+<p class="caption">A visual representation of these concepts, from <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge" class="uri">https://www.atlassian.com/git/tutorials/using-branches/git-merge</a></p>
 </div>
-<p>Imagine that a week after you’ve sent the survey out to your friends, you’re really curious about the results. Thus, you write a parameterized report to visualize the results! You do this because you want to be able to analyze the data at the click of a button <em>and</em> because you know you’ll generate this report again in the future once more data have been collected.</p>
+<p><strong>Clone:</strong> Making a copy of an existing Git repository. If you have just been brought on to a project that has been tracked with version control, you would clone the repository to get access to and create a local version of all of the repository’s files <em>and all of the tracked changes.</em></p>
+<p><strong>Fork:</strong> A personal copy of a repository that you have taken from another person. If somebody is working on a cool project and you want to play around with it, you can fork their repository and then when you make changes, the edits are logged on <em>your</em> repository, not theirs.</p>
 </div>
-<div id="following-along" class="section level4" number="60.0.4.2">
-<h4><span class="header-section-number">60.0.4.2</span> Following Along</h4>
-<p>If you’re interested in running this pipeline and following along on your own, the code used in this lesson can be found <a href="https://rstudio.cloud/project/48127">here</a>. You can make a copy of this space in RStudio Cloud and generate your own reports. The URL you’ll want to include when prompted is the following URL: <a href="https://docs.google.com/spreadsheets/d/1MpGE4YHB14qBgrg3lqa1eq_Mb7L8TMOwTZtVzqQ0mmA" class="uri">https://docs.google.com/spreadsheets/d/1MpGE4YHB14qBgrg3lqa1eq_Mb7L8TMOwTZtVzqQ0mmA</a>.</p>
-<p>To get started writing the parameterized report, you’ll want to set up your report in the R Markdown format and read your data in.</p>
+<div id="best-practices" class="section level3" number="63.0.8">
+<h3><span class="header-section-number">63.0.8</span> Best practices</h3>
+<p>It can take some time to get used to working with version control software like Git, but there are a few things to keep in mind to help establish good habits that will help you out in the future.</p>
+<p>One of those things is to make purposeful commits. Each commit should only address a single issue. This way if you need to identify when you changed a certain line of code, there is only one place to look to identify the change and you can easily see how to revert the code.</p>
+<p>Similarly, making sure you write informative messages on each commit is a helpful habit to get into. If each message is precise in what was being changed, anybody can examine the committed file and identify the purpose for your change. For example, if you edited your code to use a new dataset, an informative commit message may be “updated file to use dataset from www.wheredatacamefrom.com.” On the other hand, an unhelpful commit messaged would be “data” or “update.” These types of commit messages are to be avoided. Further, by using helpful commit messages, if you are looking for a specific edit you made in the past, you can easily scan through all of your commits to identify those changes related to the desired edit. You don’t want to get in the same habit that <a href="https://xkcd.com/1296/">xkcd</a> has!</p>
+<p>Finally, be cognizant of the version of files you are working on. Check that you are up to date with the current repo by frequently pulling. Additionally, don’t hoard your edited files - once you have committed your files (and written that helpful message!), you should push those changes to the common repository. If you are done editing a section of code and are planning on moving on to an unrelated problem, you need to share that edit with your collaborators!</p>
 </div>
-<div id="the-setup" class="section level4" number="60.0.4.3">
-<h4><span class="header-section-number">60.0.4.3</span> The Setup</h4>
-<p>To get started, you’ll want to open up a new R Markdown document.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_8" alt="" />
-<p class="caption">New R Markdown Document</p>
-</div>
-<p>In this document you’ll want to specify two parameters using <code>params</code>:</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_13" alt="" />
-<p class="caption">YAML of R Markdown</p>
-</div>
-<p>The <code>file_url</code> parameter says “ask”. This means that when we go to knit the report, we want to RStudio to ask at that point what URL to use for the Google Sheet. The second parameter, <code>worksheet</code>, specifies that we want the default to be the first worksheet, but we give ourselves the flexibility to specify a different worksheet, if we so choose.</p>
-<p>After setting up the YAML, we’ll want to install and load any packages that we’ll use in the <code>setup</code> code chunk:</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_18" alt="" />
-<p class="caption"><code>setup</code> code chunk</p>
-</div>
-<p>Here, we’re installing four packages. In this code we state that if the packages haven’t already been installed, do so. Then, all packages are loaded into our RStudio Cloud session.</p>
-</div>
-<div id="reading-the-data-in" class="section level4" number="60.0.4.4">
-<h4><span class="header-section-number">60.0.4.4</span> Reading The Data In</h4>
-<p>After setting up the RStudio Cloud environment, the data are read in in the code chunk <code>data</code>.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_23" alt="" />
-<p class="caption"><code>data</code> code chunk</p>
-</div>
-<p>Using <code>gs_url()</code> and <code>gs_read()</code> from the <code>googlesheets</code> package we’re able to read in the Google Sheet and specify which worksheet we want to include for analysis. Notice the use of the <code>params</code> object. When this file is knit, it will take the <code>params</code> specified in the YAML as the input for compiling the report. We’ll see exactly how to do this later in this lesson. Note that including a parameter always begins with the object <code>params</code>. This is followed by a dollar sign (<code>$</code>). Finally, you use the name specified in the YAML to specify which parameter you want to include in your code. Specifically here, we first specify that we want to register the Google Sheet using <code>params$file_url</code> and then specify which worksheet to read in by specifying <code>params$worksheet</code>.</p>
-</div>
-<div id="checks" class="section level4" number="60.0.4.5">
-<h4><span class="header-section-number">60.0.4.5</span> Checks</h4>
-<p>Before actually writing the code to analyze the data, you want to be sure your report runs the appropriate checks on the data itself. As discussed earlier in this lesson, these checks should ensure that the data are in the format the rest of the code is expecting. For example, if you accidentally specified the wrong file on which to run the report, you’d want your report to send you a warning letting you know that the data were not what the report was expecting. Checks are incredibly important parts of a data science pipeline and should not be overlooked.</p>
-<p>We will only include a single check here in this example; however, for most pipelines, you’ll certainly want to write a few more checks to <strong>ensure that your analysis will run properly</strong>. Always try to anticipate possible mistakes that users could make in generating this report. Then, write checks to test for each possible scenario. Remember, others should be able to generate this report in your absence.</p>
-<p>Here, we would add this code to a code chunk called <code>checks</code>.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_43" alt="" />
-<p class="caption"><code>checks</code> code chunk</p>
-</div>
-<p>In the code in this chunk (above), we’re checking to see if the expected column names are what are in the Google Sheet URL that was provided. You’ll see we specify what the expected column names are by creating the <code>columns</code> object. Then, the check looks to see how many columns in the Google Sheet are the same as the columns specified in the <code>columns</code> object. If they are not all equal, then the report will not compile and an error will be thrown.</p>
-<p>Note that there are three types of feedback your code can give in R:</p>
-<ul>
-<li><strong>message</strong> - prints a message but not stop execution</li>
-<li><strong>warning</strong> - prints a warning message but not stop execution</li>
-<li><strong>stop</strong> - stops execution of the current expression and executes an error action</li>
-</ul>
-<p>In this code, we’re providing a <code>stop()</code> message because we don’t want the report to carry out the analysis unless the data are in the expected format. However, in other cases, you may just want to print a message in the output or provide the user with a warning but not stop the report from compiling. In these cases you would use <code>message()</code> and <code>warning()</code>, respectively.</p>
-<p>Finally, note that in this code chunk we’ve included <code>echo = FALSE</code>. This evaluates the code so the check is carried out, but doesn’t print it in the output report.</p>
-<p>Once you’ve written enough checks to ensure that your report will only compile when you have the right data in the right format, you’re ready to begin the analysis.</p>
-</div>
-<div id="the-analysis-1" class="section level4" number="60.0.4.6">
-<h4><span class="header-section-number">60.0.4.6</span> The Analysis</h4>
-<p>To analyze the data, maybe you’re just interested in summarizing the mean number of hours your friends spend doing each activity. To do this, you would first clean the data and then generate a plot.</p>
-<div id="data-cleaning" class="section level5" number="60.0.4.6.1">
-<h5><span class="header-section-number">60.0.4.6.1</span> Data Cleaning</h5>
-<p>Before you can generate this plot, you will want to check and clean your data. For this example here, what if people said they spent more than 24 hours doing things in a day? Well, we know there are only 24 hours in a day, so you’d likely want to exclude these individuals from the analysis, as you won’t know for sure where the error in their data entry happened. You would write a few lines of code to do this using your data wrangling skills.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_52" alt="" />
-<p class="caption"><code>clean</code> code chunk</p>
-</div>
-<p>Here, we have specified that we don’t want this code chunk included in the final report, using <code>include = FALSE</code> in the code chunk. We have also included comments so that anyone looking at the raw code would know what the code does. But, the final knit report will not include such details.</p>
-<p>You’d also want to be sure that your report provides a description of how many individuals’ data are included in your analysis and how many samples have been removed (an example of a descriptive analysis!).</p>
-<p>Below the code chunk, we include a brief description of the data by specifying how many samples are included in the analysis and how many have been removed due to issues with their data using Markdown syntax. None of the numbers here have been hard-coded. They will all automatically populate with the appropriate number when the report is knit.</p>
-</div>
-<div id="data-analysis-1" class="section level5" number="60.0.4.6.2">
-<h5><span class="header-section-number">60.0.4.6.2</span> Data Analysis</h5>
-<p>Once you’re confident that your data are ready to be used for analysis, you’d write the code to generate the plot. Here, we’re not focusing on the plot, so we use very basic code, but if this were a report you were sending around to your boss or team, you’d likely want to improve the labels, increase the font size, and maybe change the theme. Nevertheless, with this, you’re ready to knit your parameterized report.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_73" alt="" />
-<p class="caption"><code>analyze</code> code chunk</p>
-</div>
-</div>
-</div>
-<div id="knitting" class="section level4" number="60.0.4.7">
-<h4><span class="header-section-number">60.0.4.7</span> Knitting</h4>
-<p>To generate your knit report, you’ll click on the arrow to the right of “Knit” and select “Knit with Parameters…” from the drop-down menu.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_28" alt="" />
-<p class="caption">Knit with Parameters…</p>
-</div>
-<p>If prompted, say yes to installing necessary packages. Then, a window will appear where the <code>file_url</code> box will say “ask”, indicating that you’ll have to specify the URL here. The default worksheet is 1. You can leave this as is, or change it to specify a different worksheet.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_32" alt="" />
-<p class="caption">Knit with Parameters pop-up window</p>
-</div>
-<p>After adding the URL for the appropriate Google Sheet, you’ll want to click “Knit”</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_38" alt="" />
-<p class="caption">After adding URL, click Knit</p>
-</div>
-<p>Your report will appear! Here, we see a summary of the data after the first week of collecting information from your friends.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_62" alt="" />
-<p class="caption">Report with survey data</p>
-</div>
-<p>We see that most of your friends’ time is spent working and sleeping, which makes enough sense!</p>
-<p>However, the whole point of this report is that you can run it again with ease for an updated dataset – as that’s the whole point of a pipeline. The second sheet in this Google Sheet represents your updated data. Thus, we’ll click “Knit with Parameters” again and specify the appropriate URL (the same as earlier), but change worksheet to ‘2’. We’ll again Knit our report.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_67" alt="" />
-<p class="caption">Change parameter and re-Knit</p>
-</div>
-<p>Just like that, we see the data summarized across more of our friends! People are still working and sleeping the most; however, we see a lot more variability in this updated dataset!</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI/export/png?id=1sEDrJwGZsLrdNptniI5OO_SyuWgUKPY75uIC0_CUdKI&amp;pageid=g3eacf30f3b_1_57" alt="" />
-<p class="caption">Report with updated survey data</p>
-</div>
-</div>
-</div>
-<div id="summary-18" class="section level3" number="60.0.5">
-<h3><span class="header-section-number">60.0.5</span> Summary</h3>
-<p>This lesson has covered what a data science pipeline is, when you’d want to generate one, considerations to make when writing a pipeline, and a simple example of how to generate a data science pipeline using parameterized reports in R Markdown. Whenever you’re going to be working with a dataset that updates or a number of different datasets that are similar, start by writing a robust data science pipeline.</p>
-</div>
-<div id="additional-resources-22" class="section level3" number="60.0.6">
-<h3><span class="header-section-number">60.0.6</span> Additional Resources</h3>
-<ul>
-<li><a href="https://medium.com/the-data-experience/building-a-data-pipeline-from-scratch-32b712cfb1db">Building a Data Pipeline from Scratch</a>, by <a href="https://www.rdisorder.eu/">Alan Marazzi</a></li>
-<li><a href="https://www.rstudio.com/resources/videos/parameterized-r-markdown-reports-with-rstudio-connect/">Parameterized R Markdown reports with RStudio Connect</a></li>
-<li><a href="https://rmarkdown.rstudio.com/developer_parameterized_reports">RMarkdown Parameterized Reports</a></li>
-<li><a href="https://bookdown.org/yihui/rmarkdown/parameterized-reports.html">Chapter 15: Parameterized Reports in R Markdown: The Definitive Guide</a>, by Yihui Xie, J.J. Allaire, and Garrett Grolemund</li>
-</ul>
+<div id="summary-18" class="section level3" number="63.0.9">
+<h3><span class="header-section-number">63.0.9</span> Summary</h3>
+<p>Now that we’ve covered what version control is and some of the benefits, you should be able to understand why we have an entire course dedicated to understanding it! Additionally, we looked at what Git and GitHub are, and then covered much of the commonly used (and sometimes confusing!) vocabulary inherent to version control work. We then quickly went over some best practices to using Git – but the best way to get a hang of this all is to use it! Hopefully you feel like you have a better handle on how Git works than the people in <a href="https://xkcd.com/1597/">this xkcd comic</a>!</p>
 
 </div>
 </div>
@@ -1384,8 +1215,8 @@ params:
           </div>
         </div>
       </div>
-<a href="data-analysis-workflow.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="stats-project.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="reproducibility.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="github.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

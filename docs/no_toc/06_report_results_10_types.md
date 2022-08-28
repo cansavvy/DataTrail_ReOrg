@@ -1,5 +1,6 @@
 
 
+
 # Types of Communication
 
 At this point in the Course Set, you've mastered Google Products and version control with GitHub. You've become comfortable working with data in R, understand the importance of tidy data, and know how to visualize your data to better understand it. These are all *incredibly* important skills for a data scientist; however, having these skills is simply not enough. Another crucial skill set for a data scientist to master is that of **communication**. The most interesting results in the world are only the most interesting results in the world if the world knows about them.
@@ -40,9 +41,3 @@ Blog posts are an effective way to reach a wide audience. Like reports, these al
 ### Meetings
 
 Data scientists often find them in a number of meetings. Meetings can be with team members where you discuss the plan for a project. Or, they can be with someone who's less familiar with data analysis but wants your help. Further, data scientists can end up in larger meetings with groups of people in a company where they as the data scientist are the only person familiar with the data or analysis in the room and are expected to communicate results to everyone. As a participant in all of these cases, it's the job of the data scientist to communicate effectively with others in the room. In lessons in this course we will discuss how to communicate effectively in meetings as well as discuss how to both run a meeting and how to participate in someone else's meeting.
-
-### Slides and Video
-
-![Types of Communication](https://www.youtube.com/watch?v=m0Bg-d2Mmhg)
-
-* [Slides](https://docs.google.com/presentation/d/1HvmiB65ol1EILnxPs2M0xItSDOK5WIUkGcXJxaQHAOw/edit?usp=sharing)

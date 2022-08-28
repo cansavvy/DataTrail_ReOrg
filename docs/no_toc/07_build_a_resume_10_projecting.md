@@ -97,11 +97,3 @@ You are now corrected and ready to present! Mirrored displays show the same thin
 ![Once displays are mirrored you see the same thing on the laptop and the remote version.  ](https://docs.google.com/presentation/d/1c4diFFLIkAqYE4EIbI6mZAYLc8zOPMwLEiczFMMM2nQ/export/png?id=1c4diFFLIkAqYE4EIbI6mZAYLc8zOPMwLEiczFMMM2nQ&pageid=g3b1b32c412_0_80)
 
 In a future class we will go over the software for making and delivering data science presentations.
-
-
-
-### Slides and Video
-
-![Projecting From a Chromebook](https://www.youtube.com/watch?v=oiXBo6Qf9YQ)
-
-* [Slides](https://docs.google.com/presentation/d/1c4diFFLIkAqYE4EIbI6mZAYLc8zOPMwLEiczFMMM2nQ/edit?usp=sharing)

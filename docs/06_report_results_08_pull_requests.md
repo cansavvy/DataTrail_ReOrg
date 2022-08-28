@@ -238,10 +238,3 @@ GitHub has instructions for keeping your fork [up to date](https://help.github.c
 ### Summary
 
 This lesson covered how to collaborate on someone else's code. In the process of discussing what a pull request is and walking through the steps of submitting a pull request, this lesson has reviewed a number of git commands including `git pull`, `git push`, and `git commit`. And, by submitting good pull requests in a timely fashion that help authors fix bugs in their code or typos in their documentation, you'll be contributing to the R community!
-
-
-### Slides and Video
-
-![Pull Requests](https://www.youtube.com/watch?v=M5ykCg9vF3Q)
-
-* [Slides](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/edit?usp=sharing)

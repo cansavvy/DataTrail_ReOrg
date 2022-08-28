@@ -1,7 +1,7 @@
 
 
 
-# Your first data science project
+# Your First Data Science Project
 
 We are using this definition of data science.
 

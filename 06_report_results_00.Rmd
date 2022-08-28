@@ -30,11 +30,11 @@ Through the completion of this section our goal is that you will be able to:
 
 A key aspect of science, and by extension data science, is that it should be consistent. For a finding to be considered scientific, it should be able to be repeated and found again. If you drop the apple and it falls to the ground because of gravity, you should find observe the same thing if you drop the apple again.
 
-The more a scientific result can be found again and again and the inferences from it applied elsewhere, the more we can trust that result! When it comes to a data analysis however, the methods are a bit more involved than dropping an apple. So making a data science result repeatable is not something that happens without a lot of meticulous work and well thought out methods.
+The more a scientific result can be found again and again and the inferences from it applied elsewhere, the more we can trust that result! When it comes to a data analysis however, the methods are a bit more involved than dropping an apple. So making a data science result repeatable is not something that happens without a lot of meticulous work and well-thought-out methods.
 
 - A **repeatable** analysis is one that can be repeated by the **same researcher**, with the _same code_ and _same data_ and achieve the _same result_.
 
-However, a result being repeatable is not enough! As mentioned previously, data science is best done as a part of a community. This means, once you know you can reliable repeat your analysis and get the same result, you will want others to investigate the result for themselves. Other people will be able to see things that you have missed or may have different perspectives that are valuable (another reason why community is helpful in data science). If you can't achieve the same result twice, then others won't be able to replicate your result either.
+However, a result being repeatable is not enough! As mentioned previously, data science is best done as a part of a community. This means, once you know you can reliably repeat your analysis and get the same result, you will want others to investigate the result for themselves. Other people will be able to see things that you have missed or may have different perspectives that are valuable (another reason why community is helpful in data science). If you can't achieve the same result twice, then others won't be able to replicate your result either.
 
 This means that you want others to be able to take your code and data and be able to re-run your analysis AND achieve the same result!
 
@@ -49,7 +49,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7Uf
 Let's say that Maria is a data scientist who's found a really cool result in her data. She's very excited about this result, done some polishing and now shares her analysis code and original data with a fellow data scientist, Avi. Avi is going to attempt to re-run Maria's analysis. If he is able to get the same result, then Maria's result will have been reproduced and considered that much more reliable.
 
 ```{r, fig.alt = "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results? Maria sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer. Will Avi get the same scatterplot and results?", out.width = "100%", echo = FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_0_289")
+ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_1_460")
 ```
 
 Reproducing an analysis result may seem like it should be easy and straightforward. But unfortunately it often is a very frustrating process for the person trying to run someone else's code. Avi in this scenario is struggling to re-run Maria's code.

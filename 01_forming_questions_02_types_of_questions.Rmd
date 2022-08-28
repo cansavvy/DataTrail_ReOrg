@@ -14,13 +14,17 @@ After you have asked your general question, the next step is to turn it into a d
 We will look at a few different types of questions that you might want to answer from data.
 There are four classes of data science questions we will talk about.
 
-* **Descriptive**: The goal of descriptive data science questions is to understand the components of a data set, describe what they are, and explain that description to others who might want to understand the data. This is the simplest type of data analysis.
+* **Descriptive** <img src="resources/icons/descriptive.png" width="12%">
+The goal of descriptive data science questions is to understand the components of a data set, describe what they are, and explain that description to others who might want to understand the data. This is the simplest type of data analysis.
 
-* **Exploratory**: The goal of exploratory data science questions is to find unknown relationships between the different variables you have measured in your data set. Exploratory analysis is open ended and designed to find expected or unexpected relationships between different measurements.
+* **Exploratory** <img src="resources/icons/exploratory.png" width="12%">
+The goal of exploratory data science questions is to find unknown relationships between the different variables you have measured in your data set. Exploratory analysis is open ended and designed to find expected or unexpected relationships between different measurements.
 
-* **Inferential**: The goal of inferential data science questions is to is to use a small sample of data to say something about what would happen if we collected more data. Inferential questions come up because we want to understand the relationships between different variables but it is too expensive or difficult to collect data on every person or object.
+* **Inferential** <img src="resources/icons/inferential.png" width="12%">
+The goal of inferential data science questions is to is to use a small sample of data to say something about what would happen if we collected more data. Inferential questions come up because we want to understand the relationships between different variables but it is too expensive or difficult to collect data on every person or object.
 
-* **Predictive**: The goal of predictive data science question is to use data from a large collection to predict values for new individuals. This might be predicting what will happen in the future or predicting characteristics that are difficult to measure. Predictive data science is sometimes called machine learning.
+* **Predictive** <img src="resources/icons/predictive.png" width="12%">
+The goal of predictive data science question is to use data from a large collection to predict values for new individuals. This might be predicting what will happen in the future or predicting characteristics that are difficult to measure. Predictive data science is sometimes called machine learning.
 
 
 ![Types of Data Analysis](https://docs.google.com/presentation/d/1VIyLthjLSXikF1euqPNA71cnT_C1kSZhDbIPe8uzg9I/export/png?id=1VIyLthjLSXikF1euqPNA71cnT_C1kSZhDbIPe8uzg9I&pageid=g3ec461ec74_0_22)
@@ -47,7 +51,7 @@ If you have a credit card, every time you charge something, the bank keeps a rec
 
 #### Example 2: Analysis of YouTube comments
 
-Any text you can find on the web can be considered to be data. You can use this data to understand how people behave on the web. For example,when companies like YouTube want to understand whether their users are behaving nicely or badly, they might look at the comments they leave. So the question might be, "Are the comments on our platform mostly nice or mostly mean?" To write this in terms of a data science question you might ask, "Are the words that people use in their comments more frequently positive words (great, awesome, nice, useful) or negative words (bad, stupid, lame, awful)?" This is a question you could answer by collecting information on words and labeling them with whether they are nice or mean. This is an example of **descriptive analysis** since once we have the data, the analysis boils down to comparing the number of positive comments to negative comments.
+Any text you can find on the web can be considered to be data. You can use this data to understand how people behave on the web. For example, when companies like YouTube want to understand whether their users are behaving nicely or badly, they might look at the comments they leave. So the question might be, "Are the comments on our platform mostly nice or mostly mean?" To write this in terms of a data science question you might ask, "Are the words that people use in their comments more frequently positive words (great, awesome, nice, useful) or negative words (bad, stupid, lame, awful)?" This is a question you could answer by collecting information on words and labeling them with whether they are nice or mean. This is an example of **descriptive analysis** since once we have the data, the analysis boils down to comparing the number of positive comments to negative comments.
 
 - **Problem:** Understanding whether users are nice or mean on YouTube
 - **Data science question:** Are the words that people use in their comments more frequently positive words (great, awesome, nice, useful) or negative words (bad, stupid, lame, awful)?

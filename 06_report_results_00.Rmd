@@ -50,7 +50,7 @@ Let's say that Maria is a data scientist who's found a really cool result in her
 
 ```{r, fig.alt = "Reproducible: using the same data and analysis but in the hands of another researcher - do we get the same results?
 Maria sends her code and data to Avi the Associate who then tries to re-run the same analysis on his own computer. Will Avi get the same scatterplot and results?", out.width = "100%", echo = FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_0_289")
+ottrpal::include_slide("https://docs.google.com/presentation/d/145_6qC_OPgAbM7UfedRjn8bwCN3TKpZov2BCYxpUnag/edit#slide=id.g14857a48861_1_460")
 ```
 
 Reproducing an analysis result may seem like it should be easy and straightforward. But unfortunately it often is a very frustrating process for the person trying to run someone else's code. Avi in this scenario is struggling to re-run Maria's code.

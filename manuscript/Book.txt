@@ -9,7 +9,7 @@
 9-Google-Sheets.md
 10-RStudio-Cloud.md
 11-RStudio-and-Projects.md
-12-Your-first-data-science-project.md
+12-Your-First-Data-Science-Project.md
 13-Getting-Data.md
 14-What-is-R?.md
 15-Managing-Files-in-the-Terminal.md

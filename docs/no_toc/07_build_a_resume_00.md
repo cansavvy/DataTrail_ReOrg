@@ -6,7 +6,15 @@
 
 ## Learning Objectives
 
-- 
+Through the completion of this section our goal is that you will be able to:
+
+- Build a resume and understand what features are a part of an effective resume
+- Make your own professional website
+- Show off the great work you've done!
+- Use Twitter to build connections with the data science community
+- Find data science job openings
+- Communicate effectively in an interview and conduct a presentation
+- Meet up with data science individuals online or in person
 
 ## What You Need to Find a Data Science Job
 
@@ -42,7 +50,7 @@ This means that your **online presence should always be up to date when you're a
 
 #### Personal Website
 
-Specifically, you will want to have a personal website. In an earlier course in this Course Set, we helped get you up and running with a website; however, in this course, we'll be sure that this website is set up for applying to jobs!
+You will want to have a personal website. With GitHub this is not too difficult (and its free). We'll guide you on how to set this up!
 
 #### Social Media
 

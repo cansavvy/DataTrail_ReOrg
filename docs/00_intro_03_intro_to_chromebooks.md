@@ -2,7 +2,7 @@
 
 # What is a Chromebook
 
-This course is part of ["DataTrail"](https://www.DataTrail.org/); however, it is not a required course in this Course Set. While not required for completion of the DataTrail course set on Leanpub, it may be very helpful to you! It's not required because you don't *need* a Chromebook to complete the courses. The only requirement for all of these courses is an Internet browser and connection to the web. However, *if* you have a Chromebook and want to get better acquainted with how it works, this course is for you!
+This section is part of ["DataTrail"](https://www.DataTrail.org/); however, it is not a required. While not required for completion of the DataTrail course set on Leanpub, it may be very helpful to you! It's not required because you don't *need* a Chromebook to complete the courses. The only requirement for all of these courses is an Internet browser and connection to the web. However, *if* you have a Chromebook and want to get better acquainted with how it works, this section is for you!
 
 [Chromebooks](https://www.google.com/chromebook/) are a very specific type of computer produced by Google. Chromebooks aren't exactly like normal computers and they have a few unique characteristics:
 

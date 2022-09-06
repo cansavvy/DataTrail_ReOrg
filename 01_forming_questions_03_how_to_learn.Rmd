@@ -56,6 +56,16 @@ Any one of these would be a reasonable approach. We use this example to explain 
 
 #### Asking For Help
 
+Data science is best done as a part of a community! Asking each other questions and brainstorming with others is ideally how data science projects are completed.
+
+Working together and asking questions:  
+
+- Makes projects turn out better!
+- Helps everyone learn more!
+- Helps everyone have a better, less frustrating time!
+
+No one knows everything and that is okay and expected. 
+
 While we'll point out where to find help when you're stuck throughout this course set; however, it may not be obvious *when* to ask for help. While this is not a hard and fast rule, if you've been trying to find the answer to something you're stuck on for half an hour and cannot figure it out, it may be time to post your question online for someone else to answer or to reach out directly to someone to get your question answered. During the half hour when you're trying on your own, you should **Google for the answer**. If it's a coding question, you should try **running code** to test to see if the fixes from Google fix your problem. If you're getting **error messages**, paste those messages into Google. If after trying all of these things you're still stuck, then you should **ask for help** *every time*. Rather than give up because you're stuck, **ask questions**!
 
 

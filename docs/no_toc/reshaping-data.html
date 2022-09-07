@@ -1150,7 +1150,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="r-packages-1" class="section level3" number="27.0.2">
 <h3><span class="header-section-number">27.0.2</span> R Packages</h3>
-<p>Converting your data from wide-to-long or from long-to-wide data formats is referred to as <strong>reshaping</strong> your data. There are two primary packages in R that will help you reshape your data: <a href="https://tidyr.tidyverse.org/">tidyr</a> and <a href="https://stat.ethz.ch/pipermail/r-packages/2010/001169.html">reshape2</a>. We’ll walk through the important functions of these two packages and work through a few examples using the functions in each. However, as with most helpful packages in R, there is more functionality than what is discussed here, so feel free to explore the additional resources at the bottom to learn even more.</p>
+<p>Converting your data from wide-to-long or from long-to-wide data formats is referred to as <strong>reshaping</strong> your data and you can do this with the <a href="https://tidyr.tidyverse.org/">tidyr</a> package. As with most helpful packages in R, there is more functionality than what is discussed here, so feel free to explore the additional resources at the bottom to learn even more.</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&amp;pageid=g38bb68a532_0_13" alt="" />
 <p class="caption">Reshaping data</p>
@@ -1228,100 +1228,31 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </div>
-<div id="reshape2" class="section level4" number="27.0.2.2">
-<h4><span class="header-section-number">27.0.2.2</span> reshape2</h4>
-<p>As with many things in R, there is more than one way to solve a problem. While <code>tidyr</code> provides a more general solution for reshaping data, <code>reshape2</code> was specifically designed for reshaping data. The details aren’t particularly important yet, but later on as you carry out your own analyses it will be good to know about both packages. To get started using <code>reshape2</code>, you’ll have to first install the library and load it into your R session:</p>
-<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="reshaping-data.html#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install the package</span></span>
-<span id="cb122-2"><a href="reshaping-data.html#cb122-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;reshape2&#39;</span>)</span>
-<span id="cb122-3"><a href="reshaping-data.html#cb122-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb122-4"><a href="reshaping-data.html#cb122-4" aria-hidden="true" tabindex="-1"></a><span class="do">## load the package into R Session</span></span>
-<span id="cb122-5"><a href="reshaping-data.html#cb122-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span></code></pre></div>
-<p>There are two main functions within the <code>reshape2</code> package:</p>
-<ul>
-<li><code>melt()</code>: go from wide data to long data</li>
-<li><code>dcast()</code>: go from long data to wide data</li>
-</ul>
-<div id="melt" class="section level5" number="27.0.2.2.1">
-<h5><span class="header-section-number">27.0.2.2.1</span> melt()</h5>
-<p>The <code>melt()</code> function will allow you to get the data into a long format that will be easy to use for analysis. When you melt a dataset with the default options, <code>melt()</code> will take every column, put the column name into a <code>variable</code> column, and then put the values of those variables into a <code>value</code> column. For the <code>airquality</code> data set, below we first assign the melted data frame to the object <code>melted</code>. Then we take a look at the top (<code>head()</code>) and bottom(<code>tail()</code>) of this melted data frame (<code>melted</code>).</p>
-<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="reshaping-data.html#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="do">## puts each column name into the &#39;variable&#39; column</span></span>
-<span id="cb123-2"><a href="reshaping-data.html#cb123-2" aria-hidden="true" tabindex="-1"></a><span class="do">## puts corresponding variable&#39;s value in &#39;value&#39; column</span></span>
-<span id="cb123-3"><a href="reshaping-data.html#cb123-3" aria-hidden="true" tabindex="-1"></a>melted <span class="ot">&lt;-</span> <span class="fu">melt</span>(airquality)</span>
-<span id="cb123-4"><a href="reshaping-data.html#cb123-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb123-5"><a href="reshaping-data.html#cb123-5" aria-hidden="true" tabindex="-1"></a><span class="do">## let&#39;s take a look at the top of the melted data frame</span></span>
-<span id="cb123-6"><a href="reshaping-data.html#cb123-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(melted)</span>
-<span id="cb123-7"><a href="reshaping-data.html#cb123-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb123-8"><a href="reshaping-data.html#cb123-8" aria-hidden="true" tabindex="-1"></a><span class="do">## and at the bottom of that melted data frame</span></span>
-<span id="cb123-9"><a href="reshaping-data.html#cb123-9" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(melted)</span></code></pre></div>
-<p>When you run this code you see that each column from the original data frame (<code>ozone</code>, <code>solar.r</code>, <code>wind</code>, <code>temp</code>,<code>month</code>, and <code>day</code>) are now repeated in the variables column, and each days’ value for that variable is now in the <code>value</code> column. This is now a long format dataset!</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&amp;pageid=g38bb68a532_0_43" alt="" />
-<p class="caption">melted data</p>
-</div>
-<p>Now, to use month and day as identifiers as we did with <code>tidyr</code> above, the approach is slightly different. With <code>gather()</code>, you specified the column names that you wanted to gather and omitted the column names that you wanted to retain as identifiers. With <code>melt()</code> you will do the opposite. You will specify <code>day</code> and <code>month</code> as identifiers for the dataset and omit the remaining variables. You’ll want to use the following syntax:</p>
-<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="reshaping-data.html#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="do">## melt the data frame</span></span>
-<span id="cb124-2"><a href="reshaping-data.html#cb124-2" aria-hidden="true" tabindex="-1"></a><span class="do">## specify each row using month and day</span></span>
-<span id="cb124-3"><a href="reshaping-data.html#cb124-3" aria-hidden="true" tabindex="-1"></a>melted <span class="ot">&lt;-</span> <span class="fu">melt</span>(airquality, <span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">&quot;month&quot;</span>,<span class="st">&quot;day&quot;</span>))</span>
-<span id="cb124-4"><a href="reshaping-data.html#cb124-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb124-5"><a href="reshaping-data.html#cb124-5" aria-hidden="true" tabindex="-1"></a><span class="do">## look at the first few rows of the melted data frame</span></span>
-<span id="cb124-6"><a href="reshaping-data.html#cb124-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(melted)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&amp;pageid=g38bb68a532_0_53" alt="" />
-<p class="caption">melted data frame using IDs</p>
-</div>
-<p>Despite the slight change in how the code was specified, the result here using <code>melt()</code> is the same as what was achieved above using <code>gather()</code>.</p>
-</div>
-<div id="cast" class="section level5" number="27.0.2.2.2">
-<h5><span class="header-section-number">27.0.2.2.2</span> cast</h5>
-<p>You’ll likely have to go from long-to-short format less frequently; however, it’s good to know there are two approaches to accomplishing this within <code>reshape2</code> whenever it is necessary.</p>
-<ul>
-<li><code>acast()</code>: taking a long frame and returning a matrix/array/vector</li>
-<li><code>dcast()</code>: taking a long frame and returning a data frame</li>
-</ul>
-<p>To return our melted data back into its original wide form, we’ll use <code>dcast()</code>. The syntax here separates what should be used as an identifier for each row in the resulting wide format (<code>month + day</code> below) and which column includes the values that should be the column headers (<code>variable</code> below). These two pieces of information are separated by a tilde (<code>~</code>).</p>
-<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="reshaping-data.html#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="do">## to get our data back to its original form</span></span>
-<span id="cb125-2"><a href="reshaping-data.html#cb125-2" aria-hidden="true" tabindex="-1"></a><span class="do">## specify which columns should be combined to use as identifiers</span></span>
-<span id="cb125-3"><a href="reshaping-data.html#cb125-3" aria-hidden="true" tabindex="-1"></a><span class="do">## and which column should be used to specify the columns</span></span>
-<span id="cb125-4"><a href="reshaping-data.html#cb125-4" aria-hidden="true" tabindex="-1"></a>original <span class="ot">&lt;-</span> <span class="fu">dcast</span>(melted, month <span class="sc">+</span> day <span class="sc">~</span> variable)</span>
-<span id="cb125-5"><a href="reshaping-data.html#cb125-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb125-6"><a href="reshaping-data.html#cb125-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(original)</span>
-<span id="cb125-7"><a href="reshaping-data.html#cb125-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb125-8"><a href="reshaping-data.html#cb125-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(airquality)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&amp;pageid=g38bb68a532_0_148" alt="" />
-<p class="caption">dcast to obtain original data</p>
-</div>
-<p>As you can see, aside from the column order changing, the information in <code>original</code> is the same as what was in the data frame we started with (<code>airquality</code>).</p>
-<p>While reshaping data may not be the most exciting topic, having this skill will be indispensable as you start working with data. It’s best to get these skills down early!</p>
-</div>
-</div>
 </div>
 <div id="transposing-data" class="section level2" number="27.1">
 <h2><span class="header-section-number">27.1</span> Transposing data</h2>
 <p>One more transformation you may need to do, has a function in base R to do it.
 You may find you need your rows to be columns and your columns to be rows. In other words, you need to transpose your data table.</p>
 <p>To do this, you can use the <code>t()</code> function. But! Note that although the <code>t()</code> function can be given a data frame, it will return a matrix. This means if you want your data frame to stay a data frame you need to follow your <code>t()</code> function with a <code>as.data.frame()</code>. This might look like this:</p>
-<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="reshaping-data.html#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We need to load this so we can use %&gt;%</span></span>
-<span id="cb126-2"><a href="reshaping-data.html#cb126-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
-<span id="cb126-3"><a href="reshaping-data.html#cb126-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb126-4"><a href="reshaping-data.html#cb126-4" aria-hidden="true" tabindex="-1"></a>iris_transposed <span class="ot">&lt;-</span> iris <span class="sc">%&gt;%</span></span>
-<span id="cb126-5"><a href="reshaping-data.html#cb126-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb126-6"><a href="reshaping-data.html#cb126-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="reshaping-data.html#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We need to load this so we can use %&gt;%</span></span>
+<span id="cb122-2"><a href="reshaping-data.html#cb122-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
+<span id="cb122-3"><a href="reshaping-data.html#cb122-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb122-4"><a href="reshaping-data.html#cb122-4" aria-hidden="true" tabindex="-1"></a>iris_transposed <span class="ot">&lt;-</span> iris <span class="sc">%&gt;%</span></span>
+<span id="cb122-5"><a href="reshaping-data.html#cb122-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb122-6"><a href="reshaping-data.html#cb122-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>()</span></code></pre></div>
 <p>Our original <code>iris</code> data frame has 150 rows and 4 columns.</p>
-<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="reshaping-data.html#cb127-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(iris)</span></code></pre></div>
+<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="reshaping-data.html#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(iris)</span></code></pre></div>
 <pre><code>## [1] 150   5</code></pre>
 <p>Whereas our transposed <code>iris</code> data frame has 4 rows and 150 columns.</p>
-<div class="sourceCode" id="cb129"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb129-1"><a href="reshaping-data.html#cb129-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(iris_transposed)</span></code></pre></div>
+<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="reshaping-data.html#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(iris_transposed)</span></code></pre></div>
 <pre><code>## [1]   5 150</code></pre>
 <p>The information in both <code>iris</code> and <code>iris_transposed</code> is the same, it’s just in a different shape.</p>
 <div id="additional-resources-6" class="section level3" number="27.1.1">
 <h3><span class="header-section-number">27.1.1</span> Additional Resources</h3>
 <ul>
 <li><a href="https://tidyr.tidyverse.org/">tidyr</a>, part of the <a href="https://www.tidyverse.org/">tidyverse</a> and developed by <a href="http://hadley.nz/">Hadley Wickham</a> and <a href="https://github.com/lionel-">Lionel Henry</a></li>
-<li><a href="https://stat.ethz.ch/pipermail/r-packages/2010/001169.html">reshape2</a>, developed by <a href="http://hadley.nz/">Hadley Wickham</a></li>
 <li><a href="https://blog.rstudio.com/2014/07/22/introducing-tidyr/">tidyr tutorial</a> by <a href="http://hadley.nz/">Hadley Wickham</a></li>
-<li><a href="http://seananderson.ca/2013/10/19/reshape/">reshape2 tutorial</a> by <a href="http://seananderson.ca/">Sean C. Anderson</a></li>
-<li><a href="https://www.r-bloggers.com/2016/06/how-to-reshape-data-in-r-tidyr-vs-reshape2/">tidyr vs reshape2</a> by <a href="https://www.erim.eur.nl/people/alberto-giudici/">Alberto Giudici</a></li>
+<li><a href="https://github.com/rstudio/cheatsheets/blob/main/tidyr.pdf">tidyr cheatsheet</a></li>
 </ul>
 
 </div>

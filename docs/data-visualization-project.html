@@ -1167,10 +1167,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h5><span class="header-section-number">47.0.1.3.1</span> Bar Chart: <code>pet-barchart</code></h5>
 <p>Start in the code chunk <code>visualize-pets</code>.</p>
 <p>Here you will see comments with partial code underneath of them. For example, the first plot you’ll want to generate will be using the comment from the partial code:</p>
-<div class="sourceCode" id="cb322"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb322-1"><a href="data-visualization-project.html#cb322-1" aria-hidden="true" tabindex="-1"></a><span class="do">## visual breakdown of how many of each species</span></span>
-<span id="cb322-2"><a href="data-visualization-project.html#cb322-2" aria-hidden="true" tabindex="-1"></a><span class="do">## are included in the dataset</span></span>
-<span id="cb322-3"><a href="data-visualization-project.html#cb322-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(DATASET) <span class="sc">+</span></span>
-<span id="cb322-4"><a href="data-visualization-project.html#cb322-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x=</span>VARIABLE))</span></code></pre></div>
+<div class="sourceCode" id="cb318"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb318-1"><a href="data-visualization-project.html#cb318-1" aria-hidden="true" tabindex="-1"></a><span class="do">## visual breakdown of how many of each species</span></span>
+<span id="cb318-2"><a href="data-visualization-project.html#cb318-2" aria-hidden="true" tabindex="-1"></a><span class="do">## are included in the dataset</span></span>
+<span id="cb318-3"><a href="data-visualization-project.html#cb318-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(DATASET) <span class="sc">+</span></span>
+<span id="cb318-4"><a href="data-visualization-project.html#cb318-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x=</span>VARIABLE))</span></code></pre></div>
 <p>Here, you’ll have to <strong>change <code>DATASET</code> and <code>VARIABLE</code> in the code</strong> to the appropriate dataset and variable name in order to generate an exploratory plot. We’ll want species name along the x and a count of how many are in each species along the y.</p>
 <p>Feel free to customize your plots further using what you’ve learned about <code>ggplot2</code>!</p>
 <p>After generating this figure, you’ll be able to <strong>answer the following questions</strong>:</p>
@@ -1182,14 +1182,14 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="cat-table-pet-cat-table" class="section level5" number="47.0.1.3.2">
 <h5><span class="header-section-number">47.0.1.3.2</span> Cat Table: <code>pet-cat-table</code></h5>
 <p>After generating this first bar chart, move onto the code chunk <code>pet-cat-table</code>. Here you’ll see the following partial code:</p>
-<div class="sourceCode" id="cb323"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb323-1"><a href="data-visualization-project.html#cb323-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Table: Most frequent Cat Name</span></span>
-<span id="cb323-2"><a href="data-visualization-project.html#cb323-2" aria-hidden="true" tabindex="-1"></a>DATASET <span class="sc">%&gt;%</span></span>
-<span id="cb323-3"><a href="data-visualization-project.html#cb323-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(species<span class="sc">==</span><span class="st">&quot;SPECIES&quot;</span>,VARIABLE <span class="sc">!=</span> <span class="st">&quot;&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb323-4"><a href="data-visualization-project.html#cb323-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(VARIABLE) <span class="sc">%&gt;%</span></span>
-<span id="cb323-5"><a href="data-visualization-project.html#cb323-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n=</span><span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
-<span id="cb323-6"><a href="data-visualization-project.html#cb323-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="sc">-</span>n) <span class="sc">%&gt;%</span></span>
-<span id="cb323-7"><a href="data-visualization-project.html#cb323-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="at">n=</span><span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb323-8"><a href="data-visualization-project.html#cb323-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(., <span class="at">caption =</span> <span class="st">&quot;Top 10 Cat Names in Seattle&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb319"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb319-1"><a href="data-visualization-project.html#cb319-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Table: Most frequent Cat Name</span></span>
+<span id="cb319-2"><a href="data-visualization-project.html#cb319-2" aria-hidden="true" tabindex="-1"></a>DATASET <span class="sc">%&gt;%</span></span>
+<span id="cb319-3"><a href="data-visualization-project.html#cb319-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(species<span class="sc">==</span><span class="st">&quot;SPECIES&quot;</span>,VARIABLE <span class="sc">!=</span> <span class="st">&quot;&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb319-4"><a href="data-visualization-project.html#cb319-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(VARIABLE) <span class="sc">%&gt;%</span></span>
+<span id="cb319-5"><a href="data-visualization-project.html#cb319-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n=</span><span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb319-6"><a href="data-visualization-project.html#cb319-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="sc">-</span>n) <span class="sc">%&gt;%</span></span>
+<span id="cb319-7"><a href="data-visualization-project.html#cb319-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="at">n=</span><span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb319-8"><a href="data-visualization-project.html#cb319-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(., <span class="at">caption =</span> <span class="st">&quot;Top 10 Cat Names in Seattle&quot;</span>)</span></code></pre></div>
 <p>Here, you will need to <strong>replace <code>DATASET</code>, <code>"SPECIES"</code>, and <code>VARIABLE</code> (in two places)</strong> in order to get this code to run. Your table at the end should have information about the top 10 most frequent cat names
 - What is the most common cat name?</p>
 </div>
@@ -1204,23 +1204,23 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h5><span class="header-section-number">47.0.1.3.4</span> Line Chart: <code>pet-linechart</code></h5>
 <p>The last guided exploratory visualization you’ll see is in the code chunk <code>pet-linechart</code>. Here, the code to create two new columns has been provided in full. You’ll use the column <code>ym</code>, which creates a “year-month” variable, to generate your plot in just a second.</p>
 <p>You will, however, have to <strong>edit the partial code after <code>## how the number of licenses recorded has changed over time</code></strong>. Here, you’ll need to <strong>add the appropriate function_names to accomplish what is stated in the comment above the missing function name</strong>. Additionally, you’ll need to <strong>fill in the appropriate variable wherever you see <code>VARIABLE</code></strong>. Finally, where you see <code>geom_GEOM</code>, <strong>change “GEOM” to the appropriate geom specified in the comment above</strong>.</p>
-<div class="sourceCode" id="cb324"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb324-1"><a href="data-visualization-project.html#cb324-1" aria-hidden="true" tabindex="-1"></a><span class="do">## add date and ym columns</span></span>
-<span id="cb324-2"><a href="data-visualization-project.html#cb324-2" aria-hidden="true" tabindex="-1"></a>pets <span class="ot">&lt;-</span> pets <span class="sc">%&gt;%</span>  </span>
-<span id="cb324-3"><a href="data-visualization-project.html#cb324-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">date =</span>  lubridate<span class="sc">::</span><span class="fu">ymd_hms</span>(license_issue_date),</span>
-<span id="cb324-4"><a href="data-visualization-project.html#cb324-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">ym =</span> <span class="fu">as.yearmon</span>(pets<span class="sc">$</span>date, <span class="st">&quot;%y%m&quot;</span>))</span>
-<span id="cb324-5"><a href="data-visualization-project.html#cb324-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb324-6"><a href="data-visualization-project.html#cb324-6" aria-hidden="true" tabindex="-1"></a><span class="do">## how the number of licenses recorded has changed over time</span></span>
-<span id="cb324-7"><a href="data-visualization-project.html#cb324-7" aria-hidden="true" tabindex="-1"></a>pets <span class="sc">%&gt;%</span></span>
-<span id="cb324-8"><a href="data-visualization-project.html#cb324-8" aria-hidden="true" tabindex="-1"></a>  <span class="do">## group by yearmonth (`ym`)</span></span>
-<span id="cb324-9"><a href="data-visualization-project.html#cb324-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">function_name</span>(VARIABLE) <span class="sc">%&gt;%</span></span>
-<span id="cb324-10"><a href="data-visualization-project.html#cb324-10" aria-hidden="true" tabindex="-1"></a>  <span class="do">## count number within each group</span></span>
-<span id="cb324-11"><a href="data-visualization-project.html#cb324-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">function_name</span>(<span class="at">n=</span><span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
-<span id="cb324-12"><a href="data-visualization-project.html#cb324-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(., <span class="fu">aes</span>(VARIABLE, n)) <span class="sc">+</span></span>
-<span id="cb324-13"><a href="data-visualization-project.html#cb324-13" aria-hidden="true" tabindex="-1"></a>  <span class="do">## geom name for line chart</span></span>
-<span id="cb324-14"><a href="data-visualization-project.html#cb324-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_GEOM</span>() <span class="sc">+</span></span>
-<span id="cb324-15"><a href="data-visualization-project.html#cb324-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_yearmon</span>() <span class="sc">+</span></span>
-<span id="cb324-16"><a href="data-visualization-project.html#cb324-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;&quot;</span>) <span class="sc">+</span></span>
-<span id="cb324-17"><a href="data-visualization-project.html#cb324-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Number of licenses&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb320"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb320-1"><a href="data-visualization-project.html#cb320-1" aria-hidden="true" tabindex="-1"></a><span class="do">## add date and ym columns</span></span>
+<span id="cb320-2"><a href="data-visualization-project.html#cb320-2" aria-hidden="true" tabindex="-1"></a>pets <span class="ot">&lt;-</span> pets <span class="sc">%&gt;%</span>  </span>
+<span id="cb320-3"><a href="data-visualization-project.html#cb320-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">date =</span>  lubridate<span class="sc">::</span><span class="fu">ymd_hms</span>(license_issue_date),</span>
+<span id="cb320-4"><a href="data-visualization-project.html#cb320-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">ym =</span> <span class="fu">as.yearmon</span>(pets<span class="sc">$</span>date, <span class="st">&quot;%y%m&quot;</span>))</span>
+<span id="cb320-5"><a href="data-visualization-project.html#cb320-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb320-6"><a href="data-visualization-project.html#cb320-6" aria-hidden="true" tabindex="-1"></a><span class="do">## how the number of licenses recorded has changed over time</span></span>
+<span id="cb320-7"><a href="data-visualization-project.html#cb320-7" aria-hidden="true" tabindex="-1"></a>pets <span class="sc">%&gt;%</span></span>
+<span id="cb320-8"><a href="data-visualization-project.html#cb320-8" aria-hidden="true" tabindex="-1"></a>  <span class="do">## group by yearmonth (`ym`)</span></span>
+<span id="cb320-9"><a href="data-visualization-project.html#cb320-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">function_name</span>(VARIABLE) <span class="sc">%&gt;%</span></span>
+<span id="cb320-10"><a href="data-visualization-project.html#cb320-10" aria-hidden="true" tabindex="-1"></a>  <span class="do">## count number within each group</span></span>
+<span id="cb320-11"><a href="data-visualization-project.html#cb320-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">function_name</span>(<span class="at">n=</span><span class="fu">n</span>()) <span class="sc">%&gt;%</span></span>
+<span id="cb320-12"><a href="data-visualization-project.html#cb320-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(., <span class="fu">aes</span>(VARIABLE, n)) <span class="sc">+</span></span>
+<span id="cb320-13"><a href="data-visualization-project.html#cb320-13" aria-hidden="true" tabindex="-1"></a>  <span class="do">## geom name for line chart</span></span>
+<span id="cb320-14"><a href="data-visualization-project.html#cb320-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_GEOM</span>() <span class="sc">+</span></span>
+<span id="cb320-15"><a href="data-visualization-project.html#cb320-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_yearmon</span>() <span class="sc">+</span></span>
+<span id="cb320-16"><a href="data-visualization-project.html#cb320-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">&quot;&quot;</span>) <span class="sc">+</span></span>
+<span id="cb320-17"><a href="data-visualization-project.html#cb320-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Number of licenses&quot;</span>)</span></code></pre></div>
 <p>After figuring out the missing pieces in the code and generating the plot, you’ll be able to <strong>answer the following questions</strong>:</p>
 <ul>
 <li>What does the function <code>ymd_hms()</code> accomplish?</li>
@@ -1270,19 +1270,19 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h4><span class="header-section-number">47.0.2.4</span> Visualize the Data</h4>
 <p>To generate an explanatory figure, <em>some</em> of the code you’ll need has been entered into the <code>meat-visualize</code> code chunk. Work through this code line by line, <strong>replacing each <code>function_name</code> with the appropriate function to accomplish what the comment above the line states</strong>.</p>
 <p>For example, the first part of this code chunk contains the following partial code:</p>
-<div class="sourceCode" id="cb325"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb325-1"><a href="data-visualization-project.html#cb325-1" aria-hidden="true" tabindex="-1"></a><span class="do">## generate the plot</span></span>
-<span id="cb325-2"><a href="data-visualization-project.html#cb325-2" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(pref) <span class="sc">+</span></span>
-<span id="cb325-3"><a href="data-visualization-project.html#cb325-3" aria-hidden="true" tabindex="-1"></a>  <span class="do">## specify you want to generate a bar chart</span></span>
-<span id="cb325-4"><a href="data-visualization-project.html#cb325-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">function_name</span>(<span class="fu">aes</span>(<span class="at">x =</span> steak_pref, <span class="at">y =</span> prop, <span class="at">fill =</span> steak_pref),</span>
-<span id="cb325-5"><a href="data-visualization-project.html#cb325-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">stat =</span> <span class="st">&#39;identity&#39;</span>,</span>
-<span id="cb325-6"><a href="data-visualization-project.html#cb325-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">width =</span> <span class="fl">0.7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb321"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb321-1"><a href="data-visualization-project.html#cb321-1" aria-hidden="true" tabindex="-1"></a><span class="do">## generate the plot</span></span>
+<span id="cb321-2"><a href="data-visualization-project.html#cb321-2" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(pref) <span class="sc">+</span></span>
+<span id="cb321-3"><a href="data-visualization-project.html#cb321-3" aria-hidden="true" tabindex="-1"></a>  <span class="do">## specify you want to generate a bar chart</span></span>
+<span id="cb321-4"><a href="data-visualization-project.html#cb321-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">function_name</span>(<span class="fu">aes</span>(<span class="at">x =</span> steak_pref, <span class="at">y =</span> prop, <span class="at">fill =</span> steak_pref),</span>
+<span id="cb321-5"><a href="data-visualization-project.html#cb321-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">stat =</span> <span class="st">&#39;identity&#39;</span>,</span>
+<span id="cb321-6"><a href="data-visualization-project.html#cb321-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">width =</span> <span class="fl">0.7</span>)</span></code></pre></div>
 <p>Here, the comment says we want to <code>## specify you want to generate a bar chart</code>. This says to me that I’ll want to change <code>function_name</code> to <code>geom_bar</code>, so that the code looks like this:</p>
-<div class="sourceCode" id="cb326"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb326-1"><a href="data-visualization-project.html#cb326-1" aria-hidden="true" tabindex="-1"></a><span class="do">## generate the plot</span></span>
-<span id="cb326-2"><a href="data-visualization-project.html#cb326-2" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(pref) <span class="sc">+</span></span>
-<span id="cb326-3"><a href="data-visualization-project.html#cb326-3" aria-hidden="true" tabindex="-1"></a>  <span class="do">## specify you want to generate a bar chart</span></span>
-<span id="cb326-4"><a href="data-visualization-project.html#cb326-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x =</span> steak_pref, <span class="at">y =</span> prop, <span class="at">fill =</span> steak_pref),</span>
-<span id="cb326-5"><a href="data-visualization-project.html#cb326-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">stat =</span> <span class="st">&#39;identity&#39;</span>,</span>
-<span id="cb326-6"><a href="data-visualization-project.html#cb326-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">width =</span> <span class="fl">0.7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb322"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb322-1"><a href="data-visualization-project.html#cb322-1" aria-hidden="true" tabindex="-1"></a><span class="do">## generate the plot</span></span>
+<span id="cb322-2"><a href="data-visualization-project.html#cb322-2" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(pref) <span class="sc">+</span></span>
+<span id="cb322-3"><a href="data-visualization-project.html#cb322-3" aria-hidden="true" tabindex="-1"></a>  <span class="do">## specify you want to generate a bar chart</span></span>
+<span id="cb322-4"><a href="data-visualization-project.html#cb322-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x =</span> steak_pref, <span class="at">y =</span> prop, <span class="at">fill =</span> steak_pref),</span>
+<span id="cb322-5"><a href="data-visualization-project.html#cb322-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">stat =</span> <span class="st">&#39;identity&#39;</span>,</span>
+<span id="cb322-6"><a href="data-visualization-project.html#cb322-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">width =</span> <span class="fl">0.7</span>)</span></code></pre></div>
 <p>After determining what function I need, I would then <strong>run that portion of the code</strong> (what you see above).</p>
 <p>Note that we’re assigning the plot to the object <code>p</code>. This means that to view the plot in the “Plots” tab you’ll have to type <code>p</code> into the Console and hit enter after you run the code above. This will display the plot in the “Plots” tab of RStudio Cloud.</p>
 <p><strong>Work through this code layer by layer</strong> determining what <code>function_name</code> should be in each line of code. Note: <strong><code>function_name</code> should be the only thing you have to change in this code</strong>.</p>

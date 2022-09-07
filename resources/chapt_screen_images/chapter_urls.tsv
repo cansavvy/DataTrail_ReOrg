@@ -8,7 +8,7 @@ https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/account-setup.html	5 Acco
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/forming-questions.html	6 Forming questions	resources/chapt_screen_images/forming-questions.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/the-data-science-process.html	7 The Data Science Process	resources/chapt_screen_images/the-data-science-process.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-learn.html	8 How To Learn	resources/chapt_screen_images/how-to-learn.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-sheets.html	9 Google Sheets	resources/chapt_screen_images/google-sheets.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-documents.html	9 Google Documents	resources/chapt_screen_images/google-documents.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/rstudio-cloud.html	10 RStudio Cloud	resources/chapt_screen_images/rstudio-cloud.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/rstudio-and-projects.html	11 RStudio and Projects	resources/chapt_screen_images/rstudio-and-projects.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/your-first-data-science-project.html	12 Your First Data Science Project	resources/chapt_screen_images/your-first-data-science-project.png
@@ -84,16 +84,15 @@ https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/resumes-1.html	81 Resumes
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/cover-letters-1.html	82 Cover Letters	resources/chapt_screen_images/cover-letters-1.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/making-your-website-more-professional.html	83 Making Your Website More Professional	resources/chapt_screen_images/making-your-website-more-professional.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/project-gallery.html	84 Project Gallery	resources/chapt_screen_images/project-gallery.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-docs.html	85 Google Docs	resources/chapt_screen_images/google-docs.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/improving-your-github-profile.html	86 Improving Your GitHub Profile	resources/chapt_screen_images/improving-your-github-profile.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/improving-your-linkedin-profile.html	87 Improving Your LinkedIn Profile	resources/chapt_screen_images/improving-your-linkedin-profile.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-slides.html	88 Google Slides	resources/chapt_screen_images/google-slides.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/using-twitter-for-data-science.html	89 Using Twitter For Data Science	resources/chapt_screen_images/using-twitter-for-data-science.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-hangouts.html	90 Google Hangouts	resources/chapt_screen_images/google-hangouts.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-job-descriptions.html	91 Data Science Job Descriptions	resources/chapt_screen_images/data-science-job-descriptions.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/where-to-look-for-data-science-jobs.html	92 Where To Look for Data Science Jobs	resources/chapt_screen_images/where-to-look-for-data-science-jobs.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/projecting-from-a-chromebook.html	93 Projecting from a Chromebook	resources/chapt_screen_images/projecting-from-a-chromebook.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/where-to-find-remote-data-science-jobs.html	94 Where To Find Remote Data Science Jobs	resources/chapt_screen_images/where-to-find-remote-data-science-jobs.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-interviews.html	95 Data Science Interviews	resources/chapt_screen_images/data-science-interviews.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-meetups.html	96 Data Science Meetups	resources/chapt_screen_images/data-science-meetups.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/improving-your-github-profile.html	85 Improving Your GitHub Profile	resources/chapt_screen_images/improving-your-github-profile.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/improving-your-linkedin-profile.html	86 Improving Your LinkedIn Profile	resources/chapt_screen_images/improving-your-linkedin-profile.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-slides.html	87 Google Slides	resources/chapt_screen_images/google-slides.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/using-twitter-for-data-science.html	88 Using Twitter For Data Science	resources/chapt_screen_images/using-twitter-for-data-science.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/google-hangouts.html	89 Google Hangouts	resources/chapt_screen_images/google-hangouts.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-job-descriptions.html	90 Data Science Job Descriptions	resources/chapt_screen_images/data-science-job-descriptions.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/where-to-look-for-data-science-jobs.html	91 Where To Look for Data Science Jobs	resources/chapt_screen_images/where-to-look-for-data-science-jobs.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/projecting-from-a-chromebook.html	92 Projecting from a Chromebook	resources/chapt_screen_images/projecting-from-a-chromebook.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/where-to-find-remote-data-science-jobs.html	93 Where To Find Remote Data Science Jobs	resources/chapt_screen_images/where-to-find-remote-data-science-jobs.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-interviews.html	94 Data Science Interviews	resources/chapt_screen_images/data-science-interviews.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-science-meetups.html	95 Data Science Meetups	resources/chapt_screen_images/data-science-meetups.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/about-the-authors.html	About the Authors	resources/chapt_screen_images/about-the-authors.png

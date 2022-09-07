@@ -17,12 +17,12 @@ Packages are what make R so unique. Not only does base R have some great functio
 
 For R packages, a repository is central location where many developed packages are located and available for download.
 
-*Note*: You may remember the word "repository" from an earlier lesson on GitHub. Like in GitHub, where a repository was where all the code for each data science project is stored, the repositories for R packages are also places where information and code are stored. (In fact, as you'll see below, GitHub repositories are one of the main repositories for R packages!)
+The repositories for R packages are also places where information and code are stored. (In fact, as you'll see below, GitHub repositories are one of the main repositories for R packages!)
 
 There are three big repositories for R packages:  
     1. [**CRAN (Comprehensive R Archive Network):**](https://cran.r-project.org/web/packages/) R's main repository (>12,100 packages available!)  
     2. [**BioConductor:**](https://bioconductor.org/packages/release/BiocViews.html#___Software) A repository mainly for bioinformatic-focused packages  
-    3. [**GitHub:**](https://github.com/collections) A very popular, open source repository (not R specific!)  
+    3. [**GitHub:**](https://github.com/collections) A very popular, open source repository (not R specific!) -- we will talk about and use GitHub more later!  
 
 Take a second to explore the links above and check out the various packages that are out there!  
 

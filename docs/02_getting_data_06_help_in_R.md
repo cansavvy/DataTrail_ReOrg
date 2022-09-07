@@ -62,8 +62,7 @@ Here’s a screenshot from the help window in RStudio. Note that here we searche
 > 6) Google it again
 Because it’s unlikely your first attempt at Googling will lead you straight to an answer; this is something you should continue to try with different wordings. Through trial and error, and also Google algorithms learning about what you look for, your search results can eventually lead you to helpful examples and forums.
 
-7) Ask for help!
-
+7) Ask for help! Asking for help is a skill in itself! As we've mentioned, data science is best performed as a part of a community. But how do you ask for help in a way that most effectively helps you as well as the person who is trying to help you? Let's discuss that!
 
 ### Tips on asking questions!
 
@@ -78,14 +77,14 @@ When you are troubleshooting code there are few things you should ask yourself (
 1. **What is the goal of this code?**
 What are you trying to do? Is this the best or only way to do that? Often times in R there are many ways to achieve the same outcome, so it may be worth considering if there's another solution that bypasses the problem you are having.
 
-2.  **What is the code that is producing this error?**
+2. **What is the code that is producing this error?**
 What part of the code is sending the error you are seeing? Try Chunking your code -- trying each part piece by piece, to zero in on the problematic part.
 
-3. **Is the code formatted correctly?**
-It only takes a single comma, incorrectly capitalized letter, missing quote, or parenthesis to break a whole set of code!  
-
-4. **What is the error or problematic outcome?**
+3. **What is the error or problematic outcome?**
 What are you seeing that is making you think something is wrong? Is it an error message? if so copy and paste that error message verbatim. Is it data that's formatted not how it should be? Show what that looks like either with a screenshot or example.
+
+4. **Can someone reproduce the error I'm getting with the code and data I'm giving them?** Ideally you can share code that someone else can easily copy and paste and run in their own R console. Try to recall all that's necessary to reproduce the error that you are getting. If the code that you are running is too long and intensive to send, could you send a smaller toy example that illustrates the same concept and error that you are seeing? This is called a **reprex** or `repr`oducible `ex`ample. [Read this blog for more about reprex's](https://www.r-bloggers.com/2020/10/how-to-make-a-reprex/).
+
 
 ### Summary
 

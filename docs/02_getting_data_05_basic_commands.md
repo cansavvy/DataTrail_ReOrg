@@ -6,7 +6,9 @@ Now that we've covered some essentials about R objects, we'll go over some basic
 
 ### Functions
 
-In working with data, we will be making substantial use of **functions**. Functions in R carry out some task. They are always a word (or set of words connected by underscores or periods followed by a set of parentheses, so the general structure of a function in R would look something like this:
+In working with data, we will be making substantial use of **functions**. Functions in R carry out some task. We've already introduced you to a handful of functions like `class()`, `head()`, `str()`, `getwd()`, to name a few.
+
+Functions are always a word (or set of words connected by underscores or periods followed by a set of parentheses, so the general structure of a function in R would look something like this:
 
 ```text
 function(input)
@@ -14,7 +16,9 @@ function(input)
 function_name(input)
 ```
 
-The input to a function in R is known as an **argument**. Functions require *at least one* argument, but can require multiple different arguments, depending on the function. These inputs are often objects and other variables detailing how you wish to view, summarize, or manipulate these objects. Function outputs come in a variety of formats. They can return information about the contents of an object; they can return a manipulated version of an object; and they can create entirely new objects. In this lesson, we will cover some essential functions for exploring data. This will only consist of functions that return information about the contents of an object. As you learn more about R, you will learn about functions that can manipulate objects or create entirely new objects.
+Input to a function in R is known as an **argument**. Functions require *at least one* argument, but can require multiple different arguments, depending on the function.
+
+At this point you may be saying, "but when we used `getwd()` we didn't specify an argument!" - And you'd be correct! *We* didn't specify one, but the sneaky thing about arguments is that often if you don't specify one, that means one is automatically being chosen for you. (called a *default*). To see all about a function's arguments and its defaults, see its help page by using `?function`.
 
 To visually understand the anatomy of a **function call** (a term that describes the using of a function), let's look at the following example:
 
@@ -28,7 +32,7 @@ We have an object `x` that should contain numbers, and we want to compute the me
 
 If someone were to write down a mystery noun for us to guess, our first question would likely be: "Is it a person, place, or thing?" When working with R objects, we will initially want similar types of information. Here we will go over some functions that can help in this regard.
 
-As discussed briefly in the last lesson, the `class` function returns the class of an R object. This is useful for determining if an object is an atomic vector, list, or some other type of object. If it is an atomic vector, this function tells you the type.
+As we covered before, the `class()` function returns the class of an R object. This is useful for determining if an object is an atomic vector, list, or some other type of object. If it is an atomic vector, this function tells you the type.
 
 ```text
 > x <- 1:10
@@ -41,7 +45,7 @@ As discussed briefly in the last lesson, the `class` function returns the class 
 [1] "data.frame"
 ```
 
-The `str` function stands for "structure", and it returns a description of the structure of an object. It tells you the class of an object, its size, and a preview of different components of the object. For example, when we call the `str` function on a data frame object (`mtcars`), we see that its class is `data.frame`, it has 32 rows and 11 columns, and a preview of each of the 11 columns, including the class of each column. In this example, all of the columns are numeric variables relating to features of different models of cars.
+As discussed, The `str()` function stands for "structure", and it returns a description of the structure of an object. It tells you the class of an object, its size, and a preview of different components of the object. For example, when we call the `str()` function on a data frame object (`mtcars`), we see that its class is `data.frame()`, it has 32 rows and 11 columns, and a preview of each of the 11 columns, including the class of each column. In this example, all of the columns are numeric variables relating to features of different models of cars.
 
 ```text
 > str(mtcars)
@@ -63,7 +67,7 @@ The `str` function stands for "structure", and it returns a description of the s
 
 After we determine generally what an object is, it is useful to know how much information it contains, how big it is.
 
-The `dim` function returns the dimensions of a rectangular object, such as a matrix or a data frame. The output is an integer vector with two components: first is the number of rows (which can also be obtained with `nrow()`), and second is the number of columns (which can also be obtained with `ncol()`). We saw previously that the `str` function provides the same information and more, so why would we use these functions instead? The `str` function provides this information by printing it to the screen for us to visually see, but it does not extract this information directly. If we need to use the dimensions later in the analysis as a variable, these functions provide a direct way to store this information.
+The `dim()` function returns the dimensions of a rectangular object, such as a matrix or a data frame. The output is an integer vector with two components: first is the number of rows (which can also be obtained with `nrow()`), and second is the number of columns (which can also be obtained with `ncol()`). We saw previously that the `str()` function provides the same information and more, so why would we use these functions instead? The `str()` function provides this information by printing it to the screen for us to visually see, but it does not extract this information directly. If we need to use the dimensions later in the analysis as a variable, these functions provide a direct way to store this information.
 
 ```text
 > dim(mtcars)
@@ -74,7 +78,7 @@ The `dim` function returns the dimensions of a rectangular object, such as a mat
 [1] 11
 ```
 
-The `length` function returns the number of items in a vector object. We talked about this briefly last lesson that the number of things in your object is referred to as its length. Here, we can quickly calculate the length of an object by calling the `length` function.
+The `length()` function returns the number of items in a vector object. We talked about this briefly last lesson that the number of things in your object is referred to as its length. Here, we can quickly calculate the length of an object by calling the `length()` function.
 
 ```text
 > x <- c(1, 10, 3)
@@ -86,19 +90,19 @@ The `length` function returns the number of items in a vector object. We talked 
 
 Another way to explore an object in R is to see what components it has. In R, these components are designated with names.
 
-The `names` function can be used to get and set the names of an R object, most often an atomic vector or a list. For example, we can create an R object called `prize_money` that contains the prize money for first, second, and third places:
+The `names()` function can be used to get and set the names of an R object, most often an atomic vector or a list. For example, we can create an R object called `prize_money` that contains the prize money for first, second, and third places:
 
 ```r
 prize_money <- c(1000, 500, 250)
 ```
 
-If we want to label this vector with the prizes, we can use `names` combined with the assignment operator `<-` and a character vector of labels:
+If we want to label this vector with the prizes, we can use `names()` combined with the assignment operator `<-` and a character vector of labels:
 
 ```r
 names(prize_money) <- c("first", "second", "third")
 ```
 
-Later in our work, if we want to remind ourselves of the labels, we can use the `names` function by itself, which will print the names for the object.
+Later in our work, if we want to remind ourselves of the labels, we can use the `names()` function by itself, which will print the names for the object.
 
 ```text
 > names(prize_money)
@@ -116,7 +120,7 @@ prize_info <- data.frame(
 
 This is more convenient for further work if you have other objects that have information on first, second, or third placing, but not prize money information. You'll learn more about these concepts when you learn about "tidy data" in a later course.
 
-The `colnames()` and `rownames()` functions act analogously to the `names` function but are used for the column labels and row labels of a matrix or data frame. The numbers in square brackets at the beginning of the lines of printed output indicate the index of the first observation on the line. So for the row names, we can see that "Duster 360" is the seventh element.
+The `colnames()` and `rownames()` functions act analogously to the `names()` function but are used for the column labels and row labels of a matrix or data frame. The numbers in square brackets at the beginning of the lines of printed output indicate the index of the first observation on the line. So for the row names, we can see that "Duster 360" is the seventh element.
 
 ```text
 > colnames(mtcars)
@@ -143,7 +147,7 @@ The `colnames()` and `rownames()` functions act analogously to the `names` funct
 
 Sometimes we may just want to see the information contained in an object. Here we will discuss functions that allow you to see parts of objects.
 
-The `print` function displays the entire contents of an object.
+The `print()` function displays the entire contents of an object.
 
 ```r
 print(mtcars)
@@ -205,7 +209,7 @@ The `summary` function computes summary statistics for numeric data and performs
 ![The summary() function summarizes data](https://docs.google.com/presentation/d/1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM/export/png?id=1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM&pageid=g3778484ff5_0_103)
 
 
-The `unique` function shows only the unique elements of an object. For vectors, this returns the set of unique elements. For rectangles such as matrices and data frames, this returns the unique rows. This function is useful if we want to check the coding of our data. If we have sex information, then we expect the result of unique to be two elements. If not, there is likely some data cleaning that must be done. The `unique` function is also useful for simply exploring the values that a variable can take. In the example below, we can see that in the `mtcars` data frame, there are only cars with 6, 4, and 8 cylinders. Note that to extract the column corresponding to cylinders, we used a dollar sign followed by the column name: `$cyl`. This is an example of subsetting that you will learn in later lessons.
+The `unique()` function shows only the unique elements of an object. For vectors, this returns the set of unique elements. For rectangles such as matrices and data frames, this returns the unique rows. This function is useful if we want to check the coding of our data. If we have sex information, then we expect the result of unique to be two elements. If not, there is likely some data cleaning that must be done. The `unique()` function is also useful for simply exploring the values that a variable can take. In the example below, we can see that in the `mtcars` data frame, there are only cars with 6, 4, and 8 cylinders. Note that to extract the column corresponding to cylinders, we used a dollar sign followed by the column name: `$cyl`. This is an example of subsetting that you will learn in later lessons.
 
 ```text
 > unique(mtcars$cyl)

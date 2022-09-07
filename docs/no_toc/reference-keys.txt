@@ -144,7 +144,6 @@ plots
 packages
 help
 swirl
-summary-1
 your-first-data-science-project
 getting-data
 learning-objectives-1
@@ -194,13 +193,13 @@ logical
 factor
 data-frames
 missing-values
-determining-the-class-of-an-object
+determining-the-class-and-shape-of-an-object
 types-of-objects
-summary-2
+summary-1
 working-with-logicals
 logical-operators
 logical-functions
-summary-3
+summary-2
 data-frames-1
 exploring-data-frames
 subsetting-data-frames
@@ -214,13 +213,13 @@ how-big-is-this-object
 are-there-named-features-of-this-object
 what-does-this-object-look-like
 errors-warnings-and-messages
-summary-4
+summary-3
 getting-help-in-r
 r-help
 debugging-code
 tips-on-asking-questions
 things-to-include-in-your-request-for-help
-summary-5
+summary-4
 additional-community-resources
 r-packages
 what-is-an-r-package
@@ -239,7 +238,7 @@ unloading-packages
 uninstalling-packages
 sidenote-how-do-you-know-what-version-of-r-you-have
 using-the-commands-in-a-function
-summary-6
+summary-5
 additional-resources-2
 r-markdown
 what-is-r-markdown
@@ -247,8 +246,6 @@ why-use-r-markdown
 getting-started-with-r-markdown
 file-paths-in-r-markdowns
 knitting-documents
-summary-7
-additional-resources-3
 introduction-to-markdown
 how-to-use-markdown
 markdown-example
@@ -258,6 +255,7 @@ bolded-and-italicized-text
 lists
 more-complicated-editing
 links
+additional-resources-3
 dataset-file-types
 tabular-data-files
 csv-files
@@ -535,7 +533,7 @@ histograms-geom_histogram
 barplots-geom_bar
 boxplots-geom_boxplot
 other-plots
-summary-8
+summary-6
 additional-resources-12
 customization-in-ggplot2
 colors
@@ -550,7 +548,7 @@ legends
 scales
 coordinate-adjustment
 annotation
-summary-9
+summary-7
 additional-references
 saving-plots
 image-types
@@ -662,7 +660,7 @@ dataset-is-not-representative-of-the-population-that-you-are-interested-in
 some-variables-in-the-dataset-are-measured-with-error
 variables-are-confounded
 a-case-study-why-were-polls-so-wrong-about-the-2016-us-election
-summary-10
+summary-8
 descriptive-analysis
 how-to-describe-a-dataset
 variables-1
@@ -683,7 +681,7 @@ standard-deviation
 summarizing-your-data
 skimr-1
 published-descriptive-analyses
-summary-11
+summary-9
 additional-resources-18
 exploratory-analysis
 general-principles-of-exploratory-analysis
@@ -692,7 +690,7 @@ getting-started-with-inference
 uncertainty
 random-sampling
 a-real-life-example-of-inferential-data-analysis
-summary-12
+summary-10
 inference-linear-regression
 assumptions
 linearity
@@ -701,7 +699,7 @@ normality-of-residuals
 what-can-linear-regression-infer
 what-is-the-association
 association-testing-in-r
-summary-13
+summary-11
 inference-multiple-regression
 confounding
 multiple-linear-regression
@@ -711,7 +709,7 @@ mean-different-from-expectation
 testing-mean-difference-from-expectation-in-r
 detour-linear-regression-t-tests
 more-statistical-tests
-summary-14
+summary-12
 additional-resources-19
 inference-examples
 introduction
@@ -731,7 +729,7 @@ religiosity-and-ladder-happiness-in-the-usa
 religiosity-and-yesterdays-happiness-in-the-usa
 worldwide-religiosity-and-happiness
 conclusion-3
-summary-15
+summary-13
 additional-resources-20
 inference-practice
 the-question
@@ -743,7 +741,7 @@ join-inner_join
 exploratory-visualizations
 linear-regression
 model-diagnostics
-summary-16
+summary-14
 additional-resources-21
 prediction-and-machine-learning
 what-is-machine-learning
@@ -774,7 +772,7 @@ categorical-variable-prediction-cart
 data-splitting-2
 variable-selection-2
 accuracy-assessment-1
-summary-17
+summary-15
 additional-resources-22
 stats-project
 stats-project-exercise
@@ -821,14 +819,14 @@ what-is-git-why-should-you-use-it
 what-is-github
 version-control-vocabulary
 best-practices
-summary-18
+summary-16
 github
 logging-in-to-github
 the-homepage
 user-settings
 notifications
 help-files
-summary-19
+summary-17
 creating-a-repository
 what-is-a-repository
 how-do-i-create-a-github-repository
@@ -864,11 +862,11 @@ making-edits
 pushing-your-changes-to-your-fork
 sending-a-pull-request
 when-it-gets-more-complicated
-summary-20
+summary-18
 version-control-help
 google-for-git-help
 burn-it-down
-summary-21
+summary-19
 additional-resources-24
 types-of-communication
 opinionated-communication
@@ -892,7 +890,7 @@ brief-reports
 sample-brief-report
 full-report
 sample-full-report
-summary-22
+summary-20
 additional-resources-25
 slides-and-video-1
 how-to-give-a-presentation
@@ -919,7 +917,7 @@ example-presentation-analysis
 talk-outline-1
 slide-design-2
 presentation-1
-summary-23
+summary-21
 additional-resources-26
 presentation-guidelines
 presentation-examples
@@ -930,7 +928,7 @@ the-presentation
 emphasize
 de-emphasize
 general-presentation-example
-summary-24
+summary-22
 how-to-present-to-a-technical-audience
 the-audience-1
 the-goal-1
@@ -939,7 +937,7 @@ emphasize-1
 de-emphasize-1
 technical-presentation-example
 general-vs-technical
-summary-25
+summary-23
 how-to-write-a-blog-post
 general-outline
 types-of-blog-posts
@@ -949,7 +947,7 @@ analysis-2
 workflow
 why-blog
 blog-etiquette
-summary-26
+summary-24
 do
 dont
 additional-resources-27
@@ -974,7 +972,7 @@ when-presenting
 be-mindful-of-time
 be-prepared-1
 guide-the-discussion
-summary-27
+summary-25
 additional-resources-28
 how-to-have-a-one-on-one-meeting
 consulting
@@ -992,7 +990,7 @@ common-pitfalls
 the-initial-meeting
 follow-up-meetings-1
 data-science-ethics
-summary-28
+summary-26
 slides-and-video-2
 building-a-resume
 learning-objectives-6
@@ -1023,7 +1021,7 @@ example-resumes
 classic
 creative
 sharing-your-resume
-summary-29
+summary-27
 additional-resources-30
 cover-letters-1
 format
@@ -1033,7 +1031,7 @@ body
 closing
 call-to-action
 what-to-avoid-1
-summary-30
+summary-28
 additional-resources-31
 slides-and-video-3
 making-your-website-more-professional
@@ -1077,7 +1075,7 @@ github-contributions
 fixing-typos
 addressing-github-issues
 stackoverflow
-summary-31
+summary-29
 additional-resources-33
 improving-your-linkedin-profile
 linkedin-profile
@@ -1086,7 +1084,7 @@ biography-1
 links-out
 education-experience-and-skills
 connecting-to-others
-summary-32
+summary-30
 additional-resources-34
 slides-and-video-6
 google-slides
@@ -1114,7 +1112,7 @@ tweeting
 tweeting-for-self-promotion
 tweeting-to-promote-others
 how-to-tweet
-summary-33
+summary-31
 additional-resources-36
 google-hangouts
 accessing-your-google-hangouts-account
@@ -1139,7 +1137,7 @@ airbnb-job-descriptions
 claires
 allstate
 which-job-is-right-for-you
-summary-34
+summary-32
 additional-resources-37
 where-to-look-for-data-science-jobs
 what-jobs-to-look-for
@@ -1156,7 +1154,7 @@ contact-information-1
 materials
 additional-information
 proofread-1
-summary-35
+summary-33
 additional-resources-38
 projecting-from-a-chromebook
 finding-the-right-dongle
@@ -1164,7 +1162,7 @@ projecting-from-your-chromebook
 where-to-find-remote-data-science-jobs
 general-postings
 remote-ok
-summary-36
+summary-34
 data-science-interviews
 pre-interview-phone-calls
 interview-preparation
@@ -1182,10 +1180,10 @@ after-the-interview
 rejection
 the-offer
 negotiations
-summary-37
+summary-35
 additional-resources-39
 data-science-meetups
 where-to-look
 what-to-expect-1
 meetups-and-jobs
-summary-38
+summary-36

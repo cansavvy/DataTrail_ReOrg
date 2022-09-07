@@ -371,9 +371,6 @@ r-packages-1
 tidyr
 gather
 spread
-reshape2
-melt
-cast
 transposing-data
 additional-resources-6
 how-to-tidy-data

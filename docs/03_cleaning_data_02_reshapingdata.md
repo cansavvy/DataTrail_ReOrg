@@ -29,7 +29,7 @@ While long data formats are less readable than wide data at a glance, they are a
 
 ### R Packages
 
-Converting your data from wide-to-long or from long-to-wide data formats is referred to as **reshaping** your data. There are two primary packages in R that will help you reshape your data: [tidyr](https://tidyr.tidyverse.org/) and [reshape2](https://stat.ethz.ch/pipermail/r-packages/2010/001169.html). We'll walk through the important functions of these two packages and work through a few examples using the functions in each. However, as with most helpful packages in R, there is more functionality than what is discussed here, so feel free to explore the additional resources at the bottom to learn even more.
+Converting your data from wide-to-long or from long-to-wide data formats is referred to as **reshaping** your data and you can do this with the [tidyr](https://tidyr.tidyverse.org/) package. As with most helpful packages in R, there is more functionality than what is discussed here, so feel free to explore the additional resources at the bottom to learn even more.
 
 
 ![Reshaping data](https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&pageid=g38bb68a532_0_13)
@@ -127,87 +127,6 @@ head(airquality)
 
 ![spread data](https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&pageid=g38bb68a532_0_236)
 
-#### reshape2
-
-As with many things in R, there is more than one way to solve a problem. While `tidyr` provides a more general solution for reshaping data, `reshape2` was specifically designed for reshaping data. The details aren't particularly important yet, but later on as you carry out your own analyses it will be good to know about both packages. To get started using `reshape2`, you'll have to first install the library and load it into your R session:
-
-```r
-## install the package
-install.packages('reshape2')
-
-## load the package into R Session
-library(reshape2)
-```
-
-There are two main functions within the `reshape2` package:
-
-* `melt()`: go from wide data to long data
-* `dcast()`: go from long data to wide data
-
-##### melt()
-
-The `melt()` function will allow you to get the data into a long format that will be easy to use for analysis. When you melt a dataset with the default options, `melt()` will take every column, put the column name into a `variable` column, and then put the values of those variables into a `value` column. For the `airquality` data set, below we first assign the melted data frame to the object `melted`. Then we take a look at the top (`head()`) and bottom(`tail()`) of this melted data frame (`melted`).
-
-```r
-## puts each column name into the 'variable' column
-## puts corresponding variable's value in 'value' column
-melted <- melt(airquality)
-
-## let's take a look at the top of the melted data frame
-head(melted)
-
-## and at the bottom of that melted data frame
-tail(melted)
-```
-
-When you run this code you see that each column from the original data frame (`ozone`, `solar.r`, `wind`, `temp`,`month`, and `day`) are now repeated in the variables column, and each days' value for that variable is now in the `value` column. This is now a long format dataset!
-
-
-![melted data](https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&pageid=g38bb68a532_0_43)
-
-Now, to use month and day as identifiers as we did with `tidyr` above, the approach is slightly different. With `gather()`, you specified the column names that you wanted to gather and omitted the column names that you wanted to retain as identifiers. With `melt()` you will do the opposite. You will specify `day` and `month` as identifiers for the dataset and omit the remaining variables. You'll want to use the following syntax:
-
-```r
-## melt the data frame
-## specify each row using month and day
-melted <- melt(airquality, id.vars = c("month","day"))
-
-## look at the first few rows of the melted data frame
-head(melted)
-```
-
-
-![melted data frame using IDs](https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&pageid=g38bb68a532_0_53)
-
-Despite the slight change in how the code was specified, the result here using `melt()` is the same as what was achieved above using `gather()`.
-
-##### cast
-
-You'll likely have to go from long-to-short format less frequently; however, it's good to know there are two approaches to accomplishing this within `reshape2` whenever it is necessary.
-
-* `acast()`: taking a long frame and returning a matrix/array/vector
-* `dcast()`: taking a long frame and returning a data frame
-
-To return our melted data back into its original wide form, we'll use `dcast()`. The syntax here separates what should be used as an identifier for each row in the resulting wide format (`month + day` below) and which column includes the values that should be the column headers (`variable` below). These two pieces of information are separated by a tilde (`~`).
-
-```r
-## to get our data back to its original form
-## specify which columns should be combined to use as identifiers
-## and which column should be used to specify the columns
-original <- dcast(melted, month + day ~ variable)
-
-head(original)
-
-head(airquality)
-```
-
-
-![dcast to obtain original data](https://docs.google.com/presentation/d/14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI/export/png?id=14msuN3MbQE6BSIaNu2ipv1-5ypgvWlxsGwn3jmpFyAI&pageid=g38bb68a532_0_148)
-
-As you can see, aside from the column order changing, the information in `original` is the same as what was in the data frame we started with (`airquality`).
-
-While reshaping data may not be the most exciting topic, having this skill will be indispensable as you start working with data. It's best to get these skills down early!
-
 ## Transposing data
 
 One more transformation you may need to do, has a function in base R to do it.
@@ -253,7 +172,5 @@ The information in both `iris` and `iris_transposed` is the same, it's just in a
 ### Additional Resources
 
 * [tidyr](https://tidyr.tidyverse.org/), part of the [tidyverse](https://www.tidyverse.org/) and developed by [Hadley Wickham](http://hadley.nz/) and [Lionel Henry](https://github.com/lionel-)
-* [reshape2](https://stat.ethz.ch/pipermail/r-packages/2010/001169.html), developed by [Hadley Wickham](http://hadley.nz/)
 * [tidyr tutorial](https://blog.rstudio.com/2014/07/22/introducing-tidyr/) by [Hadley Wickham](http://hadley.nz/)
-* [reshape2 tutorial](http://seananderson.ca/2013/10/19/reshape/) by [Sean C. Anderson](http://seananderson.ca/)
-* [tidyr vs reshape2](https://www.r-bloggers.com/2016/06/how-to-reshape-data-in-r-tidyr-vs-reshape2/) by [Alberto Giudici](https://www.erim.eur.nl/people/alberto-giudici/)
+* [tidyr cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/tidyr.pdf)

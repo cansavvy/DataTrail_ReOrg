@@ -1198,13 +1198,13 @@ Summarize your trajectory. You could mention what you&#39;ve done. Like what you
 </div>
 <p>It contained some basic information about you and had information about where to contact you; however, it was <em>pretty</em> basic and not very visually appealing. In this lesson, we’ll improve both the content and look of your personal website.</p>
 <p>To get started, create a new project in RStudio Cloud! Once you’ve got a new project, you’ll want to run the following code <strong>in the R Console</strong> to install blogdown and start a new site. (Note: it may take a few minutes for this code to run and for all the dependencies to install.)</p>
-<div class="sourceCode" id="cb426"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb426-1"><a href="making-your-website-more-professional.html#cb426-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install packages</span></span>
-<span id="cb426-2"><a href="making-your-website-more-professional.html#cb426-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;blogdown&quot;</span>)</span>
-<span id="cb426-3"><a href="making-your-website-more-professional.html#cb426-3" aria-hidden="true" tabindex="-1"></a>blogdown<span class="sc">::</span><span class="fu">install_hugo</span>()</span>
-<span id="cb426-4"><a href="making-your-website-more-professional.html#cb426-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb426-5"><a href="making-your-website-more-professional.html#cb426-5" aria-hidden="true" tabindex="-1"></a><span class="do">## create a new site</span></span>
-<span id="cb426-6"><a href="making-your-website-more-professional.html#cb426-6" aria-hidden="true" tabindex="-1"></a><span class="do">## use the academic theme</span></span>
-<span id="cb426-7"><a href="making-your-website-more-professional.html#cb426-7" aria-hidden="true" tabindex="-1"></a>blogdown<span class="sc">::</span><span class="fu">new_site</span>(<span class="at">theme =</span> <span class="st">&quot;gcushen/hugo-academic&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb422"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb422-1"><a href="making-your-website-more-professional.html#cb422-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install packages</span></span>
+<span id="cb422-2"><a href="making-your-website-more-professional.html#cb422-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;blogdown&quot;</span>)</span>
+<span id="cb422-3"><a href="making-your-website-more-professional.html#cb422-3" aria-hidden="true" tabindex="-1"></a>blogdown<span class="sc">::</span><span class="fu">install_hugo</span>()</span>
+<span id="cb422-4"><a href="making-your-website-more-professional.html#cb422-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb422-5"><a href="making-your-website-more-professional.html#cb422-5" aria-hidden="true" tabindex="-1"></a><span class="do">## create a new site</span></span>
+<span id="cb422-6"><a href="making-your-website-more-professional.html#cb422-6" aria-hidden="true" tabindex="-1"></a><span class="do">## use the academic theme</span></span>
+<span id="cb422-7"><a href="making-your-website-more-professional.html#cb422-7" aria-hidden="true" tabindex="-1"></a>blogdown<span class="sc">::</span><span class="fu">new_site</span>(<span class="at">theme =</span> <span class="st">&quot;gcushen/hugo-academic&quot;</span>)</span></code></pre></div>
 <p>For this site, we’re using the Hugo theme “Academic”, specified as an argument within the <code>blogdown::new_site()</code> function. At the end of this lesson, you’ll have a website that looks something like what you see here!</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70/export/png?id=1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70&amp;pageid=g40f38df3d0_0_151" alt="" />

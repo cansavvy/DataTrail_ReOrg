@@ -242,9 +242,11 @@ Another missing value that can arise in R is `NaN` which stands for "not a numbe
 [1] NaN
 ```
 
-### Determining the class of an object
+### Determining the class and shape of an object
 
-In this lesson so far we have discussed how to create the five main classes of objects in R; however, we haven't yet described how to determine the class of an object once its been stored. To do so, you would use the function class() and specify the class of the object within the parentheses:
+In this lesson so far we have discussed how to create the five main classes of objects in R; however, we haven't yet described how to determine the class of an object once its been stored. To do so, there are three different strategies we'll show you.
+
+1) You can use the function `class()` and specify the class of the object within the parentheses:
 
 ```
 > min_age <- 21
@@ -266,6 +268,16 @@ In this lesson so far we have discussed how to create the five main classes of o
 
 As you can see, the class of the object specified within the parentheses is the class of that object.
 
+2) You can use a function `str()` which will tell you its `stru`cture. This will tell you more about the shape of an object, how long or wide it is, etc.
+
+```
+str(colors)
+> chr [1:5] "red" "red" "blue" "red" ...
+```
+
+3) Lastly, you can always look at your `Environment` panel and sometimes click on an object to see more about it. This strategy doesn't require you to run any command, but sometimes it won't have information that using `str()` or `class()` would tell you.
+
+
 #### Types of objects
 
 We store these different classes of objects in different ways. The ways this information is stored is referred to as the *type** of object.
@@ -277,8 +289,6 @@ When talking about objects in R, it may be helpful to think of *actual* objects 
 The simplest *type* of object in R is called a **vector**, which is an object that can contain multiple items. Generally, each individual vector can only contain objects of the same class, but a certain type of vector, called a **list**, can contain objects of different classes. You will learn about lists in a later lesson.
 
 For now, it's not important to understand the details of that last paragraph, but it *is* important to know that there are **different types** of objects and that these objects each hold information of a specific **class**.
-
-We'll begin this lesson by looking at how to create objects in each of these five basic classes in R.
 
 ### Summary
 

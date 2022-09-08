@@ -636,7 +636,7 @@ learning-objectives-4
 translating-questions-to-data-science-questions
 a-real-example
 slides-and-video
-do-i-have-the-data-i-need
+identifying-data
 the-data-science-question
 the-perfect-dataset-the-data-we-want
 the-data-we-have

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 20 Getting Help in R | DataTrail</title>
-  <meta name="description" content="Chapter 20 Getting Help in R | DataTrail" />
+  <title>Chapter 25 Ethical Data Science | DataTrail</title>
+  <meta name="description" content="Chapter 25 Ethical Data Science | DataTrail" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 20 Getting Help in R | DataTrail" />
+  <meta property="og:title" content="Chapter 25 Ethical Data Science | DataTrail" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 20 Getting Help in R | DataTrail" />
+  <meta name="twitter:title" content="Chapter 25 Ethical Data Science | DataTrail" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="basic-commands-in-r.html"/>
-<link rel="next" href="r-packages.html"/>
+<link rel="prev" href="finding-data.html"/>
+<link rel="next" href="cleaning-the-data.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -1122,115 +1122,309 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/DataTrail.jpg">
 </div>
-<div id="getting-help-in-r" class="section level1" number="20">
-<h1><span class="header-section-number">Chapter 20</span> Getting Help in R</h1>
-<p>In a lesson in an earlier course, we discussed some basic guidelines for carrying out an effective Google Search. Now that you’ve been introduced to the basics of R, we wanted to guide you to some <em>incredibly</em> helpful resources that can help you work through issues when you’re trying to write your own R code.</p>
-<div id="r-help" class="section level3" number="20.0.1">
-<h3><span class="header-section-number">20.0.1</span> R Help: <code>?</code></h3>
-<p>To access documentation directly within RStudio, you can type a question mark followed by the function, dataset, or object within the R Console directly. The output for this documentation will display in the Help window at the bottom-right hand of RStudio.</p>
-<p>For example, earlier in this course, you were introduced to the function <code>summary()</code> in R. If you later can’t remember what this function does, but you can remember the function, you can always type <code>?summary</code> in your Console. The following will display in the Help tab:</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk/export/png?id=1xDXjuZZ8OifFKW3MzKhQL0kI5f3XcCfHn9oHgyhpyMk&amp;pageid=g37af3c0ac8_0_49" alt="" />
-<p class="caption">?summary documentation</p>
+<div id="ethical-data-science" class="section level1" number="25">
+<h1><span class="header-section-number">Chapter 25</span> Ethical Data Science</h1>
+<p>From the emails automatically marked as spam in your Inbox and facial recognition on Facebook to the targeted advertisements you see whenever you’re online, data science has made its way into our everyday lives. Often, this is a positive because data scientists generally set out to improve the world (say, by analyzing crime data in hopes of reducing violent crime) or to make our lives easier (by preventing spams in our mailboxes, for example). However, data science projects are certainly not without negative consequences. We discussed some of the companies who have run up against issues properly securing user data in the last lesson; however, protecting the privacy of users’ data is not the only time data scientists should consider the ethics of their work. In fact, <strong>ethical considerations should be made from the start of a project and should never stop being made</strong>. We’ll discuss what we mean by that in this lesson.</p>
+<p>When we talk about the ethics of data science, we’re talking about how to use data to improve the lives of individuals in our society in the world without causing harm to any groups with our work. We’re talking about putting in the work ahead of time to avoid unintended negative consequences of our work. Rather than acting surprised when groups are inadvertently harmed or only dealing with unintended consequences after they occur and harm others, an ethical data scientist will consider whether they are doing any harm at each step along the way.</p>
+<div id="data-science-team" class="section level3" number="25.0.1">
+<h3><span class="header-section-number">25.0.1</span> Data Science Team</h3>
+<p>Data science projects can be done by an individual; however, more often, they are carried out by a team of individuals who are all interested in using data to answer an interesting question. Whether it’s one person setting out to answer the question or a team working to answer this question, it’s important at this outset of a project to really think about whether all the necessary individuals are on the team.</p>
+<p>For example, if a group of data scientists were setting out to reduce crime in a neighborhood, it would be in their best interest to either be very familiar with that neighborhood (say, live there themselves) or to talk to individuals who currently live in that neighborhood to be as informed as possible before they set out to analyze their data. By working with individuals who have more knowledge about the neighborhood than someone who has never been there, the team will be less likely to make incorrect assumptions or leave out critical pieces of information when analyzing the neighborhood’s data.</p>
 </div>
-<p>In this documentation we see:</p>
-<ul>
-<li>A general description of what the summary() function can be used for</li>
-<li>What package the function is from – “base” means it’s part of the base installation in R, rather than from a specific package</li>
-<li>The syntax you should use to carry out this function</li>
-<li>Some sample code</li>
-</ul>
-<p>As you work in R, you’ll find that some documentation is more helpful than others. Some packages and functions have incredibly helpful documentation pages. Others are less helpful. A thing to remember is that humans are responsible for writing this documentation. It’s great when someone who’s really great at documenting software or who has the time to do so write great documentation pages. However, for those times when the documentation proves less than helpful, there are other places you can look to for help.</p>
+<div id="the-data" class="section level3" number="25.0.2">
+<h3><span class="header-section-number">25.0.2</span> The Data</h3>
+<p>After ensuring that the team you’ve assembled to answer the question is the right team to do so, there are <em>many</em> considerations to be made when collecting data.</p>
+<div id="sampling-bias" class="section level4" number="25.0.2.1">
+<h4><span class="header-section-number">25.0.2.1</span> Sampling Bias</h4>
+<p>When data are collected, it’s difficult to ever get information about an entire population. Thus, when data are conducted, researchers will typically get data from a subset of individuals within the population (a process called sampling) and then <em>infer</em> something about the entire population using what they learned from the subset of individuals. They will try to ensure that their subset is a random subset of the population. However, whenever sampling of a population is done, there’s a chance for sampling bias.</p>
+<p>Sampling bias occurs whenever the sample of the population collected does not accurately reflect the population as a whole. For example, if the population you’re interested in studying is half female and half male, but the subset of people you’ve sampled is made up of 70% females and 30% males, then your sample is biased. Having a plan to avoid sampling bias is an important first step in the process of data collection.</p>
+<p>Checking the data after the data have been collected to ensure that the sample is not biased is an equally important step. When data are collected by survey for example, they may be sent out to an equal number of males and females; however, maybe more males respond than females. Even though your plan was solid, your responses are biased. This has to be accounted for during the analysis, as your responses do not accurately represent the population as a whole.</p>
+<p>And to be clear, gender is not the only consideration to make when sampling. Samples can be biased by many factors including (but not limited to) race and ethnicity, age, income, and education. Sampling bias should always be avoided both when planning to collect data and after the data are collected.</p>
 </div>
-<div id="debugging-code" class="section level3" number="20.0.2">
-<h3><span class="header-section-number">20.0.2</span> Debugging code</h3>
-<p>It is likely that after looking at R documentation, you still will have questions, or might not know exactly how to fix your code.</p>
-<p>For more tips on debugging your code, go paraphrase <a href="https://hutchdatascience.org/code_review/lab_developers.html#Tips_on_debugging">this guide originally written by the Childhood Cancer Data Lab</a>.</p>
-<blockquote>
-<h4 id="carefully-read-any-and-all-error-messages">1) Carefully read any and all error messages</h4>
-<p>This may seem like a silly thing to include as a tip, but it’s very easy to gloss over an error message without actually reading it. Often, R may be telling you exactly what is wrong, but if you don’t take the time to understand what the error message means, you will have trouble fixing the error. Error messages often refer to R terms (e.g.. “argument”, “directory”) so if you need a refresher on what some terms mean, we recommend going through one of the intro to R tutorials we recommend.</p>
-</blockquote>
-<blockquote>
-<p>Secondly, realize that just because you don’t receive an error message, doesn’t mean that your code did what you intended it to. You also will need to carefully review your code (and your results) to try to find “silent” bugs (situations where R did exactly what you asked, but you didn’t get what you intended).</p>
-</blockquote>
-<blockquote>
-<h4 id="identify-which-line-and-phrase-of-code-is-the-source-of-the-error.">2) Identify which line and phrase of code is the source of the error.</h4>
-<p>If you ran many lines of code, you may not know which part of your code is the origin of the error message. Isolating the source of the error and trying to better understand your problem should be your first course of action. The best way to determine this, is by running each line, and each phrase by itself, one at a time.</p>
-</blockquote>
-<blockquote>
-<p>Chunk-out your code and test the individual bits of code. Do you have a lot of lines of code, a lot of arguments, or multiple functions at once? Try each piece by itself to narrow down what piece appears to be the origin of the problem.</p>
-</blockquote>
-<blockquote>
-<h4 id="be-sure-that-the-code-you-think-you-have-run-has-all-successfully-run-and-in-order.">3) Be sure that the code you think you have run has all successfully run and in order.</h4>
-<p>It could be that the problem with your code isn’t that it doesn’t work as it is written, but that you didn’t run it or didn’t run it in the correct order. This should be one of the first things you check, while checking that the objects that you believe should be in your environment, are in your environment.</p>
-</blockquote>
-<blockquote>
-<p>It’s also good practice to be periodically quitting your current R session and starting a new one, in addition to clearing your R notebook output. If you are encountering problems and haven’t refreshed your R session, you may want to do that before further troubleshooting.</p>
-</blockquote>
-<blockquote>
-<p>In the course of troubleshooting, you will want to re-run all of your code, perhaps many many many times in order to get to the bottom of the problem.</p>
-</blockquote>
-<blockquote>
-<h4 id="google-your-error-message">4) Google your error message</h4>
-<p>The main advantage to Googling your errors is that you are likely not the first person to encounter the problem. Certain phrases and terms in the error message will yield more fruitful search results then others.</p>
-</blockquote>
-<blockquote>
-<h4 id="look-at-the-documentation-for-a-function-to-make-sure-you-are-using-it-correctly">5) Look at the documentation for a function to make sure you are using it correctly</h4>
-<p>Once you’ve better determined the origin of the problem, you should use whatever documentation is available to you regarding the problematic code. When using a new function from a package you are unfamiliar with, it’s worthwhile to skim through the documentation so you know how to properly use the functions. For base R functions, Tidyverse functions, and some Bioconductor packages, the documentation will give you a lot of the information you need. However, you will also likely find that not all documentation is thorough or clear.</p>
-</blockquote>
-<blockquote>
-<p>As we discussed, objects have structures and types. Having input that doesn’t match the requirements that a function has can be a common source of errors. Pay special attention to what the documentation says about what kind of input and output the function is designed to use.</p>
-</blockquote>
-<blockquote>
-<h5 id="use-the-rstudio-help-bar">Use the RStudio help bar</h5>
-<p>Here’s a screenshot from the help window in RStudio. Note that here we searched for the levels function. R documentation includes information about what the expected arguments are as well as examples of how to use a function. Note here that this documentation tells us that the input for x is probably a factor. search_bar</p>
-</blockquote>
-<blockquote>
-<p>For Bioconductor package functions, look at their page on bioconductor.org The documentation on Bioconductor pages have information that can be valuable for troubleshooting. Vignettes can have good example workflows to get started with (can use the browseVignettes function for RStudio to open them). In addition, every Bioconductor package has a PDF reference where all the functions and objects for that package are described. They can take some getting used to, but generally can have helpful information.</p>
-</blockquote>
-<blockquote>
-<ol start="6" style="list-style-type: decimal">
-<li>Google it again
-Because it’s unlikely your first attempt at Googling will lead you straight to an answer; this is something you should continue to try with different wordings. Through trial and error, and also Google algorithms learning about what you look for, your search results can eventually lead you to helpful examples and forums.</li>
-</ol>
-</blockquote>
-<ol start="7" style="list-style-type: decimal">
-<li>Ask for help! Asking for help is a skill in itself! As we’ve mentioned, data science is best performed as a part of a community. But how do you ask for help in a way that most effectively helps you as well as the person who is trying to help you? Let’s discuss that!</li>
-</ol>
+<div id="informed-consent" class="section level4" number="25.0.2.2">
+<h4><span class="header-section-number">25.0.2.2</span> Informed Consent</h4>
+<p>In addition to collecting data in an unbiased manner, data must be collected ethically. This means that individuals must consent to participating in data collection. <strong>Informed consent</strong> requires that the individual agreeing to share their information knows what data are being collected, has been informed of any possible consequences, and has been provided full knowledge of any risks or benefits of participation.</p>
+<p>If data are collected on individuals and later on a data scientist wants to use those data for a different purpose, they can only do so if the initial consent allowed for the data to be used in this manner. Alternatively, if the data are de-identified, they may be able to be used for future analysis; however, this must be done with care.</p>
 </div>
-<div id="tips-on-asking-questions" class="section level3" number="20.0.3">
-<h3><span class="header-section-number">20.0.3</span> Tips on asking questions!</h3>
-<p>In the introduction to this course, we discussed that asking questions is central to data science and its also a crucial part of learning programming!</p>
-<p>When you are working on something, you should first ask these questions to yourself. But data science is best done as a community effort, so before you reach the point of being crazily frustrated, ask a peer or a more experienced coder for help!</p>
-<p>When you are troubleshooting code there are few things you should ask yourself (and tell others you are asking). Having this information together will help you reach a solution more efficiently!</p>
-<div id="things-to-include-in-your-request-for-help" class="section level4" number="20.0.3.1">
-<h4><span class="header-section-number">20.0.3.1</span> Things to include in your request for help:</h4>
+<div id="privacy" class="section level4" number="25.0.2.3">
+<h4><span class="header-section-number">25.0.2.3</span> Privacy</h4>
+<p>When collecting personally-identifiable information, these data must be protected. They should not be shared without the participants’ consent and they should be stored in a secure manner.</p>
+</div>
+<div id="withdrawal-of-consent" class="section level4" number="25.0.2.4">
+<h4><span class="header-section-number">25.0.2.4</span> Withdrawal of consent</h4>
+<p>If an individual consents to their data being collected and later changes their mind, they have every right to do so. It is your responsibility as the person collecting the data to have an effective plan for removing any data already collected from that individual.</p>
+</div>
+</div>
+<div id="the-analysis" class="section level3" number="25.0.3">
+<h3><span class="header-section-number">25.0.3</span> The Analysis</h3>
+<p>After avoiding sampling bias, collecting data ethically, avoiding privacy issues in data storage, there are still a number of ethical considerations to take into account during ones analysis. While we don’t discuss the details in these courses, machine learning is currently a popular way to analyze data. In general, it uses existing data to predict how individuals will behave in the future. This means that the any biases in the data used to build the model (the existing data) will likely be perpetuated in the predictions. This means that, for example, in predictive policing, where data scientists are trying to predict where crimes are more likely to happen, if the data used to build the model (often referred to as an <strong>algorithm</strong>) come from crimes that have occurred in primarily black neighborhoods, they are going to predict that crime happens more in primarily black neighborhoods. Then, if police officers are placed in these neighborhoods, they are going to find more crime, <em>not</em> because crime has increased, but just because there are more of them in the neighborhood now. Essentially, any biases in the data used initially are going to be perpetuated in the models they generate. This means that it is <em>critically</em> important that data scientists fully know and understand the data their working with, its biases, and its limitations.</p>
+<p>Further, even <em>when</em> something like race is predictive in the model, it’s important for a data scientist to consider whether or not that variable <em>should</em> be included. Are you <em>absolutely positive</em> that race is the important variable and it’s not just that you have a biased sample? Instead, if you’re trying to predict crimes, it’s likely best to use data about crimes that have occurred and where they have occurred in the model rather than race, since race is not a measure of what you’re interested in modeling. Considering the implications of ones work when carrying out an analysis is incredibly important, and making decisions that do not unnecessarily harm any group of people is critical</p>
+<p>It was previously common for analysts to say that “data do not lie” and “algorithms are impartial,” but recent history has shown that that is simply not the case. Data are collected by humans, and humans are not without their biases. The best way to avoid bias in your data is to be aware of this and constantly check to make sure you’re not disadvantaging groups of people with your analyses.</p>
+<p>Before considering any data analysis and publishing your results, make sure:</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>What is the goal of this code?</strong>
-What are you trying to do? Is this the best or only way to do that? Often times in R there are many ways to achieve the same outcome, so it may be worth considering if there’s another solution that bypasses the problem you are having.</p></li>
-<li><p><strong>What is the code that is producing this error?</strong>
-What part of the code is sending the error you are seeing? Try Chunking your code – trying each part piece by piece, to zero in on the problematic part.</p></li>
-<li><p><strong>What is the error or problematic outcome?</strong>
-What are you seeing that is making you think something is wrong? Is it an error message? if so copy and paste that error message verbatim. Is it data that’s formatted not how it should be? Show what that looks like either with a screenshot or example.</p></li>
-<li><p><strong>Can someone reproduce the error I’m getting with the code and data I’m giving them?</strong> Ideally you can share code that someone else can easily copy and paste and run in their own R console. Try to recall all that’s necessary to reproduce the error that you are getting. If the code that you are running is too long and intensive to send, could you send a smaller toy example that illustrates the same concept and error that you are seeing? This is called a <strong>reprex</strong> or <code>repr</code>oducible <code>ex</code>ample. <a href="https://www.r-bloggers.com/2020/10/how-to-make-a-reprex/">Read this blog for more about reprex’s</a>.</p></li>
+<li>You have gone through your data and have made sure there is not any major flaw in your data collection. Data can be biased. You can’t use the result of a study that is mostly based on data from men to say anything about women.</li>
+<li>You have checked for common mistakes in your analysis and know that your methodology is valid and defensible. Messing up the data for a single variable can drastically change the result of your analysis.</li>
+<li>The results of your work can not be used to harass people, especially minorities, in any way.</li>
+<li>Your analysis is independent of your opinion about the specific problem you’re trying to solve using data. When carrying out an analysis, you should be looking for the answer to a question, but be careful not to <em>want</em> a specific answer. By wanting the analysis to go a certain way, you can subconsciously analyze the data to get that answer. It’s best just to collect the data ethically and analyze it carefully. Then, the answer is whatever the answer from the analysis says it is.</li>
+</ol>
+<p>You can do awesome things with your data science skills: cure diseases, analyze health data, prevent climate change, improve your city, or fact check politicians. Don’t let your biases or mistakes get in the way.</p>
+</div>
+<div id="after-the-algorithm" class="section level3" number="25.0.4">
+<h3><span class="header-section-number">25.0.4</span> After the Algorithm</h3>
+<p>Finally, after someone answers an awesome data science question with their really great analysis and tell the world, they often think their job is done. However, if you’ve designed an algorithm that is going to predict something going forward or that is going to continue to be used, it is your job to maintain that algorithm. That means that it’s your job to check for biases after the fact. Is your analysis disadvantaging groups of people? If it is, should it be? Does something need to be changed. There <em>has</em> to be a way for you to update your algorithm going forward. If something is continuing to be used by others, your job isn’t done once you’ve built the algorithm. It’s your job to check for biases after the fact and to update your algorithm should there be a need.</p>
+<div id="ethical-questions-to-answer" class="section level4" number="25.0.4.1">
+<h4><span class="header-section-number">25.0.4.1</span> Ethical Questions to Answer</h4>
+<p>To summarize this lesson up to this point, be sure to answer all of these questions for every data science project you carry out:</p>
+<ol style="list-style-type: decimal">
+<li>Does the <strong>team</strong> on this project include all the necessary individuals to avoid bias in our analysis?</li>
+<li>Does our data collection plan address ways to <strong>avoid sampling bias</strong>?</li>
+<li>Are the data we’ve collected / the data we’re using to answer the question of interest <strong>biased</strong>? In what ways?</li>
+<li>Has <strong>informed consent</strong> been obtained from all participants?</li>
+<li>Do we have a mechanism do <strong>remove an individual’s data</strong> from our dataset if they so choose?</li>
+<li>Are the variables we’ve chosen to use for our analysis appropriate? Do they <strong>discriminate</strong> against anyone?</li>
+<li>Is our analysis <strong>transparent</strong>? Do we understand <em>how</em> and <em>why</em> we’re getting the answer we’re getting?</li>
+<li>Have we considered possible negative or unintended consequences of our analysis and its results?</li>
+<li>Do we have a way to <strong>update</strong> our analysis/algorithm going forward should biases in the results be found?</li>
 </ol>
 </div>
 </div>
-<div id="summary-4" class="section level3" number="20.0.4">
-<h3><span class="header-section-number">20.0.4</span> Summary</h3>
-<p>In this lesson we discussed documentation, how to debug code and how to ask for help. All of these items can be tools in your tool belt for when your R programming adventures are not going as you hope. Remember that learning to program can be frustrating but with time and asking for help, you will get there!</p>
+<div id="ethics-in-data-science" class="section level3" number="25.0.5">
+<h3><span class="header-section-number">25.0.5</span> Ethics in Data Science</h3>
+<p>Now that we’ve discussed the ethical considerations to be made before and throughout every data science project, we’ll discuss a few data science projects that were recently covered the popular media due to the questionable ethics of the project.</p>
+<p>We present these examples not only to highlight the ethics of the particular project, but also to state the importance of considering the implications of your work. It is <strong>not</strong> enough to argue that you just “did the analysis” but “didn’t think of the implications” of the work. As a data scientist <strong>it is your responsibility to both do the analysis and consider the implications of your work</strong>.</p>
+<div id="data-science-in-sentencing" class="section level4" number="25.0.5.1">
+<h4><span class="header-section-number">25.0.5.1</span> Data Science in Sentencing</h4>
+<p>In April of 2017, Wired reported in an opinion piece that <a href="https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/">courts were using artificial intelligence to sentence criminals</a> and made the claim that such practices must be put to an end. The piece explained that courts and corrections departments across the United States collect data on defendants that are then used in an algorithm to determine the “risk” that defendant poses. This aim of this algorithm is to determine how likely it is that the individual will commit another crime.</p>
+<p>These likelihoods of reoffending from the algorithm are then used to make decisions about how to set bail, what the sentence should be, and the details of that individual’s parole. These tools are often built by private companies. This means that exactly <em>how</em> they work and what data are used to assess risk are not disclosed. The article in Wired highlights the use of <a href="http://www.equivant.com/challenges/supervision-and-compliance-monitoring">Compas</a>, one of these risk-assessment tools developed by a private company and used by the Department of Corrections in Wisconsin, in a judge’s decision to give a man a long sentence, in part because of his “high risk” score from the algorithm. In a courtroom, however, because the specifics of how this algorithm works are not disclosed, a judge and jury would <em>not</em> be able to determine whether or not the likelihood of reoffending was calculated accurately by the algorithm.</p>
+<p>Initially, arguments were made that removing human biases and judgment from bail, sentencing, and parole decisions would be for the benefit of society. This initial goal was a noble goal that would improve society. However, over time, biases in the data used to generate these algorithms that perpetuated into <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">biases in the algorithms’ outcomes</a>, the lack of transparency in how they work, and failure to check for inequities and biases in the algorithms after they were put in place have led to unfair decisions being made.</p>
+<p>While individuals <em>may</em> have been looking to improve society with their algorithm at the outset of this project (or at least that argument can be made), lack of considerations of the implications of their work and lack of transparency in the process of generating and using the algorithm have led to questionable ethics in the use of algorithms to make sentencing decisions.</p>
 </div>
-<div id="additional-community-resources" class="section level3" number="20.0.5">
-<h3><span class="header-section-number">20.0.5</span> Additional Community Resources</h3>
-<p>The R community is a welcoming and helpful community. Many people go years as R users before they learn what a rich community there is out there. We’re hoping to change that by introducing new users to a number of resources that will help them feel more welcome to the large community of individuals using R! Below is a short list of ways to connect with the R community:</p>
+</div>
+<div id="artificial-intelligence-in-the-military" class="section level3" number="25.0.6">
+<h3><span class="header-section-number">25.0.6</span> Artificial Intelligence in the Military</h3>
+<p>In March of 2018, Gizmodo reported that <a href="https://gizmodo.com/google-is-helping-the-pentagon-build-ai-for-drones-1823464533">Google was helping the US Department of Defense use artificial intelligence to analyze drone footage</a>, a project that started in April of 2017. The project between Google and the Defense department is called Project Maven, and the goal of this project was initially to take drone footage and accurately identify objects (such as vehicles) and to track individuals in the footage collected.</p>
+<p>A number of Google employees were upset that Google would provide resources to the military that would be used for surveillance in drone operations. Due to the fact that in other non-military situations <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">the use of machine learning has led to biased outcomes</a>, other employees felt there needed to be further discussion about the ethics in developing and using machine learning technology before it was deployed by the military. In response to these concerns, a Google spokesperson stated that Google is working <a href="https://gizmodo.com/google-is-helping-the-pentagon-build-ai-for-drones-1823464533">“to develop policies and safeguards”</a>, that the technology is being used for “non-offensive uses only.”</p>
+<p>In this and many large data science projects where machine learning and artificial intelligence are being used in situations where lives could be negatively impacted, the project would benefit from taking ethical considerations into account and discussing these in a transparent way <em>before</em> deploying the technology. Developing policies and safeguards after the fact is not enough.</p>
+<div id="facial-recognition-in-law-enforcement" class="section level4" number="25.0.6.1">
+<h4><span class="header-section-number">25.0.6.1</span> Facial Recognition in Law Enforcement</h4>
+<p>In May of 2018, the <a href="https://www.aclunc.org/blog/amazon-teams-law-enforcement-deploy-dangerous-new-face-recognition-technology">ACLU reported</a> that Amazon had teamed up with law enforcement agencies to use Amazon’s face recognition technology, <a href="https://aws.amazon.com/rekognition/">Rekognition</a>. The ACLU called this new technology, which can quickly scan images to “identify, track, and analyze people in real time” both “powerful” and “dangerous.” This story was picked up by many news sources, including <a href="https://www.nytimes.com/2018/05/22/technology/amazon-facial-recognition.html">a piece</a> in the New York Times</p>
+<p>Proponents of using facial recognition technology in law enforcement cite that such technology can help locate and identify criminals more quickly than we would have been able to in the past and that it will help <a href="https://www.nytimes.com/2018/05/22/technology/amazon-facial-recognition.html">“keep residents and visitors…safe”</a>. Proponents also argue that those who use the technology do so within the limits of the law.</p>
+<p>Opponents, like the ACLU, however, cite the civil liberties and civil rights concerns that constant surveillance with using facial recognition technology pose. The ACLU argues that there is substantial “capacity for abuse” and due to this, that citizens should not be watched by the government any time they walk outside, that facial recognition systems threaten freedom, and that the deployment of these technologies post a greater threat to communities that are already unfairly targeted by the political climate.</p>
+<p>Concerns with the technology cite that anyone can be identified, not just criminals, a problem for civil liberties. Opponents further question the accuracy of the technology. Inaccuracies, which would misidentify individuals and suggest they were guilty of a crime when they were in fact not is clearly a problem. Further, there are concerns that accuracy varies based on gender and race, which if true, poses a clear bias in the use of this technology for the identification of criminals as certain groups of individuals would be misidentified more frequently than others.</p>
+</div>
+</div>
+<div id="additional-resources-4" class="section level3" number="25.0.7">
+<h3><span class="header-section-number">25.0.7</span> Additional Resources</h3>
 <ul>
-<li><a href="https://medium.com/@kierisi/r4ds-the-next-iteration-d51e0a1b0b82">R for Data Science Learning Community</a> - a welcoming and helpful community for those new to R and data science</li>
-<li><a href="https://twitter.com">Twitter</a> - Using or searching the hashtag #rstats can be incredibly helpful and can connect you to others who use R</li>
-<li><a href="https://ropensci.org/">ROpenSci</a> - an online community of developers developing tools for open science</li>
-<li><a href="https://www.r-project.org/help.html">R Project Help in R</a></li>
-<li><a href="https://www.tidyverse.org/help/">Tidyverse Help Documentation</a> - more details on creating a reprex</li>
+<li><a href="https://dssg.uchicago.edu/2015/09/18/an-ethical-checklist-for-data-science/">Ethical Checklist for Data Science</a>, by Alan Fritzler</li>
+<li><a href="https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418815"><em>Weapons of Math Destruction</em></a>, by Cathy O’Neil</li>
+<li><a href="https://www.amazon.com/Automating-Inequality-High-Tech-Profile-Police/dp/1250074312/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1531417315&amp;sr=1-1&amp;keywords=automating+inequality"><em>Automating Inequality</em></a>, by Virginia Eubanks</li>
+<li><a href="https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/">Courts are Using AI to Sentence Criminals. That must Stop Now</a>, by Jason Tashea in Wired</li>
+<li><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">Machine Bias</a>, by Julia Angwin, Jeff Larson, Surya Mattu and Lauren Kirchner at ProPublica</li>
+<li><a href="https://www.aclunc.org/blog/amazon-teams-law-enforcement-deploy-dangerous-new-face-recognition-technology">Amazon Teams Up With Law Enforcement to Deploy Dangerous New Face Recognition Technology</a>, by Matt Cagle and Nicole A. Ozer with the ACLU</li>
+<li><a href="https://www.nytimes.com/2018/05/22/technology/amazon-facial-recognition.html">Amazon Pushes Facial Recognition to Police. Critics See Surveillance Risk.</a>, by Nick Wingfield at the New York Times</li>
+<li><a href="https://gizmodo.com/google-is-helping-the-pentagon-build-ai-for-drones-1823464533">Google Is Helping the Pentagon Build AI for Drones</a>, by Kate Conger and Dell Cameron at Gizmodo</li>
+</ul>
+</div>
+<div id="internet-safety" class="section level2" number="25.1">
+<h2><span class="header-section-number">25.1</span> Internet Safety</h2>
+<p>Just like driving a car, there are inherent risks to using the Internet and doing data analysis on the cloud. These risks shouldn’t mean that you should always be fearful about your online safety, however, they should make you more aware that there are consequences if you are not cautious. Internet safety (or online safety) revolves around being knowledgeable about what these risks are, knowing how to deal with risks that arise when working online, and working hard to increase personal safety against security risks associated with using the Internet.</p>
+<p>The goal of <a href="https://en.wikipedia.org/wiki/Internet_safety">Internet safety</a> is to maximize personal safety and minimize security risks. We’ll discuss the basics of this below, but know that there are people whose entire careers are dedicated to Internet safety, so this will simply touch on the basics.</p>
+<div id="wifi" class="section level3" number="25.1.1">
+<h3><span class="header-section-number">25.1.1</span> WiFi</h3>
+<p><a href="https://en.wikipedia.org/wiki/Wi-Fi">WiFi</a> is the technology that enables you to wirelessly connect to the Internet. Computers, smartphones, video-game consoles, and TVs are among the many types of devices that are WiFi-compatible. As is often the case, increased access to the Internet comes with increased risk to network security.</p>
+<div id="public-wifi" class="section level4" number="25.1.1.1">
+<h4><span class="header-section-number">25.1.1.1</span> Public WiFi</h4>
+<p>Completely-open and free public WiFi, or Internet access that does not require a password or a screen to login from is the least secure type of network. When connected to public WiFi, be extra vigilant. Avoid working with sensitive data while on a completely open and public network, and do not make online purchases while on this network.</p>
+</div>
+<div id="semi-open-wifi" class="section level4" number="25.1.1.2">
+<h4><span class="header-section-number">25.1.1.2</span> Semi-Open WiFi</h4>
+<p>Semi-open WiFi networks are networks potentially open to everyone, but that may require a password (maybe one that is printed on your receipt at a coffee shop) or may require you to login by providing an e-mail address. When given the choice, opt to connect to these networks rather than completely-open public WiFi networks.</p>
+</div>
+<div id="password-protected-wifi" class="section level4" number="25.1.1.3">
+<h4><span class="header-section-number">25.1.1.3</span> Password-protected WiFi</h4>
+<p>The most secure option, however, is when you connect to a password-protected WiFi network, so use password-protected WiFi whenever you have the option. WiFi at your home should absolutely be password-protected.</p>
+</div>
+<div id="use-https-whenever-possible" class="section level4" number="25.1.1.4">
+<h4><span class="header-section-number">25.1.1.4</span> Use HTTPS Whenever Possible</h4>
+<p>The “S” in HTTPS stands for secure. So, what does HTTP stand for? HTTP refers to “Hyper Text Transfer Protocol.” You’re likely most familiar with these letters as being part of your website. When you type “www.gmail.com” into your Chrome browser, Chrome redirects you to “<a href="https://mail.google.com/mail/u/0/#inbox" class="uri">https://mail.google.com/mail/u/0/#inbox</a>.” HTTP refers to how the data are sent from your browser (where you typed “www.gmail.com”) and the website to which you’re trying to connect (www.gmail.com). When the web address starts with <a href="https://" class="uri">https://</a> rather than <a href="http://" class="uri">http://</a>, this means that the data sent over your Internet connection are encrypted. Encryption is a process that generates a message that cannot be decoded by anyone without a key. Thus, if someone were to intercept your encrypted data as it were transferred over the Internet, they may be able to intercept your data, but they wouldn’t be able to decipher the information, as they wouldn’t have access to the key. When a website is using encryption (<a href="https://" class="uri">https://</a>), there will be a padlock to the left of your web address bar to indicate that the HTTPS connection is in effect.</p>
+<p>When sharing sensitive information on the Internet (ie a credit card number or personal health information), it should only ever be done on a secure (encrypted) network.</p>
+</div>
+</div>
+<div id="passwords" class="section level3" number="25.1.2">
+<h3><span class="header-section-number">25.1.2</span> Passwords</h3>
+<p>In the age of apps for everything and technology being everywhere, you likely have a lot of requests daily for passwords. While they may seem like an annoyance, using passwords, and importantly, using <em>good</em> passwords is worth the effort.</p>
+<div id="strong-passwords" class="section level4" number="25.1.2.1">
+<h4><span class="header-section-number">25.1.2.1</span> Strong Passwords</h4>
+<p>Strong passwords may be harder to remember, but that’s the point. You don’t want someone else to be able to easily guess your password.</p>
+<p>Characteristics of <strong>Strong Passwords</strong>:</p>
+<ul>
+<li>Use a combination of random letters</li>
+<li>Use both capital and lower case letters</li>
+<li>Include numbers, letters, and symbols</li>
+<li>Disperse the letters and symbols throughout the password (not just at the beginning and the end)</li>
+<li>Has at least 12 characters</li>
+</ul>
+<p><strong>What to Avoid</strong> when Creating A Password:</p>
+<ul>
+<li>Avoid using names of you or anyone in your family</li>
+<li>Do not include the words “Passcode” or “Password”</li>
+<li>Avoid using sequential numbers (i.e. 123)</li>
+<li>Avoid using your telephone number</li>
+<li>Don’t make obvious substitutions to words (i.e. avoid simply replacing the letter “o” in a word with the number “0”)</li>
+</ul>
+</div>
+<div id="utilize-passwords" class="section level4" number="25.1.2.2">
+<h4><span class="header-section-number">25.1.2.2</span> Utilize Passwords</h4>
+<p>When given the option, <strong>use a password</strong>. Do not opt out of using a password to log in to your phone or your computer. When asked to set a password, do so, and make it a good one.</p>
+<p>In addition to setting passwords, make sure you have multiple different passwords. Do not use the same password for all your most important accounts. If someone were to log onto your WiFi network, you wouldn’t also want that person to be able to gain access to your credit card, Gmail, bank account, and/or Facebook account. <strong>Use different passwords for different accounts</strong>.</p>
+</div>
+<div id="when-to-change-passwords" class="section level4" number="25.1.2.3">
+<h4><span class="header-section-number">25.1.2.3</span> When to Change Passwords</h4>
+<p>If your password was set by a third-party company (say your Internet provider), you should <em>change your password right away</em>.</p>
+<p>Otherwise, it’s a good practice to change passwords to your most sensitive information (i.e. WiFi, credit cards/banking, etc.) at least every six months.</p>
+</div>
+<div id="never-share-passwords" class="section level4" number="25.1.2.4">
+<h4><span class="header-section-number">25.1.2.4</span> Never Share Passwords</h4>
+<p>A final word on passwords: <strong>never share them</strong>. Reputable companies will never ask for them. Your bank will never require you to tell it to them. And, neither will the IRS. If someone is asking for your password, it is <em>almost certainly a scam</em>.</p>
+</div>
+</div>
+<div id="good-internet-behavior" class="section level3" number="25.1.3">
+<h3><span class="header-section-number">25.1.3</span> Good Internet behavior</h3>
+<p>On the Internet there are few basic guidelines to follow that will help you be a good citizen and help keep you safe. This list is surely not exhaustive, but it’s a good start. When online:
+* Don’t be a jerk
+* Never share your passwords
+* Think before you click
+* Don’t click on links sent to you from people you don’t know
+* Don’t click on links from someone you do know if it doesn’t seem like something they would send (i.e. an email with a weird subject line that doesn’t sound like them or a link in an email that says “Vacation Pix” when they wouldn’t normally send those pictures, wouldn’t use the word “Pix”, or haven’t recently been on a trip)</p>
+</div>
+<div id="online-scams" class="section level3" number="25.1.4">
+<h3><span class="header-section-number">25.1.4</span> Online Scams</h3>
+<p>While we would love if everyone on the Internet behaved well (and most people do!), there are of course bad actors. To avoid getting caught up in an online scam, beware of:</p>
+<ul>
+<li>people/websites posing as people from a trustworthy company who attempt to obtain your private information - emails asking for credit card numbers or passwords are scams</li>
+<li>people who call and ask for passwords to accounts and who <em>seem</em> to know a lot about your family and claim to be from law enforcement. This is likely a scam. You can always hang up and call your local law enforcement directly to be sure.</li>
+<li>people/websites offering prices that are <em>way</em> too low for housing or big purchases on the Internet. These are likely a scam.</li>
+</ul>
+</div>
+<div id="malware-spyware" class="section level3" number="25.1.5">
+<h3><span class="header-section-number">25.1.5</span> Malware &amp; Spyware</h3>
+<p>Finally, malware and spyware are software designed to be malicious. The goal of malware and spyware is to collect your private information (usernames, passwords, credit card numbers) without you ever knowing. This software often acts through e-mail or other software. By avoiding clicking on suspicious links and not downloading software with which you’re not familiar, you can avoid the issues caused by malicious software.</p>
+</div>
+<div id="security-on-a-chromebook" class="section level3" number="25.1.6">
+<h3><span class="header-section-number">25.1.6</span> Security on a Chromebook</h3>
+<p>Because Chromebooks do not run a typically operating system, they are much more secure than other laptops. While explained in greater depth on <a href="https://support.google.com/chromebook/answer/3438631?hl=en">Google’s support documentation</a>, Chromebooks have certain advantages over other laptops when it comes to security:</p>
+<ul>
+<li>Automatic updates - ensure that your Chromebook is never behind on security updates</li>
+<li>Sandboxing - each web page runs in its own environment (sandbox), so if one page is infected, that page won’t affect other tabs or apps running at the time.</li>
+<li>Verified Boot - every time the Chromebook starts up, it does a self-check to detect any issues with security.</li>
+<li>Encryption - web apps on a Chromebook store all data safely in the cloud with encryption, making it resistant to tampering</li>
+</ul>
+</div>
+</div>
+<div id="data-privacy" class="section level2" number="25.2">
+<h2><span class="header-section-number">25.2</span> Data Privacy</h2>
+<p>In this lesson we’ll cover what data privacy is, why it’s important, and discuss encryption in slightly more detail.</p>
+<p>Again, remember that there are people who dedicate their entire careers to data privacy. This lesson simply touches on the basics. Feel free to search on the Internet to learn even more about Data Privacy!</p>
+<div id="what-is-data-privacy" class="section level3" number="25.2.1">
+<h3><span class="header-section-number">25.2.1</span> What is Data Privacy?</h3>
+<p>Data privacy is:</p>
+<p>{cite: “Wikipedia”, url: “<a href="https://en.wikipedia.org/wiki/Information_privacy" class="uri">https://en.wikipedia.org/wiki/Information_privacy</a>”}
+&gt; the “relationship between the collection and dissemination of data, technology, the public expectation of privacy, and the legal and political issues surrounding them.”</p>
+<p>This complex definition correctly suggests that data privacy is not a simple matter. A simpler definition of data privacy would maybe be <strong>how to keep personal and private information safe</strong>.</p>
+<p>Concerns arise with data privacy whenever there is personally identifiable information (PII) or sensitive information that is being collected, stored, used, (and eventually destroyed and deleted). When handled appropriately, only people who should have access to the information do. When mishandled, this information could be accessed by others who should not have that information.</p>
+<p>Data are everywhere, so it’s incredibly important to think about data privacy early on in every single data science project. It’s much better to be <strong>too vigilant</strong> than to make a mistake, allow data to fall into the wrong hands, and have to try to clean up the mess, as you’ll see in a few examples below. So, think of data privacy concerns early and often to avoid making a mistake.</p>
+</div>
+<div id="personally-identifiable-information" class="section level3" number="25.2.2">
+<h3><span class="header-section-number">25.2.2</span> Personally Identifiable Information</h3>
+<p>In the US, <a href="https://en.wikipedia.org/wiki/Personally_identifiable_information">Personally Identifiable Information</a>, often simply referred to by the terms initials, PII, is any “information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual. This could be a first and last name, a picture of someone’s face, a driver’s license number, a date of birth, an address, an individual’s genetic code, or a telephone number, among many other pieces of information. All of these pieces of information could help identify a person. It’s these type of data that <em>must</em> be handled extremely carefully.</p>
+<p>When you sign up for an app on your computer or phone, you likely provide that company with some PII. You often give them your name and your address (among other information). You likely assume that this company will handle your data appropriately, and, if everyone is following the rules, they will. This means they won’t share it with others, use it for purposes other than those for which you’ve given them permission, or allow others companies/people to steal your information. However, as reported regularly in the news, companies do <em>not</em> always handle your data as they should. We’ll discuss what concerns <em>you</em> should have as you’re working with other people’s data and how data <em>should</em> be handled.</p>
+</div>
+<div id="what-is-encryption" class="section level3" number="25.2.3">
+<h3><span class="header-section-number">25.2.3</span> What is encryption?</h3>
+<p>To review from the last lesson, when data are <a href="https://en.wikipedia.org/wiki/Encryption">encrypted</a>, all the information is jumbled into a code that can only be decoded by someone who has the key. This means that if data are intercepted while being transferred, the person who has intercepted the data will not be able to understand the data, as they won’t have access to the key and will only have the completely jumbled information. It is a security measure to help keep data safe.</p>
+<div id="working-in-rstudio-cloud" class="section level4" number="25.2.3.1">
+<h4><span class="header-section-number">25.2.3.1</span> Working in RStudio Cloud</h4>
+<p>In earlier lessons, you’ve been working in RStudio Cloud and will continue to do so as your hone your data science skills. Data on RStudio Cloud are encrypted at rest (when they’re sitting in your project) and in transit (when they’re being uploaded or downloaded). This means that, if intercepted, the person who has intercepted the data will not be able to decipher the information contained, as they don’t have the key.</p>
+<p>However, if you download data from RStudio Cloud and store them directly on your computer, they are no longer encrypted. If you have PII in a dataset that is stored on your laptop directly, that information is not protected. So, be careful working with datasets that contain PII that have been downloaded to your computer.</p>
+</div>
+<div id="https" class="section level4" number="25.2.3.2">
+<h4><span class="header-section-number">25.2.3.2</span> HTTPS</h4>
+<p>An additional reminder: websites that have <a href="https://" class="uri">https://</a> (rather than just <a href="http://" class="uri">http://</a>) also use encryption for data transfer, increasing security for data that are transferred. When working with PII and transferring data, be sure that the websites you’re working with are using HTTPS.</p>
+</div>
+</div>
+<div id="human-security" class="section level3" number="25.2.4">
+<h3><span class="header-section-number">25.2.4</span> Human Security</h3>
+<p><a href="https://en.wikipedia.org/wiki/Human_security">Human security</a> is the concept that individual people (rather than just countries) should be kept safe and secure. With regards to data science, this means that when working on the Internet, regulations and laws should be made not just to protect the security of a nation, but rather to <strong>protect every individual and their data</strong>.</p>
+<p>Data Science projects should NOT:
+* increase risk or harm
+* pose threats to individuals
+* make individuals’ PII publicly-available or susceptible to theft
+* break any laws
+* share data with other groups/companies without the consent of the individuals
+* saved data insecurely</p>
+</div>
+<div id="computer-security" class="section level3" number="25.2.5">
+<h3><span class="header-section-number">25.2.5</span> Computer Security</h3>
+<p>Computer Security (or cybersecurity) is</p>
+<p>{cite: “Wikipedia”, url: “<a href="https://en.wikipedia.org/wiki/Computer_security" class="uri">https://en.wikipedia.org/wiki/Computer_security</a>”}
+&gt; “the protection of computer systems from the theft and damage to their hardware, software or information, as well as from disruption or misdirection of the services they provide.”</p>
+<p>This means that, in addition to keeping individuals’ data safe (maximizing human security), data science projects must <em>also</em> consider how to ensure that the computers and software they use and create are designed in a secure manner. For data science projects, this means that data being transferred over the Internet should be done so safely (using encryption) and that software you develop or use should not post PII or other sensitive to the Internet.</p>
+</div>
+<div id="open-science" class="section level3" number="25.2.6">
+<h3><span class="header-section-number">25.2.6</span> Open Science</h3>
+<p>There is an important movement in science currently where individuals promote what is known as open science. Practitioners of open science support making their scientific studies as transparent as possible. Specifically, they provide all the data, programming code, and software necessary to repeat their analyses. Open science is great for the scientific community and public, as everyone has access to the tools and data used. However, it is not without its privacy risk.
+Open Science practitioners are still responsible for protecting PII. This means that individual-level information (names, dates of birth, addresses, etc.) must all be removed from one’s dataset before it is released to the public. Being a supporter and practitioner of open science is great, but you must always ensure that when you’re releasing and sharing data, you are not inadvertently putting others at risk.</p>
+<div id="open-data" class="section level4" number="25.2.6.1">
+<h4><span class="header-section-number">25.2.6.1</span> Open Data</h4>
+<p>Open data are data that are freely-available to anyone. Local and federal governments as well as many scientists make their data freely-available to the public. Open data are wonderful in that anyone can work with them. Sharing data is a great thing! But, sharing must be done with the caveats already mentioned. Individual-level information (PII) should be removed from datasets prior to release. Individuals should <em>not</em> be identifiable from data freely-available on the Internet.</p>
+</div>
+<div id="open-source-software" class="section level4" number="25.2.6.2">
+<h4><span class="header-section-number">25.2.6.2</span> Open-source Software</h4>
+<p>Like open data, open-source software are software that are designed to be freely-available to anyone. This means that the software code is all available, so others can not only download and use the software for free, <em>but also</em> can download the code and modify it for their own purposes. The R programming language is itself an open-source project and all packages made for R are also open-source. This means that programming in R will always be free, and the code will always be publicly-available.</p>
+</div>
+</div>
+<div id="data-breaches" class="section level3" number="25.2.7">
+<h3><span class="header-section-number">25.2.7</span> Data Breaches</h3>
+<p>To understand data privacy, it’s good to know definitions and best practices, but it’s also important to learn from past mistakes. Companies have not always handled data securely. Here, we’ll discuss a few famous data breaches and touch on what went wrong so these errors can be avoided in the future.</p>
+<div id="facebook" class="section level4" number="25.2.7.1">
+<h4><span class="header-section-number">25.2.7.1</span> Facebook</h4>
+<p>In March of 2018, The <a href="https://www.nytimes.com/2018/03/17/us/politics/cambridge-analytica-trump-campaign.html">New York Times</a> and <a href="https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election">The Guardian</a> both broke stories about how data from at least 50 million Facebook profiles were used by a company called Cambridge Analytica to build profiles of individual US voters, allowing individuals be to targeted with personalized political advertisements.</p>
+<p>While the details are provided in the links provided above, briefly here, the data were mined from individuals who had consented for their data to be used for academic purposes. <em>However</em>, Cambridge Analytica was collecting these data for non-academic purposes <em>and</em> collecting data from friends of these individuals who had consented to have their data collected but who had not consented to have their data used.</p>
+<p>This <strong>data breach</strong> at Facebook demonstrated that Facebook did not have sufficient protocols in place to protect user data. As a result, Mark Zuckerberg, Facebook’s CEO, has <a href="https://www.nytimes.com/2018/04/10/us/politics/mark-zuckerberg-testimony.html">had to testify before Congress</a> and the company has <a href="https://www.independent.co.uk/life-style/gadgets-and-tech/news/mark-zuckerberg-facebook-2018-resolution-fix-post-update-latest-challenge-personal-a8142181.html">promised to make changes to improve data security</a>.</p>
+</div>
+<div id="equifax" class="section level4" number="25.2.7.2">
+<h4><span class="header-section-number">25.2.7.2</span> Equifax</h4>
+<p>In the Fall of 2017 Equifax, a credit-reporting agency, <a href="https://www.equifaxsecurity2017.com/">disclosed that partial driver’s license information was stolen from 2.4 million US consumers</a>. This hack was traced back to a <a href="http://www.businessinsider.com/how-did-equifax-get-hacked-2017-9">“preventable software flaw”</a>. In other words, in March of 2017, Equifax identified a weakness in a piece of software they were using. However, they did not move to fix that weakness quickly. Partial drivers licenses were stolen from May until June of 2017. Thus, Equifax knew about the problem before any data were actually breached. The entire breach could have been avoided. Prioritizing security and moving to fix problems immediately upon realizing an issue is critically important.</p>
+</div>
+<div id="ashley-madison" class="section level4" number="25.2.7.3">
+<h4><span class="header-section-number">25.2.7.3</span> Ashley Madison</h4>
+<p>In July of 2015, Ashley Madison, a website that helps people cheat on their spouses, <a href="http://fortune.com/2015/08/26/ashley-madison-hack/">was hacked</a> and personal information, including e-mail addresses, from 32 million site member’s were stolen and published. The windfall rippled through society, leading to <a href="https://www.theguardian.com/technology/2016/feb/28/what-happened-after-ashley-madison-was-hacked">resignations, divorces and suicides</a>. The “Impact Team,” the group of hackers responsible for this hack, publicly stated that part of the reason they decided to release the data was because Ashley Madison had been charging users a $19 fee to completely erase their profile information, but that Ashley Madison had failed to actually scrub these data from their records. The security lesson here is that there should always be a mechanism by which users can remove themselves from a dataset. In the European Union, the General Data Protection Regulation (GDPR) has stated that, by law, companies must have this feature built-in. Users should always be able to remove themselves from a dataset.</p>
+</div>
+<div id="okcupid" class="section level4" number="25.2.7.4">
+<h4><span class="header-section-number">25.2.7.4</span> OKCupid</h4>
+<p>In May of 2016, researchers <a href="https://motherboard.vice.com/en_us/article/8q88nx/70000-okcupid-users-just-had-their-data-published">scraped profiles</a> <a href="https://www.vox.com/2016/5/12/11666116/70000-okcupid-users-data-release">from 70,000 users on OKCupid</a>, an online dating site, and made them completely open to the public. These researchers did not (1) have permission from OKCupid, (2) obtain informed consent from the users, nor did they (3) remove PII from the data prior to release. Since their original release on <a href="https://osf.io/">The Open Science Framework</a>, given the issues with the dataset just mentioned and the fact that the collection of the data did not follow OKCupid’s Terms of Service, the dataset was taken down. However, <a href="https://www.vox.com/2016/5/12/11666116/70000-okcupid-users-data-release">hundreds of people had already downloaded the data</a> at that point.</p>
+<p>In this case, a set of researchers did not comply with the Terms of Service they agreed to by signing up for OKCupid. While it was likely not illegal to obtain the data, as OKCupid made the data sort-of-public, it was certainly unethical, as the researchers did not take individual data security practices into consideration. So, even when you’re not necessarily doing something <em>illegal</em>, you can still do something unethical that does not follow good data privacy practices.</p>
+</div>
+<div id="strava" class="section level4" number="25.2.7.5">
+<h4><span class="header-section-number">25.2.7.5</span> Strava</h4>
+<p>A similar example of using data legally but with unintended negative consequences occurred when data from Strava, a popular fitness-tracking app, <a href="https://www.theguardian.com/world/2018/jan/28/fitness-tracking-app-gives-away-location-of-secret-us-army-bases">gave away the location of secret US army bases</a> throughout the world in late 2017.</p>
+<p>Individual users would use the app to track their activity; however, in foreign countries, where Strava-users are almost exclusively foreign military personnel, bases can be identified easily from Strava heatmaps, which show all the activity tracked by its app users, as they are the only individuals contributing to the maps in those areas. The lesson to be learned here is that when releasing data, always consider possible unintended consequences. Think hard about the implications of your data and your analyses. Being vigilant and always considering data privacy and possible unintended consequences of your work are incredibly important.</p>
+</div>
+</div>
+<div id="conclusions-1" class="section level3" number="25.2.8">
+<h3><span class="header-section-number">25.2.8</span> Conclusions</h3>
+<p>Hopefully we’ve explained a number of considerations to take into account when working with and sharing data. Data are powerful. It’s important to use them responsibly.</p>
+<ul>
+<li>Be careful with PII</li>
+<li>Fix security issues immediately</li>
+<li>Keep individuals’ data safe</li>
+<li>Don’t steal data</li>
+<li>Even if it’s legal, it may not be right or ethical</li>
+<li>Consider unintended consequences of your work</li>
 </ul>
 
+</div>
 </div>
 </div>
 <hr>
@@ -1246,8 +1440,8 @@ What are you seeing that is making you think something is wrong? Is it an error 
           </div>
         </div>
       </div>
-<a href="basic-commands-in-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="r-packages.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="finding-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cleaning-the-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

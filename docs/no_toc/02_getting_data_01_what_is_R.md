@@ -137,7 +137,7 @@ In Terminal you used the `ls` command to list the contents of a directory for ve
 
 In this lesson, you learned about R functions that are analogous to Terminal commands for managing files. As you work on projects, you'll gain an appreciation for the benefits of managing files using a programming language.
 
-# Managing Files in the Terminal
+## Managing Files in the Terminal
 
 As was discussed in the first lesson of this course, one of the most important aspects of being a productive data scientist is staying organized. And a big part of staying organized is in managing your files: knowing where they are located and manipulating them with ease. In these next few lessons, we will be getting you fluent in orienting yourself in file systems in two areas: the Terminal and R/RStudio. In this lesson, we will focus on working with the Terminal.
 

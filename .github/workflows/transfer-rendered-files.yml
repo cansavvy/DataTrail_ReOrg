@@ -87,7 +87,7 @@ jobs:
           base_url=https://${GH_PAT}@raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_REF#refs/heads/}
 
           # remove old Rmd files
-          rm $(find . -name '*.Rmd'  | grep '.Rmd' )
+          rm -f $(find . -name '*.Rmd'  | grep '.Rmd' )
           input="resources/rmd_list.txt"
           while IFS= read -r line
           do

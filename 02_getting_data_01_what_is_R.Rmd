@@ -3,7 +3,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# What is R?
+# What is R
 
 ### Introduction to R
 

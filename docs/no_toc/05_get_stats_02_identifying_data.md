@@ -1,5 +1,5 @@
 
-# Do I Have The Data I Need?
+# Identifying Data
 
 After identifying your problem and transforming it into a data science question, your next step is to identify and ensure that you have access to the data necessary to answer the question. However, good data can be hard to come by. Depending on your question, it can be costly or simply infeasible to obtain the data you need.
 

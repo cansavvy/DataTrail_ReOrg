@@ -80,21 +80,6 @@ jobs:
           svn export --force https://github.com/${GITHUB_REPOSITORY}.git/branches/${GITHUB_REF#refs/heads/}/resources/chapt_screen_images resources/chapt_screen_images
           svn export --force https://github.com/${GITHUB_REPOSITORY}.git/branches/${GITHUB_REF#refs/heads/}/_bookdown.yml _bookdown.yml
 
-          # Get list of Rmds needing to copy
-          Rscript --vanilla scripts/get_rmd_filenames.R
-
-          # the url from this repo where files will be downloaded from
-          base_url=https://${GH_PAT}@raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_REF#refs/heads/}
-
-          # remove old Rmd files
-          rm -f $(find . -name '*.Rmd'  | grep '.Rmd' )
-          input="resources/rmd_list.txt"
-          while IFS= read -r line
-          do
-            echo "$line"
-            curl --fail -s ${base_url}/${line} > ${line}
-          done < "$input"
-
       - name: Create PR with resources files
         if: ${{ steps.git_repo_check.outputs.git_results == 'TRUE' }}
         uses: peter-evans/create-pull-request@v3

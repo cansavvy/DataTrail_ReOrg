@@ -1,4 +1,4 @@
-1-Intro-–-Welcome-to-DataTrail.md
+1-Intro:-Welcome-to-DataTrail.md
 2-Finding-Help.md
 3-What-is-a-Chromebook.md
 4-Working-Offline-vs-Online.md

@@ -1,7 +1,7 @@
 
 
 
-# What is R?
+# What is R
 
 ### Introduction to R
 

@@ -14,7 +14,7 @@ https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/rstudio-cloud.html	11 RSt
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/rstudio-and-projects.html	12 RStudio and Projects	resources/chapt_screen_images/rstudio-and-projects.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/your-first-data-science-project.html	13 Your First Data Science Project	resources/chapt_screen_images/your-first-data-science-project.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/getting-data.html	14 Getting Data	resources/chapt_screen_images/getting-data.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/what-is-r.html	15 What is R?	resources/chapt_screen_images/what-is-r.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/what-is-r.html	15 What is R	resources/chapt_screen_images/what-is-r.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/objects-in-r.html	16 Objects in R	resources/chapt_screen_images/objects-in-r.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/working-with-logicals.html	17 Working with Logicals	resources/chapt_screen_images/working-with-logicals.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-frames-1.html	18 Data Frames	resources/chapt_screen_images/data-frames-1.png
@@ -26,7 +26,7 @@ https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/dataset-file-types.html	2
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/finding-data.html	24 Finding Data	resources/chapt_screen_images/finding-data.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/ethical-data-science.html	25 Ethical Data Science	resources/chapt_screen_images/ethical-data-science.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/cleaning-the-data.html	26 Cleaning the Data	resources/chapt_screen_images/cleaning-the-data.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/what-is-tidy-data.html	27 What is Tidy Data?	resources/chapt_screen_images/what-is-tidy-data.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/what-is-tidy-data.html	27 What is Tidy Data	resources/chapt_screen_images/what-is-tidy-data.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/reshaping-data.html	28 Reshaping Data	resources/chapt_screen_images/reshaping-data.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/how-to-tidy-data.html	29 How to Tidy Data	resources/chapt_screen_images/how-to-tidy-data.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/joining-data.html	30 Joining Data	resources/chapt_screen_images/joining-data.png
@@ -50,7 +50,7 @@ https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-visualization-1.html
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/data-visualization-project.html	48 Data Visualization Project	resources/chapt_screen_images/data-visualization-project.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/getting-statistics.html	49 Getting statistics	resources/chapt_screen_images/getting-statistics.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/translating-questions-to-data-science-questions.html	50 Translating Questions to Data Science Questions	resources/chapt_screen_images/translating-questions-to-data-science-questions.png
-https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/do-i-have-the-data-i-need.html	51 Do I Have The Data I Need?	resources/chapt_screen_images/do-i-have-the-data-i-need.png
+https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/identifying-data.html	51 Identifying Data	resources/chapt_screen_images/identifying-data.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/descriptive-analysis.html	52 Descriptive Analysis	resources/chapt_screen_images/descriptive-analysis.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/exploratory-analysis.html	53 Exploratory Analysis	resources/chapt_screen_images/exploratory-analysis.png
 https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/inference-overview.html	54 Inference: Overview	resources/chapt_screen_images/inference-overview.png

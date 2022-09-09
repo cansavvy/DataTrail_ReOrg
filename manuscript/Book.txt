@@ -12,7 +12,7 @@
 12-RStudio-and-Projects.md
 13-Your-First-Data-Science-Project.md
 14-Getting-Data.md
-15-What-is-R?.md
+15-What-is-R.md
 16-Objects-in-R.md
 17-Working-with-Logicals.md
 18-Data-Frames.md
@@ -24,7 +24,7 @@
 24-Finding-Data.md
 25-Ethical-Data-Science.md
 26-Cleaning-the-Data.md
-27-What-is-Tidy-Data?.md
+27-What-is-Tidy-Data.md
 28-Reshaping-Data.md
 29-How-to-Tidy-Data.md
 30-Joining-Data.md
@@ -48,7 +48,7 @@
 48-Data-Visualization-Project.md
 49-Getting-statistics.md
 50-Translating-Questions-to-Data-Science-Questions.md
-51-Do-I-Have-The-Data-I-Need?.md
+51-Identifying-Data.md
 52-Descriptive-Analysis.md
 53-Exploratory-Analysis.md
 54-Inference:-Overview.md

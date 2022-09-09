@@ -1,0 +1,7 @@
+# 59 Sharing results
+ 
+{type: iframe, title:59 Sharing results, width:800, height:600, poster:resources/chapt_screen_images/sharing-results.png}
+![](https://datatrail-jhu.github.io/DataTrail_ReOrg/no_toc/sharing-results.html)
+ 
+
+ 

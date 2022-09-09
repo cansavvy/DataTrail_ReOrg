@@ -1127,16 +1127,16 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>Navigate to the GitHub webpage for your repository. This URL always has the form</p>
 <pre class="text"><code>https://github.com/github_username/repository_name</code></pre>
 <p>For example, in our last lesson, the URL for our repository is <a href="https://github.com/JaneEverydayDoe/first_project/">https://github.com/JaneEverydayDoe/first_project/</a>. On this page, you will see a button on the right hand side that says “Clone or download”. When you click this, highlight the URL in the box, and copy it to the clipboard. Make sure it starts with “https” rather than “git@”. If you see “git@”, click the link in the top right corner of the box that says “Use HTTPS”.</p>
-<p><img src="resources/images/06_report_results_04_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g36809c5e39_0_0.png" title="Obtain URL of repository" alt="Obtain URL of repository" width="480" style="display: block; margin: auto;" /></p>
+<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g36809c5e39_0_0.png" title="Obtain URL of repository" alt="Obtain URL of repository" width="480" style="display: block; margin: auto;" /></p>
 </div>
 <div id="step-2-use-the-rstudio-interface-to-clone-the-repository" class="section level3" number="64.0.2">
 <h3><span class="header-section-number">64.0.2</span> Step 2: Use the RStudio interface to clone the repository</h3>
 <p>In RStudio cloud, go to your workspace by clicking the appropriate button on the left side navigation bar.</p>
 <p>Click the <code>New Project</code> button and choose <code>New Project from Git Repository</code></p>
-<p><img src="resources/images/06_report_results_04_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g2bfdb07292_0_151.png" title="Copy the GitHub repository url" alt="Copy the GitHub repository url" width="480" style="display: block; margin: auto;" /></p>
+<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g2bfdb07292_0_151.png" title="Copy the GitHub repository url" alt="Copy the GitHub repository url" width="480" style="display: block; margin: auto;" /></p>
 <p>Place the URL that you copied in Step 1 in the <code>URL of your Git Repository</code> box, and click <code>OK</code>.
 You will a <code>Deploying Project</code> progress screen, typically after a few seconds, the RStudio interface for your project will appear.</p>
-<p><img src="resources/images/06_report_results_04_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_18.png" title="Copy the url in this box" alt="Copy the url in this box" width="480" style="display: block; margin: auto;" /></p>
+<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_18.png" title="Copy the url in this box" alt="Copy the url in this box" width="480" style="display: block; margin: auto;" /></p>
 <p>Also note that in the bottom right hand corner of RStudio, in the <code>Files</code> pane, you will have the files that are in your GitHub repository, now available in this RStudio cloud workspace.</p>
 </div>
 <div id="step-3-set-up-github-credentials" class="section level3" number="64.0.3">
@@ -1145,7 +1145,7 @@ You will a <code>Deploying Project</code> progress screen, typically after a few
 <ol style="list-style-type: decimal">
 <li>In your RStudio interface, make sure that you are in the <code>Console</code> tab.</li>
 </ol>
-<p><img src="resources/images/06_report_results_04_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_0.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" /></p>
+<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_0.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" /></p>
 <ol start="2" style="list-style-type: decimal">
 <li>Now use the command below to install the package <code>usethis</code>. Copy and paste it in the Console window and click Enter on your keyboard. This package will help us manage our GitHub credentials from RStudio more easily.</li>
 </ol>
@@ -1165,14 +1165,14 @@ You will a <code>Deploying Project</code> progress screen, typically after a few
 <p>Underneath the <code>Note</code> put something that reminds you what this PAT is for. Something like <code>RStudioCloud Access</code>. (Note that each PAT you make needs its own unique <code>Note</code> though).</p>
 <p>Underneath the <code>Select scopes</code> section <strong>you don’t need to do anything</strong>, <code>usethis</code> package already chose the permissions we need.</p>
 <p>Scroll all the way down on this page and click <code>Generate Token</code>. You’ve created your first PAT! <strong>Do not close this window</strong>, keep it handy for now. Note that in the image below we blocked out our PAT, but yours will show a jumble of letters and numbers</p>
-<p><img src="resources/images/06_report_results_04_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_26.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" /></p>
+<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_26.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" /></p>
 <ol start="5" style="list-style-type: decimal">
 <li>Return back to your RStudio Cloud project while keeping your PAT handy.
 In the <code>Console</code> window, run this command:</li>
 </ol>
 <div class="sourceCode" id="cb396"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb396-1"><a href="cloning-a-repository.html#cb396-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code></pre></div>
 <p>It will ask you to <code>? Enter password or token</code>. Copy your PAT and paste it into the command window and press Enter.</p>
-<p><img src="resources/images/06_report_results_04_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_34.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" /></p>
+<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_34.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" /></p>
 <p>After you enter your PAT here you should get a message like:</p>
 <pre><code>-&gt; Adding new credentials...
 -&gt; Removing credetials from cache...
@@ -1230,7 +1230,7 @@ GitHub remote configuration
 <div id="directoryfolder-organization" class="section level3" number="64.0.4">
 <h3><span class="header-section-number">64.0.4</span> Directory/Folder Organization</h3>
 <p>A big part of staying organized with your files is understanding how folders in your project are organized. Also important is the concept of a <strong>working directory</strong>. Whenever you are working in R or the Terminal, files are housed in some folder. This folder is called the working directory. Knowing this is important so that you know how to specify paths to other important folders in your project. We can see what the current working directory is in a number of ways. In the image below, we can see from the Terminal prompt that the working directory is <code>/cloud/project</code>. We can also see this in the Files pane. We see that the first level folder is <code>cloud</code> and that the second level folder is <code>project</code>.</p>
-<p><img src="resources/images/06_report_results_04_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_22_8.png" title="Working directories" alt="Working directories" width="480" style="display: block; margin: auto;" />
+<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_22_8.png" title="Working directories" alt="Working directories" width="480" style="display: block; margin: auto;" />
 Congratulations! You have cloned your first repository!</p>
 
 </div>

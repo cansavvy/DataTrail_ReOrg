@@ -464,7 +464,6 @@ the-readme-file
 using-comments
 write-in-a-modular-way
 follow-a-style-guide
-data-tidying
 data-tidying-project
 rstudio-cloud-setup
 data-science-project-setup
@@ -606,7 +605,6 @@ plotly-animated-graphics
 plotly-in-rmarkdown-reports
 gganimate
 additional-resources-17
-data-visualization-1
 data-visualization-project
 rstudio-cloud-setup-1
 data-science-project-setup-1
@@ -771,7 +769,6 @@ variable-selection-2
 accuracy-assessment-1
 summary-15
 additional-resources-22
-stats-project
 stats-project-exercise
 rstudio-cloud-setup-2
 data-science-project-setup-2
@@ -781,7 +778,7 @@ loading-the-data-into-r
 analyze-the-data
 exploratory-data-analysis
 inferential-data-analysis
-data-visualization-2
+data-visualization-1
 save-the-plot-1
 add-markdown-text-to-.rmd-2
 knit-your-r-markdown-document-2

@@ -62,13 +62,9 @@ Working together and asking questions:
 - Helps everyone learn more!
 - Helps everyone have a better, less frustrating time!
 
-No one knows everything and that is okay and expected. 
+No one knows everything and that is okay and expected.
 
 While we'll point out where to find help when you're stuck throughout this course set; however, it may not be obvious *when* to ask for help. While this is not a hard and fast rule, if you've been trying to find the answer to something you're stuck on for half an hour and cannot figure it out, it may be time to post your question online for someone else to answer or to reach out directly to someone to get your question answered. During the half hour when you're trying on your own, you should **Google for the answer**. If it's a coding question, you should try **running code** to test to see if the fixes from Google fix your problem. If you're getting **error messages**, paste those messages into Google. If after trying all of these things you're still stuck, then you should **ask for help** *every time*. Rather than give up because you're stuck, **ask questions**!
 
 
 ![Ask Questions](https://docs.google.com/presentation/d/1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY/export/png?id=1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY&pageid=g3f394e96d2_0_62)
-
-### Summary
-
-Learning how to learn and asking questions may seem simple when you read this lesson, but in practice it can be tough. It's *hard* to admit you don't know something and it can be difficult sometimes to explain what it is you don't know. Try anyway! Everyone was a beginner at some point. Those who moved from beginner to advanced did so because they learned the material, practiced *and* because they asked questions along the way. We'll remind you of the information included in this lesson throughout the course set because while it's easy to read the information here, it's not always easy to remember it when you're struggling!

@@ -3,11 +3,26 @@
 
 Now that we have a handle on what version control is and how we can interface with it, we'll take some time to look at GitHub and get familiar with their website.
 
-As we previously learned, [GitHub](https://github.com/) is a cloud-based management system for your version controlled files. Like DropBox, your files are both locally on your computer *and* hosted online and easily accessible. Its interface allows you to manage version control and provides users with a web-based interface for creating projects, sharing them, updating code, etc.
+## Create a GitHub Account
+
+[GitHub](http://www.github.com) is a website that hosts computer code and allows for version control. We'll get back to what version control is later, but as for now, know that GitHub is where you'll be 'saving' all of the code you write. It's also a place where you can look at other people's code. And, throughout this program, you'll realize that you can learn a lot from other people's code!
+
+To get a GitHub account, first type www.github.com into the web address bar at the top of your Chrome window and hit 'Enter'.
+
+
+![GitHub web address](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_418)
+
+You will be brought to a page where you should fill in your information. As with the other accounts, try to use the same Username if possible. Enter your Gmail Email address. And, create a password that cannot be easily guessed by others. Then, click 'Sign up for GitHub.'
+
+
+![GitHub sign up](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_423)
+One final note about GitHub usernames in particular. This will be used for your website (which you'll build later) and *all* the code you write. You'll use GitHub a lot, so this is a case where it is particularly helpful to choose a good username, particularly one that has something to do with your name and not much else. For example, the person writing this lesson is named Shannon Ellis. Her GitHub username is "ShanEllis." While it is *possible* to change your GitHub username down the line, it's a bit of a pain, so choose wisely now!
+
+You now have a GitHub account!
 
 ### Logging in to GitHub
 
-In the introductory course, you learned how to create a GitHub account. Use your account username and password to log in to GitHub. To log in, go to [https://github.com/](https://github.com/), where you will be presented with the homepage. If you aren't already logged in, click on the "Sign in" link at the top.
+Use your account username and password to log in to GitHub (if you are not still logged in). To log in, go to [https://github.com/](https://github.com/), where you will be presented with the homepage. If you aren't already logged in, click on the "Sign in" link at the top.
 
 
 ![GitHub's homepage at https://github.com/](https://docs.google.com/presentation/d/1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo/export/png?id=1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo&pageid=g2bfdb07292_0_151)

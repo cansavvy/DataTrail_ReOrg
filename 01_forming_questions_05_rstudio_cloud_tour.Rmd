@@ -35,13 +35,20 @@ You should now see a list of your projects. This is a list of the instructor's p
 
 ![Choose your Google account](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_22)
 
-Now you can create a new project to work on for the rest of this class. To create a new project click on _New project_ in the upper right hand corner.
+### Creating a new project
 
+RStudio projects are where you will do your data science magic for this course and beyond!
+
+To get started working on a new project, you would click on the "New Project" blue icon toward the top right. If you click the arrow next to `New Project`, you will notice there are multiple different options for creating a new project. For now choose `New Rstudio Project`, and we will discuss and use those other options later.
 
 ![Create a new project](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_29)
 
-If you click on the name of the project - currently it will be _Untitled Project_ - then you can rename it.
 
+By starting a new project you'll be brought to a screen where three spaces are available.
+
+![RStudio Cloud Project](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_10)
+
+If you click on the name of the project - currently it will be _Untitled Project_ - then you can rename it.
 
 ![Click to change the title of the project](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_35)
 
@@ -50,60 +57,34 @@ To make things simple let's call it _my_first_project_. You will call it that by
 
 ![Rename the project my_first_project](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_41)
 
-We will come back to this project later and talk about where to put files, data, and other parts of your project. But for now, if you want to see all the projects you have you can click on the words _Your Workspace_ at the top left of the screen.
-
+If you want to see all the projects you have you can click on the words _Your Workspace_ at the top left of the screen.
 
 ![Click on Your Workspace to see all of your projects](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_181)
 
-
 If you want to return to a project, just click on the project name, for example by clicking on _my_first_project_.
-
 
 ![Click a project name to return to your project.](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_219)
 
+You will have more than one project you may want to organize. Projects are organized into Spaces. A space is just a place that lists out multiple projects.
 
-You will have more than one project you may want to organize. Projects are organized into Spaces. A space is just a place that lists out multiple projects. To see your other spaces click on the menu bar indicated by the three stacked lines in the upper left.
-
-
-![Click a project name to return to your project.](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313ea4ce38_0_19)
-
-
-If you have done the first course in the sequence then you belong at least to the _Introduction to DataTrail_ Space. You can click on the name of this space in the upper left to see your projects in that space.
-
-
+You can click on the name of the DataTrail space in the upper left to see your projects there.
 
 ![Click a project name to return to your project.](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313ea4ce38_0_33)
 
 If you want to return to your original space, click again in the top left hand on the menu bar, then click on _Your Workspace_ to return to your main set of projects.
 
-Now that you know how to create and navigate projects in the next lecture we will talk about organizing the files that fall within a project.
-
-### Getting Started in RStudio Cloud
-
-To get started working in [RStudio Cloud](rstudio.cloud), you'll want to go to [rstudio.cloud](rstudio.cloud) and log in using your RStudio Cloud login. You'll be logged into your home screen. To get started working on a new project, you would click on the "New Project" blue icon toward the top right. This will create a new project. However, all your old projects will be listed at left underneath "Spaces." You can always return to an old project or start a new one.
-
-
-![RStudio Cloud Home Screen - New Project ](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_0)
-
-By starting a new project you'll be brought to a screen where three spaces are available.
-
-
-![RStudio Cloud Project](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_10)
-
-However, if you remember from previously, there are four main quadrants when working in RStudio Cloud. To access the fourth space, you'll have to start a new file. To do so, you'll click on File, hover over New File from the drop-down menu that appears, and then click "R Markdown" from the drop-down menu.
-
-
-![Open up a new R Markdown](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_16)
-
-This will open up a new R Markdown, which is currently called "Untitled," which you can see on the tab at the top left of the quadrant has just appeared.
-
 ### The Tour
 
-Now that RStudio Cloud is opened and you have access to each of four quadrants, we can discuss and review each quadrant's purpose. We will go through each of the regions and describe some of their main functions, so follow along with each step and make sure you understand the function and how to access each part of RStudio Cloud on your own. But, it would be impossible to cover everything that RStudio can do, so we urge you to explore RStudio Cloud further on your own too!
-
+Now that we have a project. Return to your `my_first_project` so we can get oriented to the RStudio space.
+We will go through each of the regions and describe some of their main functions, so follow along with each step and make sure you understand the function and how to access each part of RStudio Cloud on your own. But, it would be impossible to cover everything that RStudio can do, so we urge you to explore RStudio Cloud further on your own too!
 
 ![RStudio's quadrants](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_38)
 
+To access the fourth space shown here, you'll have to start a new file. To do so, you'll click on File, hover over New File from the drop-down menu that appears, and then click "R Script" from the drop-down menu.
+
+![Open up a new file](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_16)
+
+This will open up a new R Script, which is currently called "Untitled," which you can see on the tab at the top left of the quadrant has just appeared.
 
 #### The menu bar
 
@@ -186,39 +167,30 @@ Do so now for your `View(example)` object and send it to Source.
 
 This line of code is now in your Source document. When you save this document, you'll also have this line of code saved for future use.
 
-#### Saving Script Files
+#### Saving Files
 
 Now that you've created a script with code in it, you likely want to save it. To do so, you'll want to click on the save icon.
-
 
 ![Save Icon](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_256)
 
 In RStudio Cloud this will open a Save File window.
 
-
 ![Save File Window](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g39ceb1e717_0_6)
 
-In the File Organization Course, you learned that code is saved in a directory called code. So, we'll first create a "New Folder".
+Type in the name you want for this file. For now, let's call it 'R_basics.R'. It's important that it ends in a `.R` since that is the file type we are working with, but we'll return to this concept later.
 
+Click the `Save` button.
+The file name 'R_basics.R' will now show up in the tab at the top of the R Source quadrant.
+
+#### Making a new folder
+
+Now let's create a new folder for storing our data that we'll need.
 
 ![New Folder](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_262)
 
-We'll name this folder "code" by typing it in the box and clicking "OK".
+We'll name this folder "data" by typing it in the box and clicking "OK".
 
-
-![Create code folder](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_267)
-
-After creating this new folder, as discussed in a previous lesson, you'll see along the top that you're now in the "code" directory. Within this folder, we'll create another new folder called "raw_code."
-
-
-![Create raw_code folder](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_276)
-
-This is where we'll save this file as "R_basics.R" by typing that in the File name: box and clicking "Save."
-
-
-![Save file by typing file name in "File name:" box](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_281)
-
-This file name 'R_basics.R' will now show up in the tab at the top of the R Source quadrant.
+To move in and out of folders, you can click on folder names in the `Files` pane.
 
 ### Files/Help/Plots/Packages/Viewer
 
@@ -226,26 +198,23 @@ This file name 'R_basics.R' will now show up in the tab at the top of the R Sour
 
 You can also see where this file is saved using the fourth and final quadrant in RStudio Cloud that we'll discuss. In this final quadrant you'll see five tabs: Files, Plots, Packages, Help, and Viewer.
 
-
 ![Files, Plots, Packages, Help, Viewer](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_286)
 
-In Files, you can see everything in your current working directory. You should now be able to see the code folder you just created.
-
+In Files, you can see everything in your RStudio Cloud project by moving around. You should now be able to see the data folder you just created.
 
 ![code directory in Files tab](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_291)
 
-By clicking on that folder, you should then see the raw_code folder you created.
+Clicking on that folder, and create another folder within it called `raw_data`
 
+![raw_data folder in Files tab](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_296)
 
-![raw_code folder in Files tab](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_296)
+Note that you can see on the top of this bar what folder this folder is in. This is called a file path and we'll get into this more later.
 
-By clicking on this, you'll see the script file you just saved!
+Let's create some fake data to store in this `raw_data` folder. Click the `New Blank File` button and create a Text file that is called `hello.txt` and save it to this `raw_data` folder.
 
-
-![R_basics.R is saved in code/raw_code/](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_300)
+![](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_300)
 
 After you save a file in a folder, if you realize it's not where you wanted it, you do have the option to move it around. To do so, click on the check box of the file you want to move, and click on the "More" icon to expose options. Click through these to move your file to where you actually wanted it.
-
 
 ![The "More"" icon](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g31f42765ab_0_79)
 
@@ -276,7 +245,7 @@ Throughout the DataTrail curriculum, we'll be using something called [Swirl modu
 
 To make sure that you're comfortable using Swirl, we'll go through the steps on where to go to run Swirl and how to work through a module. This will be important as many of the quizzes accompanying these lessons will require you to use Swirl. Follow the steps in this section of the lesson to get started with your first Swirl module!
 
-Open up a new project in R and call it "swirl_practice_yourname" but replace `yourname` with your own name.
+Following the steps we just did, open up a new project in R and call it `swirl_practice_yourname` but replace `yourname` with your own name.
 
 In this new project, run the following code to install swirl:
 

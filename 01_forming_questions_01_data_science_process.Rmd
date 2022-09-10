@@ -104,7 +104,3 @@ The following are smaller projects than the example above, but data science proj
 * [Text analysis of Trump's tweets confirms he writes only the (angrier) Android half](http://varianceexplained.org/r/trump-tweets/), by [David Robinson](http://varianceexplained.org/about/)
 * [Where to Live in the US](http://www.masalmon.eu/2017/11/16/wheretoliveus/), by [Maelle Salmon](https://masalmon.eu/)
 * [Sexual Health Clinics in Toronto](https://sharlagelfand.netlify.com/posts/tidying-toronto-open-data/), by [Sharla Gelfand](https://sharlagelfand.netlify.com/about/)
-
-### Conclusions
-
-In this lesson, we hope we've conveyed that sometimes data science projects are tackling difficult questions ('Can we predict the risk of opioid overdose?') while other times the goal of the project is to answer a question you're interested in personally ('Is Hilary the most rapidly poisoned baby name in recorded American History?'). In either case, the process is similar. You have to form your question, get data, explore and analyze your data, and communicate your results. With the tools you'll learn in this series of courses, you will be able to set out and carry out your own data science projects, like the examples included in this lesson!

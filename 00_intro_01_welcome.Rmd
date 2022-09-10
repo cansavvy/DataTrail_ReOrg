@@ -14,14 +14,14 @@ default-quiz-show-answers: none
 
 # **Intro: Welcome to DataTrail**
 
-Hello and welcome! This is the first course in the _DataTrail_ program. The goal of _DataTrail_ is to help anyone with an internet connection and a computer learn to do data science. The program will start with the very basics of using a computer on the internet and work all the way up to doing data science and data analysis. We hope that by building this program we can help people get into the exciting tech world in one of the [fastest growing](https://insights.dice.com/2020/02/13/fastest-growing-tech-occupations-data-scientist-engineer/) and [most satisfying](https://www.techrepublic.com/article/is-data-scientist-the-most-rewarding-tech-job-new-report-says-yes/) jobs in the United States. There are only going to be more and more jobs asking for [data science skills](https://www.forbes.com/sites/louiscolumbus/2017/05/13/ibm-predicts-demand-for-data-scientists-will-soar-28-by-2020/) in the future. We believe that by making this career accessible to anyone we can have a positive impact on the world.
+Hello and welcome! The goal of _DataTrail_ is to help anyone with an internet connection and a computer learn to do data science. The program will start with the very basics of using a computer on the internet and work all the way up to doing data science and data analysis. We hope that by building this program we can help people get into the exciting tech world in one of the [fastest growing](https://insights.dice.com/2020/02/13/fastest-growing-tech-occupations-data-scientist-engineer/) and [most satisfying](https://www.techrepublic.com/article/is-data-scientist-the-most-rewarding-tech-job-new-report-says-yes/) jobs in the United States. There are only going to be more and more jobs asking for [data science skills](https://www.forbes.com/sites/louiscolumbus/2017/05/13/ibm-predicts-demand-for-data-scientists-will-soar-28-by-2020/) in the future. We believe that by making this career accessible to anyone we can have a positive impact on the world.
 
 ## Learning objectives for this section
 
 In this section our goal is for you to be able to:
 
 - Understand the components of this DataTrail course
-- Navigate the basic use of your chromebook and its operating system
+- Navigate the basic use of your Chromebook and its operating system
 - Acknowledge the expectations and requirements for completing this course
 - Describe what data science is
 - Setup the basic accounts you will need to complete this course
@@ -31,8 +31,8 @@ In this section our goal is for you to be able to:
 Before we jump into the content, we just wanted to orient you to how this course and all the courses in this program will be laid out:
 
 * **Lessons** - Each course will consist of lessons. You're looking at the first lesson here. It's called "Welcome to DataTrail". You can see a list of all the lessons in this course in the left panel. The lessons will contain text and images to walk you through every lesson of each course.
-* **Quizzes** - Most lessons will have a quiz to evaluate your understanding of the material in that lesson. Successful completion of these quizzes is required for receipt of the certificate at the end of each course.
-* **Exercise** - Some courses will have associated exercises. Think of these as larger projects. They won't be required to receive the certificate at the end of the course; however, the skills the exercises require will be essential if you're interested in getting a job in data science, so we highly suggest you complete them.
+* **Quizzes** - Most lessons will have a quiz to evaluate your understanding of the material in that lesson. Successful completion of these quizzes is required for receipt of the certificate at the end of each course. Quizzes often also have an interactive component called `swirl` which we will introduce you to. 
+* **Projects** - Some courses will have associated exercises. Think of these as larger projects. They won't be required to receive the certificate at the end of the course; however, the skills the exercises require will be essential if you're interested in getting a job in data science, so we highly suggest you complete them.
 
 ### What is data science?
 
@@ -91,7 +91,7 @@ Our goal here is also to create a supportive and inclusive learning experience. 
 
 ### How the program is organized
 
-This program is a series of online classes. They are designed to be used in many different ways so they can be useful for the most people possible. The courses and projects can be completed entirely online using nothing more than a web browser.
+This course is designed to be used in many different ways so they can be useful for the most people possible. The courses and projects can be completed entirely online using nothing more than a web browser.
 
 To keep up on the latest information about the program, courses and more go to https://www.DataTrail.org/.
 

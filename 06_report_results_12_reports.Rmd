@@ -5,9 +5,9 @@ ottrpal::set_knitr_image_path()
 
 The goal of a written report is to effectively communicate your full analysis to your readers. This means that your writing should be clear, your figures should be helpful, and your audience should be able to understand what you did to reach the conclusions your presenting.
 
-In the Course Set thus far we've discussed Markdown and RMarkdown documents. We'll continue to use this format throughout this lesson. We won't discuss the basics of RMarkdown, however, as that has been covered in an earlier lesson.
+In the Course Set thus far we've discussed Markdown and R Markdown documents. We'll continue to use this format throughout this lesson. We won't discuss the basics of R Markdown, however, as that has been covered in an earlier lesson.
 
-Specifically, in this lesson we'll discuss what to include in your data science reports, using the RMarkdown format to guide us.
+Specifically, in this lesson we'll discuss what to include in your data science reports, using the R Markdown format to guide us.
 
 ### What To Include
 

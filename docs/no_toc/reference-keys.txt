@@ -101,8 +101,6 @@ learning-how-to-learn
 the-mindset
 the-path
 asking-for-help
-rstudio-cloud
-rstudio-cloud-basics
 rstudio-and-projects
 logging-in-to-rstudio-cloud
 creating-a-new-project
@@ -127,7 +125,7 @@ learning-objectives-1
 what-is-r
 introduction-to-r
 rstudio
-rstudio-cloud-1
+rstudio-cloud
 basic-history
 learning-r
 managing-files-in-r
@@ -268,28 +266,6 @@ dslabs
 fivethirtyeight-data
 kaggle
 more-places-to-get-data
-google-documents
-google-sheets
-what-is-a-spreadsheet
-setting-up-your-spreadsheet
-collecting-data
-checking-your-data
-publishing-to-the-web
-making-the-sheet-public
-google-docs
-auto-save-feature-and-working-offline
-working-in-google-docs
-formatting-font
-aligning-text
-inserting-a-list
-inserting-an-image
-from-a-url
-from-your-computer
-inserting-a-table
-renaming-your-document
-download-documents-in-different-formats
-more-specifics-on-using-google-docs
-additional-resources-3
 ethical-data-science
 data-science-team
 the-data
@@ -304,7 +280,7 @@ ethics-in-data-science
 data-science-in-sentencing
 artificial-intelligence-in-the-military
 facial-recognition-in-law-enforcement
-additional-resources-4
+additional-resources-3
 internet-safety
 wifi
 public-wifi
@@ -338,6 +314,18 @@ ashley-madison
 okcupid
 strava
 conclusions
+google-documents
+google-sheets
+what-is-a-spreadsheet
+setting-up-for-our-next-data-science-project
+setting-up-your-spreadsheet
+collecting-data
+checking-your-data
+publishing-to-the-web
+making-the-sheet-public
+getting-data-project
+starting-up-this-project-1
+your-objectives-1
 cleaning-the-data
 learning-objectives-2
 what-is-tidy-data
@@ -361,7 +349,7 @@ common-problems-with-messy-data-sets
 examples-of-untidy-data
 examples-from-data-organization-in-spreadsheets
 tidying-untidy-data
-additional-resources-5
+additional-resources-4
 reshaping-data
 data-formats
 wide-data
@@ -371,7 +359,7 @@ tidyr
 gather
 spread
 transposing-data
-additional-resources-6
+additional-resources-5
 how-to-tidy-data
 dplyr
 tidyr-1
@@ -397,7 +385,7 @@ summarize
 tabyl
 skim
 conclusion
-additional-resources-7
+additional-resources-6
 joining-data
 dplyr-join-family-of-functions
 inner_join
@@ -432,7 +420,7 @@ identify-any-character-except-newline
 repetition-within-regular-expressions
 examples-of-repetition-within-regular-expressions
 conclusion-1
-additional-resources-8
+additional-resources-7
 working-with-factors
 factor-basics
 manually-change-the-labels-of-factor-levels-fct_relevel
@@ -444,7 +432,7 @@ re-ordering-factor-levels-by-another-variable-fct_reorder
 combining-several-levels-into-one-fct_recode
 converting-numeric-levels-to-factors-ifelse-factor
 conclusions-1
-additional-resources-9
+additional-resources-8
 working-with-dates
 dates-and-time-basics
 creating-dates-and-date-time-objects
@@ -454,7 +442,7 @@ working-with-dates-1
 getting-components-of-dates
 time-spans
 whats-not-covered-in-this-lesson
-additional-resources-10
+additional-resources-9
 project-organization
 setting-up-data-science-project-folders
 a-project-organization-framework
@@ -513,7 +501,7 @@ write-precise-descriptions
 add-legends
 add-a-source
 making-the-iphone-plot-in-r
-additional-resources-11
+additional-resources-10
 introduction-to-ggplot2
 the-basics
 example-dataset-diamonds
@@ -529,7 +517,7 @@ barplots-geom_bar
 boxplots-geom_boxplot
 other-plots
 summary-5
-additional-resources-12
+additional-resources-11
 customization-in-ggplot2
 colors
 labels
@@ -549,7 +537,7 @@ saving-plots
 image-types
 saving-plots-ggsave
 alternative-approach
-additional-resources-13
+additional-resources-12
 from-exploratory-to-explanatory
 apple-product-sales-data
 exploratory-plot
@@ -576,14 +564,14 @@ labels-1
 significant-digits
 a-good-title-or-caption
 the-source-of-the-data
-additional-resources-14
+additional-resources-13
 tables-in-r
 getting-the-data-in-order
 an-exploratory-table
 improving-the-table-output
 annotating-your-table
 tables-in-rmarkdown
-additional-resources-15
+additional-resources-14
 multiple-plots-in-r
 installing-patchwork
 basic-plotting-using-patchwork
@@ -593,7 +581,7 @@ additional-operators
 and
 and-1
 section
-additional-resources-16
+additional-resources-15
 advanced-data-visualization
 interactive-graphics
 animated-graphics
@@ -603,7 +591,7 @@ plotly-interactive-graphics
 plotly-animated-graphics
 plotly-in-rmarkdown-reports
 gganimate
-additional-resources-17
+additional-resources-16
 data-visualization-project
 rstudio-cloud-setup-1
 data-science-project-setup-1
@@ -676,7 +664,7 @@ summarizing-your-data
 skimr-1
 published-descriptive-analyses
 summary-8
-additional-resources-18
+additional-resources-17
 exploratory-analysis
 general-principles-of-exploratory-analysis
 inference-overview
@@ -704,7 +692,7 @@ testing-mean-difference-from-expectation-in-r
 detour-linear-regression-t-tests
 more-statistical-tests
 summary-11
-additional-resources-19
+additional-resources-18
 inference-examples
 introduction
 case-study-1-the-effects-of-watching-sesame-street-on-educational-outcomes
@@ -724,7 +712,7 @@ religiosity-and-yesterdays-happiness-in-the-usa
 worldwide-religiosity-and-happiness
 conclusion-3
 summary-12
-additional-resources-20
+additional-resources-19
 inference-practice
 the-question
 the-data-4
@@ -736,7 +724,7 @@ exploratory-visualizations
 linear-regression
 model-diagnostics
 summary-13
-additional-resources-21
+additional-resources-20
 prediction-and-machine-learning
 what-is-machine-learning
 machine-learning
@@ -767,7 +755,7 @@ data-splitting-2
 variable-selection-2
 accuracy-assessment-1
 summary-14
-additional-resources-22
+additional-resources-21
 stats-project-exercise
 rstudio-cloud-setup-2
 data-science-project-setup-2
@@ -802,7 +790,7 @@ file-organization
 version-control
 share-you-code
 reproducibility-doesnt-happen-overnight
-additional-resources-23
+additional-resources-22
 version-control-1
 what-is-version-control
 version-control-on-your-own
@@ -861,7 +849,7 @@ version-control-help
 google-for-git-help
 burn-it-down
 summary-18
-additional-resources-24
+additional-resources-23
 types-of-communication
 opinionated-communication
 types-of-communication-1
@@ -885,7 +873,7 @@ sample-brief-report
 full-report
 sample-full-report
 summary-19
-additional-resources-25
+additional-resources-24
 slides-and-video-1
 google-slides
 presentation-guidelines
@@ -904,7 +892,7 @@ rearranging-slides
 presenting-your-slideshow
 accessing-downloading-and-sharing-your-slides
 more-specifics-on-using-google-slides
-additional-resources-26
+additional-resources-25
 how-to-give-a-presentation
 presentation-goals
 know-your-audience
@@ -930,7 +918,7 @@ talk-outline-1
 slide-design-2
 presentation-1
 summary-20
-additional-resources-27
+additional-resources-26
 presentation-guidelines-1
 presentation-examples
 projecting-from-a-chromebook
@@ -965,7 +953,7 @@ blog-etiquette
 summary-23
 do
 dont
-additional-resources-28
+additional-resources-27
 participating-in-meetings
 meeting-etiquette
 how-to-host-a-meeting
@@ -988,7 +976,7 @@ be-mindful-of-time
 be-prepared-1
 guide-the-discussion
 summary-24
-additional-resources-29
+additional-resources-28
 how-to-have-a-one-on-one-meeting
 consulting
 what-to-expect
@@ -1016,7 +1004,7 @@ cover-letters
 online-presence
 personal-website
 social-media
-additional-resources-30
+additional-resources-29
 resumes-1
 what-is-a-resume
 general-features
@@ -1037,7 +1025,7 @@ classic
 creative
 sharing-your-resume
 summary-26
-additional-resources-31
+additional-resources-30
 cover-letters-1
 format
 content
@@ -1047,7 +1035,7 @@ closing
 call-to-action
 what-to-avoid-1
 summary-27
-additional-resources-32
+additional-resources-31
 slides-and-video-3
 making-your-website-more-professional
 make-your-own-website
@@ -1068,7 +1056,7 @@ posts
 projects-1
 website-tailoring
 deployment
-additional-resources-33
+additional-resources-32
 slides-and-video-4
 project-gallery
 project-list
@@ -1091,7 +1079,7 @@ fixing-typos
 addressing-github-issues
 stackoverflow
 summary-28
-additional-resources-34
+additional-resources-33
 improving-your-linkedin-profile
 linkedin-profile
 picture-1
@@ -1100,7 +1088,7 @@ links-out
 education-experience-and-skills
 connecting-to-others
 summary-29
-additional-resources-35
+additional-resources-34
 slides-and-video-6
 using-twitter-for-data-science
 profile-1
@@ -1110,7 +1098,7 @@ tweeting-for-self-promotion
 tweeting-to-promote-others
 how-to-tweet
 summary-30
-additional-resources-36
+additional-resources-35
 data-science-job-descriptions
 what-data-scientists-do
 skills-for-entry-level-positions
@@ -1128,7 +1116,7 @@ claires
 allstate
 which-job-is-right-for-you
 summary-31
-additional-resources-37
+additional-resources-36
 google-hangouts
 accessing-your-google-hangouts-account
 video-chats
@@ -1152,7 +1140,7 @@ materials
 additional-information
 proofread-1
 summary-32
-additional-resources-38
+additional-resources-37
 where-to-find-remote-data-science-jobs
 general-postings
 remote-ok
@@ -1175,7 +1163,7 @@ rejection
 the-offer
 negotiations
 summary-34
-additional-resources-39
+additional-resources-38
 data-science-meetups
 where-to-look
 what-to-expect-1

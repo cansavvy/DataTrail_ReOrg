@@ -1,22 +1,22 @@
 
-```{r, include = FALSE}
-ottrpal::set_knitr_image_path()
-```
 
-# Getting Data Project
+
+# Cleaning Data Project
 
 In this project, we are going to try to answer this question with data:
 
-> "How does the price of a bestselling book relate to how much the author is charging for that book?"
+> "Across the countries of the world, how is literacy related to life expectancy?"
 
-To answer our question, we need some information on books on the Leanpub website. Be sure you have followed the steps described in the previous chapter and have your Googlesheets with Leanpub data prepared and ready.
+To answer our question, we'll need a dataset that has literacy information by countries, as well as a dataset that has life expectancy statistics for different countries.
+
+We have gotten this data downloaded for you from Kaggle.
 
 ### Starting up this project
 
 1. Go to the DataTrail workspace
-3. Return to your own `DataTrail_Projects` project. Click on it to start this assignment. 
-4. For this project, go to the `02_Getting_Data` folder.
-5. Click on the file `leanpub_project.Rmd` to open this file.
+2. Return to your own `DataTrail_Projects` project in RStudio.
+3. For this project, go to the `03_Cleaning_Data` folder.
+4. Click on the file `countries_project.Rmd` to open this file.
 
 ### Your objectives!
 
@@ -34,7 +34,7 @@ To complete this project you'll need to do a few things within this file.
 
 6. When you are satisfied with what you've written and added to this document you'll need to save it. In the menu, go to `File` > `Save`. Now the `nb.html` output resulting file will have your new output saved to it.
 
-7. Open up the resulting `leanpub_project.nb.html` file and click `View in Web Browser`. Does it look good to you? Did all the changes appear here as you expected.
+7. Open up the resulting `countries_project.nb.html` file and click `View in Web Browser`. Does it look good to you? Did all the changes appear here as you expected.
 
 8. Upload this file to your Google Drive folder!
 

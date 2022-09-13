@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 72 Google Slides | DataTrail</title>
-  <meta name="description" content="Chapter 72 Google Slides | DataTrail" />
+  <title>Chapter 35 Cleaning Data Project | DataTrail</title>
+  <meta name="description" content="Chapter 35 Cleaning Data Project | DataTrail" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 72 Google Slides | DataTrail" />
+  <meta property="og:title" content="Chapter 35 Cleaning Data Project | DataTrail" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 72 Google Slides | DataTrail" />
+  <meta name="twitter:title" content="Chapter 35 Cleaning Data Project | DataTrail" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="data-science-reports.html"/>
-<link rel="next" href="how-to-give-a-presentation.html"/>
+<link rel="prev" href="project-organization.html"/>
+<link rel="next" href="plotting-the-data.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -1119,212 +1119,37 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/DataTrail.jpg">
 </div>
-<div id="google-slides" class="section level1" number="72">
-<h1><span class="header-section-number">Chapter 72</span> Google Slides</h1>
-<p>In addition to Google Docs for word documents and Google Sheets for spreadsheets, Google also has a web-based slide presentation editor called Google Slides. Google Slides allows users to format and edit slide presentations online and with Slide’s sharing capabilities, multiple people can edit the slides at the same time. As a data scientist, Google Slides can be a powerful tool to present your work to your employer or contribute to a presentation with your colleagues.</p>
-<p>If you’ve ever used Microsoft Powerpoint, you can think of Slides as an online version of Powerpoint, but with the additional capability to work simultaneously with other users on the same set of slides! It is compatible with Microsoft Powerpoint files (.pptx and .ppt).</p>
-<div id="presentation-guidelines" class="section level3" number="72.0.1">
-<h3><span class="header-section-number">72.0.1</span> Presentation Guidelines</h3>
-<p>Before we talk details about how to work within Google Slides, we want to review a few best practices for slide presentation. To make a good slide show, it’s best to keep a few guidelines in mind:</p>
+<div id="cleaning-data-project" class="section level1" number="35">
+<h1><span class="header-section-number">Chapter 35</span> Cleaning Data Project</h1>
+<p>In this project, we are going to try to answer this question with data:</p>
+<blockquote>
+<p>“Across the countries of the world, how is literacy related to life expectancy?”</p>
+</blockquote>
+<p>To answer our question, we’ll need a dataset that has literacy information by countries, as well as a dataset that has life expectancy statistics for different countries.</p>
+<p>We have gotten this data downloaded for you from Kaggle.</p>
+<div id="starting-up-this-project-2" class="section level3" number="35.0.1">
+<h3><span class="header-section-number">35.0.1</span> Starting up this project</h3>
 <ol style="list-style-type: decimal">
-<li>Minimize the number of words you put on any slide.</li>
-<li>Whenever possible, use pictures instead of words.</li>
-<li>Make sure images and text are as large as possible.</li>
-<li>Use consistent text font and colors throughout the presentation.</li>
+<li>Go to the DataTrail workspace</li>
+<li>Return to your own <code>DataTrail_Projects</code> project in RStudio.</li>
+<li>For this project, go to the <code>03_Cleaning_Data</code> folder.</li>
+<li>Click on the file <code>countries_project.Rmd</code> to open this file.</li>
 </ol>
 </div>
-<div id="accessing-google-slides" class="section level3" number="72.0.2">
-<h3><span class="header-section-number">72.0.2</span> Accessing Google Slides</h3>
-<p>Like Docs and Sheets, Google Slides can be accessed from within Google Drive. To create a new presentation through Drive, simply click the “New” button in the top left corner of the Google Drive home page and then select “Google Slides.”</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g3acdf2805f_0_0" alt="" />
-<p class="caption">Slides on Google Drive</p>
-</div>
-<p>Like Docs and Sheets, however, you can also access Google Slides directly through its own URL, <a href="https://slides.google.com">slides.google.com</a>. Remember, Google Drive contains all of the files you have stored on the cloud, while Google Slides will only contain your presentation files. Your Google Slides homepage will have the same structure as for Docs and Sheets. You can see there is a TEMPLATE GALLERY at the top of the screen and recent presentations at the bottom. To start a new presentation, you can select the “Blank” option or any of the available templates.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g3acdf2805f_0_78" alt="" />
-<p class="caption">Google Slides Page</p>
-</div>
-<p>Clicking on “TEMPLATE GALLERY” will expand the template options to include “Personal,” “Work,” and “Education” templates.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g3501afad38_0_0" alt="" />
-<p class="caption">Expanded templates</p>
-</div>
-<p>Once you click on “Blank” to create a blank presentation, you can begin to type in the dotted boxes to add text to your presentation.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g3501afad38_0_11" alt="" />
-<p class="caption">Adding text to Google Slides</p>
-</div>
-</div>
-<div id="creating-a-full-slideshow" class="section level3" number="72.0.3">
-<h3><span class="header-section-number">72.0.3</span> Creating a Full Slideshow</h3>
-<p>So far, this lesson has covered how to open a new slide show in Google Slides and how to enter text onto your first slide. However, to create a full slideshow, you’ll want to know how to:</p>
-<ul>
-<li>Add new slides</li>
-<li>Use different slide layouts</li>
-<li>Format text</li>
-<li>Add and edit images</li>
-<li>Change the theme and format of your slide show</li>
-<li>Rearrange slide order</li>
-</ul>
-<p>The remainder of this lesson will be dedicated to covering these topics.</p>
-<div id="adding-new-slides" class="section level4" number="72.0.3.1">
-<h4><span class="header-section-number">72.0.3.1</span> Adding new slides</h4>
-<p>To add a new slide to your slideshow, you’ll click the plus sign at the left on the toolbar at the top of your Google Slides presentation.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_8" alt="" />
-<p class="caption">New Slide</p>
-</div>
-<p>A second slide will appear in the panel at the left. The blue highlighting around around the second slide in the panel at the left indicates that that slide is the slide being displayed on the right.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_34" alt="" />
-<p class="caption">New Slide highlighted in blue at left</p>
-</div>
-<p>You may notice that this slide has a different layout than the first slide. The first slide had a large text box for the title. This slide, however, has a a text box for a title along the top and a large text box covering the rest of the slide. Google Slides is taking its best guess as to what type of slide you may want; however, you can always state which slide layout you want explicitly.</p>
-</div>
-<div id="changing-layouts" class="section level4" number="72.0.3.2">
-<h4><span class="header-section-number">72.0.3.2</span> Changing layouts</h4>
-<p>If the slide layout being displayed is not the slide layout you want, this can be easily changed by clicking on the “Layout” icon from the toolbar.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_24" alt="" />
-<p class="caption">Layout icon</p>
-</div>
-<p>There are a number of different layouts from which you can choose, depending upon your needs. For example, you might only need a caption for a large image, so you could select the “Caption” layout choice. Click on the layout you’d like to use and the slide will change to the layout you’ve selected. You can always change the layout again if the one you’ve chosen doesn’t work well. As you gain experience making presentations, you will know which layouts work well for you!</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_43" alt="" />
-<p class="caption">select layout menu</p>
-</div>
-</div>
-<div id="formatting-text" class="section level4" number="72.0.3.3">
-<h4><span class="header-section-number">72.0.3.3</span> Formatting text</h4>
-<p>As you start to add text to slides, you’ll quickly realize that the icons along the top and steps required are the same as they were in Google Docs. This is by design. Google has designed its suite of products so that once you master a skill in one of its products, you can use it in its other products. That said, you already know how to format text from the Google Docs lesson, so we won’t go over that here.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_28" alt="" />
-<p class="caption">Process for formatting text is the same across Google Products</p>
-</div>
-<p>While the process for formatting text is the same, the one thing that differs between Google Docs and Google Slides is the fact that the positioning of the text box in Google Slides is important (and something you didn’t have to consider in Google Docs). To re-position a text box in Google slides, you’ll first click on the text box. Then, by hovering over the blue highlighted border around the text box, you will see a cross made of arrows appear. Once this arrow cross appears, you click and hold down. While still holding down, you can drag the text box to the the position on the slide where you want the box. Once the text is where you want it, you can release. The text box will now be wherever you’ve dropped the text box on the slide.</p>
-</div>
-<div id="adding-and-editing-images" class="section level4" number="72.0.3.4">
-<h4><span class="header-section-number">72.0.3.4</span> Adding and editing images</h4>
-<p>To add images to a slideshow, the process is again the same as in Google Docs, and the process for re-positioning an image on the slide is the same as was just discussed. However, in Google Slides, you’ll likely be editing the size and appearance of images to a greater extent than you would need to in Google Docs. We’ll discuss how to work with images in Google Slides here.</p>
-<div id="cropping-an-image" class="section level5" number="72.0.3.4.1">
-<h5><span class="header-section-number">72.0.3.4.1</span> Cropping an image</h5>
-<p>Consider the following image in Google Slides.
-Notice that the blue box around the outside of the image is much larger than the actual image we’re interested in using. To crop out this extra white space, you’ll want to first click on the icons, you’ll select the crop icon.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_49" alt="" />
-<p class="caption">Crop icon</p>
-</div>
-<p>The outline around the image will now have black bars around it.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_53" alt="" />
-<p class="caption">Remove whitespace from image</p>
-</div>
-<p>These black bars can be dragged to the position where you’d like the image to be.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_61" alt="" />
-<p class="caption">Remove whitespace from image</p>
-</div>
-<p>After the image is the size you want it to be, hit ‘Enter’ or click away from the image on your screen. The image has now been cropped, as indicated by the now-smaller blue outline on the image!</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_66" alt="" />
-<p class="caption">cropped image</p>
-</div>
-</div>
-<div id="aligning-objects" class="section level5" number="72.0.3.4.2">
-<h5><span class="header-section-number">72.0.3.4.2</span> Aligning objects</h5>
-<p>In addition to adding images, often you’ll want to be sure that images on your slides are aligned so that they look good when you go to present the information. Google Slides makes that pretty easy to do. To align images, you’ll drag your cursor over the objects to select all the objects you want to align. Once selected, you’ll right click on the selected objects to display a menu. You’ll then use the “Align horizontally” and “Align vertically” options to align the objects the way you want them.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g450ce1f32d_0_4" alt="" />
-<p class="caption">Aligning objects</p>
-</div>
-</div>
-</div>
-<div id="additional-formatting-options" class="section level4" number="72.0.3.5">
-<h4><span class="header-section-number">72.0.3.5</span> Additional formatting options</h4>
-<p>Additional formatting options can be explored by right-clicking on the image that will show a menu with additional options or by clicking on the additional image-editing icons on the toolbar.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_71" alt="" />
-<p class="caption">Additional formatting options</p>
-</div>
-</div>
-<div id="formatting-and-editing-themes" class="section level4" number="72.0.3.6">
-<h4><span class="header-section-number">72.0.3.6</span> Formatting and editing themes</h4>
-<p>In addition to formatting individual text boxes and images on your slides, you may want to format the design of your entire slide show. This can be accomplished, by clicking on the “Theme” icon along the toolbar</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_82" alt="" />
-<p class="caption">Theme icon</p>
-</div>
-<p>Note: If you do not see the “Theme” icon, click on a blank spot on your slide. This will make the toolbar option appear.</p>
-<p>After clicking on the “Theme” icon, a panel will appear on the right side of your screen with all the pre-loaded themes available.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_88" alt="" />
-<p class="caption">Themes available</p>
-</div>
-<p>You can scroll through these themes. Clicking on one of these themes will apply the theme across every slide in your presentation.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_93" alt="" />
-<p class="caption">Themes applied across entire presentation</p>
-</div>
-<div id="changing-background-color" class="section level5" number="72.0.3.6.1">
-<h5><span class="header-section-number">72.0.3.6.1</span> Changing background color</h5>
-<p>In addition to pre-specified themes, you can also alter the background color of all your slides. To do so, you would right-click on a blank spot on your slide. On the menu that appears, you would select “Change background”</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_99" alt="" />
-<p class="caption">Change background</p>
-</div>
-<p>A menu will appear where you can select the color you want your slides to be from the drop-down menu and click “Done.” This will only change the background color of the slide on which you’re currently working.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_104" alt="" />
-<p class="caption">Change background color window</p>
-</div>
-</div>
-</div>
-<div id="rearranging-slides" class="section level4" number="72.0.3.7">
-<h4><span class="header-section-number">72.0.3.7</span> Rearranging slides</h4>
-<p>Sometimes as you’re generating a slide show, you’ll realize you’d rather your slides be in a different order. This can be fixed easily by clicking on a slide in the left hand panel of your Google Slides window, and dragging and dropping your slide to the position in your slide show where you’d rather it be.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_121" alt="" />
-<p class="caption">Rearrange slides</p>
-</div>
-</div>
-</div>
-<div id="presenting-your-slideshow" class="section level3" number="72.0.4">
-<h3><span class="header-section-number">72.0.4</span> Presenting Your Slideshow</h3>
-<p>Once you have created all the slides you want in your slideshow, you can easily present them. On the right-hand corner of the window, click on Present and your slides will be in full-screen mode ready to be presented.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g395957ea90_2_134" alt="" />
-<p class="caption">View your presentation</p>
-</div>
-</div>
-<div id="accessing-downloading-and-sharing-your-slides" class="section level3" number="72.0.5">
-<h3><span class="header-section-number">72.0.5</span> Accessing, downloading, and sharing your slides</h3>
-<p>All of the Google Slides you generate are saved automatically on your Google Slides account as well as to your Google Drive account. Like the other document editors you’ve learned about, Google Slides has an auto-save feature that means you don’t need to actively save your work.</p>
-<p>You can also download your presentations from Google Slides in different formats, such as Microsoft Powerpoint or Adobe PDF files. To do this, you would click on “File” in the top menu and then select “Download as.” You can then choose the format you want among the various options.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g3acdf2805f_0_193" alt="" />
-<p class="caption">Download your presentation</p>
-</div>
-<p>For sharing documents you can follow the procedure we learned in the lesson on Google Drive. You can also share directly from the Slides itself by clicking “File” in the top menu and then choosing “Share” and entering email addresses of the people you want to share with or getting a shareable link.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc/export/png?id=1QafnUK8jji3UHdIjUvh-3ZVhY_72LOPLhX3kU0QYCHc&amp;pageid=g3acdf2805f_0_199" alt="" />
-<p class="caption">Sharing your presentation</p>
-</div>
-</div>
-<div id="more-specifics-on-using-google-slides" class="section level3" number="72.0.6">
-<h3><span class="header-section-number">72.0.6</span> More specifics on using Google Slides</h3>
-<p>Here, we have covered the basics of Google Slides. If you want to learn how to further customize your templates, how to add transitions and animations, and details on working with images, check out the additional resources links below search for tutorials on YouTube.com.</p>
-<p>Google also has extensive information on getting started with Slides on their G Suite Learning Center, which can be found at the following web address: <a href="https://gsuite.google.com/learning-center/products/slides/get-started/#!/" class="uri">https://gsuite.google.com/learning-center/products/slides/get-started/#!/</a></p>
-</div>
-<div id="additional-resources-25" class="section level3" number="72.0.7">
-<h3><span class="header-section-number">72.0.7</span> Additional Resources</h3>
-<ul>
-<li><a href="https://gsuite.google.com/learning-center/products/slides/get-started/#!/">Google’s Slide Tutorial</a></li>
-<li><a href="https://www.gcflearnfree.org/googleslides/adding-pictures-and-shapes/1/">Adding images</a></li>
-<li><a href="https://www.gcflearnfree.org/googleslides/adding-transitions-and-animations/1/">Transitions and animation</a></li>
-<li><a href="https://www.gcflearnfree.org/googleslides/editing-master-slides-and-layouts/1/">Editing the Master Template</a></li>
-<li><a href="https://www.youtube.com/watch?v=a-gpgX7RQ48">How to Insert A YouTube Video into Google Slides (video)</a></li>
-</ul>
+<div id="your-objectives-2" class="section level3" number="35.0.2">
+<h3><span class="header-section-number">35.0.2</span> Your objectives!</h3>
+<p>To complete this project you’ll need to do a few things within this file.</p>
+<ol style="list-style-type: decimal">
+<li><p>Go through this notebook, reading along.</p></li>
+<li><p>Fill in empty or incomplete code chunks when prompted to do so.</p></li>
+<li><p>Run each code chunk as you come across it by clicking the tiny green triangles at the right of each chunk. You should see the code chunks print out various output when you do this.</p></li>
+<li><p>At the very top of this file, put your own name in the <code>author:</code> place. Currently it says <code>"DataTrail Team"</code>. Be sure to put your name in quotes.</p></li>
+<li><p>In the <code>Conclusions</code> section, write up responses to each of these questions posed here.</p></li>
+<li><p>When you are satisfied with what you’ve written and added to this document you’ll need to save it. In the menu, go to <code>File</code> &gt; <code>Save</code>. Now the <code>nb.html</code> output resulting file will have your new output saved to it.</p></li>
+<li><p>Open up the resulting <code>countries_project.nb.html</code> file and click <code>View in Web Browser</code>. Does it look good to you? Did all the changes appear here as you expected.</p></li>
+<li><p>Upload this file to your Google Drive folder!</p></li>
+<li><p>Pat yourself on the back for finishing this project!</p></li>
+</ol>
 
 </div>
 </div>
@@ -1341,8 +1166,8 @@ Notice that the blue box around the outside of the image is much larger than the
           </div>
         </div>
       </div>
-<a href="data-science-reports.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="how-to-give-a-presentation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="project-organization.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="plotting-the-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

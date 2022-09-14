@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 64 Cloning A Repository | DataTrail</title>
-  <meta name="description" content="Chapter 64 Cloning A Repository | DataTrail" />
+  <title>Chapter 80 GitHub and Final Data Project | DataTrail</title>
+  <meta name="description" content="Chapter 80 GitHub and Final Data Project | DataTrail" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 64 Cloning A Repository | DataTrail" />
+  <meta property="og:title" content="Chapter 80 GitHub and Final Data Project | DataTrail" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 64 Cloning A Repository | DataTrail" />
+  <meta name="twitter:title" content="Chapter 80 GitHub and Final Data Project | DataTrail" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="creating-a-repository.html"/>
-<link rel="next" href="pushing-and-pulling-changes.html"/>
+<link rel="prev" href="how-to-have-a-one-on-one-meeting.html"/>
+<link rel="next" href="building-a-resume.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -1120,119 +1120,31 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/DataTrail.jpg">
 </div>
-<div id="cloning-a-repository" class="section level1" number="64">
-<h1><span class="header-section-number">Chapter 64</span> Cloning A Repository</h1>
-<p>Now that you have learned how to create a GitHub repository, you will learn how to obtain a copy of that repository in a location that you use for writing code such as RStudio Cloud. This process is called “cloning” a repository from GitHub.</p>
-<div id="step-1-obtain-the-url-for-the-repository-to-clone" class="section level3" number="64.0.1">
-<h3><span class="header-section-number">64.0.1</span> Step 1: Obtain the URL for the repository to clone</h3>
-<p>Navigate to the GitHub webpage for your repository. This URL always has the form</p>
-<pre class="text"><code>https://github.com/github_username/repository_name</code></pre>
-<p>For example, in our last lesson, the URL for our repository is <a href="https://github.com/JaneEverydayDoe/first_project/">https://github.com/JaneEverydayDoe/first_project/</a>. On this page, you will see a button on the right hand side that says “Clone or download”. When you click this, highlight the URL in the box, and copy it to the clipboard. Make sure it starts with “https” rather than “git@”. If you see “git@”, click the link in the top right corner of the box that says “Use HTTPS”.</p>
-<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g36809c5e39_0_0.png" title="Obtain URL of repository" alt="Obtain URL of repository" width="480" style="display: block; margin: auto;" /></p>
-</div>
-<div id="step-2-use-the-rstudio-interface-to-clone-the-repository" class="section level3" number="64.0.2">
-<h3><span class="header-section-number">64.0.2</span> Step 2: Use the RStudio interface to clone the repository</h3>
-<p>In RStudio cloud, go to your workspace by clicking the appropriate button on the left side navigation bar.</p>
-<p>Click the <code>New Project</code> button and choose <code>New Project from Git Repository</code></p>
-<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g2bfdb07292_0_151.png" title="Copy the GitHub repository url" alt="Copy the GitHub repository url" width="480" style="display: block; margin: auto;" /></p>
-<p>Place the URL that you copied in Step 1 in the <code>URL of your Git Repository</code> box, and click <code>OK</code>.
-You will a <code>Deploying Project</code> progress screen, typically after a few seconds, the RStudio interface for your project will appear.</p>
-<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_18.png" title="Copy the url in this box" alt="Copy the url in this box" width="480" style="display: block; margin: auto;" /></p>
-<p>Also note that in the bottom right hand corner of RStudio, in the <code>Files</code> pane, you will have the files that are in your GitHub repository, now available in this RStudio cloud workspace.</p>
-</div>
-<div id="step-3-set-up-github-credentials" class="section level3" number="64.0.3">
-<h3><span class="header-section-number">64.0.3</span> Step 3: Set up GitHub Credentials</h3>
-<p>In order to be able to access everything in your GitHub repository from RStudio cloud, you will need to set up GitHub credentials. You should only need to do this once per project.</p>
+<div id="github-and-final-data-project" class="section level1" number="80">
+<h1><span class="header-section-number">Chapter 80</span> GitHub and Final Data Project</h1>
+<p>In this project, we are going to have you form your own question and find data to explore it.</p>
+<p>But, we will also want to practice using version control and getting our projects to be open source and available on GitHub.</p>
+<div id="starting-up-this-project-5" class="section level3" number="80.0.1">
+<h3><span class="header-section-number">80.0.1</span> Starting up this project</h3>
 <ol style="list-style-type: decimal">
-<li>In your RStudio interface, make sure that you are in the <code>Console</code> tab.</li>
+<li>Follow the <code>Creating A Repository</code> steps and subsequent chapters to create a new GitHub repository for this project.</li>
+<li>Follow the instructions in <code>Cloning A Repository</code> chapter to also clone this project to your RStudio workspace</li>
+<li>Work on formulating your data science question – try to pick a topic you are interested in! You can gain inspiration by browsing some of the open source dataset websites we have discussed in the <code>Finding Data</code> chapter.</li>
+<li>When you find a dataset and question combo you are interested in, you can feel free to borrow <a href="https://github.com/datatrail-jhu/DataTrail_Projects/blob/main/06_Share_Results/data_project_final.Rmd">this R Markdown template to get you started</a>. You can find this same file in your <code>DataTrail_Projects</code> RStudio project.</li>
 </ol>
-<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_0.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" /></p>
-<ol start="2" style="list-style-type: decimal">
-<li>Now use the command below to install the package <code>usethis</code>. Copy and paste it in the Console window and click Enter on your keyboard. This package will help us manage our GitHub credentials from RStudio more easily.</li>
-</ol>
-<div class="sourceCode" id="cb385"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb385-1"><a href="cloning-a-repository.html#cb385-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;usethis&quot;</span>)</span></code></pre></div>
-<p>This will take a minute or so to install. Remember that red text doesn’t mean an error necessarily.</p>
-<ol start="3" style="list-style-type: decimal">
-<li>Now to use this package, we need to attach its library using the following command:</li>
-</ol>
-<div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb386-1"><a href="cloning-a-repository.html#cb386-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;usethis&quot;</span>)</span></code></pre></div>
-<ol start="4" style="list-style-type: decimal">
-<li>RStudio and GitHub require you make a special fancy password to use as credentials called a <strong>GitHub Personal Access Token</strong> (sometimes abbreviated as a “PAT”).</li>
-</ol>
-<p>To create a ‘PAT’ from RStudio we can run this handy command:</p>
-<div class="sourceCode" id="cb387"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb387-1"><a href="cloning-a-repository.html#cb387-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code></pre></div>
-<p>Running this command will open up a window in your GitHub that will ask you for your password. Login to GitHub as you normally would.</p>
-<p>This will open up a page in GitHub for creating a <code>New personal access token</code>.</p>
-<p>Underneath the <code>Note</code> put something that reminds you what this PAT is for. Something like <code>RStudioCloud Access</code>. (Note that each PAT you make needs its own unique <code>Note</code> though).</p>
-<p>Underneath the <code>Select scopes</code> section <strong>you don’t need to do anything</strong>, <code>usethis</code> package already chose the permissions we need.</p>
-<p>Scroll all the way down on this page and click <code>Generate Token</code>. You’ve created your first PAT! <strong>Do not close this window</strong>, keep it handy for now. Note that in the image below we blocked out our PAT, but yours will show a jumble of letters and numbers</p>
-<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_26.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" /></p>
-<ol start="5" style="list-style-type: decimal">
-<li>Return back to your RStudio Cloud project while keeping your PAT handy.
-In the <code>Console</code> window, run this command:</li>
-</ol>
-<div class="sourceCode" id="cb388"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb388-1"><a href="cloning-a-repository.html#cb388-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code></pre></div>
-<p>It will ask you to <code>? Enter password or token</code>. Copy your PAT and paste it into the command window and press Enter.</p>
-<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_34.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" /></p>
-<p>After you enter your PAT here you should get a message like:</p>
-<pre><code>-&gt; Adding new credentials...
--&gt; Removing credetials from cache...
--&gt; Done.</code></pre>
-<p>You are now free to close that GitHub PAT window. Note that you will want to be very careful with your PAT. <strong>Do not share it or put it anywhere that others could see it or access it!</strong></p>
-<ol start="7" style="list-style-type: decimal">
-<li>Now we also need to add your username and email to the RStudio GitHub credentials by running a command like below.
-But replace the example <strong>username</strong> and <strong>email</strong> with what corresponds to your GitHub account.</li>
-</ol>
-<div class="sourceCode" id="cb390"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb390-1"><a href="cloning-a-repository.html#cb390-1" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">&quot;Jane&quot;</span>, <span class="at">user.email =</span> <span class="st">&quot;jane@example.org&quot;</span>)</span></code></pre></div>
-<p>Run this in the <code>Console</code> tab as well and click Enter.</p>
-<ol start="8" style="list-style-type: decimal">
-<li>Now to double check that everything is set, we can run this command to have the <code>usethis</code> package echo back our credentials:</li>
-</ol>
-<div class="sourceCode" id="cb391"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb391-1"><a href="cloning-a-repository.html#cb391-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git_sitrep</span>()</span></code></pre></div>
-<p>It will give you output that looks similar to this: (but note it will have your own user name, and repository name and etc.)</p>
-<pre><code>Git config (global)
-• Name: &#39;Jane&#39;
-• Email: &#39;jane@example.org&#39;
-• Global (user-level) gitignore file: &lt;unset&gt;
-• Vaccinated: FALSE
-ℹ See `?git_vaccinate` to learn more
-• Default Git protocol: &#39;https&#39;
-• Default initial branch name: &lt;unset&gt;
-GitHub
-• Default GitHub host: &#39;https://github.com&#39;
-• Personal access token for &#39;https://github.com&#39;: &#39;&lt;discovered&gt;&#39;
-• GitHub user: &#39;Jane&#39;
-• Token scopes: &#39;gist, repo, user, workflow&#39;
-• Email(s): &#39;jane@example.org (primary)&#39;
-✖ Local Git user&#39;s email (&#39;jane@example.org&#39;) doesn&#39;t appear to be registered with GitHub.
-Git repo for current project
-• Active usethis project: &#39;/cloud/project&#39;
-• Default branch: &#39;master&#39;
-• Current local branch -&gt; remote tracking branch:
-  &#39;master&#39; -&gt; &#39;origin/master&#39;
-GitHub remote configuration
-• Type = &#39;theirs&#39;
-• Host = &#39;https://github.com&#39;
-• Config supports a pull request = FALSE
-• origin = &#39;JaneEverydayDoe/first_project&#39; (can not push)
-• upstream = &lt;not configured&gt;
-• Desc = The only configured GitHub remote is &#39;origin&#39;, which
-  you cannot push to.
-  If your goal is to make a pull request, you must fork-and-clone.
-  `usethis::create_from_github()` can do this.
-
-  Read more about the GitHub remote configurations that usethis supports at:
-  &#39;https://happygitwithr.com/common-remote-setups.html&#39;
-</code></pre>
-<p>You should see that <code>Name</code>, <code>email</code> have your credentials set as well as a <code>Personal access token for 'https://github.com': '&lt;discovered&gt;'</code></p>
-<p>You can run <code>git_sitrep()</code> at anytime to see what your credentials and settings are.</p>
-<p>Yay! Now you should be able to use GitHub from RStudioCloud!</p>
 </div>
-<div id="directoryfolder-organization" class="section level3" number="64.0.4">
-<h3><span class="header-section-number">64.0.4</span> Directory/Folder Organization</h3>
-<p>A big part of staying organized with your files is understanding how folders in your project are organized. Also important is the concept of a <strong>working directory</strong>. Whenever you are working in R or the Terminal, files are housed in some folder. This folder is called the working directory. Knowing this is important so that you know how to specify paths to other important folders in your project. We can see what the current working directory is in a number of ways. In the image below, we can see from the Terminal prompt that the working directory is <code>/cloud/project</code>. We can also see this in the Files pane. We see that the first level folder is <code>cloud</code> and that the second level folder is <code>project</code>.</p>
-<p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_22_8.png" title="Working directories" alt="Working directories" width="480" style="display: block; margin: auto;" />
-Congratulations! You have cloned your first repository!</p>
+<div id="your-objectives-5" class="section level3" number="80.0.2">
+<h3><span class="header-section-number">80.0.2</span> Your objectives!</h3>
+<p>To complete this project there are a few requirements you will need to fulfill. Remember that you are not on your own for this project! Data science is done best as a community, so please ask others (and instructors) questions you have when you get stuck!</p>
+<ol style="list-style-type: decimal">
+<li>Clearly state the data science question and goal for the analysis you are embarking on.</li>
+<li>This project should be completely uploaded and up to date on GitHub. Follow the steps in <code>Pushing and Pulling Changes</code> chapter for how to git add, commit, and push the changes you have done.</li>
+<li>Follow good organization principles – you should at least have 2 folders: a <code>results</code> folder and a <code>data</code> folder. 4. 4. You should also have a README</li>
+<li>Make a resulting plot that you save to a file.</li>
+<li>Write up your final observations in regards to your original question. Note that some data science projects end with “This isn’t what I thought it would be” or “that’s strange” or “I think this is leading into another question I would need to investigate”. Whatever your observations may be, write them up in your main R Markdown.</li>
+<li>When you feel your analysis is ready for review, send your instructor the GitHub link to your project so they can review it.</li>
+<li>Pat yourself on the back for all this work! You are a data scientist!</li>
+</ol>
 
 </div>
 </div>
@@ -1249,8 +1161,8 @@ Congratulations! You have cloned your first repository!</p>
           </div>
         </div>
       </div>
-<a href="creating-a-repository.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="pushing-and-pulling-changes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="how-to-have-a-one-on-one-meeting.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="building-a-resume.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -55,7 +55,7 @@
 55-Inference:-Examples.md
 56-Inference:-Practice.md
 57-Prediction-and-Machine-Learning.md
-58-Plotting-Data-Project.md
+58-Stats-Project.md
 59-Sharing-results.md
 60-Reproducibility.md
 61-Version-Control.md

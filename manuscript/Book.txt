@@ -77,7 +77,7 @@
 77-How-To-Write-a-Blog-Post.md
 78-Participating-in-Meetings.md
 79-How-To-Have-a-One-on-One-Meeting.md
-80-Plotting-Data-Project.md
+80-GitHub-and-Final-Data-Project.md
 81-Building-a-resume.md
 82-Resumes.md
 83-Cover-Letters.md

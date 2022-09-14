@@ -32,7 +32,7 @@
 32-Working-with-Factors.md
 33-Working-with-Dates.md
 34-Project-organization.md
-35-Data-Tidying-Project.md
+35-Cleaning-Data-Project.md
 36-Plotting-the-Data.md
 37-Good-Plots.md
 38-Introduction-to-ggplot2.md

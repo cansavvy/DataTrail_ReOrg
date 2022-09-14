@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 32 Working with Factors | DataTrail</title>
-  <meta name="description" content="Chapter 32 Working with Factors | DataTrail" />
+  <title>Chapter 95 Create your portfolio! | DataTrail</title>
+  <meta name="description" content="Chapter 95 Create your portfolio! | DataTrail" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 32 Working with Factors | DataTrail" />
+  <meta property="og:title" content="Chapter 95 Create your portfolio! | DataTrail" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 32 Working with Factors | DataTrail" />
+  <meta name="twitter:title" content="Chapter 95 Create your portfolio! | DataTrail" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="working-with-strings.html"/>
-<link rel="next" href="working-with-dates.html"/>
+<link rel="prev" href="data-science-meetups.html"/>
+<link rel="next" href="about-the-authors.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -1121,167 +1121,60 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/DataTrail.jpg">
 </div>
-<div id="working-with-factors" class="section level1" number="32">
-<h1><span class="header-section-number">Chapter 32</span> Working with Factors</h1>
-<p>In R, categorical data are handled as factors. By definition, categorical data are limited in that they have a set number of possible values they can take. For example, there are 12 months in a calendar year. In a month variable, each observation is limited to taking one of these twelve values. Thus, with a limited number of possible values, month is a categorical variable. Categorical data, which will be referred to as factors for the rest of this lesson, are regularly found in data. Learning how to work with this type of variable effectively will be incredibly helpful.</p>
-<p>To make working with factors simpler, we’ll utilize the <code>forcats</code> package. Similar to the <code>stringr</code> package, all functions within <code>forcats</code> begin with <code>fct_</code>. As before, to see available functions you can type <code>?fct_</code> in your RStudio console. A drop-down menu will appear with all the possible forcats functions. Before working through this lesson, you’ll want to be sure that <code>forcats</code> has been installed and loaded in:</p>
-<div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="working-with-factors.html#cb226-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;forcats&#39;</span>)</span>
-<span id="cb226-2"><a href="working-with-factors.html#cb226-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(forcats)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_0" alt="" />
-<p class="caption">fct_ output from RStudio</p>
-</div>
-<div id="factor-basics" class="section level3" number="32.0.1">
-<h3><span class="header-section-number">32.0.1</span> Factor basics</h3>
-<p>In R, factors are comprised of two components: the actual <strong>values</strong> of the data and the possible <strong>levels</strong> within the factor. Thus, to create a factor, you need to supply both these pieces of information.</p>
-<p>For example, if we were to create a character vector of the twelve months, we could certainly do that:</p>
-<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="working-with-factors.html#cb227-1" aria-hidden="true" tabindex="-1"></a><span class="do">## all 12 months</span></span>
-<span id="cb227-2"><a href="working-with-factors.html#cb227-2" aria-hidden="true" tabindex="-1"></a>all_months <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Jan&quot;</span>, <span class="st">&quot;Feb&quot;</span>, <span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;May&quot;</span>, <span class="st">&quot;Jun&quot;</span>, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>, <span class="st">&quot;Sep&quot;</span>, <span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>, <span class="st">&quot;Dec&quot;</span>)</span>
-<span id="cb227-3"><a href="working-with-factors.html#cb227-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb227-4"><a href="working-with-factors.html#cb227-4" aria-hidden="true" tabindex="-1"></a><span class="do">## our data</span></span>
-<span id="cb227-5"><a href="working-with-factors.html#cb227-5" aria-hidden="true" tabindex="-1"></a>some_months <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Dec&quot;</span>, <span class="st">&quot;Jan&quot;</span>,  <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;Jul&quot;</span>)</span></code></pre></div>
-<p>However, if we were to sort this vector, R would sort this vector alphabetically.</p>
-<div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="working-with-factors.html#cb228-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(some_months)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_12" alt="" />
-<p class="caption">sort sorts variable alphabetically</p>
-</div>
-<p>While you and I know that this is not how months should be ordered, we haven’t yet told R that. To do so, we need to let R know that it’s a factor variable and what the levels of that factor variable should be.</p>
-<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="working-with-factors.html#cb229-1" aria-hidden="true" tabindex="-1"></a>mon <span class="ot">&lt;-</span> <span class="fu">factor</span>(some_months, <span class="at">levels =</span> all_months)</span>
-<span id="cb229-2"><a href="working-with-factors.html#cb229-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb229-3"><a href="working-with-factors.html#cb229-3" aria-hidden="true" tabindex="-1"></a>mon</span>
-<span id="cb229-4"><a href="working-with-factors.html#cb229-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb229-5"><a href="working-with-factors.html#cb229-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(mon)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_16" alt="" />
-<p class="caption">defining the factor levels sorts this variable sensibly</p>
-</div>
-<p>Here, we specify all the possible values that the factor could take in the <code>levels = all_months</code> argument. So, even though not all twelve months are included in the some_months object, we’ve stated that all of the months are possible values. Further, when you sort this variable, it now sorts in the sensical way!</p>
-</div>
-<div id="manually-change-the-labels-of-factor-levels-fct_relevel" class="section level3" number="32.0.2">
-<h3><span class="header-section-number">32.0.2</span> Manually change the labels of factor levels : <code>fct_relevel()</code></h3>
-<p>What if you wanted your months to start with July first? That can be accomplished using <code>fct_relevel()</code>. To use this function, you simply need to state what you’d like to relevel (<code>mon</code>) followed by the levels you want to relevel. If you want these to be placed in the beginning, the after argument should be <code>after = 0</code>. You can play around with this setting to see how changing <code>after</code> affects the levels in your output.</p>
-<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="working-with-factors.html#cb230-1" aria-hidden="true" tabindex="-1"></a>mon_relevel <span class="ot">&lt;-</span> <span class="fu">fct_relevel</span>(mon, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>, <span class="st">&quot;Sep&quot;</span>, <span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>, <span class="st">&quot;Dec&quot;</span>, <span class="at">after =</span> <span class="dv">0</span>)</span>
-<span id="cb230-2"><a href="working-with-factors.html#cb230-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb230-3"><a href="working-with-factors.html#cb230-3" aria-hidden="true" tabindex="-1"></a>mon_relevel</span>
-<span id="cb230-4"><a href="working-with-factors.html#cb230-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb230-5"><a href="working-with-factors.html#cb230-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(mon_relevel)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_47" alt="" />
-<p class="caption">fct_relevel enables you to change the order of your factor levels</p>
-</div>
-<p>After re-leveling, when we sort this factor, we see that Jul is placed first, as specified by the level re-ordering.</p>
-</div>
-<div id="keep-the-order-of-the-factor-levels-fct_inorder" class="section level3" number="32.0.3">
-<h3><span class="header-section-number">32.0.3</span> Keep the order of the factor levels : <code>fct_inorder()</code></h3>
-<p>Now, if you’re not interested in the months being in calendar year order, you can always state that you want the levels to stay in the same order as the data you started with, you simply specify <code>fct_inorder</code>.</p>
-<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="working-with-factors.html#cb231-1" aria-hidden="true" tabindex="-1"></a>mon_inorder <span class="ot">&lt;-</span> <span class="fu">fct_inorder</span>(some_months)</span>
-<span id="cb231-2"><a href="working-with-factors.html#cb231-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb231-3"><a href="working-with-factors.html#cb231-3" aria-hidden="true" tabindex="-1"></a>mon_inorder</span>
-<span id="cb231-4"><a href="working-with-factors.html#cb231-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb231-5"><a href="working-with-factors.html#cb231-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(mon_inorder)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_52" alt="" />
-<p class="caption">fct_inorder assigns levels in the same order the level is seen in the data</p>
-</div>
-<p>We see now with <code>fct_inorder</code> that even when we sort the output, it does not sort the factor alphabetically, nor does it put it in calendar order. In fact, it stays in the same order as the input, just as we specified.</p>
-</div>
-<div id="advanced-factoring" class="section level3" number="32.0.4">
-<h3><span class="header-section-number">32.0.4</span> Advanced Factoring</h3>
-<p>For the remainder of this lesson, we’re going to return to using a dataset that’s in R by default. We’ll use the <code>chickwts</code> dataset for exploring the remaining advanced functions. This data set includes data from an experiment that was looking to compare the “effectiveness of various feed supplements on the growth rate of chickens.”</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_24" alt="" />
-<p class="caption">chickwts dataset</p>
-</div>
-</div>
-<div id="re-ordering-factor-levels-by-frequency-fct_infreq" class="section level3" number="32.0.5">
-<h3><span class="header-section-number">32.0.5</span> Re-ordering factor levels by frequency : <code>fct_infreq()</code></h3>
-<p>To re-order factor levels by frequency of the value in the dataset, you’ll want to use <code>fct_infreq()</code>. Below, we see from the output from <code>tabyl()</code> that ‘soybean’ is the most frequent feed in the data set while ‘horsebean’ is the least frequent. Thus, when we order by frequency, we can expect these two feeds to be at opposite ends for our levels.</p>
-<div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="working-with-factors.html#cb232-1" aria-hidden="true" tabindex="-1"></a><span class="do">## take a look at frequency of each level</span></span>
-<span id="cb232-2"><a href="working-with-factors.html#cb232-2" aria-hidden="true" tabindex="-1"></a><span class="do">## using tabyl() from `janitor` package</span></span>
-<span id="cb232-3"><a href="working-with-factors.html#cb232-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
-<span id="cb232-4"><a href="working-with-factors.html#cb232-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tabyl</span>(chickwts<span class="sc">$</span>feed)</span>
-<span id="cb232-5"><a href="working-with-factors.html#cb232-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb232-6"><a href="working-with-factors.html#cb232-6" aria-hidden="true" tabindex="-1"></a><span class="do">## order levels by frequency</span></span>
-<span id="cb232-7"><a href="working-with-factors.html#cb232-7" aria-hidden="true" tabindex="-1"></a><span class="fu">fct_infreq</span>(chickwts<span class="sc">$</span>feed) <span class="sc">%&gt;%</span> <span class="fu">head</span>()</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_56" alt="" />
-<p class="caption">fct_infreq orders levels based on frequency in dataset</p>
-</div>
-<p>As expected, soybean, the most frequent level, appears as the first level and horsebean, the least frequent level, appears last. The rest of the levels are sorted by frequency.</p>
-</div>
-<div id="reversing-order-levels-fct_rev" class="section level3" number="32.0.6">
-<h3><span class="header-section-number">32.0.6</span> Reversing order levels : <code>fct_rev()</code></h3>
-<p>If we wanted to sort the levels from least frequent to most frequent, we could just put <code>fct_rev()</code> around the code we just used to reverse the factor level order.</p>
-<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="working-with-factors.html#cb233-1" aria-hidden="true" tabindex="-1"></a><span class="do">## reverse factor level order</span></span>
-<span id="cb233-2"><a href="working-with-factors.html#cb233-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fct_rev</span>(<span class="fu">fct_infreq</span>(chickwts<span class="sc">$</span>feed)) <span class="sc">%&gt;%</span> <span class="fu">head</span>()</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_20" alt="" />
-<p class="caption">fct_rev() reverses the factor level order</p>
-</div>
-</div>
-<div id="re-ordering-factor-levels-by-another-variable-fct_reorder" class="section level3" number="32.0.7">
-<h3><span class="header-section-number">32.0.7</span> Re-ordering factor levels by another variable : <code>fct_reorder()</code></h3>
-<p>At times you may want to reorder levels of a factor by another variable in your dataset. This is often helpful when generating plots (which we’ll get to in a future lesson!). To do this you specify the variable you want to reorder, followed by the numeric variable by which you’d like the factor to be re-leveled. Here, we see that we’re re-leveling feed by the weight of the chickens. While we haven’t discussed plotting yet, the best way to demonstrate how this works is by plotting the feed against the weights. We can see that the order of the factor is such that those chickens with the lowest median weight (horsebean) are to the left, while those with the highest median weight (casein) are to the right.</p>
-<pre><code>## order levels by a second numeric variable
-chickwts %&gt;%
-  mutate(newfeed = fct_reorder(feed, weight)) %&gt;%
-  ggplot(., aes(newfeed,weight)) +
-  geom_point()</code></pre>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_69" alt="" />
-<p class="caption">fct_reorder allows you to re-level a factor based on a secondary numeric variable</p>
-</div>
-</div>
-<div id="combining-several-levels-into-one-fct_recode" class="section level3" number="32.0.8">
-<h3><span class="header-section-number">32.0.8</span> Combining several levels into one: <code>fct_recode()</code></h3>
-<p>To demonstrate how to combine several factor levels into a single level, we’ll continue to use our ‘chickwts’ dataset. Now, I don’t know much about chicken feed, and there’s a good chance you know a lot more. However, let’s <em>assume</em> (even if it doesn’t make good sense with regards to chicken feed) you wanted to combine all the feeds with the name “bean” in it to a single category and you wanted to combine “linseed” and “sunflower”” into the category “seed”. This can be simply accomplished with <code>fct_recode</code>. In fact, below, you see we can rename all the levels to a simpler term (the values on the left side of the equals sign) by re-naming the original level names (the right side of the equals sign). This code will create a new column, called <code>feed_recode</code> (accomplished with <code>mutate()</code>). This new column will combine “horsebean” and “soybean feeds”, grouping them both into the larger level “bean”. It will similarly group “sunflower” and “linseed” into the larger level “seed.” All other feed types will also be renamed. When we look at the summary of this new column by using <code>tabyl()</code>, we see that all of the feeds have been recoded, just as we specified! We now have four different feed types, rather than the original six.</p>
-<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="working-with-factors.html#cb235-1" aria-hidden="true" tabindex="-1"></a><span class="do">## we can use mutate to create a new column</span></span>
-<span id="cb235-2"><a href="working-with-factors.html#cb235-2" aria-hidden="true" tabindex="-1"></a><span class="do">## and fct_recode() to:</span></span>
-<span id="cb235-3"><a href="working-with-factors.html#cb235-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 1. group horsebean and soybean into a single level</span></span>
-<span id="cb235-4"><a href="working-with-factors.html#cb235-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 2. rename all the other levels.</span></span>
-<span id="cb235-5"><a href="working-with-factors.html#cb235-5" aria-hidden="true" tabindex="-1"></a>chickwts <span class="sc">%&gt;%</span></span>
-<span id="cb235-6"><a href="working-with-factors.html#cb235-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">feed_recode =</span> <span class="fu">fct_recode</span>(feed,</span>
-<span id="cb235-7"><a href="working-with-factors.html#cb235-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;seed&quot;</span>    <span class="ot">=</span>   <span class="st">&quot;linseed&quot;</span>,</span>
-<span id="cb235-8"><a href="working-with-factors.html#cb235-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;bean&quot;</span>    <span class="ot">=</span>   <span class="st">&quot;horsebean&quot;</span>,</span>
-<span id="cb235-9"><a href="working-with-factors.html#cb235-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;bean&quot;</span>    <span class="ot">=</span>   <span class="st">&quot;soybean&quot;</span>,</span>
-<span id="cb235-10"><a href="working-with-factors.html#cb235-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;meal&quot;</span>    <span class="ot">=</span>   <span class="st">&quot;meatmeal&quot;</span>,</span>
-<span id="cb235-11"><a href="working-with-factors.html#cb235-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;seed&quot;</span>    <span class="ot">=</span>   <span class="st">&quot;sunflower&quot;</span>,</span>
-<span id="cb235-12"><a href="working-with-factors.html#cb235-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;casein&quot;</span>  <span class="ot">=</span>   <span class="st">&quot;casein&quot;</span></span>
-<span id="cb235-13"><a href="working-with-factors.html#cb235-13" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
-<span id="cb235-14"><a href="working-with-factors.html#cb235-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(feed_recode)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_79" alt="" />
-<p class="caption">fct_recode() can be used to group multiple levels into a single level and/or to rename levels</p>
-</div>
-</div>
-<div id="converting-numeric-levels-to-factors-ifelse-factor" class="section level3" number="32.0.9">
-<h3><span class="header-section-number">32.0.9</span> Converting numeric levels to factors: <code>ifelse()</code> + <code>factor()</code></h3>
-<p>Finally, when working with factors, there are times when you want to convert a numeric variable into a factor. For example, if you were talking about a dataset with BMI for a number of individuals, you may want to categorize people based on whether or not they are underweight (BMI &lt; 18.5), of a healthy weight (BMI between 18.5 and 29.9), or obese (BMI &gt;= 30). When you want to take a numeric variable and turn it into a categorical factor variable, you can accomplish this easily by using <code>ifelse()</code> statements. <code>if{}</code> statements and <code>else{}</code> statements were covered in an earlier lesson. Here we combine those two ideas. Within a single statement we provide R with a condition: <code>weight &lt;= 200</code>. With this, we are stating that the condition is if a chicken’s weight is less than or equal to 200 grams. Then, if that condition is true, meaning if a chicken’s weight is less than or equal to 200 grams, let’s assign that chicken to the category <code>low</code>. Otherwise, and this is the <code>else{}</code> part of the <code>ifelse()</code> function, assign that chicken to the category <code>high</code>. Finally, we have to let R know that weight_recode is a factor variable, so we call factor() on this new column. This way we take a numeric variable (<code>weight</code>), and turn it into a factor variable (<code>weight_recode</code>).</p>
-<div class="sourceCode" id="cb236"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb236-1"><a href="working-with-factors.html#cb236-1" aria-hidden="true" tabindex="-1"></a><span class="do">## convert numeric variable to factor</span></span>
-<span id="cb236-2"><a href="working-with-factors.html#cb236-2" aria-hidden="true" tabindex="-1"></a>chickwts <span class="sc">%&gt;%</span></span>
-<span id="cb236-3"><a href="working-with-factors.html#cb236-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">weight_recode =</span> <span class="fu">ifelse</span>(weight <span class="sc">&lt;=</span> <span class="dv">200</span>, <span class="st">&quot;low&quot;</span>, <span class="st">&quot;high&quot;</span>),</span>
-<span id="cb236-4"><a href="working-with-factors.html#cb236-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">weight_recode =</span> <span class="fu">factor</span>(weight_recode)) <span class="sc">%&gt;%</span></span>
-<span id="cb236-5"><a href="working-with-factors.html#cb236-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tabyl</span>(weight_recode)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU/export/png?id=16Y8swNgNfpmZPqDfw-lO36MXRc2T66zWoFB5Y35rmJU&amp;pageid=g391e563ea4_0_84" alt="" />
-<p class="caption">converting a numeric type variable to a factor</p>
-</div>
-</div>
-<div id="conclusions-1" class="section level3" number="32.0.10">
-<h3><span class="header-section-number">32.0.10</span> Conclusions</h3>
-<p>This lesson has covered how to work with factors (categorical) variables in R using the <code>forcats</code> package in R. In line with the previous few lessons, the best way to learn how to work with factors, is to actually work with factors. Play around with the examples here and continue to practice using this type of variable! You’ll come across factors regularly as you analyze data!</p>
-</div>
-<div id="additional-resources-8" class="section level3" number="32.0.11">
-<h3><span class="header-section-number">32.0.11</span> Additional Resources</h3>
-<ul>
-<li><a href="http://r4ds.had.co.nz/factors.html">r4ds : Chapter 15 - Factors</a> by <a href="http://hadley.nz/">Hadley Wickham</a></li>
-<li><a href="https://forcats.tidyverse.org/">forcats</a>, part of the <a href="https://www.tidyverse.org/">tidyverse</a></li>
-<li><a href="https://blog.rstudio.com/2016/08/31/forcats-0-1-0/">forcats blog post</a> by <a href="http://hadley.nz/">Hadley Wickham</a></li>
-<li><a href="https://peerj.com/preprints/3163/">Wrangling Categorical Data in R</a> by <a href="http://www.science.smith.edu/~amcnamara/">Amelia McNamara</a> &amp; <a href="https://www.smith.edu/academics/faculty/nicholas-horton">Nicholas J Horton</a></li>
-</ul>
-<p>Note: <a href="https://peerj.com/preprints/3163/">Wrangling Categorical Data in R</a> is <strong>full</strong> of really great examples and goes into further depth than what is covered here. This is a <em>great</em> resource to get more practice working with categorical data (factors) in R.</p>
+<div id="create-your-portfolio" class="section level1" number="95">
+<h1><span class="header-section-number">Chapter 95</span> Create your portfolio!</h1>
+<p>In this chapter, we aren’t creating a formal project per se, but we are gathering all the work you’ve done through this course as well as other professionally relevant information about yourself and putting it together into a website!</p>
+<p>This will allow you to easily share with potential employers or collaborators the excellent work you have done!</p>
+<div id="your-objectives-6" class="section level2" number="95.1">
+<h2><span class="header-section-number">95.1</span> Your objectives!</h2>
+<p>To complete this project you’ll need to do a few things</p>
+<div id="get-the-rest-of-your-projects-online-on-github" class="section level3" number="95.1.1">
+<h3><span class="header-section-number">95.1.1</span> Get the rest of your projects online on GitHub</h3>
+<ol style="list-style-type: decimal">
+<li>Create a new GitHub repository following the steps describe in the <code>Creating a repository</code> chapter.</li>
+<li>Keep this window open and available.</li>
+<li>Go to your <code>DataTrail project</code> RStudio project.</li>
+<li>Go to the Terminal pane and run the following commands:</li>
+</ol>
+<pre><code>git init
+git add .</code></pre>
+<p>These steps have now made this project a git project.</p>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Now we need to set up credentials so we can put your projects online! <a href="https://datatrail-jhu.github.io/DataTrail/cloning-a-repository.html#step-3-set-up-github-credentials">Follow the credentials set up described in this chapter</a>.</p></li>
+<li><p>Return to the Terminal tab and run this:</p></li>
+</ol>
+<pre><code>git commit -m &quot;add all files&quot;</code></pre>
+<ol start="7" style="list-style-type: decimal">
+<li>Tell your RStudio git project where to push your project online by running this command in the terminal, but replace the <code>URL_TO_YOUR_REPOSITORY</code> with the repository URL of your own GitHub repository:</li>
+</ol>
+<pre><code>git remote set-url --push origin URL_TO_YOUR_REPOSITORY</code></pre>
+<ol start="8" style="list-style-type: decimal">
+<li>To push all the files here to your GitHub remote repository do this:</li>
+</ol>
+<pre><code>git push --force</code></pre>
+<ol start="9" style="list-style-type: decimal">
+<li><p>Go to your GitHub repository to make sure the files got there.</p></li>
+<li><p>Turn on your GitHub pages for this repository by going to <code>Settings</code> &gt; <code>Pages</code> &gt; and Underneath <code>Branch</code> choose <code>main</code>. Click Save.</p></li>
+<li><p>All of your project htmls should be able to be seen using a URL that will look like this:</p></li>
+</ol>
+<p><a href="https://cansavvy.github.io/datatrail_projects/01_Forming_Questions/first_project.nb.html" class="uri">https://cansavvy.github.io/datatrail_projects/01_Forming_Questions/first_project.nb.html</a></p>
+<p>To break this down, it will be like this:</p>
+<p><code>https://username.github.io/name_of_your_project_repository/section_folder/project_html_file_name.nb.html</code></p>
+<p>Have these links all together because now we will want to post them to your professional website!</p>
+<div id="add-links-to-your-projects-to-your-website" class="section level4" number="95.1.1.1">
+<h4><span class="header-section-number">95.1.1.1</span> Add links to your projects to your website!</h4>
+<ol style="list-style-type: decimal">
+<li><p>Go to the GitHub repository for the website you created in the <code>Make your own website!</code> chapter.</p></li>
+<li><p>Add a section that describes the DataTrail projects you have done. Make sure to feature your final project that you worked on in the previous chapter.</p></li>
+<li><p>Put links to all the projects you worked on for this course following the URL template we described above and using R Markdown syntax. Feel free to change them how you see fit! These are your projects now!</p></li>
+</ol>
+<pre><code>[Description of project](URL YOUVE PIECED TOGETHER)</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Be proud of all the excellent work you have done! And now you have a way to show it off!</li>
+</ol>
 
+</div>
+</div>
 </div>
 </div>
 <hr>
@@ -1297,8 +1190,8 @@ chickwts %&gt;%
           </div>
         </div>
       </div>
-<a href="working-with-strings.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="working-with-dates.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-science-meetups.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

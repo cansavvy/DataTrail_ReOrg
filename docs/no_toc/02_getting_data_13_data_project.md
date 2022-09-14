@@ -12,8 +12,7 @@ To answer our question, we need some information on books on the Leanpub website
 ### Starting up this project
 
 1. Go to the DataTrail workspace
-2. Go to the [Data Trail Project list](https://rstudio.cloud/spaces/3919/content/lists/2065).
-3. Go to the `DataTrail_Projects` project in this list. Click on it to start this assignment. For all future projects you will return to this same place to keep working on your projects.
+3. Return to your own `DataTrail_Projects` project. Click on it to start this assignment. 
 4. For this project, go to the `02_Getting_Data` folder.
 5. Click on the file `leanpub_project.Rmd` to open this file.
 

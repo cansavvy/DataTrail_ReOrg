@@ -724,7 +724,7 @@ variable-selection-2
 accuracy-assessment-1
 summary-14
 additional-resources-21
-plotting-data-project-1
+stats-project
 starting-up-this-project-4
 your-objectives-4
 sharing-results
@@ -951,7 +951,7 @@ follow-up-meetings-1
 data-science-ethics
 summary-25
 slides-and-video-2
-plotting-data-project-2
+plotting-data-project-1
 starting-up-this-project-5
 your-objectives-5
 building-a-resume
@@ -1128,6 +1128,6 @@ where-to-look
 what-to-expect-1
 meetups-and-jobs
 summary-35
-plotting-data-project-3
+plotting-data-project-2
 starting-up-this-project-6
 your-objectives-6

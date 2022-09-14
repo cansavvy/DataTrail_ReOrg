@@ -996,7 +996,6 @@ what-to-avoid-1
 summary-27
 additional-resources-31
 slides-and-video-3
-making-your-website-more-professional
 make-your-own-website
 more-customization-of-your-website
 blogdown
@@ -1128,6 +1127,7 @@ where-to-look
 what-to-expect-1
 meetups-and-jobs
 summary-35
-plotting-data-project-1
-starting-up-this-project-6
+create-your-portfolio
 your-objectives-6
+get-the-rest-of-your-projects-online-on-github
+add-links-to-your-projects-to-your-website

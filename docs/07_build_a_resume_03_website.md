@@ -1,7 +1,6 @@
 
-# Making Your Website More Professional
 
-## Make your own website!
+# Make your own website!
 
 Follow these instructions to make your own professional website using GitHub.
 
@@ -12,7 +11,7 @@ Make sure this repository is public and initialize it with a README.
 
 ![](screenshots/new_repo_pages.png)
 
-2. Go to RStudio cloud.  Open up a new project using the steps to create a project from a GitHub repository. You can see these instructions here to refresh your memory: https://datatrail-jhu.github.io/04_githubbasics/creating-a-repository.html
+2. Go to RStudio cloud.  Open up a new project using the steps to create a project from a GitHub repository. You can see these instructions here to refresh your memory: https://datatrail-jhu.github.io/DataTrail/creating-a-repository.html
 
 3. In this new RStudio cloud project, create a RMarkdown document.  Save the R Markdown document as the name "index.Rmd" and put it in a folder called "docs". This is important for publishing purposes!
 
@@ -47,11 +46,11 @@ Summarize your trajectory. You could mention what you've done. Like what you've 
 * [youremail@email](mailto:youremail@email)
 ```
 
-5. Edit the theme to your liking by following these instructions: https://datatrail-jhu.github.io/05_R/creating-websites-with-r.html#change-the-theme
+5. Edit the theme to your liking by following these instructions: https://cran.r-project.org/web/packages/prettydoc/vignettes/tactile.html
 
 6. Knit the R Markdown document to see how it will look.
 
-7. When you have it close enough to what you'd like it to look like, add, commit, and push the changes to your GitHub repository. Here's the instructions on how to do that if you need a refresher: https://datatrail-jhu.github.io/04_githubbasics/pushing-and-pulling-changes.html
+7. When you have it close enough to what you'd like it to look like, add, commit, and push the changes to your GitHub repository. Here's the instructions on how to do that if you need a refresher: https://datatrail-jhu.github.io/DataTrail/pushing-and-pulling-changes.html
 
 8. Go to your GitHub repository. Go to Settings > Pages. You should see a URL to your new website.  Scroll down and underneath "Branch" change the folder to "docs" and click save!
 

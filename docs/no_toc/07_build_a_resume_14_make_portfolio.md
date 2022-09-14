@@ -1,41 +1,69 @@
 
 
 
-# Plotting Data Project
+# Create your portfolio!
 
-In this project, we are going to try to answer this question with data:
+In this chapter, we aren't creating a formal project per se, but we are gathering all the work you've done through this course as well as other professionally relevant information about yourself and putting it together into a website!
 
-> "What variables relate to the cost of an Airbnb?"
+This will allow you to easily share with potential employers or collaborators the excellent work you have done!
 
-To answer our question, we'll need a dataset that has information about many Airbnbs.
+## Your objectives!
 
-We have gotten this data downloaded for you from Kaggle.
+To complete this project you'll need to do a few things
 
-### Starting up this project
+### Get the rest of your projects online on GitHub
 
-1. Go to the DataTrail workspace
-2. Return to your own `DataTrail_Projects` project in RStudio.
-3. For this project, go to the `04_Plot_the_Data` folder.
-4. Click on the file `airbnb_project.Rmd` to open this file.
+1. Create a new GitHub repository following the steps describe in the `Creating a repository` chapter.
+2. Keep this window open and available.
+3. Go to your `DataTrail project` RStudio project.
+4. Go to the Terminal pane and run the following commands:
+```
+git init
+git add .
+```
+These steps have now made this project a git project.
 
-### Your objectives!
 
-To complete this project you'll need to do a few things within this file.  
+5. Now we need to set up credentials so we can put your projects online! [Follow the credentials set up described in this chapter](https://datatrail-jhu.github.io/DataTrail/cloning-a-repository.html#step-3-set-up-github-credentials).
 
-1. Go through this notebook, reading along.
+6. Return to the Terminal tab and run this:
+```
+git commit -m "add all files"
+```
 
-2. Fill in empty or incomplete code chunks when prompted to do so.
+7. Tell your RStudio git project where to push your project online by running this command in the terminal, but replace the `URL_TO_YOUR_REPOSITORY` with the repository URL of your own GitHub repository:
 
-3. Run each code chunk as you come across it by clicking the tiny green triangles at the right of each chunk. You should see the code chunks print out various output when you do this.
+```
+git remote set-url --push origin URL_TO_YOUR_REPOSITORY
+```
+8. To push all the files here to your GitHub remote repository do this:
+```
+git push --force
+```
+9. Go to your GitHub repository to make sure the files got there.
 
-4. At the very top of this file, put your own name in the `author:` place. Currently it says `"DataTrail Team"`. Be sure to put your name in quotes.
+10. Turn on your GitHub pages for this repository by going to `Settings` > `Pages` > and Underneath `Branch` choose `main`. Click Save.
 
-5. In the `Conclusions` section, write up responses to each of these questions posed here.
+11. All of your project htmls should be able to be seen using a URL that will look like this:
 
-6. When you are satisfied with what you've written and added to this document you'll need to save it. In the menu, go to `File` > `Save`. Now the `nb.html` output resulting file will have your new output saved to it.
+https://cansavvy.github.io/datatrail_projects/01_Forming_Questions/first_project.nb.html
 
-7. Open up the resulting `airbnb_project.nb.html` file and click `View in Web Browser`. Does it look good to you? Did all the changes appear here as you expected.
+To break this down, it will be like this:
 
-8. Upload this file to your Google Drive folder!
+`https://username.github.io/name_of_your_project_repository/section_folder/project_html_file_name.nb.html`
 
-7. Pat yourself on the back for finishing this project!
+Have these links all together because now we will want to post them to your professional website!
+
+#### Add links to your projects to your website!
+
+1. Go to the GitHub repository for the website you created in the `Make your own website!` chapter.
+
+2. Add a section that describes the DataTrail projects you have done. Make sure to feature your final project that you worked on in the previous chapter.
+
+3. Put links to all the projects you worked on for this course following the URL template we described above and using R Markdown syntax. Feel free to change them how you see fit! These are your projects now!
+
+```
+[Description of project](URL YOUVE PIECED TOGETHER)
+```
+
+4. Be proud of all the excellent work you have done! And now you have a way to show it off!

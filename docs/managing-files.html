@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 46 Advanced Data Visualization | DataTrail</title>
-  <meta name="description" content="Chapter 46 Advanced Data Visualization | DataTrail" />
+  <title>Chapter 19 Managing Files | DataTrail</title>
+  <meta name="description" content="Chapter 19 Managing Files | DataTrail" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 46 Advanced Data Visualization | DataTrail" />
+  <meta property="og:title" content="Chapter 19 Managing Files | DataTrail" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 46 Advanced Data Visualization | DataTrail" />
+  <meta name="twitter:title" content="Chapter 19 Managing Files | DataTrail" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="multiple-plots-in-r.html"/>
-<link rel="next" href="plotting-data-project.html"/>
+<link rel="prev" href="getting-help-in-r.html"/>
+<link rel="next" href="r-packages.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -1124,120 +1124,276 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/DataTrail.jpg">
 </div>
-<div id="advanced-data-visualization" class="section level1" number="46">
-<h1><span class="header-section-number">Chapter 46</span> Advanced Data Visualization</h1>
-<p>So far in this course we’ve discussed the characteristics of good plots and tables as well as how to generate these using the statistical programming language R. The remainder of this course will build on what you have already learned, exposing you to a few additional tools that are to you for data visualization. The rest of this course is meant to expose you to the possibilities in R, not help you become an expert. However, after having an idea of the possibilities, we will provide links to other places where you can obtain more information, allow you to practice your data visualization skills on your own, and eventually become an expert at advanced data visualization.</p>
-<div id="interactive-graphics" class="section level3" number="46.0.1">
-<h3><span class="header-section-number">46.0.1</span> Interactive Graphics</h3>
-<p>Up to this point, all the graphics we’ve generated have been static graphics. Static graphics can certainly convey a lot of important information about data. However, they don’t react to user input. Nothing changes when you scroll over them. And, there is no way to adjust what is seen in the graphic after the static graphic is generate. On the other hand, interactive graphics allow users to interact with the information displayed. These graphics add an additional layer of information to the graphics we’ve previously generated in R. For example, an interactive graphic may allow the user to scroll over points on the plot and display information about that point. Or, it may allow the user to highlight a portion of the graph and zoom in on that part of the graph. Generally, if a graph changes in response to user input, it is an interactive graphic.</p>
+<div id="managing-files" class="section level1" number="19">
+<h1><span class="header-section-number">Chapter 19</span> Managing Files</h1>
+<div id="managing-files-in-r" class="section level2" number="19.1">
+<h2><span class="header-section-number">19.1</span> Managing Files in R</h2>
+<p>In this lesson, we will continue our tour of ways in which you will be managing files as a data scientist. In the previous lesson, you learned about the Terminal and its command-based interface to the file system on RStudio Cloud. In this lesson, you will learn in small part about the R programming language and in large part about specific tools within R to manage files. You will learn much more about R for its capabilities in data science work in future courses.</p>
+<div id="why-manage-files-in-r" class="section level3" number="19.1.1">
+<h3><span class="header-section-number">19.1.1</span> Why manage files in R?</h3>
+<p>As a data scientist, you will find it very useful to automate the management and organization of files. For some tasks with larger scale data projects, it will be easier to work with files programmatically in R rather than at the Terminal. Why? Because R is programming language, you will be able to manage files in complex situations where your actions are dependent on lot of other information. For example, if you are working with hundreds of different files, moving them to a location that depends on information in the files is much easier with a programming language such as R rather than at the Terminal. Also, in order to completely document your work in going from raw files to finished products, a good approach is to combine your data work in R (to be covered in later courses) with your file organization work in R.</p>
 </div>
-<div id="animated-graphics" class="section level3" number="46.0.2">
-<h3><span class="header-section-number">46.0.2</span> Animated Graphics</h3>
-<p>Animated graphics are similar to interactive graphics in that they are not static. However, unlike interactive graphics – which respond to user input – animated graphics can generally be thought of as a number of static plots displayed one after another in a specific order in an animation. These are helpful when trying to display changes over time.</p>
-</div>
-<div id="advanced-graphics-in-r" class="section level3" number="46.0.3">
-<h3><span class="header-section-number">46.0.3</span> Advanced Graphics In R</h3>
-<p>Both interactive and animated graphics can be generated in R. We’ll cover the basics below and will include additional resources that can be used to learn even more about generating these types of graphics in R.</p>
-<div id="plotly" class="section level4" number="46.0.3.1">
-<h4><span class="header-section-number">46.0.3.1</span> plotly</h4>
-<p>plotly can be used to “easily translate <code>ggplot2</code> graphs to an interactive web-based version and/or create custom web-based visualizations directly from R.” plotly is its own framework that has been implemented to be usable in R through the <code>plotly</code> package</p>
-<div id="plotly-interactive-graphics" class="section level5" number="46.0.3.1.1">
-<h5><span class="header-section-number">46.0.3.1.1</span> plotly interactive graphics</h5>
-<p>Below, you see that <code>p</code> is a ggplot object. Here, we’re using a dataset with data from 150 different iris flowers. We’re looking at the petal length and petal width of these flowers, broken down by the species of the flower in the plot below. To take this static plot from <code>ggplot</code> (which we learned to generate earlier in this course), to an interactive plot, it only requires calling <code>ggplotly()</code>.</p>
-<div class="sourceCode" id="cb312"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb312-1"><a href="advanced-data-visualization.html#cb312-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Load libraries</span></span>
-<span id="cb312-2"><a href="advanced-data-visualization.html#cb312-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb312-3"><a href="advanced-data-visualization.html#cb312-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
-<span id="cb312-4"><a href="advanced-data-visualization.html#cb312-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb312-5"><a href="advanced-data-visualization.html#cb312-5" aria-hidden="true" tabindex="-1"></a><span class="do">## generate ggplot2 object</span></span>
-<span id="cb312-6"><a href="advanced-data-visualization.html#cb312-6" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Species), <span class="at">y =</span> Petal.Length, <span class="at">color =</span> Petal.Width)) <span class="sc">+</span></span>
-<span id="cb312-7"><a href="advanced-data-visualization.html#cb312-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb312-8"><a href="advanced-data-visualization.html#cb312-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb312-9"><a href="advanced-data-visualization.html#cb312-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb312-10"><a href="advanced-data-visualization.html#cb312-10" aria-hidden="true" tabindex="-1"></a><span class="do">## generate intreactive graphic</span></span>
-<span id="cb312-11"><a href="advanced-data-visualization.html#cb312-11" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplotly</span>(p)</span>
-<span id="cb312-12"><a href="advanced-data-visualization.html#cb312-12" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p>Within RStudio, ggplotly() graphs will display within the ‘Viewer’ tab.</p>
+<div id="navigating-to-r-in-rstudio-cloud" class="section level3" number="19.1.2">
+<h3><span class="header-section-number">19.1.2</span> Navigating to R in RStudio Cloud</h3>
+<p>When you open a project in RStudio Cloud, you will see a Console pane that is immediately next to the Terminal pane. Usually this pane is automatically open when you open a project. The <code>&gt;</code> that you see in the R console is called the <strong>R prompt</strong>. It is analogous to the Terminal prompt in that it is where you can type and enter R commands.</p>
 <div class="figure">
-<img src="https://docs.google.com/presentation/d/1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0/export/png?id=1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0&amp;pageid=g2bfdb07292_0_151" alt="" />
-<p class="caption">iris interactive plot in RStudio</p>
+<img src="https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&amp;pageid=g3aa507622a_0_0" alt="" />
+<p class="caption">Locating the Console in RStudio Cloud</p>
 </div>
-<p>While this picture here appears to be static, within RStudio, you are able to interact with this graph. For example, if you hover over a point on the graph, information about that particular point will display.</p>
+</div>
+<div id="important-functions" class="section level3" number="19.1.3">
+<h3><span class="header-section-number">19.1.3</span> Important functions</h3>
+<div id="what-is-my-working-directory" class="section level4" number="19.1.3.1">
+<h4><span class="header-section-number">19.1.3.1</span> What is my working directory?</h4>
+<p>Recall from the previous lesson that a <strong>working directory</strong> is the folder that you are currently in within a file system. We discussed that the working directory within the Terminal may be different from the working directory within R, and both of these may be different from the Files pane in RStudio. To determine your working directory in R, you can use the <code>getwd()</code> function, which stands for “get working directory.” When you type <code>getwd()</code> at the R prompt and hit enter, you will see the absolute path to your working directory displayed in quotes on a new line. As with working in the Terminal, knowing the working directory in R is important because when you run code that refers to other files, R will search for those files relative to this directory. <code>getwd()</code> is analogous to <code>pwd</code> in the Terminal.</p>
 <div class="figure">
-<img src="https://docs.google.com/presentation/d/1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0/export/png?id=1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0&amp;pageid=g389ae8f2fa_0_12" alt="" />
-<p class="caption">information about a specific point</p>
+<img src="https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&amp;pageid=g3aa507622a_0_206" alt="" />
+<p class="caption">getwd()</p>
 </div>
-<p>Similarly, if you hover your mouse over the boxplot, summary information about that category will display.</p>
+</div>
+<div id="set-the-working-directory" class="section level4" number="19.1.3.2">
+<h4><span class="header-section-number">19.1.3.2</span> Set the working directory</h4>
+<p>In Terminal you learned about the <code>cd</code> command to change the current (working) directory. In R, use the <code>setwd()</code> function, which stands for “set working directory.” Inside the parentheses, type an absolute or relative path in quotes. Just as in the Terminal, tab completion can save typing time and help prevent incorrect spelling. When you hit tab after typing part of a path, RStudio provide a drop down menu of files and folders that fit what you have typed. You can select between them with the arrow keys or your mouse and hit enter to autocomplete. Note also that the absolute path to the current working directory is displayed in the status bar beneath the Console tab. The working directory is not automatically updated or reflected in the Files pane however. Additionally, the Console and the Terminal do <strong>not</strong> talk to one another. When you set your working directory in one, it does <strong>not</strong> change the working directory in the other. This is important to keep in mind when you’re working. In fact, the working directory in the Terminal, Console, and Files tab <em>can</em> all be different.</p>
 <div class="figure">
-<img src="https://docs.google.com/presentation/d/1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0/export/png?id=1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0&amp;pageid=g389ae8f2fa_0_22" alt="" />
-<p class="caption">information about a specific group of points</p>
+<img src="https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&amp;pageid=g3aa507622a_0_216" alt="" />
+<p class="caption">setwd()</p>
 </div>
-<p>If you hover over the graph in general, options will display at the top right of the interactive graph.</p>
+</div>
+<div id="what-is-in-this-folder" class="section level4" number="19.1.3.3">
+<h4><span class="header-section-number">19.1.3.3</span> What is in this folder?</h4>
+<p>In Terminal you learned about the <code>ls</code> command for listing the contents of a directory. In R, use the <code>list.files()</code> function. Without anything in the parentheses, R will list the files in the current working directory. Otherwise, you can include a relative or absolute path in quotes. In the example below we see that using no path gives the same result as specifying the current directory with a period. When we list the files in the <code>raw_code</code> directory, four files are listed. The numbers in the square brackets just help us count in the displayed output. An option when using <code>list.files()</code> is to type <code>full.names = TRUE</code> after the initial path and a comma. Doing this displays the full relative paths to those files. Note that if the path ends in a forward slash, there will be two forward slashes before the filename in the output. This is not a problem, but if you prefer to not have two forward slashes, omit the trailing forward slash when you type the path.</p>
 <div class="figure">
-<img src="https://docs.google.com/presentation/d/1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0/export/png?id=1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0&amp;pageid=g389ae8f2fa_0_1" alt="" />
-<p class="caption">hover over plot menu displays</p>
+<img src="https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&amp;pageid=g3aa507622a_0_244" alt="" />
+<p class="caption">list.files()</p>
 </div>
-<p>We won’t walk through each of these now, but if you hover your mouse over any of the icons in the menu, it will describe what that button does. The best way to get a feel for what these do is to play around with these options in RStudio and to read the <a href="https://plotly-book.cpsievert.me/">plotly documentation</a></p>
+</div>
+<div id="create-a-file" class="section level4" number="19.1.3.4">
+<h4><span class="header-section-number">19.1.3.4</span> Create a file</h4>
+<p>In Terminal you learned about the <code>touch</code> command to create a blank file. In R, use the <code>file.create()</code> function. In parentheses, provide a path to the file to create. If this is successful, R will display <code>TRUE</code> and <code>FALSE</code> otherwise. You can verify that the file has been created by using <code>list.files()</code>. As in Terminal, you can quickly cycle through recent commands using the up and down arrow keys.</p>
 <div class="figure">
-<img src="https://docs.google.com/presentation/d/1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0/export/png?id=1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0&amp;pageid=g389ae8f2fa_0_29" alt="" />
-<p class="caption">hover over button in menu displays</p>
+<img src="https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&amp;pageid=g3aa507622a_0_253" alt="" />
+<p class="caption">file.create()</p>
 </div>
 </div>
-<div id="plotly-animated-graphics" class="section level5" number="46.0.3.1.2">
-<h5><span class="header-section-number">46.0.3.1.2</span> plotly animated graphics</h5>
-<p>In addition to general interactive graphics, plotly can also be used to generate animated plots - plots that show changes over time. The code for this is similar in form to what is seen above; however, it requires the <code>frame</code> argument be specified. This states what variable <code>ggplotly</code> should use for each frame in the animation.</p>
-<p>To demonstrate how this can be done, we’ll use a very common example data set, frequently used by R users. This dataset is from Jenny Bryan’s <a href="https://cran.r-project.org/web/packages/gapminder/index.html"><code>gapminder</code> R package</a>. It contains data about the life expectancy, population, and per capita GDP from a number of countries from 1952 to 2007. We will use these data to generate an animated graphic that shows the relationship between per capita GDP and life expectancy by country. Each point on the graph represents a different country. The points are colored by the continent that each country is from. As mentioned above, to generate an animated plot within plotly, frame must be specified. Below, frame is specified to be <code>year,</code> which specifies that the animation should cycle through the years within this dataset.</p>
-<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="advanced-data-visualization.html#cb313-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install the package</span></span>
-<span id="cb313-2"><a href="advanced-data-visualization.html#cb313-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;gapminder&quot;</span>)</span>
-<span id="cb313-3"><a href="advanced-data-visualization.html#cb313-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb313-4"><a href="advanced-data-visualization.html#cb313-4" aria-hidden="true" tabindex="-1"></a><span class="do">## get the data</span></span>
-<span id="cb313-5"><a href="advanced-data-visualization.html#cb313-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(gapminder, <span class="at">package =</span> <span class="st">&quot;gapminder&quot;</span>)</span>
-<span id="cb313-6"><a href="advanced-data-visualization.html#cb313-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb313-7"><a href="advanced-data-visualization.html#cb313-7" aria-hidden="true" tabindex="-1"></a><span class="do">## generate ggplot object</span></span>
-<span id="cb313-8"><a href="advanced-data-visualization.html#cb313-8" aria-hidden="true" tabindex="-1"></a>gg <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(gapminder, <span class="fu">aes</span>(gdpPercap, lifeExp, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb313-9"><a href="advanced-data-visualization.html#cb313-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">frame =</span> year, <span class="at">ids =</span> country)) <span class="sc">+</span></span>
-<span id="cb313-10"><a href="advanced-data-visualization.html#cb313-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span>
-<span id="cb313-11"><a href="advanced-data-visualization.html#cb313-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb313-12"><a href="advanced-data-visualization.html#cb313-12" aria-hidden="true" tabindex="-1"></a><span class="do">## plot animated graphic</span></span>
-<span id="cb313-13"><a href="advanced-data-visualization.html#cb313-13" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(gg)</span></code></pre></div>
+<div id="moving-and-renaming-a-file" class="section level4" number="19.1.3.5">
+<h4><span class="header-section-number">19.1.3.5</span> Moving and renaming a file</h4>
+<p>In Terminal you learned about the <code>mv</code> command for moving and renaming files. In R, use the <code>file.rename()</code> function. In the parentheses, you provide two paths separated by a comma. The first path is the path to the origin file. The second path is the path to the destination file. In the first example, we move the <code>data3.txt</code> file and keep the same name by specifying a different sequence of folders at the beginning of the second path and keeping the same file name. In the second example, we move and rename simultaneously by specifying a different sequence of folders and a different file name. If the renaming is successful, R will display <code>TRUE</code> and <code>FALSE</code> otherwise.</p>
 <div class="figure">
-<img src="https://docs.google.com/presentation/d/1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0/export/png?id=1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0&amp;pageid=g389ae8f2fa_0_37" alt="" />
-<p class="caption">plotly animated graphic</p>
+<img src="https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&amp;pageid=g3aa507622a_0_260" alt="" />
+<p class="caption">file.rename()</p>
 </div>
-<p>An important point is that this animated graphic is still an interactive graphic. For example, if we were only interested in looking at this relationship for countries in Africa and Europe, we could click on “Americas”, “Asia”, and “Oceania” in the legend to remove those points from the plot in the current view.</p>
+</div>
+<div id="copy-a-file" class="section level4" number="19.1.3.6">
+<h4><span class="header-section-number">19.1.3.6</span> Copy a file</h4>
+<p>In Terminal you learned about the <code>cp</code> command for copying and renaming files. In R, use the <code>file.copy()</code> function. This function works similarly to <code>file.rename()</code> in that you have to supply the path to the original file first and the path to the destination second. If the copy is successful, R will display <code>TRUE</code> and <code>FALSE</code> otherwise. The first example copies the <code>data3_renamed.txt</code> file to the <code>data3.txt</code> file. In the second example, we try to do this again but fail because <code>data3.txt</code> already exists, and R will not overwrite a file by default. In example 3, we specify <code>overwrite = TRUE</code> after the two paths and a comma to explicitly overwrite the <code>data3.txt</code> file.</p>
 <div class="figure">
-<img src="https://docs.google.com/presentation/d/1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0/export/png?id=1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0&amp;pageid=g389ae8f2fa_0_68" alt="" />
-<p class="caption">plotly animated graphic is still interactive</p>
+<img src="https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&amp;pageid=g3aa507622a_0_288" alt="" />
+<p class="caption">file.copy()</p>
 </div>
 </div>
-<div id="plotly-in-rmarkdown-reports" class="section level5" number="46.0.3.1.3">
-<h5><span class="header-section-number">46.0.3.1.3</span> plotly in RMarkdown reports</h5>
-<p>plotly objects can be printed directly into RMarkdown reports (.Rmd files) as long as that .Rmd file is knit into an HTML document. If, however, a plotly object is knit in a non-HTML format, it will print simply as a .png screenshot of the graph.</p>
+<div id="remove-a-file" class="section level4" number="19.1.3.7">
+<h4><span class="header-section-number">19.1.3.7</span> Remove a file</h4>
+<p>In Terminal you learned about the <code>rm</code> command for deleting files. In R, use the <code>file.remove()</code> function. In the parentheses, provide a path to the file you want to delete in quotes. If the deletion is successful, R will display <code>TRUE</code> and <code>FALSE</code> otherwise.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&amp;pageid=g3aa507622a_0_294" alt="" />
+<p class="caption">file.remove()</p>
 </div>
 </div>
-<div id="gganimate" class="section level4" number="46.0.3.2">
-<h4><span class="header-section-number">46.0.3.2</span> gganimate</h4>
-<p>With many things in R, there is more than one way to generate animated objects in RStudio. There is an additional package that allows for the generation of animated graphics from ggplot2 graphs: <a href="https://github.com/dgrtwo/gganimate"><code>gganimate</code></a>.</p>
-<p>Below we will generate the same graph as above but will use <code>gganimate()</code> to do so. The code to generate the ggplot object created (gg) will not change. The benefit of gganimate() is that if you are interesting in saving the image as a GIF, rather than embedding the plot into your .Rmd report, gganimate() has this capability. (gganimate() can save animated graphics as .gif, .mp4, .swf, and .html objects)</p>
-<div class="sourceCode" id="cb314"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb314-1"><a href="advanced-data-visualization.html#cb314-1" aria-hidden="true" tabindex="-1"></a><span class="do">## download and load gganimate</span></span>
-<span id="cb314-2"><a href="advanced-data-visualization.html#cb314-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;dgrtwo/gganimate&quot;</span>)</span>
-<span id="cb314-3"><a href="advanced-data-visualization.html#cb314-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gganimate)</span>
-<span id="cb314-4"><a href="advanced-data-visualization.html#cb314-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb314-5"><a href="advanced-data-visualization.html#cb314-5" aria-hidden="true" tabindex="-1"></a><span class="do">## plot animated graphic using gganimate</span></span>
-<span id="cb314-6"><a href="advanced-data-visualization.html#cb314-6" aria-hidden="true" tabindex="-1"></a><span class="fu">gganimate</span>(gg)</span>
-<span id="cb314-7"><a href="advanced-data-visualization.html#cb314-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb314-8"><a href="advanced-data-visualization.html#cb314-8" aria-hidden="true" tabindex="-1"></a><span class="do">## to save this plot</span></span>
-<span id="cb314-9"><a href="advanced-data-visualization.html#cb314-9" aria-hidden="true" tabindex="-1"></a><span class="fu">gganimate</span>(gg, <span class="st">&quot;output.gif&quot;</span>)</span></code></pre></div>
-<p>{format: gif}
-<img src="https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/14127164/output.gif" alt="gganimate gif" /></p>
+<div id="does-a-file-exist" class="section level4" number="19.1.3.8">
+<h4><span class="header-section-number">19.1.3.8</span> Does a file exist?</h4>
+<p>In Terminal you used the <code>ls</code> command to list the contents of a directory for verifying what files and folders are present. If you want to check whether a particular file exists, you can use the <code>file.exists()</code> function in R. In the parentheses, provide a path to the file of interest. In the first example, we show the usage for a single file. For <code>data1.txt</code>, R displays <code>TRUE</code> because this file exists. In the second example, we show the usage if you want to check the existence of multiple files. The multiple files are specified in what is called a <strong>character vector</strong>. The two paths are separated by a comma in the <code>c()</code> function which is the concatenation function. In this case, R displays <code>TRUE</code> then <code>FALSE</code> because <code>data2.txt</code> exists but <code>data4.txt</code> does not. You will learn much more about character vectors and the <code>c()</code> function in later courses devoted to R. Note that the other functions we covered in this lesson (except <code>getwd()</code> and <code>setwd()</code>) can also be used on multiple files by supplying <strong>character vectors</strong> of paths instead of single paths. You will have a chance to try these out when you learn more about R and begin working on projects.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&amp;pageid=g3aa507622a_0_300" alt="" />
+<p class="caption">file.exists()</p>
+</div>
+<p>In this lesson, you learned about R functions that are analogous to Terminal commands for managing files. As you work on projects, you’ll gain an appreciation for the benefits of managing files using a programming language.</p>
 </div>
 </div>
-<div id="additional-resources-16" class="section level3" number="46.0.4">
-<h3><span class="header-section-number">46.0.4</span> Additional resources</h3>
+</div>
+<div id="managing-files-in-the-terminal" class="section level2" number="19.2">
+<h2><span class="header-section-number">19.2</span> Managing Files in the Terminal</h2>
+<p>As was discussed in the first lesson of this course, one of the most important aspects of being a productive data scientist is staying organized. And a big part of staying organized is in managing your files: knowing where they are located and manipulating them with ease. In these next few lessons, we will be getting you fluent in orienting yourself in file systems in two areas: the Terminal and R/RStudio. In this lesson, we will focus on working with the Terminal.</p>
+<div id="what-is-the-terminal" class="section level3" number="19.2.1">
+<h3><span class="header-section-number">19.2.1</span> What is the Terminal?</h3>
+<p>The Terminal is an interface to the operating system of a computer. That is, it provides a way for you to type commands in order to perform actions on a computer. For example, there are commands to create new files and folders and to open files and folders. On your computer, you are familiar with using your mouse to perform such actions. When you are working with data on RStudio Cloud, however, you will not be able to use your mouse for everything that you’ll want to do. It will be important for you to become comfortable with using the Terminal as a place for purely text-based commands. In RStudio Cloud, the Terminal is located in the tab next to the Console.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_0" alt="" />
+<p class="caption">Locating the Terminal in RStudio Cloud</p>
+</div>
+<p>When you click on this tab, you will see a pane that looks as follows:</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_47" alt="" />
+<p class="caption">The Terminal prompt</p>
+</div>
+<p>You will always see a string of text at the beginning of the line. This is called the <strong>Terminal prompt</strong>. To the right of the dollar sign, you will be entering your commands. The Terminal is going to be extremely important for efficient management of your files. You will also use it extensively in the next course when you learn about version control systems and GitHub because it is the primary interface for working with those tools.</p>
+</div>
+<div id="why-manage-files-in-the-terminal" class="section level3" number="19.2.2">
+<h3><span class="header-section-number">19.2.2</span> Why manage files in the Terminal?</h3>
+<p>As we’ve discussed, the Terminal is a command-based interface to a computer operating system. Let’s say that you wanted to make a copy of a folder. Whether on RStudio Cloud or on Google Drive, you would need to go through a series of clicks and typing to find that folder, copy it, and rename it. Within the Terminal, this can all be achieved with a single command. This also allows you to have this command written down so you can more easily repeat it later.</p>
+</div>
+<div id="file-system-example-and-vocabulary" class="section level3" number="19.2.3">
+<h3><span class="header-section-number">19.2.3</span> File system example and vocabulary</h3>
+<p>When you are using your mouse to <em>point and click</em> to a file on your computer you are starting from a particular location and may jump within a series of folders to get to the destination file you are looking for. The series of folders it takes to get to the file is called a <em>file path</em>. A file path is a string that specifies a sequence of folders to traverse in order to end up at a final destination.</p>
+<p>File paths can be <em>relative</em> or <em>absolute</em>.</p>
+<p>To make an analogy, if someone asked you directions to a particular building, the directions you give would be tailored based on where this person located. In other words your directions would be <em>relative</em> to their location.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g1474c117378_2_0" alt="" />
+<p class="caption">Relative paths</p>
+</div>
+<p>In the same way, your computer can be given absolute directions to a file - basically the directions with absolute directions or they can be relative to where you are calling the command in the computer.</p>
+<p>So in our above analogy, if you are trying to direct someone to somewhere on Johns Hopkins’ campus with a file path:</p>
+<p><strong>An absolute file path would be:</strong><br />
+<code>/Earth/North America/United States/Maryland/Baltimore/Johns Hopkins University/Street Name/Building number</code></p>
+<p>Whereas if the person was already in Baltimore, <strong>a relative file path would be:</strong><br />
+<code>Johns Hopkins University/Street Name/Building number</code></p>
+<p>To know your location within a file system is to know exactly what folder you are in right now. The folder that you are in right now is called the <strong>working directory</strong>. In the above analogy a person being located in <code>Baltimore</code> would be their <strong>working directory</strong>. In a path, folder names are separated by forward slashes <code>/</code></p>
+<p>Note that a relative directory may be different between different apps: RStudio versus Terminal versus something else.</p>
+<p>The end of a path string may be a file name if you are creating a path to a file. If you are creating a path to a folder, the path string will end with the destination folder.</p>
+<p>Returning to computer files. In your Terminal you can see your working directory at at the top of the Terminal window or at the beginning of the terminal prompt. Knowing this, this can tell you how you need to change the command you are entering. Let’s say you want to list, using the <code>ls</code> command, a file called <code>file.txt</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_52" alt="" />
+<p class="caption">Relative path</p>
+</div>
+<p>Alternatively, you can specify an <strong>absolute path</strong>. An absolute path starts at the <strong>root directory</strong> of a file system. The root directory does not have a name like other folders do. It is specified with a single forward slash <code>/</code> and is special in that it cannot be contained within other folders. In the current file system, the root directory contains a folder called <code>cloud</code>, which contains a folder called <code>project</code> which contains the folder <code>data_analysis_project</code>, which has the <code>file.txt</code> file we are looking for.</p>
+</div>
+<div id="important-terminal-commands" class="section level3" number="19.2.4">
+<h3><span class="header-section-number">19.2.4</span> Important Terminal Commands</h3>
+<p>Now that you have some vocabulary, we can delve into details about creating and using paths with different Terminal commands for managing files.</p>
+<div id="where-am-i-right-now" class="section level4" number="19.2.4.1">
+<h4><span class="header-section-number">19.2.4.1</span> Where am I right now?</h4>
+<p>If you want to know your current working directory with the Terminal, you can look at the top of the Terminal window OR you can use the <code>pwd</code> command by typing <code>pwd</code> at the Terminal prompt and hitting Enter. This stands for “print working directory”, and it prints the absolute path to your current location. In the example below we are in the <code>project</code> folder within the <code>cloud</code> folder. We can determine that this is an absolute path because it starts with a forward slash <code>/</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_138" alt="" />
+<p class="caption">pwd command</p>
+</div>
+</div>
+<div id="what-is-in-this-folder-1" class="section level4" number="19.2.4.2">
+<h4><span class="header-section-number">19.2.4.2</span> What is in this folder?</h4>
+<p>If you want to know what files and folders are contained within your current directory, you can use the <code>ls</code> command. This stands for “list”, and it lists the files and folders within the current directory. If you just use the <code>ls</code> command without any options, the contents will be displayed horizontally across lines. If you add the <code>-lh</code> option with a space after the initial <code>ls</code> command, the output is displayed more nicely. The <code>l</code> part displays the results in a longer form with more information than just the file name. The <code>h</code> part displays the file sizes in a human-readable format. The most important pieces of information are in the last three columns, which display the file or folder size, the date the file or folder was last modified, and the name of the file or folder. You can also list the contents of a specific folder by specifying an absolute or relative path after the main <code>ls</code> command.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_376" alt="" />
+<p class="caption">ls command</p>
+</div>
+<p>When you use <code>ls</code> without specifying any path, it displays the contents of the current working directory. You can get the same results by specifying a period <code>.</code> for the path, as shown below. The period stands for the current working directory.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g3a9f4bba8b_0_74" alt="" />
+<p class="caption">ls command</p>
+</div>
+</div>
+<div id="change-directory" class="section level4" number="19.2.4.3">
+<h4><span class="header-section-number">19.2.4.3</span> Change directory</h4>
+<p>If you would like to change your current working directory, you can use the <code>cd</code> command. This stands for “change directory” and moves you to the folder that you specify with a path after <code>cd</code>. When you type these paths, it will be incredibly useful to use the <strong>tab completion</strong> feature of Terminal. With tab completion, you can partially type part of a folder or file name and hit tab to automatically fill in the remainder of the name.</p>
+<p>This is super handy because file paths have to be typed <strong>exactly right</strong> for them to work. Same capitalization, spaces, punctuation, etc. So if you use tab completion to complete a file path, you know it will be typed exactly right!</p>
+<p>For example, if we are typing out a file path within a command and want to type out the folder for <code>data_analysis_project</code>, if we have cd <code>cloud/project/da</code> typed out, and then we click the <em>tab</em> it will autocomplete the rest of the folder name: <code>data_analysis_project</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_182" alt="" />
+<p class="caption">cd command</p>
+</div>
+<p>If you try to change directory to a nonexistent folder, you will get an error message that looks as below:</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_202" alt="" />
+<p class="caption">Error with the cd command</p>
+</div>
+<p>You can avoid error messages like this more often if you use tab completion!</p>
+<p>There’s one last important note about file paths. As we’ve mentioned, data science is best done as a team! This means you will often share you code and data with others.</p>
+<p><strong>Absolute file paths are not transferrable to other computers!</strong></p>
+<p>Do not write absolute file paths in your code because they will not work anywhere else!
+Try to stick to relative file paths (and we will practice this idea more later so you know how to do this).</p>
+</div>
+<div id="cycling-through-previous-commands" class="section level4" number="19.2.4.4">
+<h4><span class="header-section-number">19.2.4.4</span> Cycling through previous commands</h4>
+<p>Often when working in the Terminal, you will want to run the same or similar commands that you have run earlier. For example, you may want to change directories, list files, and then repeat this process as you change to other directories. You can avoid typing commands over and over by using the up and down arrow keys at the Terminal prompt. Hitting the up arrow key once pulls up the last command that you entered. Hitting the up key twice pulls up the command you entered two times ago. Now hitting down will pull up your last command again. You can keep hitting up and down to cycle through your previous commands. Try this out when you are typing at the Terminal!</p>
+</div>
+<div id="the-wildcard-operator" class="section level4" number="19.2.4.5">
+<h4><span class="header-section-number">19.2.4.5</span> The wildcard operator</h4>
+<p>In several different Terminal commands, it can be useful to specify only part of a file or folder name. For example, if we go to the <code>raw_code</code> folder and use the <code>ls</code> command, we see that there are 4 files. In larger projects, there may be many more files and we might not want to view all of them. We can specify certain patterns of files to list after the main <code>ls</code> command using part of the file name combined with the <code>*</code> wildcard operator. This operator matches any number of characters. So to list only files that start with “clean”, we can use <code>ls -lh clean*</code>. To only list files that contain “dataset1”, we can use <code>ls -lh *dataset1*</code> to match any characters on either side of the “dataset1” pattern. This will be useful when you work more with GitHub, starting in the next course.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g39e98c7b77_0_264" alt="" />
+<p class="caption">Wildcard operator</p>
+</div>
+</div>
+<div id="copying-files-and-folders" class="section level4" number="19.2.4.6">
+<h4><span class="header-section-number">19.2.4.6</span> Copying files and folders</h4>
+<p>Copying files and folders will come up often during your work. You may want to copy a messy code file to a new file to begin cleaning it up. It may be useful to do this for an entire folder. To copy in Terminal, we can use the <code>cp</code> command. To copy one file, the syntax is</p>
+<pre class="text"><code>cp path_to_original_file path_to_new_file</code></pre>
+<p>The path to the original file and the path to the new file can be absolute or relative paths. In the path to the new file, you can specify a different file name to rename it. In the example below, the first command <code>cp clean_dataset1.R ../final_code/</code> copies the <code>clean_dataset1.R</code> file to the <code>final_code</code> folder and keeps the same name. The second command <code>cp clean_dataset1.R ../final_code/clean_dataset1_renamed.R</code> specifies the relative path and a new file name. When we list the contents of the <code>final_code</code> folder, we see both the originally named file and the renamed file.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g3a9f4bba8b_0_88" alt="" />
+<p class="caption">Copying a single file</p>
+</div>
+<p>We can combine copying with the wildcard operator to copy multiple files. This does not rename the files. We can also copy multiple files into a directory by naming the files explicitly. That is <code>cp analyze* ../final_code/</code> achieves the same as <code>cp analyze_dataset1.R analyze_dataset2.R ../final_code/</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_0" alt="" />
+<p class="caption">Copying multiple files</p>
+</div>
+<p>To copy a folder, we must specify the recursive option <code>-r</code> in order to copy all of the files and folders inside the one being copied. In the example below, using <code>cp final_code/ publication_code</code> doesn’t work, but <code>cp -r final_code/ publication_code</code> does work. Note that a final forward slash at the end of <code>final_code</code> and <code>publication_code</code> is optional. In these examples, you will see the trailing forward slash when tab completion was used to speed up typing.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_15" alt="" />
+<p class="caption">Copying a folder</p>
+</div>
+</div>
+<div id="moving-files-and-folders" class="section level4" number="19.2.4.7">
+<h4><span class="header-section-number">19.2.4.7</span> Moving files and folders</h4>
+<p>In the process of organizing your files, you will undoubtedly need to move files and folders to different locations. To move files and folders in Terminal, we can use the <code>mv</code> command. This command also renames files and folders. Similar to the copy command, the syntax for moving one file is</p>
+<pre class="text"><code>mv path_to_original_file path_to_new_file</code></pre>
+<p>Just as with copy, the path to the original file and the path to the new file can be absolute or relative paths. In the path to the new file, you can specify a different file name to rename it. In the example below, the first command <code>mv ../final_code/clean_dataset1_renamed.R .</code> moves the <code>clean_dataset1_renamed.R</code> file to the current working directory (indicated by the period at the end of the command) and keeps the same name. The next two commands <code>mv clean_dataset1.R tidy_dataset1.R</code> and <code>mv clean_dataset2.R tidy_dataset2.R</code> rename the files in the working directory to start with <code>tidy</code> instead of <code>clean</code>. When we list the contents of the working directory, we see both the moved file and the two renamed files.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_33" alt="" />
+<p class="caption">Moving a single file</p>
+</div>
+<p>We can combine moving with the wildcard operator to move multiple files. This does not rename the files. We can also move multiple files into a directory by naming the files explicitly. This is achieved with <code>mv tidy_dataset1.R tidy_dataset2.R ../raw_code/</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_69" alt="" />
+<p class="caption">Moving multiple files</p>
+</div>
+<p>To move a folder into another folder, we use the same syntax for moving a single file:</p>
+<pre class="text"><code>mv path_to_folder_being_moved destination_path</code></pre>
+<p>In the example below, we achieve this with <code>mv raw_code/ publication_code/</code>. We can also rename a folder by specifying a new name for the destination path. In the example, we achieve this with <code>mv publication_code/ pub_code</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_91" alt="" />
+<p class="caption">Moving and renaming a folder</p>
+</div>
+</div>
+<div id="deleting-files-and-folders-1" class="section level4" number="19.2.4.8">
+<h4><span class="header-section-number">19.2.4.8</span> Deleting files and folders</h4>
+<p>To delete files and folders in the Terminal, we can use the <code>rm</code> command, which stands for remove. To remove a single file, the syntax is as follows:</p>
+<pre class="text"><code>rm path_to_file_to_delete</code></pre>
+<p>To remove multiple files, you can specify paths to multiple files separated by spaces or use the wildcard operator. Examples are shown below.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_110" alt="" />
+<p class="caption">Deleting files</p>
+</div>
+<p>To delete a folder, we must specify the recursive option <code>-r</code> in order to recursively delete all of the files and folders inside the one being deleted. This is exactly as we had to do with copying a folders. In the example below, using <code>rm final_code/</code> doesn’t work, but <code>rm -r final_code/</code> does work.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g37c845e10b_0_127" alt="" />
+<p class="caption">Deleting a folder</p>
+</div>
+<p>Be very careful when deleting files and folders because this action is irreversible! In particular, <code>rm *</code> will delete all files in the current working directory. If you are using the wildcard operator, test your wildcard pattern with an <code>ls</code> command before deleting anything.</p>
+</div>
+<div id="creating-files-and-folders" class="section level4" number="19.2.4.9">
+<h4><span class="header-section-number">19.2.4.9</span> Creating files and folders</h4>
+<p>To create an empty file in the Terminal, we can use the <code>touch</code> command with <code>touch path_to_file</code>. The file will be empty, but it serves as a placeholder in case you decide to later open and edit the file.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g3b1e0adfae_0_0" alt="" />
+<p class="caption">Creating a new file</p>
+</div>
+<p>To create a new directory in the Terminal, we can use the <code>mkdir</code> command, which stands for “make directory.” After <code>mkdir</code>, type the path to the folder that we want to create.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&amp;pageid=g3b1e0adfae_0_7" alt="" />
+<p class="caption">Creating a new directory</p>
+</div>
+</div>
+</div>
+<div id="additional-resources" class="section level3" number="19.2.5">
+<h3><span class="header-section-number">19.2.5</span> Additional Resources</h3>
 <ul>
-<li><a href="https://plotly-book.cpsievert.me/">plotly</a> documentation</li>
-<li><a href="https://github.com/dgrtwo/gganimate">gganimate</a> documentation</li>
+<li><a href="https://shapeshed.com/unix-ls/">The ls command</a></li>
+<li><a href="https://shapeshed.com/unix-cp/">The cp command</a></li>
+<li><a href="https://shapeshed.com/unix-mv/">The mv command</a></li>
+<li><a href="https://shapeshed.com/unix-rm/">The rm command</a></li>
 </ul>
 
+</div>
 </div>
 </div>
 <hr>
@@ -1253,8 +1409,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="multiple-plots-in-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="plotting-data-project.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="getting-help-in-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="r-packages.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

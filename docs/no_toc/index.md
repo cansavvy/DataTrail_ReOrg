@@ -3,10 +3,13 @@ title: "DataTrail"
 date: "September, 2022"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: book.bib
+bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
-favicon: assets/DataTrail_favicon.ico
+favicon: assets/dasl_favicon.ico
+output:
+    bookdown::word_document2:
+      toc: true
 ---
 
 

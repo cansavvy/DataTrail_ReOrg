@@ -38,7 +38,7 @@ test_url <- function(url) {
     # Fails if 404'ed
     status <- ifelse(httr::status_code(httr::GET(url)) == 404, "failed", "success")
   }
-  
+
   return(status)
 }
 

@@ -39,7 +39,8 @@ devtools::session_info()
 ```
 
 <!-- Author information -->
-
+[Ashley K Johnson]: https://www.linkedin.com/in/ashleykgjohnson
+[Davon Person]: https://www.linkedin.com/in/davon-person-1ba973194
 [Aboozar Hadavand]: https://www.ahadavand.com/
 [Shannon Ellis]: https://www.shanellis.com/
 [John Muschelli]: https://johnmuschelli.com/
@@ -51,7 +52,6 @@ devtools::session_info()
 [Sean Kross]: https://seankross.com/
 [Sarah McClymont]: https://www.linkedin.com/in/sarahmcclymont/
 [Leah Jager]: https://lrjager.github.io/
-[Ashley K Johnson]: https://www.linkedin.com/in/ashleykgjohnson
 
 <!-- Links -->
 

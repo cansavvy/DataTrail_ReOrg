@@ -2,42 +2,19 @@
 
 ## DataTrail 
 
-## Open-source Tools for Training Resources - OTTR
-
-The purpose of this course template and guide is to make course publishing maintenance across multiple different platforms _less painful_.
-
-_This template and guide helps you_:   
-
-- Edit and write a course in [RMarkdown files](https://rmarkdown.rstudio.com/) and have it published to multiple different platforms:
-  - [Leanpub](https://leanpub.com/bookstore?type=course)
-  - [Bookdown](https://bookdown.org/)
-  - [Coursera](https://www.coursera.org/)
-- Have [Github action robots](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) do your repetitive tasks like spell check and re-rendering.
-- Use [automagic conversion](https://github.com/jhudsl/ottrpal) to ease the lift of prepping the material for different platforms' formats.
-- Use [our Docker image](https://hub.docker.com/repository/docker/jhudsl/course_template) for consistency across authors as well as to help you [avoid dependency hell](https://en.wikipedia.org/wiki/Dependency_hell).
-
-[See the OTTR pre-print here!](https://arxiv.org/abs/2203.07083)
-
-<img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=gf4fcf6569c_2_29" width="500"/>
-
-## To Get Started
-- Go to the [Wiki page](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started)
-- Please take a look at the [code of conduct](./code_of_conduct.md).
-- If you encounter any problems or have ideas for improvements to this template repository or this getting started guide, please [file an issue here](https://github.com/jhudsl/OTTR_Template/issues/new/choose)! Your feedback is very much appreciated.
-
-<!--Delete everything above this line upon using the template-->
-
-# {Course Name}
-
 You can take the course for certification here: https://leanpub.com/c/datatrail
-Or you can browse the material here: 
+Or you can browse the material here: https://datatrail-jhu.github.io/DataTrail/
 
 ## About this course
 
-This course introduces {info on what this course introduces}
+[DataTrail](https://www.datatrail.org/) is a no-cost, paid 14-week educational initiative for young-adult, high school and GED-graduates. DataTrail aims to equip members of underserved communities with the necessary skills and support required to work in the booming field of data science. 
+
+DataTrail is a fresh take on workforce development that focuses on training both Black, Indigenous, and other people of color (BIPOC) interested in the data science industry and their potential employers.
+
+Offered by the Johns Hopkins Bloomberg School of Public Health, in partnership with local non-profits and Leanpub, DataTrail combines a mutually-intensive learning experience (MILE) with a whole-person ecosystem of support to allow aspiring data scientists and their employers to succeed.  
 
 ## Encountering problems?
 
-If you are encountering any problems with this course, please file a GitHub issue or contact us at {Some email or web address with a contact form}.
+If you are encountering any problems with this course, please file a GitHub issue, by [filling out this form](https://docs.google.com/forms/d/e/1FAIpQLSfDs_ZkTI1kIwAMn_33ZYxBhpyJ-7Pqvxpnzr4S8FYhnBMIOQ/viewform), or by contacting us at datatrailteam@gmail.com .
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />All materials in this course are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> unless noted otherwise.

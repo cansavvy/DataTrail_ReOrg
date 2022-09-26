@@ -1,7 +1,7 @@
 
 
 
-# Create your portfolio!
+# Create your portfolio
 
 In this chapter, we aren't creating a formal project per se, but we are gathering all the work you've done through this course as well as other professionally relevant information about yourself and putting it together into a website!
 

@@ -2,12 +2,10 @@
 
 ## DataTrail 
 
-You can take the course for certification here: https://leanpub.com/c/datatrail
-Or you can browse the material here: https://datatrail-jhu.github.io/DataTrail/
-
-## About this course
-
 [DataTrail](https://www.datatrail.org/) is a no-cost, paid 14-week educational initiative for young-adult, high school and GED-graduates. DataTrail aims to equip members of underserved communities with the necessary skills and support required to work in the booming field of data science. 
+
+- You can take the course for free for certification here: https://leanpub.com/c/datatrail
+- Or you can browse the material here: https://datatrail-jhu.github.io/DataTrail/
 
 DataTrail is a fresh take on workforce development that focuses on training both Black, Indigenous, and other people of color (BIPOC) interested in the data science industry and their potential employers.
 

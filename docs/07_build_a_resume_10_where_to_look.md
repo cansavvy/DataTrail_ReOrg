@@ -21,25 +21,6 @@ A final note on looking for jobs, you may have limitations that should be consid
 
 In the rest of this lesson we'll focus in on where to search for positions and the strengths of each; however, before we do so, it's important to note that data scientist positions do not always have the title data scientist. We've mentioned above that "data scientist," "data analyst", "junior data scientist", and "entry level data scientist" may be great terms to search. But, data science positions are also sometimes "product analyst","quantitative analyst," or  "research scientist." While you may not be qualified for every position with each of these titles, it's good to search broadly. Search each of these terms, read a few job descriptions, and determine if there are positions with these job titles that match your skills. It's best to have the widest pool of possible jobs before deciding where you'll apply!
 
-### StackOverflow Jobs
-
-One great place to search for positions is at [StackOverflow Jobs](https://stackoverflow.com/jobs). StackOverflow posts jobs for developers. There are many different types of job listings on this site; however, all jobs listed here require some programming/developer skills. Thus, among these will be data scientist positions.
-
-
-![StackOverflow Jobs](https://docs.google.com/presentation/d/1bOnA2S_dXQypd4CaGeFux-yQLwS9EzY9fPOqutPZJQg/export/png?id=1bOnA2S_dXQypd4CaGeFux-yQLwS9EzY9fPOqutPZJQg&pageid=g3efad8d752_0_11)
-
-On this site, you can search jobs by tags. For example if you type `R AND data science` into the search bar, data scientist positions looking for programmers who know R will show up.
-
-
-![`R AND data science`](https://docs.google.com/presentation/d/1bOnA2S_dXQypd4CaGeFux-yQLwS9EzY9fPOqutPZJQg/export/png?id=1bOnA2S_dXQypd4CaGeFux-yQLwS9EzY9fPOqutPZJQg&pageid=g3efad8d752_0_0)
-
-You can further narrow your search by entering a location where you want to find a job. For example, if you enter "Baltimore, MD" into the "Located anywhere" box, positions within a 20 mile radius will be listed.
-
-
-![Baltimore, MD data science jobs](https://docs.google.com/presentation/d/1bOnA2S_dXQypd4CaGeFux-yQLwS9EzY9fPOqutPZJQg/export/png?id=1bOnA2S_dXQypd4CaGeFux-yQLwS9EzY9fPOqutPZJQg&pageid=g3efad8d752_0_6)
-
-Additionally, you can click "Create alert" to send yourself alerts when jobs of interest to you are listed in the future, helping to keep you updated with the latest applicable postings as you search for positions!
-
 ### LinkedIn
 
 Jobs are also [posted on LinkedIn](https://www.linkedin.com/jobs/). Similar to StackOverflow's jobs, positions can be searched by title and Location. However, the jobs posted on LinkedIn will span many more fields, so there will be a larger pool of total jobs to go through.

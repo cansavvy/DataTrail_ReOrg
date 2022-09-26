@@ -357,8 +357,8 @@ wide-data
 long-data
 r-packages-1
 tidyr
-gather
-spread
+pivot_longer
+pivot_wider
 transposing-data
 additional-resources-5
 how-to-tidy-data
@@ -866,14 +866,10 @@ presenting
 practice-1
 be-prepared
 handling-questions
-example-presentation-apis
+example-presentation-analysis
 talk-outline
 slide-design-1
 presentation
-example-presentation-analysis
-talk-outline-1
-slide-design-2
-presentation-1
 summary-20
 additional-resources-26
 presentation-guidelines-1
@@ -1087,7 +1083,6 @@ where-to-look-for-data-science-jobs
 what-jobs-to-look-for
 additional-considerations
 job-titles-to-search
-stackoverflow-jobs
 linkedin
 job-boards
 company-websites

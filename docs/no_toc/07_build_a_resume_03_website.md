@@ -1,6 +1,6 @@
 
 
-# Make your own website!
+# Make your own website
 
 Follow these instructions to make your own professional website using GitHub.
 

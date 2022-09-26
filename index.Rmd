@@ -7,9 +7,6 @@ bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
 favicon: assets/dasl_favicon.ico
-output:
-    bookdown::word_document2:
-      toc: true
 ---
 
 

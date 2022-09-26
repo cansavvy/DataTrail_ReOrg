@@ -593,7 +593,7 @@ Finally, once you have enabled two step verification, you will need to have your
 
 ### Managing apps and devices
 
-You can monitor and manage which apps and devices have access to your account information from your account security page at https://myaccount.google.com/security. You should check this information periodically (every month or so at least) to see if there are any events or activity that you don't recognize. If anyone has gotten access to your password or log in information, you will be able to see here when they have logged into your account.
+You can monitor and manage which apps and devices have access to your account information from your account security page at https://myaccount.google.com/security . You should check this information periodically (every month or so at least) to see if there are any events or activity that you don't recognize. If anyone has gotten access to your password or log in information, you will be able to see here when they have logged into your account.
 
 
 

@@ -204,3 +204,85 @@ plot(iris$Sepal.Length, iris$Sepal.Width, col = iris$Species)
 <img src="resources/images/02_getting_data_04_dataframes_files/figure-html/unnamed-chunk-10-1.png" width="672" />
 
 Don't worry too much about the specifics of plotting. We will go into much more detail about how to make visuals of your data later. This is just to illustrate how R makes data visuals easy to make!
+
+### What about matrices and tibbles?
+
+At this point, we should mention some cousins of the data frame: matrices and tibbles.
+
+All three of these types of objects: data frames, matrices, and tibbles contain two dimensions: rows and columns. And often you may be able to handle them similarly. But, they do have some differences that are worth knowing about!
+
+#### What's a matrix?
+
+A matrix is like a data frame but it needs to contain all the same data type. So it can be all numeric, all character or etc.
+
+A data frame by contrast can have one column that is string, another that is factor, and so on.
+
+Let's experiment with what this means in practical terms and start out by making a very small data frame.
+
+
+```r
+df <- data.frame(num = 1:4, y = c("red", "blue", "green", "purple"))
+
+df
+```
+
+```
+##   num      y
+## 1   1    red
+## 2   2   blue
+## 3   3  green
+## 4   4 purple
+```
+
+
+```r
+str(df)
+```
+
+```
+## 'data.frame':	4 obs. of  2 variables:
+##  $ num: int  1 2 3 4
+##  $ y  : chr  "red" "blue" "green" "purple"
+```
+
+We've made our data frame with two types of data: a numeric (integer) column and a character column.
+
+Let's see what happens if we coerce this to a matrix
+
+
+```r
+a_matrix <- as.matrix(df)
+
+a_matrix
+```
+
+```
+##      num y       
+## [1,] "1" "red"   
+## [2,] "2" "blue"  
+## [3,] "3" "green" 
+## [4,] "4" "purple"
+```
+
+
+```r
+str(a_matrix)
+```
+
+```
+##  chr [1:4, 1:2] "1" "2" "3" "4" "red" "blue" "green" "purple"
+##  - attr(*, "dimnames")=List of 2
+##   ..$ : NULL
+##   ..$ : chr [1:2] "num" "y"
+```
+Notice that this whole matrix is now a character but still does have two dimensions!
+
+#### What's a tibble?
+
+A tibble is super similar to a data frame. It's the tidyverse brand of data frame.
+
+According to the people who develop the tidyverse:
+
+> Tibbles are data.frames that are lazy and surly: they do less (i.e. they don’t change variable names or types, and don’t do partial matching) and complain more (e.g. when a variable does not exist).
+
+They are similar enough, that for most instances, especially when you are working with tidyverse functions, you can treat them the same. However if you get a peculiar error when trying to use a tibble with a non-tidyverse function, you may need to use the `as.data.frame()` function to coerce your tibble to a data frame. But you shouldn't encounter this problem too often. 

@@ -86,7 +86,7 @@ Another way to open the screen with your apps is to click on the Launcher button
 ![The keyboard launcher button looks like a magnifying glass](https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&pageid=g39f7d66caf_0_36)
 
 
-Once you have found the App you want to open, click on it. When you click on a Chrome App the Chrome Browser will open and be directed to the website where that piece of software lives. For example if you click on the Google Docs icon (the blue piece of paper) then you will be directed to the website https://docs.google.com/document/u/0/ which lets you edit and work with your Google Docs.
+Once you have found the App you want to open, click on it. When you click on a Chrome App the Chrome Browser will open and be directed to the website where that piece of software lives. For example if you click on the Google Docs icon (the blue piece of paper) then you will be directed to the website https://docs.google.com/ which lets you edit and work with your Google Docs.
 
 
 ![Clicking on the Google Docs icon will open Google Docs in the web browser.](https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&pageid=g39f7d66caf_0_45)
@@ -595,7 +595,7 @@ Finally, once you have enabled two step verification, you will need to have your
 
 ### Managing apps and devices
 
-You can monitor and manage which apps and devices have access to your account information from your account security page at https://myaccount.google.com/security. You should check this information periodically (every month or so at least) to see if there are any events or activity that you don't recognize. If anyone has gotten access to your password or log in information, you will be able to see here when they have logged into your account.
+You can monitor and manage which apps and devices have access to your account information from your account security page at https://myaccount.google.com/security . You should check this information periodically (every month or so at least) to see if there are any events or activity that you don't recognize. If anyone has gotten access to your password or log in information, you will be able to see here when they have logged into your account.
 
 
 

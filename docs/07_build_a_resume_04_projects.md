@@ -72,7 +72,7 @@ Finally, remember that this should demonstrate your skills and abilities. **Do n
 
 Now that we've seen a few examples of others' projects, let's get down to preparing one project you may want to include in your project gallery! In the last course, one of the quiz questions required you to create a presentation on Google Slides taking what you did in your Final project and turning it into a presentation that you'd present to a technical audience.
 
-Thus, you should have already thought a bit about how you would tell a story about this analysis. You'll use your Final Project here, but instead of generating a Google Slides presentation, we'll turn this project into a project that you will include on your website!
+Thus, you should have already thought a bit about how you would tell a story about this analysis. We'll use that same project here, but instead of generating a Google Slides presentation, we'll turn this project into a project that you will include on your website!
 
 The link to this page on your website will be required in the quiz for this lesson, so it's best to follow along, create this post, and update your website as you work through this lesson!
 

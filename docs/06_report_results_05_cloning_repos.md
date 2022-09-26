@@ -12,8 +12,7 @@ Navigate to the GitHub webpage for your repository. This URL always has the form
 ```text
 https://github.com/github_username/repository_name
 ```
-
-For example, in our last lesson, the URL for our repository is [https://github.com/JaneEverydayDoe/first_project/](https://github.com/JaneEverydayDoe/first_project/). On this page, you will see a button on the right hand side that says "Clone or download". When you click this, highlight the URL in the box, and copy it to the clipboard. Make sure it starts with "https" rather than "git@". If you see "git@", click the link in the top right corner of the box that says "Use HTTPS".
+On this page, you will see a button on the right hand side that says "Clone or download". When you click this, highlight the URL in the box, and copy it to the clipboard. Make sure it starts with "https" rather than "git@". If you see "git@", click the link in the top right corner of the box that says "Use HTTPS".
 
 <img src="resources/images/06_report_results_05_cloning_repos_files/figure-html//1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g36809c5e39_0_0.png" title="Obtain URL of repository" alt="Obtain URL of repository" width="480" style="display: block; margin: auto;" />
 

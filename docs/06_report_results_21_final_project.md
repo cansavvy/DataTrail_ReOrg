@@ -1,0 +1,27 @@
+
+
+
+# GitHub and Final Data Project
+
+In this project, we are going to have you form your own question and find data to explore it.
+
+But, we will also want to practice using version control and getting our projects to be open source and available on GitHub.
+
+### Starting up this project
+
+1. Follow the `Creating A Repository` steps and subsequent chapters to create a new GitHub repository for this project.
+2. Follow the instructions in `Cloning A Repository` chapter to also clone this project to your RStudio workspace
+3. Work on formulating your data science question -- try to pick a topic you are interested in! You can gain inspiration by browsing some of the open source dataset websites we have discussed in the `Finding Data` chapter.
+4. When you find a dataset and question combo you are interested in, you can feel free to borrow [this R Markdown template to get you started](https://github.com/datatrail-jhu/DataTrail_Projects/blob/main/06_Share_Results/data_project_final.Rmd). You can find this same file in your `DataTrail_Projects` RStudio project.  
+
+### Your objectives!
+
+To complete this project there are a few requirements you will need to fulfill. Remember that you are not on your own for this project! Data science is done best as a community, so please ask others (and instructors) questions you have when you get stuck!
+
+1. Clearly state the data science question and goal for the analysis you are embarking on.
+2. This project should be completely uploaded and up to date on GitHub. Follow the steps in `Pushing and Pulling Changes` chapter for how to git add, commit, and push the changes you have done.
+3. Follow good organization principles -- you should at least have 2 folders: a `results` folder and a `data` folder. 4. 4. You should also have a README
+5. Make a resulting plot that you save to a file.
+6. Write up your final observations in regards to your original question. Note that some data science projects end with "This isn't what I thought it would be" or "that's strange" or "I think this is leading into another question I would need to investigate". Whatever your observations may be, write them up in your main R Markdown.
+7. When you feel your analysis is ready for review, send your instructor the GitHub link to your project so they can review it.
+8. Pat yourself on the back for all this work! You are a data scientist! 

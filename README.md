@@ -1,6 +1,6 @@
 <!--Delete this section below upon using the template-->
 
-## Data Trail OTTR Template
+## DataTrail 
 
 ## Open-source Tools for Training Resources - OTTR
 
@@ -29,24 +29,12 @@ _This template and guide helps you_:
 
 # {Course Name}
 
-[![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml)
-
-This course was created from [this GitHub template](https://github.com/jhudsl/OTTR_Template).
-
-You can see the rendered course material here: https://datatrail-jhu.github.io/DataTrail/
-
-If you would like to contribute to this course material, take a look at the [getting started GitHub wiki pages](https://github.com/jhudsl/OTTR_Template/wiki).
+You can take the course for certification here: https://leanpub.com/c/datatrail
+Or you can browse the material here: 
 
 ## About this course
 
 This course introduces {info on what this course introduces}
-
-## Learning Objectives
-
-This course will teach learners to:  
-
-- {You can use https://www.bobpikegroup.com/trainer-blog/5-steps-to-writing-clear-and-measurable-learning-objectives to define some learning objectives here}
-- {More learning objectives}
 
 ## Encountering problems?
 

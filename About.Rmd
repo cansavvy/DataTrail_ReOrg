@@ -13,7 +13,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |-------|-----|
 |**Pedagogy**||
 |Content Author(s) | [Shannon Ellis], [Candace Savonen], [Aboozar Hadavand], [Leslie Myint], [Leonardo Collado-Torres]|
-|Content Contributor(s)| [Sarah McClymont]|
+|Content Contributor(s)| [Sarah McClymont], [Leah Jager]|
 |Content Editor(s)/Reviewer(s) | [Davon Person]|
 |Content Director(s) |[Jeff Leek]|
 |**Production**||
@@ -29,7 +29,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 |**Art and Design**||
 |Illustrator(s)| [Shannon Ellis], [Candace Savonen], [Aboozar Hadavand] |
 |**Funding**||
-|Funder(s)| Bloomberg Philanthropies |
+|Funder(s)| Johns Hopkins Bloomberg School of Public Health, Bloomberg Philanthropies |
 |Funding Staff| [Ashley K Johnson]|
 
 &nbsp;
@@ -51,7 +51,7 @@ devtools::session_info()
 [Sean Kross]: https://seankross.com/
 [Sarah McClymont]: https://www.linkedin.com/in/sarahmcclymont/
 [Leah Jager]: https://lrjager.github.io/
-[Ashley K Johnson]:
+[Ashley K Johnson]: https://www.linkedin.com/in/ashleykgjohnson
 
 <!-- Links -->
 

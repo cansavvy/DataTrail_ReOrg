@@ -25,7 +25,7 @@ You now have a GitHub account!
 Use your account username and password to log in to GitHub (if you are not still logged in). To log in, go to [github.com](https://github.com/), where you will be presented with the homepage. If you aren't already logged in, click on the "Sign in" link at the top.
 
 
-![GitHub's homepage at https://github.com/](https://docs.google.com/presentation/d/1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo/export/png?id=1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo&pageid=g2bfdb07292_0_151)
+![GitHub's homepage at github.com](https://docs.google.com/presentation/d/1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo/export/png?id=1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo&pageid=g2bfdb07292_0_151)
 
 Once you've done that, you will see the log in page where you will enter in your username and password that you created in the first course in this series.
 

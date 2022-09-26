@@ -22,7 +22,7 @@ You will then need to figure out what ports you have available on your computer.
 ![My Chromebook has a USB-C connector, but yours might be different. ](https://docs.google.com/presentation/d/1c4diFFLIkAqYE4EIbI6mZAYLc8zOPMwLEiczFMMM2nQ/export/png?id=1c4diFFLIkAqYE4EIbI6mZAYLc8zOPMwLEiczFMMM2nQ&pageid=g3b1b32c412_0_15)
 
 
-To find out what kind of ports you have on your Chromebook you can go to the website https://www.google.com/chromebook. Then click on "Find Yours".
+To find out what kind of ports you have on your Chromebook you can go to the website https://www.google.com/chromebook . Then click on "Find Yours".
 
 
 ![Go to https://www.google.com/chromebook and click Find Yours ](https://docs.google.com/presentation/d/1c4diFFLIkAqYE4EIbI6mZAYLc8zOPMwLEiczFMMM2nQ/export/png?id=1c4diFFLIkAqYE4EIbI6mZAYLc8zOPMwLEiczFMMM2nQ&pageid=g3b1b32c412_0_26)

@@ -1,3 +1,3 @@
 https://www.someurl.html
-https://jhudatascience.org/{Course_Name}}
+http://github.com/username
 https://url_to_reference.com

@@ -1,7 +1,14 @@
+cture
+ized
+oducible
+reprex's
+se
+tibble
+TidyDataTutor
 dslabs
 Avi
 Avi's
-irreproducibility 
+irreproducibility
 fullscreen
 Fullscreen
 multipanel

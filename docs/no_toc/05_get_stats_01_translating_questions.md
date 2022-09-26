@@ -68,7 +68,7 @@ __Do I need to take an umbrella with me when I leave the house today?__
 
 ### A real example
 
-Let's practice translating questions to data science questions through an example. We briefly mentioned this example in the course [Getting Data](https://leanpub.com/universities/courses/jhu/getting-data). The analysis is based on data scientist David Robinson's [blog](http://varianceexplained.org/r/trump-tweets/).
+Let's practice translating questions to data science questions through an example. The analysis is based on data scientist David Robinson's [blog](http://varianceexplained.org/r/trump-tweets/).
 
 
 ![Trump Tweets blog post](https://docs.google.com/presentation/d/18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo/export/png?id=18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo&pageid=g3e01f3a315_0_1)

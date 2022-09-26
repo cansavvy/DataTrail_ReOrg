@@ -33,7 +33,7 @@ We'll describe what each of these is in this lesson and walk through an example 
 
 **Announcement** posts most importantly **provide information about a tool or resource that may be helpful to the community**. They can optionally include an example of how to use that tool or examples of why this information is important to the community. However, most importantly, their **purpose is to make the community aware of something**.
 
-For example, [Julia Silge](https://stackoverflow.blog/authors/juliasilge/) contributed an announcement post to the [Stack Overflow blog](https://stackoverflow.blog/) titled: [Public Data Release of Stack Overflow's 2018 Developer Survey](https://stackoverflow.blog/2018/05/30/public-data-release-of-stack-overflows-2018-developer-survey/). The main goal of this post is right there in the first sentence. The post was written to inform readers that they can now **"access the public data release for Stack Overflow's 2018 Developer Survey."**
+For example, [Julia Silge](https://juliasilge.com/) contributed an announcement post to the [Stack Overflow blog](https://stackoverflow.blog/) titled: [Public Data Release of Stack Overflow's 2018 Developer Survey](https://stackoverflow.blog/2018/05/30/public-data-release-of-stack-overflows-2018-developer-survey/). The main goal of this post is right there in the first sentence. The post was written to inform readers that they can now **"access the public data release for Stack Overflow's 2018 Developer Survey."**
 
 
 ![Announcement Post](https://docs.google.com/presentation/d/1CoJJ4zEULcwzIcII6YU_ymO5mmdgD-HjVDdWEPwnm5U/export/png?id=1CoJJ4zEULcwzIcII6YU_ymO5mmdgD-HjVDdWEPwnm5U&pageid=g3f9ed3b4ce_0_0)

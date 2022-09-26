@@ -64,7 +64,7 @@ You'll want at least a few examples of your work, meaning at least 3 different p
 
 As you're looking for a job, it's best to **avoid criticizing the work of others** in your project gallery. You can certainly use a dataset that someone else has written about previously to do your own analysis; however, your post should *not* tear apart what that other individual did in theirs.
 
-Additionally, remember this is a blog post. (For details about what to include in a blog post, refer back to the [Written and Oral Communication in Data Science](https://leanpub.com/universities/courses/jhu/writtenandoralcommunicationindatascience) course.) This post should tell a story and include details about your analysis, but it **shouldn't include every detail about your analysis**. You should do the analysis and then pare down what you have to only what's necessary to communicate your story to your audience.
+Additionally, remember this is a blog post. This post should tell a story and include details about your analysis, but it **shouldn't include every detail about your analysis**. You should do the analysis and then pare down what you have to only what's necessary to communicate your story to your audience.
 
 Finally, remember that this should demonstrate your skills and abilities. **Do not take code or work from others without properly citing those individuals**. Giving attribution to others' work when deserved is incredibly important. Be sure that all writing and code portrayed are your own in your project gallery actually are your own work.
 
@@ -72,7 +72,7 @@ Finally, remember that this should demonstrate your skills and abilities. **Do n
 
 Now that we've seen a few examples of others' projects, let's get down to preparing one project you may want to include in your project gallery! In the last course, one of the quiz questions required you to create a presentation on Google Slides taking what you did in your Final project and turning it into a presentation that you'd present to a technical audience.
 
-Thus, you should have already thought a bit about how you would tell a story about this analysis. We'll use that same project (your Final Project from [Data Analysis](https://leanpub.com/universities/courses/jhu/dataanalysis)) here, but instead of generating a Google Slides presentation, we'll turn this project into a project that you will include on your website!
+Thus, you should have already thought a bit about how you would tell a story about this analysis. You'll use your Final Project here, but instead of generating a Google Slides presentation, we'll turn this project into a project that you will include on your website!
 
 The link to this page on your website will be required in the quiz for this lesson, so it's best to follow along, create this post, and update your website as you work through this lesson!
 

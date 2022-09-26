@@ -22,7 +22,7 @@ You now have a GitHub account!
 
 ### Logging in to GitHub
 
-Use your account username and password to log in to GitHub (if you are not still logged in). To log in, go to [https://github.com/](https://github.com/), where you will be presented with the homepage. If you aren't already logged in, click on the "Sign in" link at the top.
+Use your account username and password to log in to GitHub (if you are not still logged in). To log in, go to [github.com](https://github.com/), where you will be presented with the homepage. If you aren't already logged in, click on the "Sign in" link at the top.
 
 
 ![GitHub's homepage at https://github.com/](https://docs.google.com/presentation/d/1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo/export/png?id=1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo&pageid=g2bfdb07292_0_151)
@@ -32,7 +32,7 @@ Once you've done that, you will see the log in page where you will enter in your
 
 ![GitHub's log in page](https://docs.google.com/presentation/d/1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo/export/png?id=1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo&pageid=g350e5d150f_0_1)
 
-Once logged in, you will be back at [https://github.com/](https://github.com/), but this time the screen should look like this:
+Once logged in, you will be back at [github.com](https://github.com/), but this time the screen should look like this:
 
 
 ![If you are logged in, GitHub should look like this](https://docs.google.com/presentation/d/1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo/export/png?id=1cvz17dNvOlb5bwPCd2WGFl96zCU9oUWpZMTqcSJyuCo&pageid=g350e5d150f_0_6)

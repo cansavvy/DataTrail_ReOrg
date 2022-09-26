@@ -482,4 +482,4 @@ This lesson covered the necessary parts of carrying out a descriptive analysis. 
 * [Visualizing Incomplete & Missing Data](https://flowingdata.com/2018/01/30/visualizing-incomplete-and-missing-data/?utm_content=buffer8adce&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer), by [Nathan Yau](http://flowingdata.com/about-nathan)
 * [Getting Started with the `naniar` package](https://cran.r-project.org/web/packages/naniar/vignettes/getting-started-w-naniar.html), from [Nicholas Tierney](http://www.njtierney.com)
 * [`visdat` package](https://github.com/ropensci/visdat), also from [Nicholas Tierney](http://www.njtierney.com) to further visualize datasets during exploratory and descriptive analyses
-* [Using the `skimr` package](https://cran.r-project.org/web/packages/skimr/vignettes/Using_skimr.html), by [Elin Waring](https://elinwaring.org/)
+* [Using the `skimr` package](https://cran.r-project.org/web/packages/skimr/vignettes/skimr.html), by [Elin Waring](https://elinwaring.org/)

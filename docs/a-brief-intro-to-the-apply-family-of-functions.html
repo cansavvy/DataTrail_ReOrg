@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 11 Your First Data Science Project | DataTrail</title>
-  <meta name="description" content="Chapter 11 Your First Data Science Project | DataTrail" />
+  <title>Chapter 18 A brief intro to the apply family of functions | DataTrail</title>
+  <meta name="description" content="Chapter 18 A brief intro to the apply family of functions | DataTrail" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 11 Your First Data Science Project | DataTrail" />
+  <meta property="og:title" content="Chapter 18 A brief intro to the apply family of functions | DataTrail" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 11 Your First Data Science Project | DataTrail" />
+  <meta name="twitter:title" content="Chapter 18 A brief intro to the apply family of functions | DataTrail" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="rstudio-and-projects.html"/>
-<link rel="next" href="getting-data.html"/>
+<link rel="prev" href="basic-commands-in-r.html"/>
+<link rel="next" href="getting-help-in-r.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -1123,38 +1123,44 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/DataTrail.jpg">
 </div>
-<div id="your-first-data-science-project" class="section level1" number="11">
-<h1><span class="header-section-number">Chapter 11</span> Your First Data Science Project</h1>
-<p>We are using this definition of data science.</p>
-<blockquote>
-<p>“Data science is asking a question that can be answered with data, collecting and cleaning the data, studying the data, creating models to help understand and answer the question, and sharing the answer to the question with other people.”</p>
-</blockquote>
-<p>The first step in any data science project is to come up with a question. In this first project, we will go through a question step by step to see what a data science workflow might look like!</p>
-<div id="starting-up-this-project" class="section level3" number="11.0.1">
-<h3><span class="header-section-number">11.0.1</span> Starting up this project</h3>
-<ol style="list-style-type: decimal">
-<li>Go to the DataTrail workspace</li>
-<li>Go to the <a href="https://rstudio.cloud/spaces/3919/content/lists/2065">Data Trail Project list</a>.</li>
-<li>Go to the <code>DataTrail_Projects</code> project in this list. Click on it to start this assignment. For all future projects you will return to this same place to keep working on your projects.</li>
-<li>For this project, go to the <code>01_Forming_Questions</code> folder.</li>
-<li>Click on the file <code>first_project.Rmd</code> to open this file.</li>
-</ol>
-</div>
-<div id="your-objectives" class="section level3" number="11.0.2">
-<h3><span class="header-section-number">11.0.2</span> Your objectives!</h3>
-<p>To complete this project you’ll need to do a few things within this file.</p>
-<ol style="list-style-type: decimal">
-<li><p>Go through this notebook, reading along. Run each code chunk as you come across it by clicking the tiny green triangles at the right of each chunk. You should see the code chunks print out various output when you do this.</p></li>
-<li><p>Add a new code chunk to this project that prints out the phrase “I completed my first data science project”. See the very top of this notebook for an example of how to to do this.</p></li>
-<li><p>At the very top of this file, put your own name in the <code>author:</code> place. Currently it says <code>"DataTrail Team"</code>. Be sure to put your name in quotes.</p></li>
-<li><p>In the <code>Conclusions</code> section, write up responses to each of these questions posed here.</p></li>
-<li><p>When you are satisfied with what you’ve written and added to this document you’ll need to save it. In the menu, go to <code>File</code> &gt; <code>Save</code>. Now the <code>nb.html</code> output resulting file will have your new output saved to it.</p></li>
-<li><p>Open up the resulting <code>first_project.nb.html</code> file and click <code>View in Web Browser</code>. Does it look good to you? Did all the changes appear here as you expected.</p></li>
-<li><p>Upload this file to your Google Drive folder!</p></li>
-<li><p>Pat yourself on the back for finishing up your first project!</p></li>
-</ol>
+<div id="a-brief-intro-to-the-apply-family-of-functions" class="section level1" number="18">
+<h1><span class="header-section-number">Chapter 18</span> A brief intro to the <code>apply</code> family of functions</h1>
+<p>*<a href="https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/03-intro_to_tidyverse.Rmd">This section is repurposed from the Childhood Cancer Data Lab’s section on apply functions.</a>.</p>
+<p>In base R, the <code>apply</code> family of functions can be an alternative methods for performing transformations across a data frame, matrix or other object structures.</p>
+<p>One of this family is (shockingly) the function <code>apply()</code>, which operates on matrices.</p>
+<p>A matrix is similar to a data frame in that it is a rectangular table of data, but it has an additional constraint: rather than each column having a type, ALL data in a matrix has the same type.</p>
+<p>The first argument to <code>apply()</code> is the data object we want to work on.
+The third argument is the function we will apply to each row or column of the data object.
+The second argument in specifies whether we are applying the function across rows or across columns (1 for rows, 2 for columns).</p>
+<p>Let’s make a data frame with some data.</p>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb88-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">y =</span> <span class="dv">5</span><span class="sc">:</span><span class="dv">8</span>, <span class="at">z =</span> <span class="dv">10</span><span class="sc">:</span><span class="dv">13</span>)</span></code></pre></div>
+<p>Converting it to a matrix will require us to make them all the same type.
+We can coerce it into a matrix using <code>as.matrix()</code>, in which case R will pick a type that it can convert everything to.
+What does it choose?</p>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb89-1" aria-hidden="true" tabindex="-1"></a>a_matrix <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(df)</span></code></pre></div>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Explore the structure of the `gene_matrix` object</span></span>
+<span id="cb90-2"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb90-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(a_matrix)</span></code></pre></div>
+<pre><code>##  int [1:4, 1:3] 1 2 3 4 5 6 7 8 10 11 ...
+##  - attr(*, &quot;dimnames&quot;)=List of 2
+##   ..$ : NULL
+##   ..$ : chr [1:3] &quot;x&quot; &quot;y&quot; &quot;z&quot;</code></pre>
+<p>Now that the matrix is all numbers, we can do things like calculate the column or row statistics using <code>apply()</code>.</p>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate row means</span></span>
+<span id="cb92-2"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb92-2" aria-hidden="true" tabindex="-1"></a>row_means <span class="ot">&lt;-</span> <span class="fu">apply</span>(a_matrix, <span class="dv">1</span>, mean) <span class="co"># Notice we are using 1 here</span></span>
+<span id="cb92-3"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb92-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb92-4"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb92-4" aria-hidden="true" tabindex="-1"></a><span class="co"># How long will `gene_means` be?</span></span>
+<span id="cb92-5"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb92-5" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(row_means)</span></code></pre></div>
+<pre><code>## [1] 4</code></pre>
+<p>Now let’s investigate the same set up, but use 2 to <code>apply</code> over the columns of our matrix.</p>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate column means</span></span>
+<span id="cb94-2"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb94-2" aria-hidden="true" tabindex="-1"></a>col_means <span class="ot">&lt;-</span> <span class="fu">apply</span>(a_matrix, <span class="dv">2</span>, mean) <span class="co"># Notice we use 2 here</span></span>
+<span id="cb94-3"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb94-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb94-4"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb94-4" aria-hidden="true" tabindex="-1"></a><span class="co"># How long will `col_means` be?</span></span>
+<span id="cb94-5"><a href="a-brief-intro-to-the-apply-family-of-functions.html#cb94-5" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(col_means)</span></code></pre></div>
+<pre><code>## [1] 3</code></pre>
+<p>Although the <code>apply</code> functions may not be as easy to use as the tidyverse functions, for some applications, <code>apply</code> methods can be better suited.
+In this course, we will not delve too deeply into the various other apply functions (<code>tapply()</code>, <code>lapply()</code>, etc.) but you can read more information about them <a href="https://www.guru99.com/r-apply-sapply-tapply.html">here</a>.</p>
 
-</div>
 </div>
 <hr>
 <center> 
@@ -1169,8 +1175,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="rstudio-and-projects.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="getting-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="basic-commands-in-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="getting-help-in-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

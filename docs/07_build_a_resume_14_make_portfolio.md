@@ -63,7 +63,7 @@ Have these links all together because now we will want to post them to your prof
 3. Put links to all the projects you worked on for this course following the URL template we described above and using R Markdown syntax. Feel free to change them how you see fit! These are your projects now!
 
 ```
-[Description of project](URL YOUVE PIECED TOGETHER)
+[Description of project](URL YOUV'E PIECED TOGETHER)
 ```
 
 4. Be proud of all the excellent work you have done! And now you have a way to show it off!

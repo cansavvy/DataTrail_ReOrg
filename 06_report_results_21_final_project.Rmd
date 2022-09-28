@@ -26,4 +26,4 @@ To complete this project there are a few requirements you will need to fulfill. 
 5. Make a resulting plot that you save to a file.
 6. Write up your final observations in regards to your original question. Note that some data science projects end with "This isn't what I thought it would be" or "that's strange" or "I think this is leading into another question I would need to investigate". Whatever your observations may be, write them up in your main R Markdown.
 7. When you feel your analysis is ready for review, send your instructor the GitHub link to your project so they can review it.
-8. Pat yourself on the back for all this work! You are a data scientist! 
+8. Pat yourself on the back for all this work! You are a data scientist!

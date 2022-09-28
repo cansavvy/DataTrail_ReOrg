@@ -38,6 +38,6 @@ To complete this project you'll need to do a few things within this file.
 
 7. Open up the resulting `countries_project.nb.html` file and click `View in Web Browser`. Does it look good to you? Did all the changes appear here as you expected.
 
-8. Upload this file to your Google Drive folder!
+8. Upload your `Rmd` and your `nb.html` to your assignment folder (this is something that will be dependent on what your instructors have told you -- or if you are taking this on your own, just collect these projects in one spot, preferably a Google Drive)!
 
 7. Pat yourself on the back for finishing this project!

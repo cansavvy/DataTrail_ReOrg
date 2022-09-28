@@ -83,7 +83,7 @@
 83-Building-a-resume.md
 84-Resumes.md
 85-Cover-Letters.md
-86-Make-your-own-website!.md
+86-Make-your-own-website.md
 87-Project-Gallery.md
 88-Improving-Your-GitHub-Profile.md
 89-Improving-Your-LinkedIn-Profile.md
@@ -94,6 +94,6 @@
 94-Where-To-Find-Remote-Data-Science-Jobs.md
 95-Data-Science-Interviews.md
 96-Data-Science-Meetups.md
-97-Create-your-portfolio!.md
+97-Create-your-portfolio.md
 About-this-Course.md
 About-the-Authors.md

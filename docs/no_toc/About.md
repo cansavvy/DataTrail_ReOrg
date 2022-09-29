@@ -12,11 +12,10 @@ These credits are based on our [course contributors table guidelines](https://gi
 |**Pedagogy**||
 |Content Author(s) | [Shannon Ellis], [Candace Savonen], [Aboozar Hadavand], [Leslie Myint], [Leonardo Collado-Torres]|
 |Content Contributor(s)| [Sarah McClymont], [Leah Jager]|
-|Content Editor(s)/Reviewer(s) | [Davon Person]|
+|Content Editor(s)/Reviewer(s) | [Candace Savonen], [Katherine Cox], [Davon Person]|
 |Content Director(s) |[Jeff Leek]|
 |**Production**||
 |Content Publisher(s)| [Candace Savonen]|
-|Content Publishing Reviewer(s)| |
 |**Technical**||
 |Course Publishing Engineer(s)| [Candace Savonen]|
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright]|
@@ -44,7 +43,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 ##  collate  en_US.UTF-8                 
 ##  ctype    en_US.UTF-8                 
 ##  tz       Etc/UTC                     
-##  date     2022-09-28                  
+##  date     2022-09-29                  
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version    date       lib source                            
@@ -112,6 +111,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 [Sean Kross]: https://seankross.com/
 [Sarah McClymont]: https://www.linkedin.com/in/sarahmcclymont/
 [Leah Jager]: https://lrjager.github.io/
+[Katherine Cox]: https://www.linkedin.com/in/katherine-cox-8a4b1623
 
 <!-- Links -->
 

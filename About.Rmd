@@ -56,3 +56,4 @@ devtools::session_info()
 <!-- Links -->
 
 [ottrpal]: https://github.com/jhudsl/ottrpal
+[swirlify]: http://swirlstats.com/swirlify/

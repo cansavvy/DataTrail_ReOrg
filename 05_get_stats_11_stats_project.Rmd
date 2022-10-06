@@ -15,7 +15,7 @@ To explore this question, we'll return to the dataset we used from the United Na
 
 ### Starting up this project
 
-1. Go to the DataTrail workspace
+1. Go to the [DataTrail workspace](https://rstudio.cloud/spaces/3919/join?access_code=RUUQ-eEgKea0oMF7EJy4UePldyBBMu7d0amv2KFC).
 2. Return to your own `DataTrail_Projects` project in RStudio.
 3. For this project, go to the `05_Get_the_Stats` folder.
 4. Click on the file `countries_stats_project.Rmd` to open this file.

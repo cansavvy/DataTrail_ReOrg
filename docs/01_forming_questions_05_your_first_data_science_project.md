@@ -11,11 +11,13 @@ The first step in any data science project is to come up with a question. In thi
 
 ### Starting up this project
 
-1. Go to the DataTrail workspace
+1. Go to the [DataTrail workspace](https://rstudio.cloud/spaces/3919/join?access_code=RUUQ-eEgKea0oMF7EJy4UePldyBBMu7d0amv2KFC).
 2. Go to the [Data Trail Project list](https://rstudio.cloud/spaces/3919/content/lists/2065).
 3. Go to the `DataTrail_Projects` project in this list. Click on it to start this assignment. For all future projects you will return to this same place to keep working on your projects.
 4. For this project, go to the `01_Forming_Questions` folder.
 5. Click on the file `first_project.Rmd` to open this file.
+
+<img src="resources/images/01_forming_questions_05_your_first_data_science_project_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g161d7fcc957_0_0.png" width="100%" />
 
 ### Your objectives!
 

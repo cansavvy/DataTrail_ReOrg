@@ -7,6 +7,10 @@ ottrpal::set_knitr_image_path()
 
 In this project, we are going to try to answer this question with data:
 
+&nbsp;
+&nbsp;
+&nbsp;
+
 > "Across the countries of the world, how is literacy related to life expectancy?"
 
 To answer our question, we'll need a dataset that has literacy information by countries, as well as a dataset that has life expectancy statistics for different countries.

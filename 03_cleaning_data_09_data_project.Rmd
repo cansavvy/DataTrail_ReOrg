@@ -15,7 +15,7 @@ In this project, we are going to try to answer this question with data:
 
 To answer our question, we'll need a dataset that has literacy information by countries, as well as a dataset that has life expectancy statistics for different countries.
 
-We have gotten this data downloaded for you from Kaggle.
+We already downloaded the data for you from [Kaggle](https://www.kaggle.com/).
 
 ### Starting up this project
 
@@ -26,7 +26,7 @@ We have gotten this data downloaded for you from Kaggle.
 
 ### Your objectives!
 
-To complete this project you'll need to do a few things within this file.  
+To complete this project you'll need to do a few things within the `countries_project.Rmd` file.  
 
 1. Go through this notebook, reading along.
 
@@ -40,7 +40,7 @@ To complete this project you'll need to do a few things within this file.
 
 6. When you are satisfied with what you've written and added to this document you'll need to save it. In the menu, go to `File` > `Save`. Now the `nb.html` output resulting file will have your new output saved to it.
 
-7. Open up the resulting `countries_project.nb.html` file and click `View in Web Browser`. Does it look good to you? Did all the changes appear here as you expected.
+7. Open up the resulting `countries_project.nb.html` file and click `View in Web Browser`. Does it look good to you? Did all the changes appear here as you expected?
 
 8. Upload your `Rmd` and your `nb.html` to your assignment folder (this is something that will be dependent on what your instructors have told you -- or if you are taking this on your own, just collect these projects in one spot, preferably a Google Drive)!
 

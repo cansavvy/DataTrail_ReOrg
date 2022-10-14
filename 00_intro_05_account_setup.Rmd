@@ -372,52 +372,35 @@ To get a Twitter account, first type 'www.twitter.com' in the search bar at the 
 
 ![Twitter website](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_194)
 
-This will bring you to a screen where at the top right you'll want to click 'Sign up'.
-
+To sign up, use your Google Account again
 
 ![Twitter sign in](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_172)
 
-This will bring you to a screen that prompts you for some information and asks you to create a new password. After filling out the information, you will click 'Sign up.'
-
+Continue to confirm your Google Account:
 
 ![Twitter sign in](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_201)
 
-You will be brought to a screen asking for your phone number. After entering your phone number, you will click 'Next.'
+You will need to give it your phone number as well as your birthday to verify your identity.
 
-
-![Twitter phone number](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_208)
-
-This will bring you to a screen where you will choose a username. This will be what your Twitter 'handle' will be. For simplicity, it would be best for your Gmail username and Twitter handle to be the same (ie if your Gmail address is Jane.Doe@gmail.com, 'Jane.Doe' would be a great Twitter username). If that name is unavailable, choose a different, but appropriate and simple, Twitter username. Once you have chosen a Twitter username, click 'Next'.
-
+Then, this will bring you to a screen where you will choose a username. This will be what your Twitter 'handle' will be. For simplicity, it would be best for your Gmail username and Twitter handle to be the same (ie if your Gmail address is Jane.Doe@gmail.com, 'Jane.Doe' would be a great Twitter username). If that name is unavailable, choose a different, but appropriate and simple, Twitter username. Once you have chosen a Twitter username, click 'Next'.
 
 ![Twitter username](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_212)
 
-At this point you will be brought to a screen that will have a button saying 'Let's go!' This will lead you to set up your profile further, which is not needed at this time. Instead, go to your gmail, look for an email from 'Twitter' and click on the email.
-
-
-![Twitter Let's go!](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_246)
-
-In this email, there will be a 'Confirm now' button to click. To verify your Twitter account, click on this button.
-
-
-![Twitter Confirm now](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_263)
-
+Twitter will ask you a series of questions to ask you your preferences. Because this will be your professional account, you may want to follow "data science" topics.
 
 Congrats! You now have a Twitter account!
 
 ### Basecamp Account
 
-[Slack](http://www.Basecamp.com) is a place where teams of people can easily communicate and work together on a project. As a data scientist, you are often working in a group on a project. Basecamp is a place where everyone working on that project can communicate. Basecamp is where communication throughout this course will happen. You will be able to ask questions, answer questions, and communicate with others on Basecamp about the things you are learning and the projects you are working on.
+[BaseCamp](http://www.Basecamp.com) is a place where teams of people can easily communicate and work together on a project. As a data scientist, you are often working in a group on a project. Basecamp is a place where everyone working on that project can communicate. Basecamp is where communication throughout this course will happen. You will be able to ask questions, answer questions, and communicate with others on Basecamp about the things you are learning and the projects you are working on.
 
 To get a Basecamp account, you will first open a new tab in your browser by typing _ctrl_ and _t_. Once you have a new tab open, you will type 'www.Basecamp.com' at the top of your browser in the web address bar.
 
-
-![Basecamp Web Address](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_386)
-
-On this webpage, type your Gmail address in the 'email address' box, and click 'GET STARTED.'
-
+Then on the Basecamp home page, click on "Customer Login".
 
 ![Basecamp Get Started!](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_391)
+
+Choose "Sign in with Google".
 
 We won't be signing into any workspaces yet; however, later in the program, when we do, you will have an account! That's all you need to do with Basecamp for now!
 

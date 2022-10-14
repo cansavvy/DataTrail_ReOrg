@@ -58,8 +58,9 @@ Begin filling in this form. Google will alert you if the username you've chosen 
 
 You will then be asked to verify your account. To do so, ensure that a valid phone number for you is in the 'Phone number' box. Select whether you prefer to be contacted by "Text message (SMS)" or 'Voice Call'. Click 'Continue' once the information has been entered. You will then be sent a verification code by text message or by phone call, depending on your choice to this question. Enter the verification code into the box on the screen and click "Continue".
 
-Congratulations!! You now have a Google username and account! Be sure to remember your username and password! This will be used for your email address (Gmail) and all other Google products.
+You'll also be asked to agree to Privacy and Terms. Scroll all the way down and click "I Agree".
 
+Congratulations!! You now have a Google username and account! Be sure to remember your username and password! This will be used for your email address (Gmail) and all other Google products.
 
 ![Google Welcome!](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2dd9e5795f_0_67)
 
@@ -89,7 +90,7 @@ Enter your new Google account name here. Click 'Next'. Enter your password. Clic
 
 Communication with your clients or your employer is an important part of being a data scientist.  E-mail, short for electronic mail, is an important part of the communication picture because of its flexibility.  You can write messages of varying lengths, use formatting if you desire, and attach documents as needed.  Depending on your particular work situation, email may be your main means of communicating about your work.
 
-When using a Chromebook on the cloud, the email application of choice is Gmail.  [Gmail](https://www.gmail.com/) is a free e-mail service provided by Google that provides users with a gigabyte of free storage for messages and includes the ability to easily search for specific emails. Gmail also automatically organizes related emails into a conversational thread, meaning that a message and all replies to that message are stored together.
+When using a Chromebook, the email application of choice is Gmail.  [Gmail](https://www.gmail.com/) is a free e-mail service provided by Google that provides users with a gigabyte of free storage for messages and includes the ability to easily search for specific emails. Gmail also automatically organizes related emails into a conversational thread, meaning that a message and all replies to that message are stored together.
 
 Gmail has many of similarities with other web-based email clients, such as Hotmail and Yahoo! Mail.  If you regularly use email through an internet browser, much of the following will be review.
 
@@ -343,34 +344,22 @@ This will bring you to LinkedIn's login screen. On this screen you'll begin fill
 
 ![LinkedIn Blank Form](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_7)
 
-A screen may pop up asking you to verify that you're not a robot. Whenever this happens, just click on the empty square box to let the computer know you're a real person.
+You can choose to create your LinkedIn account with your Gmail account.
+Click on 'Continue with Google'.
 
+![gmail account](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_12)
 
-![Not a robot](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_17)
+You will be asked to login to Gmail.
 
-After clicking "Join now" (and maybe after you verify that you are a human) you will be brought to a new screen. Here, at the top, it will show you that you almost have a LinkedIn login but that first you have to confirm your email address.
+![gmail website](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_22)
 
-To do so, you will open a new tab at the top of the Chrome browser window. You will then type in 'www.gmail.com' and click 'Enter.'
+You may be asked to verify that you are not a robot.
 
+![gmail website](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_17)
 
-![gmail website](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_44)
+You may also be asked a series of other questions about where you are located and whether you are looking for a job. Answer these questions about yourself.
 
-This will bring you to your email account. An email from 'LinkedIn Messages' should be there. Click on that email to open it.
-
-
-![Verify email from LinkedIn](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_143)
-
-In that email there will be a button where you can click to 'Confirm your email'.
-
-
-![LinkedIn Confirm Your Email](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_150)
-
-This will open a new screen where your google username will be in the box already. Click 'Continue' on this screen.
-
-
-![LinkedIn Continue](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_159)
-
-While other boxes may pop up for you to go further on LinkedIn and get your profile set up, this is all you have to do for now. You now have a LinkedIn username and account! We will now go through similar processes for the other accounts needed in this program.
+You now have a LinkedIn username and account! There is a lot more personalization you will want to do with your LinkedIn but this will be good for now! We will now go through similar processes for the other accounts needed in this program.
 
 ### Twitter Account
 

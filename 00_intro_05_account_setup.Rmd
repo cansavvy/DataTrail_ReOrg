@@ -24,11 +24,11 @@ Remembering different usernames for different accounts is difficult. It is best 
 
 To give you an idea of where we're going, the first account (and arguably the most important account) you set up in the next lesson will be a [Google account](https://mail.google.com/mail). After that we will walk you through the steps to get you set up with accounts on:
 
-*  [LinkedIn](https://www.linkedin.com) - this is a site to share information about yourself with employers.
-*  [Twitter](https://twitter.com/) - this is a social media site that we will use to share our data science products and get support from the data science community.
-*  [Basecamp](https://Basecamp.com/) - this is a website where you will be able to chat online with your fellow students and instructors.
-*  [RStudio Cloud](https://rstudio.cloud/) - this is a website where you can use Rstudio, the main tool to learn data science.
-*  [GitHub](https://github.com) - this is a website where we will share the results of our data science projects with each other and the world.
+*  <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> - this is a site to share information about yourself with employers.
+*  <a href="https://twitter.com" target="_blank">Twitter</a> - this is a social media site that we will use to share our data science products and get support from the data science community.
+*  <a href="https://Basecamp.com/" target="_blank">Basecamp</a> - this is a website where you will be able to chat online with your fellow students and instructors.
+*  <a href="https://rstudio.cloud/" target="_blank">RStudio Cloud</a> - this is a website where you can use Rstudio, the main tool to learn data science.
+*  <a href="https://github.com" target="_blank">GitHub</a> - this is a website where we will share the results of our data science projects with each other and the world.
 
 
 ![Accounts](https://docs.google.com/presentation/d/1mQMEdR4opFzuReP9i7te5v8T-kyDNNklHPvQ2OnzZpQ/export/png?id=1mQMEdR4opFzuReP9i7te5v8T-kyDNNklHPvQ2OnzZpQ&pageid=g2f5b6fa674_0_0)
@@ -48,7 +48,7 @@ If you already have a Google account with an appropriate username that you would
 
 To get a Google account, you will first want to open a new tab in your current Chrome session. To do this, you'll first click on the small gray box to the right of the tab you currently have open.
 
-[Go to this Google Accounts Sign In](https://accounts.google.com/).
+<a href="https://accounts.google.com/" target="_blank">Go to this Google Accounts Sign In</a>
 
 ![Google Sign in](https://docs.google.com/presentation/d/1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ/export/png?id=1sOBtwszQqq366q84VCDY_BwSjWQz_4yFJLC4ib1dEGQ&pageid=g2dda417cfe_0_13)
 

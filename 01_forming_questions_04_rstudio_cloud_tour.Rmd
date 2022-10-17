@@ -10,7 +10,7 @@ If you have a more traditional laptop you can download and install R and RStudio
 
 ### Logging in to RStudio Cloud
 
-To use this software, open your web browser and navigate to the website [https://rstudio.cloud/](https://rstudio.cloud/).
+To use this software, open your web browser and navigate to the website <a href="https://rstudio.cloud/" target="_blank">RStudio Cloud</a>.
 
 
 ![Navigate to RStudio Cloud in your web browser](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g2bfdb07292_0_151)

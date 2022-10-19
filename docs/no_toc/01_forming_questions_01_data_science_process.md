@@ -97,6 +97,6 @@ Masters students at the University of Pennsylvania set out to predict the risk o
 
 The following are smaller projects than the example above, but data science projects nonetheless! In each project, the author had a question they wanted to answer and used data to answer that question. They explored, visualized, and analyzed the data. Then, they wrote blog posts to communicate their findings. Take a look to learn more about the topics listed and to see how others work through the data science project process and communicate their results.
 
-* [Text analysis of Trump's tweets confirms he writes only the (angrier) Android half](http://varianceexplained.org/r/trump-tweets/), by [David Robinson](http://varianceexplained.org/about/)
+* [Predicting movie ratings with IMDb data and R](http://re-design.dimiter.eu/?p=767), by [Dimiter Toshkov](http://re-design.dimiter.eu/)
 * [Where to Live in the US](http://www.masalmon.eu/2017/11/16/wheretoliveus/), by [Maelle Salmon](https://masalmon.eu/)
 * [Sexual Health Clinics in Toronto](https://sharlagelfand.netlify.com/posts/tidying-toronto-open-data/), by [Sharla Gelfand](https://sharlagelfand.netlify.com/about/)

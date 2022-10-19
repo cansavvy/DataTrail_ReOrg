@@ -592,7 +592,6 @@ getting-statistics
 learning-objectives-4
 translating-questions-to-data-science-questions
 a-real-example
-slides-and-video
 identifying-data
 the-data-science-question
 the-perfect-dataset-the-data-we-want
@@ -834,7 +833,7 @@ full-report
 sample-full-report
 summary-18
 additional-resources-24
-slides-and-video-1
+slides-and-video
 google-slides
 presentation-guidelines
 accessing-google-slides
@@ -950,7 +949,7 @@ the-initial-meeting
 follow-up-meetings-1
 data-science-ethics
 summary-24
-slides-and-video-2
+slides-and-video-1
 github-and-final-data-project
 starting-up-this-project-5
 your-objectives-5
@@ -995,7 +994,7 @@ call-to-action
 what-to-avoid-1
 summary-26
 additional-resources-31
-slides-and-video-3
+slides-and-video-2
 make-your-own-website
 more-customization-of-your-website
 blogdown
@@ -1015,7 +1014,7 @@ projects-1
 website-tailoring
 deployment
 additional-resources-32
-slides-and-video-4
+slides-and-video-3
 project-gallery
 project-list
 project-gallery-1
@@ -1028,7 +1027,7 @@ content-1
 proofread
 push-to-github
 your-own-project
-slides-and-video-5
+slides-and-video-4
 improving-your-github-profile
 profile
 pinned-repos
@@ -1047,7 +1046,7 @@ education-experience-and-skills
 connecting-to-others
 summary-28
 additional-resources-34
-slides-and-video-6
+slides-and-video-5
 using-twitter-for-data-science
 profile-1
 who-what-to-follow

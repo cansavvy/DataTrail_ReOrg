@@ -11,12 +11,10 @@ In this lesson, we'll discuss two different ways of displaying your projects on 
 
 ### Project List
 
-The simplest way to display projects on your website is by including bullet points that link to your projects on GitHub; however, looking through multiple folders on your GitHub to figure out what you did on a project is asking a lot of someone. Thus, while it's better than nothing to include links to your GitHub, you want to make it easier on your readers.
+The simplest way to display projects on your website is by including bullet points that link to your projects on GitHub; however, looking through multiple folders on your GitHub to figure out what you did on a project is asking a lot of someone. Thus, while it’s better than nothing to include links to your GitHub, you want to make it easier on your readers.
+To do this, you’ll want to turn your projects into a report or blog post that you’ll then publish on your website. By telling a story about your project, including the results in figures and tables, and making what you did in the analysis very clear, you’re demonstrating both your technical and communication skills all at once.
 
-To do this, you'll want to turn your projects into a report or blog post that you'll then publish on your website. By telling a story about your project, including the results in figures and tables, and making what you did in the analysis very clear, you're demonstrating both your technical and communication skills all at once.
-
-In the last lesson on updating your website, we looked at David Robinson's ["about me" section](http://varianceexplained.org/about/). In this lesson, we can see that as he carries out projects, he writes blog posts and posts them to his website.
-
+In the last lesson on updating your website, we looked at David Robinson’s “about me” section. In this lesson, we can see that as he carries out projects, he writes blog posts and posts them to his website.
 
 ![David Robinson's Projects](https://docs.google.com/presentation/d/1iE2IIefyB93TZkQWCZN5FORTj02SvCHZPMoqv6A8ngI/export/png?id=1iE2IIefyB93TZkQWCZN5FORTj02SvCHZPMoqv6A8ngI&pageid=g40b5cac3c2_0_21)
 

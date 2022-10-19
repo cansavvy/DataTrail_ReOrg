@@ -100,10 +100,9 @@ Writing a good How-To post involves identifying a problem that others may run in
 
 #### Analysis
 
-In addition to How-To posts, data scientists often blog about interesting analyses they have done. One that we have already discussed in previous lessons is [David Robinson's](http://varianceexplained.org/about/) ["Text analysis of Trump's tweets confirms he writes only the (angrier) Android half"](http://varianceexplained.org/r/trump-tweets/). In this blog post, David Robinson walked readers through his analysis of Donald Trump's tweets.  
+In addition to How-To posts, data scientists often blog about interesting analyses they have done. One that we have already discussed in previous lessons is [Predicting movie ratings with IMDb data and R](http://re-design.dimiter.eu/?p=767) by [Dimiter Toshkov](http://re-design.dimiter.eu/).  
 
 He includes the main point of his analysis in his title and then introduces where he got the idea to do this analysis.
-
 
 ![Blog post begins with background information](https://docs.google.com/presentation/d/1CoJJ4zEULcwzIcII6YU_ymO5mmdgD-HjVDdWEPwnm5U/export/png?id=1CoJJ4zEULcwzIcII6YU_ymO5mmdgD-HjVDdWEPwnm5U&pageid=g3f9ed3b4ce_0_74)
 

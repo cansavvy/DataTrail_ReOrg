@@ -65,7 +65,6 @@ __Do I need to take an umbrella with me when I leave the house today?__
 * _What is the type of data science question we are trying to answer?_ In this case we are looking to use historical data to predict something about a single day. So this is a prediction problem.
 
 
-
 ![Do I need to take an umbrella with me when I leave the house today?](https://docs.google.com/presentation/d/18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo/export/png?id=18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo&pageid=g3fa6327ef6_0_388)
 
 ### A real example

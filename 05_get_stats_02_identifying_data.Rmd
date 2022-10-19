@@ -19,12 +19,12 @@ Thus, although each of us generate data daily through the apps we use or through
 
 ### The Data Science Question
 
-In the last lesson we discussed how to take a problem you're interested in understanding better and turning it into a data science question. Specifically, the last lesson looked at [David Robinson](http://varianceexplained.org/about/)'s [blog post analyzing Donald Trump's tweets](http://varianceexplained.org/r/trump-tweets/). David Robinson set out to answer the specific question **"How do the tweets on the _@realDonaldTrump_ account differ between those posted using an iPhone vs. those posted using an Android?"** Before answering the question, David Robinson determined what/whose data would need to be collected, what measurements he would need, the limitations to the analysis, and the type of analysis he would use.
+In the last lesson we discussed how to take a problem you're interested in understanding better and turning it into a data science question. Specifically, the last lesson looked at [Predicting movie ratings with IMDb data and R](http://re-design.dimiter.eu/?p=767) by [Dimiter Toshkov](http://re-design.dimiter.eu/). Dimiter Toshkov set out to answer the specific question **"How do we predict the author’s movie score based on the inputs from IMDb?"** Before answering the question, Dimiter Toshkov determined what/whose data would need to be collected, what measurements he would need, the limitations to the analysis, and the type of analysis he would use.
 
-In this lesson, we're going to really focus on the second and third questions there. What data do you need to answer your data science question and what limitations do these data have? We'll focus on the details of how to get the data necessary to answer the question of interest. We'll walk through this process again using the [Trump Tweets blog post](http://varianceexplained.org/r/trump-tweets/) as an example.
+In this lesson, we're going to really focus on the second and third questions there. What data do you need to answer your data science question and what limitations do these data have? We'll focus on the details of how to get the data necessary to answer the question of interest. We'll walk through this process again using the [Dimiter Toshkov’s blog](http://re-design.dimiter.eu/?p=767) as an example.
 
 
-![Trump Tweets Blog Post](https://docs.google.com/presentation/d/1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o/export/png?id=1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o&pageid=g3ec882b221_0_155)
+![IMDB](https://docs.google.com/presentation/d/1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o/export/png?id=1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o&pageid=g3ec882b221_0_155)
 
 ### The Perfect Dataset: The Data We Want
 
@@ -32,22 +32,11 @@ Once you determine your data science question of interest, it's helpful to **env
 
 Thus to answer the question
 
-> Do the tweets on the _@realDonaldTrump_ account differ between those posted using an iPhone vs. those posted using an Android? Are the Android tweets angrier and more negative?
+> What variables from IMDB predict the author's movie ratings?
 
 we would ideally want a dataset where each row is a different tweet with each row containing information on the following variables:
 
-* `date` - date the tweet was written
-* `time` - time the tweet went out
-* `os` - the operating system of where the tweet came from (Android or iPhone)
-* `author`- author of each tweet
-* `location` - where the author was when the tweet was written
-* `tweet` - what the tweet said
-* `censored` - whether or not the tweet was later deleted
-  * `censored_date` - date on which the tweet was deleted
-  * `censored_time` - time at which the tweet was deleted
-* `anger` - some measurement of how angry and negative the tweet is
-
-Additionally, in a perfect world, we'd have all the tweets ever tweeted from _@realDonaldTrump_.
+- TODO: Explaining the ideal variables in the dataset
 
 Having all these data in this format would enable us to answer the question of interest!
 
@@ -55,20 +44,15 @@ Having all these data in this format would enable us to answer the question of i
 
 *But*, the data we *have* are typically not *exactly* the data we *want*.
 
-In this case, David Robinson was able to use the `twitteR` package and the Twitter API to obtain a number of Donald Trump's tweets. Ultimately, the dataset he used for his analysis contained 628 tweets from an iPhone, and 762 tweets from an Android. That's not nearly *all* the tweets from this account; however, the Twitter API limits the number of tweets one can obtain. Already, the **data we have are not the optimal data we wanted**, but that's OK.
-
-Additionally, the data from the Twitter API does *not* include the `author`, the author's location, nor any information about deleted tweets. Again, the data we have are quite different from our optimal data.
-
-Finally, the dataset does not include any measure of how angry or negative the content of the tweets are. David will have to use the tweets to determine that during his analysis.
-
+- TODO: Explaining the variables we have
 
 ![The data we have](https://docs.google.com/presentation/d/1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o/export/png?id=1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o&pageid=g3ec882b221_0_186)
 
-Nevertheless, David did have information on this subset of tweets, including the date, time, os, and what the tweet said. While not exactly the data he would have likely liked to have, David was still able to use these data while noting the limitations of the data in his blog post!
+Nevertheless, Demetri did have information on this subset of tweets, including the date, time, os, and what the tweet said. While not exactly the data he would have likely liked to have, David was still able to use these data while noting the limitations of the data in his blog post!
 
 ### The Data We Can Get (Easily)
 
-In this case, David Robinson had enough data to answer the question he was interested in. However, often you may not have the data you need right from the beginning. After looking at the data you have, it's worth considering whether or not there are data that you need that you can easily get access to.
+In this case, Demetri had enough data to answer the question he was interested in. However, often you may not have the data you need right from the beginning. After looking at the data you have, it's worth considering whether or not there are data that you need that you can easily get access to.
 
 Depending upon your data science question, you may consider obtaining data from any of the sources discussed in the Getting Data course. For example, you could look at data from:
 

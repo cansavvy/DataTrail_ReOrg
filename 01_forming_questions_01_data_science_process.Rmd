@@ -29,40 +29,40 @@ In the upcoming chapters and courses we will further dive into each of these ste
 
 ### A Data Science Project Example
 
-For this example, we're going to use an example analysis from a data scientist named [Hilary Parker](https://hilaryparker.com/about-hilary-parker/). Her work can be found [on her blog](https://hilaryparker.com), and the specific project we'll be working through here is from 2013 and titled ["Hilary: the most poisoned baby name in US history"](https://hilaryparker.com/2013/01/30/hilary-the-most-poisoned-baby-name-in-us-history/). To get the most out of this lesson, click on that link and read through Hilary's post. Once you're done, come on back to this lesson and read through the breakdown of this post.
-
-
-![Hilary's blog post](https://docs.google.com/presentation/d/1SNT3SYuWJhjRYx7VmyFKWkuxESEx5THt-mWJ7Mx5Cr8/export/png?id=1SNT3SYuWJhjRYx7VmyFKWkuxESEx5THt-mWJ7Mx5Cr8&pageid=g39818b4900_0_0)
+For this example, we’re going to use an example analysis from a machine learning engineer named [Hazma](https://medium.com/@Hamza.b86). The specific project we’ll be working through here is from 2018 and titled [Exploratory Data Analysis in R of Global Data from GapMinder](https://towardsdatascience.com/exploratory-data-analysis-in-r-of-global-data-from-gapminder-13c5de5bee70). To get the most out of this lesson, click on that link and read through Hazma’s post. Once you’re done, come on back to this lesson and read through the breakdown of this post.
 
 #### Form a question
 
-When setting out on a data science project, it's always great to have your question well-defined. Additional questions may pop up as you do the analysis, but knowing what you want to answer with your analysis is a really important first step. Hilary Parker's question is included in bold in her post. Highlighting this makes it clear that she's interested in answer the following question:
+When setting out on a data science project, it’s always great to have your question well-defined. Additional questions may pop up as you do the analysis, but knowing what you want to answer with your analysis is a really important first step. Hazma’s question is included in bold in his post. Highlighting this makes it clear that he’s interested in answer the following question:
 
-> Is Hilary/Hillary really the most rapidly poisoned name in recorded American history?
+> Is there a correlation between GDP per Capita and prevalence of HIV in the 15–49 age bracket? And if yes, how strong is that correlation?
 
 #### Get the data
 
-To answer this question, Hilary collected data from the [Social Security website](https://www.ssa.gov/OACT/babynames/). This dataset included the 1000 most popular baby names from 1880 until 2011.
+To answer this question, Hazma collected data from Gapminder, a free data source from the World Bank. This dataset included measures from many countries of Gross Domestic Product (GDP) per capita, as well as the prevalence of HIV in those nations. GDP is an economic indicator signifying a country’s collective wealth.
 
 #### Data Analysis
 
-As explained in the blog post, Hilary was interested in calculating the relative risk for each of the 4,110 different names in her dataset from one year to the next from 1880 to 2011. By hand, this would be a nightmare. Thankfully, by writing code in R, all of which is [available on GitHub](https://github.com/hilaryparker/names), Hilary was able to generate these values for all these names across all these years. It's not important at this point in time to fully understand what a relative risk calculation is (although Hilary does a *great* job breaking it down in her post!), but it is important to know that after getting the data together, the next step is figuring out what you need to do with that data in order to answer your question. For Hilary's question, calculating the relative risk for each name from one year to the next from 1880 to 2011 and looking at the percentage of babies named each name in a particular year would be what she needed to do to answer her question.
-
-
-![Hilary's GitHub repo for this project](https://docs.google.com/presentation/d/1SNT3SYuWJhjRYx7VmyFKWkuxESEx5THt-mWJ7Mx5Cr8/export/png?id=1SNT3SYuWJhjRYx7VmyFKWkuxESEx5THt-mWJ7Mx5Cr8&pageid=g39818b4900_0_32)
+As explained in the blog post, Hazma expected to discover a negative correlation between GDP per capita and HIV prevalence. In other words, he theorized that less wealthy nations experience higher rates of HIV relative to their wealthier peers. Completing this analysis by hand, this would be a time-intensive and inefficient. Thankfully, by writing code in R, Hazma was able to answer his question with a few simple data transformations.
+It’s not important at this point in time to fully understand the techniques Hazma used in his analysis, but it is important to know that after getting the data together, the next step is figuring out how to reshape the data in order to answer your question. To answer his question, Hazma needed to merge the two data variables—GDP per capita and HIV prevalence—into a single dataframe.
 
 #### Clean the data
 
-What you don't see in the blog post is all of the code Hilary wrote to get the data from the [Social Security website](https://www.ssa.gov/OACT/babynames/), to get it in the format she needed to do the analysis, and to generate the figures. As mentioned above, she made all this code [available on GitHub](https://github.com/hilaryparker/names) so that others could see what she did and repeat her steps if they wanted.
+To prepare the data for analysis, Hazma used R to transform the data from Gapminder into a format that could answer his question. He describes this process in his blog post so that others could see what he did and repeat his steps if they wanted.
 
 #### Explore and plot the data
 
-In addition to this code, data science projects often involve writing a lot of code and generating a lot of figures that aren't included in your final results. This is part of the data science process too. Figuring out *how* to do what you want to do to answer your question of interest is part of the process, doesn't always show up in your final project, and can be very time-consuming.
+Data science projects often involve writing code and generating figures that aren’t always included in your final results. This data exploration is part of the data science process too. Familiarizing yourself with the characteristics of the dataset can help build confidence in your results, and it can inspire new lines of inquiry you might not have considered otherwise. For example:
+
+> How many countries are included in this dataset?
+> Are there any periods of time when certain countries have missing data? > Are particular regions more susceptible to incomplete data history?
+> What sort of bias might missing data introduce to the analysis?
+
+This line of questioning might not have a direct impact on the answer to your original question. However, Data Scientists believe that this kind of curiosity (and sometimes skepticism) is not a distraction from our core work, but rather, a vital component of a robust analysis.
 
 #### Get stats
 
-That said, given that Hilary now had the necessary values calculated, she began to further analyze the data. The first thing she did was look at the names with the biggest drop in percentage from one year to the next. By this preliminary analysis, Hilary was sixth on the list, meaning there were five other names that had had a single year drop in popularity larger than the one the name "Hilary" experienced from 1992 to 1993.
-
+After data exploration, Hazma began to further analyze the data. The first thing he did was look at GDP per capita for 275 countries. The data reveals a rising trend in Global GDP values from 1960 to 2011.
 
 ![Biggest Drop Table](https://docs.google.com/presentation/d/1SNT3SYuWJhjRYx7VmyFKWkuxESEx5THt-mWJ7Mx5Cr8/export/png?id=1SNT3SYuWJhjRYx7VmyFKWkuxESEx5THt-mWJ7Mx5Cr8&pageid=g39818b4900_0_36)
 

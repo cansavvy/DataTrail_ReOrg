@@ -1,4 +1,3 @@
-program-philosophy
 intro-welcome-to-datatrail
 learning-objectives-for-this-section
 course-details

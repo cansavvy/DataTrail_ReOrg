@@ -72,7 +72,7 @@ jobs:
     name: Check URLs
     needs: yaml-check
     if: ${{needs.yaml-check.outputs.toggle_url_check == 'yes'}}
-    uses: jhudsl/ottr-reports/.github/workflows/report-maker.yml@fix-url
+    uses: jhudsl/ottr-reports/.github/workflows/report-maker.yml@url-fix
     with:
       check_type: urls
       error_min: 0

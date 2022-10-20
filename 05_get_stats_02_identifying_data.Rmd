@@ -52,11 +52,11 @@ To make this analysis more robust and more generic, we would need to have the pe
 
 ![The data we have](https://docs.google.com/presentation/d/1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o/export/png?id=1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o&pageid=g3ec882b221_0_186)
 
-Nevertheless, Demetri did have information on this subset of tweets, including the date, time, os, and what the tweet said. While not exactly the data he would have likely liked to have, David was still able to use these data while noting the limitations of the data in his blog post!
+Nevertheless, Dimiter did have information on this subset of tweets, including the date, time, os, and what the tweet said. While not exactly the data he would have likely liked to have, David was still able to use these data while noting the limitations of the data in his blog post!
 
 ### The Data We Can Get (Easily)
 
-In this case, Demetri had enough data to answer the question he was interested in. However, often you may not have the data you need right from the beginning. After looking at the data you have, it's worth considering whether or not there are data that you need that you can easily get access to.
+In this case, Dimiter had enough data to answer the question he was interested in. However, often you may not have the data you need right from the beginning. After looking at the data you have, it's worth considering whether or not there are data that you need that you can easily get access to.
 
 Depending upon your data science question, you may consider obtaining data from any of the sources discussed in the Getting Data course. For example, you could look at data from:
 

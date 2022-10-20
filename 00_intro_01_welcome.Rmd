@@ -21,9 +21,9 @@ Hello and welcome! The goal of _DataTrail_ is to help anyone with an internet co
 In this section our goal is for you to be able to:
 
 - Understand the components of this DataTrail course
-- Navigate the basic use of your Chromebook and its operating system
-- Acknowledge the expectations and requirements for completing this course
 - Describe what data science is
+- Acknowledge the expectations and requirements for completing this course
+- Navigate the basic use of your Chromebook and its operating system
 - Setup the basic accounts you will need to complete this course
 
 ### Course Details

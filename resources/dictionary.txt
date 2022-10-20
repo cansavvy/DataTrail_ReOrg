@@ -1,12 +1,15 @@
 BaseCamp
 Dimiter
 GapMinder
+Gapminder
 Hazma
+Hazma’s
 IMDb
 IMDb
 personalization
 survivorship
 Toshkov
+Toshkov’s
 cture
 ized
 oducible
@@ -179,6 +182,7 @@ Homoscedasticity
 htm
 iPhones
 iPods
+imdb
 IDF
 io
 Jager

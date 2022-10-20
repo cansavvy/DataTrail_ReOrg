@@ -2,7 +2,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Make your own website
+# Make Your Own Website
 
 Follow these instructions to make your own professional website using GitHub.
 

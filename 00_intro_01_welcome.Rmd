@@ -68,7 +68,7 @@ It is our goal with DataTrail to try to help people who would otherwise not have
 
 * DataTrail is being released as a set of online courses with a pay-what-you-can model. That means you can take the whole series of courses for free or for whatever cost you can afford.
 * DataTrail is designed to be done entirely online using only tools you can access from a web browser. This means that you can do the entire program on a [Chromebook](https://www.google.com/chromebook/) - which you can get for as little as $150.
-* DataTrail starts at the very basics of how to set up all of your accounts, which websites and apps to use, and simple little projects that anyone can do. The only pre-requisites are high school math/reading and the ability to use a computer.
+* DataTrail starts at the very basics of how to set up all of your accounts, which websites and apps to use, and straightforward projects that anyone can do. The only pre-requisites are high school math/reading and the ability to use a computer.
 * DataTrail includes resources for finding, getting, and working at data science jobs. It also includes resources for finding and working at remote data science jobs that can be done from anywhere in the world.
 
 

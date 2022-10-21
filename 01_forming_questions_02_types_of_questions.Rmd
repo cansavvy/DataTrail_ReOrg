@@ -15,13 +15,13 @@ We will look at a few different types of questions that you might want to answer
 There are four classes of data science questions we will talk about.
 
 * **Descriptive** <img src="resources/icons/descriptive.png" width="12%">
-The goal of descriptive data science questions is to understand the components of a data set, describe what they are, and explain that description to others who might want to understand the data. This is the simplest type of data analysis.
+The goal of descriptive data science questions is to understand the components of a data set, describe what they are, and explain that description to others who might want to understand the data. This is the simplest type of data analysis. Examples of descriptive data science calculations are the average (also called the mean), variance, maximum, and minimum of the data set.
 
 * **Exploratory** <img src="resources/icons/exploratory.png" width="12%">
-The goal of exploratory data science questions is to find unknown relationships between the different variables you have measured in your data set. Exploratory analysis is open ended and designed to find expected or unexpected relationships between different measurements.
+The goal of exploratory data science questions is to find unknown relationships between the different variables you have measured in your data set. Exploratory analysis is open ended and designed to find expected or unexpected relationships between different measurements. This step usually requires making a graph to visualize the relationships.
 
 * **Inferential** <img src="resources/icons/inferential.png" width="12%">
-The goal of inferential data science questions is to is to use a small sample of data to say something about what would happen if we collected more data. Inferential questions come up because we want to understand the relationships between different variables but it is too expensive or difficult to collect data on every person or object.
+The goal of inferential data science questions is to is to use a small sample of data to say something about what would happen if we collected more data. Inferential questions come up because we want to understand the relationships between different variables but it is too expensive or difficult to collect data on every person or object. In this case we can establish there is a relationship between two or more variables based on the small sample, but if we had more data we could be more confident about it.
 
 * **Predictive** <img src="resources/icons/predictive.png" width="12%">
 The goal of predictive data science question is to use data from a large collection to predict values for new individuals. This might be predicting what will happen in the future or predicting characteristics that are difficult to measure. Predictive data science is sometimes called machine learning.

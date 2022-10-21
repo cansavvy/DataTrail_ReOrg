@@ -188,7 +188,7 @@ If there is more than one other person on the email, you will also have any opti
 
 ### Searching for specific messages
 
-To find a particular email message in your inbox, you can search using the search box at the top of the Gmail screen.  Searching your Gmail inbox is very similar to searching the internet using Google.  You can search by a word in subject of the email, the name of the person who sent the email, or the content of the email.  For example, to find all messages from John Doe, you could type "from:john.everyday.doe@gmail.com" in this search box.  To find messages that include the words "cancer data", you could type "cancer data" in this search box.
+To find a particular email message in your inbox, you can search using the search box at the top of the Gmail screen.  Searching your Gmail inbox is very similar to searching the internet using Google.  You can search by a word in subject of the email, the name of the person who sent the email, or the content of the email.  For example, to find all messages from John Doe, you could type "from:john.everyday.doe<span>@</span>gmail.com" in this search box.  To find messages that include the words "cancer data", you could type "cancer data" in this search box.
 
 
 ![Search Box](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g34ff7bbfc9_0_50)

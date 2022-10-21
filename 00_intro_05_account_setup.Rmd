@@ -96,7 +96,7 @@ Gmail has many of similarities with other web-based email clients, such as Hotma
 
 ### Accessing your Gmail Inbox
 
-Gmail is included with your Google account, so you should already have access to Gmail through the account you set up in your first introductory course.  Your email address will be **username@gmail.com**, where username is the username of your Google account.  For example, if your user name is Jane.Doe then your email address would be Jane.Doe@gmail.com.  This is one reason to choose an appropriate user name, since this email address will be visible to anyone you communicate with over email!
+Gmail is included with your Google account, so you should already have access to Gmail through the account you set up in your first introductory course.  Your email address will be `username@gmail.com`, where username is the username of your Google account.  For example, if your user name is Jane.Doe then your email address would be `Jane.Doe@gmail.com`.  This is one reason to choose an appropriate user name, since this email address will be visible to anyone you communicate with over email!
 
 You can access Gmail by going to the address ["https://www.gmail.com"](https://www.gmail.com) or by clicking on the start menu located on the lower left hand corner of your Chromebook and searching for "Gmail". If you are not already logged into your account, you will see a prompt similar to the one here.  
 
@@ -188,7 +188,7 @@ If there is more than one other person on the email, you will also have any opti
 
 ### Searching for specific messages
 
-To find a particular email message in your inbox, you can search using the search box at the top of the Gmail screen.  Searching your Gmail inbox is very similar to searching the internet using Google.  You can search by a word in subject of the email, the name of the person who sent the email, or the content of the email.  For example, to find all messages from John Doe, you could type "from:john.everyday.doe<span>@</span>gmail.com" in this search box.  To find messages that include the words "cancer data", you could type "cancer data" in this search box.
+To find a particular email message in your inbox, you can search using the search box at the top of the Gmail screen.  Searching your Gmail inbox is very similar to searching the internet using Google.  You can search by a word in subject of the email, the name of the person who sent the email, or the content of the email.  For example, to find all messages from John Doe, you could type "`from:john.everyday.doe@gmail.com`" in this search box.  To find messages that include the words "cancer data", you could type "cancer data" in this search box.
 
 
 ![Search Box](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g34ff7bbfc9_0_50)
@@ -376,7 +376,7 @@ Continue to confirm your Google Account:
 
 You will need to give it your phone number as well as your birthday to verify your identity.
 
-Then, this will bring you to a screen where you will choose a username. This will be what your Twitter 'handle' will be. For simplicity, it would be best for your Gmail username and Twitter handle to be the same (ie if your Gmail address is Jane.Doe<span>@</span>gmail.com, 'Jane.Doe' would be a great Twitter username). If that name is unavailable, choose a different, but appropriate and simple, Twitter username. Once you have chosen a Twitter username, click 'Next'.
+Then, this will bring you to a screen where you will choose a username. This will be what your Twitter 'handle' will be. For simplicity, it would be best for your Gmail username and Twitter handle to be the same (ie if your Gmail address is `Jane.Doe@gmail.com`, 'Jane.Doe' would be a great Twitter username). If that name is unavailable, choose a different, but appropriate and simple, Twitter username. Once you have chosen a Twitter username, click 'Next'.
 
 ![Twitter username](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_212)
 

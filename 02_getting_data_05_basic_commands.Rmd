@@ -209,7 +209,7 @@ Last but not least, **messages**, in general, are simply there to **provide you 
 
 ![messages](https://docs.google.com/presentation/d/1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM/export/png?id=1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM&pageid=g451659353d_0_29)
 
-Note that all three are in the same font and same color, so they'll look similar in your RStudio Cloud console. Over time, you'll get more comfortable dealing with and understanding the difference between the three. For now, be sure that to remember if you get an error, your code did not execute successfully. Go back and find what caused the error.
+Note that all three are in the same font and same color, so they'll look similar in your RStudio Cloud console. Over time, you'll get more comfortable dealing with and understanding the difference between the three. For now, be sure that if you get an error, your code did not execute successfully. Go back and find what caused the error.
 
 # A brief intro to the `apply` family of functions
 

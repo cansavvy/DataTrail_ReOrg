@@ -69,7 +69,7 @@ Asking for help is a skill in itself! As we've mentioned, data science is best p
 
 ### Tips on asking questions!
 
-In the introduction to this course, we discussed that asking questions is central to data science and its also a crucial part of learning programming!
+In the introduction to this course, we discussed that asking questions is central to data science and it's also a crucial part of learning programming!
 
 When you are working on something, you should first ask these questions to yourself. But data science is best done as a community effort, so before you reach the point of being crazily frustrated, ask a peer or a more experienced coder for help!
 

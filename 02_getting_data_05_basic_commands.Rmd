@@ -20,7 +20,7 @@ function_name(input)
 
 Input to a function in R is known as an **argument**. Functions require *at least one* argument, but can require multiple different arguments, depending on the function.
 
-At this point you may be saying, "but when we used `getwd()` we didn't specify an argument!" - And you'd be correct! *We* didn't specify one, but the sneaky thing about arguments is that often if you don't specify one, that means one is automatically being chosen for you. (called a *default*). To see all about a function's arguments and its defaults, see its help page by using `?function`.
+At this point you may be saying, "but when we used `getwd()` we didn't specify an argument!" - And you'd be correct! *We* didn't specify one, but the sneaky thing about arguments is that often if you don't specify one, that means one is automatically being chosen for you (called a *default*). To see all about a function's arguments and its defaults, see its help page by using `?function`.
 
 To visually understand the anatomy of a **function call** (a term that describes the using of a function), let's look at the following example:
 
@@ -28,7 +28,7 @@ To visually understand the anatomy of a **function call** (a term that describes
 mean(x, trim = 0.1)
 ```
 
-We have an object `x` that should contain numbers, and we want to compute the mean of these numbers with the `mean` function. As stated above, all of the information inside the parentheses are function inputs (also called **arguments**), and they are separated by commas. In this command, I have supplied the object x and an additional argument `trim` that I set to be 0.1. The `trim` argument calls for a number between 0 and 0.5 and specifies the fraction of the observations in `x` to trim from the upper and lower ends of the data. Here, by including the trim argument, I am specifying that I want to take the mean of the middle 80% of the data.
+We have an object `x` that should contain numbers, and we want to compute the mean of these numbers with the `mean` function. As stated above, all of the information inside the parentheses are function inputs (also called **arguments**), and they are separated by commas. In this command, I have supplied the object `x` and an additional argument `trim` that I set to be 0.1. The `trim` argument calls for a number between 0 and 0.5 and specifies the fraction of the observations in `x` to trim from the upper and lower ends of the data. Here, by including the trim argument, I am specifying that I want to take the mean of the middle 80% of the data.
 
 ### What is this object?
 
@@ -155,7 +155,7 @@ The `print()` function displays the entire contents of an object.
 print(mtcars)
 ```
 
-Recall that in R, the **Console** is where commands can be typed and entered for R to run. When R is ready to accept a command a greater than sign will be displayed. An alternative to calling the `print` function is to simply type the name of the object in the Console and press enter. In general printing an entire object is not advisable just in case the object is quite large. In this case your screen would overflow with text!
+Recall that in R, the **Console** is where commands can be typed and entered for R to run. When R is ready to accept a command, a greater than sign will be displayed. An alternative to calling the `print` function is to simply type the name of the object in the Console and press enter. In general printing an entire object is not advisable just in case the object is quite large. In this case your screen would overflow with text!
 
 ```r
 mtcars

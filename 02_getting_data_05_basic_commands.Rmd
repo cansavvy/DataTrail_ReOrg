@@ -221,9 +221,6 @@ One of this family is (shockingly) the function `apply()`, which operates on mat
 
 A matrix is similar to a data frame in that it is a rectangular table of data, but it has an additional constraint: rather than each column having a type, ALL data in a matrix has the same type.
 
-The first argument to `apply()` is the data object we want to work on.
-The third argument is the function we will apply to each row or column of the data object.
-The second argument in specifies whether we are applying the function across rows or across columns (1 for rows, 2 for columns).
 
 Let's make a data frame with some data.
 
@@ -245,6 +242,10 @@ str(a_matrix)
 ```
 
 Now that the matrix is all numbers, we can do things like calculate the column or row statistics using `apply()`.
+The first argument to `apply()` is the data object we want to work on.
+The third argument is the function we will apply to each row or column of the data object.
+The second argument specifies whether we are applying the function across rows or across columns (1 for rows, 2 for columns).
+
 
 ```{r}
 # Calculate row means

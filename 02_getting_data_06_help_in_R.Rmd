@@ -59,12 +59,13 @@ Once you’ve better determined the origin of the problem, you should use whatev
 > ##### Use the RStudio help bar
 Here’s a screenshot from the help window in RStudio. Note that here we searched for the levels function. R documentation includes information about what the expected arguments are as well as examples of how to use a function. Note here that this documentation tells us that the input for x is probably a factor. 
 
-> For Bioconductor package functions, look at their page on bioconductor.org The documentation on Bioconductor pages have information that can be valuable for troubleshooting. Vignettes can have good example workflows to get started with (can use the browseVignettes function for RStudio to open them). In addition, every Bioconductor package has a PDF reference where all the functions and objects for that package are described. They can take some getting used to, but generally can have helpful information.
+> For Bioconductor package functions, look at their page on bioconductor.org. The documentation on Bioconductor pages have information that can be valuable for troubleshooting. Vignettes can have good example workflows to get started with (can use the browseVignettes function for RStudio to open them). In addition, every Bioconductor package has a PDF reference where all the functions and objects for that package are described. They can take some getting used to, but generally can have helpful information.
 
-> 6) Google it again
+> #### 6) Google it again
 Because it’s unlikely your first attempt at Googling will lead you straight to an answer; this is something you should continue to try with different wordings. Through trial and error, and also Google algorithms learning about what you look for, your search results can eventually lead you to helpful examples and forums.
 
-7) Ask for help! Asking for help is a skill in itself! As we've mentioned, data science is best performed as a part of a community. But how do you ask for help in a way that most effectively helps you as well as the person who is trying to help you? Let's discuss that!
+> #### 7) Ask for help! 
+Asking for help is a skill in itself! As we've mentioned, data science is best performed as a part of a community. But how do you ask for help in a way that most effectively helps you as well as the person who is trying to help you? Let's discuss that!
 
 ### Tips on asking questions!
 

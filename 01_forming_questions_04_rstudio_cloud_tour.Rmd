@@ -6,7 +6,7 @@ ottrpal::set_knitr_image_path()
 
 You've seen RStudio in the first class in the sequence. Remember [R](https://www.r-project.org/) is the main software that we are going to use to analyze data in this class. R is one of the two most popular languages for data science. We will learn a lot more about it throughout the courses, but here we are just going to use it to take a peak at the data you have created. R is a piece of software that is used for running computer code. [RStudio](https://www.rstudio.com/) is a company that makes a piece of software that works with R. RStudio makes it easier to create, save, share, and work with R code and data sets. RStudio is also useful for organizing projects and writing, organizing, and sharing your data science work.  
 
-If you have a more traditional laptop you can download and install R and RStudio on your laptop. But this class is part of our DataTrail program where we will be teaching you how to do everything through a web browser. Fortunately RStudio also offers a web-based version of their software called RStudio Cloud.
+If you have a more traditional laptop you can download and install R and RStudio on your laptop. However, the DataTrail Program will use RStudio through a web-based version of their software called RStudio Cloud.
 
 ### Logging in to RStudio Cloud
 
@@ -25,7 +25,7 @@ When you click _Log In_ you will be offered options for Logging in, for our clas
 
 ![Choose to log in with Google](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_7)
 
-Then you will be asked to select which Google account or log in with a new Google account. Click on the Google account you have set up for this course.
+Then you will be asked to "Choose an account". Click on the Google account you have set up for this course.
 
 
 ![Choose your Google account](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_15)
@@ -39,7 +39,7 @@ You should now see a list of your projects. This is a list of the instructor's p
 
 RStudio projects are where you will do your data science magic for this course and beyond!
 
-To get started working on a new project, you would click on the "New Project" blue icon toward the top right. If you click the arrow next to `New Project`, you will notice there are multiple different options for creating a new project. For now choose `New Rstudio Project`, and we will discuss and use those other options later.
+To get started working on a new project, click on the "New Project" blue icon toward the top right. If you click the arrow next to `New Project`, you will notice there are multiple different options for creating a new project. For now choose `New Rstudio Project`, and we will discuss and use those other options later.
 
 ![Create a new project](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_29)
 
@@ -65,7 +65,7 @@ If you want to return to a project, just click on the project name, for example 
 
 ![Click a project name to return to your project.](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_219)
 
-You will have more than one project you may want to organize. Projects are organized into Spaces. A space is just a place that lists out multiple projects.
+Projects can be organized into Spaces. A space is just a place that lists out multiple projects.
 
 You can click on the name of the DataTrail space in the upper left to see your projects there.
 
@@ -159,7 +159,7 @@ Here you will see the commands that we have run in this session of R. If you cli
 
 ![From History to Source](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_249)
 
-Do so now for your `View(example)` object and send it to Source.
+Do so now for your `View(example)` command and send it to source by clicking "To Source".
 
 
 ![Sending 'View(example)' from History to Source](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g39ceb1e717_0_13)
@@ -248,14 +248,15 @@ Following the [steps we just did to open a new project](https://datatrail-jhu.gi
 
 In this new project, run the following code to install swirl:
 
-```
+```r
 install.packages("swirl")
 ```
 
 Any time you are within this space and supposed to complete a swirl module you'll start by first loading the swirl package (it has already been installed in that space for you) and running the command `swirl()`:
 
-Run the following code to start up swirl. Note that lines that start with `#` aren't actually ran by R.
-```
+Run the following code to start up swirl. Note that lines that start with `#` aren't actually run by R.
+
+```r
 ## load package
 library(swirl)
 

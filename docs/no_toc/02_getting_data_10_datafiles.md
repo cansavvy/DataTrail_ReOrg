@@ -1,7 +1,7 @@
 
 
 
-# Dataset file types
+# Dataset File Types
 
 In this lesson, we'll discuss a few of the most common file types used to store data for use with R.
 

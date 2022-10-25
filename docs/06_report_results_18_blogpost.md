@@ -1,5 +1,6 @@
 
-# How To Write a Blog Post
+
+# How to Write a Blog Post
 
 Blog posts are pieces of writing that are posted to and shared on the Internet. For data scientists, writing blog posts can help to share ideas, projects, and information with others while reading blog posts can help you learn how others analyze data, figure out what new tools are out there, and obtain new skills and tools that will be helpful to you as a data scientist. Thus, learning where to find data science blogs and how to write a good blog post is an important skill.
 
@@ -59,7 +60,7 @@ The post uses clear language and examples and does not go into unnecessary detai
 
 Another very common and helpful type of blog post is a **How-To** blog post. This type of post is also often referred to as a **tutorial**. These blog posts **explain and teach how to do something** and include all the necessary information for others to do the same.
 
-How-To blog posts on introductory data science topics, such as data wrangling, can be incredibly helpful to those just getting started in. For example, in an earlier course when we were discussing the `dplyr` package, we referenced Suzan Baert's [four-part](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/) [data](https://suzan.rbind.io/2018/02/dplyr-tutorial-2/) [wrangling](https://suzan.rbind.io/2018/02/dplyr-tutorial-3/) [series](https://suzan.rbind.io/2018/04/dplyr-tutorial-4/). These posts are an example of wonderful How-To posts. Through explanatory text and helpful examples, this set of posts teaches users new to programming or programmers new to `dplyr` how to wrangle data in R.
+How-To blog posts on introductory data science topics, such as data wrangling, can be incredibly helpful to those just getting started in. For example, in an earlier chapter when we were discussing the `dplyr` package, we referenced Suzan Baert's [four-part](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/) [data](https://suzan.rbind.io/2018/02/dplyr-tutorial-2/) [wrangling](https://suzan.rbind.io/2018/02/dplyr-tutorial-3/) [series](https://suzan.rbind.io/2018/04/dplyr-tutorial-4/). These posts are an example of wonderful How-To posts. Through explanatory text and helpful examples, this set of posts teaches users new to programming or programmers new to `dplyr` how to wrangle data in R.
 
 How-To blog posts should **introduce what it is the post will teach** and then **provide all the information needed for the reader to learn** the topic being covered. In Suzan's `dplyr` posts specifically, the title first describes what readers will learn by reading the blog post.
 
@@ -78,7 +79,7 @@ Then, for each section, Suzan includes a section title, text to describe what th
 
 By using this structure, each step is organized into a digestible amount of information. Suzan doesn't introduce all the topics at once. Instead, she incrementally walks readers through each required step. This is an important part of writing good how-to blog posts!
 
-For another example, [Hilary Parker](https://hilaryparker.com/about-hilary-parker/) wrote a blog post called ["Writing an R package from Scratch"](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/) on her blog [Not So Standard Deviations](https://hilaryparker.com/). While we haven't discussed writing R packages on your own yet in this Course set, we have worked with many different R packages! Each package has a similar structure. Hilary Parker explains how to write an R package in her [very helpful how-to blog post](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/)!
+For another example, [Hilary Parker](https://hilaryparker.com/about-hilary-parker/) wrote a blog post called ["Writing an R package from Scratch"](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/) on her blog [Not So Standard Deviations](https://hilaryparker.com/). While we haven't discussed writing R packages, we have worked with many different R packages! Each package has a similar structure. Hilary Parker explains how to write an R package in her [very helpful how-to blog post](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/)!
 
 
 ![Writing an R package from scratch](https://docs.google.com/presentation/d/1CoJJ4zEULcwzIcII6YU_ymO5mmdgD-HjVDdWEPwnm5U/export/png?id=1CoJJ4zEULcwzIcII6YU_ymO5mmdgD-HjVDdWEPwnm5U&pageid=g3f9ed3b4ce_0_28)

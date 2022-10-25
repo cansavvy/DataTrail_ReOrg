@@ -134,7 +134,7 @@ For example, data downloaded from other resources often need to be cleaned and w
 * Variable values are internally consistent
 * Appropriate transformed variables have been added
 
-These are the concepts previously discussed in the Data Tidying lessons in an earlier course in this Course Set, so many of them should be familiar. Cleaning data to make sure the dataset is in a tidy format, that the variables are all appropriately-named, and that the values within each variable are as you expect them to be is an important step in determining whether or not the data you have will be useful in answering your data science question. These topics will be further discussed in the Descriptive Analysis and Exploratory Analysis lessons in the later lessons in this course.
+These are the concepts previously discussed in the Data Tidying lessons in an earlier chapter, so many of them should be familiar. Cleaning data to make sure the dataset is in a tidy format, that the variables are all appropriately-named, and that the values within each variable are as you expect them to be is an important step in determining whether or not the data you have will be useful in answering your data science question. These topics will be further discussed in the Descriptive Analysis and Exploratory Analysis lessons in the later lessons in this course.
 
 #### When data aren't good
 

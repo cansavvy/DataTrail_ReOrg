@@ -5,10 +5,11 @@ what-is-data-science
 what-is-datatrail
 who-is-this-program-for
 how-the-program-is-organized
-how-this-course-is-graded
+how-datatrail-is-graded
 finding-help
 searching-the-internet
 search-guidelines
+understanding-your-chromebook
 what-is-a-chromebook
 chrome-os
 chrome-apps

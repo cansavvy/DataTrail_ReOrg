@@ -32,9 +32,13 @@ Thus to answer the question
 
 > What variables from IMDB predict the author's movie ratings?
 
-we would ideally want a dataset where each row is a different tweet with each row containing information on the following variables:
+We would ideally want a dataset where each row is a different tweet with each row containing information on the following variables:
 
-- TODO: Explaining the ideal variables in the dataset
+• rating – our own rating for the movie
+• imdb – the IMDb movie rating
+• genre – the genre of the movie
+• director – Director of the movie
+• year – Year of release of the movie
 
 Having all these data in this format would enable us to answer the question of interest!
 
@@ -42,15 +46,15 @@ Having all these data in this format would enable us to answer the question of i
 
 *But*, the data we *have* are typically not *exactly* the data we *want*.
 
-- TODO: Explaining the variables we have
+To make this analysis more robust and more generic, we would need to have the personal rating of a lot more movies (both number and variation) but also a lot more people. This would allow us to build a customized model for each person based on their preferences. Taking this analysis further, we could gather more information about the viewer (age, sex, location, etc) and try to build a customized rating model for that profile of person.
 
 ![The data we have](https://docs.google.com/presentation/d/1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o/export/png?id=1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o&pageid=g3ec882b221_0_186)
 
-Nevertheless, Demetri did have information on this subset of tweets, including the date, time, os, and what the tweet said. While not exactly the data he would have likely liked to have, David was still able to use these data while noting the limitations of the data in his blog post!
+Nevertheless, Dimiter did have information on this subset of tweets, including the date, time, os, and what the tweet said. While not exactly the data he would have likely liked to have, David was still able to use these data while noting the limitations of the data in his blog post!
 
 ### The Data We Can Get (Easily)
 
-In this case, Demetri had enough data to answer the question he was interested in. However, often you may not have the data you need right from the beginning. After looking at the data you have, it's worth considering whether or not there are data that you need that you can easily get access to.
+In this case, Dimiter had enough data to answer the question he was interested in. However, often you may not have the data you need right from the beginning. After looking at the data you have, it's worth considering whether or not there are data that you need that you can easily get access to.
 
 Depending upon your data science question, you may consider obtaining data from any of the sources discussed in the Getting Data course. For example, you could look at data from:
 

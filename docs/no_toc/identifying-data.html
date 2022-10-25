@@ -4,21 +4,21 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 51 Identifying Data | DataTrail</title>
-  <meta name="description" content="Chapter 51 Identifying Data | DataTrail" />
+  <title>Chapter 51 Identifying Data | Course Name</title>
+  <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 51 Identifying Data | DataTrail" />
+  <meta property="og:title" content="Chapter 51 Identifying Data | Course Name" />
   <meta property="og:type" content="book" />
   
   
-  
+  <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 51 Identifying Data | DataTrail" />
+  <meta name="twitter:title" content="Chapter 51 Identifying Data | Course Name" />
   
-  
+  <meta name="twitter:description" content="Description about Course/Book." />
   
 
 
@@ -28,7 +28,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="translating-questions-to-data-science-questions.html"/>
 <link rel="next" href="descriptive-analysis.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
@@ -134,10 +134,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style="padding-left: 0px; padding-top: 8px;"</a>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
-<ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#program-philosophy"><i class="fa fa-check"></i><b>0.1</b> Program Philosophy</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a></li>
 <li class="chapter" data-level="1" data-path="intro-welcome-to-datatrail.html"><a href="intro-welcome-to-datatrail.html"><i class="fa fa-check"></i><b>1</b> <strong>Intro: Welcome to DataTrail</strong></a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="intro-welcome-to-datatrail.html"><a href="intro-welcome-to-datatrail.html#learning-objectives-for-this-section"><i class="fa fa-check"></i><b>1.1</b> Learning objectives for this section</a>
@@ -1092,7 +1089,6 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <a href="https://www.datatrail.org/"><img src="https://github.com/datatrail-jhu/DataTrail_Template/raw/main/assets/DataTrail_logo.jpg" style=" width: 80%; filter: grayscale(100%); padding-left: 40px; padding-top: 8px; vertical-align: top "</a>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
 <p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/VWaJYc3zATe3qxYC9"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
-
 </ul>
 
       </nav>
@@ -1102,7 +1098,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DataTrail</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Course Name</a>
           </h1>
         </div>
 
@@ -1152,27 +1148,27 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <blockquote>
 <p>What variables from IMDB predict the author’s movie ratings?</p>
 </blockquote>
-<p>we would ideally want a dataset where each row is a different tweet with each row containing information on the following variables:</p>
-<ul>
-<li>TODO: Explaining the ideal variables in the dataset</li>
-</ul>
+<p>We would ideally want a dataset where each row is a different tweet with each row containing information on the following variables:</p>
+<p>• rating – our own rating for the movie
+• imdb – the IMDb movie rating
+• genre – the genre of the movie
+• director – Director of the movie
+• year – Year of release of the movie</p>
 <p>Having all these data in this format would enable us to answer the question of interest!</p>
 </div>
 <div id="the-data-we-have" class="section level3" number="51.0.3">
 <h3><span class="header-section-number">51.0.3</span> The Data We Have</h3>
 <p><em>But</em>, the data we <em>have</em> are typically not <em>exactly</em> the data we <em>want</em>.</p>
-<ul>
-<li>TODO: Explaining the variables we have</li>
-</ul>
+<p>To make this analysis more robust and more generic, we would need to have the personal rating of a lot more movies (both number and variation) but also a lot more people. This would allow us to build a customized model for each person based on their preferences. Taking this analysis further, we could gather more information about the viewer (age, sex, location, etc) and try to build a customized rating model for that profile of person.</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o/export/png?id=1hin5y4jDZikoGLbIEnwnPhJybgD_FezWsh16QIu5C5o&amp;pageid=g3ec882b221_0_186" alt="" />
 <p class="caption">The data we have</p>
 </div>
-<p>Nevertheless, Demetri did have information on this subset of tweets, including the date, time, os, and what the tweet said. While not exactly the data he would have likely liked to have, David was still able to use these data while noting the limitations of the data in his blog post!</p>
+<p>Nevertheless, Dimiter did have information on this subset of tweets, including the date, time, os, and what the tweet said. While not exactly the data he would have likely liked to have, David was still able to use these data while noting the limitations of the data in his blog post!</p>
 </div>
 <div id="the-data-we-can-get-easily" class="section level3" number="51.0.4">
 <h3><span class="header-section-number">51.0.4</span> The Data We Can Get (Easily)</h3>
-<p>In this case, Demetri had enough data to answer the question he was interested in. However, often you may not have the data you need right from the beginning. After looking at the data you have, it’s worth considering whether or not there are data that you need that you can easily get access to.</p>
+<p>In this case, Dimiter had enough data to answer the question he was interested in. However, often you may not have the data you need right from the beginning. After looking at the data you have, it’s worth considering whether or not there are data that you need that you can easily get access to.</p>
 <p>Depending upon your data science question, you may consider obtaining data from any of the sources discussed in the Getting Data course. For example, you could look at data from:</p>
 <ul>
 <li>Government Data</li>
@@ -1396,8 +1392,7 @@ gitbook.start({
 },
 "toc": {
 "collapse": "section"
-},
-"toc_depth": 4
+}
 });
 });
 </script>

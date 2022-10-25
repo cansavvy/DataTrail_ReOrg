@@ -78,9 +78,11 @@ If you want to return to your original space, click again in the top left hand o
 Now that we have a project. Return to your `my_first_project` so we can get oriented to the RStudio space.
 We will go through each of the regions and describe some of their main functions, so follow along with each step and make sure you understand the function and how to access each part of RStudio Cloud on your own. But, it would be impossible to cover everything that RStudio can do, so we urge you to explore RStudio Cloud further on your own too!
 
+To access the fourth space shown in the figure below, you'll have to start a new file. To do so, you'll click on File, hover over New File from the drop-down menu that appears, and then click "R Script" from the drop-down menu.
+
 ![RStudio's quadrants](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_38)
 
-To access the fourth space shown here, you'll have to start a new file. To do so, you'll click on File, hover over New File from the drop-down menu that appears, and then click "R Script" from the drop-down menu.
+To open up a new file, you'll click on File, hover over New File from the drop-down menu that appears, and then click "R Script" from the drop-down menu.
 
 ![Open up a new file](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_16)
 
@@ -103,22 +105,19 @@ The Session menu has some R specific functions, in which you can restart, interr
 
 ![The Session menu](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g39c9aa57ae_2_0)
 
-The Tools menu is a treasure trove of functions for you to explore. For now, you should know that this is where you can go to install new packages (see the next lesson in this course!), set up your version control software (GitHub was discussed in the last course in this series!), and set your options and preferences for how RStudio looks and functions. For now, we will leave this alone, but be sure to explore these menus on your own once you have a bit more experience with RStudio and see what you can change to best suit your preferences!
+The Tools menu is a treasure trove of functions for you to explore. For now, you should know that this is where you can go to install new packages and set your options and preferences for how RStudio looks and functions. For now, we will leave this alone, but be sure to explore these menus on your own once you have a bit more experience with RStudio and see what you can change to best suit your preferences!
 
 
 ![The Tools menu](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g31f42765ab_0_48)
 
 #### Console
 
-This region should look familiar to you - when you opened R, you were presented with the console. This is where you type and execute commands, and where the output of these commands is displayed.
+When you first opened R, you were presented with the console. This is where you type and execute commands, and where the output of these commands is displayed.
 
 
 ![The console](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g31f42765ab_0_59)
 
 To execute your first command, at the `>` prompt, try typing `1 + 1`. Then, hit enter. You should see the output `[1] 2` below your command.
-
-
-![Typing into the console and getting an output](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_233)
 
 ### Source: script editor panel
 
@@ -184,7 +183,7 @@ The file name 'R_basics.R' will now show up in the tab at the top of the R Sourc
 
 #### Making a new folder
 
-Now let's create a new folder for storing our data that we'll need.
+Now let's create a new folder for storing our data that we'll need. In the bottom right quadrant of your console, click the `New Folder` icon.
 
 ![New Folder](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_262)
 
@@ -245,7 +244,7 @@ Throughout the DataTrail curriculum, we'll be using something called [Swirl modu
 
 To make sure that you're comfortable using Swirl, we'll go through the steps on where to go to run Swirl and how to work through a module. This will be important as many of the quizzes accompanying these lessons will require you to use Swirl. Follow the steps in this section of the lesson to get started with your first Swirl module!
 
-Following the steps we just did, open up a new project in R and call it `swirl_practice_yourname` but replace `yourname` with your own name.
+Following the [steps we just did to open a new project](https://datatrail-jhu.github.io/DataTrail/rstudio-and-projects.html#creating-a-new-project), open up a new project in R and call it `swirl_practice_yourname` but replace `yourname` with your own name.
 
 In this new project, run the following code to install swirl:
 

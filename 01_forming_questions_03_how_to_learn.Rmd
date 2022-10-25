@@ -2,7 +2,8 @@
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
 ```
-# How To Learn
+
+# How to Learn
 
 In the last lesson we walked through a few interesting data science projects. Eventually, using the foundational skills learned, with practice on your own, and with other skills you pick up along the way, you'll be completing your own, equally-awesome data science projects.
 
@@ -27,7 +28,7 @@ That doesn't make failure easier. It will be **frustrating** from time to time, 
 
 In addition to learning the basics of data science in this course set, we also want you to *learn how to learn*.
 
-First and foremost, the best way to learn data science is by doing it. Throughout these lessons, copy the code you see in the lessons and try it out on your own. If you get an error, that's ok! Google that error and try to learn from this error! In fact, we've got a whole lesson in this course on how to Google and a lesson in a later course in this course set on how to get help for questions when you're programming. But, there's more to learning how to learn than getting good at searching on the Internet (although, that is important!)
+First and foremost, the best way to learn data science is by doing it. Throughout these lessons, copy the code you see in the lessons and try it out on your own. If you get an error, that's ok! Google that error and try to learn from this error! In fact, we've got a whole lesson in this course on how to Google and a lesson in a later chapter on how to get help for questions when you're programming. But, there's more to learning how to learn than getting good at searching on the Internet (although, that is important!)
 
 #### The Mindset
 

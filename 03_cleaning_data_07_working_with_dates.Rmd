@@ -3,7 +3,7 @@ ottrpal::set_knitr_image_path()
 ```
 # Working with Dates
 
-In lessons an earlier course, you were introduced to different types of objects in R, such as characters, numeric, and logicals. Then, in earlier lessons in this course, we covered how to work with strings and factors in detail. The remaining type of variable we haven't yet covered is how to work with dates and time in R.
+In an earlier chapter, you were introduced to different types of objects in R, such as characters, numeric, and logicals. Then, in earlier lessons in this course, we covered how to work with strings and factors in detail. The remaining type of variable we haven't yet covered is how to work with dates and time in R.
 
 As with strings and factors, there is a tidyverse package to help you work with dates more easily. The `lubridate` package will make working with dates and times easier. Before working through this lesson, you'll want to be sure that `lubridate` has been installed and loaded in:
 
@@ -128,7 +128,7 @@ Using addition, subtraction, multiplication, and division is possible with date 
 
 ### What's not covered in this lesson
 
-This lesson has not covered how to work with times, much detail about how to operate on date or date-time objects, nor how to deal with timezones in date-time objects. To learn more about these subjects, feel free to explore the additional resources below, or hold off for a later course in a different course set!
+This lesson has not covered how to work with times, much detail about how to operate on date or date-time objects, nor how to deal with timezones in date-time objects. To learn more about these subjects, feel free to explore the additional resources below.
 
 
 ### Additional Resources

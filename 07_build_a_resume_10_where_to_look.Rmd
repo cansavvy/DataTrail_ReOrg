@@ -14,7 +14,7 @@ We mentioned this briefly in the last lesson, but there will be data scientist p
 
 However, you do *not* need to have exactly *every* qualification and skill listed on the job posting. If you have most of the skills they're requesting and are willing to learn the few with which you're less familiar, it is ok to apply to that position!
 
-Thus, given the training in this Course Set, you'll want to focus on positions where data wrangling, data visualization, basic analysis, and report generation and presentations are the focus. These may have the title "data analyst", "junior data scientist", "entry level data scientist" or "data scientist." Read the job descriptions carefully and decide if the job may be right for you!
+Thus, given the training in this course, you'll want to focus on positions where data wrangling, data visualization, basic analysis, and report generation and presentations are the focus. These may have the title "data analyst", "junior data scientist", "entry level data scientist" or "data scientist." Read the job descriptions carefully and decide if the job may be right for you!
 
 ### Additional Considerations
 

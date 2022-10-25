@@ -28,11 +28,19 @@ In this section our goal is for you to be able to:
 
 ### Course Details
 
-Before we jump into the content, we just wanted to orient you to how this course and all the courses in this program will be laid out:
+Before we jump into the content, we just wanted to orient you to how this course will be laid out:
 
-* **Lessons** - Each course will consist of lessons. You're looking at the first lesson here. It's called "Welcome to DataTrail". You can see a list of all the lessons in this course in the left panel. The lessons will contain text and images to walk you through every lesson of each course.
-* **Quizzes** - Most lessons will have a quiz to evaluate your understanding of the material in that lesson. Successful completion of these quizzes is required for receipt of the certificate at the end of each course. Quizzes often also have an interactive component called `swirl` which we will introduce you to. 
-* **Projects** - Some courses will have associated exercises. Think of these as larger projects. They won't be required to receive the certificate at the end of the course; however, the skills the exercises require will be essential if you're interested in getting a job in data science, so we highly suggest you complete them.
+* **Sections** - There are 8 major sections in this course that take you through another step of the data science process:
+  - Introduction to DataTrail (what you are looking at now)
+  - Forming Questions
+  - Getting Data
+  - Cleaning the Data
+  - Plotting the Data
+  - Sharing Results
+  - Building a resume
+* **Chapters** -  You're looking at the first chapter here. It's called "Welcome to DataTrail". You can see a list of all the chapters (and the overall sections in bold) in this course in the left panel. The chapters will contain text and images to walk you through every chapters of each course.
+* **Quizzes** - Most chapters (when looking at this in Leanpub) will have a quiz to evaluate your understanding of the material in that chapter. Successful completion of these quizzes is required for receipt of the certificate at the end of the DataTrail course. Quizzes often also have an interactive component called `swirl` which we will introduce you to.
+* **Projects** - At the end of each section, there will be a project that will require you to turn in some code. The main objective of these projects is to have you try setting up an analysis. If you are at all struggling with completing these projects reach out. The main objective is that you attempt to use what we have learned in the section. If you get stuck, that is okay, just make sure to turn in the work that you have attempted.
 
 ### What is data science?
 
@@ -95,6 +103,6 @@ This course is designed to be used in many different ways so they can be useful 
 
 To keep up on the latest information about the program, courses and more go to https://www.DataTrail.org/.
 
-### How this course is graded
+### How DataTrail is graded
 
-Each lesson will have a short quiz at the end. To pass the course you need to get 70% of the questions in the course correct. If you receive more than 90% of the points across all quizzes you will pass with honors.
+Most chapters will have a short quiz at the end. To pass the course you need to get 70% of the quiz questions in the course correct. Additionally, if you are taking this course as a part of a datatrail cohort, you will be required to turn in your projects for credit. If you receive more than 90% of the points across all quizzes and turn in completed projects you will pass with honors.

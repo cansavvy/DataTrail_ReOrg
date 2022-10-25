@@ -7,7 +7,7 @@ ottrpal::set_knitr_image_path()
 
 In data science and computer-related work in general, it is common to ask for help multiple times per day. While sometimes we ask our colleagues for help in-person, most of the time we search the web.
 
-Throughout this coursework it may surprise you just how frequently other people have run into the same problem or had the exact same question you have. Often, there is an answer that was publicly shared previously on the Internet that can help answer the very question you're asking. There are a number of websites and discussion boards where people frequently ask and answer questions. By knowing how to effectively search the web, you can easily find these answers.
+Throughout the coursework it may surprise you just how frequently other people have run into the same problem or had the exact same question you have. Often, there is an answer that was publicly shared previously on the Internet that can help answer the very question you're asking. There are a number of websites and discussion boards where people frequently ask and answer questions. By knowing how to effectively search the web, you can easily find these answers.
 
 ### Searching the Internet
 

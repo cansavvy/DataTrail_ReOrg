@@ -78,7 +78,7 @@ Now that you know how to create and navigate projects in the next lecture we wil
 
 ### Getting Started in RStudio Cloud
 
-To get started working in [RStudio Cloud](rstudio.cloud), you'll want to go to [rstudio.cloud](rstudio.cloud) and log in using your RStudio Cloud login. You'll be logged into your home screen. To get started working on a new project, you would click on the "New Project" blue icon toward the top right. This will create a new project. However, all your old projects will be listed at left underneath "Spaces." You can always return to an old project or start a new one.
+To get started working in <a href="https://rstudio.cloud/" target="_blank">RStudio Cloud</a>, you'll want to go to [rstudio.cloud](rstudio.cloud) and log in using your RStudio Cloud login. You'll be logged into your home screen. To get started working on a new project, you would click on the "New Project" blue icon toward the top right. This will create a new project. However, all your old projects will be listed at left underneath "Spaces." You can always return to an old project or start a new one.
 
 
 ![RStudio Cloud Home Screen - New Project ](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_0)

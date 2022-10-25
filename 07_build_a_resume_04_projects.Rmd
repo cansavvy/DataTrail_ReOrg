@@ -242,7 +242,7 @@ You'll also want to create projects or posts for your Data Tidying and Data Visu
 
 ### Your *Own* Project
 
-So far in this Course set, you've been told what data to work with, how to explore it, and what questions to answer. *However*, when looking for a job, hiring managers will want to see that you have completed projects on your own. At this point, it's your job to use *all* the skills you've learned throughout this Course Set to add a project that is *all your own* to your website.
+So far in this course, you've been told what data to work with, how to explore it, and what questions to answer. *However*, when looking for a job, hiring managers will want to see that you have completed projects on your own. At this point, it's your job to use *all* the skills you've learned throughout this course to add a project that is *all your own* to your website.
 
 To be considered complete, this project must demonstrate your ability to:
 

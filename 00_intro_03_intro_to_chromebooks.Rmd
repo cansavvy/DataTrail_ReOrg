@@ -23,7 +23,7 @@ The goal of DataTrail is not that you _have_ to use a Chromebook to finish the p
 * Since everything is stored on the Internet (sometimes called "in the cloud") then the Chromebook will always be set up with your preferences when you log off and log back on.
 * Everyone is using the same software through the websites, so it reduces problems that come from different people using different versions of each computer program on different operating systems.
 
-Since Chromebooks are cheap and [widely used](https://www.cnbc.com/2015/12/03/googles-chromebooks-make-up-half-of-us-classroom-devices.html#:~:text=For%20the%20first%20time%2C%20Google,do%20not%20include%20desktop%20computers.), we expect many of the students who work on the class will use actual Chromebooks. In this course we will show you a little bit about how Chromebooks work, focusing on the Chrome OS operating system.
+Since Chromebooks are cheap and [widely used](https://www.cnbc.com/2015/12/03/googles-chromebooks-make-up-half-of-us-classroom-devices.html#:~:text=For%20the%20first%20time%2C%20Google,do%20not%20include%20desktop%20computers.), we expect many of the students who work on the class will use actual Chromebooks. In this chapter we will show you a little bit about how Chromebooks work, focusing on the Chrome OS operating system.
 
 If you are used to using a "normal" computer it can take a little getting used to to adapt to a Chromebook. A couple of things that you will likely do differently are:
 

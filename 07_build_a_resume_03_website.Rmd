@@ -79,7 +79,7 @@ Simply though, `blogdown` allows users to generate **static websites**. This mea
 
 ### Getting Started
 
-In an earlier course in this Course Set, you developed a basic website within RStudio Cloud. At the end of that lesson, you had a website that looked something like this:
+In an earlier chapter, you developed a basic website within RStudio Cloud. At the end of that lesson, you had a website that looked something like this:
 
 
 ![basic personal website](https://docs.google.com/presentation/d/1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70/export/png?id=1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70&pageid=g3f121d3764_0_164)

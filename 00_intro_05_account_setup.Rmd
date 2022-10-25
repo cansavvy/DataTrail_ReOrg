@@ -226,7 +226,7 @@ Click the "Go to Google Drive" button to be taken to your Drive account.  If you
 
 In Jane's Drive account, you can see that she simply has each document shown individually without any file organization structure. This is fine when you have only a small number of documents.  However, if you use Google Drive to store lots of documents you will need a file structure to keep things organized and to quickly find the documents you need.  In general, we strongly suggest that you create folders to keep similar files together.
 
-In this course, we will simply go over the basics of organization in Google Drive. You will learn about good practices for organizing files for projects in a later course, which will include how to chose a folder structure and naming conventions for files and folders.  
+In this course, we will simply go over the basics of organization in Google Drive. You will learn about good practices for organizing files for projects in a later chapter, which will include how to chose a folder structure and naming conventions for files and folders.  
 
 First, let's create a new folder.  Click the "New" button in the top left corner of the Google Drive home page and then select "Folder." A new window will open. Type the name of your folder, in this case "Cancer project," and click the blue "CREATE" button.
 

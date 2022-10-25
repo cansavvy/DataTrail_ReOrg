@@ -1,7 +1,7 @@
 
 
 
-# Cloning A Repository
+# Cloning a Repository
 
 Now that you have learned how to create a GitHub repository, you will learn how to obtain a copy of that repository in a location that you use for writing code such as RStudio Cloud. This process is called "cloning" a repository from GitHub.
 

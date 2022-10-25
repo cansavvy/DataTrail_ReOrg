@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 40 Introduction to ggplot2 | DataTrail</title>
-  <meta name="description" content="Chapter 40 Introduction to ggplot2 | DataTrail" />
+  <title>Chapter 3 Understanding Your Chromebook | DataTrail</title>
+  <meta name="description" content="Chapter 3 Understanding Your Chromebook | DataTrail" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 40 Introduction to ggplot2 | DataTrail" />
+  <meta property="og:title" content="Chapter 3 Understanding Your Chromebook | DataTrail" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 40 Introduction to ggplot2 | DataTrail" />
+  <meta name="twitter:title" content="Chapter 3 Understanding Your Chromebook | DataTrail" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="good-plots.html"/>
-<link rel="next" href="customization-in-ggplot2.html"/>
+<link rel="prev" href="finding-help.html"/>
+<link rel="next" href="working-offline-vs-online.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -1127,201 +1127,650 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/DataTrail.jpg">
 </div>
-<div id="introduction-to-ggplot2" class="section level1" number="40">
-<h1><span class="header-section-number">Chapter 40</span> Introduction to ggplot2</h1>
-<p>R was initially developed for statisticians, who often are interested in generating plots or figures to visualize their data. As such, a few basic plotting features were built in when R was first developed. These are all still available; however, over time, a new approach to graphing in R was developed. This new approach implemented what is known as the <a href="http://vita.had.co.nz/papers/layered-grammar.pdf">grammar of graphics</a>, which allows you to develop elegant graphs flexibly in R. Making plots with this set of rules requires the R package <code>ggplot2</code>. To get started using ggplot2 requires you to install and load the package into R.</p>
-<div class="sourceCode" id="cb271"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb271-1"><a href="introduction-to-ggplot2.html#cb271-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;ggplot2&quot;</span>)</span>
-<span id="cb271-2"><a href="introduction-to-ggplot2.html#cb271-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
-<div id="the-basics" class="section level3" number="40.0.1">
-<h3><span class="header-section-number">40.0.1</span> The basics</h3>
-<p>The grammar of graphics implemented in <code>ggplot2</code> is based on the idea that you can build <em>any</em> plot as long as you have a few pieces of information. To start building plots in <code>ggplot2</code>, we’ll need some data and to know the type of plot we want to make. The type of plot you want to make in <code>ggplot2</code> is referred to as a geom. This will get us started, but the idea behind ggplot2 is that every new concept we introduce will be layered on top of the information you’ve already learned. In this way, ggplot2 is <em>layered</em> - layers of information add on top of each other as you build your graph. In code written to generate a <code>ggplot2</code> figure, you will see each line is separated by a plus sign (<code>+</code>). Think of each line as a different layer of the graph. We’re simply adding one layer on top of the previous layers to generate the graph. You’ll see exactly what we mean by this throughout each section in this lesson.</p>
-<p>To get started, we’ll start with the two basics (data and a geom) and build additional layers from there.</p>
-<p>As we get started plotting in <code>ggplot2</code>, plots will take the following general form:</p>
-<div class="sourceCode" id="cb272"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb272-1"><a href="introduction-to-ggplot2.html#cb272-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> DATASET) <span class="sc">+</span></span>
-<span id="cb272-2"><a href="introduction-to-ggplot2.html#cb272-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_PLOT_TYPE</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="fu">VARIABLE</span>(S)))</span></code></pre></div>
-<p>After installation and loading <code>ggplot2</code> in, you will always begin by calling the <code>ggplot()</code> function. You’ll then specify your dataset. Within the <code>ggplot()</code> function. Then, before making your plot you will also have to specify what geom type you’re interested in plotting. We’ll focus on a few basic geoms in the next section and give examples of each plot type (geom), but for now we’ll just work with a single geom: <code>geom_point</code>. <code>geom_point</code> is most helpful for creating scatterplots. As a reminder from an earlier lesson, scatterplots are useful when you’re looking at the relationship between two numeric variables. Within <code>geom</code> you will specify the arguments needed to tell <code>ggplot2</code> how you want your plot to look. You will map your variables using the aesthetic argument <code>aes</code>. We’ll walk through examples below to make all of this clear. However, get comfortable with the overall look of the code now.</p>
-</div>
-<div id="example-dataset-diamonds" class="section level3" number="40.0.2">
-<h3><span class="header-section-number">40.0.2</span> Example dataset: <code>diamonds</code></h3>
-<p>To build your first plot in <code>ggplot2</code> we’ll make use of the fact that there are some datasets already available in R. One frequently-used data set is known as <code>diamonds</code>. This data set contains prices and other attributes of 53,940 diamonds, with each row containing information about a different diamond. If you look at the first few rows of data, you can get an idea of what data are included in this dataset.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g360e22de56_0_108" alt="" />
-<p class="caption">First 12 rows of diamonds dataset</p>
-</div>
-<p>Here you see a lot of numbers and can get an idea of what data are available in this data set. For example, in looking at the column names across the top, you can see that we have information about how many carats each diamond is (<code>carat</code>), some information on the quality of the diamond cut (<code>cut</code>), the color of the diamond from J (worst) to D (best) (<code>color</code>), along with a number of other pieces of information about each diamond.</p>
-<p>We will use this data set to better understand how to generate plots in R, using <code>ggplot2</code>.</p>
-</div>
-<div id="scatterplots-geom_point" class="section level3" number="40.0.3">
-<h3><span class="header-section-number">40.0.3</span> Scatterplots: <code>geom_point</code></h3>
-<p>In <code>ggplot2</code> we specify these by defining <code>x</code> and <code>y</code> in the <code>aes()</code> argument. The <code>x</code> argument defines which variable will be along the bottom of the plot. <code>y</code> refers to which variable will be along the left side of the plot. If we wanted to understand the relationship between the number of carats in a diamond and that diamond’s price, we may do the following:</p>
-<div class="sourceCode" id="cb273"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb273-1"><a href="introduction-to-ggplot2.html#cb273-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb273-2"><a href="introduction-to-ggplot2.html#cb273-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> carat, <span class="at">y =</span> price))</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g360e22de56_0_118" alt="" />
-<p class="caption">diamonds scatterplot</p>
-</div>
-<p>In this plot, we see that, in general, the larger the diamond is (or the more carats it has), the more expensive the diamond is (price), which is probably what we would have expected. However, now, we have a plot that definitively supports this conclusion.</p>
-</div>
-<div id="aesthetics" class="section level3" number="40.0.4">
-<h3><span class="header-section-number">40.0.4</span> Aesthetics</h3>
-<p>What if we wanted to alter the size, color or shape of the points? Probably unsurprisingly, these can all be changed within the aesthetics argument. After all, something’s aesthetic refers to how something looks. Thus, if you want to change the look of your graph, you’ll want to play around with the plot’s aesthetics.</p>
-<p>In fact, in the plots above you’ll notice that we specified what should be on the x and y axis within the <code>aes()</code> call. These are aesthetic mappings too! We were telling ggplot2 what to put on each axis, which will clearly affect how the plot looks, so it makes sense that these calls have to occur within <code>aes()</code>. Additionally now, we’ll focus on arguments within <code>aes()</code> that change how the points on the plot look.</p>
-<div id="point-color" class="section level4" number="40.0.4.1">
-<h4><span class="header-section-number">40.0.4.1</span> Point color</h4>
-<p>In the scatterplot we just generated, we saw that there was a relationship between carat and price, such that the more carats a diamond has, generally, the higher the price. But, it’s not a perfectly linear trend. What we mean by that is that not all diamonds that were 2 carats were exactly the same price. And, not all 3 carat diamonds were exactly the same price. What if we were interested in finding out a little bit more about why this is the case?</p>
-<p>Well, we could look at the clarity of the diamonds to see whether or not that affects the price of the diamonds? To add clarity to our plot, we could change the color of our points to differ based on clarity:</p>
-<div class="sourceCode" id="cb274"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb274-1"><a href="introduction-to-ggplot2.html#cb274-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb274-2"><a href="introduction-to-ggplot2.html#cb274-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> carat, <span class="at">y =</span> price, <span class="at">color =</span> clarity)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g3c02bd843a_0_0" alt="" />
-<p class="caption">changing point colors helps us better understand the data</p>
-</div>
-<p>Here, we see that not only are the points now colored by clarity, ggplot2 has also automatically added a legend for us with the various classes and their corresponding point color.</p>
-<p>The Help pages of the diamonds dataset (accessed using <code>?diamonds</code>) state that clarity is “a measurement of how clear the diamond is.” The documentation also tells us that I1 is the worst clarity and IF is the best (Full scale: I1, SI1, SI2, VS1, VS2, VVS1, VVS2, IF). This makes sense with what we see in the plot. Small (&lt;1 carat) diamonds that have the best clarity level (IF) are some of the most expensive diamonds. While, relatively large diamonds (diamonds between 2 and 3 carats) of the lowest clarity (I1) tend to cost less.</p>
-<p>By coloring our points by a different variable in the dataset, we now understand our dataset better. This is one of the goals of data visualization! And, specifically, what we’re doing here in <code>ggplot2</code> is known as <strong>mapping a variable to an aesthetic</strong>. We took another variable in the dataset, mapped it to a color, and then put those colors on the points in the plot. Well, we only told <code>ggplot2</code> what variable to map. It took care of the rest!</p>
-<p>Of course, we can also <em>manually</em> specify the colors of the points on our graph; however, manually specifying the colors of points happens <em>outside</em> of the <code>aes()</code> call. This is because <code>ggplot2</code> does not have to go through the mapping the variable to an aesthetic process. In the code here, <code>ggplot2</code> doesn’t have to go through the trouble of figuring out which level of the variable is going to be which color on the plot (the mapping to the aesthetic part of the process). Instead, it just colors every point red. Thus, <strong>manually specifying the color of your points happens <em>outside</em> of <code>aes()</code></strong>:</p>
-<div class="sourceCode" id="cb275"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb275-1"><a href="introduction-to-ggplot2.html#cb275-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb275-2"><a href="introduction-to-ggplot2.html#cb275-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> carat, <span class="at">y =</span> price), <span class="at">color =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g3c02bd843a_0_5" alt="" />
-<p class="caption">manually specifying point color occurs outside of <code>aes()</code></p>
-</div>
-</div>
-<div id="point-size" class="section level4" number="40.0.4.2">
-<h4><span class="header-section-number">40.0.4.2</span> Point size</h4>
-<p>As above, we can change the point size by mapping another variable to the <code>size</code> argument within <code>aes</code>:</p>
-<div class="sourceCode" id="cb276"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb276-1"><a href="introduction-to-ggplot2.html#cb276-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb276-2"><a href="introduction-to-ggplot2.html#cb276-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> carat, <span class="at">y =</span> price, <span class="at">size =</span> clarity))</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g3c02bd843a_0_10" alt="" />
-<p class="caption">mapping to size changes point size on plot</p>
-</div>
-<p>As above, <code>ggplot2</code> handles actually doing the mapping. All you have to do is specify what variable you want mapped (<code>clarity</code>) and how you want ggplot2 to handle the mapping (change the point <code>size</code>). With this code, you do get a warning when you run it in R that using a “discrete variable is not advised.” This is because mapping to size is usually done for numeric variables, rather than categorical variables like clarity.</p>
-<p>This makes sense here too. The relationship between clarity, carat and price was easier to visualize when clarity was mapped to <code>color</code> than here where it is mapped to <code>size</code>.</p>
-<p>As above, the size of <em>every</em> point can be changed by calling <code>size</code> outside of <code>aes</code>:</p>
-<div class="sourceCode" id="cb277"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb277-1"><a href="introduction-to-ggplot2.html#cb277-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb277-2"><a href="introduction-to-ggplot2.html#cb277-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> carat, <span class="at">y =</span> price), <span class="at">size =</span> <span class="fl">4.5</span>)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g3c02bd843a_0_16" alt="" />
-<p class="caption">manually specifying point size of all points occurs outside of <code>aes()</code></p>
-</div>
-<p>Here, we have manually increased the size of <em>all</em> the points on the plot.</p>
-</div>
-<div id="point-shape" class="section level4" number="40.0.4.3">
-<h4><span class="header-section-number">40.0.4.3</span> Point Shape</h4>
-<p>You can also change the shape of the points (<code>shape</code>). We’ve used solid, filled circles thus far (the default in <code>geom_point</code>), but we could specify a different shape for each clarity.</p>
-<div class="sourceCode" id="cb278"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb278-1"><a href="introduction-to-ggplot2.html#cb278-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb278-2"><a href="introduction-to-ggplot2.html#cb278-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> carat, <span class="at">y =</span> price, <span class="at">shape =</span> clarity))</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g3c02bd843a_0_32" alt="" />
-<p class="caption">mapping clarity to shape</p>
-</div>
-<p>Here, while the mapping occurs correctly within ggplot2, we do get a warning message that discriminating more than six different shapes is difficult for the human eye. Thus, ggplot2 won’t allow more than six different shapes on a plot. This suggests that while you <em>can</em> do something, it’s not always the <em>best</em> to do that thing. Here, with more than six levels of clarity, it’s best to stick to mapping this variable to <code>color</code> as we did initially.</p>
-<p>To manually specify a shape for all the points on your plot, you would specify it outside of <code>aes</code> using one of the twenty-five different shape options available:</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g3c02bd843a_0_25" alt="" />
-<p class="caption">options for points in ggplot2’s <code>shape</code></p>
-</div>
-<p>For example, to plot all of the points on the plot as filled diamonds (it is a dataset about diamonds after all…), you would specify shape ‘18’:</p>
-<div class="sourceCode" id="cb279"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb279-1"><a href="introduction-to-ggplot2.html#cb279-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb279-2"><a href="introduction-to-ggplot2.html#cb279-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> carat, <span class="at">y =</span> price), <span class="at">shape =</span> <span class="dv">18</span>)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g3c02bd843a_0_38" alt="" />
-<p class="caption">specifying filled diamonds as shape for all points manually</p>
-</div>
-</div>
-</div>
-<div id="facets" class="section level3" number="40.0.5">
-<h3><span class="header-section-number">40.0.5</span> Facets</h3>
-<p>In addition to mapping variables to different aesthetics, you can also opt to use facets to help make sense of your data visually. Rather than plotting all the data on a single plot and visually altering the point size or color of a third variable in a scatterplot, you could break each level of that third variable out into a separate subplot. To do this, you would use faceting. Faceting is particularly helpful for looking at categorical variables.</p>
-<p>To use faceting, you would add an additional layer (+) to your code and use the <code>facet_wrap()</code> function. Within facet wrap, you specify the variable by which you want your subplots to be made:</p>
-<pre><code>ggplot(data = diamonds) +
-  geom_point(mapping = aes(x = carat, y = price)) +
-  facet_wrap(~clarity, nrow = 2)</code></pre>
-<p>Here, read the tilde as the word “by”. Specifically here, we want a scatterplot of the relationship between carat and price and we want it faceted (broken down) <strong>by (~)</strong> clarity.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g3c02bd843a_0_44" alt="" />
-<p class="caption">facet_wrap breaks plots down into subplots</p>
-</div>
-<p>Now, we have eight different plots, one for each level of clarity, where we can see the relationship between diamond carats and price.</p>
-<p>You’ll note here we’ve opted to specify that we want 2 rows of subplots (<code>nrow = 2</code>). You can play around with the number of rows you want in your output to customize how your output plot appears.</p>
-</div>
-<div id="geoms" class="section level3" number="40.0.6">
-<h3><span class="header-section-number">40.0.6</span> Geoms</h3>
-<p>Thus far in this lesson we’ve only looked at scatterplots, which means we’ve only called <code>geom_point</code>. However, there are <em>many</em> additional geoms that we could call to generate different plots. Simply, a <em>geom</em> is just a shape we use to represent the data. In the case of scatterplots, they don’t <em>really</em> use a geom since each actual point is plotted individually. Other plots, such as the boxplots, barplots, and histograms we described in previous lessons help to summarize or represent the data in a meaningful way, without plotting each individual point. The shapes used in these different types of plots to represent what’s going on in the data is that plot’s geom.</p>
-<p>To see exactly what we mean by geoms being “shapes that represent the data”, let’s keep using the <code>diamonds</code> dataset, but instead of looking at the relationship between two numeric variables in a scatterplot, let’s take a step back and take a look at a single numeric variable using a histogram.</p>
-<div id="histograms-geom_histogram" class="section level4" number="40.0.6.1">
-<h4><span class="header-section-number">40.0.6.1</span> Histograms: <code>geom_histogram</code></h4>
-<p>To review, histograms allow you to quickly visualize the range of values your variable takes and the shape of your data. (Are all the numbers clustered around center? Or, are they all at the extremes of the range? Somewhere in between? The answers to these questions describe the “shape” of the values of your variable.)</p>
-<p>For example, if we wanted to see what the distribution of carats was for these data, we could to the following.</p>
-<div class="sourceCode" id="cb281"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb281-1"><a href="introduction-to-ggplot2.html#cb281-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb281-2"><a href="introduction-to-ggplot2.html#cb281-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">mapping =</span>  <span class="fu">aes</span>(carat))</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g360e22de56_0_113" alt="" />
-<p class="caption">histogram of carat shows range and shape</p>
-</div>
-<p>The code follows what we’ve seen so far in this lesson; however, we’ve now called <code>geom_histogram</code> to specify that we want to plot a histogram rather than a scatterplot.</p>
-<p>Here, the rectangular boxes on the plot are geoms (shapes) that represent the number of diamonds that fall into each bin on the plot. Rather than plotting each individual point, histograms use rectangular boxes to summarize the data. This helps us quickly understand what’s going on in our dataset.</p>
-<p>Specifically here, we can quickly see that most of the diamonds in the dataset are less than 1 carat. This is not necessarily something we could be sure of from the scatterplots generated previously in this lesson (since some points could have been plotted directly on top of one another). Thus, it’s often helpful to visualize your data in a number of ways when you first get a dataset to ensure that you understand the variables and relationships between variables in your dataset!</p>
-</div>
-<div id="barplots-geom_bar" class="section level4" number="40.0.6.2">
-<h4><span class="header-section-number">40.0.6.2</span> Barplots: geom_bar</h4>
-<p>Barplots show the relationship between a set of numbers and a categorical variable. In the diamonds data set, we may be interested in knowing how many diamonds there are of each cut of diamonds. There are five categories for cut of diamond. If we make a barplot for this variable, we can see the number of diamonds in each category.</p>
-<div class="sourceCode" id="cb282"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb282-1"><a href="introduction-to-ggplot2.html#cb282-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb282-2"><a href="introduction-to-ggplot2.html#cb282-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(cut))</span></code></pre></div>
-<p>Again, the changes to the code are minimal. We are now interested in plotting the categorical variable <code>cut</code> and state that we want a bar plot, by including <code>geom_bar()</code>.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g360e22de56_0_122" alt="" />
-<p class="caption">diamonds barplot</p>
-</div>
-<p>Here, we again use rectangular shapes to represent the data, but we’re not showing the distribution of a single variable (as we were with <code>geom_histogram</code>). Rather, we’re using rectangles to show the count (number) of diamonds within each category within cut. Thus, we need a different geom: <code>geom_bar</code>!</p>
-</div>
-<div id="boxplots-geom_boxplot" class="section level4" number="40.0.6.3">
-<h4><span class="header-section-number">40.0.6.3</span> Boxplots: <code>geom_boxplot</code></h4>
-<p>Boxplots provide a summary of a numerical variable across categories. For example, if you were interested to see how the price of a diamond (a numerical variable) changed across different diamond color categories (categorical variable), you may want to use a boxplot. To do so, you would specify that using <code>geom_boxplot</code>:</p>
-<div class="sourceCode" id="cb283"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb283-1"><a href="introduction-to-ggplot2.html#cb283-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb283-2"><a href="introduction-to-ggplot2.html#cb283-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> color, <span class="at">y =</span> price))</span></code></pre></div>
-<p>In the code, we see that again, we only have to change what variables we want to be included in the plot the type of plot (or geom) we want (here, <code>geom_boxplot()</code>) to get a basic boxplot.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g360e22de56_0_128" alt="" />
-<p class="caption">diamonds boxplot</p>
-</div>
-<p>In the figure itself we see that the median price (the black horizontal bar in the middle of each box represents the median for each category) increases as the diamond color increases from the worst category (J) to the best (D).</p>
-<p>Now, if you wanted to change the color of this boxplot, it would just take a small addition to the code for the plot you just generated.</p>
-<div class="sourceCode" id="cb284"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb284-1"><a href="introduction-to-ggplot2.html#cb284-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> diamonds) <span class="sc">+</span></span>
-<span id="cb284-2"><a href="introduction-to-ggplot2.html#cb284-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> color, <span class="at">y =</span> price), <span class="at">fill =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g4d96e4be59_0_0" alt="" />
-<p class="caption">diamonds boxplot with red fill</p>
-</div>
-<p>Here, by specifying the color “red” in the <code>fill</code> argument, you’re able to change the plot’s appearance. In the next lesson, we’ll go deeper into the many ways in which a plot can be customized within <code>ggplot2</code>!</p>
-</div>
-<div id="other-plots" class="section level4" number="40.0.6.4">
-<h4><span class="header-section-number">40.0.6.4</span> Other plots</h4>
-<p>While we’ve reviewed basic code to make a few common types of plots, there are a number of other plot types that can be made in <code>ggplot2.</code> These are listed in the <a href="http://ggplot2.tidyverse.org/reference/">online reference material for ggplot2</a> or can be accessed through RStudio directly. To do so, you would type <code>?geom_</code> into the Console in RStudio. A list of geoms will appear. You can hover your cursor over any one of these to get a short description.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g360e22de56_0_149" alt="" />
-<p class="caption">?geom in Console</p>
-</div>
-<p>Or, you can select a geom from this list and click enter. After selecting a geom, such as geom_abline and hitting ‘Enter,’ the help page for that geom will pop up in the ‘Help’ tab at bottom right. Here, you can find more detailed information about the selected geom.</p>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc/export/png?id=1WRfoVxRU_dRcbMGtsha5zSokBRoAFIirm32Wq6bZuEc&amp;pageid=g360e22de56_0_154" alt="" />
-<p class="caption">geom_abline help page</p>
-</div>
-</div>
-</div>
-<div id="summary-4" class="section level3" number="40.0.7">
-<h3><span class="header-section-number">40.0.7</span> Summary</h3>
-<p>In this lesson, we’ve walked through the basics of generating plots in <code>ggplot2</code>. You should be comfortable generating basic scatterplots, histograms, barplots, and boxplots after this lesson. You should also know how to interpret each of these plots. Finally, you should also know how to map variables within ggplot2 to specify what variables you want to plot, what colors the points should be mapped to, and how to specify the size/shape of those points. In the next lesson we’ll get into details about how to customize your plots further by adjusting font size, customizing labels and annotation, and incorporating different themes into your plots.</p>
-</div>
-<div id="additional-resources-11" class="section level3" number="40.0.8">
-<h3><span class="header-section-number">40.0.8</span> Additional Resources:</h3>
+<div id="understanding-your-chromebook" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Understanding Your Chromebook</h1>
+<p>This section is part of <a href="https://www.DataTrail.org/">“DataTrail”</a>; however, it is not a required. While not required for completion of the DataTrail course set on Leanpub, it may be very helpful to you! It’s not required because you don’t <em>need</em> a Chromebook to complete the courses. The only requirement for all of these courses is an Internet browser and connection to the web. However, <em>if</em> you have a Chromebook and want to get better acquainted with how it works, this section is for you!</p>
+<div id="what-is-a-chromebook" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> What is a Chromebook?</h2>
+<p><a href="https://www.google.com/chromebook/">Chromebooks</a> are a very specific type of computer produced by Google. Chromebooks aren’t exactly like normal computers and they have a few unique characteristics:</p>
 <ul>
-<li><a href="http://r4ds.had.co.nz/data-visualisation.html#introduction-1">R For Data Science by Hadley Wickham</a></li>
-<li><a href="http://ggplot2.tidyverse.org/">ggplot2</a></li>
-<li><a href="http://ggplot2.tidyverse.org/reference/">ggplot2 reference</a></li>
+<li>They are usually <a href="https://www.google.com/chromebook/find-yours/">very cheap</a></li>
+<li>They are designed mostly to use the web</li>
+<li>You don’t “install” any software on the computer itself</li>
+<li>Instead of “apps” and “software” you simply go to websites for your work</li>
 </ul>
+<p>A simple way to think about it is that a Chromebook is a computer that only lets you use an Internet browser like <a href="https://www.google.com/chrome/">Chrome</a>. You can’t really do much on the computer itself. Some people call this way of working - working only through the Internet - <a href="https://en.wikipedia.org/wiki/Cloud_computing">“cloud computing”</a>. It’s called cloud computing because the computer you are using most of the time is not the one sitting in front of you. You are using the Internet to access tools and computers to do your work. But the physical computers doing the work are stored somewhere else - it could be nearby or on the other side of the globe. That is why people call the computers “in the cloud”.</p>
+<p>The goal of DataTrail is not that you <em>have</em> to use a Chromebook to finish the program, it is just that you <em>could</em> use a Chromebook to finish the whole program. You can finish the entire sequence of courses using any computer with an Internet connection and a web browser. Doing everything through a web browser has a couple of advantages for a training program like this:</p>
+<ul>
+<li>All Chromebooks have the same system so if you log out of one Chromebook and log onto another you will always see the same system (unless there has been an update to Chrome Operating System - “OS” - that affects all Chromebooks).</li>
+<li>Since everything is stored on the Internet (sometimes called “in the cloud”) then the Chromebook will always be set up with your preferences when you log off and log back on.</li>
+<li>Everyone is using the same software through the websites, so it reduces problems that come from different people using different versions of each computer program on different operating systems.</li>
+</ul>
+<p>Since Chromebooks are cheap and <a href="https://www.cnbc.com/2015/12/03/googles-chromebooks-make-up-half-of-us-classroom-devices.html#:~:text=For%20the%20first%20time%2C%20Google,do%20not%20include%20desktop%20computers.">widely used</a>, we expect many of the students who work on the class will use actual Chromebooks. In this chapter we will show you a little bit about how Chromebooks work, focusing on the Chrome OS operating system.</p>
+<p>If you are used to using a “normal” computer it can take a little getting used to to adapt to a Chromebook. A couple of things that you will likely do differently are:</p>
+<ul>
+<li><strong>File storage</strong>: You won’t have much room for files on the Chromebook itself, so you won’t store them on your laptop, you will store them on “the cloud” in <a href="https://www.google.com/drive/">Google Drive</a> or <a href="https://www.dropbox.com">Dropbox</a>.</li>
+<li><strong>Software</strong>: You won’t install any software on your Chromebook. You will instead make accounts on different websites or “web apps” that let you use tools through your web browser. For example you wouldn’t install a Twitter app on your computer, you’d browse to the Twitter website to use that software.</li>
+</ul>
+<p>If you restrict yourself to only working in web browsers, doing everything will feel a little weird at first. It is sort of like writing a <a href="https://en.wikipedia.org/wiki/Haiku">Haiku</a> - a type of poem with a very specific set of rules. When you first start writing these poems it can be difficult to remember the rules. But after you get used to it the rules begin to come much more naturally. In a similar way, using a web browser for everything becomes second nature after a period of “learning the rules”.</p>
+<p>Using Chromebooks to do data science is a relatively <a href="https://simplystatistics.org/posts/2018-10-01-chromebook-data-science-an-online-data-science-program-for-anyone-with-a-web-browser/">new idea</a> and is only possible in the last few years. But increasingly the tools for doing data science are available through the web. It is more and more common to have to use the Internet to rent computers, do analyses, or distribute your results. So by learning to do data science on a Chromebook, you are preparing for a future where most analysis is done online.</p>
+</div>
+<div id="chrome-os" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Chrome OS</h2>
+<p>Your Chromebook is a little different than most normal Desktop computers. The main difference is that almost everything will be done in a Chrome web browser. For the most part, we won’t use any software that saves data directly to your computer with a few small exceptions. This doesn’t mean you are limited in what you can do as a data scientist. Rather, your work will be done in the “cloud”, rather than on your Chromebook directly.</p>
+<p>When using a “normal” computer you usually download software that makes it possible to edit files, make presentations, use your calendar, or use social media. On a Chromebook there are three different ways that you can add new software to use.</p>
+<ul>
+<li><strong>Chrome Apps</strong>: Are apps that you “add” to Chrome. The user interface is just the Chrome Browser. Very often these apps are actually just a link to a website that lets you do something like manage your calendar or write a document. But sometimes they have other offline functionality.</li>
+<li><strong>Chrome Extensions</strong>: These are actually pieces of software that modify the way the Chrome Browser itself works. An example would be an ad blocker that prevents ads on webpages you visit in Chrome from being shown.</li>
+<li><strong>Android Apps</strong>: Many modern Chromebooks now support installing Android Apps. These are the same apps that you would get if you had an Android phone. These apps won’t run inside of a web browser, but will function just like an app on your phone.</li>
+</ul>
+<p>You can think of all three of these extensions to Chrome OS as “Apps”. Not all Chromebooks support Android Apps and we want anyone to be able to complete the DataTrail Program if they have a Chrome web browser and an Internet connection. So we will mostly focus on Chrome Apps and Extensions for this course. But if you have Android Apps that you like on your phone and have a <a href="https://www.androidcentral.com/these-are-chromebooks-can-run-android-apps">Chromebook that supports Android Apps</a> then you can install those apps as well as we discuss in the next section.</p>
+<div id="chrome-apps" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Chrome “Apps”</h3>
+<p>Chrome Apps are software programs that run in the web browser. They can be as simple as a link to a website where the app runs or they can be actual pieces of software that download and run on your local Chrome computer.</p>
+<p>When you set up your Chrome OS account and log in, there will be a number of Chrome Apps that are available to you by default. Some of the most useful ones are:</p>
+<ul>
+<li><strong>Google Docs</strong>: for creating, writing and editing formatted text documents (similar to Microsoft Word, but through the web browser)</li>
+<li><strong>Google Slides</strong>: for creating, writing and editing presentations (similar to Microsoft Office, but through the web browser)</li>
+<li><strong>Google Sheets</strong>: for creating, writing and editing spreadsheets (similar to Microsoft Excel, but through the web browser)</li>
+</ul>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_176" alt="" />
+<p class="caption">Google Docs, Slides and Sheets are three Chrome Apps that come installed on your Chromebook</p>
+</div>
+<p>We won’t go into too much detail about each of these apps here as we will cover them in a future class. For now we are just going to cover how to find these apps on your Chromebook, how to install and uninstall new ones, and how to organize them on your Chromebook.</p>
+</div>
+<div id="where-do-chromebook-apps-live" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Where do Chromebook Apps live?</h3>
+<p>When you log into your Chromebook for the first time you can see icons for some apps at the bottom of the screen. This set of apps that are visible from the main screen are called your “Shelf”.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_4" alt="" />
+<p class="caption">The shelf is at the bottom of the screen</p>
+</div>
+<p>Once you have installed a Chrome App or Android App you can find it by by clicking the Launcher button on the lower left hand side of the screen.
+If you don’t see the app among the first set of apps if you click on the arrow at the bottom of the screen you will be taken to a large list of apps installed on your Chromebook.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_20" alt="" />
+<p class="caption">You can click on the launcher button, then the arrow to see more apps</p>
+</div>
+<p>Another way to open the screen with your apps is to click on the Launcher button on your keyboard. On most Chromebooks this is a button that looks like a magnifying glass.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_36" alt="" />
+<p class="caption">The keyboard launcher button looks like a magnifying glass</p>
+</div>
+<p>Once you have found the App you want to open, click on it. When you click on a Chrome App the Chrome Browser will open and be directed to the website where that piece of software lives. For example if you click on the Google Docs icon (the blue piece of paper) then you will be directed to the website <a href="https://docs.google.com/" class="uri">https://docs.google.com/</a> which lets you edit and work with your Google Docs.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_45" alt="" />
+<p class="caption">Clicking on the Google Docs icon will open Google Docs in the web browser.</p>
+</div>
+</div>
+<div id="the-shelf" class="section level3" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> The Shelf</h3>
+<p>Your “Shelf” is the set of apps that are viewable on the bottom of your Desktop. You can use your Shelf to provide easy access to the Chrome Apps that you use most often. That way you don’t have to remember the exact web address for your most frequently used websites.</p>
+<p>You can “Pin” an app to the shelf by clicking with two fingers (sometimes called right clicking) on an app and then hovering over “Pin to Shelf” and letting go. For example you might want to pin your “Folder” with your local files to your Shelf so you can easily access it.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_55" alt="" />
+<p class="caption">Pin an app by right clicking</p>
+</div>
+<p>You will then see the app on your Shelf so you can click on it to be taken directly to that Chrome App.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_63" alt="" />
+<p class="caption">The app is now pinned to your shelf.</p>
+</div>
+<p>If you want to “Unpin” or remove an App from your Shelf you should right click on the app on the Shelf, hover over the Unpin command and let go. The App will then be removed from your shelf.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_69" alt="" />
+<p class="caption">The app is now pinned to your shelf.</p>
+</div>
+</div>
+<div id="websites-as-chrome-apps" class="section level3" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> Websites as Chrome Apps</h3>
+<p>You can actually add any website you want to your shelf, not just the ones that have Chrome Apps. For example, we will be using <a href="https://rstudio.cloud" target="_blank">RStudio Cloud</a> for a lot of the work in this course. There is not a Chrome App for <a href="https://rstudio.cloud" target="_blank">RStudio Cloud</a>. But you can still add this website to your shelf.</p>
+<p>You can do this by first navigating to the website you want to add. Then clicking on the three dots in the upper right hand corner of the Chrome Browser. This will open up a menu and you can move your cursor until it hovers over <em>More Tools</em>. Then you can move your cursor over <em>Add to shelf…</em> and let go.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_81" alt="" />
+<p class="caption">Navigate to rstudio.cloud, move the cursor over More Tools, then Add to Shelf.</p>
+</div>
+<p>This should then open up a window where you can name the website you are linking to. Uncheck the box that says <em>Open as Window</em> so that your Chromebook knows this is a website you want to open. Then click <em>Add</em> to put the icon onto your shelf.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_95" alt="" />
+<p class="caption">Uncheck Open as Window and click Add to add this website as an app.</p>
+</div>
+<p>Once you are done you will see an icon for <a href="https://rstudio.cloud" target="_blank">RStudio Cloud</a> on your shelf so you will be able to quickly navigate to this web app in the future.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_106" alt="" />
+<p class="caption">The rstudio.cloud icon now appears on your shelf.</p>
+</div>
+</div>
+<div id="the-chrome-web-store-and-chrome-apps" class="section level3" number="3.2.5">
+<h3><span class="header-section-number">3.2.5</span> The Chrome Web Store and Chrome Apps</h3>
+<p>Chrome Apps are pieces of software that can be run from the web browser. Sometimes you will need to download and install them on your Chromebook and sometimes they will just be an icon with a link to a particular website that lets you do some function.</p>
+<p>We already talked about how you can install any webpage as a Chrome App directly. But many Chrome Apps can also be found in the Chrome Web Store. This is a website that lets you search and find Chrome Apps for your Chromebook, similar to Google Play for Android Apps or the App Store for Apple apps. You can get to the Chrome Web Store by clicking on the launcher button, then finding and clicking the Web Store icon.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_114" alt="" />
+<p class="caption">Open the Chrome Web Store by clicking on the Web Store Icon.</p>
+</div>
+<p>You will be taken to the Chrome Web Store in your browser.
+You can filter by whether they are free, built by Google, or are able to run offline. The first thing we will do is click on <em>Apps</em> to ensure that we are searching only among Chrome Apps. As an example we will find and install the <a href="https://stackedit.io/">StackEdit</a> app, which is useful for writing markdown documents that you will use throughout the DataTrail courses. One nice feature of <em>StackEdit</em> is that it can be used even when your Chromebook is offline. To find the app, we will search for <em>StackEdit</em> and then click return.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_123" alt="" />
+<p class="caption">Search for stackedit on the Chrome Web Store.</p>
+</div>
+<p>This will show two options one as a Chrome App and one as a Chrome Extension. We will select the app version and click <em>Add to Chrome</em>. This will bring up a dialogue box that asks if you would like to add <em>Stackedit</em>. Click on <em>Add</em> and the app will be installed on your Chromebook.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_131" alt="" />
+<p class="caption">Click add to Chrome and then Add to add the app to your Chrome browser.</p>
+</div>
+<p>You can then click the Launcher button in the lower left to see that the app has been installed.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_139" alt="" />
+<p class="caption">StackEdit is now installed.</p>
+</div>
+<p>If you click on the <em>StackEdit</em> icon you’ll be taken to the app, which you can see is also run in the Chrome web browser, just like any website you would visit. The difference is that this website will let you write and save Markdown files.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_147" alt="" />
+<p class="caption">StackEdit runs in the web browser.</p>
+</div>
+</div>
+<div id="chrome-extensions" class="section level3" number="3.2.6">
+<h3><span class="header-section-number">3.2.6</span> Chrome Extensions</h3>
+<p>Chrome extensions are software programs that modify the way that the Chrome browser itself works. You can find and install them through the Chrome Web Store just like you can with Chrome Apps but they look and function slightly differently. Sometimes these extensions may do something very simple (like <a href="https://chrome.google.com/webstore/detail/animatedtabs-a-new-gif-on/kenhfdoiondldpcoajdbackbnmehgahl?hl=en">show you a funny picture</a> when you open a new tab) or they might do something very important (like <a href="https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj?hl=en">managing your passwords</a>).</p>
+<p>As an example we will install the <em>Pocket</em> Chrome extension. <em>Pocket</em> is an extension that lets you save a particular website or essay for reading when your Chromebook is offline. So if you know you will need to read a document you can save it to <em>Pocket</em> before you are traveling somewhere where you will not have Internet access and then retrieve and read it even when you are offline. You can open the Chrome Web Store just as we did previously and search for Pocket under the <em>Extensions</em> window.</p>
+<p>Once you have found the extension you want, you can click on the extension and it will open a page where you can click on <em>Add to Chrome</em> if you do that and click add the extension will be added.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_152" alt="" />
+<p class="caption">Click Add to Chrome to add the Pocket extension.</p>
+</div>
+<p>Chrome Extensions often show up as a small icon in the top right hand side of the Chrome Browser. You can click on the icon to bring up the <em>Pocket</em> extension - which will also come up as a web page in your web browser.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_157" alt="" />
+<p class="caption">The Pocket extension comes up as a web browser.</p>
+</div>
+<p>If you sign up for the <em>Pocket</em> extension you can then navigate to a web page that you are interested in saving for later and click the <em>Pocket</em> icon in the top right hand side of the screen.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_162" alt="" />
+<p class="caption">Click the Pocket icon to save the webpage</p>
+</div>
+<p>This will save the page for later so that you can read it offline.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&amp;pageid=g39f7d66caf_0_167" alt="" />
+<p class="caption">The page is now saved for offline reading</p>
+</div>
+<p>Extensions, like Chrome Web Apps, can improve the way that Chrome OS functions in the same way that installing software on your local computer works. Extensions and Apps help you use your Chromebook to accomplish tasks that would not otherwise be possible.</p>
+</div>
+</div>
+<div id="chrome-browser" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Chrome Browser</h2>
+<p>A Chromebook is designed to primarily be an Internet browser. In other words, it mostly will only allow you to open up websites and navigate between them. Chromebooks use Chrome OS - this is like Windows on a Microsoft computer, Android on your phone, or OS X on your Apple computer. It is the main software that runs your computer.</p>
+<p>But unlike “normal” computers Chrome OS basically only allows you to use an Internet browser. Chromebooks use <a href="https://www.google.com/chrome/">Google Chrome</a>, Google’s Internet browser. When you are using a Chromebook, almost all of the time you will be interacting with the world through Chrome. When you have opened up your Chromebook you will see something like this.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_1_0" alt="" />
+<p class="caption">Chromebook opening screen</p>
+</div>
+<p>The first thing you notice is that there is nothing on the “Desktop” and that all the “apps” are linked to from the bottom of the screen. This is called the “shelf” on a Chromebook. All the apps are basically just links to websites. To open a new Chrome Browser you can either click on the Chrome icon in the lower left of the screen or you can hold down the <code>ctrl</code> key and press the <code>n</code> key. We write this combination of keys as <code>ctrl+n</code>. If you do that you’ll see a new Chrome browser pop up.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_1_25" alt="" />
+<p class="caption">Chrome browser</p>
+</div>
+<p>Here you can navigate to new websites and do all the usual things. At the bottom of the page are websites you visit frequently. In Chrome if you press the little square box (or boxes) in the top right hand side it will either maximize the size of a browser to fill the whole screen, or shrink it enough that you can drag the browser around.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_1_8" alt="" />
+<p class="caption">Chrome browser</p>
+</div>
+<p>Click that box until the browser doesn’t fill the whole window. You can then create a second browser window by again using the <code>ctrl+n</code> command.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_1_14" alt="" />
+<p class="caption">Multiple Chrome browsers</p>
+</div>
+<p>If you want to do more than one thing at once you can do it in multiple windows like this. But it is often easier to see what you are doing if you use tabs instead of windows. You can close one of the browser windows by clicking the <code>X</code> in the upper right hand corner or by holding down <code>ctrl</code> and pressing <code>w</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_1_34" alt="" />
+<p class="caption">Closing a window</p>
+</div>
+<p>With only one browser window open you can then open a new tab by holding down the <code>ctrl</code> key and pressing the <code>t</code> key (we will call this <code>ctrl+t</code>).</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_1_21" alt="" />
+<p class="caption">Opening a new tab</p>
+</div>
+<p>Now you can flip back and forth between tabs by clicking on the top of the tab in the browser. You can open more tabs by pressing <code>ctrl+t</code> again. You can close them by pressing the <code>x</code> in the top right corner of the tab or pressing <code>ctrl+w</code>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_1_58" alt="" />
+<p class="caption">Closing a tab</p>
+</div>
+<p>We’ll learn more about Chrome Apps later but for now if you press one of the other icons at the bottom of the screen then it will also open a Chrome window. The only difference is that it will go to a specific website for that icon. For example if you press the little blue paper icon you will open up a <a href="https://www.google.com/docs/about/">Google Doc</a>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_1_42" alt="" />
+<p class="caption">Open a Google Doc</p>
+</div>
+<p>You can see that the Google Doc app is just another web browser but sent to a specific website - the website for Google Docs.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_1_51" alt="" />
+<p class="caption">Google Docs website</p>
+</div>
+<p>Signing in to Chrome using your Gmail account automatically signs you in to all Google services including YouTube, Gmail, Google Drive, and others. This is particularly useful since you don’t have to sign in to websites that use Google services when you go to them with your web browser. For example if you click on the Gmail icon - the envelope - on your shelf in the bottom left corner of the screen you’ll be taken to the Gmail website and then logged in to your account.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_4_12" alt="" />
+<p class="caption">You are already logged into Gmail when you log into your Chromebook</p>
+</div>
+<p>If you open a second tab by again clicking the Google Docs icon on your shelf in the bottom left corner of your screen, you’ll have two tabs open. You can separate the two tabs into two different windows by clicking on the top part of the Google Docs tab and dragging the Google Docs tab away from the Gmail tab.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_1_65" alt="" />
+<p class="caption">You can drag to separate tabs</p>
+</div>
+<p>You can also put two windows together into a single window with multiple tabs. To do this, click on the tab at the top of the Google Docs window and drag it until it is close to the tab for Gmail. When you let go both tabs will go together into a single window.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g3964b445cb_4_3" alt="" />
+<p class="caption">You can drag to combine tabs into a single window</p>
+</div>
+<p>Finally, if you want to keep track of websites you use frequently you can use bookmarking. You can “bookmark” pages that you visit regularly and Chrome will keep track of those websites for you. It’s especially helpful if you don’t want to type the full address of a webpage, visit a page frequently, or are afraid you will forget about a page you will need later. To bookmark a webpage in Chrome, simply click on the star in the address bar or press<code>ctrl+d</code> on your keyboard. This will open the following window.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g325fd519ca_0_1" alt="" />
+<p class="caption">Bookmark Menu</p>
+</div>
+<p>If you click on “Done”, the bookmark will be saved to the Bookmarks bar. Next time you like to check the webpage you bookmarked without typing the address, you can click on the Chrome menu in the top-right corner, hover over Bookmarks, then click the bookmark you’d like to open.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&amp;pageid=g325fd519ca_0_5" alt="" />
+<p class="caption">Bookmarks</p>
+</div>
+<p>Those are the basics of how you manipulate windows and tabs in the Chrome browser. In the following lessons we’ll learn more about how you can use these windows to take advantage of the web through your Chromebook.</p>
+</div>
+<div id="android-apps" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Android Apps</h2>
+<p>Android is an operating system that was made available by Google and now powers <a href="https://www.statista.com/statistics/266136/global-market-share-held-by-smartphone-operating-systems/">most of the mobile phones</a> in the world. Android is not the same thing as Chrome OS even though the two systems are both produced by Google. Until recently the only kind of apps you could install on a Chromebook were Apps and Extensions as we discussed in the last section.</p>
+<p>But Google has started to support the use of Android Apps on <a href="https://www.androidcentral.com/these-are-chromebooks-can-run-android-apps">a small but growing number of Chromebooks</a>. If you have one of these Chromebooks it is now possible to use the same apps you use on your phone on your Chromebook.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/export/png?id=1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU&amp;pageid=g39fa753dc8_1_5" alt="" />
+<p class="caption">Android Apps are now available on Chromebooks</p>
+</div>
+<p>Chromebook Apps are stored in the same place on your Chromebook as Chrome Web Apps and Extensions. In fact, just by looking at the Shelf or your list of Apps you won’t be able to tell which are Chrome Apps and which are Android Apps. So to get started, we do the same thing as we did in the previous section, click on the Launcher button to show a list of potential apps. You can again click the arrow to view more apps if the Play Store does not appear among the first set of apps</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/export/png?id=1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU&amp;pageid=g39e0fc7e8b_0_10" alt="" />
+<p class="caption">Find the Google Play App</p>
+</div>
+<p>The first time you click on ‘Play Store’ will bring you to the Google Play Terms of Service. After reading the Terms of Service, if you agree to the Terms click on ‘Agree’ in the bottom right-hand side of the window.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/export/png?id=1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU&amp;pageid=g32649f1c87_1_2" alt="" />
+<p class="caption">Google Play Terms of Service</p>
+</div>
+<p>The following window will ask you to accept the Google Play Terms of Service. Here, you will need to click ‘ACCEPT’ to get to Google Play’s apps if you agree with the Terms of Service.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/export/png?id=1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU&amp;pageid=g32649f1c87_1_17" alt="" />
+<p class="caption">You must accept terms of service to install Android Apps</p>
+</div>
+<p>This will bring up Google Play where you can install Android Apps. This is the same place you would go if you have an Android Phone and you were going to install an App on your phone.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/export/png?id=1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU&amp;pageid=g32649f1c87_0_15" alt="" />
+<p class="caption">The Google Play Store</p>
+</div>
+<p>We will install the <em>Basecamp</em> app that can be used for communication with teams and is frequently used by data scientists. First we search for the app in the Google Play Store.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/export/png?id=1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU&amp;pageid=g39fa753dc8_1_84" alt="" />
+<p class="caption">Search for the Basecamp App</p>
+</div>
+<p>When you find the Basecamp app you will be taken to a page where you can click <em>Install</em> to install the app. You may be asked to agree to terms and Google Play may ask you to enter payment details. However, if you are only going to use free apps you can find the small grey <em>Skip</em> box and skip over entering this information. Once you install the app it will appear as any other app on your Chromebook.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/export/png?id=1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU&amp;pageid=g39fa753dc8_1_89" alt="" />
+<p class="caption">Install the Basecamp App</p>
+</div>
+<p>However one key difference is that if you click on the <em>Basecamp</em> icon and open the app then you will see that it does not open in a browser window.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/export/png?id=1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU&amp;pageid=g39fa753dc8_1_94" alt="" />
+<p class="caption">Click on the Basecamp icon to open Basecamp</p>
+</div>
+<p>Android Apps are not Chrome Apps so are not accessed through the web browser. In this case, they will open in a separate window. Even though they don’t open in a web browser, many apps, including <em>Basecamp</em>, still require an Internet connection to be fully functional. Others may be more useful when used entirely offline.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU/export/png?id=1m82nWg5wtp_8WC6alsppr-UjlyK8VoORcMQnsswgNhU&amp;pageid=g39fa753dc8_1_99" alt="" />
+<p class="caption">The app is working in a window, but not a Chrome Browser</p>
+</div>
+</div>
+<div id="chromebook-shortcuts" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Chromebook Shortcuts</h2>
+<p>When we discussed the Chrome Browser we learned a couple of keyboard shortcuts. Keyboard shortcuts are combination of keys that make your Chromebook do certain functions. For example, if you hold the <code>ctrl</code> key and press the <code>n</code> key you get a new Chrome window. When we want to tell you to press this key combination we will use the symbols <code>ctrl+n</code> to describe what you are doing.</p>
+<p>In our Chrome Browser lesson we taught you the commands:</p>
+<ul>
+<li><code>ctrl+n</code> - open a new Chrome window</li>
+<li><code>ctrl+t</code> - open a new Chrome tab</li>
+<li><code>ctrl+w</code> - close an open Chrome Window or tab</li>
+<li><code>ctrl+d</code> - this will bookmark a page</li>
+</ul>
+<p>There are in fact a large number of keyboard shortcuts. Depending on what you do most often with your Chromebook some may be more or less useful to you.</p>
+<p>Here we will highlight a few that we use frequently and will come in handy for you during your data science career. To understand these key combinations first it is useful to know what some of the symbols on your Chromebook keyboard represent.</p>
+<p>The arrows in the top left hand corner take you back to the previous webpage you visited in a Chrome Tab and forward to the next page you visited. We will call them the <code>forward</code> and <code>back</code> keys.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_0" alt="" />
+<p class="caption">The back and forward keys are the arrows in the upper left of the keyboard.</p>
+</div>
+<p>The curly key next to that refreshes the page you are currently visiting. Sometimes if you make an update to a webpage you are building and want to see the update you will need to refresh the page. We will call this the <code>refresh</code> key.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_85" alt="" />
+<p class="caption">The refresh key is the curly key in the upper left of the keyboard.</p>
+</div>
+<p>The full screen key will take a tab you are working on and make that tab fill the whole screen. This will hide your shelf and hide the bookmarks and search bar at the top of your screen. When working on coding or when you feel you don’t have enough screen space this button can be helpful. You can shrink the browser window back to the normal size by pressing the full screen button again. We will call this the <code>fullscreen</code> key.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_93" alt="" />
+<p class="caption">The full screen key is the key with the window with two arrows in the upper middle of the keyboard.</p>
+</div>
+<p>The button next to that is the show all windows button. This button will show you all the windows you have open, including Chrome Windows and any Android Apps you might have open. We will call this button the <code>showwindows</code> button.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_101" alt="" />
+<p class="caption">The show windows key is the key with the window and two lines next to it in the upper middle of the keyboard.</p>
+</div>
+<p>The screen lock key in the upper right hand corner will lock your Chromebook when you aren’t using it and if you set up your settings to require a password, then you will need to re-enter your password to re-open your Chromebook. When working on data science projects where the data is sensitive it is a good idea to lock your Chromebook whenever you aren’t using it. We will call this the <code>lock</code> key.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_109" alt="" />
+<p class="caption">The lock key is the key with the lock in the upper right of the keyboard.</p>
+</div>
+<p>You will recall that the Launcher key is the key with the magnifying glass on the left hand side of the keyboard. We will call this the <code>launcher</code> key.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_124" alt="" />
+<p class="caption">The launcher key is the magnifying glass on the right of the keyboard.</p>
+</div>
+<div id="taking-screenshots-on-a-chromebook" class="section level3" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Taking Screenshots on a Chromebook</h3>
+<p>Using these keys we can now consider some of the more useful keyboard shortcuts on your Chromebook. This will definitely be a partial list, you can learn about the <a href="https://support.google.com/chromebook/answer/183101?hl=en">rest of the shortcuts</a> from the Chromebook help documentation.</p>
+<p>Taking screenshots on your Chromebook is very useful. You will use this when you are troubleshooting problems in the course frequently. There are two ways to take a screenshot. The first is to use the command <code>ctrl+showwindows</code>. If you use this key combination you will take a picture of everything that appears on the screen. This first will appear as a pop-up box in the lower right hand corner.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_80" alt="" />
+<p class="caption">The screenshot appears as a dialog in the lower right.</p>
+</div>
+<p>You can also open the Files App and see that the screenshot has been stored on your computer. All screenshots you take will automatically stored in Files on your computer.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_133" alt="" />
+<p class="caption">The screenshot appears is stored in the Files App.</p>
+</div>
+<p>If you click twice quickly on the screenshot file it will open and you can see it looks exactly like what was on your screen when you took the screenshot.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_148" alt="" />
+<p class="caption">The screenshot is a picture of whatever was on your screen.</p>
+</div>
+<p>Sometimes, rather than taking a picture of the whole screen you will want to take a picture of just a small part of the screen. There is a second screenshot command that lets you do this. If you press <code>ctrl+shift+showwindows</code> then your screen will turn a shade darker and you will see your cursor is replaced with a bullseye icon. If you click and then drag, you can select only part of your screen to take a screenshot of. For example you could take a screenshot of just the upper right hand corner of the Files App.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_138" alt="" />
+<p class="caption">A targeted screenshot is also stored as a png in the Files App.</p>
+</div>
+<p>This screenshot also will pop up in the lower right hand corner of your screen and then appear in your Files App.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_143" alt="" />
+<p class="caption">A targeted screenshot only takes a picture of part of the screen.</p>
+</div>
+</div>
+<div id="zooming-in-and-out" class="section level3" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Zooming in and out</h3>
+<p>Another set of useful shortcuts is to zoom your screen in and zoom your screen out. To zoom in, you can hold down <code>ctrl</code> and press the key that has the plus and equals on it (near the top right hand side of the keyboard). To zoom out, you can hold the <code>ctrl</code> key and press the key with the minus and underscore key on it (near the top right hand side of the keyboard). This will allow you to make the text on websites bigger and smaller to ease reading. For example on the website <a href="https://rstudio.cloud/" class="uri">https://rstudio.cloud/</a> if you press <code>ctrl+plus/equals</code> four times you will zoom in 175%.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_154" alt="" />
+<p class="caption">If you use the zoom shortcut the text on a webpage increases in size.</p>
+</div>
+</div>
+<div id="finding-a-word-on-a-page" class="section level3" number="3.5.3">
+<h3><span class="header-section-number">3.5.3</span> Finding a word on a page</h3>
+<p>Sometimes you will need to search a webpage for a specific word or phrase. To do this you can press <code>ctrl+f</code> and a box will pop up. You can then search for the specific word, for example we could search for the word “teach” on <a href="https://rstudio.cloud/" class="uri">https://rstudio.cloud/</a>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&amp;pageid=g3a905bc20d_0_159" alt="" />
+<p class="caption">You can find a word or phrase on a page using the find shortcut.</p>
+</div>
+</div>
+<div id="text-formatting-shortcuts" class="section level3" number="3.5.4">
+<h3><span class="header-section-number">3.5.4</span> Text formatting shortcuts</h3>
+<p>Many of the text formatting shortcuts are nearly the same as on other types of computers. We will review them briefly here as they will be very useful when editing documents, presentations, and code. If you have used computers before you may already know these.</p>
+<ul>
+<li><code>ctrl+c</code> - copies selected text</li>
+<li><code>ctrl+v</code> - pastes the selected text</li>
+<li><code>ctrl+x</code> - cuts the selected text and copies it so you can paste it elsewhere</li>
+<li><code>ctrl+z</code> - undoes the previous action you did when editing a file</li>
+</ul>
+<p>One thing that is somewhat unusual about a Chromebook is that there is not a caps lock key. If you want to turn on caps lock you will need to use the command <code>alt+launcher</code>. To turn caps lock back off again you can simply click on the <code>shift</code> key.</p>
+</div>
+</div>
+<div id="chromebook-security" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Chromebook Security</h2>
+<p>In some ways a Chromebook provides some security for you. Chrome OS has a number of <a href="https://support.google.com/chromebook/answer/3438631?hl=en">security features</a> that are constantly being improved by Google. We will discuss updating your Chromebook in a later section, but the updates ensure that at a basic level your Chromebook will have good security features. For example, data will be encrypted when passing through a web browser and each browser window will be sandboxed so a web app open in one browser window can’t access data from another window.</p>
+<p>But there are still some steps that you can take to make sure that your Chromebook is secure. This will be particularly important if your Chromebook is lost or stolen, but will also be useful if you share your computer with family or friends. Since a data scientist is often working with data that may be private or sensitive, it is important that if they lose their computer, they don’t risk losing the data they are working on. Setting your Chromebook up to be secure from the start is an important step for any data scientist.</p>
+<div id="setting-your-chromebook-password" class="section level3" number="3.6.1">
+<h3><span class="header-section-number">3.6.1</span> Setting your Chromebook password</h3>
+<p>One of the most important parts of securing your Chromebook is making sure that you have a good password. Good passwords are long, easy for you to remember, but hard for other people to guess. Don’t use simple passwords like “12345” or “password”, don’t use your name, your date of birth, or other details that would be easy to guess if someone saw your Facebook profile.</p>
+<p>Good passwords have a few important characteristics:</p>
+<ol style="list-style-type: decimal">
+<li>They are long, ideally more than 10 characters</li>
+<li>They are easy for you to remember.</li>
+<li>They are not a commonly used password.</li>
+</ol>
+<p>One way to create relatively good passwords is to string together four or five random words. This approach was made popular by an xkcd cartoon. For example a password made with this approach would be “bikerainsmellblue”. This password has more than 10 characters, is easy for you to remember, and is unlikely to be used by a lot of other people. Try to pick words that aren’t related to each other. Then you only have to remember the four words to remember your password.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3a97bbb8d6_0_12" alt="" />
+<p class="caption">xkcd suggested a good password combines four random words.</p>
+</div>
+<p>Another way to create a password is to choose a line from a book or movie and choose the first one to three letters of each word. For example, you might use the line “Once upon a midnight dreary, while I pondered, weak and weary,” then you could change that to “onupamiddrwhipoweanwe”. You can then just remember the line that you have chosen and the fact that you used a certain number of letters from each word. Again, its a good idea to pick a line from a poem or a book that is less famous to do this.</p>
+<p>You can improve either of those password schemes by capitalizing some letters or turning words like “too” into numbers to make them more unique. The key is just to have a password that is not very common, easy to remember, and would be hard for other people to guess.</p>
+</div>
+<div id="requiring-password-to-wake-from-sleep" class="section level3" number="3.6.2">
+<h3><span class="header-section-number">3.6.2</span> Requiring password to wake from sleep</h3>
+<p>Now that you have set a good password you can make your Chromebook more secure by making sure that anyone will have to use the password to log in. To do this you need to again open up your personal settings by clicking on your personal avatar in the bottom of your screen and then click on the gear to open your personal settings.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_2" alt="" />
+<p class="caption">Open your personal settings</p>
+</div>
+<p>Once you have your personal settings open you can click on the “Screen Lock” settings.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_7" alt="" />
+<p class="caption">Open the Screen Lock settings.</p>
+</div>
+<p>You’ll be required to input your (hopefully good!) password.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_12" alt="" />
+<p class="caption">Input your password.</p>
+</div>
+<p>Then you can turn on screen lock by clicking the option in the upper right hand corner of the screen for “Show screen lock when waking from sleep”.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_17" alt="" />
+<p class="caption">Click on option to Show screen lock when waking from sleep.</p>
+</div>
+<p>Now if you close your Chromebook, put it to sleep, or log out, you will have to input your password to get access to your account. This will prevent other users from getting access to your Chromebook account even if they get a hold of the physical device.</p>
+</div>
+<div id="managing-other-people" class="section level3" number="3.6.3">
+<h3><span class="header-section-number">3.6.3</span> Managing other people</h3>
+<p>Another thing that you can do to make your Chromebook more secure is decide in advance who can log into your Chromebook. To do this, open your personal settings by clicking on the personal avatar at the bottom right hand side of your screen, then click the gear to open your personal settings. The click on the option to “Manage Other People”.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_38" alt="" />
+<p class="caption">Click on Manage Other People to manage users of your Chromebook.</p>
+</div>
+<p>If you are the owner of the Chromebook you can then click on the dot next to “Restrict sign-in to the following users”. If you are the owner of the Chromebook will then be able to input which users can and can’t log on to your computer.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_46" alt="" />
+<p class="caption">Click on the option to restrict users.</p>
+</div>
+</div>
+<div id="two-step-verification" class="section level3" number="3.6.4">
+<h3><span class="header-section-number">3.6.4</span> Two step verification</h3>
+<p>If you are dealing with very sensitive data or want to be more secure about who can access your account, you can turn on two step verification. All this means is that you can set it up so that entering your password is not enough to unlock your computer. You will also need to get a text message to your phone with a special code each time that you log in. This means that even if someone gets ahold of your Chromebook, they would also have to have your phone to be able to log into your account. Two step verification is often required for data scientists working in industry and is a good idea to prevent loss of your account information.</p>
+<p>To turn on two step verification first go to the website <a href="https://www.google.com/landing/2step" class="uri">https://www.google.com/landing/2step</a> and click on “Get Started” in the upper right hand corner of the screen.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_54" alt="" />
+<p class="caption">Go to the two step verification page and click Get Started.</p>
+</div>
+<p>This will take you through the two step verification set up process. First you will again need to click “Get Started”.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_59" alt="" />
+<p class="caption">Click Get Started.</p>
+</div>
+<p>Then you will be required to enter your password to confirm that it really is you trying to step two step verification.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_64" alt="" />
+<p class="caption">Enter your password.</p>
+</div>
+<p>You will be asked to input your phone number. This is the phone number that will receive the text message every time you input your password and try to log in. This should be for your personal phone that you will have with you when you want to log in to your Chromebook. You won’t be able to log in without your phone after you set this up.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_74" alt="" />
+<p class="caption">Enter the phone number of the phone you will use for two step verification.</p>
+</div>
+<p>Once you input your phone number, you will get a text message with a 6 digit number. Take this code and type it in to the next screen to confirm that you have the right phone number set up for two step verification.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_81" alt="" />
+<p class="caption">Enter your verification code to confirm your phone.</p>
+</div>
+<p>After confirming both your password and your phone number you will be given the option to turn on two factor verification. You can do this by clicking “Turn On” on the next window.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_86" alt="" />
+<p class="caption">Turn on two factor authentication.</p>
+</div>
+<p>Once this is turned on you can turn it back off by going through the same steps as before and then clicking “Turn Off” on the next screen.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_91" alt="" />
+<p class="caption">You can turn off two factor verification by clicking Turn Off.</p>
+</div>
+<p>Finally, once you have enabled two step verification, you will need to have your phone with you every time you log in to your computer. This is good for security purposes, but will cause problems if you lose or replace your phone. Make sure you turn this feature back off if you are planning on getting a new phone.</p>
+</div>
+<div id="managing-apps-and-devices" class="section level3" number="3.6.5">
+<h3><span class="header-section-number">3.6.5</span> Managing apps and devices</h3>
+<p>You can monitor and manage which apps and devices have access to your account information from your account security page at <a href="https://myaccount.google.com/security" class="uri">https://myaccount.google.com/security</a> . You should check this information periodically (every month or so at least) to see if there are any events or activity that you don’t recognize. If anyone has gotten access to your password or log in information, you will be able to see here when they have logged into your account.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_96" alt="" />
+<p class="caption">Your account security page.</p>
+</div>
+<p>First you can see any security events that have occurred. Security events can be found by looking under “Device activity &amp; security events” in the section “Recent Security Events”. This will give you information on when your passwords are changed or when you have turned on or off two step verification.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_101" alt="" />
+<p class="caption">Your security events tell you about when your password or two step verification settings have changed.</p>
+</div>
+<p>You can also see all the devices that have logged in to your Google account under “Device activity &amp; security events” in the section “Recently used devices”. You will see the Chromebook you are currently working on, but you will also see any Android phones you have logged in to or other computers where you signed into your account.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_143" alt="" />
+<p class="caption">Your recently used devices tells you what devices have logged into your account.</p>
+</div>
+<p>As we have discussed in other sections, all of the software running on your Chromebook will be either Chrome Apps or Extensions or Android apps. For a lot of this software you will use Google to log in. That way you don’t have to have a separate password for each app and website. But each time you do this, you give the app a little bit of your information. When you stop using an app you may no longer want them to have access to your information. You can look and see which apps have access to your Google information by looking under “Apps with Account Access” in the section “Apps with Access to your Account”.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_106" alt="" />
+<p class="caption">You can see which apps have access to your account.</p>
+</div>
+<p>If you click on a particular app you can take away the permission of that app to use your Google information. It is a good idea to check these apps from time to time and remove those that you no longer need, so they don’t have access to your Google information anymore.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8/export/png?id=1-nW4KgJOVcfbRx4Vot_x6ZgoQGFItIxqIHZBXtLHDr8&amp;pageid=g3aa77a56e4_0_111" alt="" />
+<p class="caption">You can remove access for specific apps by clicking on them.</p>
+</div>
+</div>
+</div>
+<div id="updating-your-chromebook" class="section level2" number="3.7">
+<h2><span class="header-section-number">3.7</span> Updating your Chromebook</h2>
+<p>In computing, there are often updates that are available. Updates can fix bugs, add new features, and/or improve security on your chromebook. Over time, your apps will need to be updated as well as your Chromebook’s operating system (OS) itself. To update your Chromebook you need internet connection.</p>
+<p>Every time you power on your Chromebook, it will check for and apply available updates. In fact, some updates to the Chrome OS happen in the background automatically while you’re using your device with the updates going into effect the next time you restart. However, should you ever need or want to manually update your Chromebook, you can do so using the following steps:</p>
+<div id="steps-to-update" class="section level3" number="3.7.1">
+<h3><span class="header-section-number">3.7.1</span> Steps to Update</h3>
+<p><strong>Step 1</strong>. Click on your username or photo at the bottom right-hand of the screen.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o/export/png?id=1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o&amp;pageid=g3135bc8102_0_2" alt="" />
+<p class="caption">Home Screen</p>
+</div>
+<p><strong>Step 2</strong>. A menu will display. On this menu, click on the settings button, which is the icon that looks like a gear turning.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o/export/png?id=1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o&amp;pageid=g3135bc8102_0_9" alt="" />
+<p class="caption">Settings Icon</p>
+</div>
+<p><strong>Step 3</strong>. A new window will appear. Here, you will click settings in the top left-hand portion of the screen.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o/export/png?id=1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o&amp;pageid=g3476d1f5c2_0_0" alt="" />
+<p class="caption">Settings Screen</p>
+</div>
+<p><strong>Step 4</strong>. On the menu that appears, click on ‘About Chrome OS’.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o/export/png?id=1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o&amp;pageid=g3476d1f5c2_0_5" alt="" />
+<p class="caption">About Chrome OS</p>
+</div>
+<p><strong>Step 5</strong>. From the ‘About Chrome OS’ window that is now displayed, click on ‘CHECK FOR UPDATES.’</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o/export/png?id=1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o&amp;pageid=g3476d1f5c2_0_10" alt="" />
+<p class="caption">CHECK FOR UPDATES</p>
+</div>
+<p><strong>Step 6</strong>. The progress of your update will be displayed in that window. Once the update has finished, a message will display letting you know that you are “Nearly up to date!”</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o/export/png?id=1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o&amp;pageid=g3476d1f5c2_0_15" alt="" />
+<p class="caption">Nearly up to date! RESTART your device to finish updating</p>
+</div>
+<p>To complete the update, you will have to restart your Chromebook. To do so, click ‘RESTART’ at the right of the window.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o/export/png?id=1ypTp6aMvOIW9vlMDaeLEML4GIMaSKu2gn5o_QrtOE_o&amp;pageid=g3476d1f5c2_0_24" alt="" />
+<p class="caption">RESTART to finish updating</p>
+</div>
+<p>At this point, your screen will go black for a few seconds. Your Chromebook will then restart and you’ll be brought back to the login screen. Login back in here using your Google username and password.</p>
+</div>
+</div>
+<div id="getting-help-with-a-chromebook" class="section level2" number="3.8">
+<h2><span class="header-section-number">3.8</span> Getting Help with a Chromebook</h2>
+<p>Chromebooks have the advantage of being very simple. You are going to do almost everything through the Internet browser. This minimizes many issues that laptop computers had historically. However, there are still issues that you will run into from time to time. We’ll discuss them below and describe where you can find help for these problems.</p>
+<div id="common-issues" class="section level3" number="3.8.1">
+<h3><span class="header-section-number">3.8.1</span> Common Issues</h3>
+<p><a href="https://support.google.com/chromebook/answer/4514391?hl=en">Common Chromebook Issues</a> generally fall under one of the following categories:</p>
+<ul>
+<li>Operating Systems Issues</li>
+<li>Internet Connection Problems</li>
+<li>Google Account Login</li>
+</ul>
+<p>All of these issues are addressed among Google’s <a href="https://support.google.com/chromebook/answer/4514391?hl=en">Chromebook help pages</a>.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g2bfdb07292_0_151" alt="" />
+<p class="caption">Chromebook Support Page</p>
+</div>
+<p>Below we’ll demonstrate how to step through finding answers among this documentation; however, a few good things to consider before going to the help documentation are:</p>
+<ul>
+<li><em>Did I type that web address correctly? Am I getting this error because of a mistake I made?</em> If it is, fix that mistake and move on!</li>
+<li><em>Have I restarted recently (within the past week or two)?</em> If not, now may be a good time to consider restarting to see if the issue still exists.</li>
+</ul>
+<p>If restarting doesn’t work or you can’t find a mistake, it may be time to consult the Chromebook Support documentation. We’ll walk through how to do that below.</p>
+</div>
+<div id="chromebook-support" class="section level3" number="3.8.2">
+<h3><span class="header-section-number">3.8.2</span> Chromebook Support</h3>
+<p>In addition to addressing common issues above, Google has a place where Chromebook users can go for support. At <a href="https://support.google.com/chromebook" class="uri">https://support.google.com/chromebook</a>, you can search for answers to questions others have already asked or ask new questions. For example, if you were struggling to connect to the Internet on your Chromebook, you could first click on ‘Connect your Chromebook’ among the list of help topics.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g34b7710eec_0_12" alt="" />
+<p class="caption">Connect your Chromebook</p>
+</div>
+<p>This will expand the list to expose a number of topics of interest. If you were struggling to connect your Chromebook using Wi-Fi, you would click on ‘Connect your Chromebook to Wi-Fi’</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g34b7710eec_0_20" alt="" />
+<p class="caption">Connect your Chromebook to Wi-Fi</p>
+</div>
+<p>This would open a new web page with step-by-step instructions to help get you connected to wifi.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g34b7710eec_0_27" alt="" />
+<p class="caption">Wi-Fi Connection Help Page</p>
+</div>
+<p>If you don’t see what you’re looking for immediately among these topics, you can use the search bar at top.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g34b7710eec_0_82" alt="" />
+<p class="caption">Search Bar</p>
+</div>
+<p>By typing in the issue you are having in the search bar at the top, you can be directed to questions others have previously asked. For example, if you want to learn how to add an extension, you could type ’add extension in the search bar. As with most Google search bars, Google will try to provide helpful suggestions of topics you may be interested in. You can click on this if it matches what you’re interested in</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g34b7710eec_0_35" alt="" />
+<p class="caption">Add Extension Search Bar</p>
+</div>
+<p>As before, a page with helpful steps to help solve your problem will show up.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g34b7710eec_0_42" alt="" />
+<p class="caption">Adding Extensions</p>
+</div>
+<p>Finally, if your topic isn’t here or doesn’t pop up, you can search additional questions asked in the ‘Help Forum.’ To access the help forum, click on ‘HELP FORUM’ at the top right hand of the page.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g34b7710eec_0_47" alt="" />
+<p class="caption">Help Forum Button</p>
+</div>
+<p>This will bring you to the Chromebook Central Help Forum.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g34b7710eec_0_54" alt="" />
+<p class="caption">Chromebook Central Help Forum</p>
+</div>
+<p>Always begin by searching for your topic to see if it has already been asked and answered using the search bar at the top. However, if you have a new question, you are welcome to start a new topic using the button at the top right.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g34b7710eec_0_59" alt="" />
+<p class="caption">NEW TOPIC</p>
+</div>
+<p>Clicking on the red ‘NEW TOPIC’ button will bring you to a new window where you can write out your specific question. Once you have asked your question as clearly and with as few words as possible, click ‘POST’ at the bottom right-hand of the screen so that others will be able to help you out by answering your question.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8/export/png?id=1pAzLCi3qGonAlUi2uKTzSe5eIxgNPUjvOs8IQVNIRC8&amp;pageid=g34b7710eec_0_66" alt="" />
+<p class="caption">New Topic Empty Box</p>
+</div>
+<p>You’re now all up-to-date!</p>
 
+</div>
 </div>
 </div>
 <hr>
@@ -1337,8 +1786,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="good-plots.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="customization-in-ggplot2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="finding-help.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="working-offline-vs-online.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

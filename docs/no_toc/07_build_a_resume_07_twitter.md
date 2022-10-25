@@ -1,7 +1,8 @@
 
-# Using Twitter For Data Science
 
-In a lesson in an earlier course we had you create a professional [Twitter](www.twitter.com) account. This is because Twitter is a very active place among data scientists. As a result, Twitter can be a great place to learn about new topics *and* to meet others in you field. *Additionally*, people often tweet about open positions at their companies, so Twitter can be a *really* great place both when you're looking to learn more and improve your skills *and* when you're looking for a job!
+# Using Twitter for Data Science
+
+In an earlier chapter, we had you create a professional [Twitter](www.twitter.com) account. This is because Twitter is a very active place among data scientists. As a result, Twitter can be a great place to learn about new topics *and* to meet others in you field. *Additionally*, people often tweet about open positions at their companies, so Twitter can be a *really* great place both when you're looking to learn more and improve your skills *and* when you're looking for a job!
 
 In this lesson we'll briefly discuss customizing your Twitter profile and then spend a fair amount of time delving into how to use Twitter effectively as a data scientist.
 

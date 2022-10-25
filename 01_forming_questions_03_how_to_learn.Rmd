@@ -2,7 +2,8 @@
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
 ```
-# How To Learn
+
+# How to Learn
 
 In the last lesson we walked through a few interesting data science projects. Eventually, using the foundational skills learned, with practice on your own, and with other skills you pick up along the way, you'll be completing your own, equally-awesome data science projects.
 
@@ -27,7 +28,7 @@ That doesn't make failure easier. It will be **frustrating** from time to time, 
 
 In addition to learning the basics of data science in this course set, we also want you to *learn how to learn*.
 
-First and foremost, the best way to learn data science is by doing it. Throughout these lessons, copy the code you see in the lessons and try it out on your own. If you get an error, that's ok! Google that error and try to learn from this error! In fact, we've got a whole lesson in this course on how to Google and a lesson in a later course in this course set on how to get help for questions when you're programming. But, there's more to learning how to learn than getting good at searching on the Internet (although, that is important!)
+First and foremost, the best way to learn data science is by doing it. Throughout these lessons, copy the code you see in the lessons and try it out on your own. If you get an error, that's ok! Google that error and try to learn from this error! In fact, we've got a whole lesson in this course on how to Google and a lesson in a later chapter on how to get help for questions when you're programming. But, there's more to learning how to learn than getting good at searching on the Internet (although, that is important!)
 
 #### The Mindset
 
@@ -64,9 +65,15 @@ Working together and asking questions:
 - Helps everyone learn more!
 - Helps everyone have a better, less frustrating time!
 
-No one knows everything and that is okay and expected.
+**No one knows everything and that is okay and expected.**
 
-While we'll point out where to find help when you're stuck throughout this course set; however, it may not be obvious *when* to ask for help. While this is not a hard and fast rule, if you've been trying to find the answer to something you're stuck on for half an hour and cannot figure it out, it may be time to post your question online for someone else to answer or to reach out directly to someone to get your question answered. During the half hour when you're trying on your own, you should **Google for the answer**. If it's a coding question, you should try **running code** to test to see if the fixes from Google fix your problem. If you're getting **error messages**, paste those messages into Google. If after trying all of these things you're still stuck, then you should **ask for help** *every time*. Rather than give up because you're stuck, **ask questions**!
+While we'll point out where to find help when you're stuck throughout this course set; however, it may not be obvious *when* to ask for help. While this is not a hard and fast rule, if you've been trying to find the answer to something you're stuck on for half an hour and cannot figure it out, it may be time to post your question online for someone else to answer or to reach out directly to someone to get your question answered.
+During the half hour when you're trying on your own, you should:  
+- **Google for the answer** with various different wording attempts.
+- If it's a coding question, you should try **running code** to test to see if the fixes from Google fix your problem.
+- If you're getting **error messages**, paste those messages into Google.
+- If after trying all of these things you're still stuck, then you should **ask for help** *every time*.
 
+**Rather than give up or get overly frustrated because you're stuck, ask questions**!
 
 ![Ask Questions](https://docs.google.com/presentation/d/1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY/export/png?id=1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY&pageid=g3f394e96d2_0_62)

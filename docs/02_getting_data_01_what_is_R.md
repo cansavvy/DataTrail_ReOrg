@@ -24,7 +24,7 @@ RStudio is a free, integrated development environment (IDE) for R. Generally, ID
 
 ### RStudio Cloud
 
-[RStudio Cloud](rstudio.cloud) is a version of RStudio that can run in the cloud. This means that regardless of what computer you're on, you can access the analysis you were doing previously in your RStudio Cloud session. Other than that, it has many of the same features and is being developed by the same group of people who developed the version of RStudio you download and use on your individual laptop. This means that in RStudio Cloud, like in RStudio, you have four main components, each of which is visible in the same window. To review from the introductory lesson of this series of courses, RStudio Cloud has the following four main components:
+<a href="https://rstudio.cloud/" target="_blank">RStudio Cloud</a> is a version of RStudio that can run in the cloud. This means that regardless of what computer you're on, you can access the analysis you were doing previously in your RStudio Cloud session. Other than that, it has many of the same features and is being developed by the same group of people who developed the version of RStudio you download and use on your individual laptop. This means that in RStudio Cloud, like in RStudio, you have four main components, each of which is visible in the same window. To review from the introductory lesson of this series of courses, RStudio Cloud has the following four main components:
 
 1. Scripting - where you write your code
 2. Console - where your code runs

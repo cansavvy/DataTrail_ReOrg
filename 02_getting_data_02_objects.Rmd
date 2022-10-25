@@ -44,7 +44,7 @@ Often we will want to print the contents of an object to see the information it 
 
 The 1 in square brackets that gets displayed in the printed output is simply an index that is provided for convenience of reading in case the object contains several values. It indicates that the number 21 is the first number in this object. It also happens to be the only number in this object.
 
-Throughout this course and curriculum, when we display code without the `>` indicating that we are not at the R prompt in the Console, we are emphasizing only the R command. When we display code with the `>` indicating that we are at the R prompt in the Console, we want to emphasize the commands and how the output is displayed on the screen.
+Throughout this curriculum, when we display code without the `>` indicating that we are not at the R prompt in the Console, we are emphasizing only the R command. When we display code with the `>` indicating that we are at the R prompt in the Console, we want to emphasize the commands and how the output is displayed on the screen.
 
 #### Classes of objects
 
@@ -212,7 +212,7 @@ Now that we've covered common basic data classes, we will now discuss data frame
 
 We see along the columns different variables related to car properties, and each row gives information on those properties for a particular car model. Every column in a data frame is a simple vector of values all from the same class. Most often, the data that we work with can be represented with data frames.
 
-You will learn more about working with data frames in subsequent lessons in this course and also in later courses.
+You will learn more about working with data frames in subsequent chapters.
 
 ### Missing values
 

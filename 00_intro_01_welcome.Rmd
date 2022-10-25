@@ -54,6 +54,8 @@ But people started to figure out that you could use that data for other purposes
 
 Another example is social media. You might write a post on Facebook with pictures describing your child's birthday party. You might do this so your child's grandparents can see pictures of her birthday. But the information in that post can again be valuable for other people. We could figure out birthdays, hobbies, interests, and who knows who from Facebook posts and likes. That information can be valuable for showing ads, for suggesting other people you might know, or for studying how humans interact with each other on birthdays and holidays.
 
+[Nonprofits use data science](https://www.discoverdatascience.org/social-good/nonprofits/) to better further their causes. For example, the Red Cross uses data science to find counties to target for smoke alarm installation campaigns.
+
 But to make data valuable we need to be able to study it and separate the interesting facts (called the "signal") from the uninteresting information (the "noise"). One definition for data science is that.
 
 > "Data science is asking a question that can be answered with data, collecting and cleaning the data, studying the data, creating models to help understand and answer the question, and sharing the answer to the question with other people."

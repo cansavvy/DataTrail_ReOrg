@@ -306,7 +306,7 @@ You are now ready to work on your files offline! Any changes will sync to Google
 
 ### Storage limit
 
-Your Google Drive account comes with 15GB of free storage. If this is not enough space, you can pay for more space: $1.99 per month buys  100GB of storage and $9.99 (as of February 2018) buys  1TB of storage. Note that the free 15GB is shared among all Google services, including Gmail and Drive, so, part of your storage may be used by your email attachments.  You can see how much storage you are using in the lower part of the left-hand menu on your home page.  There is also a link here to purchase additional storage.
+Your Google Drive account comes with 15GB of free storage. If this is not enough space, you can pay for more space. But don’t worry, for the purposes of this DataTrail course and many other purposes, you shouldn’t need to buy any storage. Note that the free 15GB is shared among all Google services, including Gmail and Drive, so, part of your storage may be used by your email attachments.  You can see how much storage you are using in the lower part of the left-hand menu on your home page.  There is also a link here to purchase additional storage.
 
 
 ![Storage information](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_302)

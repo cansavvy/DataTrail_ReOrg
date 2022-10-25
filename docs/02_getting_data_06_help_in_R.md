@@ -3,7 +3,7 @@
 
 # Getting Help in R
 
-In a lesson in an earlier course, we discussed some basic guidelines for carrying out an effective Google Search. Now that you've been introduced to the basics of R, we wanted to guide you to some *incredibly* helpful resources that can help you work through issues when you're trying to write your own R code.
+In an earlier chapter, we discussed some basic guidelines for carrying out an effective Google Search. Now that you've been introduced to the basics of R, we wanted to guide you to some *incredibly* helpful resources that can help you work through issues when you're trying to write your own R code.
 
 ### R Help: `?`
 

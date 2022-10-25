@@ -2,7 +2,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Project organization
+# Project Organization
 
 As you are starting to see, data science projects involve lots of files. There are files of data, files for code, files for documentation, figures, documents to communicate with other people. A surprising amount of doing data science really well is just being good at managing and organizing all of these files so that they are:
 

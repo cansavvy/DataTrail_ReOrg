@@ -290,4 +290,4 @@ After this, you will be shown a list of courses. The list will be longer than wh
 
 Note that for each quiz question you complete in `swirl`, upon completion, you'll receive a code. This code is to be entered as the answer to the quiz question on Leanpub.
 
-That's a basic introduction to using `swirl`. You'll have lots of quiz questions that require you to use swirl in this Course Set, so be sure to walk through this introduction on RStudio Cloud now and get comfortable navigating within swirl.
+That's a basic introduction to using `swirl`. You'll have lots of quiz questions that require you to use swirl in this course, so be sure to walk through this introduction on RStudio Cloud now and get comfortable navigating within swirl.

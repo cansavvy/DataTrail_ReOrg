@@ -1,6 +1,6 @@
 
 
-# Setting Up A Project on GitHub
+# Setting Up a Project on GitHub
 
 Having learned how to organize a data science projects in the last course and how to navigate GitHub and git commands in this course, in this lesson, we'll put all of this together and walk through setting up an example project and pushing the content to GitHub.
 

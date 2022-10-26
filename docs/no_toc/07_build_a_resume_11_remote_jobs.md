@@ -1,9 +1,10 @@
 
-# Where To Find Remote Data Science Jobs
+
+# Where to Find Remote Data Science Jobs
 
 One of the barriers to a job in data science has been that data science positions have historically required individuals to move to one of the tech hubs throughout the world, such as Silicon Valley in California, for their job. However, over time, there has been a move by many companies to allow for more remote work. This has sometimes meant that individuals could work from home a few days a week while requiring that individual physically be in the office for the rest of the time. But, there has also been a shift to allowing individuals to work remotely full-time.
 
-The course work in this Course Set has been developed so that it can be done from anywhere as we recognize that most individuals cannot simply uproot their lives and move to where the courses are being taught. Similarly, we wanted to dedicate a lesson to how to find remote data science jobs!
+The course work has been developed so that it can be done from anywhere as we recognize that most individuals cannot simply uproot their lives and move to where the courses are being taught. Similarly, we wanted to dedicate a lesson to how to find remote data science jobs!
 
 ### General Postings
 

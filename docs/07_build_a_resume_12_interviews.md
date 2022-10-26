@@ -6,7 +6,7 @@ After applying to jobs, there's a waiting period. The company has to look over t
 
 ![Understand the next steps](https://docs.google.com/presentation/d/13GoiYDh5LhD2WUJ_xqxKHxUBktXX8Rw-hBxA4sE-_UI/export/png?id=13GoiYDh5LhD2WUJ_xqxKHxUBktXX8Rw-hBxA4sE-_UI&pageid=g409bf900b8_0_16)
 
-Before moving on, it's important to note that much of this lesson is based on [this post](http://hookedondata.org/Advice-for-Applying-to-Data-Science-Jobs/) from [Emily Robinson](http://hookedondata.org/about/), a data scientist at DataCamp. And, if you want to learn even more about the information in this lesson, read her entire post as well as the information in the other links provided at the end of this lesson!
+Before moving on, it's important to note that much of this lesson is based on [this post](https://hookedondata.org/posts/2018-05-29_advice-for-applying-to-data-science-jobs/index.html) from [Emily Robinson](http://hookedondata.org/about/), a data scientist at DataCamp. And, if you want to learn even more about the information in this lesson, read her entire post as well as the information in the other links provided at the end of this lesson!
 
 
 ![Emily Robinson's Post](https://docs.google.com/presentation/d/13GoiYDh5LhD2WUJ_xqxKHxUBktXX8Rw-hBxA4sE-_UI/export/png?id=13GoiYDh5LhD2WUJ_xqxKHxUBktXX8Rw-hBxA4sE-_UI&pageid=g409bf900b8_0_0)
@@ -106,7 +106,7 @@ After the initial phone call(s) and once you're interviewing in person, you'll l
 
 #### Technical Assessment
 
-While technical questions will be asked in one-on-one interviews, there should be some coding required during a data science interview. This may require live-coding where another person will sit with you and watch you code or it may be a take-home analysis. Regardless of the format, this is where you want to show off your technical skills! Live-coding can be intimidating, but do your best to relax and just complete the task at hand. As for take-home analyses, we'll spend more time discussing the details of these in the next lesson. While these may seem daunting, it's an important part of a data science interview. In fact, if the interview process doesn't require you to code at all, that may be a [red flag](http://hookedondata.org/Red-Flags-in-Data-Science-Interviews/) that the position is maybe not exactly what you thought it was.
+While technical questions will be asked in one-on-one interviews, there should be some coding required during a data science interview. This may require live-coding where another person will sit with you and watch you code or it may be a take-home analysis. Regardless of the format, this is where you want to show off your technical skills! Live-coding can be intimidating, but do your best to relax and just complete the task at hand. As for take-home analyses, we'll spend more time discussing the details of these in the next lesson. While these may seem daunting, it's an important part of a data science interview. In fact, if the interview process doesn't require you to code at all, that may be a [red flag](https://hookedondata.org/posts/2018-07-03_red-flags-in-data-science-interviews/index.html) that the position is maybe not exactly what you thought it was.
 
 
 ![Coding required](https://docs.google.com/presentation/d/13GoiYDh5LhD2WUJ_xqxKHxUBktXX8Rw-hBxA4sE-_UI/export/png?id=13GoiYDh5LhD2WUJ_xqxKHxUBktXX8Rw-hBxA4sE-_UI&pageid=g409bf900b8_0_75)
@@ -162,8 +162,8 @@ In this lesson, we've covered a lot about interviewing for a data science positi
 
 ### Additional Resources
 
-* [Advice for Applying to Data Science Jobs](http://hookedondata.org/Advice-for-Applying-to-Data-Science-Jobs/)
-* [Red Flags in Data Science Interviews](http://hookedondata.org/Red-Flags-in-Data-Science-Interviews/)
+* [Advice for Applying to Data Science Jobs](https://hookedondata.org/posts/2018-05-29_advice-for-applying-to-data-science-jobs/index.html)
+* [Red Flags in Data Science Interviews](https://hookedondata.org/posts/2018-07-03_red-flags-in-data-science-interviews/index.html)
 * [Twitter Thread about what questions to ask](https://twitter.com/jensenharris/status/988967889330819072)
 * [Questions I'm Asking in Interviews](https://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/)
 * [Ten Rules for Negotiating a Job Offer](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)

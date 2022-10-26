@@ -1,3 +1,8 @@
 https://www.someurl.html
 http://github.com/username
 https://url_to_reference.com
+https://github.com/github_username/repository_name
+https://username.github.io/name_of_your_project_repository/section_folder/project_html_file_name.nb.html
+https://username.github.io/
+https://github.com/your_username/newproject/
+https://github.com/your_username/newproject.git

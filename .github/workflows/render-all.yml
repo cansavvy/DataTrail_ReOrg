@@ -31,6 +31,7 @@ jobs:
       toggle_leanpub: "${{ env.RENDER_LEANPUB }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       toggle_quiz_check: "${{ env.CHECK_QUIZZES }}"
+      leanpub_params: "${{ env.LEANPUB_PARAMS }}"
 
   render-bookdown:
     name: Render bookdown
@@ -179,6 +180,8 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
+          echo ${LEANPUB_PARAMS} > leanpub_params.txt
+          cat manuscript/2-Finding-Help.md leanpub_params.txt > manuscript/2-Finding-Help.md
           git add --force manuscript/*
           git add --force resources/*
           git add --force docs/*

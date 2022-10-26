@@ -1139,7 +1139,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="storing-objects" class="section level3" number="14.0.2">
 <h3><span class="header-section-number">14.0.2</span> Storing objects</h3>
-<p>In R, as with all programming languages, it is important to be able to store objects that we create so that we can use them in later code. The process of storing an object is called <strong>assignment</strong>, and it entails giving an object a name. For example, the following code creates an object called <code>min_age</code> and stores inside that object the value 21.</p>
+<p>In R, as with all programming languages, it is important to be able to store objects that we create so that we can use them in later code. The process of storing an object is called <strong>assignment</strong>, and it entails giving an object a name. For example, the following code creates an object called <code>min_age</code> and stores inside that object the value 21. It is equivalent to saying that <code>min_age</code> <em>is equal to</em> 21.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="objects-in-r.html#cb5-1" aria-hidden="true" tabindex="-1"></a>min_age <span class="ot">&lt;-</span> <span class="dv">21</span></span></code></pre></div>
 <p>The <code>&lt;-</code> operator is called the assignment operator. After you run this code in R, you will see the object <code>min_age</code> show up in your <strong>Environment</strong> panel.</p>
 <div class="figure">
@@ -1314,7 +1314,7 @@ Levels: apple banana</code></pre>
 [1] &quot;factor&quot;</code></pre>
 <p>As you can see, the class of the object specified within the parentheses is the class of that object.</p>
 <ol start="2" style="list-style-type: decimal">
-<li>You can use a function <code>str()</code> which will tell you its <code>stru</code>cture. This will tell you more about the shape of an object, how long or wide it is, etc.</li>
+<li>You can use a function <code>str()</code> which will tell you its structure. This will tell you more about the shape of an object, how long or wide it is, etc.</li>
 </ol>
 <pre><code>str(colors)
 &gt; chr [1:5] &quot;red&quot; &quot;red&quot; &quot;blue&quot; &quot;red&quot; ...</code></pre>
@@ -1323,8 +1323,8 @@ Levels: apple banana</code></pre>
 </ol>
 <div id="types-of-objects" class="section level4" number="14.0.11.1">
 <h4><span class="header-section-number">14.0.11.1</span> Types of objects</h4>
-<p>We store these different classes of objects in different ways. The ways this information is stored is referred to as the *type** of object.</p>
-<p>When talking about objects in R, it may be helpful to think of <em>actual</em> objects in every day life for comparison. For example, think of three objects: a bucket, a pot you would cook with, and a backpack. These three objects are clearly designed for and carry out different purposes. The bucket may be used to carry water to clean your floor, the pot to cook pasta, and the backpack to carry notebooks, but, we can agree that they are all objects, just different **types* of objects. The water, pasta, and notebooks would be the information contained in the object. In this real-life example, the “class” of the information may be “liquid”, “food”, and “paper”.</p>
+<p>We store these different classes of objects in different ways. The ways this information is stored is referred to as the <strong>type</strong> of object.</p>
+<p>When talking about objects in R, it may be helpful to think of <em>actual</em> objects in every day life for comparison. For example, think of three objects: a bucket, a pot you would cook with, and a backpack. These three objects are clearly designed for and carry out different purposes. The bucket may be used to carry water to clean your floor, the pot to cook pasta, and the backpack to carry notebooks, but, we can agree that they are all objects, just different <em>types</em> of objects. The water, pasta, and notebooks would be the information contained in the object. In this real-life example, the “class” of the information may be “liquid”, “food”, and “paper”.</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc/export/png?id=1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc&amp;pageid=g3b0072ef38_0_0" alt="" />
 <p class="caption">Objects in real-life analogy</p>

@@ -10,7 +10,7 @@
 
 Through the completion of this section our goal is that you will be able to:
 
-- Recognize the general steps in involved in a data science projects
+- Recognize the general steps involved in a data science project
 - Practice forming data science questions
 - Understand the general categories for types of data science questions
 - Look at data and ask questions based on its contents

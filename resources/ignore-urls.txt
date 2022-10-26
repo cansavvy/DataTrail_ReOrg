@@ -6,3 +6,4 @@ https://username.github.io/name_of_your_project_repository/section_folder/projec
 https://username.github.io/
 https://github.com/your_username/newproject/
 https://github.com/your_username/newproject.git
+https://github.com/username/username.github.com.git

@@ -1219,12 +1219,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p><a href="https://cran.r-project.org/web/packages/dslabs/index.html">dslabs</a></p>
 <p>There’s 26 datasets already set up in R for you.
 To use the datasets in this package you need to do the following kind of steps:</p>
-<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="finding-data.html#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the package</span></span>
-<span id="cb128-2"><a href="finding-data.html#cb128-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;dslabs&quot;</span>)</span>
-<span id="cb128-3"><a href="finding-data.html#cb128-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span></code></pre></div>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="finding-data.html#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install the package</span></span>
+<span id="cb124-2"><a href="finding-data.html#cb124-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;dslabs&quot;</span>)</span>
+<span id="cb124-3"><a href="finding-data.html#cb124-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span></code></pre></div>
 <p>For the dataset <code>admissions</code> for example, you first need to prep it with <code>data()</code> function and then you can call it as an object.</p>
-<div class="sourceCode" id="cb129"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb129-1"><a href="finding-data.html#cb129-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(admissions)</span>
-<span id="cb129-2"><a href="finding-data.html#cb129-2" aria-hidden="true" tabindex="-1"></a>admissions</span></code></pre></div>
+<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="finding-data.html#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(admissions)</span>
+<span id="cb125-2"><a href="finding-data.html#cb125-2" aria-hidden="true" tabindex="-1"></a>admissions</span></code></pre></div>
 </div>
 <div id="fivethirtyeight-data" class="section level2" number="24.3">
 <h2><span class="header-section-number">24.3</span> FiveThirtyEight Data</h2>
@@ -1236,7 +1236,7 @@ Copy and paste the URL that that brings you to.
 For example, for the <code>airline-safety</code> dataset, the URL would look like this:</p>
 <pre><code>https://raw.githubusercontent.com/fivethirtyeight/data/master/airline-safety/airline-safety.csv</code></pre>
 <p>Then you can use that URL in a read_csv function like this:</p>
-<div class="sourceCode" id="cb131"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb131-1"><a href="finding-data.html#cb131-1" aria-hidden="true" tabindex="-1"></a>airline_safety <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/fivethirtyeight/data/master/airline-safety/airline-safety.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="finding-data.html#cb127-1" aria-hidden="true" tabindex="-1"></a>airline_safety <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/fivethirtyeight/data/master/airline-safety/airline-safety.csv&quot;</span>)</span></code></pre></div>
 </div>
 <div id="kaggle" class="section level2" number="24.4">
 <h2><span class="header-section-number">24.4</span> Kaggle</h2>
@@ -1245,7 +1245,7 @@ You’ll have to make a login before you download, but you can use a Google logi
 <p>To download a dataset, you can browse them and then when you find one you like, you can download the CSV. It will download it in a zip file. Upload this to your RStudio server using the Upload button.</p>
 <p>Then you will see a CSV included in that data file and you can use <code>readr::read_csv()</code>to read in the file.</p>
 <p>For example, for the <a href="https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries">Data Science Job Salaries dataset</a>, you can click <code>Download</code> and then upload the resulting zip file. Then you can read in the file like:</p>
-<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="finding-data.html#cb132-1" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">&quot;ds_salaries.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="finding-data.html#cb128-1" aria-hidden="true" tabindex="-1"></a>readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">&quot;ds_salaries.csv&quot;</span>)</span></code></pre></div>
 </div>
 <div id="more-places-to-get-data" class="section level2" number="24.5">
 <h2><span class="header-section-number">24.5</span> More places to get data</h2>

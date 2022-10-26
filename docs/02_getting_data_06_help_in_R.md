@@ -47,7 +47,7 @@ It could be that the problem with your code isn’t that it doesn’t work as it
 > In the course of troubleshooting, you will want to re-run all of your code, perhaps many many many times in order to get to the bottom of the problem.
 
 > #### 4) Google your error message
-The main advantage to Googling your errors is that you are likely not the first person to encounter the problem. Certain phrases and terms in the error message will yield more fruitful search results then others.
+The main advantage to Googling your errors is that you are likely not the first person to encounter the problem. Certain phrases and terms in the error message will yield more fruitful search results than others.
 
 > #### 5) Look at the documentation for a function to make sure you are using it correctly
 Once you’ve better determined the origin of the problem, you should use whatever documentation is available to you regarding the problematic code. When using a new function from a package you are unfamiliar with, it’s worthwhile to skim through the documentation so you know how to properly use the functions. For base R functions, Tidyverse functions, and some Bioconductor packages, the documentation will give you a lot of the information you need. However, you will also likely find that not all documentation is thorough or clear.
@@ -55,18 +55,19 @@ Once you’ve better determined the origin of the problem, you should use whatev
 > As we discussed, objects have structures and types. Having input that doesn’t match the requirements that a function has can be a common source of errors. Pay special attention to what the documentation says about what kind of input and output the function is designed to use.
 
 > ##### Use the RStudio help bar
-Here’s a screenshot from the help window in RStudio. Note that here we searched for the levels function. R documentation includes information about what the expected arguments are as well as examples of how to use a function. Note here that this documentation tells us that the input for x is probably a factor. search_bar
+Here’s a screenshot from the help window in RStudio. Note that here we searched for the levels function. R documentation includes information about what the expected arguments are as well as examples of how to use a function. Note here that this documentation tells us that the input for x is probably a factor. 
 
-> For Bioconductor package functions, look at their page on bioconductor.org The documentation on Bioconductor pages have information that can be valuable for troubleshooting. Vignettes can have good example workflows to get started with (can use the browseVignettes function for RStudio to open them). In addition, every Bioconductor package has a PDF reference where all the functions and objects for that package are described. They can take some getting used to, but generally can have helpful information.
+> For Bioconductor package functions, look at their page on bioconductor.org. The documentation on Bioconductor pages have information that can be valuable for troubleshooting. Vignettes can have good example workflows to get started with (can use the browseVignettes function for RStudio to open them). In addition, every Bioconductor package has a PDF reference where all the functions and objects for that package are described. They can take some getting used to, but generally can have helpful information.
 
-> 6) Google it again
+> #### 6) Google it again
 Because it’s unlikely your first attempt at Googling will lead you straight to an answer; this is something you should continue to try with different wordings. Through trial and error, and also Google algorithms learning about what you look for, your search results can eventually lead you to helpful examples and forums.
 
-7) Ask for help! Asking for help is a skill in itself! As we've mentioned, data science is best performed as a part of a community. But how do you ask for help in a way that most effectively helps you as well as the person who is trying to help you? Let's discuss that!
+> #### 7) Ask for help! 
+Asking for help is a skill in itself! As we've mentioned, data science is best performed as a part of a community. But how do you ask for help in a way that most effectively helps you as well as the person who is trying to help you? Let's discuss that!
 
 ### Tips on asking questions!
 
-In the introduction to this course, we discussed that asking questions is central to data science and its also a crucial part of learning programming!
+In the introduction to this course, we discussed that asking questions is central to data science and it's also a crucial part of learning programming!
 
 When you are working on something, you should first ask these questions to yourself. But data science is best done as a community effort, so before you reach the point of being crazily frustrated, ask a peer or a more experienced coder for help!
 

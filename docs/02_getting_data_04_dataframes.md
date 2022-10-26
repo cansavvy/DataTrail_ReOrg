@@ -6,7 +6,7 @@
 A majority of the time that you are working with data in R you will have it in the form of a data frame.
 
 Data frames can contain different types of variables in a rectangular format, much like how spreadsheets are.
-A data frames' size can be describe in terms of rows (across) and columns (up/down). Rows are often called *observations* and columns are called *variables*.
+A data frames' size can be described in terms of rows (across) and columns (up/down). Rows are often called *observations* and columns are called *variables*.
 
 
 ```r
@@ -130,7 +130,7 @@ iris$Species
 ## Levels: setosa versicolor virginica
 ```
 
-Note that `$` work for any R objects that have names. But don't work if there aren't names. when you look at a data frame you will see there are names to the columns. Try using the `colnames()` function to explore the column names of the `iris` data frame.
+Note that `$` work for any R objects that have column names. But don't work if there aren't column names. When you look at a data frame you will see that there are names to the columns. Try using the `colnames()` function to explore the column names of the `iris` data frame.
 
 
 ```r

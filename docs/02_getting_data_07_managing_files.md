@@ -127,7 +127,7 @@ Note that a relative directory may be different between different apps: RStudio 
 
 The end of a path string may be a file name if you are creating a path to a file. If you are creating a path to a folder, the path string will end with the destination folder.
 
-Returning to computer files. In your Terminal you can see your working directory at at the top of the Terminal window or at the beginning of the terminal prompt. Knowing this, this can tell you how you need to change the command you are entering. Let's say you want to list, using the `ls` command, a file called `file.txt`.
+Returning to computer files. In your Terminal you can see your working directory at the top of the Terminal window or at the beginning of the terminal prompt. Knowing this, this can tell you how you need to change the command you are entering. Let's say you want to list, using the `ls` command, a file called `file.txt`.
 
 ![Relative path](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_52)
 
@@ -171,7 +171,7 @@ If you try to change directory to a nonexistent folder, you will get an error me
 
 You can avoid error messages like this more often if you use tab completion!
 
-There's one last important note about file paths. As we've mentioned, data science is best done as a team! This means you will often share you code and data with others.
+There's one last important note about file paths. As we've mentioned, data science is best done as a team! This means you will often share your code and data with others.
 
 **Absolute file paths are not transferrable to other computers!**
 

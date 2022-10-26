@@ -18,7 +18,7 @@ function_name(input)
 
 Input to a function in R is known as an **argument**. Functions require *at least one* argument, but can require multiple different arguments, depending on the function.
 
-At this point you may be saying, "but when we used `getwd()` we didn't specify an argument!" - And you'd be correct! *We* didn't specify one, but the sneaky thing about arguments is that often if you don't specify one, that means one is automatically being chosen for you. (called a *default*). To see all about a function's arguments and its defaults, see its help page by using `?function`.
+At this point you may be saying, "but when we used `getwd()` we didn't specify an argument!" - And you'd be correct! *We* didn't specify one, but the sneaky thing about arguments is that often if you don't specify one, that means one is automatically being chosen for you (called a *default*). To see all about a function's arguments and its defaults, see its help page by using `?function`.
 
 To visually understand the anatomy of a **function call** (a term that describes the using of a function), let's look at the following example:
 
@@ -26,7 +26,7 @@ To visually understand the anatomy of a **function call** (a term that describes
 mean(x, trim = 0.1)
 ```
 
-We have an object `x` that should contain numbers, and we want to compute the mean of these numbers with the `mean` function. As stated above, all of the information inside the parentheses are function inputs (also called **arguments**), and they are separated by commas. In this command, I have supplied the object x and an additional argument `trim` that I set to be 0.1. The `trim` argument calls for a number between 0 and 0.5 and specifies the fraction of the observations in `x` to trim from the upper and lower ends of the data. Here, by including the trim argument, I am specifying that I want to take the mean of the middle 80% of the data.
+We have an object `x` that should contain numbers, and we want to compute the mean of these numbers with the `mean` function. As stated above, all of the information inside the parentheses are function inputs (also called **arguments**), and they are separated by commas. In this command, I have supplied the object `x` and an additional argument `trim` that I set to be 0.1. The `trim` argument calls for a number between 0 and 0.5 and specifies the fraction of the observations in `x` to trim from the upper and lower ends of the data. Here, by including the trim argument, I am specifying that I want to take the mean of the middle 80% of the data.
 
 ### What is this object?
 
@@ -153,7 +153,7 @@ The `print()` function displays the entire contents of an object.
 print(mtcars)
 ```
 
-Recall that in R, the **Console** is where commands can be typed and entered for R to run. When R is ready to accept a command a greater than sign will be displayed. An alternative to calling the `print` function is to simply type the name of the object in the Console and press enter. In general printing an entire object is not advisable just in case the object is quite large. In this case your screen would overflow with text!
+Recall that in R, the **Console** is where commands can be typed and entered for R to run. When R is ready to accept a command, a greater than sign will be displayed. An alternative to calling the `print` function is to simply type the name of the object in the Console and press enter. In general printing an entire object is not advisable just in case the object is quite large. In this case your screen would overflow with text!
 
 ```r
 mtcars
@@ -164,65 +164,17 @@ mtcars
 
 Safer alternatives to printing are the `head` and `tail` functions. The `head` function displays the beginning of an object. By default, it shows the first 6 items. If the object is a vector, `head` shows the first 6 entries. If the object is a rectangle, such as a matrix or a data frame, `head` shows the first 6 rows. The `tail` function is analogous to `head` but for the end of the object.
 
-```text
-> head(mtcars)
-                   mpg cyl disp  hp drat    wt  qsec vs am gear carb
-Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
-Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
-Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
-Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
-Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
-Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
-
-> tail(mtcars)
-                mpg cyl  disp  hp drat    wt qsec vs am gear carb
-Porsche 914-2  26.0   4 120.3  91 4.43 2.140 16.7  0  1    5    2
-Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.9  1  1    5    2
-Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.5  0  1    5    4
-Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.5  0  1    5    6
-Maserati Bora  15.0   8 301.0 335 3.54 3.570 14.6  0  1    5    8
-Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.6  1  1    4    2
-```
-
 
 ![head() and tail() can be used to see a portion of the data](https://docs.google.com/presentation/d/1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM/export/png?id=1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM&pageid=g3778484ff5_0_98)
 
 
 The `summary` function computes summary statistics for numeric data and performs tabulations for categorical data, which are called **factors** in R.
 
-```text
-> summary(iris)
-  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
- Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
- 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
- Median :5.800   Median :3.000   Median :4.350   Median :1.300  
- Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  
- 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  
- Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  
-       Species  
- setosa    :50  
- versicolor:50  
- virginica :50  
-```
-
 
 ![The summary() function summarizes data](https://docs.google.com/presentation/d/1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM/export/png?id=1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM&pageid=g3778484ff5_0_103)
 
 
 The `unique()` function shows only the unique elements of an object. For vectors, this returns the set of unique elements. For rectangles such as matrices and data frames, this returns the unique rows. This function is useful if we want to check the coding of our data. If we have sex information, then we expect the result of unique to be two elements. If not, there is likely some data cleaning that must be done. The `unique()` function is also useful for simply exploring the values that a variable can take. In the example below, we can see that in the `mtcars` data frame, there are only cars with 6, 4, and 8 cylinders. Note that to extract the column corresponding to cylinders, we used a dollar sign followed by the column name: `$cyl`. This is an example of subsetting that you will learn in later lessons.
-
-```text
-> unique(mtcars$cyl)
-[1] 6 4 8
-> dat <- data.frame(a = c(1,1), b = c(2,2))
-> dat
-  a b
-1 1 2
-2 1 2
-> unique(dat)
-  a b
-1 1 2
-```
 
 
 ![The unique() shows unique elements of an object](https://docs.google.com/presentation/d/1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM/export/png?id=1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM&pageid=g3778484ff5_0_108)
@@ -233,10 +185,6 @@ The `unique()` function shows only the unique elements of an object. For vectors
 In R, there are three types information that R may return to you to your screen to provide you with additional information. These come in the form of **errors, warnings, and messages**. While they will often *look* similar to one another, it's important to understand the difference between them.
 
 The most serious of these messages is an error message. **Errors** indicate that the code you tried to run **did not run successfully**. If you receive an error message, you should carefully look back at your code to see what went wrong. Error messages cannot be ignored as they indicate that there was no way for the code to run. Something has to be fixed before moving forward. For example, the code here produces an error, since `mtca` is *not* a data frame or object in R.
-
-```r
-unique(mtca$cyl)
-```
 
 
 ![errors](https://docs.google.com/presentation/d/1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM/export/png?id=1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM&pageid=g451659353d_0_0)
@@ -259,7 +207,7 @@ Last but not least, **messages**, in general, are simply there to **provide you 
 
 ![messages](https://docs.google.com/presentation/d/1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM/export/png?id=1ew_I5lM283x6Xxlywznp-02tvCKcwxcvNMJeFM4gXUM&pageid=g451659353d_0_29)
 
-Note that all three are in the same font and same color, so they'll look similar in your RStudio Cloud console. Over time, you'll get more comfortable dealing with and understanding the difference between the three. For now, be sure that to remember if you get an error, your code did not execute successfully. Go back and find what caused the error.
+Note that all three are in the same font and same color, so they'll look similar in your RStudio Cloud console. Over time, you'll get more comfortable dealing with and understanding the difference between the three. For now, be sure that if you get an error, your code did not execute successfully. Go back and find what caused the error.
 
 # A brief intro to the `apply` family of functions
 
@@ -271,9 +219,6 @@ One of this family is (shockingly) the function `apply()`, which operates on mat
 
 A matrix is similar to a data frame in that it is a rectangular table of data, but it has an additional constraint: rather than each column having a type, ALL data in a matrix has the same type.
 
-The first argument to `apply()` is the data object we want to work on.
-The third argument is the function we will apply to each row or column of the data object.
-The second argument in specifies whether we are applying the function across rows or across columns (1 for rows, 2 for columns).
 
 Let's make a data frame with some data.
 
@@ -305,6 +250,10 @@ str(a_matrix)
 ```
 
 Now that the matrix is all numbers, we can do things like calculate the column or row statistics using `apply()`.
+The first argument to `apply()` is the data object we want to work on.
+The third argument is the function we will apply to each row or column of the data object.
+The second argument specifies whether we are applying the function across rows or across columns (1 for rows, 2 for columns).
+
 
 
 ```r

@@ -49,7 +49,7 @@ ggplot(mtcars, aes(wt, mpg)) +
 ```
 
 
-![scatterplot of `wt` and `mpg` from `mtcars`](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g3daea37311_0_1513)
+![scatterplot](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g3daea37311_0_1513)
 
 From the scatterplot, the relationship looks approximately linear and the variance looks constant. Thus, we could model this using linear regression:
 
@@ -135,7 +135,7 @@ head(soda_ounces)
 In this code, we're specifying that we want to take a random draw of 100 different values (representing our 100 cans of soft drink), where the mean is 12 (representing the 12 ounces of soda expected to be within each can), and allowing for some variation (we've set the standard deviation to be 0.04).
 
 
-![output looking at `soda_ounces` dataset](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g5d2253b705_2_0)
+![output looking at soda_ounces dataset](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g5d2253b705_2_0)
 
 We can see that the values are approximately, but not always exactly equal to the expected 12 ounces.
 
@@ -166,7 +166,7 @@ ggplot(as.data.frame(soda_ounces))+
 Here, we see that the data are approximately normally distributed, allowing for a t-test to be used.
 
 
-![histogram of `soda_ounces`](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g5d2253b705_2_5)
+![histogram of soda_ounces](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g5d2253b705_2_5)
 
 A t-test will check whether the observed ounces differs from the expected mean (12 oz). As mentioned above, to run a t-test in R, most people use the built-in function: `t.test()`
 
@@ -176,7 +176,7 @@ t.test(soda_ounces, mu = 12)
 ```
 
 
-![`t.test()` output](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g5d2253b705_2_13)
+![](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g5d2253b705_2_13)
 
 In the output from this function, we'll focus on the 95 percent confidence interval. Confidence Intervals provide the range of values likely to contain the unknown population parameter. Here, the population parameter we're interested in is the mean. Thus, the 95% Confidence Intervals provides us the range where, upon repeated sampling, the calculated mean would fall 95 percent of the time. More specifically, if the 95 percent confidence interval contains the expected mean (12 oz), then we can be confident that the company is not shorting us on the amount of liquid they're putting into each can.
 
@@ -193,7 +193,7 @@ confint(regression_output)
 ```
 
 
-![comparing `t.test()` and `lm()` output](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g5d2253b705_2_21)
+![](https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&pageid=g5d2253b705_2_21)
 
  Note that the confidence interval is the exact same here using `lm()` as above when we used `t.test()`! We bring this up not to confuse you, but to guide you away from trying to memorize each individual statistical test and instead understand how they relate to one another.
 
@@ -214,4 +214,4 @@ In these few lessons on inference, we have covered *a lot*. We started off discu
 
 ### Additional Resources
 
-* [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear), blog post by Jonas Kristoffer Lindelov
+* [Common statistical tests are linear models](https://lindeloev.github.io/tests-as-linear), blog post by Jonas Kristoffer Lindelov

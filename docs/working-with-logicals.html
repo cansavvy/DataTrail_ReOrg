@@ -1159,7 +1159,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <pre class="text"><code>&gt; ages == indiv_cutoffs
 [1]  TRUE FALSE FALSE FALSE  TRUE</code></pre>
 <p>This is obvious in the output from R, where the first and the fifth values are TRUE, while the rest are FALSE.</p>
-<p>Usually cutoffs are a bound rather than a specification of an equality, so we may instead ask if the students older than the cutoff by using the “greater than” operator <code>&gt;</code>.</p>
+<p>Usually cutoffs are a bound rather than a specification of an equality, so we may instead ask if the students are older than the cutoff by using the “greater than” operator <code>&gt;</code>.</p>
 <pre class="text"><code>&gt; ages &gt; common_cutoff
 [1] FALSE  TRUE  TRUE FALSE  TRUE
 &gt; ages &gt; indiv_cutoffs
@@ -1229,7 +1229,7 @@ Levels: short average tall</code></pre>
 ## compare to label directly
 &gt; height_factor == &quot;short&quot;
 [1] FALSE  TRUE FALSE FALSE  TRUE</code></pre>
-<p>When we coerce the object to e an integer, we get the expected output. The second and final outputs are TRUE, corresponding to the values of “1” in the height_factor object. The output is the same for when the labels are directly compared. The output here returns TRUE for any places in the height_vector object where the factor label is (equal to) “short”.</p>
+<p>When we coerce the object to be an integer, we get the expected output. The second and final outputs are TRUE, corresponding to the values of “1” in the height_factor object. The output is the same for when the labels are directly compared. The output here returns TRUE for any places in the height_vector object where the factor label is (equal to) “short”.</p>
 </div>
 <div id="logical-functions" class="section level3" number="15.0.2">
 <h3><span class="header-section-number">15.0.2</span> Logical functions</h3>

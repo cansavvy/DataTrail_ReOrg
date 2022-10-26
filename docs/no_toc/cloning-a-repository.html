@@ -1157,17 +1157,17 @@ You will a <code>Deploying Project</code> progress screen, typically after a few
 <ol start="2" style="list-style-type: decimal">
 <li>Now use the command below to install the package <code>usethis</code>. Copy and paste it in the Console window and click Enter on your keyboard. This package will help us manage our GitHub credentials from RStudio more easily.</li>
 </ol>
-<div class="sourceCode" id="cb408"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb408-1"><a href="cloning-a-repository.html#cb408-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;usethis&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb404"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb404-1"><a href="cloning-a-repository.html#cb404-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;usethis&quot;</span>)</span></code></pre></div>
 <p>This will take a minute or so to install. Remember that red text doesn’t mean an error necessarily.</p>
 <ol start="3" style="list-style-type: decimal">
 <li>Now to use this package, we need to attach its library using the following command:</li>
 </ol>
-<div class="sourceCode" id="cb409"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb409-1"><a href="cloning-a-repository.html#cb409-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;usethis&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb405"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb405-1"><a href="cloning-a-repository.html#cb405-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;usethis&quot;</span>)</span></code></pre></div>
 <ol start="4" style="list-style-type: decimal">
 <li>RStudio and GitHub require you make a special fancy password to use as credentials called a <strong>GitHub Personal Access Token</strong> (sometimes abbreviated as a “PAT”).</li>
 </ol>
 <p>To create a ‘PAT’ from RStudio we can run this handy command:</p>
-<div class="sourceCode" id="cb410"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb410-1"><a href="cloning-a-repository.html#cb410-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb406"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb406-1"><a href="cloning-a-repository.html#cb406-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code></pre></div>
 <p>Running this command will open up a window in your GitHub that will ask you for your password. Login to GitHub as you normally would.</p>
 <p>This will open up a page in GitHub for creating a <code>New personal access token</code>.</p>
 <p>Underneath the <code>Note</code> put something that reminds you what this PAT is for. Something like <code>RStudioCloud Access</code>. (Note that each PAT you make needs its own unique <code>Note</code> though).</p>
@@ -1178,7 +1178,7 @@ You will a <code>Deploying Project</code> progress screen, typically after a few
 <li>Return back to your RStudio Cloud project while keeping your PAT handy.
 In the <code>Console</code> window, run this command:</li>
 </ol>
-<div class="sourceCode" id="cb411"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb411-1"><a href="cloning-a-repository.html#cb411-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb407"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb407-1"><a href="cloning-a-repository.html#cb407-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code></pre></div>
 <p>It will ask you to <code>? Enter password or token</code>. Copy your PAT and paste it into the command window and press Enter.</p>
 <p><img src="resources/images/06_report_results_05_cloning_repos_files/figure-html/1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_34.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" /></p>
 <p>After you enter your PAT here you should get a message like:</p>
@@ -1190,12 +1190,12 @@ In the <code>Console</code> window, run this command:</li>
 <li>Now we also need to add your username and email to the RStudio GitHub credentials by running a command like below.
 But replace the example <strong>username</strong> and <strong>email</strong> with what corresponds to your GitHub account.</li>
 </ol>
-<div class="sourceCode" id="cb413"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb413-1"><a href="cloning-a-repository.html#cb413-1" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">&quot;Jane&quot;</span>, <span class="at">user.email =</span> <span class="st">&quot;jane@example.org&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb409"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb409-1"><a href="cloning-a-repository.html#cb409-1" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">&quot;Jane&quot;</span>, <span class="at">user.email =</span> <span class="st">&quot;jane@example.org&quot;</span>)</span></code></pre></div>
 <p>Run this in the <code>Console</code> tab as well and click Enter.</p>
 <ol start="8" style="list-style-type: decimal">
 <li>Now to double check that everything is set, we can run this command to have the <code>usethis</code> package echo back our credentials:</li>
 </ol>
-<div class="sourceCode" id="cb414"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb414-1"><a href="cloning-a-repository.html#cb414-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git_sitrep</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb410"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb410-1"><a href="cloning-a-repository.html#cb410-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git_sitrep</span>()</span></code></pre></div>
 <p>It will give you output that looks similar to this: (but note it will have your own user name, and repository name and etc.)</p>
 <pre><code>Git config (global)
 • Name: &#39;Jane&#39;

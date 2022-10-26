@@ -1175,14 +1175,14 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>Now, while the file has now been uploaded to your RStudio Cloud project, it’s important to recognize the file is not yet imported to your R environment as an object. We’ll do that now!</p>
 <p>The best way to accomplish this is using the function <code>read_csv()</code> from the <code>readr</code> package. (Note, if you haven’t installed the <code>readr</code> package, you’ll have to do that first.) Inside the parenthesis of the function, write the name of the file in quotes, including the file extension (.csv). Make sure you type the exact file name. Save the imported data in a data frame called <code>df_csv</code>. Your data will now be imported into R environment. If you use the command <code>head(df_csv)</code> you will see the first several rows of your imported data frame:</p>
-<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="dataset-file-types.html#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages(&quot;readr&quot;)</span></span>
-<span id="cb114-2"><a href="dataset-file-types.html#cb114-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb114-3"><a href="dataset-file-types.html#cb114-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb114-4"><a href="dataset-file-types.html#cb114-4" aria-hidden="true" tabindex="-1"></a><span class="do">## read CSV into R</span></span>
-<span id="cb114-5"><a href="dataset-file-types.html#cb114-5" aria-hidden="true" tabindex="-1"></a>df_csv <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;sample_data - Sheet1.csv&quot;</span>)</span>
-<span id="cb114-6"><a href="dataset-file-types.html#cb114-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb114-7"><a href="dataset-file-types.html#cb114-7" aria-hidden="true" tabindex="-1"></a><span class="do">## look at the object</span></span>
-<span id="cb114-8"><a href="dataset-file-types.html#cb114-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_csv)</span></code></pre></div>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="dataset-file-types.html#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages(&quot;readr&quot;)</span></span>
+<span id="cb110-2"><a href="dataset-file-types.html#cb110-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb110-3"><a href="dataset-file-types.html#cb110-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-4"><a href="dataset-file-types.html#cb110-4" aria-hidden="true" tabindex="-1"></a><span class="do">## read CSV into R</span></span>
+<span id="cb110-5"><a href="dataset-file-types.html#cb110-5" aria-hidden="true" tabindex="-1"></a>df_csv <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;sample_data - Sheet1.csv&quot;</span>)</span>
+<span id="cb110-6"><a href="dataset-file-types.html#cb110-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-7"><a href="dataset-file-types.html#cb110-7" aria-hidden="true" tabindex="-1"></a><span class="do">## look at the object</span></span>
+<span id="cb110-8"><a href="dataset-file-types.html#cb110-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_csv)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM/export/png?id=199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM&amp;pageid=g399e5a917a_0_16" alt="" />
 <p class="caption"><code>read_csv()</code></p>
@@ -1205,10 +1205,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>In this example, we can write the <code>iris</code> data to a CSV file by providing two arguments.
 The first is what data frame we would like to write to a CSV file. In this case, we want to write <code>iris</code> data frame to a file.</p>
 <p>The second argument is what the filename we should save to this to a file named <code>"iris_data.csv"</code>. Note that the</p>
-<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="dataset-file-types.html#cb115-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages(&quot;readr&quot;)</span></span>
-<span id="cb115-2"><a href="dataset-file-types.html#cb115-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb115-3"><a href="dataset-file-types.html#cb115-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb115-4"><a href="dataset-file-types.html#cb115-4" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(iris, <span class="st">&quot;iris_data.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="dataset-file-types.html#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages(&quot;readr&quot;)</span></span>
+<span id="cb111-2"><a href="dataset-file-types.html#cb111-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb111-3"><a href="dataset-file-types.html#cb111-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb111-4"><a href="dataset-file-types.html#cb111-4" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(iris, <span class="st">&quot;iris_data.csv&quot;</span>)</span></code></pre></div>
 </div>
 <div id="excel-files" class="section level3" number="23.0.6">
 <h3><span class="header-section-number">23.0.6</span> Excel files</h3>
@@ -1223,12 +1223,12 @@ The first is what data frame we would like to write to a CSV file. In this case,
 <div id="reading-excel-files-into-rstudio-cloud" class="section level3" number="23.0.7">
 <h3><span class="header-section-number">23.0.7</span> Reading Excel files into RStudio Cloud</h3>
 <p>To read this file into R, we’ll have to use a different function than above, as this file is not a CSV file. We’ll use the <code>read_excel()</code> function from the <code>readxl</code> package. Install the package first and then use the function <code>read_excel()</code> from the package read the Excel file into your R Environment. As above, by default, <code>read_excel()</code> converts blank cells to missing data (NA).</p>
-<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="dataset-file-types.html#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install and load package</span></span>
-<span id="cb116-2"><a href="dataset-file-types.html#cb116-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;readxl&quot;</span>)</span>
-<span id="cb116-3"><a href="dataset-file-types.html#cb116-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb116-4"><a href="dataset-file-types.html#cb116-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb116-5"><a href="dataset-file-types.html#cb116-5" aria-hidden="true" tabindex="-1"></a>df_excel <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">&quot;sample_data.xlsx&quot;</span>)</span>
-<span id="cb116-6"><a href="dataset-file-types.html#cb116-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_excel)</span></code></pre></div>
+<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="dataset-file-types.html#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install and load package</span></span>
+<span id="cb112-2"><a href="dataset-file-types.html#cb112-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;readxl&quot;</span>)</span>
+<span id="cb112-3"><a href="dataset-file-types.html#cb112-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb112-4"><a href="dataset-file-types.html#cb112-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-5"><a href="dataset-file-types.html#cb112-5" aria-hidden="true" tabindex="-1"></a>df_excel <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">&quot;sample_data.xlsx&quot;</span>)</span>
+<span id="cb112-6"><a href="dataset-file-types.html#cb112-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_excel)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM/export/png?id=199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM&amp;pageid=g399e5a917a_0_41" alt="" />
 <p class="caption">Find local file</p>
@@ -1241,21 +1241,21 @@ The first is what data frame we would like to write to a CSV file. In this case,
 <div id="reading-tsv-files-into-rstudio-cloud" class="section level3" number="23.0.9">
 <h3><span class="header-section-number">23.0.9</span> Reading TSV files into RStudio Cloud</h3>
 <p>The process for reading these files into R is similar to what you’ve seen so far. We’ll again use the <code>readr</code> package, but we’ll instead use the <code>read_tsv()</code> function.</p>
-<div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="dataset-file-types.html#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="do">## read TSV into R</span></span>
-<span id="cb117-2"><a href="dataset-file-types.html#cb117-2" aria-hidden="true" tabindex="-1"></a>df_tsv <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">&quot;sample_data - Sheet1.tsv&quot;</span>)</span>
-<span id="cb117-3"><a href="dataset-file-types.html#cb117-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb117-4"><a href="dataset-file-types.html#cb117-4" aria-hidden="true" tabindex="-1"></a><span class="do">## look at the object</span></span>
-<span id="cb117-5"><a href="dataset-file-types.html#cb117-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_tsv)</span></code></pre></div>
+<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="dataset-file-types.html#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="do">## read TSV into R</span></span>
+<span id="cb113-2"><a href="dataset-file-types.html#cb113-2" aria-hidden="true" tabindex="-1"></a>df_tsv <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">&quot;sample_data - Sheet1.tsv&quot;</span>)</span>
+<span id="cb113-3"><a href="dataset-file-types.html#cb113-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-4"><a href="dataset-file-types.html#cb113-4" aria-hidden="true" tabindex="-1"></a><span class="do">## look at the object</span></span>
+<span id="cb113-5"><a href="dataset-file-types.html#cb113-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_tsv)</span></code></pre></div>
 </div>
 <div id="reading-txt-files-into-rstudio-cloud" class="section level3" number="23.0.10">
 <h3><span class="header-section-number">23.0.10</span> Reading TXT files into RStudio Cloud</h3>
 <p>Sometimes, tab-separated files are saved with the .txt file extension. TXT files can store tabular data, but they can also store simple text. Thus, while TSV is the more appropriate extension for tabular data that are tab-separated, you’ll often run into tabular data that individuals have saved as a TXT file. In these cases, you’ll want to use the more generic <code>read_delim()</code> function from <code>readr</code>.</p>
 <p>Google Sheets does not allow tab-separated files to be downloaded with the .txt file extension (since .tsv is more appropriate); however, if you were to have a file “sample_data.txt” uploaded into your RStudio Cloud project, you could use the following code to read it into your R Environment, where “ specifies that the file is tab-delimited.</p>
-<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="dataset-file-types.html#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="do">## read TXT into R</span></span>
-<span id="cb118-2"><a href="dataset-file-types.html#cb118-2" aria-hidden="true" tabindex="-1"></a>df_txt <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(<span class="st">&quot;sample_data.txt&quot;</span>, <span class="at">delim =</span> <span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>)</span>
-<span id="cb118-3"><a href="dataset-file-types.html#cb118-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb118-4"><a href="dataset-file-types.html#cb118-4" aria-hidden="true" tabindex="-1"></a><span class="do">## look at the object</span></span>
-<span id="cb118-5"><a href="dataset-file-types.html#cb118-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_txt)</span></code></pre></div>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="dataset-file-types.html#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="do">## read TXT into R</span></span>
+<span id="cb114-2"><a href="dataset-file-types.html#cb114-2" aria-hidden="true" tabindex="-1"></a>df_txt <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(<span class="st">&quot;sample_data.txt&quot;</span>, <span class="at">delim =</span> <span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>)</span>
+<span id="cb114-3"><a href="dataset-file-types.html#cb114-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb114-4"><a href="dataset-file-types.html#cb114-4" aria-hidden="true" tabindex="-1"></a><span class="do">## look at the object</span></span>
+<span id="cb114-5"><a href="dataset-file-types.html#cb114-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_txt)</span></code></pre></div>
 <p>This function allows you to specify how the file you’re reading is in delimited. This means, rather than R knowing by default whether or not the data are comma- or tab- separated, you’ll have to specify it within the argument <code>delim</code> in the function.</p>
 <p><code>read_delim()</code> is a more generic version of <code>read_csv()</code>. What this means is that you <em>could</em> use <code>read_delim()</code> to read in a CSV file. You would just need to specify that the file was comma-delimited if you were to use that function.</p>
 </div>
@@ -1264,7 +1264,7 @@ The first is what data frame we would like to write to a CSV file. In this case,
 <p>The last topic of this lesson is about how to export data from R. So far we learned about reading data into R. However, sometimes you would like to share <em>your</em> data with others and need to export your data from R to some format that your collaborators can see.</p>
 <p>As discussed above, CSV format is a good candidate because of its simplicity and compatibility. Let’s say you have a data frame in the R environment that you would like to export as a CSV. To do so, you could use <code>write_csv()</code> from the <code>readr</code> package.</p>
 <p>Since both methods are fairly similar, let’s look at the one from <code>readr</code> package. Since we’ve already created a data frame named <code>df_csv</code>, we can export it to a CSV file using the following code. After typing this command, a new CSV file called <code>my_csv_file.csv</code> will appear in the Files section.</p>
-<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="dataset-file-types.html#cb119-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(df_csv, <span class="at">path =</span> <span class="st">&quot;my_csv_file.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="dataset-file-types.html#cb115-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(df_csv, <span class="at">path =</span> <span class="st">&quot;my_csv_file.csv&quot;</span>)</span></code></pre></div>
 <p>You could similar save your data as a TSV file using the function <code>write_tsv()</code> function.</p>
 <p>We’ll finally note that there are default R functions <code>write.csv()</code> and <code>write.table()</code> that accomplish similar goals. You may see these in others’ code; however, we recommend sticking to the intuitive and quick <code>readr</code> functions discussed in this lesson.</p>
 </div>
@@ -1274,8 +1274,8 @@ The first is what data frame we would like to write to a CSV file. In this case,
 <div id="saved-r-objects-.rda-.rdata" class="section level4" number="23.1.0.1">
 <h4><span class="header-section-number">23.1.0.1</span> Saved R objects (.rda, .RData)</h4>
 <p>As you write R code (say, in an .R file), you will inevitably create objects. For example, in the code you see here, <code>mpg</code> is an object created by this code that contains the data from the <code>mpg</code> column of the <code>mtcars</code> data frame and <code>cyl</code> an object from the <code>cyl</code> column of the <code>mtcars</code> data frame.</p>
-<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="dataset-file-types.html#cb120-1" aria-hidden="true" tabindex="-1"></a>mpg <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>mpg</span>
-<span id="cb120-2"><a href="dataset-file-types.html#cb120-2" aria-hidden="true" tabindex="-1"></a>cyl <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>cyl</span></code></pre></div>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="dataset-file-types.html#cb116-1" aria-hidden="true" tabindex="-1"></a>mpg <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>mpg</span>
+<span id="cb116-2"><a href="dataset-file-types.html#cb116-2" aria-hidden="true" tabindex="-1"></a>cyl <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>cyl</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&amp;pageid=g3c53e17c93_1_27" alt="" />
 <p class="caption"><code>mpg</code> and <code>cyl</code> are objects</p>
@@ -1287,7 +1287,7 @@ The first is what data frame we would like to write to a CSV file. In this case,
 </div>
 <p>Often you’ll create objects that you won’t need to save. However, from time to time you’ll make changes to a data frame or generate an object that you’ll want to use later. To save an object and use it later, you can save it as an R data file. These files contain objects that can be saved directly <em>from</em> and read directly <em>into</em> R using the commands <code>save()</code> and <code>load()</code>. And, in particular, R data files can <strong>save multiple objects</strong>.</p>
 <p>To save the two objects <code>mpg</code> and <code>cyl</code> into an R Data file, you would do the following:</p>
-<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb121-1"><a href="dataset-file-types.html#cb121-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(mpg, cyl, <span class="at">file=</span><span class="st">&quot;mtcars_objects.rda&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="dataset-file-types.html#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(mpg, cyl, <span class="at">file=</span><span class="st">&quot;mtcars_objects.rda&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&amp;pageid=g3c53e17c93_1_36" alt="" />
 <p class="caption"><code>save</code></p>
@@ -1304,7 +1304,7 @@ The first is what data frame we would like to write to a CSV file. In this case,
 <p class="caption">Empty Environment</p>
 </div>
 <p>To load them back in from <code>mtcars_objects.rda</code>, you would do the following:</p>
-<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="dataset-file-types.html#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;mtcars_objects.rda&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="dataset-file-types.html#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;mtcars_objects.rda&quot;</span>)</span></code></pre></div>
 <p>Note that you need to put quotes around the filename to specify that this is a file and <em>not</em> an object in R.</p>
 <p>A second note is a reminder about file paths. Here, the file we want is in the directory we’re working in. If that were not the case, you would have to specify the path to the file within the quotation marks (i.e. “path/to/file/mtcars_objects.rda”)</p>
 <p>When you run this line of code, you’ll see that <code>cyl</code> and <code>mpg</code> are once again available objects in your RStudio Environment tab!</p>
@@ -1319,7 +1319,7 @@ The first is what data frame we would like to write to a CSV file. In this case,
 <p>Serialized R object files are similar to R data files with the exception that they can only save a <em>single</em> R object at a time. When you only want to save a single object (say, <code>mpg</code>), these files are the best option.</p>
 <p>To save a serialized R object file, you’ll use the function <code>saveRDS()</code>. To read a serialized object file into R, you’ll use the function <code>readRDS()</code>.</p>
 <p>For example, to save the <code>mpg</code> object you would use the following:</p>
-<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="dataset-file-types.html#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(mpg, <span class="at">file=</span><span class="st">&quot;mpg.rds&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="dataset-file-types.html#cb119-1" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(mpg, <span class="at">file=</span><span class="st">&quot;mpg.rds&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&amp;pageid=g3c53e17c93_1_85" alt="" />
 <p class="caption"><code>saveRDS</code></p>
@@ -1331,7 +1331,7 @@ The first is what data frame we would like to write to a CSV file. In this case,
 <p class="caption">broom icon to clean up Environment</p>
 </div>
 <p>Unlike with .rda objects, when you read a .rds object back in, to make the object available, you have to assign the object a variable name. Otherwise, the contents of the object will just print to your Console. This is helpful because it doesn’t matter what the name of the object was when you saved it. As long as you know the filename, you can pick a new object name. Here, we assign the serialized R object file to <code>mpg</code>, but we could have chosen a different object name.</p>
-<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="dataset-file-types.html#cb124-1" aria-hidden="true" tabindex="-1"></a> mpg <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">&quot;mpg.rds&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="dataset-file-types.html#cb120-1" aria-hidden="true" tabindex="-1"></a> mpg <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">&quot;mpg.rds&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&amp;pageid=g3c53e17c93_1_101" alt="" />
 <p class="caption"><code>readRDS</code></p>
@@ -1367,7 +1367,7 @@ The first is what data frame we would like to write to a CSV file. In this case,
 <p class="caption">R data sets</p>
 </div>
 <p>If one of these datasets looks interesting to you, say the “Orange” dataset, you can get more detailed information about the dataset by using help function in R (<code>?</code>).</p>
-<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="dataset-file-types.html#cb125-1" aria-hidden="true" tabindex="-1"></a> ?Orange</span></code></pre></div>
+<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb121-1"><a href="dataset-file-types.html#cb121-1" aria-hidden="true" tabindex="-1"></a> ?Orange</span></code></pre></div>
 <p>This opens up an explanation in the Help tab of RStudio Cloud. Here, you can see a description of the dataset and can scroll to see what variables are included in this dataset. Finally, at the bottom of the Help window, you’ll see examples of how to work with the dataset!</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&amp;pageid=g3c53e17c93_1_127" alt="" />
@@ -1378,15 +1378,15 @@ The first is what data frame we would like to write to a CSV file. In this case,
 <h3><span class="header-section-number">23.1.2</span> Datasets in Packages</h3>
 <p>In addition to the datasets available by default to you in R, many packages (but not all!) also contain datasets that you can use. To see a list of what datasets are available from a specific package, you can again use the <code>data()</code> function, but you’ll want to specify the name of the package using the <code>package=</code> argument</p>
 <p>For example, to see a list of the datasets available from the ggplot2 package, you would want to use the following:</p>
-<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="dataset-file-types.html#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="at">package=</span><span class="st">&quot;ggplot2&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="dataset-file-types.html#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="at">package=</span><span class="st">&quot;ggplot2&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&amp;pageid=g3c53e17c93_1_138" alt="" />
 <p class="caption">datasets available from ggplot2 package</p>
 </div>
 <p>As before, this function will open up a list of the available datasets within that package.</p>
 <p>In order to use any of these datasets, however, you’ll have to load the package using the <code>library()</code> function. After loading the package, you can then access the Help pages for a dataset as previously using <code>?</code>.</p>
-<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="dataset-file-types.html#cb127-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb127-2"><a href="dataset-file-types.html#cb127-2" aria-hidden="true" tabindex="-1"></a>?msleep</span></code></pre></div>
+<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="dataset-file-types.html#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb123-2"><a href="dataset-file-types.html#cb123-2" aria-hidden="true" tabindex="-1"></a>?msleep</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&amp;pageid=g3c53e17c93_1_143" alt="" />
 <p class="caption"><code>msleep</code> from ggplot2 package dataset Help page</p>

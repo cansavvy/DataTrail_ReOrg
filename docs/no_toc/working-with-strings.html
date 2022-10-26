@@ -1136,18 +1136,18 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>A string is a sequence of characters, letters, numbers or symbols.</p>
 </blockquote>
 <p>So within R, you could create a string using this syntax. Note that the string begins and ends with quotation marks:</p>
-<div class="sourceCode" id="cb220"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb220-1"><a href="working-with-strings.html#cb220-1" aria-hidden="true" tabindex="-1"></a>stringA <span class="ot">&lt;-</span> <span class="st">&quot;This sentence is a string.&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb216"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb216-1"><a href="working-with-strings.html#cb216-1" aria-hidden="true" tabindex="-1"></a>stringA <span class="ot">&lt;-</span> <span class="st">&quot;This sentence is a string.&quot;</span></span></code></pre></div>
 <p>Multiple strings can be stored within vectors. So, if you have multiple vectors that you want to store in a single object, you could do so by using c() around the strings you want to store and commas to separate each individual string:</p>
-<div class="sourceCode" id="cb221"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb221-1"><a href="working-with-strings.html#cb221-1" aria-hidden="true" tabindex="-1"></a>objectA <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;This sentence is a string.&quot;</span>, <span class="st">&quot;Short String&quot;</span>, <span class="st">&quot;Third string&quot;</span> )</span></code></pre></div>
+<div class="sourceCode" id="cb217"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb217-1"><a href="working-with-strings.html#cb217-1" aria-hidden="true" tabindex="-1"></a>objectA <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;This sentence is a string.&quot;</span>, <span class="st">&quot;Short String&quot;</span>, <span class="st">&quot;Third string&quot;</span> )</span></code></pre></div>
 </div>
 <div id="stringr" class="section level3" number="33.0.2">
 <h3><span class="header-section-number">33.0.2</span> stringr</h3>
 <p><a href="http://stringr.tidyverse.org/">stringr</a> is a package within the <a href="https://www.tidyverse.org/">tidyverse</a> specifically designed to work well with strings. All functions within this package start with <code>str_</code>, as you’ll see below. There are <em>many</em> helpful functions within the stringr package. We’ll only review the basics here, but if you’re looking to accomplish something with a string and aren’t sure how to approach it, the stringr package is a good first place to look. To install and load the stringr package, you’ll use the following:</p>
-<div class="sourceCode" id="cb222"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb222-1"><a href="working-with-strings.html#cb222-1" aria-hidden="true" tabindex="-1"></a><span class="co"># If not already installed, you&#39;ll need to install the package</span></span>
-<span id="cb222-2"><a href="working-with-strings.html#cb222-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;stringr&quot;</span>)</span>
-<span id="cb222-3"><a href="working-with-strings.html#cb222-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb222-4"><a href="working-with-strings.html#cb222-4" aria-hidden="true" tabindex="-1"></a><span class="co"># load package into R</span></span>
-<span id="cb222-5"><a href="working-with-strings.html#cb222-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span></code></pre></div>
+<div class="sourceCode" id="cb218"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb218-1"><a href="working-with-strings.html#cb218-1" aria-hidden="true" tabindex="-1"></a><span class="co"># If not already installed, you&#39;ll need to install the package</span></span>
+<span id="cb218-2"><a href="working-with-strings.html#cb218-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;stringr&quot;</span>)</span>
+<span id="cb218-3"><a href="working-with-strings.html#cb218-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb218-4"><a href="working-with-strings.html#cb218-4" aria-hidden="true" tabindex="-1"></a><span class="co"># load package into R</span></span>
+<span id="cb218-5"><a href="working-with-strings.html#cb218-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span></code></pre></div>
 <p>The best way to work through this lesson is to copy and paste every line of code into your RStudio window and see if the output makes sense to you. Working with strings and regular expressions is best learned by practice.</p>
 <div id="available-functions" class="section level4" number="33.0.2.1">
 <h4><span class="header-section-number">33.0.2.1</span> Available functions</h4>
@@ -1169,9 +1169,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="string-length" class="section level4" number="33.0.3.1">
 <h4><span class="header-section-number">33.0.3.1</span> String length</h4>
 <p>Returning to our object with three strings from earlier in the lesson, we can determine the length of each string in the vector.</p>
-<div class="sourceCode" id="cb223"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb223-1"><a href="working-with-strings.html#cb223-1" aria-hidden="true" tabindex="-1"></a>objectA <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;This sentence is a string.&quot;</span>, <span class="st">&quot;Short String&quot;</span>, <span class="st">&quot;Third string&quot;</span> )</span>
-<span id="cb223-2"><a href="working-with-strings.html#cb223-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb223-3"><a href="working-with-strings.html#cb223-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_length</span>(objectA)</span></code></pre></div>
+<div class="sourceCode" id="cb219"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb219-1"><a href="working-with-strings.html#cb219-1" aria-hidden="true" tabindex="-1"></a>objectA <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;This sentence is a string.&quot;</span>, <span class="st">&quot;Short String&quot;</span>, <span class="st">&quot;Third string&quot;</span> )</span>
+<span id="cb219-2"><a href="working-with-strings.html#cb219-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb219-3"><a href="working-with-strings.html#cb219-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_length</span>(objectA)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_17" alt="" />
 <p class="caption">str_length output</p>
@@ -1181,28 +1181,28 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="combining-strings-str_c" class="section level4" number="33.0.3.2">
 <h4><span class="header-section-number">33.0.3.2</span> Combining strings: <code>str_c()</code></h4>
 <p>If you were interested in combining strings, you’d want to use <code>str_c</code>.</p>
-<div class="sourceCode" id="cb224"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb224-1"><a href="working-with-strings.html#cb224-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str_c</span>( <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Morning&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb220"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb220-1"><a href="working-with-strings.html#cb220-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str_c</span>( <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Morning&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_0" alt="" />
 <p class="caption">str_c</p>
 </div>
 <p>However, the output from this doesn’t look quite right. You may want a space between these two words when you combine the two strings. That can be controlled with the <code>sep</code> argument.</p>
-<div class="sourceCode" id="cb225"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb225-1"><a href="working-with-strings.html#cb225-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str_c</span>( <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Morning&quot;</span>, <span class="at">sep=</span><span class="st">&quot; &quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb221"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb221-1"><a href="working-with-strings.html#cb221-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str_c</span>( <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Morning&quot;</span>, <span class="at">sep=</span><span class="st">&quot; &quot;</span>)</span></code></pre></div>
 </div>
 <div id="subsetting-strings-str_sub" class="section level4" number="33.0.3.3">
 <h4><span class="header-section-number">33.0.3.3</span> Subsetting strings: <code>str_sub()</code></h4>
 <p>Often, it’s important to get part of a string out. To do this, you’ll want to subset the string using the <code>str_sub()</code> function. For example, if you wanted only the first three characters in the string below, you would specify that within <code>str_sub()</code>.</p>
-<div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="working-with-strings.html#cb226-1" aria-hidden="true" tabindex="-1"></a>object <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Morning&quot;</span>)</span>
-<span id="cb226-2"><a href="working-with-strings.html#cb226-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb226-3"><a href="working-with-strings.html#cb226-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_sub</span>(object, <span class="dv">1</span>, <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb222"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb222-1"><a href="working-with-strings.html#cb222-1" aria-hidden="true" tabindex="-1"></a>object <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Morning&quot;</span>)</span>
+<span id="cb222-2"><a href="working-with-strings.html#cb222-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb222-3"><a href="working-with-strings.html#cb222-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_sub</span>(object, <span class="dv">1</span>, <span class="dv">3</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g398837bd56_0_29" alt="" />
 <p class="caption">str_sub output</p>
 </div>
 <p>You can also use negative numbers to count from the end of the string. For example, below we see code that returns the last three positions in the string.</p>
-<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="working-with-strings.html#cb227-1" aria-hidden="true" tabindex="-1"></a>object <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Morning&quot;</span>)</span>
-<span id="cb227-2"><a href="working-with-strings.html#cb227-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb227-3"><a href="working-with-strings.html#cb227-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_sub</span>(object, <span class="sc">-</span><span class="dv">3</span>, <span class="sc">-</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb223"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb223-1"><a href="working-with-strings.html#cb223-1" aria-hidden="true" tabindex="-1"></a>object <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Morning&quot;</span>)</span>
+<span id="cb223-2"><a href="working-with-strings.html#cb223-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb223-3"><a href="working-with-strings.html#cb223-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_sub</span>(object, <span class="sc">-</span><span class="dv">3</span>, <span class="sc">-</span><span class="dv">1</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g398837bd56_0_36" alt="" />
 <p class="caption">str_sub output counting from end of string</p>
@@ -1211,9 +1211,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="string-sorting-str_sort" class="section level4" number="33.0.3.4">
 <h4><span class="header-section-number">33.0.3.4</span> String sorting: <code>str_sort()</code></h4>
 <p>Finally, if you wanted to sort a string alphabetically, <code>str_sort()</code> can help you accomplish that.</p>
-<div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="working-with-strings.html#cb228-1" aria-hidden="true" tabindex="-1"></a>names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Keisha&quot;</span>, <span class="st">&quot;Mohammed&quot;</span>, <span class="st">&quot;Jane&quot;</span>)</span>
-<span id="cb228-2"><a href="working-with-strings.html#cb228-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb228-3"><a href="working-with-strings.html#cb228-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_sort</span>(names)</span></code></pre></div>
+<div class="sourceCode" id="cb224"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb224-1"><a href="working-with-strings.html#cb224-1" aria-hidden="true" tabindex="-1"></a>names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Keisha&quot;</span>, <span class="st">&quot;Mohammed&quot;</span>, <span class="st">&quot;Jane&quot;</span>)</span>
+<span id="cb224-2"><a href="working-with-strings.html#cb224-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb224-3"><a href="working-with-strings.html#cb224-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_sort</span>(names)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g398837bd56_0_42" alt="" />
 <p class="caption">str_sort() output sorts strings</p>
@@ -1241,32 +1241,32 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="show-matches-str_view" class="section level4" number="33.0.4.2">
 <h4><span class="header-section-number">33.0.4.2</span> Show matches: str_view()</h4>
 <p>To get comfortable with using regexps with strings, <code>str_view()</code> can be very helpful. The output from <code>str_view()</code> highlights what portion of your string match the pattern specified in your regexp with a gray box. For example, to we’ll start using anchors and <code>str_view()</code> below:</p>
-<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="working-with-strings.html#cb229-1" aria-hidden="true" tabindex="-1"></a>names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Keisha&quot;</span>, <span class="st">&quot;Mohammed&quot;</span>, <span class="st">&quot;Jane&quot;</span>, <span class="st">&quot;Mathieu&quot;</span>)</span>
-<span id="cb229-2"><a href="working-with-strings.html#cb229-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb229-3"><a href="working-with-strings.html#cb229-3" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that start with &quot;M&quot;</span></span>
-<span id="cb229-4"><a href="working-with-strings.html#cb229-4" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view</span>(names, <span class="st">&quot;^M&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb225"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb225-1"><a href="working-with-strings.html#cb225-1" aria-hidden="true" tabindex="-1"></a>names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Keisha&quot;</span>, <span class="st">&quot;Mohammed&quot;</span>, <span class="st">&quot;Jane&quot;</span>, <span class="st">&quot;Mathieu&quot;</span>)</span>
+<span id="cb225-2"><a href="working-with-strings.html#cb225-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb225-3"><a href="working-with-strings.html#cb225-3" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that start with &quot;M&quot;</span></span>
+<span id="cb225-4"><a href="working-with-strings.html#cb225-4" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view</span>(names, <span class="st">&quot;^M&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_30" alt="" />
 <p class="caption"><code>str_view()</code> identifies names that start with M</p>
 </div>
 <p>In this first example we see in the Viewer Panel that str_view has identified the names that start with the letter M.</p>
 <p>However, if you try to match strings that end with the letter “M”, no match is found.</p>
-<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="working-with-strings.html#cb230-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that end with &quot;M&quot;</span></span>
-<span id="cb230-2"><a href="working-with-strings.html#cb230-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view</span>(names, <span class="st">&quot;M$&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="working-with-strings.html#cb226-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that end with &quot;M&quot;</span></span>
+<span id="cb226-2"><a href="working-with-strings.html#cb226-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view</span>(names, <span class="st">&quot;M$&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_26" alt="" />
 <p class="caption"><code>str_view()</code> does not identify any names that end with M</p>
 </div>
 <p>To identify names by that end with the letter “a”, you would use the following.</p>
-<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="working-with-strings.html#cb231-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that end with &quot;a&quot;</span></span>
-<span id="cb231-2"><a href="working-with-strings.html#cb231-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view</span>(names, <span class="st">&quot;a$&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="working-with-strings.html#cb227-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that end with &quot;a&quot;</span></span>
+<span id="cb227-2"><a href="working-with-strings.html#cb227-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view</span>(names, <span class="st">&quot;a$&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_34" alt="" />
 <p class="caption"><code>str_view()</code> identifies names that end with a</p>
 </div>
 <p>Note, however, that regexps are case sensitive. To match patterns, you have to consider that “A” and “a” are different characters.</p>
-<div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="working-with-strings.html#cb232-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that end with &quot;A&quot;</span></span>
-<span id="cb232-2"><a href="working-with-strings.html#cb232-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view</span>(names, <span class="st">&quot;A$&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="working-with-strings.html#cb228-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that end with &quot;A&quot;</span></span>
+<span id="cb228-2"><a href="working-with-strings.html#cb228-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view</span>(names, <span class="st">&quot;A$&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_39" alt="" />
 <p class="caption"><code>str_view()</code> does not identify any names that end with A</p>
@@ -1275,17 +1275,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="count-matches-str_count" class="section level4" number="33.0.4.3">
 <h4><span class="header-section-number">33.0.4.3</span> Count matches: <code>str_count()</code></h4>
 <p>To count the number of matches within your strings, you would use <code>str_count()</code>. Below, using the names vector we’ve been using, we see that <code>str_count()</code> produces a 1 for those names that start with “M” and a 0 otherwise.</p>
-<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="working-with-strings.html#cb233-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that start with &quot;M&quot;</span></span>
-<span id="cb233-2"><a href="working-with-strings.html#cb233-2" aria-hidden="true" tabindex="-1"></a><span class="do">## return count of the number of times string matches pattern</span></span>
-<span id="cb233-3"><a href="working-with-strings.html#cb233-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_count</span>(names, <span class="st">&quot;^M&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="working-with-strings.html#cb229-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that start with &quot;M&quot;</span></span>
+<span id="cb229-2"><a href="working-with-strings.html#cb229-2" aria-hidden="true" tabindex="-1"></a><span class="do">## return count of the number of times string matches pattern</span></span>
+<span id="cb229-3"><a href="working-with-strings.html#cb229-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_count</span>(names, <span class="st">&quot;^M&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_90" alt="" />
 <p class="caption">str_count() strings that start with “M”</p>
 </div>
 <p>However, if we instead wanted a count of the numbers of lowercase “m”s, we could still use <code>str_count()</code> to accomplish that. Notice below we’ve removed the specification to just look at the beginning of the string. Here, we’re looking for lowercase m’s anywhere in the string and counting them:</p>
-<div class="sourceCode" id="cb234"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb234-1"><a href="working-with-strings.html#cb234-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that have a lowercase &quot;m&quot;</span></span>
-<span id="cb234-2"><a href="working-with-strings.html#cb234-2" aria-hidden="true" tabindex="-1"></a><span class="do">## return count of the number of times string matches pattern</span></span>
-<span id="cb234-3"><a href="working-with-strings.html#cb234-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_count</span>(names, <span class="st">&quot;m&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="working-with-strings.html#cb230-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that have a lowercase &quot;m&quot;</span></span>
+<span id="cb230-2"><a href="working-with-strings.html#cb230-2" aria-hidden="true" tabindex="-1"></a><span class="do">## return count of the number of times string matches pattern</span></span>
+<span id="cb230-3"><a href="working-with-strings.html#cb230-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_count</span>(names, <span class="st">&quot;m&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_108" alt="" />
 <p class="caption">str_count() strings that have an m in them</p>
@@ -1294,9 +1294,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="detect-matches-str_detect" class="section level4" number="33.0.4.4">
 <h4><span class="header-section-number">33.0.4.4</span> Detect matches: <code>str_detect()</code></h4>
 <p>Instead of returning a count, at times you’re just interested in knowing which strings match the pattern you’re searching for. In these cases you’ll want to use <code>str_detect()</code>. This function simply returns a TRUE if the string matches the pattern specified and FALSE otherwise.</p>
-<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="working-with-strings.html#cb235-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that start with &quot;M&quot;</span></span>
-<span id="cb235-2"><a href="working-with-strings.html#cb235-2" aria-hidden="true" tabindex="-1"></a><span class="do">## return TRUE if they do; FALSE otherwise</span></span>
-<span id="cb235-3"><a href="working-with-strings.html#cb235-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_detect</span>(names, <span class="st">&quot;^M&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="working-with-strings.html#cb231-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that start with &quot;M&quot;</span></span>
+<span id="cb231-2"><a href="working-with-strings.html#cb231-2" aria-hidden="true" tabindex="-1"></a><span class="do">## return TRUE if they do; FALSE otherwise</span></span>
+<span id="cb231-3"><a href="working-with-strings.html#cb231-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_detect</span>(names, <span class="st">&quot;^M&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_96" alt="" />
 <p class="caption">str_detect() returns TRUE for strings that match the specified pattern; FALSE otherwise</p>
@@ -1305,9 +1305,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="subset-matches-str_subset" class="section level4" number="33.0.4.5">
 <h4><span class="header-section-number">33.0.4.5</span> Subset matches: <code>str_subset()</code></h4>
 <p>To return the actual string that matches the specified pattern, rather than a TRUE/FALSE, you’ll look to <code>str_subset()</code>. This function pulls out those strings that match the specified pattern. For example, to obtain the subset of names whose values start with the capital letter “M”, you would use the following:</p>
-<div class="sourceCode" id="cb236"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb236-1"><a href="working-with-strings.html#cb236-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that start with &quot;M&quot;</span></span>
-<span id="cb236-2"><a href="working-with-strings.html#cb236-2" aria-hidden="true" tabindex="-1"></a><span class="do">## return whole string</span></span>
-<span id="cb236-3"><a href="working-with-strings.html#cb236-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_subset</span>(names, <span class="st">&quot;^M&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="working-with-strings.html#cb232-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify strings that start with &quot;M&quot;</span></span>
+<span id="cb232-2"><a href="working-with-strings.html#cb232-2" aria-hidden="true" tabindex="-1"></a><span class="do">## return whole string</span></span>
+<span id="cb232-3"><a href="working-with-strings.html#cb232-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_subset</span>(names, <span class="st">&quot;^M&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_102" alt="" />
 <p class="caption">str_subset() returns the strings that match the pattern specified</p>
@@ -1316,9 +1316,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="extract-matches-str_extract" class="section level4" number="33.0.4.6">
 <h4><span class="header-section-number">33.0.4.6</span> Extract matches: <code>str_extract()</code></h4>
 <p>To extract only the portions of the string that match the specified pattern, you would use <code>str_extract()</code>. This function returns the pattern specified for strings where it is found and NA otherwise. For example, by searching for names that start with M, below, we see that the second and fourth strings in our vector return the pattern specified (“M”) and that the first and third strings in the vector return NA, as they do not start with a capital “M”.</p>
-<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="working-with-strings.html#cb237-1" aria-hidden="true" tabindex="-1"></a><span class="do">## return &quot;M&quot; from strings with &quot;M&quot; in it</span></span>
-<span id="cb237-2"><a href="working-with-strings.html#cb237-2" aria-hidden="true" tabindex="-1"></a><span class="do">## otherwise, return NA</span></span>
-<span id="cb237-3"><a href="working-with-strings.html#cb237-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_extract</span>(names, <span class="st">&quot;^M&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="working-with-strings.html#cb233-1" aria-hidden="true" tabindex="-1"></a><span class="do">## return &quot;M&quot; from strings with &quot;M&quot; in it</span></span>
+<span id="cb233-2"><a href="working-with-strings.html#cb233-2" aria-hidden="true" tabindex="-1"></a><span class="do">## otherwise, return NA</span></span>
+<span id="cb233-3"><a href="working-with-strings.html#cb233-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_extract</span>(names, <span class="st">&quot;^M&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_122" alt="" />
 <p class="caption">str_extract() returns the portions of the strings that match the pattern specified</p>
@@ -1327,8 +1327,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="replace-matches-str_replace" class="section level4" number="33.0.4.7">
 <h4><span class="header-section-number">33.0.4.7</span> Replace matches: <code>str_replace()</code></h4>
 <p>The final basic function from <code>stringr</code> that we’ll discuss is <code>str_replace()</code>. This function identifies a regex and replaces each occurrence with whatever replacement the user specifies. For example, below we search for strings that start with the capital letter “M” and replace each of them with a question mark. All strings that do <em>not</em> match the regex are returned unchanged.</p>
-<div class="sourceCode" id="cb238"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb238-1"><a href="working-with-strings.html#cb238-1" aria-hidden="true" tabindex="-1"></a><span class="do">## replace capital M with a question mark</span></span>
-<span id="cb238-2"><a href="working-with-strings.html#cb238-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_replace</span>(names, <span class="st">&quot;^M&quot;</span>, <span class="st">&quot;?&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb234"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb234-1"><a href="working-with-strings.html#cb234-1" aria-hidden="true" tabindex="-1"></a><span class="do">## replace capital M with a question mark</span></span>
+<span id="cb234-2"><a href="working-with-strings.html#cb234-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_replace</span>(names, <span class="st">&quot;^M&quot;</span>, <span class="st">&quot;?&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_131" alt="" />
 <p class="caption">str_replace() replaces regex with specified characters</p>
@@ -1340,8 +1340,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="searching-for-characters" class="section level5" number="33.0.4.8.1">
 <h5><span class="header-section-number">33.0.4.8.1</span> Searching for characters</h5>
 <p>To search for a set of characters, you place these characters within brackets. Below, this will identify anywhere in the strings where you have a lowercase vowel. Note, that we’re now using <code>str_view_all()</code> to identify all occurrences of these characters, rather than <code>str_view()</code>, which only identifies the first occurrence in each string.</p>
-<div class="sourceCode" id="cb239"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb239-1"><a href="working-with-strings.html#cb239-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify all lowercase vowels</span></span>
-<span id="cb239-2"><a href="working-with-strings.html#cb239-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(names, <span class="st">&quot;[aeiou]&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="working-with-strings.html#cb235-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify all lowercase vowels</span></span>
+<span id="cb235-2"><a href="working-with-strings.html#cb235-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(names, <span class="st">&quot;[aeiou]&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_69" alt="" />
 <p class="caption">brackets specify which characters to search for</p>
@@ -1350,8 +1350,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="searching-for-anything-other-than-a-set-of-characters" class="section level5" number="33.0.4.8.2">
 <h5><span class="header-section-number">33.0.4.8.2</span> Searching for anything <em>other</em> than a set of characters</h5>
 <p>By adding a caret (<code>^</code>) before the vowels within the brackets, this regular expressions specifies that you are searching for any character that is not a lowercase vowel within your strings.</p>
-<div class="sourceCode" id="cb240"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb240-1"><a href="working-with-strings.html#cb240-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify anything that&#39;s NOT a lowercase vowel</span></span>
-<span id="cb240-2"><a href="working-with-strings.html#cb240-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(names, <span class="st">&quot;[^aeiou]&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb236"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb236-1"><a href="working-with-strings.html#cb236-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify anything that&#39;s NOT a lowercase vowel</span></span>
+<span id="cb236-2"><a href="working-with-strings.html#cb236-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(names, <span class="st">&quot;[^aeiou]&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_78" alt="" />
 <p class="caption">brackets with a caret first specify which characters NOT to search for</p>
@@ -1360,10 +1360,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="search-for-digits" class="section level5" number="33.0.4.8.3">
 <h5><span class="header-section-number">33.0.4.8.3</span> Search for digits</h5>
 <p>To search for digits (numeric variable between 0 and 9) in a string you use “; however, backslashes are protected characters in R. This means that you have to escape this character first with an additional backslash (<code>\</code>), to let R know that you want to search for the regular expression”.</p>
-<div class="sourceCode" id="cb241"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb241-1"><a href="working-with-strings.html#cb241-1" aria-hidden="true" tabindex="-1"></a>addresses <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;1234 Main Street&quot;</span>, <span class="st">&quot;1600 Pennsylvania Ave&quot;</span>, <span class="st">&quot;Brick Building&quot;</span>)</span>
-<span id="cb241-2"><a href="working-with-strings.html#cb241-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb241-3"><a href="working-with-strings.html#cb241-3" aria-hidden="true" tabindex="-1"></a><span class="do">## identify anything that&#39;s a digit</span></span>
-<span id="cb241-4"><a href="working-with-strings.html#cb241-4" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;</span><span class="sc">\\</span><span class="st">d&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="working-with-strings.html#cb237-1" aria-hidden="true" tabindex="-1"></a>addresses <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;1234 Main Street&quot;</span>, <span class="st">&quot;1600 Pennsylvania Ave&quot;</span>, <span class="st">&quot;Brick Building&quot;</span>)</span>
+<span id="cb237-2"><a href="working-with-strings.html#cb237-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb237-3"><a href="working-with-strings.html#cb237-3" aria-hidden="true" tabindex="-1"></a><span class="do">## identify anything that&#39;s a digit</span></span>
+<span id="cb237-4"><a href="working-with-strings.html#cb237-4" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;</span><span class="sc">\\</span><span class="st">d&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_140" alt="" />
 <p class="caption">earches for digits</p>
@@ -1372,8 +1372,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="search-for-whitespace" class="section level5" number="33.0.4.8.4">
 <h5><span class="header-section-number">33.0.4.8.4</span> Search for whitespace</h5>
 <p>Identifying whitespace in R identifies any spaces, tabs or newlines. Note that again we have to escape the “” with a backslash for R to recognize the regular expression.</p>
-<div class="sourceCode" id="cb242"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb242-1"><a href="working-with-strings.html#cb242-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any whitespace</span></span>
-<span id="cb242-2"><a href="working-with-strings.html#cb242-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;</span><span class="sc">\\</span><span class="st">s&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb238"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb238-1"><a href="working-with-strings.html#cb238-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any whitespace</span></span>
+<span id="cb238-2"><a href="working-with-strings.html#cb238-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;</span><span class="sc">\\</span><span class="st">s&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_153" alt="" />
 <p class="caption">searches for whitespace</p>
@@ -1382,8 +1382,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="identify-any-character-except-newline" class="section level5" number="33.0.4.8.5">
 <h5><span class="header-section-number">33.0.4.8.5</span> Identify any character (except newline)</h5>
 <p>To identify any character except for a newline you’ll use <code>"."</code>. Notice in our addresses example that there are no newlines, so this pattern will match with the entire string.</p>
-<div class="sourceCode" id="cb243"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb243-1"><a href="working-with-strings.html#cb243-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any character</span></span>
-<span id="cb243-2"><a href="working-with-strings.html#cb243-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;.&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb239"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb239-1"><a href="working-with-strings.html#cb239-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any character</span></span>
+<span id="cb239-2"><a href="working-with-strings.html#cb239-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;.&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_164" alt="" />
 <p class="caption">. searches for any character</p>
@@ -1406,39 +1406,39 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="examples-of-repetition-within-regular-expressions" class="section level5" number="33.0.4.9.1">
 <h5><span class="header-section-number">33.0.4.9.1</span> Examples of repetition within regular expressions</h5>
 <p>Using the definitions above, we can see that the following code will identify patterns within the addresses vector where n shows up one more more times in a string.</p>
-<div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="working-with-strings.html#cb244-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time n shows up one or more times</span></span>
-<span id="cb244-2"><a href="working-with-strings.html#cb244-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;n+&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb240"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb240-1"><a href="working-with-strings.html#cb240-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time n shows up one or more times</span></span>
+<span id="cb240-2"><a href="working-with-strings.html#cb240-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;n+&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_177" alt="" />
 <p class="caption">+ specifies to match the pattern one or more times</p>
 </div>
 <p>While the difference is slight in the output here, we’re identifying portions of the string where n shows up exactly once. So, instead of the ‘nn’ in Pennsylvania matching together, the code here splits these up, due to the fact that we’re specifying the pattern match ‘n’ exactly one time:</p>
-<div class="sourceCode" id="cb245"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb245-1"><a href="working-with-strings.html#cb245-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time n shows up</span></span>
-<span id="cb245-2"><a href="working-with-strings.html#cb245-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;n{1}&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb241"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb241-1"><a href="working-with-strings.html#cb241-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time n shows up</span></span>
+<span id="cb241-2"><a href="working-with-strings.html#cb241-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;n{1}&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_183" alt="" />
 <p class="caption">{#} looks to match the pattern exactly the number of times within the curly braces</p>
 </div>
 <p>If you only wanted to match strings where n showed up twice in a row, you could specify that in this way:</p>
-<div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="working-with-strings.html#cb246-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time n shows up exactly two times in a row</span></span>
-<span id="cb246-2"><a href="working-with-strings.html#cb246-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;n{2}&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb242"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb242-1"><a href="working-with-strings.html#cb242-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time n shows up exactly two times in a row</span></span>
+<span id="cb242-2"><a href="working-with-strings.html#cb242-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;n{2}&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_188" alt="" />
 <p class="caption">{2} specifies that the pattern must be found exactly twice</p>
 </div>
 <p>This could similarly be achieved by specifying to search for the pattern ‘nn’ one or more times (<code>+</code>):</p>
-<div class="sourceCode" id="cb247"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb247-1"><a href="working-with-strings.html#cb247-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time &#39;nn&#39; shows up one or more times</span></span>
-<span id="cb247-2"><a href="working-with-strings.html#cb247-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;nn+&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb243"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb243-1"><a href="working-with-strings.html#cb243-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time &#39;nn&#39; shows up one or more times</span></span>
+<span id="cb243-2"><a href="working-with-strings.html#cb243-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;nn+&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_193" alt="" />
 <p class="caption">nn+ searches for double n one or more times in a string</p>
 </div>
 <p>You can also specify a range of the number of times to search for a pattern within your string. Below, we see that if we specify n be searched for at least two and at most 3 times, the pattern matches within our string. However, if we increase that to between three and four times, no pattern matching occurs, as there are never three or four n’s in a row in our strings.</p>
-<div class="sourceCode" id="cb248"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb248-1"><a href="working-with-strings.html#cb248-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time n shows up two or three times</span></span>
-<span id="cb248-2"><a href="working-with-strings.html#cb248-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;n{2,3}&quot;</span>)</span>
-<span id="cb248-3"><a href="working-with-strings.html#cb248-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb248-4"><a href="working-with-strings.html#cb248-4" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time n shows up three or four times</span></span>
-<span id="cb248-5"><a href="working-with-strings.html#cb248-5" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;n{3,4}&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="working-with-strings.html#cb244-1" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time n shows up two or three times</span></span>
+<span id="cb244-2"><a href="working-with-strings.html#cb244-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;n{2,3}&quot;</span>)</span>
+<span id="cb244-3"><a href="working-with-strings.html#cb244-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb244-4"><a href="working-with-strings.html#cb244-4" aria-hidden="true" tabindex="-1"></a><span class="do">## identify any time n shows up three or four times</span></span>
+<span id="cb244-5"><a href="working-with-strings.html#cb244-5" aria-hidden="true" tabindex="-1"></a><span class="fu">str_view_all</span>(addresses, <span class="st">&quot;n{3,4}&quot;</span>)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw/export/png?id=1-6k6usRR06dp-YK-M3HUOUgQZKXXqKnAD5RC4TISGhw&amp;pageid=g38bb68a539_0_65" alt="" />
 <p class="caption">{n,m} looks to pattern match between n and m times</p>

@@ -1131,7 +1131,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 16</span> Data Frames</h1>
 <p>A majority of the time that you are working with data in R you will have it in the form of a data frame.</p>
 <p>Data frames can contain different types of variables in a rectangular format, much like how spreadsheets are.
-A data frames’ size can be describe in terms of rows (across) and columns (up/down). Rows are often called <em>observations</em> and columns are called <em>variables</em>.</p>
+A data frames’ size can be described in terms of rows (across) and columns (up/down). Rows are often called <em>observations</em> and columns are called <em>variables</em>.</p>
 <div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="data-frames-1.html#cb45-1" aria-hidden="true" tabindex="-1"></a>ottrpal<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc/edit#slide=id.g313d649efe_0_38&quot;</span>)</span></code></pre></div>
 <p><img src="resources/images/02_getting_data_04_dataframes_files/figure-html/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc_g313d649efe_0_38.png" width="100%" /></p>
 <p>*Much of this chapter is paraphrased or inspired by <a href="https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/01-intro_to_base_R.Rmd">content from the Childhood Cancer Data Lab</a>.</p>
@@ -1215,7 +1215,7 @@ Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 ## [139] virginica  virginica  virginica  virginica  virginica  virginica 
 ## [145] virginica  virginica  virginica  virginica  virginica  virginica 
 ## Levels: setosa versicolor virginica</code></pre>
-<p>Note that <code>$</code> work for any R objects that have names. But don’t work if there aren’t names. when you look at a data frame you will see there are names to the columns. Try using the <code>colnames()</code> function to explore the column names of the <code>iris</code> data frame.</p>
+<p>Note that <code>$</code> work for any R objects that have column names. But don’t work if there aren’t column names. When you look at a data frame you will see that there are names to the columns. Try using the <code>colnames()</code> function to explore the column names of the <code>iris</code> data frame.</p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="data-frames-1.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(iris)</span></code></pre></div>
 <pre><code>## [1] &quot;Sepal.Length&quot; &quot;Sepal.Width&quot;  &quot;Petal.Length&quot; &quot;Petal.Width&quot;  &quot;Species&quot;</code></pre>
 </div>

@@ -2,14 +2,6 @@
 
 
 
-{
-course-completeness: 100
-course-attempts: 5
-default-quiz-attempts: 2
-default-random-choice-order: true
-default-quiz-show-answers: none
-}
-
 # **Intro: Welcome to DataTrail**
 
 Hello and welcome! The goal of _DataTrail_ is to help anyone with an internet connection and a computer learn to do data science. The program will start with the very basics of using a computer on the internet and work all the way up to doing data science and data analysis. We hope that by building this program we can help people get into the exciting tech world in one of the [fastest growing](https://insights.dice.com/2020/02/13/fastest-growing-tech-occupations-data-scientist-engineer/) and [most satisfying](https://www.techrepublic.com/article/is-data-scientist-the-most-rewarding-tech-job-new-report-says-yes/) jobs in the United States. There are only going to be more and more jobs asking for [data science skills](https://www.forbes.com/sites/louiscolumbus/2017/05/13/ibm-predicts-demand-for-data-scientists-will-soar-28-by-2020/) in the future. We believe that by making this career accessible to anyone we can have a positive impact on the world.

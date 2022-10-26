@@ -1,5 +1,6 @@
 
-# How To Present to a Technical Audience
+
+# How to Present to a Technical Audience
 
 In the last lesson we covered what to consider when presenting to a general audience and walked through an example of an actual general-audience presentation. Here, we'll approach presenting to a technical audience using a similar approach!
 

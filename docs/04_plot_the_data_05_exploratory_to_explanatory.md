@@ -1,9 +1,9 @@
 
 
 
-# From Exploratory To Explanatory
+# From Exploratory to Explanatory
 
-In the lessons in this course up to this point, we have covered what to consider when making a plot, the basics of using `ggplot2` to generate plots in R, how to customize `ggplot2` plots, and how to save figures. In this lesson we're going to put all of those skills together and walk through an example of how to take a plot from exploratory (its roughest form) to explanatory (polished and ready to be presented).
+Up to this point, we have covered what to consider when making a plot, the basics of using `ggplot2` to generate plots in R, how to customize `ggplot2` plots, and how to save figures. In this lesson we're going to put all of those skills together and walk through an example of how to take a plot from exploratory (its roughest form) to explanatory (polished and ready to be presented).
 
 ### Apple Product Sales Data
 

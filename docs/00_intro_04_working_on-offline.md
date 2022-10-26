@@ -7,6 +7,8 @@ You may have heard the term *cloud computing* before, and data scientists often 
 
 *Cloud storage* refers to data or document storage on the Internet rather than on your personal computer. If you take pictures using your phone and then they are backed up on iCloud or Google Photos, you are using the *cloud*.  Using the cloud for storage is like having an external hard drive (portable storage device) that you don't ever see and can't actually hold in your hands.
 
+Related to this, the term *local* means that it isn't on the cloud but instead something stored on your computer or other device.
+
 ### Cloud computing
 
 *Cloud computing* involves applications and software that run on shared data centers rather than running on the computer sitting in front of you. For data analysis, cloud computing has changed the way we think about working with data, especially when it comes to large datasets. A data analyst no longer needs to spend thousands of dollars to own high-capacity computers to deal with big data because the personal computer no longer has to do all the heavy lifting. Instead, a network of computers (from Amazon, IBM, or Microsoft among many others) will do the work instead. Your local computer will only need to run the interface software, which is often just your Internet browser. In future lessons we will study cloud-based data applications in more detail.
@@ -30,7 +32,13 @@ But sometimes you won't have access to the Internet. Fortunately, some of the Ch
 
 The most obvious disadvantage of working on the cloud is that you need an Internet connection to access storage and computing power. You cannot work "offline" away from the Internet.  However, with wireless Internet service (wifi) available widely in libraries, coffee shops, and other public places, it's possible to work on the cloud from almost anywhere!
 
-There are also concerns with the privacy and security of data that is stored remotely. Privacy and security are issues that must be addressed by both providers and users of cloud-based services.   Service providers need to ensure that the files stored at their data centers are safe and secure. Users need to take advantage of authentication measures and use strong passwords to ensure that no one can gain access to their account. Most major cloud-based service providers do a good job in securing your data. Specifically, their infrastructure is set up so that you can avoid security issues by being serious about protecting your account access information through your choice of password and by using two-factor authentication for logins. Briefly, two-factor authentication is a way of proving your identity to a service provider in two steps. The first step that is by providing a password. The second step involves using a physical object in your possession, such as a phone, to prove your identity. For example, you may also need to enter a code that is sent to your phone during the login process.  This means someone would need both your password and physical possession of your phone to access your account.  It is good practice to chose two-factor authentication whenever it is offered by a service provider.
+There are also concerns with the privacy and security of data that is stored remotely. Privacy and security are issues that must be addressed by both providers and users of cloud-based services. Service providers need to ensure that the files stored at their data centers are safe and secure. Users need to take advantage of authentication measures and use strong passwords to ensure that no one can gain access to their account. Most major cloud-based service providers do a good job in securing your data. Specifically, their infrastructure is set up so that you can avoid security issues by being serious about protecting your account access information through your choice of password and by using two-factor authentication for logins. Briefly, two-factor authentication is a way of proving your identity to a service provider in two steps. The first step that is by providing a password. The second step involves using a physical object in your possession, such as a phone, to prove your identity. For example, you may also need to enter a code that is sent to your phone during the login process.  This means someone would need both your password and physical possession of your phone to access your account.  It is good practice to chose two-factor authentication whenever it is offered by a service provider.
+
+<div class = "warning">
+
+Be careful when connecting to networks! It can be dangerous to connect to unknown or unverified networks. Only connect to networks that you recognize!
+
+</div>
 
 ### Google Drive
 
@@ -175,7 +183,7 @@ If you want to free up space on your Chromebook, one thing that you can do is tr
 
 ![Click with two fingers on a file and then move the cursor over delete to rename the file. ](https://docs.google.com/presentation/d/1k9e4UEhxg63DWSFkV71u1ewQQe-4DopdXAMG35O0hkc/export/png?id=1k9e4UEhxg63DWSFkV71u1ewQQe-4DopdXAMG35O0hkc&pageid=g3a97bbbaae_0_38)
 
-You might also find that the names of files aren't easy to follow. In a later course we will cover file naming for data science. But for now, it is useful to know how to change the name of a file. You start by again clicking with two fingers on the file. Then you can drag the cursor over "Rename" and let go.
+You might also find that the names of files aren't easy to follow. In a later section we will cover file naming for data science. But for now, it is useful to know how to change the name of a file. You start by again clicking with two fingers on the file. Then you can drag the cursor over "Rename" and let go.
 
 
 

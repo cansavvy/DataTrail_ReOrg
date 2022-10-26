@@ -13,7 +13,7 @@ An object in R is something that contains information. In R there are a number o
 
 ### Storing objects
 
-In R, as with all programming languages, it is important to be able to store objects that we create so that we can use them in later code. The process of storing an object is called **assignment**, and it entails giving an object a name. For example, the following code creates an object called `min_age` and stores inside that object the value 21.
+In R, as with all programming languages, it is important to be able to store objects that we create so that we can use them in later code. The process of storing an object is called **assignment**, and it entails giving an object a name. For example, the following code creates an object called `min_age` and stores inside that object the value 21. It is equivalent to saying that `min_age` *is equal to* 21.
 
 ```r
 min_age <- 21
@@ -42,7 +42,7 @@ Often we will want to print the contents of an object to see the information it 
 
 The 1 in square brackets that gets displayed in the printed output is simply an index that is provided for convenience of reading in case the object contains several values. It indicates that the number 21 is the first number in this object. It also happens to be the only number in this object.
 
-Throughout this course and curriculum, when we display code without the `>` indicating that we are not at the R prompt in the Console, we are emphasizing only the R command. When we display code with the `>` indicating that we are at the R prompt in the Console, we want to emphasize the commands and how the output is displayed on the screen.
+Throughout this curriculum, when we display code without the `>` indicating that we are not at the R prompt in the Console, we are emphasizing only the R command. When we display code with the `>` indicating that we are at the R prompt in the Console, we want to emphasize the commands and how the output is displayed on the screen.
 
 #### Classes of objects
 
@@ -210,7 +210,7 @@ Now that we've covered common basic data classes, we will now discuss data frame
 
 We see along the columns different variables related to car properties, and each row gives information on those properties for a particular car model. Every column in a data frame is a simple vector of values all from the same class. Most often, the data that we work with can be represented with data frames.
 
-You will learn more about working with data frames in subsequent lessons in this course and also in later courses.
+You will learn more about working with data frames in subsequent chapters.
 
 ### Missing values
 
@@ -268,7 +268,7 @@ In this lesson so far we have discussed how to create the five main classes of o
 
 As you can see, the class of the object specified within the parentheses is the class of that object.
 
-2) You can use a function `str()` which will tell you its `stru`cture. This will tell you more about the shape of an object, how long or wide it is, etc.
+2) You can use a function `str()` which will tell you its structure. This will tell you more about the shape of an object, how long or wide it is, etc.
 
 ```
 str(colors)
@@ -280,9 +280,9 @@ str(colors)
 
 #### Types of objects
 
-We store these different classes of objects in different ways. The ways this information is stored is referred to as the *type** of object.
+We store these different classes of objects in different ways. The ways this information is stored is referred to as the **type** of object.
 
-When talking about objects in R, it may be helpful to think of *actual* objects in every day life for comparison. For example, think of three objects: a bucket, a pot you would cook with, and a backpack. These three objects are clearly designed for and carry out different purposes. The bucket may be used to carry water to clean your floor, the pot to cook pasta, and the backpack to carry notebooks, but, we can agree that they are all objects, just different **types* of objects. The water, pasta, and notebooks would be the information contained in the object. In this real-life example, the "class" of the information may be "liquid", "food", and "paper".
+When talking about objects in R, it may be helpful to think of *actual* objects in every day life for comparison. For example, think of three objects: a bucket, a pot you would cook with, and a backpack. These three objects are clearly designed for and carry out different purposes. The bucket may be used to carry water to clean your floor, the pot to cook pasta, and the backpack to carry notebooks, but, we can agree that they are all objects, just different *types* of objects. The water, pasta, and notebooks would be the information contained in the object. In this real-life example, the "class" of the information may be "liquid", "food", and "paper".
 
 ![Objects in real-life analogy](https://docs.google.com/presentation/d/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc/export/png?id=1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc&pageid=g3b0072ef38_0_0)
 

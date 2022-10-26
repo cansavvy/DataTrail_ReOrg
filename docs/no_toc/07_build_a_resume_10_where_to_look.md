@@ -1,5 +1,6 @@
 
-# Where To Look for Data Science Jobs
+
+# Where to Look for Data Science Jobs
 
 Now that we've discussed what you'll need to apply to jobs, including a resume and cover letter, what steps to take to update your professional social media presence, including an updated website, GitHub, LinkedIn and active Twitter, and what a job description looks like, we're ready to discuss where you actually find data science jobs. There are a number of locations where jobs are posted. We'll walk through them now and discuss the strengths of each platform.
 
@@ -11,7 +12,7 @@ We mentioned this briefly in the last lesson, but there will be data scientist p
 
 However, you do *not* need to have exactly *every* qualification and skill listed on the job posting. If you have most of the skills they're requesting and are willing to learn the few with which you're less familiar, it is ok to apply to that position!
 
-Thus, given the training in this Course Set, you'll want to focus on positions where data wrangling, data visualization, basic analysis, and report generation and presentations are the focus. These may have the title "data analyst", "junior data scientist", "entry level data scientist" or "data scientist." Read the job descriptions carefully and decide if the job may be right for you!
+Thus, given the training in this course, you'll want to focus on positions where data wrangling, data visualization, basic analysis, and report generation and presentations are the focus. These may have the title "data analyst", "junior data scientist", "entry level data scientist" or "data scientist." Read the job descriptions carefully and decide if the job may be right for you!
 
 ### Additional Considerations
 
@@ -89,4 +90,4 @@ In this lesson we covered what types of terms to use for job searches, where to 
 
 ### Additional Resources
 
-* [Advice For Applying To Data Science Jobs](http://hookedondata.org/Advice-for-Applying-to-Data-Science-Jobs/)
+* [Advice For Applying To Data Science Jobs](https://hookedondata.org/posts/2018-05-29_advice-for-applying-to-data-science-jobs/index.html)

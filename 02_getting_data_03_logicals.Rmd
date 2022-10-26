@@ -52,7 +52,7 @@ Do the students' ages equal the individualized cutoffs? Here, each number in the
 
 This is obvious in the output from R, where the first and the fifth values are TRUE, while the rest are FALSE.
 
-Usually cutoffs are a bound rather than a specification of an equality, so we may instead ask if the students older than the cutoff by using the "greater than" operator `>`.
+Usually cutoffs are a bound rather than a specification of an equality, so we may instead ask if the students are older than the cutoff by using the "greater than" operator `>`.
 
 ```text
 > ages > common_cutoff
@@ -174,7 +174,7 @@ Although we create this factor object from integers, comparing it to the value 1
 [1] FALSE  TRUE FALSE FALSE  TRUE
 ```
 
-When we coerce the object to e an integer, we get the expected output. The second and final outputs are TRUE, corresponding to the values of "1" in the height_factor object. The output is the same for when the labels are directly compared. The output here returns TRUE for any places in the height_vector object where the factor label is (equal to) "short".
+When we coerce the object to be an integer, we get the expected output. The second and final outputs are TRUE, corresponding to the values of "1" in the height_factor object. The output is the same for when the labels are directly compared. The output here returns TRUE for any places in the height_vector object where the factor label is (equal to) "short".
 
 ### Logical functions
 

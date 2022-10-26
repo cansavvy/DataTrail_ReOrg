@@ -1,8 +1,10 @@
 
 
-# What is a Chromebook
+# Understanding Your Chromebook
 
 This section is part of ["DataTrail"](https://www.DataTrail.org/); however, it is not a required. While not required for completion of the DataTrail course set on Leanpub, it may be very helpful to you! It's not required because you don't *need* a Chromebook to complete the courses. The only requirement for all of these courses is an Internet browser and connection to the web. However, *if* you have a Chromebook and want to get better acquainted with how it works, this section is for you!
+
+## What is a Chromebook?
 
 [Chromebooks](https://www.google.com/chromebook/) are a very specific type of computer produced by Google. Chromebooks aren't exactly like normal computers and they have a few unique characteristics:
 
@@ -15,16 +17,16 @@ A simple way to think about it is that a Chromebook is a computer that only lets
 
 The goal of DataTrail is not that you _have_ to use a Chromebook to finish the program, it is just that you _could_ use a Chromebook to finish the whole program. You can finish the entire sequence of courses using any computer with an Internet connection and a web browser. Doing everything through a web browser has a couple of advantages for a training program like this:
 
-* All Chromebooks have the same system so if you log out of one Chromebook and log onto another you will always see the same system (unless there has been an update to Chrome OS that affects all Chromebooks).
+* All Chromebooks have the same system so if you log out of one Chromebook and log onto another you will always see the same system (unless there has been an update to Chrome Operating System - "OS" - that affects all Chromebooks).
 * Since everything is stored on the Internet (sometimes called "in the cloud") then the Chromebook will always be set up with your preferences when you log off and log back on.
 * Everyone is using the same software through the websites, so it reduces problems that come from different people using different versions of each computer program on different operating systems.
 
-Since Chromebooks are cheap and [widely used](https://www.cnbc.com/2015/12/03/googles-chromebooks-make-up-half-of-us-classroom-devices.html#:~:text=For%20the%20first%20time%2C%20Google,do%20not%20include%20desktop%20computers.), we expect many of the students who work on the class will use actual Chromebooks. In this course we will show you a little bit about how Chromebooks work, focusing on the Chrome OS operating system.
+Since Chromebooks are cheap and [widely used](https://www.cnbc.com/2015/12/03/googles-chromebooks-make-up-half-of-us-classroom-devices.html#:~:text=For%20the%20first%20time%2C%20Google,do%20not%20include%20desktop%20computers.), we expect many of the students who work on the class will use actual Chromebooks. In this chapter we will show you a little bit about how Chromebooks work, focusing on the Chrome OS operating system.
 
 If you are used to using a "normal" computer it can take a little getting used to to adapt to a Chromebook. A couple of things that you will likely do differently are:
 
-* __File storage__: You won't have much room for files on the computer itself, so you won't store them on your laptop, you will store them on "the cloud" in [Google Drive](https://www.google.com/drive/) or [Dropbox](https://www.dropbox.com).
-* __Software__: You won't install any software on your local computer. You will instead make accounts on different websites or "web apps" that let you use tools through your web browser. For example you wouldn't install a Twitter app on your computer, you'd browse to the Twitter website to use that software.
+* __File storage__: You won't have much room for files on the Chromebook itself, so you won't store them on your laptop, you will store them on "the cloud" in [Google Drive](https://www.google.com/drive/) or [Dropbox](https://www.dropbox.com).
+* __Software__: You won't install any software on your Chromebook. You will instead make accounts on different websites or "web apps" that let you use tools through your web browser. For example you wouldn't install a Twitter app on your computer, you'd browse to the Twitter website to use that software.
 
 
 If you restrict yourself to only working in web browsers, doing everything will feel a little weird at first. It is sort of like writing a [Haiku](https://en.wikipedia.org/wiki/Haiku) - a type of poem with a very specific set of rules. When you first start writing these poems it can be difficult to remember the rules. But after you get used to it the rules begin to come much more naturally. In a similar way, using a web browser for everything becomes second nature after a period of "learning the rules".
@@ -33,7 +35,7 @@ Using Chromebooks to do data science is a relatively [new idea](https://simplyst
 
 ## Chrome OS
 
-Your Chromebook is a little different than most normal Desktop computers. The main difference is that almost everything will be done in a Chrome web browser. For the most part, we won't use any software that saves data directly to your computer with a few small exceptions. All this is not to say you'll be limited in what you can do as a data scientist. Rather, your work will be done in the "cloud", rather than on your Chromebook directly.
+Your Chromebook is a little different than most normal Desktop computers. The main difference is that almost everything will be done in a Chrome web browser. For the most part, we won't use any software that saves data directly to your computer with a few small exceptions. This doesn't mean you are limited in what you can do as a data scientist. Rather, your work will be done in the "cloud", rather than on your Chromebook directly.
 
 When using a "normal" computer you usually download software that makes it possible to edit files, make presentations, use your calendar, or use social media. On a Chromebook there are three different ways that you can add new software to use.
 
@@ -224,7 +226,7 @@ But unlike "normal" computers Chrome OS basically only allows you to use an Inte
 ![Chromebook opening screen](https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&pageid=g3964b445cb_1_0)
 
 
-The first thing you notice is that there is nothing on the "Desktop" and that all the "apps" are linked to from the bottom of the screen. This is called the "shelf" on a Chromebook. All the apps are basically just links to websites. To open a new Chrome Browser you can either click on the Chrome icon in the lower left of the screen or you can hold down the `Ctrl` key and press the `n` key. We write this combination of keys as `Ctrl+n`. If you do that you'll see a new Chrome browser pop up.
+The first thing you notice is that there is nothing on the "Desktop" and that all the "apps" are linked to from the bottom of the screen. This is called the "shelf" on a Chromebook. All the apps are basically just links to websites. To open a new Chrome Browser you can either click on the Chrome icon in the lower left of the screen or you can hold down the `ctrl` key and press the `n` key. We write this combination of keys as `ctrl+n`. If you do that you'll see a new Chrome browser pop up.
 
 
 ![Chrome browser](https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&pageid=g3964b445cb_1_25)
@@ -235,24 +237,24 @@ Here you can navigate to new websites and do all the usual things. At the bottom
 
 ![Chrome browser](https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&pageid=g3964b445cb_1_8)
 
-Click that box until the browser doesn't fill the whole window. You can then create a second browser window by again using the `Ctrl+n` command.
+Click that box until the browser doesn't fill the whole window. You can then create a second browser window by again using the `ctrl+n` command.
 
 
 ![Multiple Chrome browsers](https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&pageid=g3964b445cb_1_14)
 
 
-If you want to do more than one thing at once you can do it in multiple windows like this. But it is often easier to see what you are doing if you use tabs instead of windows. You can close one of the browser windows by clicking the `X` in the upper right hand corner or by holding down `Ctrl` and pressing `w`.
+If you want to do more than one thing at once you can do it in multiple windows like this. But it is often easier to see what you are doing if you use tabs instead of windows. You can close one of the browser windows by clicking the `X` in the upper right hand corner or by holding down `ctrl` and pressing `w`.
 
 
 
 ![Closing a window](https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&pageid=g3964b445cb_1_34)
 
-With only one browser window open you can then open a new tab by holding down the `Ctrl` key and pressing the `t` key (we will call this `Ctrl+t`).
+With only one browser window open you can then open a new tab by holding down the `ctrl` key and pressing the `t` key (we will call this `ctrl+t`).
 
 
 ![Opening a new tab](https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&pageid=g3964b445cb_1_21)
 
-Now you can flip back and forth between tabs by clicking on the top of the tab in the browser. You can open more tabs by pressing `Ctrl+t` again. You can close them by pressing the `x` in the top right corner of the tab or pressing `Ctrl+w`.
+Now you can flip back and forth between tabs by clicking on the top of the tab in the browser. You can open more tabs by pressing `ctrl+t` again. You can close them by pressing the `x` in the top right corner of the tab or pressing `ctrl+w`.
 
 
 
@@ -286,7 +288,7 @@ You can also put two windows together into a single window with multiple tabs. T
 ![You can drag to combine tabs into a single window](https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&pageid=g3964b445cb_4_3)
 
 
-Finally, if you want to keep track of websites you use frequently you can use bookmarking. You can "bookmark" pages that you visit regularly and Chrome will keep track of those websites for you. It's especially helpful if you don't want to type the full address of a webpage, visit a page frequently, or are afraid you will forget about a page you will need later. To bookmark a webpage in Chrome, simply click on the star in the address bar or press`Ctrl+d` on your keyboard. This will open the following window.
+Finally, if you want to keep track of websites you use frequently you can use bookmarking. You can "bookmark" pages that you visit regularly and Chrome will keep track of those websites for you. It's especially helpful if you don't want to type the full address of a webpage, visit a page frequently, or are afraid you will forget about a page you will need later. To bookmark a webpage in Chrome, simply click on the star in the address bar or press`ctrl+d` on your keyboard. This will open the following window.
 
 
 ![Bookmark Menu](https://docs.google.com/presentation/d/1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M/export/png?id=1ywZbtFacZK0UIsnt2g-sheC9du_rw_7XZ1FX4rRt27M&pageid=g325fd519ca_0_1)
@@ -355,14 +357,14 @@ Android Apps are not Chrome Apps so are not accessed through the web browser. In
 
 ## Chromebook Shortcuts
 
-When we discussed the Chrome Browser we learned a couple of keyboard shortcuts. Keyboard shortcuts are combination of keys that make your Chromebook do certain functions. For example, if you hold the `Crtl` key and press the `n` key you get a new Chrome window. When we want to tell you to press this key combination we will use the symbols `Ctrl+n` to describe what you are doing.
+When we discussed the Chrome Browser we learned a couple of keyboard shortcuts. Keyboard shortcuts are combination of keys that make your Chromebook do certain functions. For example, if you hold the `ctrl` key and press the `n` key you get a new Chrome window. When we want to tell you to press this key combination we will use the symbols `ctrl+n` to describe what you are doing.
 
 In our Chrome Browser lesson we taught you the commands:
 
-* `Ctrl+n` - open a new Chrome window
-* `Ctrl+t` - open a new Chrome tab
-* `Ctrl+w` - close an open Chrome Window or tab
-* `Ctrl+d` - this will bookmark a page
+* `ctrl+n` - open a new Chrome window
+* `ctrl+t` - open a new Chrome tab
+* `ctrl+w` - close an open Chrome Window or tab
+* `ctrl+d` - this will bookmark a page
 
 There are in fact a large number of keyboard shortcuts. Depending on what you do most often with your Chromebook some may be more or less useful to you.
 
@@ -405,7 +407,7 @@ You will recall that the Launcher key is the key with the magnifying glass on th
 
 Using these keys we can now consider some of the more useful keyboard shortcuts on your Chromebook. This will definitely be a partial list, you can learn about the [rest of the shortcuts](https://support.google.com/chromebook/answer/183101?hl=en) from the Chromebook help documentation.
 
-One of the most useful things to know how to do is to be able to take a screenshot. You will use this when you are trouble shooting problems in the course frequently. There are two ways to take a screenshot. The first is to use the command `ctrl+showwindows`. If you use this key combination you will take a picture of everything that appears on the screen. This first will appear as a pop-up box in the lower right hand corner.
+Taking screenshots on your Chromebook is very useful. You will use this when you are troubleshooting problems in the course frequently. There are two ways to take a screenshot. The first is to use the command `ctrl+showwindows`. If you use this key combination you will take a picture of everything that appears on the screen. This first will appear as a pop-up box in the lower right hand corner.
 
 
 
@@ -425,7 +427,7 @@ If you click twice quickly on the screenshot file it will open and you can see i
 ![The screenshot is a picture of whatever was on your screen. ](https://docs.google.com/presentation/d/1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU/export/png?id=1CuNUXwu9BukytMCmtJ5JrRHWF_7O8Me2pu-PN_Zu6uU&pageid=g3a905bc20d_0_148)
 
 
-Sometimes, rather than taking a picture of the whole screen you will want to take a picture of just a small part of the screen. There is a second screenshot command that lets you do this. If you press `crtl+shift+showwindows` then your screen will turn a shade darker and you will see your cursor is replaced with a bullseye icon. If you click and then drag, you can select only part of your screen to take a screenshot of. For example you could take a screenshot of just the upper right hand corner of the Files App.
+Sometimes, rather than taking a picture of the whole screen you will want to take a picture of just a small part of the screen. There is a second screenshot command that lets you do this. If you press `ctrl+shift+showwindows` then your screen will turn a shade darker and you will see your cursor is replaced with a bullseye icon. If you click and then drag, you can select only part of your screen to take a screenshot of. For example you could take a screenshot of just the upper right hand corner of the Files App.
 
 
 
@@ -689,8 +691,8 @@ All of these issues are addressed among Google's [Chromebook help pages](https:/
 
 Below we'll demonstrate how to step through finding answers among this documentation; however, a few good things to consider before going to the help documentation are:
 
-* did I type that web address correctly? Am I getting this error because of a mistake I made? If it is, fix that mistake and move on!
-* Have I restarted recently (within the past week or two)? If not, now may be a good time to consider restarting to see if the issue still exists.
+* _Did I type that web address correctly? Am I getting this error because of a mistake I made?_ If it is, fix that mistake and move on!
+* _Have I restarted recently (within the past week or two)?_ If not, now may be a good time to consider restarting to see if the issue still exists.
 
 If restarting doesn't work or you can't find a mistake, it may be time to consult the Chromebook Support documentation. We'll walk through how to do that below.
 

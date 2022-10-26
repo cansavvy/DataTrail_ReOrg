@@ -94,7 +94,7 @@ Gmail has many of similarities with other web-based email clients, such as Hotma
 
 ### Accessing your Gmail Inbox
 
-Gmail is included with your Google account, so you should already have access to Gmail through the account you set up in your first introductory course.  Your email address will be **username@gmail.com**, where username is the username of your Google account.  For example, if your user name is Jane.Doe then your email address would be Jane.Doe@gmail.com.  This is one reason to choose an appropriate user name, since this email address will be visible to anyone you communicate with over email!
+Gmail is included with your Google account, so you should already have access to Gmail through the account you set up in your first introductory course.  Your email address will be `username@gmail.com`, where username is the username of your Google account.  For example, if your user name is Jane.Doe then your email address would be `Jane.Doe@gmail.com`.  This is one reason to choose an appropriate user name, since this email address will be visible to anyone you communicate with over email!
 
 You can access Gmail by going to the address ["https://www.gmail.com"](https://www.gmail.com) or by clicking on the start menu located on the lower left hand corner of your Chromebook and searching for "Gmail". If you are not already logged into your account, you will see a prompt similar to the one here.  
 
@@ -186,7 +186,7 @@ If there is more than one other person on the email, you will also have any opti
 
 ### Searching for specific messages
 
-To find a particular email message in your inbox, you can search using the search box at the top of the Gmail screen.  Searching your Gmail inbox is very similar to searching the internet using Google.  You can search by a word in subject of the email, the name of the person who sent the email, or the content of the email.  For example, to find all messages from John Doe, you could type "from:john.everyday.doe@gmail.com" in this search box.  To find messages that include the words "cancer data", you could type "cancer data" in this search box.
+To find a particular email message in your inbox, you can search using the search box at the top of the Gmail screen.  Searching your Gmail inbox is very similar to searching the internet using Google.  You can search by a word in subject of the email, the name of the person who sent the email, or the content of the email.  For example, to find all messages from John Doe, you could type "`from:john.everyday.doe@gmail.com`" in this search box.  To find messages that include the words "cancer data", you could type "cancer data" in this search box.
 
 
 ![Search Box](https://docs.google.com/presentation/d/1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA/export/png?id=1qRfIt3P6JLioc1-NpDbtdUF5CEMSS71_yXmRRWW7KLA&pageid=g34ff7bbfc9_0_50)
@@ -215,7 +215,7 @@ Like Gmail and Calendar, Google Drive is included with your Google Account.  You
 
 ![Drive welcome screen](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g350059f510_0_0)
 
-Click the "Go to Google Drive" button to be taken to your Drive account.  If you are already logged in to your Google account, you will go directly to Drive.  If not, you will be prompted to log in with the username and password for your Google account.  Here you can see Jane's Drive directory.  She currently has four documents stored on her Google Drive: a presentation in Google Slides, a dataset in Google Sheets, an image, and a document in Google Docs.  To open any document from drive, simply double-click on the document itself.
+Click the "Go to Google Drive" button to be taken to your Drive account.  If you are already logged in to your Google account, you will go directly to Drive.  If not, you will be prompted to log in with the username and password for your Google account.  Here you can see Jane's Drive directory.  She currently has four documents stored on her Google Drive: a presentation in Google Slides, a dataset in Google Sheets, an image, and a document in Google Docs.  To open any document from Drive, simply double-click on the document itself.
 
 
 ![Google Drive directory](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g350059f510_0_10)
@@ -224,7 +224,7 @@ Click the "Go to Google Drive" button to be taken to your Drive account.  If you
 
 In Jane's Drive account, you can see that she simply has each document shown individually without any file organization structure. This is fine when you have only a small number of documents.  However, if you use Google Drive to store lots of documents you will need a file structure to keep things organized and to quickly find the documents you need.  In general, we strongly suggest that you create folders to keep similar files together.
 
-In this course, we will simply go over the basics of organization in Google Drive. You will learn about good practices for organizing files for projects in a later course, which will include how to chose a folder structure and naming conventions for files and folders.  
+In this course, we will simply go over the basics of organization in Google Drive. You will learn about good practices for organizing files for projects in a later chapter, which will include how to chose a folder structure and naming conventions for files and folders.  
 
 First, let's create a new folder.  Click the "New" button in the top left corner of the Google Drive home page and then select "Folder." A new window will open. Type the name of your folder, in this case "Cancer project," and click the blue "CREATE" button.
 
@@ -268,12 +268,12 @@ You can delete multiple files or folders at once by first selecting them all whi
 
 ### File Recovery
 
-If you do accidentally delete a file or change your mind once it's deleted, recovering a removed file on Google Drive is straight-forward. Deleted files are moved to the Trash folders within Google drive.  To recover a file, simply click on the "Trash" link on the left-hand menu.
+If you do accidentally delete a file or change your mind once it's deleted, recovering a removed file on Google Drive is straight-forward. Deleted files are moved to the Trash folders within Google Drive.  To recover a file, simply click on the "Trash" link on the left-hand menu.
 
 
 ![Trash folder](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_93)
 
-In Trash you can see a list of all the files that you have previously removed. Right-click on the file you want to recover and select "Restore."  The file when they be returned to its original folder on Google Drive.  If you're sure that you won't need the file ever again, you can clear some storage space by right-clicking on the file and choosing "Delete forever" from the menu. This option is *only* available within the "Trash" folder.  Use this option with caution!  By doing this your files will be deleted forever from your drive and can no longer be recovered.
+In Trash you can see a list of all the files that you have previously removed. Right-click on the file you want to recover and select "Restore."  The file when they be returned to its original folder on Google Drive.  If you're sure that you won't need the file ever again, you can clear some storage space by right-clicking on the file and choosing "Delete forever" from the menu. This option is *only* available within the "Trash" folder.  Use this option with caution!  By doing this your files will be deleted forever from your Drive and can no longer be recovered.
 
 ### File Sharing
 
@@ -295,7 +295,7 @@ First, when online, install the [Google Docs Offline extension](https://chrome.g
 
 ![Google Drive extension for Chrome](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g350059f510_0_15)
 
-Next, go to [Google Drive settings](drive.google.com/drive/settings) and in the "Offline" area, check the box. It might take a few minutes for the offline access setting to turn on.
+Next, go to [Google Drive settings](drive.google.com/drive/settings) and in the "Offline" area, make sure the box is checked. It might take a few minutes for the offline access setting to turn on.
 
 
 ![Offline settings for Drive](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_129)
@@ -304,7 +304,7 @@ You are now ready to work on your files offline! Any changes will sync to Google
 
 ### Storage limit
 
-Your Google Drive account comes with 15GB of free storage. If this is not enough space, you can pay for more space: $1.99 per month buys  100GB of storage and $9.99 (as of February 2018) buys  1TB of storage. Note that the free 15GB is shared among all Google services, including Gmail and Drive, so, part of your storage may be used by your email attachments.  You can see how much storage you are using in the lower part of the left-hand menu on your home page.  There is also a link here to purchase additional storage.
+Your Google Drive account comes with 15GB of free storage. If this is not enough space, you can pay for more space. But don’t worry, for the purposes of this DataTrail course and many other purposes, you shouldn’t need to buy any storage. Note that the free 15GB is shared among all Google services, including Gmail and Drive, so, part of your storage may be used by your email attachments.  You can see how much storage you are using in the lower part of the left-hand menu on your home page.  There is also a link here to purchase additional storage.
 
 
 ![Storage information](https://docs.google.com/presentation/d/1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs/export/png?id=1y4ZrJSXqxr4eaPkjWrn1M5X9q3m8K9ihRoXUls2TXIs&pageid=g3aa91599a1_0_302)
@@ -320,7 +320,7 @@ Two-Step Verification (also known as two-factor authentication), provides an ext
 
 ### More specifics on using Google Drive
 
-In this lesson, we have talked briefly about how to create files and folders in Google Drive, as well as how to delete, recover, and share your files.  There are many other features of Drive that you may want to eventually explore.  There are many tutorials for using Drive on YouTube.com.
+In this lesson, we have talked briefly about how to create files and folders in Google Drive, as well as how to delete, recover, and share your files.  There are many other features of Drive that you may want to eventually explore.  There are many tutorials for using Drive on [YouTube.com](https://www.youtube.com/).
 
 Google also has extensive information on getting started with Drive on their G Suite Learning Center, which can be found at the following web address: https://gsuite.google.com/learning-center/products/drive/get-started/#!/
 
@@ -330,20 +330,14 @@ In addition to having a Google username, there are a number of other accounts to
 
 ### LinkedIn Account
 
-[LinkedIn](http://www.linkedin.com) is a social networking site for employment. Think of it as Facebook for getting a job. It allows you to put your qualifications online (like an online resume), has a space where you can look for jobs, and can put you in contact with employers. Don't worry about the details now. Through this program, you will have the chance to set up your LinkedIn gradually. For right now, we're just worried about getting this account set up.
+[LinkedIn](https://www.linkedin.com/) is a social networking site for employment. Think of it as Facebook for getting a job. It allows you to put your qualifications online (like an online resume), has a space where you can look for jobs, and can put you in contact with employers. Don't worry about the details now. Through this program, you will have the chance to set up your LinkedIn gradually. For right now, we're just worried about getting this account set up.
 
-To begin set up, you'll go to the web address bar in your Chrome browser. You will type www.linkedin.com and hit 'Enter.'
+To begin set up, you'll go to the web address bar in your Chrome browser. You will type [www.linkedin.com](https://www.linkedin.com/) and hit 'Enter.'
 
 
 ![LinkedIn website](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_2)
 
-This will bring you to LinkedIn's login screen. On this screen you'll begin filling out the boxes in the middle of the screen. Be sure to use the Gmail username you just created in the last chapter when asked for your Email address. Choose a password that cannot be easily guessed by someone else. Once the four boxes are filled in, click "Join now".
-
-
-![LinkedIn Blank Form](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_7)
-
-You can choose to create your LinkedIn account with your Gmail account.
-Click on 'Continue with Google'.
+This will bring you to LinkedIn's login screen. Click on 'Continue with Google' to create your LinkedIn account with your Google/Gmail account.
 
 ![gmail account](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_12)
 
@@ -380,7 +374,7 @@ Continue to confirm your Google Account:
 
 You will need to give it your phone number as well as your birthday to verify your identity.
 
-Then, this will bring you to a screen where you will choose a username. This will be what your Twitter 'handle' will be. For simplicity, it would be best for your Gmail username and Twitter handle to be the same (ie if your Gmail address is Jane.Doe@gmail.com, 'Jane.Doe' would be a great Twitter username). If that name is unavailable, choose a different, but appropriate and simple, Twitter username. Once you have chosen a Twitter username, click 'Next'.
+Then, this will bring you to a screen where you will choose a username. This will be what your Twitter 'handle' will be. For simplicity, it would be best for your Gmail username and Twitter handle to be the same (ie if your Gmail address is `Jane.Doe@gmail.com`, 'Jane.Doe' would be a great Twitter username). If that name is unavailable, choose a different, but appropriate and simple, Twitter username. Once you have chosen a Twitter username, click 'Next'.
 
 ![Twitter username](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_212)
 
@@ -392,7 +386,7 @@ Congrats! You now have a Twitter account!
 
 [BaseCamp](http://www.Basecamp.com) is a place where teams of people can easily communicate and work together on a project. As a data scientist, you are often working in a group on a project. Basecamp is a place where everyone working on that project can communicate. Basecamp is where communication throughout this course will happen. You will be able to ask questions, answer questions, and communicate with others on Basecamp about the things you are learning and the projects you are working on.
 
-To get a Basecamp account, you will first open a new tab in your browser by typing _ctrl_ and _t_. Once you have a new tab open, you will type 'www.Basecamp.com' at the top of your browser in the web address bar.
+To get a Basecamp account, you will first open a new tab in your browser by typing `ctrl+t`. Once you have a new tab open, you will type 'www.Basecamp.com' at the top of your browser in the web address bar.
 
 Then on the Basecamp home page, click on "Customer Login".
 
@@ -406,7 +400,7 @@ We won't be signing into any workspaces yet; however, later in the program, when
 
 As a data scientist A LOT of your work will be done in something called RStudio. In this program, you will be learning the basics of the programming language, R. R is a free programming language for statistical computing and graphics. In other words, the code you write to work with data will all be done in R. RStudio Cloud is the place (or 'platform') where you will type this code and make basic plots.
 
-Luckily, RStudio Cloud makes it easy to sign up. You will first go to 'rstudio.cloud'. Note: This web address does not start with 'www.'
+Luckily, RStudio Cloud makes it easy to sign up. You will first go to ['rstudio.cloud'](https://rstudio.cloud/). Note: This web address does not start with 'www.'
 
 
 ![rstudio.cloud web address](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_309)

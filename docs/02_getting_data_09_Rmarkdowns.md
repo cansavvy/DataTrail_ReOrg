@@ -26,7 +26,7 @@ One of the main benefits is the reproducibility of using R Markdown. Since you c
 
 Sharing what you did, why you did it and how it turned out becomes so simple - and that person you share it with can re-run your code and *get the exact same answers you got.* That's what we mean about **reproducibility**.
 
-In addition to being reproducible, there will be times that you're working working on a project that takes many weeks or months to complete. In these cases, you want to be able to see what you did a long time ago (and perhaps be reminded exactly *why* you were doing this). By using an R Markdown document, you'll be able to see exactly what you did previously, what code you used AND the results of that code!
+In addition to being reproducible, there will be times that you're working on a project that takes many weeks or months to complete. In these cases, you want to be able to see what you did a long time ago (and perhaps be reminded exactly *why* you were doing this). By using an R Markdown document, you'll be able to see exactly what you did previously, what code you used AND the results of that code!
 
 Another major benefit to R Markdown is that since it is plain text, it works very well with version control systems, such as git and GitHub. It is easy to track what character changes occur between commits; unlike other formats that aren't plain text. For example, in one version of this lesson, I may have forgotten to bold **this** word. When I catch my mistake, I can make the plain text changes to signal I would like that word bolded, and in the commit, you can see the exact character changes that occurred to now make the word bold.
 
@@ -56,7 +56,7 @@ When you are done entering this information, click OK, and a new .Rmd document w
 
 ![R Markdown document](https://docs.google.com/presentation/d/1COQq29mnEWgt1NO0qC8tmurswmaDRJpBzmKhKKmJgiw/export/png?id=1COQq29mnEWgt1NO0qC8tmurswmaDRJpBzmKhKKmJgiw&pageid=g3b6f614dcf_0_31)
 
-There are three main sections of an R Markdown document. The first is the **YAML** at the top, bounded by the three dashes. This is where you can specify details like the title, your name, the date, and what kind of document you want output. If you filled in the blanks in the window earlier, these will be filled out for you. The spacing of this section matters, so if you edit anything here and then get an error when you try to Knit your document, it may be worth returning to this section to make sure spacing is as it should be.
+There are three main sections of an R Markdown document. The first is the **YAML** at the top, bounded by the three dashes. This is where you can specify details like the title, your name, the date, and what kind of document you want to output. If you filled in the blanks in the window earlier, these will be filled out for you. The spacing of this section matters, so if you edit anything here and then get an error when you try to Knit your document, it may be worth returning to this section to make sure spacing is as it should be.
 
 Also on this page, you can see **text sections**. In this section, text should be written in Markdown. This means that the "## R Markdown" will appear as an H2 header when the document is rendered. and **Knit** will  be bold, as discussed in a previous lesson.
 

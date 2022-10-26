@@ -7,11 +7,11 @@ ottrpal::set_knitr_image_path()
 
 In data science and computer-related work in general, it is common to ask for help multiple times per day. While sometimes we ask our colleagues for help in-person, most of the time we search the web.
 
-Throughout this coursework it may surprise you just how frequently other people have run into the same problem or had the exact same question you have. Often, there is an answer that was publicly shared previously on the Internet that can help answer the very question you're asking. There are a number of websites and discussion boards where people frequently ask and answer questions. By knowing how to effectively search the web, you can easily find these answers.
+Throughout the coursework it may surprise you just how frequently other people have run into the same problem or had the exact same question you have. Often, there is an answer that was publicly shared previously on the Internet that can help answer the very question you're asking. There are a number of websites and discussion boards where people frequently ask and answer questions. By knowing how to effectively search the web, you can easily find these answers.
 
 ### Searching the Internet
 
-You've been working on the Internet through this coursework so far on the Chrome Browser? Within every Internet browser, you have access to _web search engines_. These are designed to find the most relevant answers to our question. The most common web search engine is [Google](https://www.google.com). In fact, Google started as a web search engine before it developed any of the other many products it offers today.We can access _Google_ by typing [www.google.com](https://www.google.com) in the search bar at the top of the Chrome browser. This will bring you to the Google homepage, where you will see a simple text box and a button called _Google search_.
+You've been working on the Internet through this coursework so far on the Chrome Browser? Within every Internet browser, you have access to _web search engines_. These are designed to find the most relevant answers to our question. The most common web search engine is [Google](https://www.google.com). In fact, Google started as a web search engine before it developed any of the other many products it offers today. We can access _Google_ by typing [www.google.com](https://www.google.com) in the search bar at the top of the Chrome browser. This will bring you to the Google homepage, where you will see a simple text box and a button called _Google search_.
 
 
 ![Google search](https://docs.google.com/presentation/d/180OSJkB2c7BxvtJZ3F-KrGzQ33vPLWbErC2xjO6g4O4/export/png?id=180OSJkB2c7BxvtJZ3F-KrGzQ33vPLWbErC2xjO6g4O4&pageid=g325fd519cc_0_6)
@@ -40,4 +40,4 @@ The best way to get a response to your question is to be able to boil it down to
 
 * Be Specific - include words that are important to your specific search
 
-* Know specific websites where you can get help - while Google is generally a great place to start, sometimes it can be helpful to know specific websites where you can get help. [StackOverflow](www.stackoverflow.com) [Basecamp](Basecamp.com) and the [RStudio Community](https://community.rstudio.com/c/tidyverse) will likely be helpful places as you learn to program in R. These resources will be covered in detail in a future course; however, it's good at this point to know they exist
+* Know specific websites where you can get help - while Google is generally a great place to start, sometimes it can be helpful to know specific websites where you can get help. <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a>, <a href="https://Basecamp.com/" target="_blank">Basecamp</a>, and the <a href="https://community.rstudio.com/c/tidyverse/6" target="_blank">RStudio Community</a> will likely be helpful places as you learn to program in R. These resources will be covered in detail in a future course; however, it's good at this point to know they exist

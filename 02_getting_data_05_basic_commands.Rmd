@@ -120,7 +120,7 @@ prize_info <- data.frame(
 )
 ```
 
-This is more convenient for further work if you have other objects that have information on first, second, or third placing, but not prize money information. You'll learn more about these concepts when you learn about "tidy data" in a later course.
+This is more convenient for further work if you have other objects that have information on first, second, or third placing, but not prize money information. You'll learn more about these concepts when you learn about "tidy data" in a later chapter.
 
 The `colnames()` and `rownames()` functions act analogously to the `names()` function but are used for the column labels and row labels of a matrix or data frame. The numbers in square brackets at the beginning of the lines of printed output indicate the index of the first observation on the line. So for the row names, we can see that "Duster 360" is the seventh element.
 

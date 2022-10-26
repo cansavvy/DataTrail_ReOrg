@@ -36,7 +36,7 @@ Check out [this video](https://vimeo.com/178485416) that the RStudio developers 
 
 ### Getting started with R Markdown
 
-The best way to follow along for the rest of this lesson is to open up [RStudio Cloud](rstudio.cloud), and follow along on your own step-by-step. In the process, you'll get to generate your first R Markdown document! Generating and working with RMarkdown documents is incredibly easy when working within RStudio (or RStudio Cloud). To get started in [RStudio Cloud](rstudio.cloud), go to File > New File > R Markdown.. .
+The best way to follow along for the rest of this lesson is to open up <a href="https://rstudio.cloud/" target="_blank">RStudio Cloud</a>, and follow along on your own step-by-step. In the process, you'll get to generate your first R Markdown document! Generating and working with RMarkdown documents is incredibly easy when working within RStudio (or RStudio Cloud). To get started in <a href="https://rstudio.cloud/" target="_blank">RStudio Cloud</a>, go to File > New File > R Markdown.. .
 
 
 ![R Markdown...](https://docs.google.com/presentation/d/1COQq29mnEWgt1NO0qC8tmurswmaDRJpBzmKhKKmJgiw/export/png?id=1COQq29mnEWgt1NO0qC8tmurswmaDRJpBzmKhKKmJgiw&pageid=g3b6f614dcf_0_20)

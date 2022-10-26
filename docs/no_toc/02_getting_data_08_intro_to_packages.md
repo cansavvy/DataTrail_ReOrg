@@ -7,7 +7,7 @@ Now that we've looked at R and RStudio and have a basic understanding of how the
 
 ### What is an R package?
 
-So far, anything we've played around with in R uses the "base" R system. Base R, or everything included in R when you download it, has rather basic functionality for statistics and plotting but it can sometimes be limiting. To expand upon R's basic functionality, people have developed **packages** A package is a collection of functions, data, and code conveniently provided in a nice, complete format for you. At the time of writing, there are just over 17,600 packages available to download - each with their own specialized functions and code, all developed for a specific but different purpose. For a really in depth look at R Packages (what they are, how to develop them), check out Hadley Wickham's book from O'Reilly, ["R Packages"](http://r-pkgs.had.co.nz/)
+So far, anything we've played around with in R uses the "base" R system. Base R, or everything included in R when you download it, has rather basic functionality for statistics and plotting but it can sometimes be limiting. To expand upon R's basic functionality, people have developed **packages**. A package is a collection of functions, data, and code conveniently provided in a nice, complete format for you. At the time of writing, there are just over 17,600 packages available to download - each with their own specialized functions and code, all developed for a specific but different purpose. For a really in depth look at R Packages (what they are, how to develop them), check out Hadley Wickham's book from O'Reilly, ["R Packages"](http://r-pkgs.had.co.nz/)
 
 *Side note:* A package is not to be confused with a **library** (these two terms are often conflated in colloquial speech about R). A library is the place where the package is located on your computer. To think of an analogy, a library is, well, a library... and a package is a book within the library. The library is where the books/packages are located.
 
@@ -70,8 +70,8 @@ This is a more specific case that you probably won't run into too often as you j
 
 In the event you want to do this, you first must find the package you want on GitHub and take note of both the package name *AND* the author of the package. Check out [this guide](http://kbroman.org/pkg_primer/pages/github.html) for installing from GitHub, but the general workflow is:   
 
-1. `install.packages("devtools")` - only run this if you don't already have `devtools installed. If you've been following along with this lesson, you may have installed it when we were practicing installations usin`g the R console  
-2. `library(devtools)` - more on what this command is doing immediately below this  
+1. `install.packages("devtools")` - only run this if you don't already have `devtools` installed. If you've been following along with this lesson, you may have installed it when we were practicing installations using the R console.  
+2. `library(devtools)` - more on what this command is doing immediately below this.  
 3. `install_github("author/package")` replacing "author" and "package" with their GitHub username and the name of the package.
 
 ### Loading packages
@@ -111,7 +111,7 @@ This is R saying "I don't know where to find this function!". This means you've 
 
 There is an order to installing packages - some packages require other packages to be loaded first. These other packages are known as **dependencies**. When you install a new package, that new package's manual/help pages will automatically determine what packages this new package is dependent upon and will install those packages as well.
 
-If you want to load a package using the RStudio interface, in the lower right quadrant there is a tab called "Packages" that lists out all of the packages and a brief description, as well as the version number, of all of the packages you have installed. To load a package just click on the checkbox beside the package name
+If you want to load a package using the RStudio interface, in the lower right quadrant there is a tab called "Packages" that lists out all of the packages and a brief description, as well as the version number, of all of the packages you have installed. To load a package just click on the checkbox beside the package name.
 
 
 ![Find the package you want to load from the list of installed packages and check the box to load it](https://docs.google.com/presentation/d/1sVQJJELq39ctr29VXQGLqb5hw5lGzmbVMgI0ehFa_zo/export/png?id=1sVQJJELq39ctr29VXQGLqb5hw5lGzmbVMgI0ehFa_zo&pageid=g326810014c_0_82)
@@ -168,7 +168,7 @@ In the output from `sessionInfo()`, you'll note that the end of each package's n
 
 In all of this information about packages, we haven't actually discussed how to *use* a package's functions! While functions are discussed in greater detail in a later lesson in this course, for now, know that to use the contents of a package, you'll use **functions**.
 
-First, you need to know what functions are included within a package. To do this, you can look at the man/help pages included in all (well-made) packages. In the console, you can use the `help()` function to access a package's help files. Try `help(package = "ggplot2")` and you will see all of the *many* functions that `ggplot2`? provides. Within the RStudio interface, you can access the help files through the Packages tab (again) - clicking on any package name should open up the associated help files in the "Help" tab, found in that same quadrant, beside the Packages tab. Clicking on any one of these help pages will take you to that functions help page, that tells you what that function is for and how to use it.
+First, you need to know what functions are included within a package. To do this, you can look at the man/help pages included in all (well-made) packages. In the console, you can use the `help()` function to access a package's help files. Try `help(package = "ggplot2")` and you will see all of the *many* functions that `ggplot2` provides. Within the RStudio interface, you can access the help files through the Packages tab (again) - clicking on any package name should open up the associated help files in the "Help" tab, found in that same quadrant, beside the Packages tab. Clicking on any one of these help pages will take you to that functions help page, that tells you what that function is for and how to use it.
 
 Once you know what function within a package you want to use, you simply call it in the console like any other function we've been using throughout this lesson. Once a package has been loaded, it is as if it were a part of the base R functionality.
 
@@ -176,7 +176,7 @@ If you still have questions about what functions within a package are right for 
 
 ### Summary
 
-In this lesson, we've explored R packages in depth. We examined what a packages is (and how it differs from a library), what repositories are, and how to find a package relevant to your interests. We investigated all aspects of how packages work: how to install them (from the various repositories), how to load them, how to check which packages are installed, and how to update, uninstall, and unload packages. We took a small detour and looked at how to check what version of R you have, which is often an important detail to know when installing packages. And finally, we spent some time learning how to explore help files and vignettes, which often give you a good idea of how to use a package and all of its functions.
+In this lesson, we've explored R packages in depth. We examined what a package is (and how it differs from a library), what repositories are, and how to find a package relevant to your interests. We investigated all aspects of how packages work: how to install them (from the various repositories), how to load them, how to check which packages are installed, and how to update, uninstall, and unload packages. We took a small detour and looked at how to check what version of R you have, which is often an important detail to know when installing packages. And finally, we spent some time learning how to explore help files and vignettes, which often give you a good idea of how to use a package and all of its functions.
 
 If you still want to learn more about R packages, here is a great resource: [Introduction to R Packages](http://faculty.washington.edu/kenrice/rintro/sess08.pdf) from Ken Rice and Timothy Thornton.
 

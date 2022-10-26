@@ -1338,24 +1338,24 @@ In other words, like in inferential analysis, your ability to make accurate pred
 <div id="data-splitting-1" class="section level5" number="59.0.7.2.1">
 <h5><span class="header-section-number">59.0.7.2.1</span> Data Splitting</h5>
 <p>As mentioned above, one of the first steps is often to take your dataset and split it into a training set and a tuning set. To do this, we’ll load the <code>caret</code> package and use the <code>createDataPartition()</code> function to split the dataset.</p>
-<div class="sourceCode" id="cb399"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb399-1"><a href="prediction-and-machine-learning.html#cb399-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install and load packages</span></span>
-<span id="cb399-2"><a href="prediction-and-machine-learning.html#cb399-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;caret&quot;</span>)</span>
-<span id="cb399-3"><a href="prediction-and-machine-learning.html#cb399-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(caret)</span>
-<span id="cb399-4"><a href="prediction-and-machine-learning.html#cb399-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb399-5"><a href="prediction-and-machine-learning.html#cb399-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb399-6"><a href="prediction-and-machine-learning.html#cb399-6" aria-hidden="true" tabindex="-1"></a><span class="do">## get Index for training set</span></span>
-<span id="cb399-7"><a href="prediction-and-machine-learning.html#cb399-7" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb399-8"><a href="prediction-and-machine-learning.html#cb399-8" aria-hidden="true" tabindex="-1"></a>trainIndex <span class="ot">&lt;-</span> <span class="fu">createDataPartition</span>(iris<span class="sc">$</span>Species, <span class="at">p =</span> .<span class="dv">7</span>,</span>
-<span id="cb399-9"><a href="prediction-and-machine-learning.html#cb399-9" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">list =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb399-10"><a href="prediction-and-machine-learning.html#cb399-10" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">times =</span> <span class="dv">1</span>)</span>
-<span id="cb399-11"><a href="prediction-and-machine-learning.html#cb399-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb399-12"><a href="prediction-and-machine-learning.html#cb399-12" aria-hidden="true" tabindex="-1"></a><span class="do">## split into training and tuning set                                  </span></span>
-<span id="cb399-13"><a href="prediction-and-machine-learning.html#cb399-13" aria-hidden="true" tabindex="-1"></a>iris_train <span class="ot">&lt;-</span> iris <span class="sc">%&gt;%</span> <span class="fu">slice</span>(trainIndex)</span>
-<span id="cb399-14"><a href="prediction-and-machine-learning.html#cb399-14" aria-hidden="true" tabindex="-1"></a>iris_tune <span class="ot">&lt;-</span> iris <span class="sc">%&gt;%</span> <span class="fu">slice</span>(<span class="sc">-</span>trainIndex)</span>
-<span id="cb399-15"><a href="prediction-and-machine-learning.html#cb399-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb399-16"><a href="prediction-and-machine-learning.html#cb399-16" aria-hidden="true" tabindex="-1"></a><span class="do">## take a a look</span></span>
-<span id="cb399-17"><a href="prediction-and-machine-learning.html#cb399-17" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris_train)</span>
-<span id="cb399-18"><a href="prediction-and-machine-learning.html#cb399-18" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris_tune)</span></code></pre></div>
+<div class="sourceCode" id="cb395"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb395-1"><a href="prediction-and-machine-learning.html#cb395-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install and load packages</span></span>
+<span id="cb395-2"><a href="prediction-and-machine-learning.html#cb395-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;caret&quot;</span>)</span>
+<span id="cb395-3"><a href="prediction-and-machine-learning.html#cb395-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(caret)</span>
+<span id="cb395-4"><a href="prediction-and-machine-learning.html#cb395-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb395-5"><a href="prediction-and-machine-learning.html#cb395-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb395-6"><a href="prediction-and-machine-learning.html#cb395-6" aria-hidden="true" tabindex="-1"></a><span class="do">## get Index for training set</span></span>
+<span id="cb395-7"><a href="prediction-and-machine-learning.html#cb395-7" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb395-8"><a href="prediction-and-machine-learning.html#cb395-8" aria-hidden="true" tabindex="-1"></a>trainIndex <span class="ot">&lt;-</span> <span class="fu">createDataPartition</span>(iris<span class="sc">$</span>Species, <span class="at">p =</span> .<span class="dv">7</span>,</span>
+<span id="cb395-9"><a href="prediction-and-machine-learning.html#cb395-9" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">list =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb395-10"><a href="prediction-and-machine-learning.html#cb395-10" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">times =</span> <span class="dv">1</span>)</span>
+<span id="cb395-11"><a href="prediction-and-machine-learning.html#cb395-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb395-12"><a href="prediction-and-machine-learning.html#cb395-12" aria-hidden="true" tabindex="-1"></a><span class="do">## split into training and tuning set                                  </span></span>
+<span id="cb395-13"><a href="prediction-and-machine-learning.html#cb395-13" aria-hidden="true" tabindex="-1"></a>iris_train <span class="ot">&lt;-</span> iris <span class="sc">%&gt;%</span> <span class="fu">slice</span>(trainIndex)</span>
+<span id="cb395-14"><a href="prediction-and-machine-learning.html#cb395-14" aria-hidden="true" tabindex="-1"></a>iris_tune <span class="ot">&lt;-</span> iris <span class="sc">%&gt;%</span> <span class="fu">slice</span>(<span class="sc">-</span>trainIndex)</span>
+<span id="cb395-15"><a href="prediction-and-machine-learning.html#cb395-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb395-16"><a href="prediction-and-machine-learning.html#cb395-16" aria-hidden="true" tabindex="-1"></a><span class="do">## take a a look</span></span>
+<span id="cb395-17"><a href="prediction-and-machine-learning.html#cb395-17" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris_train)</span>
+<span id="cb395-18"><a href="prediction-and-machine-learning.html#cb395-18" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris_tune)</span></code></pre></div>
 <p>After running this code , if we take a look at the training and tuning datasets, we can see that 70% of our observations are in the training dataset and the other 30% are in the tuning dataset, as we specified.</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1GF3WXmqtbP8Ha2xnOEe9UZZ6MnSQwNL_-BeKA10hixQ/export/png?id=1GF3WXmqtbP8Ha2xnOEe9UZZ6MnSQwNL_-BeKA10hixQ&amp;pageid=g3db61636bd_0_1230" alt="" />
@@ -1365,54 +1365,54 @@ In other words, like in inferential analysis, your ability to make accurate pred
 <div id="variable-selection-1" class="section level5" number="59.0.7.2.2">
 <h5><span class="header-section-number">59.0.7.2.2</span> Variable Selection</h5>
 <p>What if we first try to predict <code>Sepal.Length</code> in our training data from <code>Sepal.Width</code>. To do that, we provide the <code>train</code> function with the model and specify that the dataset we’ll be using is the <code>iris</code> dataset. Additionally, we let the train function know that we want to run linear regression (<code>lm</code>) and that we want to assess our model’s accuracy using the <code>RMSE</code> metric.</p>
-<div class="sourceCode" id="cb400"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb400-1"><a href="prediction-and-machine-learning.html#cb400-1" aria-hidden="true" tabindex="-1"></a><span class="do">## train regression model</span></span>
-<span id="cb400-2"><a href="prediction-and-machine-learning.html#cb400-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb400-3"><a href="prediction-and-machine-learning.html#cb400-3" aria-hidden="true" tabindex="-1"></a>fit.lm <span class="ot">&lt;-</span> <span class="fu">train</span>(Sepal.Length <span class="sc">~</span> Sepal.Width,</span>
-<span id="cb400-4"><a href="prediction-and-machine-learning.html#cb400-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> iris,</span>
-<span id="cb400-5"><a href="prediction-and-machine-learning.html#cb400-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">method =</span> <span class="st">&quot;lm&quot;</span>,</span>
-<span id="cb400-6"><a href="prediction-and-machine-learning.html#cb400-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">metric =</span> <span class="st">&quot;RMSE&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb396"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb396-1"><a href="prediction-and-machine-learning.html#cb396-1" aria-hidden="true" tabindex="-1"></a><span class="do">## train regression model</span></span>
+<span id="cb396-2"><a href="prediction-and-machine-learning.html#cb396-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb396-3"><a href="prediction-and-machine-learning.html#cb396-3" aria-hidden="true" tabindex="-1"></a>fit.lm <span class="ot">&lt;-</span> <span class="fu">train</span>(Sepal.Length <span class="sc">~</span> Sepal.Width,</span>
+<span id="cb396-4"><a href="prediction-and-machine-learning.html#cb396-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> iris,</span>
+<span id="cb396-5"><a href="prediction-and-machine-learning.html#cb396-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">method =</span> <span class="st">&quot;lm&quot;</span>,</span>
+<span id="cb396-6"><a href="prediction-and-machine-learning.html#cb396-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">metric =</span> <span class="st">&quot;RMSE&quot;</span>)</span></code></pre></div>
 <p>After training the model, we take a look at our RMSE, and see that it is <code>0.82</code> for this dataset.</p>
-<div class="sourceCode" id="cb401"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb401-1"><a href="prediction-and-machine-learning.html#cb401-1" aria-hidden="true" tabindex="-1"></a><span class="do">## look at RMSE</span></span>
-<span id="cb401-2"><a href="prediction-and-machine-learning.html#cb401-2" aria-hidden="true" tabindex="-1"></a>fit.lm<span class="sc">$</span>results</span></code></pre></div>
+<div class="sourceCode" id="cb397"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb397-1"><a href="prediction-and-machine-learning.html#cb397-1" aria-hidden="true" tabindex="-1"></a><span class="do">## look at RMSE</span></span>
+<span id="cb397-2"><a href="prediction-and-machine-learning.html#cb397-2" aria-hidden="true" tabindex="-1"></a>fit.lm<span class="sc">$</span>results</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1GF3WXmqtbP8Ha2xnOEe9UZZ6MnSQwNL_-BeKA10hixQ/export/png?id=1GF3WXmqtbP8Ha2xnOEe9UZZ6MnSQwNL_-BeKA10hixQ&amp;pageid=g3db61636bd_0_1151" alt="" />
 <p class="caption">RMSE</p>
 </div>
 <p>Using this model, we would then generate predictions of <code>Sepal.Length</code> in the tuning dataset using the <code>predict()</code> function. Since we know the actual <code>Sepal.Length</code> in the tuning set, these predictions can then be visualized using a scatterplot.</p>
-<div class="sourceCode" id="cb402"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb402-1"><a href="prediction-and-machine-learning.html#cb402-1" aria-hidden="true" tabindex="-1"></a><span class="do">## make predictions in tuning data set</span></span>
-<span id="cb402-2"><a href="prediction-and-machine-learning.html#cb402-2" aria-hidden="true" tabindex="-1"></a>predictions <span class="ot">&lt;-</span> <span class="fu">predict</span>(fit.lm, iris_tune)</span>
-<span id="cb402-3"><a href="prediction-and-machine-learning.html#cb402-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb402-4"><a href="prediction-and-machine-learning.html#cb402-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb402-5"><a href="prediction-and-machine-learning.html#cb402-5" aria-hidden="true" tabindex="-1"></a><span class="do">## visualize results</span></span>
-<span id="cb402-6"><a href="prediction-and-machine-learning.html#cb402-6" aria-hidden="true" tabindex="-1"></a>iris_tune <span class="sc">%&gt;%</span></span>
-<span id="cb402-7"><a href="prediction-and-machine-learning.html#cb402-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">predictions =</span> predictions) <span class="sc">%&gt;%</span></span>
-<span id="cb402-8"><a href="prediction-and-machine-learning.html#cb402-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb402-9"><a href="prediction-and-machine-learning.html#cb402-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(Sepal.Length,predictions))</span></code></pre></div>
+<div class="sourceCode" id="cb398"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb398-1"><a href="prediction-and-machine-learning.html#cb398-1" aria-hidden="true" tabindex="-1"></a><span class="do">## make predictions in tuning data set</span></span>
+<span id="cb398-2"><a href="prediction-and-machine-learning.html#cb398-2" aria-hidden="true" tabindex="-1"></a>predictions <span class="ot">&lt;-</span> <span class="fu">predict</span>(fit.lm, iris_tune)</span>
+<span id="cb398-3"><a href="prediction-and-machine-learning.html#cb398-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb398-4"><a href="prediction-and-machine-learning.html#cb398-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb398-5"><a href="prediction-and-machine-learning.html#cb398-5" aria-hidden="true" tabindex="-1"></a><span class="do">## visualize results</span></span>
+<span id="cb398-6"><a href="prediction-and-machine-learning.html#cb398-6" aria-hidden="true" tabindex="-1"></a>iris_tune <span class="sc">%&gt;%</span></span>
+<span id="cb398-7"><a href="prediction-and-machine-learning.html#cb398-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">predictions =</span> predictions) <span class="sc">%&gt;%</span></span>
+<span id="cb398-8"><a href="prediction-and-machine-learning.html#cb398-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb398-9"><a href="prediction-and-machine-learning.html#cb398-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(Sepal.Length,predictions))</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1GF3WXmqtbP8Ha2xnOEe9UZZ6MnSQwNL_-BeKA10hixQ/export/png?id=1GF3WXmqtbP8Ha2xnOEe9UZZ6MnSQwNL_-BeKA10hixQ&amp;pageid=g3db61636bd_0_1143" alt="" />
 <p class="caption">Scatterplot shows <code>Sepal.Length</code> is not predicted well from <code>Sepal.Width</code> alone</p>
 </div>
 <p>Given the lack of correlation, we can see that this model does not predict sepal length in our tuning set well.</p>
 <p>In this first attempt, we specified which variable to use for prediction; however, what if we provided our regression model with all the variables in the dataset (specified by the <code>.</code> in the code here:</p>
-<div class="sourceCode" id="cb403"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb403-1"><a href="prediction-and-machine-learning.html#cb403-1" aria-hidden="true" tabindex="-1"></a><span class="do">## train regression model</span></span>
-<span id="cb403-2"><a href="prediction-and-machine-learning.html#cb403-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb403-3"><a href="prediction-and-machine-learning.html#cb403-3" aria-hidden="true" tabindex="-1"></a>fit.lm2 <span class="ot">&lt;-</span> <span class="fu">train</span>(Sepal.Length <span class="sc">~</span> .,</span>
-<span id="cb403-4"><a href="prediction-and-machine-learning.html#cb403-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data=</span>iris,</span>
-<span id="cb403-5"><a href="prediction-and-machine-learning.html#cb403-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">method=</span><span class="st">&quot;lm&quot;</span>,</span>
-<span id="cb403-6"><a href="prediction-and-machine-learning.html#cb403-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">metric=</span> <span class="st">&quot;RMSE&quot;</span>)</span>
-<span id="cb403-7"><a href="prediction-and-machine-learning.html#cb403-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb403-8"><a href="prediction-and-machine-learning.html#cb403-8" aria-hidden="true" tabindex="-1"></a><span class="do">## look at RMSE</span></span>
-<span id="cb403-9"><a href="prediction-and-machine-learning.html#cb403-9" aria-hidden="true" tabindex="-1"></a>fit.lm2<span class="sc">$</span>results</span>
-<span id="cb403-10"><a href="prediction-and-machine-learning.html#cb403-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb403-11"><a href="prediction-and-machine-learning.html#cb403-11" aria-hidden="true" tabindex="-1"></a><span class="do">## make predictions in tuning data set</span></span>
-<span id="cb403-12"><a href="prediction-and-machine-learning.html#cb403-12" aria-hidden="true" tabindex="-1"></a>predictions2 <span class="ot">&lt;-</span> <span class="fu">predict</span>(fit.lm2, iris_tune)</span>
-<span id="cb403-13"><a href="prediction-and-machine-learning.html#cb403-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb403-14"><a href="prediction-and-machine-learning.html#cb403-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb403-15"><a href="prediction-and-machine-learning.html#cb403-15" aria-hidden="true" tabindex="-1"></a><span class="do">## visualize results</span></span>
-<span id="cb403-16"><a href="prediction-and-machine-learning.html#cb403-16" aria-hidden="true" tabindex="-1"></a>iris_tune <span class="sc">%&gt;%</span></span>
-<span id="cb403-17"><a href="prediction-and-machine-learning.html#cb403-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">predictions =</span> predictions2) <span class="sc">%&gt;%</span></span>
-<span id="cb403-18"><a href="prediction-and-machine-learning.html#cb403-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb403-19"><a href="prediction-and-machine-learning.html#cb403-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(Sepal.Length,predictions2))</span></code></pre></div>
+<div class="sourceCode" id="cb399"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb399-1"><a href="prediction-and-machine-learning.html#cb399-1" aria-hidden="true" tabindex="-1"></a><span class="do">## train regression model</span></span>
+<span id="cb399-2"><a href="prediction-and-machine-learning.html#cb399-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb399-3"><a href="prediction-and-machine-learning.html#cb399-3" aria-hidden="true" tabindex="-1"></a>fit.lm2 <span class="ot">&lt;-</span> <span class="fu">train</span>(Sepal.Length <span class="sc">~</span> .,</span>
+<span id="cb399-4"><a href="prediction-and-machine-learning.html#cb399-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data=</span>iris,</span>
+<span id="cb399-5"><a href="prediction-and-machine-learning.html#cb399-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">method=</span><span class="st">&quot;lm&quot;</span>,</span>
+<span id="cb399-6"><a href="prediction-and-machine-learning.html#cb399-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">metric=</span> <span class="st">&quot;RMSE&quot;</span>)</span>
+<span id="cb399-7"><a href="prediction-and-machine-learning.html#cb399-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb399-8"><a href="prediction-and-machine-learning.html#cb399-8" aria-hidden="true" tabindex="-1"></a><span class="do">## look at RMSE</span></span>
+<span id="cb399-9"><a href="prediction-and-machine-learning.html#cb399-9" aria-hidden="true" tabindex="-1"></a>fit.lm2<span class="sc">$</span>results</span>
+<span id="cb399-10"><a href="prediction-and-machine-learning.html#cb399-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb399-11"><a href="prediction-and-machine-learning.html#cb399-11" aria-hidden="true" tabindex="-1"></a><span class="do">## make predictions in tuning data set</span></span>
+<span id="cb399-12"><a href="prediction-and-machine-learning.html#cb399-12" aria-hidden="true" tabindex="-1"></a>predictions2 <span class="ot">&lt;-</span> <span class="fu">predict</span>(fit.lm2, iris_tune)</span>
+<span id="cb399-13"><a href="prediction-and-machine-learning.html#cb399-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb399-14"><a href="prediction-and-machine-learning.html#cb399-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb399-15"><a href="prediction-and-machine-learning.html#cb399-15" aria-hidden="true" tabindex="-1"></a><span class="do">## visualize results</span></span>
+<span id="cb399-16"><a href="prediction-and-machine-learning.html#cb399-16" aria-hidden="true" tabindex="-1"></a>iris_tune <span class="sc">%&gt;%</span></span>
+<span id="cb399-17"><a href="prediction-and-machine-learning.html#cb399-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">predictions =</span> predictions2) <span class="sc">%&gt;%</span></span>
+<span id="cb399-18"><a href="prediction-and-machine-learning.html#cb399-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb399-19"><a href="prediction-and-machine-learning.html#cb399-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(Sepal.Length,predictions2))</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1GF3WXmqtbP8Ha2xnOEe9UZZ6MnSQwNL_-BeKA10hixQ/export/png?id=1GF3WXmqtbP8Ha2xnOEe9UZZ6MnSQwNL_-BeKA10hixQ&amp;pageid=g3db61636bd_0_1173" alt="" />
 <p class="caption">Scatterplot</p>
@@ -1445,20 +1445,20 @@ In other words, like in inferential analysis, your ability to make accurate pred
 <h5><span class="header-section-number">59.0.7.3.2</span> Variable Selection</h5>
 <p>Given the relatively small nature of this dataset, we’ll build the CART using all of the data; however, further and more robust optimization of what variables are included in the model is possible within the <code>caret</code> package.</p>
 <p>Here we specify that we want to predict <code>Species</code>, that we want to use a CART to do so by setting the method to <code>rpart</code>, and that, since it’s a categorical variable, we’re going to use <code>Accuracy</code> to as our assessment metric.</p>
-<div class="sourceCode" id="cb404"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb404-1"><a href="prediction-and-machine-learning.html#cb404-1" aria-hidden="true" tabindex="-1"></a><span class="do">## CART</span></span>
-<span id="cb404-2"><a href="prediction-and-machine-learning.html#cb404-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">7</span>)</span>
-<span id="cb404-3"><a href="prediction-and-machine-learning.html#cb404-3" aria-hidden="true" tabindex="-1"></a>fit.cart <span class="ot">&lt;-</span> <span class="fu">train</span>(Species<span class="sc">~</span>.,</span>
-<span id="cb404-4"><a href="prediction-and-machine-learning.html#cb404-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> iris,</span>
-<span id="cb404-5"><a href="prediction-and-machine-learning.html#cb404-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">method =</span> <span class="st">&quot;rpart&quot;</span>,</span>
-<span id="cb404-6"><a href="prediction-and-machine-learning.html#cb404-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">metric =</span> <span class="st">&quot;Accuracy&quot;</span>)</span>
-<span id="cb404-7"><a href="prediction-and-machine-learning.html#cb404-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb404-8"><a href="prediction-and-machine-learning.html#cb404-8" aria-hidden="true" tabindex="-1"></a><span class="do">## look at Accuracy</span></span>
-<span id="cb404-9"><a href="prediction-and-machine-learning.html#cb404-9" aria-hidden="true" tabindex="-1"></a>fit.cart<span class="sc">$</span>results</span>
-<span id="cb404-10"><a href="prediction-and-machine-learning.html#cb404-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb404-11"><a href="prediction-and-machine-learning.html#cb404-11" aria-hidden="true" tabindex="-1"></a><span class="do">## make predictions in tuning data set</span></span>
-<span id="cb404-12"><a href="prediction-and-machine-learning.html#cb404-12" aria-hidden="true" tabindex="-1"></a>predictions_cart <span class="ot">&lt;-</span> <span class="fu">predict</span>(fit.cart, iris_tune)</span>
-<span id="cb404-13"><a href="prediction-and-machine-learning.html#cb404-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb404-14"><a href="prediction-and-machine-learning.html#cb404-14" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(iris_tune<span class="sc">$</span>Species, predictions_cart)</span></code></pre></div>
+<div class="sourceCode" id="cb400"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb400-1"><a href="prediction-and-machine-learning.html#cb400-1" aria-hidden="true" tabindex="-1"></a><span class="do">## CART</span></span>
+<span id="cb400-2"><a href="prediction-and-machine-learning.html#cb400-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">7</span>)</span>
+<span id="cb400-3"><a href="prediction-and-machine-learning.html#cb400-3" aria-hidden="true" tabindex="-1"></a>fit.cart <span class="ot">&lt;-</span> <span class="fu">train</span>(Species<span class="sc">~</span>.,</span>
+<span id="cb400-4"><a href="prediction-and-machine-learning.html#cb400-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> iris,</span>
+<span id="cb400-5"><a href="prediction-and-machine-learning.html#cb400-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">method =</span> <span class="st">&quot;rpart&quot;</span>,</span>
+<span id="cb400-6"><a href="prediction-and-machine-learning.html#cb400-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">metric =</span> <span class="st">&quot;Accuracy&quot;</span>)</span>
+<span id="cb400-7"><a href="prediction-and-machine-learning.html#cb400-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb400-8"><a href="prediction-and-machine-learning.html#cb400-8" aria-hidden="true" tabindex="-1"></a><span class="do">## look at Accuracy</span></span>
+<span id="cb400-9"><a href="prediction-and-machine-learning.html#cb400-9" aria-hidden="true" tabindex="-1"></a>fit.cart<span class="sc">$</span>results</span>
+<span id="cb400-10"><a href="prediction-and-machine-learning.html#cb400-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb400-11"><a href="prediction-and-machine-learning.html#cb400-11" aria-hidden="true" tabindex="-1"></a><span class="do">## make predictions in tuning data set</span></span>
+<span id="cb400-12"><a href="prediction-and-machine-learning.html#cb400-12" aria-hidden="true" tabindex="-1"></a>predictions_cart <span class="ot">&lt;-</span> <span class="fu">predict</span>(fit.cart, iris_tune)</span>
+<span id="cb400-13"><a href="prediction-and-machine-learning.html#cb400-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb400-14"><a href="prediction-and-machine-learning.html#cb400-14" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(iris_tune<span class="sc">$</span>Species, predictions_cart)</span></code></pre></div>
 </div>
 </div>
 <div id="accuracy-assessment-1" class="section level4" number="59.0.7.4">

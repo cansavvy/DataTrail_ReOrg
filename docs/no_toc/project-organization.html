@@ -1335,15 +1335,15 @@ The folders in this project are:
 <div id="using-comments" class="section level3" number="36.1.4">
 <h3><span class="header-section-number">36.1.4</span> Using Comments</h3>
 <p>Our next piece of advice is that use comments within your code. Commenting in R is done by adding the pound sign (#). If you add the pound sign at the beginning of each line, R will not read that line as code and will instead skip it. So you can add your explanations about each chunk of code using the pound sign. This is an example of commenting:</p>
-<div class="sourceCode" id="cb269"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb269-1"><a href="project-organization.html#cb269-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculates the products of a vector and a matrix</span></span>
-<span id="cb269-2"><a href="project-organization.html#cb269-2" aria-hidden="true" tabindex="-1"></a><span class="co"># checks if they can be multiplied first</span></span>
-<span id="cb269-3"><a href="project-organization.html#cb269-3" aria-hidden="true" tabindex="-1"></a><span class="cf">function</span> (x, y){</span>
-<span id="cb269-4"><a href="project-organization.html#cb269-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">dim</span>(x)[<span class="dv">2</span>] <span class="sc">!=</span> <span class="fu">length</span>(y)) {</span>
-<span id="cb269-5"><a href="project-organization.html#cb269-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">stop</span>(<span class="st">&quot;Can&#39;t multiply matrix%*%vector because the dimensions are wrong&quot;</span>)</span>
-<span id="cb269-6"><a href="project-organization.html#cb269-6" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb269-7"><a href="project-organization.html#cb269-7" aria-hidden="true" tabindex="-1"></a>    product <span class="ot">&lt;-</span> matrix <span class="sc">%*%</span> vector</span>
-<span id="cb269-8"><a href="project-organization.html#cb269-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(product)</span>
-<span id="cb269-9"><a href="project-organization.html#cb269-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb265"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb265-1"><a href="project-organization.html#cb265-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculates the products of a vector and a matrix</span></span>
+<span id="cb265-2"><a href="project-organization.html#cb265-2" aria-hidden="true" tabindex="-1"></a><span class="co"># checks if they can be multiplied first</span></span>
+<span id="cb265-3"><a href="project-organization.html#cb265-3" aria-hidden="true" tabindex="-1"></a><span class="cf">function</span> (x, y){</span>
+<span id="cb265-4"><a href="project-organization.html#cb265-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">dim</span>(x)[<span class="dv">2</span>] <span class="sc">!=</span> <span class="fu">length</span>(y)) {</span>
+<span id="cb265-5"><a href="project-organization.html#cb265-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">stop</span>(<span class="st">&quot;Can&#39;t multiply matrix%*%vector because the dimensions are wrong&quot;</span>)</span>
+<span id="cb265-6"><a href="project-organization.html#cb265-6" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb265-7"><a href="project-organization.html#cb265-7" aria-hidden="true" tabindex="-1"></a>    product <span class="ot">&lt;-</span> matrix <span class="sc">%*%</span> vector</span>
+<span id="cb265-8"><a href="project-organization.html#cb265-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(product)</span>
+<span id="cb265-9"><a href="project-organization.html#cb265-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>Note that the first line describes what the function does. Commenting is helpful especially when the code is more complicated and harder to understand. Keep comments short and informative and avoid inserting comments for code that have an obvious purpose, i.e. don’t add comment for a line of code that adds two variables).</p>
 </div>
 <div id="write-in-a-modular-way" class="section level3" number="36.1.5">

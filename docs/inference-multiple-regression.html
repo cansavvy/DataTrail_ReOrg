@@ -1169,7 +1169,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb365-3"><a href="inference-multiple-regression.html#cb365-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&amp;pageid=g3daea37311_0_1513" alt="" />
-<p class="caption">scatterplot of <code>wt</code> and <code>mpg</code> from <code>mtcars</code></p>
+<p class="caption">scatterplot</p>
 </div>
 <p>From the scatterplot, the relationship looks approximately linear and the variance looks constant. Thus, we could model this using linear regression:</p>
 <div class="sourceCode" id="cb366"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb366-1"><a href="inference-multiple-regression.html#cb366-1" aria-hidden="true" tabindex="-1"></a><span class="do">## model the data without confounder</span></span>
@@ -1234,7 +1234,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>In this code, we’re specifying that we want to take a random draw of 100 different values (representing our 100 cans of soft drink), where the mean is 12 (representing the 12 ounces of soda expected to be within each can), and allowing for some variation (we’ve set the standard deviation to be 0.04).</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&amp;pageid=g5d2253b705_2_0" alt="" />
-<p class="caption">output looking at <code>soda_ounces</code> dataset</p>
+<p class="caption">output looking at soda_ounces dataset</p>
 </div>
 <p>We can see that the values are approximately, but not always exactly equal to the expected 12 ounces.</p>
 <div id="testing-mean-difference-from-expectation-in-r" class="section level4" number="56.0.5.1">
@@ -1256,15 +1256,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>Here, we see that the data are approximately normally distributed, allowing for a t-test to be used.</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&amp;pageid=g5d2253b705_2_5" alt="" />
-<p class="caption">histogram of <code>soda_ounces</code></p>
+<p class="caption">histogram of soda_ounces</p>
 </div>
 <p>A t-test will check whether the observed ounces differs from the expected mean (12 oz). As mentioned above, to run a t-test in R, most people use the built-in function: <code>t.test()</code></p>
 <div class="sourceCode" id="cb371"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb371-1"><a href="inference-multiple-regression.html#cb371-1" aria-hidden="true" tabindex="-1"></a><span class="do">## carry out t-test</span></span>
 <span id="cb371-2"><a href="inference-multiple-regression.html#cb371-2" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(soda_ounces, <span class="at">mu =</span> <span class="dv">12</span>)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&amp;pageid=g5d2253b705_2_13" alt="" />
-<p class="caption"><code>t.test()</code> output</p>
-</div>
+<p><img src="https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&amp;pageid=g5d2253b705_2_13" /></p>
 <p>In the output from this function, we’ll focus on the 95 percent confidence interval. Confidence Intervals provide the range of values likely to contain the unknown population parameter. Here, the population parameter we’re interested in is the mean. Thus, the 95% Confidence Intervals provides us the range where, upon repeated sampling, the calculated mean would fall 95 percent of the time. More specifically, if the 95 percent confidence interval contains the expected mean (12 oz), then we can be confident that the company is not shorting us on the amount of liquid they’re putting into each can.</p>
 <p>Here, since 12 is between 11.99187 and 12.00754, we can see that the amounts in the 100 sampled cans are within the expected variation. We could infer from this sample that the population of all cans of this soft drink are likely to have an appropriate amount of liquid in the cans.</p>
 <p>However, as mentioned previously, t-tests are an extension of linear regression. We could also look to see whether or not the cans had the expected average of 12 oz in the data collected using <code>lm()</code>.</p>
@@ -1273,10 +1270,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb372-3"><a href="inference-multiple-regression.html#cb372-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb372-4"><a href="inference-multiple-regression.html#cb372-4" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate confidence interval</span></span>
 <span id="cb372-5"><a href="inference-multiple-regression.html#cb372-5" aria-hidden="true" tabindex="-1"></a><span class="fu">confint</span>(regression_output)</span></code></pre></div>
-<div class="figure">
-<img src="https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&amp;pageid=g5d2253b705_2_21" alt="" />
-<p class="caption">comparing <code>t.test()</code> and <code>lm()</code> output</p>
-</div>
+<p><img src="https://docs.google.com/presentation/d/1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo/export/png?id=1xjMEjKpqu5bkgwPIuIaBmdDczW7a6lPBoagzGtvn7zo&amp;pageid=g5d2253b705_2_21" /></p>
 <p>Note that the confidence interval is the exact same here using <code>lm()</code> as above when we used <code>t.test()</code>! We bring this up not to confuse you, but to guide you away from trying to memorize each individual statistical test and instead understand how they relate to one another.</p>
 </div>
 </div>
@@ -1296,7 +1290,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="additional-resources-18" class="section level3" number="56.0.8">
 <h3><span class="header-section-number">56.0.8</span> Additional Resources</h3>
 <ul>
-<li><a href="https://lindeloev.github.io/tests-as-linear">Common statistical tests are linear models (or: how to teach stats)</a>, blog post by Jonas Kristoffer Lindelov</li>
+<li><a href="https://lindeloev.github.io/tests-as-linear">Common statistical tests are linear models</a>, blog post by Jonas Kristoffer Lindelov</li>
 </ul>
 
 </div>

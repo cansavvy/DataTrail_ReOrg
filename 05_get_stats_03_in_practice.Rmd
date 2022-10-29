@@ -73,19 +73,20 @@ We discussed in the previous chapter how to translate your data science question
 
 Here's some common things your data might tell you and how you might find that out:
 
+### How to find if you have outliers
+Outliers are data points that are extreme. They can throw off whole analyses and bring you to the wrong conclusions. You have outliers or weird samples in your data -- you may want to try removing these if appropriate and re-running the test you were using.
+
+- See this [guide for code and tips on how to detect outliers in R](https://statsandr.com/blog/outliers-detection-in-r/)
+
+### How to know if your data is underpowered for your question
+In order to answer particular questions with a dataset, you need to have enough data in the first place! If you don't have enough data that means you are underpowered. This may happen if you have a lot of missing data, a painfully small dataset, or the effect you are looking for is very small. In these cases you may need to find another dataset or see if the data collector can collect more data to add to this set. So how do you know if your dataset is underpowered?
+
+- See this [chapter of a book for code and tips for how to know if your data are underpowered by doing a power analysis in R](https://bookdown.org/daniel_dauber_io/r4np_book/power-analysis.html).
+
 ### How to know how your data are distributed
 You want to use a particular stats test, but when you read about this stats test says it has an _assumption_ that the data are normally distributed -- stats assumptions are really just requirements. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed. If your data are NOT normally distributed, you will want to use another test.
 
-### How to find if you have outliers
-Outliers are data points that are extreme. They can throw off whole analyses and bring you to the wrong conclusions. You have outliers or weird samples in your data -- you may want to try removing these if appropriate and re-running the test you were using.
-- https://statsandr.com/blog/outliers-detection-in-r/
-
-### How to know if your data is underpowered for your question
-You have a lot of missing data or a painfully small dataset -- you may need to find another dataset or see if the data collector can collect more data to add to this set.
-
-### Is your data just generally garbage?
-Sometimes, sadly data is just too unreliable to use.
-
+- See this article for code and tips on [How to Assess Normality in R](https://universeofdatascience.com/how-to-assess-normality-in-r/)
 
 **Practical tips for figuring out what to do with your data:**
 
@@ -93,12 +94,60 @@ Sometimes, sadly data is just too unreliable to use.
 - Consult a more senior data scientist or statistician. Show them the the weirdness you see and ask them what they think of it and what they would do.
 - Look for other data analysis examples online that resemble your data and its weirdness. Try to see what others did and if it makes sense to apply to your situation.
 
+## How do I know what test to use?
+
+We're going to tell you about some common tests, but here's some flow chart to help you get started. We advise generally having an idea of tests out there but not getting caught up in the minutia of every test. If you end up using a particular test on a set of data, then might be a good time to try to get a practical understanding of the test and how to interpret it but knowing everything about all statistical tests is just not practical and not a good use of your time.
+
+And as we mentioned with the tips above, don't be afraid to reach out to a statistician or more senior data scientist to help you choose what is appropriate!
+
+For this section, we're going to borrow the handy cheatsheets and [tables from this article](https://www.scribbr.com/statistics/statistical-tests/) by Rebecca Bevans. Don't worry about memorizing the specifics of these tests, just generally understand this guide and how to use it and know you can come back to it for a reference.  
+
+### Comparison tests
+
+These assume normality.
+
+```{r, fig.alt = "Comparison tests", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g179b57c98b7_0_80")
+```
+
+### Regression tests
+
+We will talk more about regression in the upcoming chapters!
+
+```{r, fig.alt = "Regression tests", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g179b57c98b7_0_86")
+```
+
+### Correlation tests
+
+Highly similar to regression tests because they use a lot of the same math, correlation tests ask if two variables are related.
+
+```{r, fig.alt = "Correlation tests", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g179b57c98b7_0_94")
+```
+
+### Nonparametric tests
+
+Remember how we briefly talked about data being normally distributed or not? Turns out all the tests we just mentioned above ONLY work for data that is normally distributed. Aka as statisticians like to say those tests "assume normality". But if your data isn't normal, you can still do things with it! There are non-parametric (things that don't assume normality) equivalents you can use.
+
+```{r, fig.alt = "Nonparametric 1", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g179b57c98b7_0_99")
+```
+
+```{r, fig.alt = "Nonparametric 1", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g179b57c98b7_0_105")
+```
+
 ## Case study for stats in practice
 
+We've discussed some very general tips in this section, but let's take a walk through a dataset to see what this might look like.
 
+TODO: Add example analysis here
 
 ### Additional Resources
 
+* [Which Statistical Test to Use? Follow This Cheat Sheet](https://medium.com/swlh/which-statistical-test-to-use-follow-this-cheat-sheet-92c9a26f6811)
+* [Demystifying Statistical Analysis 1: A Handy Cheat Sheet](https://towardsdatascience.com/demystifying-statistical-analysis-1-a-handy-cheat-sheet-b6229bf992cf)
 * [Open Case Studies](https://opencasestudies.github.io/), by Pei-Lun Kuo, Leah Jager, Margaret Taub, and Stephanie Hicks
 * [Health Expenditures Case Study](https://opencasestudies.github.io/casestudies/ocs-healthexpenditure.html)
 * [Case Study on GitHub](https://github.com/opencasestudies/ocs-healthexpenditure)

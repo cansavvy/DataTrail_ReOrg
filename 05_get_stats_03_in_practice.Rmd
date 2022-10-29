@@ -1,0 +1,104 @@
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
+# Practice using stats
+
+In the upcoming chapters we will introduce you to a number of statistical terms and test types. In general, we wouldn't stress memorizing specifics of these tests, but instead try to get an intuitive sense for how to use and interpret the stats in the context of your statistical questions.
+
+In this chapter we are going to discuss some general strategies for how to start to apply the power of stats to your dataset.
+
+## Tip number 1: Always be looking at your data
+
+Data in real life is messy. You know this because we had a whole section about cleaning data! But even after your data is "tidy" in the sense that it is ready to be used, it still may have other oddities.
+
+We've discussed that data science is all about questions! This means that a new data science endeavor often starts with a lot of unknowns. There are:
+
+- Knowns! - These are the things you know.
+- Known unknowns - these are the things that you know you don't know -- like the answers to your data science question
+- Unknown unknowns - These are the things that you don't know that you don't know -- these can be very scary if they affect your data!
+
+```{r, fig.alt = "Data Science is a bit messier than we originally told you.", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g3daea37311_0_357")
+```
+
+So how do we make unknown unknowns a little more known? We have to do lots of exploring!
+
+There's initial explorations that are always a great idea to do with your data and as you work on a dataset you may want to repeat these whenever you apply a new step or transformation to your data:
+
+**Practical tips for looking at your data**  
+
+- Look at your data in the Environment tab or by printing it out.
+- Make a density plot or histogram to look at the shape of your data.
+- Run the `summary()` function on your data.
+- Make sure to look into the documentation for functions that you use to transform your data so you understand what you are doing to it.
+
+As you do these things with your data you may find some "weirdness" which brings us to our next tip:
+
+## Tip number 2: Dig into weirdness
+
+Often after you have done some initial exploration of your data or as you are generally working on your analysis, you may see things that make you go "huh?" or are generally just "weird". One of the most valuable skills of data scientist can have is digging into that weirdness. As you continue to work in the field of data science you will hone your skills of identifying and digging into weirdness. Over time you will get a "spidey sense" and learn what weirdness is worth digging into and what weirdness is actually quite normal.
+
+Digging into peculiar things can lead making unknown unknowns more known. They sometimes may shift the entire strategy of your analysis! And while this may sound like it will add your work, it is how the best data science is done!
+
+At this point, we should let you know we've been somewhat lying to you at the beginning of each section when we've shown you this map:
+
+```{r, fig.alt = "Data Science process involves", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.p")
+```
+
+In reality, good data science doesn't happen so step like.
+
+```{r, fig.alt = "Data Science is a bit messier than we originally told you.", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g179b57c98b7_0_29")
+```
+
+The best data science is a bit messier than this. Original questions lead to new questions; and some pursuits are dead ends; and whole new findings and cool things we never dreamed of sometimes pop up out of nowhere! Meaning that data science is never write code once and done, it is write code, run it, rewrite it, look at your data, learn something, rewrite it again, have new questions, etc, etc etc.
+
+This leads us to another point to say that the best data science is done iteratively -- you won't write your best analysis in one sitting and never come back to it. Your best analyses will be things you work on over time to incrementally improve and look at.
+
+**Practical tips for digging into weirdness:**  
+
+- Look into weird density plot shapes and points in your data (outliers)
+- Look into results and outcomes that are unexpected - are these real or a byproduct of a mistake somewhere?
+- Look out for results and outcomes that are too perfect -- real life and real data are rarely perfect
+- **Never assume why something is the way it is without proving it to yourself by digging into it more!**
+
+Ultimately, when you see weird things prove to yourself that the results are what they seem.
+
+## Tip number 3: Let the data inform you
+
+After following our first two tips, you should have a generally good sense of what your data look like and what kind of weirdness exists. Now you will be ready to use what you've learned about your data to inform you have how to properly handle them!
+
+We discussed in the previous chapter how to translate your data science questions into a stats test but there's a second part of this consideration which is taking into account how your data are behaving to know what kinds of stats and questions are appropriate.
+
+Here's some common things your data might tell you and how you might find that out:
+
+### How to know how your data are distributed
+You want to use a particular stats test, but when you read about this stats test says it has an _assumption_ that the data are normally distributed -- stats assumptions are really just requirements. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed. If your data are NOT normally distributed, you will want to use another test.
+
+### How to find if you have outliers
+Outliers are data points that are extreme. They can throw off whole analyses and bring you to the wrong conclusions. You have outliers or weird samples in your data -- you may want to try removing these if appropriate and re-running the test you were using.
+- https://statsandr.com/blog/outliers-detection-in-r/
+
+### How to know if your data is underpowered for your question
+You have a lot of missing data or a painfully small dataset -- you may need to find another dataset or see if the data collector can collect more data to add to this set.
+
+### Is your data just generally garbage?
+Sometimes, sadly data is just too unreliable to use.
+
+
+**Practical tips for figuring out what to do with your data:**
+
+- Google and find sources that discuss the problems you are seeing with your data. It is unlikely that the dataset you are working with is the only dataset that has this weirdness and others online may way in.
+- Consult a more senior data scientist or statistician. Show them the the weirdness you see and ask them what they think of it and what they would do.
+- Look for other data analysis examples online that resemble your data and its weirdness. Try to see what others did and if it makes sense to apply to your situation.
+
+## Case study for stats in practice
+
+
+
+### Additional Resources
+
+* [Open Case Studies](https://opencasestudies.github.io/), by Pei-Lun Kuo, Leah Jager, Margaret Taub, and Stephanie Hicks
+* [Health Expenditures Case Study](https://opencasestudies.github.io/casestudies/ocs-healthexpenditure.html)
+* [Case Study on GitHub](https://github.com/opencasestudies/ocs-healthexpenditure)

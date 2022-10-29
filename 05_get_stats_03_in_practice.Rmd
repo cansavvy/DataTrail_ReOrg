@@ -1,7 +1,7 @@
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
 ```
-# Practice using stats
+# In practice using stats
 
 In the upcoming chapters we will introduce you to a number of statistical terms and test types. In general, we wouldn't stress memorizing specifics of these tests, but instead try to get an intuitive sense for how to use and interpret the stats in the context of your statistical questions.
 

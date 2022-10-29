@@ -138,12 +138,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0Y
 ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g179b57c98b7_0_105")
 ```
 
-## Case study for stats in practice
-
-We've discussed some very general tips in this section, but let's take a walk through a dataset to see what this might look like.
-
-TODO: Add example analysis here
-
 ### Additional Resources
 
 * [Which Statistical Test to Use? Follow This Cheat Sheet](https://medium.com/swlh/which-statistical-test-to-use-follow-this-cheat-sheet-92c9a26f6811)

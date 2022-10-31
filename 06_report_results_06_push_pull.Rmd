@@ -92,7 +92,7 @@ git commit -m "Add task list"
 
 #### Verifying Your Identity
 
-On RStudio Cloud, you'll have to verify who you are each time you try to make changes to a repository.
+On RStudio Cloud, you may have to verify who you are when you make changes to a repository.
 
 You'll know you have to do this when you try to `git commit` and you get an error that starts with: "Please tell me who you are," followed with some suggestions about using `git config`.
 
@@ -120,9 +120,6 @@ Note: If you're asked for your password, you should type in your GitHub password
 #### Publishing changes (pushing)
 
 We are finally ready to publish our changes to a **remote repository**. We've been doing work in a local copy of the repository on RStudio Cloud. This personal copy is called a **local repository**. To make changes available to others, there needs to be an external version of the repository accessible by others. This is called a **remote repository**. Our remote repository is the one available on GitHub. To publish our changes, we use the `git push` command. Because we cloned this repository from GitHub, Git automatically knows that this is the remote repository. A local repository can have multiple remotes, and it is possible to push changes to a specified remote. We will not cover this here though. After you run `git push`, you will see some status text and you will be prompted for your GitHub username and password. After you enter these, the push will be complete.
-
-
-![Pushing changes](https://docs.google.com/presentation/d/1syZGx4saIzmiWVGZzIjqBjQaGkFXyC_Hlo5Pq-edYs8/export/png?id=1syZGx4saIzmiWVGZzIjqBjQaGkFXyC_Hlo5Pq-edYs8&pageid=g388478d6c4_0_13)
 
 ### Pulling
 

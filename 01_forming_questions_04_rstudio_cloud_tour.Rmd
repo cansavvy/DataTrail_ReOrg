@@ -4,7 +4,7 @@ ottrpal::set_knitr_image_path()
 
 # RStudio and Projects
 
-You've seen RStudio in the first class in the sequence. Remember [R](https://www.r-project.org/) is the main software that we are going to use to analyze data in this class. R is one of the two most popular languages for data science. We will learn a lot more about it throughout the courses, but here we are just going to use it to take a peak at the data you have created. R is a piece of software that is used for running computer code. [RStudio](https://www.rstudio.com/) is a company that makes a piece of software that works with R. RStudio makes it easier to create, save, share, and work with R code and data sets. RStudio is also useful for organizing projects and writing, organizing, and sharing your data science work.  
+Remember [R](https://www.r-project.org/) is the main software that we are going to use to analyze data in this class. R is one of the two most popular languages for data science. We will learn a lot more about it throughout the courses, but here we are just going to use it to take a peak at the data you have created. R is a piece of software that is used for running computer code. [RStudio](https://www.rstudio.com/) is a company that makes a piece of software that works with R. RStudio makes it easier to create, save, share, and work with R code and data sets. RStudio is also useful for organizing projects and writing, organizing, and sharing your data science work.  
 
 If you have a more traditional laptop you can download and install R and RStudio on your laptop. However, the DataTrail Program will use RStudio through a web-based version of their software called RStudio Cloud.
 
@@ -80,13 +80,13 @@ We will go through each of the regions and describe some of their main functions
 
 To access the fourth space shown in the figure below, you'll have to start a new file. To do so, you'll click on File, hover over New File from the drop-down menu that appears, and then click "R Script" from the drop-down menu.
 
-![RStudio's quadrants](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_38)
+![Open up a new file](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_16)
 
 To open up a new file, you'll click on File, hover over New File from the drop-down menu that appears, and then click "R Script" from the drop-down menu.
 
-![Open up a new file](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_16)
-
 This will open up a new R Script, which is currently called "Untitled," which you can see on the tab at the top left of the quadrant has just appeared.
+
+![RStudio's quadrants](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_38)
 
 #### The menu bar
 
@@ -131,7 +131,11 @@ example <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8), nrow = 4, ncol = 2)
 
 To run this code, you *can't* just hit enter (as you were able to do in the Console). Hitting enter will just bring your cursor to the next line in the script. Instead, with your cursor in the line of code you want to run, you can click on "Run" at the top right of your script file. This will execute the code in the Console.
 
-**Note** Alternatively, to run code, with your cursor on the line of code you'd like to run, you could **hit 'ctrl + enter' to run that line of code**. This will save you *a lot* of time as you start writing a lot of code and analyzing data. Practice this keyboard shortcut now!
+<div class = "notice">
+
+Alternatively, to run code, with your cursor on the line of code you'd like to run, you could **hit 'ctrl + enter' to run that line of code**. This will save you *a lot* of time as you start writing a lot of code and analyzing data. Practice this keyboard shortcut now!
+
+</div>
 
 What this code does is create an object (we'll define what that is soon!) called 'example' that has the numbers 1 through 8 in four different rows and two different columns. To see what this object looks like, we'll take a look at the environment quadrant of RStudio Cloud.
 

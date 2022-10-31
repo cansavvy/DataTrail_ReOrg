@@ -84,12 +84,31 @@ In order to answer particular questions with a dataset, you need to have enough 
 - See this [chapter of a book for code and tips for how to know if your data are underpowered by doing a power analysis in R](https://bookdown.org/daniel_dauber_io/r4np_book/power-analysis.html).
 
 ### How to know how your data are distributed
-You want to use a particular stats test, but when you read about this stats test says it has an _assumption_ that the data are normally distributed -- stats assumptions are really just requirements. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed. If your data are NOT normally distributed, you will want to use another test.
 
-- See this article for code and tips on [How to Assess Normality in R](https://universeofdatascience.com/how-to-assess-normality-in-r/)
+Perhaps you want to use a particular stats test, but when you read about this stats test says it has an _assumption_ that the data are normally distributed -- **stats assumptions are really just requirements for using a method**. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed.
+
+#### What does it mean to be "normally distributed?"
+
+How a dataset is distributed has to do withe frequency of the data. So in the example below, we've made a probability density plot using ggplot2. The higher the line is, the more probable that that value would occur.
+
+```{r, fig.alt = "What does a probability density plot represent", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g17abdef0467_0_12")
+```
+
+If when you plot your distribution function it looks like that normal bell shaped curve, then you have "normally distributed" data. You will want to know what your data distribution looks like so you know what tests are appropriate. 
+
+```{r, fig.alt = "Normal distributions are just one type of distribution", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g17abdef0467_0_0")
+```
+
+- [Read more about normal distributions here](https://www.scribbr.com/statistics/normal-distribution/).
+- There are formal ways to test for normality and these methods are described in this article that has code examples: [How to Assess Normality in R](https://universeofdatascience.com/how-to-assess-normality-in-r/)
+
+In conclusion, density plots are a super handy tool to see what your data look like before you dive in to any other tests and analyses. These can inform you about what to do with your data.
 
 **Practical tips for figuring out what to do with your data:**
 
+- Make density plots to visual your data's distribution.
 - Google and find sources that discuss the problems you are seeing with your data. It is unlikely that the dataset you are working with is the only dataset that has this weirdness and others online may way in.
 - Consult a more senior data scientist or statistician. Show them the the weirdness you see and ask them what they think of it and what they would do.
 - Look for other data analysis examples online that resemble your data and its weirdness. Try to see what others did and if it makes sense to apply to your situation.

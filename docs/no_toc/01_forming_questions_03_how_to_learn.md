@@ -30,7 +30,7 @@ First and foremost, the best way to learn data science is by doing it. Throughou
 
 #### The Mindset
 
-To learn how to learn, it's important to know just how important your mindset is. Your goal should be to answer an interesting question. Your objective is *not* to memorize a bunch of functions. It's to *use those functions* to do something interesting. The path to accomplishing that goal may be circuitous. You may take a few steps backward and experience a setback or two before moving forward. That's ok!
+Your **mindset** is very important to learning how to learn. Your goal should be to answer an interesting question. Your objective is *not* to memorize a bunch of functions. It's to *use those functions* to do something interesting. The path to accomplishing that goal may be circuitous. You may take a few steps backward and experience a setback or two before moving forward. That's ok!
 
 
 ![mindset](https://docs.google.com/presentation/d/1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY/export/png?id=1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY&pageid=g3f394e96d2_0_42)
@@ -42,9 +42,16 @@ When carrying out a data science projects, there is always more than one way to 
 In fact, while you may not know R code yet, the following four lines of code all produce the **exact** same output:
 
 ```r
+# Example 1
 mtcars %>% tidyr::gather(key = variable, value = value)
+
+# Example 2
 tidyr::gather(mtcars, key = variable, value = value)
+
+# Example 3
 mtcars %>% tidyr::gather(key = variable)
+
+# Example 4
 mtcars_long <- tidyr::gather(mtcars, key = variable)
 ```
 
@@ -55,7 +62,7 @@ Any one of these would be a reasonable approach. We use this example to explain 
 
 #### Asking For Help
 
-Data science is best done as a part of a community! Asking each other questions and brainstorming with others is ideally how data science projects are completed.
+Data science is best done as a part of a community! Asking each other questions and brainstorming with others is ideally how data science projects are completed. In fact, this is how most companies work. You are part of a **team** of data scientists working and learning together.
 
 Working together and asking questions:  
 
@@ -65,11 +72,12 @@ Working together and asking questions:
 
 **No one knows everything and that is okay and expected.**
 
-While we'll point out where to find help when you're stuck throughout this course set; however, it may not be obvious *when* to ask for help. While this is not a hard and fast rule, if you've been trying to find the answer to something you're stuck on for half an hour and cannot figure it out, it may be time to post your question online for someone else to answer or to reach out directly to someone to get your question answered.
+We'll point out where to find help when you're stuck throughout this course set. However, it may not be obvious *when* to ask for help. While this is not a hard and fast rule, if you've been trying to find the answer to something you're stuck on for half an hour and cannot figure it out, it may be time to post your question online for someone else to answer or to reach out directly to someone to get your question answered.
 During the half hour when you're trying on your own, you should:  
+
 - **Google for the answer** with various different wording attempts.
 - If it's a coding question, you should try **running code** to test to see if the fixes from Google fix your problem.
-- If you're getting **error messages**, paste those messages into Google.
+- If you're getting **error messages**, paste those messages into Google and search.
 - If after trying all of these things you're still stuck, then you should **ask for help** *every time*.
 
 **Rather than give up or get overly frustrated because you're stuck, ask questions**!

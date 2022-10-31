@@ -1070,13 +1070,6 @@ allstate
 which-job-is-right-for-you
 summary-28
 additional-resources-36
-google-hangouts
-accessing-your-google-hangouts-account
-video-chats
-phone-calls
-messaging
-group-conversations
-more-specifics-on-using-google-hangouts
 where-to-look-for-data-science-jobs
 what-jobs-to-look-for
 additional-considerations

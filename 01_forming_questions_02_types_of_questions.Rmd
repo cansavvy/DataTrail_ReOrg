@@ -29,7 +29,7 @@ The goal of predictive data science question is to use data from a large collect
 
 ![Types of Data Analysis](https://docs.google.com/presentation/d/1VIyLthjLSXikF1euqPNA71cnT_C1kSZhDbIPe8uzg9I/export/png?id=1VIyLthjLSXikF1euqPNA71cnT_C1kSZhDbIPe8uzg9I&pageid=g3ec461ec74_0_22)
 
-The questions we will focus on are the types where we look for relationships between measurements or variables. But in these types of analyses we won't be able to tell anything about what happens if you _change_ one of the variables. To figure out what happens if you change a variable, you need a more advanced type of analysis. These analyses - causal and mechanistic - require data on specific types of problem and collected in special ways. For this class, the primary thing we need to be aware of is that just because two variables are correlated with each other it doesn't mean that changing one causes a change in the other.
+The questions we will focus on are the types where we look for relationships between measurements or variables. But in these types of analyses we won't be able to tell anything about what happens if you _change_ one of the variables. To figure out what happens if you change a variable, you need a more advanced type of analysis. These analyses - causal and mechanistic - require data on specific types of problem and collected in special ways. For this class, the primary thing we need to be aware of is that **just because two variables are correlated with each other it doesn't mean that changing one causes a change in the other**.
 
 [One way](http://www.tylervigen.com/spurious-correlations) that people illustrate this idea is to look at data where two variables show a relationship, but are clearly *not* related to each other. For example, in a specific time range, the number of people who drown while falling into a pool is related to the number of films that Nicholas Cage appears in. These two variables are clearly unrelated to each other, but the data seems to show a relationship. We'll discuss more later in this class
 
@@ -62,6 +62,6 @@ Any text you can find on the web can be considered to be data. You can use this 
 
 Sesame Street is a children's entertainment and educational program. Scientists might be interested in whether watching Sesame Street helps brain development in kids. To turn this into a data science question we need to make it more specific and focused on data. So we might convert this to a data science question like, "Can we compare children who watch Sesame Street and those who don't to see whose test scores are higher?" A complication is that it might be difficult and expensive to get parents to have their children participate in the study. So we might take a small sample of students and measure their test scores and find out whether they watch TV. Since we want to say something about _all_ children, but have only measured data on a few, this would be an **inferential analysis**.  
 
-- **Problem:** Does Sesame Street affect kids brain development?
+- **Problem:** Does Sesame Street affect kids' brain development?
 - **Data science question:** Is there a relationship between watching Sesame Street and test scores among children?
 - **Type of analysis:** Inferential analysis

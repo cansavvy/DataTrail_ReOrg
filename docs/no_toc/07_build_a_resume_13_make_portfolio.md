@@ -1,0 +1,69 @@
+
+
+
+# Create Your Portfolio
+
+In this chapter, we aren't creating a formal project per se, but we are gathering all the work you've done through this course as well as other professionally relevant information about yourself and putting it together into a website!
+
+This will allow you to easily share with potential employers or collaborators the excellent work you have done!
+
+## Your objectives!
+
+To complete this project you'll need to do a few things
+
+### Get the rest of your projects online on GitHub
+
+1. Create a new GitHub repository following the steps describe in the `Creating a repository` chapter.
+2. Keep this window open and available.
+3. Go to your `DataTrail project` RStudio project.
+4. Go to the Terminal pane and run the following commands:
+```
+git init
+git add .
+```
+These steps have now made this project a git project.
+
+
+5. Now we need to set up credentials so we can put your projects online! [Follow the credentials set up described in this chapter](https://datatrail-jhu.github.io/DataTrail/cloning-a-repository.html#step-3-set-up-github-credentials).
+
+6. Return to the Terminal tab and run this:
+```
+git commit -m "add all files"
+```
+
+7. Tell your RStudio git project where to push your project online by running this command in the terminal, but replace the `URL_TO_YOUR_REPOSITORY` with the repository URL of your own GitHub repository:
+
+```
+git remote set-url --push origin URL_TO_YOUR_REPOSITORY
+```
+8. To push all the files here to your GitHub remote repository do this:
+```
+git push --force
+```
+9. Go to your GitHub repository to make sure the files got there.
+
+10. Turn on your GitHub pages for this repository by going to `Settings` > `Pages` > and Underneath `Branch` choose `main`. Click Save.
+
+11. All of your project htmls should be able to be seen using a URL that will look like this:
+
+https://cansavvy.github.io/datatrail_projects/01_Forming_Questions/first_project.nb.html
+
+To break this down, it will be like this:
+
+`https://username.github.io/name_of_your_project_repository/section_folder/project_html_file_name.nb.html`
+
+Have these links all together because now we will want to post them to your professional website!
+
+#### Add links to your projects to your website!
+
+1. Go to the GitHub repository for the website you created in the `Make your own website!` chapter.
+
+2. Add a section that describes the DataTrail projects you have done. Make sure to feature your final project that you worked on in the previous chapter.
+
+3. Put links to all the projects you worked on for this course following the URL template we described above and using R Markdown syntax. Feel free to change them how you see fit! These are your projects now!
+
+```
+[Description of project](URL YOUV'E PIECED TOGETHER)
+```
+
+4. Be proud of all the excellent work you have done! And now you have a way to show it off!

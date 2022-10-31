@@ -1157,7 +1157,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>First and foremost, the best way to learn data science is by doing it. Throughout these lessons, copy the code you see in the lessons and try it out on your own. If you get an error, that’s ok! Google that error and try to learn from this error! In fact, we’ve got a whole lesson in this course on how to Google and a lesson in a later chapter on how to get help for questions when you’re programming. But, there’s more to learning how to learn than getting good at searching on the Internet (although, that is important!)</p>
 <div id="the-mindset" class="section level4" number="9.0.1.1">
 <h4><span class="header-section-number">9.0.1.1</span> The Mindset</h4>
-<p>To learn how to learn, it’s important to know just how important your mindset is. Your goal should be to answer an interesting question. Your objective is <em>not</em> to memorize a bunch of functions. It’s to <em>use those functions</em> to do something interesting. The path to accomplishing that goal may be circuitous. You may take a few steps backward and experience a setback or two before moving forward. That’s ok!</p>
+<p>Your <strong>mindset</strong> is very important to learning how to learn. Your goal should be to answer an interesting question. Your objective is <em>not</em> to memorize a bunch of functions. It’s to <em>use those functions</em> to do something interesting. The path to accomplishing that goal may be circuitous. You may take a few steps backward and experience a setback or two before moving forward. That’s ok!</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY/export/png?id=1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY&amp;pageid=g3f394e96d2_0_42" alt="" />
 <p class="caption">mindset</p>
@@ -1167,10 +1167,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h4><span class="header-section-number">9.0.1.2</span> The Path</h4>
 <p>When carrying out a data science projects, there is always more than one way to solve a problem. Your path may be different than someone else’s path.</p>
 <p>In fact, while you may not know R code yet, the following four lines of code all produce the <strong>exact</strong> same output:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="how-to-learn.html#cb1-1" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">%&gt;%</span> tidyr<span class="sc">::</span><span class="fu">gather</span>(<span class="at">key =</span> variable, <span class="at">value =</span> value)</span>
-<span id="cb1-2"><a href="how-to-learn.html#cb1-2" aria-hidden="true" tabindex="-1"></a>tidyr<span class="sc">::</span><span class="fu">gather</span>(mtcars, <span class="at">key =</span> variable, <span class="at">value =</span> value)</span>
-<span id="cb1-3"><a href="how-to-learn.html#cb1-3" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">%&gt;%</span> tidyr<span class="sc">::</span><span class="fu">gather</span>(<span class="at">key =</span> variable)</span>
-<span id="cb1-4"><a href="how-to-learn.html#cb1-4" aria-hidden="true" tabindex="-1"></a>mtcars_long <span class="ot">&lt;-</span> tidyr<span class="sc">::</span><span class="fu">gather</span>(mtcars, <span class="at">key =</span> variable)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="how-to-learn.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 1</span></span>
+<span id="cb1-2"><a href="how-to-learn.html#cb1-2" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">%&gt;%</span> tidyr<span class="sc">::</span><span class="fu">gather</span>(<span class="at">key =</span> variable, <span class="at">value =</span> value)</span>
+<span id="cb1-3"><a href="how-to-learn.html#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="how-to-learn.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 2</span></span>
+<span id="cb1-5"><a href="how-to-learn.html#cb1-5" aria-hidden="true" tabindex="-1"></a>tidyr<span class="sc">::</span><span class="fu">gather</span>(mtcars, <span class="at">key =</span> variable, <span class="at">value =</span> value)</span>
+<span id="cb1-6"><a href="how-to-learn.html#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="how-to-learn.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 3</span></span>
+<span id="cb1-8"><a href="how-to-learn.html#cb1-8" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">%&gt;%</span> tidyr<span class="sc">::</span><span class="fu">gather</span>(<span class="at">key =</span> variable)</span>
+<span id="cb1-9"><a href="how-to-learn.html#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="how-to-learn.html#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Example 4</span></span>
+<span id="cb1-11"><a href="how-to-learn.html#cb1-11" aria-hidden="true" tabindex="-1"></a>mtcars_long <span class="ot">&lt;-</span> tidyr<span class="sc">::</span><span class="fu">gather</span>(mtcars, <span class="at">key =</span> variable)</span></code></pre></div>
 <p>Any one of these would be a reasonable approach. We use this example to explain that there is more than one way to approach and to answer a question! Your path may be different than someone else’s. Your approaches may not be identical. And, that is <em>more</em> than ok!</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY/export/png?id=1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY&amp;pageid=g3f394e96d2_0_33" alt="" />
@@ -1179,7 +1186,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="asking-for-help" class="section level4" number="9.0.1.3">
 <h4><span class="header-section-number">9.0.1.3</span> Asking For Help</h4>
-<p>Data science is best done as a part of a community! Asking each other questions and brainstorming with others is ideally how data science projects are completed.</p>
+<p>Data science is best done as a part of a community! Asking each other questions and brainstorming with others is ideally how data science projects are completed. In fact, this is how most companies work. You are part of a <strong>team</strong> of data scientists working and learning together.</p>
 <p>Working together and asking questions:</p>
 <ul>
 <li>Makes projects turn out better!</li>
@@ -1187,12 +1194,14 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li>Helps everyone have a better, less frustrating time!</li>
 </ul>
 <p><strong>No one knows everything and that is okay and expected.</strong></p>
-<p>While we’ll point out where to find help when you’re stuck throughout this course set; however, it may not be obvious <em>when</em> to ask for help. While this is not a hard and fast rule, if you’ve been trying to find the answer to something you’re stuck on for half an hour and cannot figure it out, it may be time to post your question online for someone else to answer or to reach out directly to someone to get your question answered.
-During the half hour when you’re trying on your own, you should:<br />
-- <strong>Google for the answer</strong> with various different wording attempts.
-- If it’s a coding question, you should try <strong>running code</strong> to test to see if the fixes from Google fix your problem.
-- If you’re getting <strong>error messages</strong>, paste those messages into Google.
-- If after trying all of these things you’re still stuck, then you should <strong>ask for help</strong> <em>every time</em>.</p>
+<p>We’ll point out where to find help when you’re stuck throughout this course set. However, it may not be obvious <em>when</em> to ask for help. While this is not a hard and fast rule, if you’ve been trying to find the answer to something you’re stuck on for half an hour and cannot figure it out, it may be time to post your question online for someone else to answer or to reach out directly to someone to get your question answered.
+During the half hour when you’re trying on your own, you should:</p>
+<ul>
+<li><strong>Google for the answer</strong> with various different wording attempts.</li>
+<li>If it’s a coding question, you should try <strong>running code</strong> to test to see if the fixes from Google fix your problem.</li>
+<li>If you’re getting <strong>error messages</strong>, paste those messages into Google and search.</li>
+<li>If after trying all of these things you’re still stuck, then you should <strong>ask for help</strong> <em>every time</em>.</li>
+</ul>
 <p><strong>Rather than give up or get overly frustrated because you’re stuck, ask questions</strong>!</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY/export/png?id=1sgE2Um0t2AhkUlPHLJDSVLTJlyTabg1gtz1ybOgO-kY&amp;pageid=g3f394e96d2_0_62" alt="" />

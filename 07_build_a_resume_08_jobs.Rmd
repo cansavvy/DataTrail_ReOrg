@@ -20,11 +20,11 @@ Companies are looking for data scientists to have strong **technical skills**, t
 
 **No data scientist will be hired without technical skills**. Thus, it's important to be technically skilled before applying for jobs. The most-common required skills are the following:
 
-__Basic Programming Languages__ : R, Python, and SQL are three of the most common programming languages used by data scientists.
-__Data Wrangling__ : Data Scientists spend a great deal of time getting data into a usable format, cleaning the data, and ensuring that the data they have are the data they need. This skill is essential for all data scientists.
+__Basic Programming Languages__ : R, Python, and SQL are three of the most common programming languages used by data scientists.  
+__Data Wrangling__ : Data Scientists spend a great deal of time getting data into a usable format, cleaning the data, and ensuring that the data they have are the data they need. This skill is essential for all data scientists.  
 __Data Visualization__ : Visualizing data effectively for communication is  an important skill for data scientists.
-__Statistics__ : Having a basic understanding of statistics is often expected of data scientists
-__Machine Learning__ : Machine Learning is frequently used for predictive analyses. Having a basic understanding of machine learning and familiarizing yourself with various approaches will help you get a job.
+__Statistics__ : Having a basic understanding of statistics is often expected of data scientists.  
+__Machine Learning__ : Machine Learning is frequently used for predictive analyses. Having a basic understanding of machine learning and familiarizing yourself with various approaches will help you get a job.  
 
 To demonstrate that you have these technical skills, you'll want to include them on your resume. However, you should *not* list every machine learning algorithm you've ever heard of.  Anyone can Google and list a bunch of algorithms. Instead, simply include "machine learning" as a skill on your resume if it's one you possess. Then, let your projects and experience do the explaining. By this we mean, the projects you've worked on and experience you've listed on your resume should demonstrate *how* you've used machine learning to solve a problem. Additionally, having a Project Gallery and GitHub here are critical. The company can go to your GitHub and/or website to see how you've applied your technical skills to answer interesting questions.
 

@@ -13,7 +13,7 @@ An object in R is something that contains information. In R there are a number o
 
 ### Storing objects
 
-In R, as with all programming languages, it is important to be able to store objects that we create so that we can use them in later code. The process of storing an object is called **assignment**, and it entails giving an object a name. For example, the following code creates an object called `min_age` and stores inside that object the value 21.
+In R, as with all programming languages, it is important to be able to store objects that we create so that we can use them in later code. The process of storing an object is called **assignment**, and it entails giving an object a name. For example, the following code creates an object called `min_age` and stores inside that object the value 21. It is equivalent to saying that `min_age` *is equal to* 21.
 
 ```r
 min_age <- 21
@@ -268,7 +268,7 @@ In this lesson so far we have discussed how to create the five main classes of o
 
 As you can see, the class of the object specified within the parentheses is the class of that object.
 
-2) You can use a function `str()` which will tell you its `stru`cture. This will tell you more about the shape of an object, how long or wide it is, etc.
+2) You can use a function `str()` which will tell you its structure. This will tell you more about the shape of an object, how long or wide it is, etc.
 
 ```
 str(colors)
@@ -280,9 +280,9 @@ str(colors)
 
 #### Types of objects
 
-We store these different classes of objects in different ways. The ways this information is stored is referred to as the *type** of object.
+We store these different classes of objects in different ways. The ways this information is stored is referred to as the **type** of object.
 
-When talking about objects in R, it may be helpful to think of *actual* objects in every day life for comparison. For example, think of three objects: a bucket, a pot you would cook with, and a backpack. These three objects are clearly designed for and carry out different purposes. The bucket may be used to carry water to clean your floor, the pot to cook pasta, and the backpack to carry notebooks, but, we can agree that they are all objects, just different **types* of objects. The water, pasta, and notebooks would be the information contained in the object. In this real-life example, the "class" of the information may be "liquid", "food", and "paper".
+When talking about objects in R, it may be helpful to think of *actual* objects in every day life for comparison. For example, think of three objects: a bucket, a pot you would cook with, and a backpack. These three objects are clearly designed for and carry out different purposes. The bucket may be used to carry water to clean your floor, the pot to cook pasta, and the backpack to carry notebooks, but, we can agree that they are all objects, just different *types* of objects. The water, pasta, and notebooks would be the information contained in the object. In this real-life example, the "class" of the information may be "liquid", "food", and "paper".
 
 ![Objects in real-life analogy](https://docs.google.com/presentation/d/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc/export/png?id=1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc&pageid=g3b0072ef38_0_0)
 

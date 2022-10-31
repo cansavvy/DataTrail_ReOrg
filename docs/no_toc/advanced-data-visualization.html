@@ -1147,18 +1147,18 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="plotly-interactive-graphics" class="section level5" number="47.0.3.1.1">
 <h5><span class="header-section-number">47.0.3.1.1</span> plotly interactive graphics</h5>
 <p>Below, you see that <code>p</code> is a ggplot object. Here, we’re using a dataset with data from 150 different iris flowers. We’re looking at the petal length and petal width of these flowers, broken down by the species of the flower in the plot below. To take this static plot from <code>ggplot</code> (which we learned to generate earlier in this course), to an interactive plot, it only requires calling <code>ggplotly()</code>.</p>
-<div class="sourceCode" id="cb335"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb335-1"><a href="advanced-data-visualization.html#cb335-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Load libraries</span></span>
-<span id="cb335-2"><a href="advanced-data-visualization.html#cb335-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb335-3"><a href="advanced-data-visualization.html#cb335-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
-<span id="cb335-4"><a href="advanced-data-visualization.html#cb335-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb335-5"><a href="advanced-data-visualization.html#cb335-5" aria-hidden="true" tabindex="-1"></a><span class="do">## generate ggplot2 object</span></span>
-<span id="cb335-6"><a href="advanced-data-visualization.html#cb335-6" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Species), <span class="at">y =</span> Petal.Length, <span class="at">color =</span> Petal.Width)) <span class="sc">+</span></span>
-<span id="cb335-7"><a href="advanced-data-visualization.html#cb335-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb335-8"><a href="advanced-data-visualization.html#cb335-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb335-9"><a href="advanced-data-visualization.html#cb335-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb335-10"><a href="advanced-data-visualization.html#cb335-10" aria-hidden="true" tabindex="-1"></a><span class="do">## generate intreactive graphic</span></span>
-<span id="cb335-11"><a href="advanced-data-visualization.html#cb335-11" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplotly</span>(p)</span>
-<span id="cb335-12"><a href="advanced-data-visualization.html#cb335-12" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<div class="sourceCode" id="cb331"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb331-1"><a href="advanced-data-visualization.html#cb331-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Load libraries</span></span>
+<span id="cb331-2"><a href="advanced-data-visualization.html#cb331-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb331-3"><a href="advanced-data-visualization.html#cb331-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb331-4"><a href="advanced-data-visualization.html#cb331-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb331-5"><a href="advanced-data-visualization.html#cb331-5" aria-hidden="true" tabindex="-1"></a><span class="do">## generate ggplot2 object</span></span>
+<span id="cb331-6"><a href="advanced-data-visualization.html#cb331-6" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Species), <span class="at">y =</span> Petal.Length, <span class="at">color =</span> Petal.Width)) <span class="sc">+</span></span>
+<span id="cb331-7"><a href="advanced-data-visualization.html#cb331-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb331-8"><a href="advanced-data-visualization.html#cb331-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span>
+<span id="cb331-9"><a href="advanced-data-visualization.html#cb331-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb331-10"><a href="advanced-data-visualization.html#cb331-10" aria-hidden="true" tabindex="-1"></a><span class="do">## generate intreactive graphic</span></span>
+<span id="cb331-11"><a href="advanced-data-visualization.html#cb331-11" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplotly</span>(p)</span>
+<span id="cb331-12"><a href="advanced-data-visualization.html#cb331-12" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
 <p>Within RStudio, ggplotly() graphs will display within the ‘Viewer’ tab.</p>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0/export/png?id=1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0&amp;pageid=g2bfdb07292_0_151" alt="" />
@@ -1189,19 +1189,19 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h5><span class="header-section-number">47.0.3.1.2</span> plotly animated graphics</h5>
 <p>In addition to general interactive graphics, plotly can also be used to generate animated plots - plots that show changes over time. The code for this is similar in form to what is seen above; however, it requires the <code>frame</code> argument be specified. This states what variable <code>ggplotly</code> should use for each frame in the animation.</p>
 <p>To demonstrate how this can be done, we’ll use a very common example data set, frequently used by R users. This dataset is from Jenny Bryan’s <a href="https://cran.r-project.org/web/packages/gapminder/index.html"><code>gapminder</code> R package</a>. It contains data about the life expectancy, population, and per capita GDP from a number of countries from 1952 to 2007. We will use these data to generate an animated graphic that shows the relationship between per capita GDP and life expectancy by country. Each point on the graph represents a different country. The points are colored by the continent that each country is from. As mentioned above, to generate an animated plot within plotly, frame must be specified. Below, frame is specified to be <code>year,</code> which specifies that the animation should cycle through the years within this dataset.</p>
-<div class="sourceCode" id="cb336"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb336-1"><a href="advanced-data-visualization.html#cb336-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install the package</span></span>
-<span id="cb336-2"><a href="advanced-data-visualization.html#cb336-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;gapminder&quot;</span>)</span>
-<span id="cb336-3"><a href="advanced-data-visualization.html#cb336-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb336-4"><a href="advanced-data-visualization.html#cb336-4" aria-hidden="true" tabindex="-1"></a><span class="do">## get the data</span></span>
-<span id="cb336-5"><a href="advanced-data-visualization.html#cb336-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(gapminder, <span class="at">package =</span> <span class="st">&quot;gapminder&quot;</span>)</span>
-<span id="cb336-6"><a href="advanced-data-visualization.html#cb336-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb336-7"><a href="advanced-data-visualization.html#cb336-7" aria-hidden="true" tabindex="-1"></a><span class="do">## generate ggplot object</span></span>
-<span id="cb336-8"><a href="advanced-data-visualization.html#cb336-8" aria-hidden="true" tabindex="-1"></a>gg <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(gapminder, <span class="fu">aes</span>(gdpPercap, lifeExp, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
-<span id="cb336-9"><a href="advanced-data-visualization.html#cb336-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">frame =</span> year, <span class="at">ids =</span> country)) <span class="sc">+</span></span>
-<span id="cb336-10"><a href="advanced-data-visualization.html#cb336-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span>
-<span id="cb336-11"><a href="advanced-data-visualization.html#cb336-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb336-12"><a href="advanced-data-visualization.html#cb336-12" aria-hidden="true" tabindex="-1"></a><span class="do">## plot animated graphic</span></span>
-<span id="cb336-13"><a href="advanced-data-visualization.html#cb336-13" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(gg)</span></code></pre></div>
+<div class="sourceCode" id="cb332"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb332-1"><a href="advanced-data-visualization.html#cb332-1" aria-hidden="true" tabindex="-1"></a><span class="do">## install the package</span></span>
+<span id="cb332-2"><a href="advanced-data-visualization.html#cb332-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;gapminder&quot;</span>)</span>
+<span id="cb332-3"><a href="advanced-data-visualization.html#cb332-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb332-4"><a href="advanced-data-visualization.html#cb332-4" aria-hidden="true" tabindex="-1"></a><span class="do">## get the data</span></span>
+<span id="cb332-5"><a href="advanced-data-visualization.html#cb332-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(gapminder, <span class="at">package =</span> <span class="st">&quot;gapminder&quot;</span>)</span>
+<span id="cb332-6"><a href="advanced-data-visualization.html#cb332-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb332-7"><a href="advanced-data-visualization.html#cb332-7" aria-hidden="true" tabindex="-1"></a><span class="do">## generate ggplot object</span></span>
+<span id="cb332-8"><a href="advanced-data-visualization.html#cb332-8" aria-hidden="true" tabindex="-1"></a>gg <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(gapminder, <span class="fu">aes</span>(gdpPercap, lifeExp, <span class="at">color =</span> continent)) <span class="sc">+</span></span>
+<span id="cb332-9"><a href="advanced-data-visualization.html#cb332-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">frame =</span> year, <span class="at">ids =</span> country)) <span class="sc">+</span></span>
+<span id="cb332-10"><a href="advanced-data-visualization.html#cb332-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()</span>
+<span id="cb332-11"><a href="advanced-data-visualization.html#cb332-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb332-12"><a href="advanced-data-visualization.html#cb332-12" aria-hidden="true" tabindex="-1"></a><span class="do">## plot animated graphic</span></span>
+<span id="cb332-13"><a href="advanced-data-visualization.html#cb332-13" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(gg)</span></code></pre></div>
 <div class="figure">
 <img src="https://docs.google.com/presentation/d/1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0/export/png?id=1akxwxd52on22B7uUhZTUi1oHJ6PSDicdVchjmVynhr0&amp;pageid=g389ae8f2fa_0_37" alt="" />
 <p class="caption">plotly animated graphic</p>
@@ -1221,15 +1221,15 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h4><span class="header-section-number">47.0.3.2</span> gganimate</h4>
 <p>With many things in R, there is more than one way to generate animated objects in RStudio. There is an additional package that allows for the generation of animated graphics from ggplot2 graphs: <a href="https://github.com/dgrtwo/gganimate"><code>gganimate</code></a>.</p>
 <p>Below we will generate the same graph as above but will use <code>gganimate()</code> to do so. The code to generate the ggplot object created (gg) will not change. The benefit of gganimate() is that if you are interesting in saving the image as a GIF, rather than embedding the plot into your .Rmd report, gganimate() has this capability. (gganimate() can save animated graphics as .gif, .mp4, .swf, and .html objects)</p>
-<div class="sourceCode" id="cb337"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb337-1"><a href="advanced-data-visualization.html#cb337-1" aria-hidden="true" tabindex="-1"></a><span class="do">## download and load gganimate</span></span>
-<span id="cb337-2"><a href="advanced-data-visualization.html#cb337-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;dgrtwo/gganimate&quot;</span>)</span>
-<span id="cb337-3"><a href="advanced-data-visualization.html#cb337-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gganimate)</span>
-<span id="cb337-4"><a href="advanced-data-visualization.html#cb337-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb337-5"><a href="advanced-data-visualization.html#cb337-5" aria-hidden="true" tabindex="-1"></a><span class="do">## plot animated graphic using gganimate</span></span>
-<span id="cb337-6"><a href="advanced-data-visualization.html#cb337-6" aria-hidden="true" tabindex="-1"></a><span class="fu">gganimate</span>(gg)</span>
-<span id="cb337-7"><a href="advanced-data-visualization.html#cb337-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb337-8"><a href="advanced-data-visualization.html#cb337-8" aria-hidden="true" tabindex="-1"></a><span class="do">## to save this plot</span></span>
-<span id="cb337-9"><a href="advanced-data-visualization.html#cb337-9" aria-hidden="true" tabindex="-1"></a><span class="fu">gganimate</span>(gg, <span class="st">&quot;output.gif&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb333"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb333-1"><a href="advanced-data-visualization.html#cb333-1" aria-hidden="true" tabindex="-1"></a><span class="do">## download and load gganimate</span></span>
+<span id="cb333-2"><a href="advanced-data-visualization.html#cb333-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;dgrtwo/gganimate&quot;</span>)</span>
+<span id="cb333-3"><a href="advanced-data-visualization.html#cb333-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gganimate)</span>
+<span id="cb333-4"><a href="advanced-data-visualization.html#cb333-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb333-5"><a href="advanced-data-visualization.html#cb333-5" aria-hidden="true" tabindex="-1"></a><span class="do">## plot animated graphic using gganimate</span></span>
+<span id="cb333-6"><a href="advanced-data-visualization.html#cb333-6" aria-hidden="true" tabindex="-1"></a><span class="fu">gganimate</span>(gg)</span>
+<span id="cb333-7"><a href="advanced-data-visualization.html#cb333-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb333-8"><a href="advanced-data-visualization.html#cb333-8" aria-hidden="true" tabindex="-1"></a><span class="do">## to save this plot</span></span>
+<span id="cb333-9"><a href="advanced-data-visualization.html#cb333-9" aria-hidden="true" tabindex="-1"></a><span class="fu">gganimate</span>(gg, <span class="st">&quot;output.gif&quot;</span>)</span></code></pre></div>
 <p>{format: gif}
 <img src="https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/14127164/output.gif" alt="gganimate gif" /></p>
 </div>

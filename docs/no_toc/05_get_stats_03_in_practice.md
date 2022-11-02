@@ -1,7 +1,7 @@
 
-# In practice using stats
+# In Practice Using Stats
 
-In the upcoming chapters we will introduce you to a number of statistical terms and test types. In general, we wouldn't stress memorizing specifics of these tests, but instead try to get an intuitive sense for how to use and interpret the stats in the context of your statistical questions.
+In the upcoming chapters we will introduce you to a number of statistical terms and test types. In general, we wouldn't stress memorizing specifics of these tests, but instead trying to get an intuitive sense for how to use and interpret the stats in the context of your statistical questions.
 
 In this chapter we are going to discuss some general strategies for how to start to apply the power of stats to your dataset.
 
@@ -19,7 +19,7 @@ We've discussed that data science is all about questions! This means that a new 
 
 So how do we make unknown unknowns a little more known? We have to do lots of exploring!
 
-There's initial explorations that are always a great idea to do with your data and as you work on a dataset you may want to repeat these whenever you apply a new step or transformation to your data:
+There are a few initial explorations that are always a great idea to do with your data. As you work on a dataset, you may want to repeat these whenever you apply a new step or transformation to your data.
 
 **Practical tips for looking at your data**  
 
@@ -28,7 +28,7 @@ There's initial explorations that are always a great idea to do with your data a
 - Run the `summary()` function on your data.
 - Make sure to look into the documentation for functions that you use to transform your data so you understand what you are doing to it.
 
-As you do these things with your data you may find some "weirdness" which brings us to our next tip:
+As you do these things with your data, you may find some "weirdness" which brings us to our next tip.
 
 ## Tip number 2: Dig into weirdness
 
@@ -44,9 +44,9 @@ In reality, good data science doesn't happen so step like.
 
 <img src="resources/images/05_get_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_29.png" title="Data Science is a bit messier than we originally told you." alt="Data Science is a bit messier than we originally told you." width="100%" />
 
-The best data science is a bit messier than this. Original questions lead to new questions; and some pursuits are dead ends; and whole new findings and cool things we never dreamed of sometimes pop up out of nowhere! Meaning that data science is never write code once and done, it is write code, run it, rewrite it, look at your data, learn something, rewrite it again, have new questions, etc, etc etc.
+The best data science is a bit messier than this. Original questions lead to new questions; and some pursuits are dead ends; and whole new findings and cool things we never dreamed of sometimes pop up out of nowhere! Meaning that data science is never "write code once and done", it is "write code, run it, rewrite it, look at your data, learn something, rewrite it again, have new questions, etc, etc, etc".
 
-This leads us to another point to say that the best data science is done iteratively -- you won't write your best analysis in one sitting and never come back to it. Your best analyses will be things you work on over time to incrementally improve and look at.
+This leads us to another point. That is, the best data science is done iteratively -- you won't write your best analysis in one sitting and never come back to it. Your best analyses will be things you work on over time to incrementally improve and look at.
 
 **Practical tips for digging into weirdness:**  
 
@@ -59,9 +59,9 @@ Ultimately, when you see weird things prove to yourself that the results are wha
 
 ## Tip number 3: Let the data inform you
 
-After following our first two tips, you should have a generally good sense of what your data look like and what kind of weirdness exists. Now you will be ready to use what you've learned about your data to inform you have how to properly handle them!
+After following our first two tips, you should have a generally good sense of what your data look like and what kind of weirdness exists. Now you will be ready to use what you've learned about your data to inform you how to properly handle them!
 
-We discussed in the previous chapter how to translate your data science questions into a stats test but there's a second part of this consideration which is taking into account how your data are behaving to know what kinds of stats and questions are appropriate.
+We discussed in the previous chapter how to translate your data science questions into a stats test. There's a second part of this consideration, which is taking into account how your data are behaving to know what kinds of stats and questions are appropriate.
 
 Here's some common things your data might tell you and how you might find that out:
 
@@ -308,7 +308,7 @@ Now this is telling us our power is very low -- meaning even if our hypothesis i
 
 ### How to know how your data are distributed
 
-Perhaps you want to use a particular stats test, but when you read about this stats test says it has an _assumption_ that the data are normally distributed -- **stats assumptions are really just requirements for using a method**. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed.
+Perhaps you want to use a particular stats test, but when you read about this stats test, it has an _assumption_ that the data are normally distributed -- **stats assumptions are really just requirements for using a method**. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed.
 
 If you will be using a numeric variable for anything in your analysis it's a very good idea to plot its density so you know what you are working with!
 
@@ -328,11 +328,11 @@ We can see this looks like a fairly normal distribution -- what does that mean? 
 
 #### What does it mean to be "normally distributed?"
 
-How a dataset is distributed has to do withe frequency of the data. So in the example below, we've made a probability density plot using ggplot2. [See this article for details on making density plots](http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization). The higher the line is, the more probable that that value would occur.
+How a dataset is distributed has to do with frequency of the data. So in the example below, we've made a probability density plot using ggplot2. [See this article for details on making denisty plots](http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization). The higher the line is, the more probable that that value would occur.
 
 <img src="resources/images/05_get_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_12.png" title="What does a probability density plot represent" alt="What does a probability density plot represent" width="100%" />
 
-If when you plot your distribution function it looks like that normal bell shaped curve, then you have "normally distributed" data. You will want to know what your data distribution looks like so you know what tests are appropriate.
+If your data plot looks like that normal bell-shaped curve, then you have "normally distributed" data. You will want to know what your data distribution looks like so you know what tests are appropriate.
 
 <img src="resources/images/05_get_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_0.png" title="Normal distributions are just one type of distribution" alt="Normal distributions are just one type of distribution" width="100%" />
 
@@ -378,14 +378,16 @@ In conclusion, density plots are a super handy tool to see what your data look l
 
 **Practical tips for figuring out what to do with your data:**
 
-- Make density plots to visual your data's distribution and use the methods we discussed above.
-- Google and find sources that discuss the problems you are seeing with your data. It is unlikely that the dataset you are working with is the only dataset that has this weirdness and others online may way in.
+- Make density plots to visualize your data's distribution.
+- Google and find sources that discuss the problems you are seeing with your data. It is unlikely that the dataset you are working with is the only dataset that has this weirdness and others online may weigh in.
 - Consult a more senior data scientist or statistician. Show them the the weirdness you see and ask them what they think of it and what they would do.
 - Look for other data analysis examples online that resemble your data and its weirdness. Try to see what others did and if it makes sense to apply to your situation.
 
 ## How do I know what test to use?
 
-We're going to tell you about some common tests, but here's some flow chart to help you get started. We advise generally having an idea of tests out there but not getting caught up in the minutia of every test. If you end up using a particular test on a set of data, then might be a good time to try to get a practical understanding of the test and how to interpret it but knowing everything about all statistical tests is just not practical and not a good use of your time.
+We're going to tell you about some common tests, but here's a flow chart to help you get started. We advise generally having an idea of tests out there but not getting caught up in the minutia of every test. If you end up using a particular test on a set of data, then might be a good time to try to get a practical understanding of the test and how to interpret it but knowing everything about all statistical tests is just not practical and not a good use of your time.
+
+The important point about choosing a test is realizing that not all tests are appropriate. Indeed, you *could* use a lot of these tests for a particular dataset, but some tests may lead you to erroneous conclusions if the test is not meant to be used on data like what you are working with. 
 
 And as we mentioned with the tips above, don't be afraid to reach out to a statistician or more senior data scientist to help you choose what is appropriate!
 

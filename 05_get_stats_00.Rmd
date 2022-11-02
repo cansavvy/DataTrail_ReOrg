@@ -14,6 +14,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tl
 
 Through the completion of this section our goal is that you will be able to:
 
-- Translate your data science questions into a statistical test
-- Interpret statistical output toward the conclusion of your
+- Translate your data science questions into statistical tests
+- Interpret statistical output toward the conclusion of your question
 - Understand the strengths and limitations of the most common statistical tests

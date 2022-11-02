@@ -24,7 +24,7 @@ There's initial explorations that are always a great idea to do with your data a
 **Practical tips for looking at your data**  
 
 - Look at your data in the Environment tab or by printing it out.
-- Make a density plot or histogram to look at the shape of your data.
+- Make a density plot or histogram to look at the shape of your data - more on this in a second!
 - Run the `summary()` function on your data.
 - Make sure to look into the documentation for functions that you use to transform your data so you understand what you are doing to it.
 
@@ -81,11 +81,11 @@ Perhaps you want to use a particular stats test, but when you read about this st
 
 #### What does it mean to be "normally distributed?"
 
-How a dataset is distributed has to do withe frequency of the data. So in the example below, we've made a probability density plot using ggplot2. The higher the line is, the more probable that that value would occur.
+How a dataset is distributed has to do withe frequency of the data. So in the example below, we've made a probability density plot using ggplot2. [See this article for details on making denisty plots](http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization). The higher the line is, the more probable that that value would occur.
 
 <img src="resources/images/05_get_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_12.png" title="What does a probability density plot represent" alt="What does a probability density plot represent" width="100%" />
 
-If when you plot your distribution function it looks like that normal bell shaped curve, then you have "normally distributed" data. You will want to know what your data distribution looks like so you know what tests are appropriate. 
+If when you plot your distribution function it looks like that normal bell shaped curve, then you have "normally distributed" data. You will want to know what your data distribution looks like so you know what tests are appropriate.
 
 <img src="resources/images/05_get_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_0.png" title="Normal distributions are just one type of distribution" alt="Normal distributions are just one type of distribution" width="100%" />
 

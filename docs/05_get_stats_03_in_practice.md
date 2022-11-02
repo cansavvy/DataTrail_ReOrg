@@ -65,13 +65,244 @@ We discussed in the previous chapter how to translate your data science question
 
 Here's some common things your data might tell you and how you might find that out:
 
+For the upcoming examples we are going to use this datasets that are included in the `ggplot2` package.
+
+
+```r
+library(ggplot2)
+library(dplyr)
+```
+
+```
+## 
+## Attaching package: 'dplyr'
+```
+
+```
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+## How to find out how much data is missing
+
+Datasets often having missing data points because the collection process can be messier than we hope. There can be very good and appropriate reasons to have `NA`s in the data. Indeed it can often be the case that `NA` is a more appropriate way to note a data point than putting some other value. But, before you start doing
+
+**Code example for finding missing data** (this is not the only way to do this)
+
+Let's use and set up the [Texas Housing sales dataset](https://ggplot2.tidyverse.org/reference/txhousing.html) from `ggplot2`.
+
+
+```r
+tx_df <- ggplot2::txhousing
+head(tx_df)
+```
+
+```
+## # A tibble: 6 x 9
+##   city     year month sales   volume median listings inventory  date
+##   <chr>   <int> <int> <dbl>    <dbl>  <dbl>    <dbl>     <dbl> <dbl>
+## 1 Abilene  2000     1    72  5380000  71400      701       6.3 2000 
+## 2 Abilene  2000     2    98  6505000  58700      746       6.6 2000.
+## 3 Abilene  2000     3   130  9285000  58100      784       6.8 2000.
+## 4 Abilene  2000     4    98  9730000  68600      785       6.9 2000.
+## 5 Abilene  2000     5   141 10590000  67300      794       6.8 2000.
+## 6 Abilene  2000     6   156 13910000  66900      780       6.6 2000.
+```
+
+If you know that all your missing data are appropriately labeled as `NA` you can just use something like:
+
+
+```r
+summary(tx_df)
+```
+
+```
+##      city                year          month            sales       
+##  Length:8602        Min.   :2000   Min.   : 1.000   Min.   :   6.0  
+##  Class :character   1st Qu.:2003   1st Qu.: 3.000   1st Qu.:  86.0  
+##  Mode  :character   Median :2007   Median : 6.000   Median : 169.0  
+##                     Mean   :2007   Mean   : 6.406   Mean   : 549.6  
+##                     3rd Qu.:2011   3rd Qu.: 9.000   3rd Qu.: 467.0  
+##                     Max.   :2015   Max.   :12.000   Max.   :8945.0  
+##                                                     NA's   :568     
+##      volume              median          listings       inventory     
+##  Min.   :8.350e+05   Min.   : 50000   Min.   :    0   Min.   : 0.000  
+##  1st Qu.:1.084e+07   1st Qu.:100000   1st Qu.:  682   1st Qu.: 4.900  
+##  Median :2.299e+07   Median :123800   Median : 1283   Median : 6.200  
+##  Mean   :1.069e+08   Mean   :128131   Mean   : 3217   Mean   : 7.175  
+##  3rd Qu.:7.512e+07   3rd Qu.:150000   3rd Qu.: 2954   3rd Qu.: 8.150  
+##  Max.   :2.568e+09   Max.   :304200   Max.   :43107   Max.   :55.900  
+##  NA's   :568         NA's   :616      NA's   :1424    NA's   :1467    
+##       date     
+##  Min.   :2000  
+##  1st Qu.:2004  
+##  Median :2008  
+##  Mean   :2008  
+##  3rd Qu.:2012  
+##  Max.   :2016  
+## 
+```
+
+You'll see this prints out the summary for each variable in this data frame, including the number of `NA`s.
+
+- However, if your missing data are not appropriately labeled NA then you will want to convert them using code [described in this article](https://www.statology.org/replace-na-with-string-in-r/).
+- [For more on finding missing values](https://www.statology.org/r-find-missing-values/).
+
 ### How to find if you have outliers
+
 Outliers are data points that are extreme. They can throw off whole analyses and bring you to the wrong conclusions. You have outliers or weird samples in your data -- you may want to try removing these if appropriate and re-running the test you were using.
 
-- See this [guide for code and tips on how to detect outliers in R](https://statsandr.com/blog/outliers-detection-in-r/)
+**Code example for finding outliers** (this is not the only way to do this)
+
+Let's use and set up the [Fuel economy dataset](https://ggplot2.tidyverse.org/reference/mpg.html) from `ggplot2`.
+
+
+```r
+cars_df <- ggplot2::mpg
+head(cars_df)
+```
+
+```
+## # A tibble: 6 x 11
+##   manufacturer model displ  year   cyl trans      drv     cty   hwy fl    class 
+##   <chr>        <chr> <dbl> <int> <int> <chr>      <chr> <int> <int> <chr> <chr> 
+## 1 audi         a4      1.8  1999     4 auto(l5)   f        18    29 p     compa…
+## 2 audi         a4      1.8  1999     4 manual(m5) f        21    29 p     compa…
+## 3 audi         a4      2    2008     4 manual(m6) f        20    31 p     compa…
+## 4 audi         a4      2    2008     4 auto(av)   f        21    30 p     compa…
+## 5 audi         a4      2.8  1999     6 auto(l5)   f        16    26 p     compa…
+## 6 audi         a4      2.8  1999     6 manual(m5) f        18    26 p     compa…
+```
+
+We can make a boxplot with base R.
+
+
+```r
+boxplot(cars_df$hwy, ylab = "hwy")
+```
+
+<img src="resources/images/05_get_stats_03_in_practice_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+The points in this boxplot are points you would want to look into as being outliers! You could see what these points are for sure by using `dplyr::arrange()` or any other number of ways.
+
+
+```r
+cars_df %>%
+  dplyr::arrange(dplyr::desc(hwy))
+```
+
+```
+## # A tibble: 234 x 11
+##    manufacturer model   displ  year   cyl trans   drv     cty   hwy fl    class 
+##    <chr>        <chr>   <dbl> <int> <int> <chr>   <chr> <int> <int> <chr> <chr> 
+##  1 volkswagen   jetta     1.9  1999     4 manual… f        33    44 d     compa…
+##  2 volkswagen   new be…   1.9  1999     4 manual… f        35    44 d     subco…
+##  3 volkswagen   new be…   1.9  1999     4 auto(l… f        29    41 d     subco…
+##  4 toyota       corolla   1.8  2008     4 manual… f        28    37 r     compa…
+##  5 honda        civic     1.8  2008     4 auto(l… f        25    36 r     subco…
+##  6 honda        civic     1.8  2008     4 auto(l… f        24    36 c     subco…
+##  7 toyota       corolla   1.8  1999     4 manual… f        26    35 r     compa…
+##  8 toyota       corolla   1.8  2008     4 auto(l… f        26    35 r     compa…
+##  9 honda        civic     1.8  2008     4 manual… f        26    34 r     subco…
+## 10 honda        civic     1.6  1999     4 manual… f        28    33 r     subco…
+## # … with 224 more rows
+```
+
+- See this [guide for more code and tips on how to detect outliers in R](https://statsandr.com/blog/outliers-detection-in-r/)
 
 ### How to know if your data is underpowered for your question
+
 In order to answer particular questions with a dataset, you need to have enough data in the first place! If you don't have enough data that means you are underpowered. This may happen if you have a lot of missing data, a painfully small dataset, or the effect you are looking for is very small. In these cases you may need to find another dataset or see if the data collector can collect more data to add to this set. So how do you know if your dataset is underpowered?
+
+**Code example exploring power** (this is not the only way to do this)
+
+Let's use and set up the [Diamonds](https://ggplot2.tidyverse.org/reference/mpg.html) from `ggplot2`.
+
+
+```r
+diamonds_df <- ggplot2::diamonds
+head(diamonds_df)
+```
+
+```
+## # A tibble: 6 x 10
+##   carat cut       color clarity depth table price     x     y     z
+##   <dbl> <ord>     <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl> <dbl>
+## 1 0.23  Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+## 2 0.21  Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+## 3 0.23  Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+## 4 0.290 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+## 5 0.31  Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+## 6 0.24  Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+```
+
+Let's say we are interested in seeing whether the `carat` is correlated with the price of the diamond. Before we test this, we may want to test the power of our dataset to detect this correlation. For this we will use the `pwr.r.test()` function from the `pwr` library.
+
+
+```r
+install.packages("pwr")
+```
+
+```
+## Installing package into '/usr/local/lib/R/site-library'
+## (as 'lib' is unspecified)
+```
+
+```r
+library(pwr)
+```
+
+We have to tell it a few pieces of info:   
+1) How many samples do we have?   
+2) What correlation do we expect? and...  
+3) What significance level will we want (standard is to use 0.05 or 0.01).   
+
+
+```r
+pwr.r.test(n = nrow(diamonds_df), # How many cases do we have
+           r = cor(diamonds_df$carat, diamonds_df$price),
+           sig.level = 0.01)
+```
+
+```
+## 
+##      approximate correlation power calculation (arctangh transformation) 
+## 
+##               n = 53940
+##               r = 0.9215913
+##       sig.level = 0.01
+##           power = 1
+##     alternative = two.sided
+```
+
+You'll see this prints out a `1` for power. This dataset is not underpowered at all. Power is on a scale of 0 to 1. Where 0 means you don't have the power to detect anything and 1 means you will absolutely see a significant result if there is one to be seen.  
+
+But let's look at a different hypothetical situation. Let's say instead we only had 10 rows of data and the correlation we expected would be more like 0.3.
+
+
+```r
+pwr.r.test(n = 10, # How many cases do we have
+           r = 0.3,
+           sig.level = 0.01)
+```
+
+```
+## 
+##      approximate correlation power calculation (arctangh transformation) 
+## 
+##               n = 10
+##               r = 0.3
+##       sig.level = 0.01
+##           power = 0.03600302
+##     alternative = two.sided
+```
+Now this is telling us our power is very low -- meaning even if our hypothesis is true, we don't have enough data to see this correlation.
 
 - See this [chapter of a book for code and tips for how to know if your data are underpowered by doing a power analysis in R](https://bookdown.org/daniel_dauber_io/r4np_book/power-analysis.html).
 
@@ -79,15 +310,66 @@ In order to answer particular questions with a dataset, you need to have enough 
 
 Perhaps you want to use a particular stats test, but when you read about this stats test says it has an _assumption_ that the data are normally distributed -- **stats assumptions are really just requirements for using a method**. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed.
 
+If you will be using a numeric variable for anything in your analysis it's a very good idea to plot its density so you know what you are working with!
+
+**Code example of looking at distributions**
+
+Let's return to the cars_df dataset we were looking at earlier. To make a density plot, we need to use `geom_density()` function.
+
+
+```r
+ggplot(cars_df, aes(x = cty)) +
+  geom_density()
+```
+
+<img src="resources/images/05_get_stats_03_in_practice_files/figure-html/unnamed-chunk-15-1.png" width="672" />
+
+We can see this looks like a fairly normal distribution -- what does that mean? let's discuss.
+
 #### What does it mean to be "normally distributed?"
 
-How a dataset is distributed has to do withe frequency of the data. So in the example below, we've made a probability density plot using ggplot2. [See this article for details on making denisty plots](http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization). The higher the line is, the more probable that that value would occur.
+How a dataset is distributed has to do withe frequency of the data. So in the example below, we've made a probability density plot using ggplot2. [See this article for details on making density plots](http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization). The higher the line is, the more probable that that value would occur.
 
 <img src="resources/images/05_get_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_12.png" title="What does a probability density plot represent" alt="What does a probability density plot represent" width="100%" />
 
 If when you plot your distribution function it looks like that normal bell shaped curve, then you have "normally distributed" data. You will want to know what your data distribution looks like so you know what tests are appropriate.
 
 <img src="resources/images/05_get_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_0.png" title="Normal distributions are just one type of distribution" alt="Normal distributions are just one type of distribution" width="100%" />
+
+Let's look at the distribution of a different variable, the `sales` in `tx_df` data:
+
+
+```r
+ggplot(tx_df, aes(x = sales)) +
+  geom_density()
+```
+
+```
+## Warning: Removed 568 rows containing non-finite values (stat_density).
+```
+
+<img src="resources/images/05_get_stats_03_in_practice_files/figure-html/unnamed-chunk-18-1.png" width="672" />
+
+Is this normally distributed? There are a lot of values that are lower and only some that are higher. Looks pretty skewed. In this case, we probably don't need to test these data, but we know they aren't really normally distributed so we should keep that in mind.
+
+If we want a test rather than just using our eyes, we can use the `ks.test()` which asks for us "are my data normally distributed?" In this instance, we'll use the `iris` dataset to test its normality for the variable `Sepal.Width`.
+
+
+```r
+shapiro.test(iris$Sepal.Width)
+```
+
+```
+## 
+## 	Shapiro-Wilk normality test
+## 
+## data:  iris$Sepal.Width
+## W = 0.98492, p-value = 0.1012
+```
+
+Because this p value reported is bigger than 0.05 we can consider `Sepal.Width` to be a normally distributed variable.
+
+One other important thing to note, if you have too small of a dataset, (say 30 or less) then you can never really consider your data normally distributed and they will always fail these normality tests.
 
 - [Read more about normal distributions here](https://www.scribbr.com/statistics/normal-distribution/).
 - There are formal ways to test for normality and these methods are described in this article that has code examples: [How to Assess Normality in R](https://universeofdatascience.com/how-to-assess-normality-in-r/)
@@ -96,7 +378,7 @@ In conclusion, density plots are a super handy tool to see what your data look l
 
 **Practical tips for figuring out what to do with your data:**
 
-- Make density plots to visual your data's distribution.
+- Make density plots to visual your data's distribution and use the methods we discussed above.
 - Google and find sources that discuss the problems you are seeing with your data. It is unlikely that the dataset you are working with is the only dataset that has this weirdness and others online may way in.
 - Consult a more senior data scientist or statistician. Show them the the weirdness you see and ask them what they think of it and what they would do.
 - Look for other data analysis examples online that resemble your data and its weirdness. Try to see what others did and if it makes sense to apply to your situation.

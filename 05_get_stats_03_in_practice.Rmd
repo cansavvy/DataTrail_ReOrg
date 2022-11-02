@@ -54,7 +54,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0Y
 
 The best data science is a bit messier than this. Original questions lead to new questions; and some pursuits are dead ends; and whole new findings and cool things we never dreamed of sometimes pop up out of nowhere! Meaning that data science is never "write code once and done", it is "write code, run it, rewrite it, look at your data, learn something, rewrite it again, have new questions, etc, etc, etc".
 
-This leads us to another point to say that the best data science is done iteratively -- you won't write your best analysis in one sitting and never come back to it. Your best analyses will be things you work on over time to incrementally improve and look at.
+This leads us to another point. That is, the best data science is done iteratively -- you won't write your best analysis in one sitting and never come back to it. Your best analyses will be things you work on over time to incrementally improve and look at.
 
 **Practical tips for digging into weirdness:**  
 
@@ -67,7 +67,7 @@ Ultimately, when you see weird things prove to yourself that the results are wha
 
 ## Tip number 3: Let the data inform you
 
-After following our first two tips, you should have a generally good sense of what your data look like and what kind of weirdness exists. Now you will be ready to use what you've learned about your data to inform you have how to properly handle them!
+After following our first two tips, you should have a generally good sense of what your data look like and what kind of weirdness exists. Now you will be ready to use what you've learned about your data to inform you how to properly handle them!
 
 We discussed in the previous chapter how to translate your data science questions into a stats test but there's a second part of this consideration which is taking into account how your data are behaving to know what kinds of stats and questions are appropriate.
 

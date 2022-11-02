@@ -126,7 +126,7 @@ The points in this boxplot are points you would want to look into as being outli
 
 ```{r}
 cars_df %>%
-  dplyr::arrange(dplyr::desc(hwy))[1:2, ]
+  dplyr::arrange(dplyr::desc(hwy))
 ```
 
 - See this [guide for more code and tips on how to detect outliers in R](https://statsandr.com/blog/outliers-detection-in-r/)
@@ -146,6 +146,10 @@ head(diamonds_df)
 
 Let's say we are interested in seeing whether the `carat` is correlated with the price of the diamond. Before we test this, we may want to test the power of our dataset to detect this correlation. For this we will use the `pwr.r.test()` function from the `pwr` library.
 
+```{r, echo = FALSE}
+install.packages("pwr")
+library(pwr)
+```
 
 We have to tell it a few pieces of info:   
 1) How many samples do we have?   
@@ -153,8 +157,6 @@ We have to tell it a few pieces of info:
 3) What significance level will we want (standard is to use 0.05 or 0.01).   
 
 ```{r}
-library(pwr)
-
 pwr.r.test(n = nrow(diamond_df), # How many cases do we have
            r = cor(diamonds_df$carat, diamonds_df$price),
            sig.level = 0.01)

@@ -3,7 +3,7 @@ ottrpal::set_knitr_image_path()
 ```
 # In Practice Using Stats
 
-In the upcoming chapters we will introduce you to a number of statistical terms and test types. In general, we wouldn't stress memorizing specifics of these tests, but instead try to get an intuitive sense for how to use and interpret the stats in the context of your statistical questions.
+In the upcoming chapters we will introduce you to a number of statistical terms and test types. In general, we wouldn't stress memorizing specifics of these tests, but instead trying to get an intuitive sense for how to use and interpret the stats in the context of your statistical questions.
 
 In this chapter we are going to discuss some general strategies for how to start to apply the power of stats to your dataset.
 
@@ -23,7 +23,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0Y
 
 So how do we make unknown unknowns a little more known? We have to do lots of exploring!
 
-There's initial explorations that are always a great idea to do with your data and as you work on a dataset you may want to repeat these whenever you apply a new step or transformation to your data:
+There are a few initial explorations that are always a great idea to do with your data. As you work on a dataset, you may want to repeat these whenever you apply a new step or transformation to your data.
 
 **Practical tips for looking at your data**  
 
@@ -32,7 +32,7 @@ There's initial explorations that are always a great idea to do with your data a
 - Run the `summary()` function on your data.
 - Make sure to look into the documentation for functions that you use to transform your data so you understand what you are doing to it.
 
-As you do these things with your data you may find some "weirdness" which brings us to our next tip:
+As you do these things with your data, you may find some "weirdness" which brings us to our next tip:
 
 ## Tip number 2: Dig into weirdness
 

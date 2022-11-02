@@ -75,7 +75,7 @@ Here's some common things your data might tell you and how you might find that o
 
 For the upcoming examples we are going to use this datasets that are included in the `ggplot2` package.
 
-```{r}
+```{r, results='hide'}
 library(ggplot2)
 library(dplyr)
 ```
@@ -146,7 +146,7 @@ head(diamonds_df)
 
 Let's say we are interested in seeing whether the `carat` is correlated with the price of the diamond. Before we test this, we may want to test the power of our dataset to detect this correlation. For this we will use the `pwr.r.test()` function from the `pwr` library.
 
-```{r, echo = FALSE}
+```{r, results='hide'}
 install.packages("pwr")
 library(pwr)
 ```

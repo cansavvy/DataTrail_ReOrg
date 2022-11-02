@@ -73,19 +73,124 @@ We discussed in the previous chapter how to translate your data science question
 
 Here's some common things your data might tell you and how you might find that out:
 
+For the upcoming examples we are going to use this datasets that are included in the `ggplot2` package.
+
+```{r, results='hide'}
+library(ggplot2)
+library(dplyr)
+```
+
+## How to find out how much data is missing
+
+Datasets often having missing data points because the collection process can be messier than we hope. There can be very good and appropriate reasons to have `NA`s in the data. Indeed it can often be the case that `NA` is a more appropriate way to note a data point than putting some other value. But, before you start doing
+
+**Code example for finding missing data** (this is not the only way to do this)
+
+Let's use and set up the [Texas Housing sales dataset](https://ggplot2.tidyverse.org/reference/txhousing.html) from `ggplot2`.
+
+```{r}
+tx_df <- ggplot2::txhousing
+head(tx_df)
+```
+
+If you know that all your missing data are appropriately labeled as `NA` you can just use something like:
+
+```{r}
+summary(tx_df)
+```
+
+You'll see this prints out the summary for each variable in this data frame, including the number of `NA`s.
+
+- However, if your missing data are not appropriately labeled NA then you will want to convert them using code [described in this article](https://www.statology.org/replace-na-with-string-in-r/).
+- [For more on finding missing values](https://www.statology.org/r-find-missing-values/).
+
 ### How to find if you have outliers
+
 Outliers are data points that are extreme. They can throw off whole analyses and bring you to the wrong conclusions. You have outliers or weird samples in your data -- you may want to try removing these if appropriate and re-running the test you were using.
 
-- See this [guide for code and tips on how to detect outliers in R](https://statsandr.com/blog/outliers-detection-in-r/)
+**Code example for finding outliers** (this is not the only way to do this)
+
+Let's use and set up the [Fuel economy dataset](https://ggplot2.tidyverse.org/reference/mpg.html) from `ggplot2`.
+
+```{r}
+cars_df <- ggplot2::mpg
+head(cars_df)
+```
+
+We can make a boxplot with base R.
+
+```{r}
+boxplot(cars_df$hwy, ylab = "hwy")
+```
+The points in this boxplot are points you would want to look into as being outliers! You could see what these points are for sure by using `dplyr::arrange()` or any other number of ways.
+
+```{r}
+cars_df %>%
+  dplyr::arrange(dplyr::desc(hwy))
+```
+
+- See this [guide for more code and tips on how to detect outliers in R](https://statsandr.com/blog/outliers-detection-in-r/)
 
 ### How to know if your data is underpowered for your question
+
 In order to answer particular questions with a dataset, you need to have enough data in the first place! If you don't have enough data that means you are underpowered. This may happen if you have a lot of missing data, a painfully small dataset, or the effect you are looking for is very small. In these cases you may need to find another dataset or see if the data collector can collect more data to add to this set. So how do you know if your dataset is underpowered?
+
+**Code example exploring power** (this is not the only way to do this)
+
+Let's use and set up the [Diamonds](https://ggplot2.tidyverse.org/reference/mpg.html) from `ggplot2`.
+
+```{r}
+diamonds_df <- ggplot2::diamonds
+head(diamonds_df)
+```
+
+Let's say we are interested in seeing whether the `carat` is correlated with the price of the diamond. Before we test this, we may want to test the power of our dataset to detect this correlation. For this we will use the `pwr.r.test()` function from the `pwr` library.
+
+```{r, results='hide'}
+install.packages("pwr")
+library(pwr)
+```
+
+We have to tell it a few pieces of info:   
+1) How many samples do we have?   
+2) What correlation do we expect? and...  
+3) What significance level will we want (standard is to use 0.05 or 0.01).   
+
+```{r}
+pwr.r.test(n = nrow(diamonds_df), # How many cases do we have
+           r = cor(diamonds_df$carat, diamonds_df$price),
+           sig.level = 0.01)
+```
+
+You'll see this prints out a `1` for power. This dataset is not underpowered at all. Power is on a scale of 0 to 1. Where 0 means you don't have the power to detect anything and 1 means you will absolutely see a significant result if there is one to be seen.  
+
+But let's look at a different hypothetical situation. Let's say instead we only had 10 rows of data and the correlation we expected would be more like 0.3.
+
+```{r}
+pwr.r.test(n = 10, # How many cases do we have
+           r = 0.3,
+           sig.level = 0.01)
+```
+Now this is telling us our power is very low -- meaning even if our hypothesis is true, we don't have enough data to see this correlation.
 
 - See this [chapter of a book for code and tips for how to know if your data are underpowered by doing a power analysis in R](https://bookdown.org/daniel_dauber_io/r4np_book/power-analysis.html).
 
 ### How to know how your data are distributed
 
 Perhaps you want to use a particular stats test, but when you read about this stats test, it has an _assumption_ that the data are normally distributed -- **stats assumptions are really just requirements for using a method**. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed.
+
+If you will be using a numeric variable for anything in your analysis it's a very good idea to plot its density so you know what you are working with!
+
+**Code example of looking at distributions**
+
+Let's return to the cars_df dataset we were looking at earlier. To make a density plot, we need to use `geom_density()` function.
+
+```{r}
+ggplot(cars_df, aes(x = cty)) +
+  geom_density()
+```
+
+We can see this looks like a fairly normal distribution -- what does that mean? let's discuss.
 
 #### What does it mean to be "normally distributed?"
 
@@ -100,6 +205,25 @@ If your data plot looks like that normal bell-shaped curve, then you have "norma
 ```{r, fig.alt = "Normal distributions are just one type of distribution", out.width = "100%", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g17abdef0467_0_0")
 ```
+
+Let's look at the distribution of a different variable, the `sales` in `tx_df` data:
+
+```{r}
+ggplot(tx_df, aes(x = sales)) +
+  geom_density()
+```
+
+Is this normally distributed? There are a lot of values that are lower and only some that are higher. Looks pretty skewed. In this case, we probably don't need to test these data, but we know they aren't really normally distributed so we should keep that in mind.
+
+If we want a test rather than just using our eyes, we can use the `ks.test()` which asks for us "are my data normally distributed?" In this instance, we'll use the `iris` dataset to test its normality for the variable `Sepal.Width`.
+
+```{r}
+shapiro.test(iris$Sepal.Width)
+```
+
+Because this p value reported is bigger than 0.05 we can consider `Sepal.Width` to be a normally distributed variable.
+
+One other important thing to note, if you have too small of a dataset, (say 30 or less) then you can never really consider your data normally distributed and they will always fail these normality tests.
 
 - [Read more about normal distributions here](https://www.scribbr.com/statistics/normal-distribution/).
 - There are formal ways to test for normality and these methods are described in this article that has code examples: [How to Assess Normality in R](https://universeofdatascience.com/how-to-assess-normality-in-r/)

@@ -69,7 +69,7 @@ Ultimately, when you see weird things prove to yourself that the results are wha
 
 After following our first two tips, you should have a generally good sense of what your data look like and what kind of weirdness exists. Now you will be ready to use what you've learned about your data to inform you how to properly handle them!
 
-We discussed in the previous chapter how to translate your data science questions into a stats test but there's a second part of this consideration which is taking into account how your data are behaving to know what kinds of stats and questions are appropriate.
+We discussed in the previous chapter how to translate your data science questions into a stats test. There's a second part of this consideration, which is taking into account how your data are behaving to know what kinds of stats and questions are appropriate.
 
 Here's some common things your data might tell you and how you might find that out:
 
@@ -85,17 +85,17 @@ In order to answer particular questions with a dataset, you need to have enough 
 
 ### How to know how your data are distributed
 
-Perhaps you want to use a particular stats test, but when you read about this stats test says it has an _assumption_ that the data are normally distributed -- **stats assumptions are really just requirements for using a method**. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed.
+Perhaps you want to use a particular stats test, but when you read about this stats test, it has an _assumption_ that the data are normally distributed -- **stats assumptions are really just requirements for using a method**. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed.
 
 #### What does it mean to be "normally distributed?"
 
-How a dataset is distributed has to do withe frequency of the data. So in the example below, we've made a probability density plot using ggplot2. [See this article for details on making denisty plots](http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization). The higher the line is, the more probable that that value would occur.
+How a dataset is distributed has to do with frequency of the data. So in the example below, we've made a probability density plot using ggplot2. [See this article for details on making denisty plots](http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization). The higher the line is, the more probable that that value would occur.
 
 ```{r, fig.alt = "What does a probability density plot represent", out.width = "100%", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g17abdef0467_0_12")
 ```
 
-If when you plot your distribution function it looks like that normal bell shaped curve, then you have "normally distributed" data. You will want to know what your data distribution looks like so you know what tests are appropriate.
+If your data plot looks like that normal bell-shaped curve, then you have "normally distributed" data. You will want to know what your data distribution looks like so you know what tests are appropriate.
 
 ```{r, fig.alt = "Normal distributions are just one type of distribution", out.width = "100%", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g17abdef0467_0_0")
@@ -108,14 +108,14 @@ In conclusion, density plots are a super handy tool to see what your data look l
 
 **Practical tips for figuring out what to do with your data:**
 
-- Make density plots to visual your data's distribution.
-- Google and find sources that discuss the problems you are seeing with your data. It is unlikely that the dataset you are working with is the only dataset that has this weirdness and others online may way in.
+- Make density plots to visualize your data's distribution.
+- Google and find sources that discuss the problems you are seeing with your data. It is unlikely that the dataset you are working with is the only dataset that has this weirdness and others online may weigh in.
 - Consult a more senior data scientist or statistician. Show them the the weirdness you see and ask them what they think of it and what they would do.
 - Look for other data analysis examples online that resemble your data and its weirdness. Try to see what others did and if it makes sense to apply to your situation.
 
 ## How do I know what test to use?
 
-We're going to tell you about some common tests, but here's some flow chart to help you get started. We advise generally having an idea of tests out there but not getting caught up in the minutia of every test. If you end up using a particular test on a set of data, then might be a good time to try to get a practical understanding of the test and how to interpret it but knowing everything about all statistical tests is just not practical and not a good use of your time.
+We're going to tell you about some common tests, but here's a flow chart to help you get started. We advise generally having an idea of tests out there but not getting caught up in the minutia of every test. If you end up using a particular test on a set of data, then might be a good time to try to get a practical understanding of the test and how to interpret it but knowing everything about all statistical tests is just not practical and not a good use of your time.
 
 And as we mentioned with the tips above, don't be afraid to reach out to a statistician or more senior data scientist to help you choose what is appropriate!
 

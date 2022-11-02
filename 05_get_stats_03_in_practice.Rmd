@@ -75,6 +75,10 @@ Here's some common things your data might tell you and how you might find that o
 
 For the upcoming examples we are going to use this datasets that are included in the `ggplot2` package.
 
+```{r}
+library(ggplot2)
+library(dplyr)
+```
 
 ## How to find out how much data is missing
 

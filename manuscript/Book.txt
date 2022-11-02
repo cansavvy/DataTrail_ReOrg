@@ -89,11 +89,10 @@
 89-Improving-Your-LinkedIn-Profile.md
 90-Using-Twitter-for-Data-Science.md
 91-Data-Science-Job-Descriptions.md
-92-Google-Hangouts.md
-93-Where-to-Look-for-Data-Science-Jobs.md
-94-Where-to-Find-Remote-Data-Science-Jobs.md
-95-Data-Science-Interviews.md
-96-Data-Science-Meetups.md
-97-Create-Your-Portfolio.md
+92-Where-to-Look-for-Data-Science-Jobs.md
+93-Where-to-Find-Remote-Data-Science-Jobs.md
+94-Data-Science-Interviews.md
+95-Data-Science-Meetups.md
+96-Create-Your-Portfolio.md
 About-this-Course.md
 About-the-Authors.md

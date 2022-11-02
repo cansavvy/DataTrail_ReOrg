@@ -52,7 +52,7 @@ __When I run more do I lose weight?__
 * _What or who am I trying to understand with data?_ I'm trying to understand something about only myself, not about others.
 * _What measurements do I have on those people or objects that help me answer the question?_  I have data on how many steps I take with Fitbit and measure my weight with a scale.
 * _How do the data I have limit the type of question I can answer?_ I only have data on me. I only have measurements on my weight every day and I need to summarize my Fitbit data to understand my runs, but won't have information on whether I ran up and down hills or any information on my diet.
-* _What is the type of data science question we are trying to answer?_ In this case we are looking for a relationship between two variables that we measured for only the data we have so it is an exploratory analysis.
+* _What is the type of data science question we are trying to answer?_ In this case we are looking for a relationship between two variables that we measured. We're only using the data we have so it is an exploratory analysis.
 
 
 ![When I run more do I lose weight?](https://docs.google.com/presentation/d/18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo/export/png?id=18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo&pageid=g3fa6327ef6_0_234)

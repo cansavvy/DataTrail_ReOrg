@@ -88,8 +88,13 @@ The blog author wanted to optimize his movie watching time by not watching movie
 
 > Will I like a movie? I will base it on a new score. The new score combines the official rating but also the other input variables as well.
 
-What measurements do I have on those people or objects that help me answer the question? Many data we generate has what is called metadata associated with it, information about the data itself. When you watch a movie on a streaming platform, the bulk of the data will be the video file, but there is also other characteristics surrounding that file. The genre, country of origin, language, duration, year are all metadata which hold a huge amount of information for the budding data scientist. These are all input variables into our model, but we also require an output variable; what we are trying to predict. We need a sample of data which as both the input and output data, where the latter is the personal score of the movie. Once we have these 2 parts we can use them to train out model. If the model is working well, it means we can take a new movie, unseen by us, and predict what we will think the score would be if we watched it. That is the billion dollar question that the movie streaming industry is trying to solve today. How do the data I have limit the type of question I can answer? The main limitation here is that the user needs to rate a number of movies before we can even start this process. The other limitation is that we are only trying to predict the personal score. This is not so much of an issue as trying to predict any of the other variables has limited use cases (what use is predicting the year a movie came out?).
-What is the type of data science models are we using?
+What measurements do I have on those people or objects that help me answer the question? Many data we generate has what is called [metadata](https://en.wikipedia.org/wiki/Metadata) associated with it, information about the data itself. When you watch a movie on a streaming platform, the bulk of the data will be the video file, but there are also other characteristics surrounding that file. The genre, country of origin, language, duration, and year are all metadata which hold a huge amount of information for the budding data scientist. These are all input variables into our model, but we also require an output variable; what we are trying to predict. We need a sample of data which as both the input and output data, where the latter is the personal score of the movie. Once we have these 2 parts we can use them to train out model. If the model is working well, it means we can take a new movie, unseen by us, and predict what we will think the score would be if we watched it. That is the billion dollar question that the movie streaming industry is trying to solve today! 
+
+_How do the data I have limit the type of question I can answer?_ 
+
+The main limitation here is that the user needs to rate a number of movies before we can even start this process. The other limitation is that we are only trying to predict the personal score. This is okay because we aren't trying to predict any of the other variables (for example, we don't care about predicting the year a movie came out).
+
+_What is the type of data science models are we using?_
 
 This type of analysis can be broadly labelled as linear regression, where we think there is a steady and constant relationship between 1 or more variables, and the ideal solution is a straight line through it. This is usually the first port of call for most data scientists as it accomplishes 2 things:
 
@@ -99,7 +104,8 @@ This type of analysis can be broadly labelled as linear regression, where we thi
 ![The simple approach](https://docs.google.com/presentation/d/18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo/export/png?id=18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo&pageid=g3fa6327ef6_0_412)
 
 No data scientist really believes that a simple straight line will solve a complex problem such as being able to predict if you will like a movie, and the author subsequently adds more and more complexity to his approach.
-The obvious next step is to add more variables to the model. He initially just started by comparing IMDb ratings to his own, this referred to as a univariate or simple linear regression. If you are using many variables (year, genre, director), to predict your own score this is called multiple linear regression.
+
+He initially just started by comparing IMDb ratings to his own, this referred to as a univariate or simple linear regression. The next step to improve the prediction is to add more variables to the model. If you are using many variables (year, genre, director), to predict your own score this is called multiple linear regression.
 
 ![Multiple linear regression Analysis](https://docs.google.com/presentation/d/18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo/export/png?id=18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo&pageid=g16e7dcae64c_0_4)
 

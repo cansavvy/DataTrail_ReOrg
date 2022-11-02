@@ -73,7 +73,7 @@ __Do I need to take an umbrella with me when I leave the house today?__
 * _What or who am I trying to understand with data?_ I'm trying to predict the weather in my hometown on a particular day so I know whether to take an umbrella.  
 * _What measurements do I have on those people or objects that help me answer the question?_  I could take predictions from different weather services, look out the window and see if it is cloudy, or go out and feel if it is humid outside. To build my prediction I could collect these measurements for a year and also record whether I needed an umbrella that day.
 * _How do the data I have limit the type of question I can answer?_ I only have data on my hometown, I've only collected data from a few weather prediction services, and the data are only collected over one year. So it might be hard to say things for other people, other places, or other times.  
-* _What is the type of data science question we are trying to answer?_ In this case we are looking to use historical data to predict something about a single day. So this is a prediction problem.
+* _What is the type of data science question we are trying to answer?_ In this case we are looking to use historical data to predict something about a single day. So this is a prediction analysis.
 
 
 ![Do I need to take an umbrella with me when I leave the house today?](https://docs.google.com/presentation/d/18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo/export/png?id=18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo&pageid=g3fa6327ef6_0_388)
@@ -82,7 +82,7 @@ __Do I need to take an umbrella with me when I leave the house today?__
 
 Let’s practice translating questions to data science questions through an example. We briefly mentioned this example in [Forming Questions section](https://datatrail-jhu.github.io/DataTrail/the-data-science-process.html#other-cool-data-science-projects). The analysis is based on data scientist [Dimiter Toshkov’s blog](http://re-design.dimiter.eu/?p=767).
 
-![IMDB Blog](https://docs.google.com/presentation/d/18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo/export/png?id=18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo&pageid=g3e01f3a315_0_1)
+![Dimiter Toshkov’s IMDB Blog](https://docs.google.com/presentation/d/18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo/export/png?id=18OqWRUTL7oK8RXx7tXQY4dxFSV5J_JOGwytN-pHGnDo&pageid=g3e01f3a315_0_1)
 
 The blog author wanted to optimize his movie watching time by not watching movies which he would not enjoy. His model used a combination of metadata (data about data) such as movie title, director, duration, year of release, genre, IMDb rating, and a few other less interesting variables. What or who am I trying to understand with data? We are trying to predict the author’s movie score based on the inputs from IMDb. i.e. will I like a movie not only on what the official rating is, but the other input variables as well which will form a new score.
 

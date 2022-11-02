@@ -34,13 +34,13 @@ Thus to answer the question
 
 > What variables from IMDB predict the author's movie ratings?
 
-We would ideally want a dataset where each row is a different tweet with each row containing information on the following variables:
+We would ideally want a dataset where each row is a different movie with each row containing information on the following variables:  
 
-• rating – our own rating for the movie
-• imdb – the IMDb movie rating
-• genre – the genre of the movie
-• director – Director of the movie
-• year – Year of release of the movie
+- rating – our own rating for the movie  
+- imdb – the IMDb movie rating  
+- genre – the genre of the movie  
+- director – Director of the movie  
+- year – Year of release of the movie  
 
 Having all these data in this format would enable us to answer the question of interest!
 

@@ -179,6 +179,7 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
+          mkdir -p manuscript
           git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
           echo ${LEANPUB_PARAMS} > leanpub_params.txt
           cat manuscript/2-Finding-Help.md leanpub_params.txt > manuscript/2-Finding-Help.md

@@ -32,7 +32,7 @@ There are a few initial explorations that are always a great idea to do with you
 - Run the `summary()` function on your data.
 - Make sure to look into the documentation for functions that you use to transform your data so you understand what you are doing to it.
 
-As you do these things with your data, you may find some "weirdness" which brings us to our next tip:
+As you do these things with your data, you may find some "weirdness" which brings us to our next tip.
 
 ## Tip number 2: Dig into weirdness
 
@@ -52,7 +52,7 @@ In reality, good data science doesn't happen so step like.
 ottrpal::include_slide("https://docs.google.com/presentation/d/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4/edit#slide=id.g179b57c98b7_0_29")
 ```
 
-The best data science is a bit messier than this. Original questions lead to new questions; and some pursuits are dead ends; and whole new findings and cool things we never dreamed of sometimes pop up out of nowhere! Meaning that data science is never write code once and done, it is write code, run it, rewrite it, look at your data, learn something, rewrite it again, have new questions, etc, etc etc.
+The best data science is a bit messier than this. Original questions lead to new questions; and some pursuits are dead ends; and whole new findings and cool things we never dreamed of sometimes pop up out of nowhere! Meaning that data science is never "write code once and done", it is "write code, run it, rewrite it, look at your data, learn something, rewrite it again, have new questions, etc, etc, etc".
 
 This leads us to another point to say that the best data science is done iteratively -- you won't write your best analysis in one sitting and never come back to it. Your best analyses will be things you work on over time to incrementally improve and look at.
 

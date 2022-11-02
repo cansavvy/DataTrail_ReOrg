@@ -618,6 +618,7 @@ in-practice-using-stats
 tip-number-1-always-be-looking-at-your-data
 tip-number-2-dig-into-weirdness
 tip-number-3-let-the-data-inform-you
+how-to-find-out-how-much-data-is-missing
 how-to-find-if-you-have-outliers
 how-to-know-if-your-data-is-underpowered-for-your-question
 how-to-know-how-your-data-are-distributed

@@ -211,7 +211,7 @@ Last but not least, **messages**, in general, are simply there to **provide you 
 
 Note that all three are in the same font and same color, so they'll look similar in your RStudio Cloud console. Over time, you'll get more comfortable dealing with and understanding the difference between the three. For now, be sure that if you get an error, your code did not execute successfully. Go back and find what caused the error.
 
-# A brief intro to the `apply` family of functions
+## A brief intro to the `apply` family of functions
 
 \*[This section is repurposed from the Childhood Cancer Data Lab's section on apply functions.](https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/03-intro_to_tidyverse.Rmd).
 

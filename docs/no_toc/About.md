@@ -1,4 +1,5 @@
 
+
 # About the Authors {-}
 
 These credits are based on our [course contributors table guidelines](https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits).
@@ -9,33 +10,24 @@ These credits are based on our [course contributors table guidelines](https://gi
 |Credits|Names|
 |-------|-----|
 |**Pedagogy**||
-|Lead Content Instructor(s)|[FirstName LastName]|
-|Lecturer(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved| Delivered the course in some way - video or audio|
-|Content Author(s) (include chapter name/link in parentheses if only for specific chapters) - make new line if more than one chapter involved | If any other authors besides lead instructor| 
-|Content Contributor(s) (include section name/link in parentheses) - make new line if more than one section involved|  Wrote less than a chapter|
-|Content Editor(s)/Reviewer(s) | Checked your content|
-|Content Director(s) | Helped guide the content direction|
-|Content Consultants (include chapter name/link in parentheses or word "General") - make new line if more than one chapter involved | Gave high level advice on content|
-|Acknowledgments| Gave small assistance to content but not to the level of consulting |
+|Content Author(s) | [Shannon Ellis], [Candace Savonen], [Aboozar Hadavand], [Leslie Myint], [Leonardo Collado-Torres]|
+|Content Contributor(s)| [Sarah McClymont], [Leah Jager]|
+|Content Editor(s)/Reviewer(s) | [Candace Savonen], [Katherine Cox], [Davon Person]|
+|Content Director(s) |[Jeff Leek]|
 |**Production**||
-|Content Publisher(s)| Helped with publishing platform|
-|Content Publishing Reviewer(s)| Reviewed overall content and aesthetics on publishing platform|
+|Content Publisher(s)| [Candace Savonen]|
 |**Technical**||
-|Course Publishing Engineer(s)| Helped with the code for the technical aspects related to the specific course generation|
+|Course Publishing Engineer(s)| [Candace Savonen]|
 |Template Publishing Engineers|[Candace Savonen], [Carrie Wright]|
 |Publishing Maintenance Engineer|[Candace Savonen]|
 |Technical Publishing Stylists|[Carrie Wright], [Candace Savonen]|
 |Package Developers ([ottrpal])|[John Muschelli], [Candace Savonen], [Carrie Wright]|
+|Package Developers ([swirlify])|[Sean Kross]|
 |**Art and Design**||
-|Illustrator(s)| Created graphics for the course|
-|Figure Artist(s)| Created figures/plots for course|
-|Videographer(s)| Filmed videos|
-|Videography Editor(s)| Edited film|
-|Audiographer(s)| Recorded audio|
-|Audiography Editor(s)| Edited audio recordings|
+|Illustrator(s)| [Shannon Ellis], [Candace Savonen], [Aboozar Hadavand] |
 |**Funding**||
-|Funder(s)| Institution/individual who funded course including grant number|
-|Funding Staff| Staff members who help with funding|
+|Funder(s)| Johns Hopkins Bloomberg School of Public Health, Bloomberg Philanthropies |
+|Funding Staff| [Ashley K Johnson]|
 
 &nbsp;
 
@@ -106,21 +98,22 @@ These credits are based on our [course contributors table guidelines](https://gi
 ```
 
 <!-- Author information -->
-
-[FirstName LastName]: link to personal website
+[Ashley K Johnson]: https://www.linkedin.com/in/ashleykgjohnson
+[Davon Person]: https://www.linkedin.com/in/davon-person-1ba973194
+[Aboozar Hadavand]: https://www.ahadavand.com/
+[Shannon Ellis]: https://www.shanellis.com/
 [John Muschelli]: https://johnmuschelli.com/
 [Candace Savonen]: https://www.cansavvy.com/
 [Carrie Wright]: https://carriewright11.github.io/
+[Jeff Leek]: https://jtleek.com/
+[Leslie Myint]: https://lmyint.github.io/
+[Leonardo Collado-Torres]: https://lcolladotor.github.io/
+[Sean Kross]: https://seankross.com/
+[Sarah McClymont]: https://www.linkedin.com/in/sarahmcclymont/
+[Leah Jager]: https://lrjager.github.io/
+[Katherine Cox]: https://www.linkedin.com/in/katherine-cox-8a4b1623
 
 <!-- Links -->
 
 [ottrpal]: https://github.com/jhudsl/ottrpal
-
-<!-- Fill out this table using these instructions: https://github.com/jhudsl/OTTR_Template/wiki/How-to-give-credits
-
-For JHU courses, You will need to add Ira as a credit:
-
-|Content Publisher|[Ira Gooding]|
-...
-[Ira Gooding]: https://publichealth.jhu.edu/faculty/4130/ira-gooding
--->
+[swirlify]: http://swirlstats.com/swirlify/

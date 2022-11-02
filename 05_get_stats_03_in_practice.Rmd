@@ -157,7 +157,7 @@ We have to tell it a few pieces of info:
 3) What significance level will we want (standard is to use 0.05 or 0.01).   
 
 ```{r}
-pwr.r.test(n = nrow(diamond_df), # How many cases do we have
+pwr.r.test(n = nrow(diamonds_df), # How many cases do we have
            r = cor(diamonds_df$carat, diamonds_df$price),
            sig.level = 0.01)
 ```

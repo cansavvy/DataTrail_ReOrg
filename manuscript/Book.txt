@@ -48,7 +48,7 @@
 48-Getting-Statistics.md
 49-Translating-Questions-to-Data-Science-Questions.md
 50-Identifying-Data.md
-51-In-practice-using-stats.md
+51-In-Practice-Using-Stats.md
 52-Descriptive-Analysis.md
 53-Exploratory-Analysis.md
 54-Inference:-Overview.md

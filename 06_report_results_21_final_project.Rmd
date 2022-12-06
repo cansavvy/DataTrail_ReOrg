@@ -3,7 +3,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# GitHub and Final Data Project
+# Final Data Project
 
 In this project, we are going to have you form your own question and find data to explore it.
 

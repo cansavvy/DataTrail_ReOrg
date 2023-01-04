@@ -106,7 +106,7 @@ These credits are based on our [course contributors table guidelines](https://gi
 [Candace Savonen]: https://www.cansavvy.com/
 [Carrie Wright]: https://carriewright11.github.io/
 [Jeff Leek]: https://jtleek.com/
-[Leslie Myint]: https://lmyint.github.io/
+[Leslie Myint]: https://www.lesliemyint.org/
 [Leonardo Collado-Torres]: https://lcolladotor.github.io/
 [Sean Kross]: https://seankross.com/
 [Sarah McClymont]: https://www.linkedin.com/in/sarahmcclymont/

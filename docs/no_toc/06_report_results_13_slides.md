@@ -191,12 +191,12 @@ For sharing documents you can follow the procedure we learned in the lesson on G
 
 Here, we have covered the basics of Google Slides. If you want to learn how to further customize your templates, how to add transitions and animations, and details on working with images, check out the additional resources links below search for tutorials on YouTube.com.
 
-Google also has extensive information on getting started with Slides on their G Suite Learning Center, which can be found at the following web address: https://gsuite.google.com/learning-center/products/slides/get-started/#!/
+Google also has extensive information on getting started with Slides on their G Suite Learning Center, which can be found at the following web address: https://www.cloudskillsboost.google/course_templates/197
 
 
 ### Additional Resources
 
-* [Google's Slide Tutorial](https://gsuite.google.com/learning-center/products/slides/get-started/#!/)
+* [Google's Slide Tutorial](https://www.cloudskillsboost.google/course_templates/197)
 * [Adding images](https://www.gcflearnfree.org/googleslides/adding-pictures-and-shapes/1/)
 * [Transitions and animation](https://www.gcflearnfree.org/googleslides/adding-transitions-and-animations/1/)
 * [Editing the Master Template](https://www.gcflearnfree.org/googleslides/editing-master-slides-and-layouts/1/)

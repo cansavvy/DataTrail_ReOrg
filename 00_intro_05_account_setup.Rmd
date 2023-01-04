@@ -90,7 +90,7 @@ Enter your new Google account name here. Click 'Next'. Enter your password. Clic
 
 Communication with your clients or your employer is an important part of being a data scientist.  E-mail, short for electronic mail, is an important part of the communication picture because of its flexibility.  You can write messages of varying lengths, use formatting if you desire, and attach documents as needed.  Depending on your particular work situation, email may be your main means of communicating about your work.
 
-When using a Chromebook, the email application of choice is Gmail.  [Gmail](https://www.gmail.com/) is a free e-mail service provided by Google that provides users with a gigabyte of free storage for messages and includes the ability to easily search for specific emails. Gmail also automatically organizes related emails into a conversational thread, meaning that a message and all replies to that message are stored together.
+When using a Chromebook, the email application of choice is Gmail. [Gmail](https://www.gmail.com/) is a free e-mail service provided by Google that provides users with a gigabyte of free storage for messages and includes the ability to easily search for specific emails. Gmail also automatically organizes related emails into a conversational thread, meaning that a message and all replies to that message are stored together.
 
 Gmail has many of similarities with other web-based email clients, such as Hotmail and Yahoo! Mail.  If you regularly use email through an internet browser, much of the following will be review.
 
@@ -202,7 +202,7 @@ If you click the down arrow next to the search box, you will open a window that 
 
 We have touched very briefly on some of the basics of using Gmail: accessing your account, sending and replying to messages, and searching for a particular message.  There are lots of other features of Gmail that you may want to explore now or at a future time. There are many good beginner tutorials on using Gmail on YouTube.com.
 
-Google also has extensive information on getting started with Gmail on their G Suite Learning Center, which can be found at the following web address: https://gsuite.google.com/learning-center/products/gmail/get-started/#!/
+Google also has extensive information on getting started with Gmail on Google Workspace Learning Center, which can be found at the following web address: https://support.google.com/a/users/answer/9297685.
 In this tutorial, you can find additional information about creating and sending email messages, organizing your inbox, searching your email, and more!
 
 
@@ -324,7 +324,7 @@ Two-Step Verification (also known as two-factor authentication), provides an ext
 
 In this lesson, we have talked briefly about how to create files and folders in Google Drive, as well as how to delete, recover, and share your files.  There are many other features of Drive that you may want to eventually explore.  There are many tutorials for using Drive on [YouTube.com](https://www.youtube.com/).
 
-Google also has extensive information on getting started with Drive on their G Suite Learning Center, which can be found at the following web address: https://gsuite.google.com/learning-center/products/drive/get-started/#!/
+Google also has extensive information on getting started with Drive on their Google Workspace Learning Center, which can be found at the following web address: https://support.google.com/a/users/answer/9282958.
 
 ## Other Accounts Setup
 

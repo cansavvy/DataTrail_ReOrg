@@ -200,7 +200,7 @@ If you click the down arrow next to the search box, you will open a window that 
 
 We have touched very briefly on some of the basics of using Gmail: accessing your account, sending and replying to messages, and searching for a particular message.  There are lots of other features of Gmail that you may want to explore now or at a future time. There are many good beginner tutorials on using Gmail on YouTube.com.
 
-Google also has extensive information on getting started with Gmail on their G Suite Learning Center, which can be found at the following web address: https://gsuite.google.com/learning-center/products/gmail/get-started/#!/
+Google also has extensive information on getting started with Gmail, which can be found at the following web address: https://www.cloudskillsboost.google/course_templates/200
 In this tutorial, you can find additional information about creating and sending email messages, organizing your inbox, searching your email, and more!
 
 
@@ -322,7 +322,7 @@ Two-Step Verification (also known as two-factor authentication), provides an ext
 
 In this lesson, we have talked briefly about how to create files and folders in Google Drive, as well as how to delete, recover, and share your files.  There are many other features of Drive that you may want to eventually explore.  There are many tutorials for using Drive on [YouTube.com](https://www.youtube.com/).
 
-Google also has extensive information on getting started with Drive on their G Suite Learning Center, which can be found at the following web address: https://gsuite.google.com/learning-center/products/drive/get-started/#!/
+Google also has extensive information on getting started with Drive on their G Suite Learning Center, which can be found at the following web address: https://www.cloudskillsboost.google/course_templates/199
 
 ## Other Accounts Setup
 

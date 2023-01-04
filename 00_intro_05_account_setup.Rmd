@@ -324,7 +324,7 @@ Two-Step Verification (also known as two-factor authentication), provides an ext
 
 In this lesson, we have talked briefly about how to create files and folders in Google Drive, as well as how to delete, recover, and share your files.  There are many other features of Drive that you may want to eventually explore.  There are many tutorials for using Drive on [YouTube.com](https://www.youtube.com/).
 
-Google also has extensive information on getting started with Drive on their G Suite Learning Center, which can be found at the following web address: https://gsuite.google.com/learning-center/products/drive/get-started/#!/
+Google also has extensive information on getting started with Drive on their G Suite Learning Center, which can be found at the following web address: https://www.cloudskillsboost.google/course_templates/199
 
 ## Other Accounts Setup
 

@@ -1,6 +1,6 @@
 ---
 title: "DataTrail"
-date: "December, 2022"
+date: "January, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib

@@ -258,7 +258,7 @@ However, if you download data from RStudio Cloud and store them directly on your
 
 #### HTTPS
 
-An additional reminder: websites that have https:// (rather than just http://) also use encryption for data transfer, increasing security for data that are transferred. When working with PII and transferring data, be sure that the websites you're working with are using HTTPS.
+An additional reminder: websites that have `https://` (rather than just `http://`) also use encryption for data transfer, increasing security for data that are transferred. When working with PII and transferring data, be sure that the websites you're working with are using HTTPS.
 
 ### Human Security
 

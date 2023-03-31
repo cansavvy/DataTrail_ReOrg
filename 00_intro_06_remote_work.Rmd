@@ -1,0 +1,23 @@
+
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
+
+# Remote work
+
+In the post-COVID world, a lot of work is done remotely, particularly for data science.
+
+
+## Remote working tips
+
+### Form Good Habits
+
+### Ask for help
+
+### Have a set up
+
+### Know yourself
+
+### Task management is key
+
+## Task Managment

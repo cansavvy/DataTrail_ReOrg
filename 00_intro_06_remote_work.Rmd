@@ -5,19 +5,147 @@ ottrpal::set_knitr_image_path()
 
 # Remote work
 
-In the post-COVID world, a lot of work is done remotely, particularly for data science.
+In the post-COVID world, a lot of work is done remotely, particularly for data science. Remote work can be a highly productive and flexible environment to work in if we set ourselves up for success. But being productive and happy in a remote work setting does not come naturally to a lot of people. Here we will discuss some best practices and ideas for how to work remotely in a way that promotes not only your productivity but also your well being (both for in this course and in a data science job).
+
+In the DataTrail program, we know the best data science work is done by happy and healthy people. Knowledge is important, but if we are not in a healthy or supported state to allow us to apply that knowledge, then we won't be able to do our best work. In this chapter, we'd like to discuss some principles behind what you can do to help set yourself up for success in a remote work environment.
+
+### Goals for working remotely:
+
+1. Being healthy - making sure that our socio-emotional needs are met.
+2. Being productive - getting done what we need to get done in a timely manner.
+
+These two goals feed off of each other. Healthy people have their needs met in a way that they are able to be productive. Conversely, being productive can be a source of happiness!
+
+## How to be healthy
+
+Being healthy not only means physical needs: make sure to eat healthy and move your body physically and regularly, but it also means emotionally and socially healthy.
+
+Try to evaluate your time non-judgmentally. To promote the healthiest version of yourself: what do you need to spend more time doing and what do you need to do less time doing? How much control do you have over these variables and the way you spend your time? Some things may be out of your control, but try to look for what you can control.
+
+Often the items that individuals need to be healthy include:
+
+- Sleeping
+- Eating well
+- Spending time with loving and supportive individuals
+- Working reasonable hours - setting up boundaries
+- Spending some time doing things you enjoy that refill your energy
+
+### Define success
+
+To set yourself up for success in regards to your health, you will need to start by defining what health looks like for you. What creates a healthier version of yourself? Note that being healthy includes some happiness, but health is more all encompassing than just happiness, it also implies taking care of yourself.
+
+Ask yourself, what does a healthier version of myself look like? Does it involve you sleeping more? Eating a vegetable? Changing your social group?
+
+### Form healthy habits
+
+Habits are at the heart of setting ourselves up for success. They say humans are creatures of habit, which can be good and bad. If the habits you have are helping you reach your goals, then great! But if you evaluate your habits and feel that they are not helping you reach your goals, how might you be able to go about changing these habits?
+
+[Read this article for more about how to change habits](https://www.inc.com/jeff-haden/change-any-habit-painlessly-6-tips.html).
+
+To change habits we need to make goals that are `SMART`:
+
+**S**pecific - goals need to be simple and succinct. Elaborate goals or goals that are vague are too hard to track or understand.
+**M**easurable - goals need to be something you can measure. If you are not able to measure it you won't be able to know if you've met your goal or not.
+**A**chieveable - to set ourselves up for success, we need to make goals that are actually reasonable.
+**R**elevant - goals need to be something related to what we'd like to achieve.
+**T**ime bound - goals need to have a set amount of time that we can accomplish them in.
 
 
-## Remote working tips
+**Poor goal example:** I want to be healthier
 
-### Form Good Habits
+This goal is too vague, it is not measurable and has no timeline. Although the sentiment may ring true to the individual, they haven't set themselves up to successfully achieve this goal because there is no specific item described.
 
-### Ask for help
+**Better goal example:** I want to go for a brisk walk for 20 minutes three times a week for 10 weeks.
 
-### Have a set up
+Although perhaps this goal is related to the "I want to be healthier" example, it is much more specific and measurable. There is a specific event and action for this goal: walking 20 minutes. And the goal is not indefinite, it is set for 10 weeks. But, this goal is still relevant to the overarching theme of wanting to promote health.
 
 ### Know yourself
 
-### Task management is key
+Remote work can be super powerful for being healthy but what is healthy might be vary for different individuals. Remote work is great in that it can lend you flexibility to find routines and patterns that work best for promoting the healthiest form of you.
 
-## Task Managment
+Are you a person who is more extraverted? Do you really thrive on communication and interaction with others? Try to initiate more meetings with others -- meetings don't always have to have an agenda. Sometimes getting coffee whether virtual or in person can be a helpful way to meet your social needs and also fuel your data science brain!
+
+Are you a person who can't sit for long periods of time? Does exercise give you energy? Schedule time in your day for exercise (Even if its only 5 minutes you need). Block it off as a meeting if you need to.
+
+Therapy is a great way to get to know yourself better. Seek out access to a therapist or counselor. Realize that you may have to take time to find a therapist that best fits with your background, personality, and goals.
+
+### Self-reevaluate
+
+Examine your workday. Use your science brain to up your health? Did you have a good day? Try to exam what variables within your control may have contributed to that? Did you have a bad day? Is there anything in your bad day that is within your control that you could have changed? If your bad day was caused by something out of your control, also realize that this is okay and part of being human. Take the time out that you need and start again fresh tomorrow.
+
+### Reach out for help
+
+If you have external circumstances that are affecting your health: mental health issues, housing difficulties, income instabilities, transportation issues, childcare issues, domestic problems or any thing else, realize that there are always people who want to support you. You may have to look to find them, they may not be the people you have sought out in the past, but supportive people and communities do exist. But these supportive people won't be able to help you if they are unaware that you need help.
+
+Asking for help is one of the most meaningful things you can do to promote your own health. Even if you feel that nothing can be done about a particular situation, realize that it's still helpful to talk to someone -- and there may be solutions that others know of that you weren't aware of.
+
+## How to be productive
+
+To be productive, you need to be healthy first! So make sure you've set yourself up for health first. Then, take a look at your work habits.
+
+### Write things down
+
+Whether it is your goals, notes from a class, or tasks you need to complete, err on the side of always writing things down. Human brains are really great at being creative and thinking abstractly, but not always so great at remembering things.
+
+Even if you are sure you won't forget something, write it down anyway because you may surprise yourself how much and how quickly you forget something.
+
+For the second half of this chapter, we are going to practice writing things down by using Google Docs. Go to [Google Docs](https://docs.google.com/document/u/0/) and open up a new document. Call this document "My Career Goals". Bookmark this document so you keep track of where it is.
+
+### Define success
+
+Just as with our health, we have to set up our work life in a manner that allows us to be successful. That means first defining what success looks like in our career:
+
+- What do you find most meaningful in the work that you have done so far?
+- What kind of work makes time just fly by?
+- What do you enjoy thinking about?
+- What are you passionate about?
+
+**In your Google Doc "My Career Goals", copy and paste the above questions and answer them for yourself** Note that as your goals or answers to these ideas change you can always edit this and re-evaluate.
+
+A successful career or even a single workday will hopefully continually involve more and more of what you are passionate as you continue along your career journey. However, you also should be aware that even the best careers have the "not fun" parts of them. In order to do what you love, you also might need to sometimes do stuff that isn't your favorite. But hopefully the career that you are building toward involves an increasing proportion of the stuff you love and less and less of the stuff you don't enjoy.
+
+#### Identifying tasks
+
+In the short term, what do you need to do to get to the work that you enjoy? Write down what you believe you need to accomplish to help you get there. Google about the career you want and what is recommended for you to reach that career. Talk to teachers and mentors about what you need to do to reach that career.
+
+Also realize that sometimes the steps toward the career may not be representative of the career you reach. In order to get to the career you want, sometimes the training will involve tasks that you might not really have to do again. For example, in medical school, students take lots of multiple choice exams but when they are practicing physicians, they are spending more time with working with patients and less time filling out scantron bubbles.
+
+**In your Google Doc "My Career Goals", write out ideas of what you would need to do to reach your career goals** Perhaps on your list might be: 1) Finish this DataTrail course and 2) Create a resume.
+
+#### Break down tasks into bite size chunks
+
+If you are taking this course, perhaps your larger task will be "read all of this DataTrail material". And while it is helpful to write this down, you'll also need to figure out how to break this large task into manageable chunks.
+
+Go to [Google Docs](https://docs.google.com/document/u/0/) again but now open up a new second document. Call this document "My TODO List". Bookmark this document in your web browser or perhaps make it your homepage.
+
+To put an analogy to this. Let's say your goal is to make a lasagna. If you have never made lasagna you just write down "Make a lasagna" as the instructions to yourself, you may feel so overwhelmed by this task that you wouldn't know where to start. Instead, we should break down this larger task into smaller tasks that you know how to get done.
+
+We might start with writing "make a lasagna" as our todo but then we would break this down into:
+
+1) Find a lasagna recipe online
+2) Make a list of the ingredients I need to make lasagna
+3) Find a store nearby that will have these ingredients
+4) Buy these ingredients
+5) .... and so on.
+
+Data science tasks are similar. If our goal is to "make a survey app" this might be a really intimidating task to get started on. Instead we first might want to break this task down into:
+
+1) Talk to my mentor or peers about my app idea.
+2) Look for other apps online that are like what the app I want to build
+3) Think about and write down the goals of this app
+4) Get a piece of paper and pencil and sketch out a what the screen might look like for an app like this.
+5) Create an empty folder where I will store the code for this app.
+6) ... and so on
+
+If at any point it is not clear to you how to break a big task into smaller tasks, chat with a mentor, peer or other advisor. Breaking big tasks into manageable tasks is a skill that comes with practice. It can often be helpful to get other's help.
+
+### Form productive habits
+
+#### Start everyday with a clear set of tasks to accomplish 
+
+
+### Know yourself
+
+### Self-reevaluate
+
+### Reach out for help

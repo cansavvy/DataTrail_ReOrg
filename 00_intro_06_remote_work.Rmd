@@ -34,7 +34,7 @@ Often the items that individuals need to be healthy include:
 
 To set yourself up for success in regards to your health, you will need to start by defining what health looks like for you. What creates a healthier version of yourself? Note that being healthy includes some happiness, but health is more all encompassing than just happiness, it also implies taking care of yourself.
 
-Ask yourself, what does a healthier version of myself look like? Does it involve you sleeping more? Eating a vegetable? Changing your social group?
+Ask yourself, what does a healthier version of myself look like? Does it involve you sleeping more? Eating more vegetables? Changing your social group?
 
 ### Form healthy habits
 
@@ -44,11 +44,11 @@ Habits are at the heart of setting ourselves up for success. They say humans are
 
 To change habits we need to make goals that are `SMART`:
 
-**S**pecific - goals need to be simple and succinct. Elaborate goals or goals that are vague are too hard to track or understand.
-**M**easurable - goals need to be something you can measure. If you are not able to measure it you won't be able to know if you've met your goal or not.
-**A**chieveable - to set ourselves up for success, we need to make goals that are actually reasonable.
-**R**elevant - goals need to be something related to what we'd like to achieve.
-**T**ime bound - goals need to have a set amount of time that we can accomplish them in.
+- **S**pecific - goals need to be simple and succinct. Elaborate goals or goals that are vague are too hard to track or understand.
+- **M**easurable - goals need to be something you can measure. If you are not able to measure it you won't be able to know if you've met your goal or not.
+- **A**chieveable - to set ourselves up for success, we need to make goals that are actually reasonable.
+- **R**elevant - goals need to be something related to what we'd like to achieve.
+- **T**ime bound - goals need to have a set amount of time that we can accomplish them in.
 
 
 **Poor goal example:** I want to be healthier

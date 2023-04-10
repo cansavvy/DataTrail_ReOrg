@@ -14,7 +14,7 @@ In the DataTrail program, we know the best data science work is done by happy an
 1. Being healthy - making sure that our socio-emotional needs are met.
 2. Being productive - getting done what we need to get done in a timely manner.
 
-These two goals feed off of each other. Healthy people have their needs met in a way that they are able to be productive. Conversely, being productive can be a source of happiness!
+These two goals feed off of each other. **Healthy people have their needs met in a way that they are able to be productive.** Conversely, being productive can be a source of happiness!
 
 ## How to be healthy
 
@@ -30,11 +30,21 @@ Often the items that individuals need to be healthy include:
 - Working reasonable hours - setting up boundaries
 - Spending some time doing things you enjoy that refill your energy
 
+```{r, fig.alt = "Often the items that individuals need to be healthy include: sleeping, eating well, spending time with loving and supportive individuals, working reasonable hours - setting up boundaries, and otherwise spending some time doing things you enjoy that refill your energy", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c7f9f79b8_1_0")
+```
+
 ### Define success
 
 To set yourself up for success in regards to your health, you will need to start by defining what health looks like for you. What creates a healthier version of yourself? Note that being healthy includes some happiness, but health is more all encompassing than just happiness, it also implies taking care of yourself.
 
 Ask yourself, what does a healthier version of myself look like? Does it involve you sleeping more? Eating more vegetables? Changing your social group?
+
+```{r, fig.alt = "What do you need to become a healthier version of yourself?", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c7f9f79b8_1_78")
+```
+
+Remember that becoming a healthier person is a continual goal and journey. Not something that happens overnight.
 
 ### Form healthy habits
 
@@ -63,15 +73,36 @@ Although perhaps this goal is related to the "I want to be healthier" example, i
 
 Remote work can be super powerful for being healthy but what is healthy might be vary for different individuals. Remote work is great in that it can lend you flexibility to find routines and patterns that work best for promoting the healthiest form of you.
 
-Are you a person who is more extraverted? Do you really thrive on communication and interaction with others? Try to initiate more meetings with others -- meetings don't always have to have an agenda. Sometimes getting coffee whether virtual or in person can be a helpful way to meet your social needs and also fuel your data science brain!
+Are you a person who is more extroverted? Do you really thrive on communication and interaction with others? Try to initiate more meetings with others -- meetings don't always have to have an agenda. Sometimes getting coffee whether virtual or in person can be a helpful way to meet your social needs and also fuel your data science brain!
 
 Are you a person who can't sit for long periods of time? Does exercise give you energy? Schedule time in your day for exercise (Even if its only 5 minutes you need). Block it off as a meeting if you need to.
 
 Therapy is a great way to get to know yourself better. Seek out access to a therapist or counselor. Realize that you may have to take time to find a therapist that best fits with your background, personality, and goals.
 
+```{r, fig.alt = "Feeling alone? cowork over a video chat or work from a coffee shop. Work with a friend. Feeling restless? Take an  exercise break, change your work scenery. Frustrated or stumped? Ask for help. Work on something else. Take a break. Feeling unmotivated? Do a small or easy task first. Cowork with a motivating person. Ill or drained? Take a rest", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c7f9f79b8_1_132")
+```
+
+Are you feeling unmotivated? Co-work with a person who is motivated! Or start your momentum by accomplishing a smaller or easier task. It doesn't have to be data science work related to still get you going. For example, you can take out the trash and use that momentum to move into another task which can build into tackling some tricky code!
+
 ### Self-reevaluate
 
 Examine your workday. Use your science brain to up your health? Did you have a good day? Try to exam what variables within your control may have contributed to that? Did you have a bad day? Is there anything in your bad day that is within your control that you could have changed? If your bad day was caused by something out of your control, also realize that this is okay and part of being human. Take the time out that you need and start again fresh tomorrow.
+
+```{r, fig.alt = "How was today? Was it not great? Take a second to rest
+if you need. What are things you can control to make things better next time? Be a goldfish don’t dwell on the past - try again tomorrow! Was it a good day? Take a second to celebrate! What are things you can control to make replicate what went well? Be a golden retriever - celebrate the simple wins!", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c7f9f79b8_1_94")
+```
+
+When it comes to your health and your work, be a goldfish for the unhelpful or bad things (the myth is that goldfish have a 3 second memory). But for even the simplest wins be a golden retriever with a tennis ball - just happy to be alive and to have found the tennis ball. It may not be complicated, but its something worth celebrating!
+
+```{r, fig.alt = "Evaluate what is or is not in your control. Use mistakes as lessons for future improvement; not as punishment for the past. Celebrate the wins – no matter how small!", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c7f9f79b8_1_94")
+```
+
+```{r, fig.alt = "This golden retriever is really celebrating", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c90dc92e0_0_3")
+```
 
 ### Reach out for help
 
@@ -128,6 +159,10 @@ We might start with writing "make a lasagna" as our todo but then we would break
 4) Buy these ingredients
 5) .... and so on.
 
+```{r, fig.alt = "What steps do we need to take to get us from no lasagna to lasagna!", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c90dc92e0_0_13")
+```
+
 Data science tasks are similar. If our goal is to "make a survey app" this might be a really intimidating task to get started on. Instead we first might want to break this task down into:
 
 1) Talk to my mentor or peers about my app idea.
@@ -176,10 +211,10 @@ Return to your [Google Calendar](https://calendar.google.com/calendar). Using th
 
 When it is time to do your data science work, try have the same routine as much as possible. If possible, have a same place you go to to get work done. If you need coffee or caffeine or a snack to get your ready and fueled, bring that with you to your workplace too. Your remote workplace should be:
 
-1. Is as free from distractions as possible -- data science includes a lot of work that needs focus. If you cannot have a distraction free place to work due to not having childcare, you may want to seek assistance or try to set up an alternative schedule (this author for example, often gets her best work done during her children's naptime or after they go to bed).
-2. Has a good WiFi signal. Because data science work frequently requires internet access, wifi is essential. If you need help getting WiFi at your place of residence, ask for recommendations or assistance. Alternatively, look for public places that have free wifi: libraries, coffee shops, schools. If you need transportation assistance to get to places with good wifi, ask for help.
-3. Has a reliable power source. Your laptop battery won't last forever, so wherever you end up to work make sure you have access to power.
-4. Is a place that keeps you alert but comfortable. Sitting at a table or desk or otherwise sitting upright will be more conducive to focusing than laying down.
+1. Is **as free from distractions as possible** -- data science includes a lot of work that needs focus. If you cannot have a distraction free place to work due to not having childcare, you may want to seek assistance or try to set up an alternative schedule (this author for example, often gets her best work done during her children's naptime or after they go to bed).
+2. **Has a good WiFi signal**. Because data science work frequently requires internet access, wifi is essential. If you need help getting WiFi at your place of residence, ask for recommendations or assistance. Alternatively, look for public places that have free wifi: libraries, coffee shops, schools. If you need transportation assistance to get to places with good wifi, ask for help.
+3. **Has a reliable power source**. Your laptop battery won't last forever, so wherever you end up to work make sure you have access to power.
+4. Is **a place that keeps you alert but comfortable**. Sitting at a table or desk or otherwise sitting upright will be more conducive to focusing than laying down.
 
 If you try a new place to work and you find it difficult to get work done, try to brainstorm where else you might try to work. Again, ask for assistance in brainstorming solutions if finding a productive workspace is a problem.
 
@@ -241,9 +276,13 @@ At the end of each day or week reflect on your task list and what you got done.
 
 At this point also realize that if something is not working with the routine or system of tracking your tasks you should definitely look into how you can make it work for you. Before switching your system or routine though, as yourself -- is this not working because it is not helpful for my own needs or is it not working because I haven't given it enough of a shot?
 
+```{r, fig.alt = "Celebrate what you accomplished! Evaluate what could have been better (but don’t dwell on mistakes). Let go what is not in your control. Find opportunities for improvement", out.width = "100%", echo = FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c7f9f79b8_1_167")
+```
+
 Task management is a highly individual thing so you will somewhat need to figure out your own path. Ask others who are doing the work you wish to do how they do it. What tips do they have for you that work for them? Is there anything you can apply to your own routine?
 
-One other note, if you find that the Google Doc thing isn't working for you, there's all kinds of apps out there for tracking tasks. Try something else until you find something that you believe will work for you and that you can stick with. [See this list of Todo list apps here](https://zapier.com/blog/best-todo-list-apps/). If you have a smartphone, it can be very useful to use an app that syncs to it so that you can track tasks even if you are away from your computer. 
+One other note, if you find that the Google Doc thing isn't working for you, there's all kinds of apps out there for tracking tasks. Try something else until you find something that you believe will work for you and that you can stick with. [See this list of Todo list apps here](https://zapier.com/blog/best-todo-list-apps/). If you have a smartphone, it can be very useful to use an app that syncs to it so that you can track tasks even if you are away from your computer.
 
 ### Reach out for help
 

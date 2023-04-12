@@ -87,7 +87,7 @@ Are you feeling unmotivated? Co-work with a person who is motivated! Or start yo
 
 ### Self-reevaluate
 
-Examine your workday. Use your science brain to up your health? Did you have a good day? Try to exam what variables within your control may have contributed to that? Did you have a bad day? Is there anything in your bad day that is within your control that you could have changed? If your bad day was caused by something out of your control, also realize that this is okay and part of being human. Take the time out that you need and start again fresh tomorrow.
+Examine your workday. Use your science brain to improve your health. Did you have a good day? Try to examine what variables within your control may have contributed to that? Did you have a bad day? Is there anything in your bad day that is within your control that you could have changed? If your bad day was caused by something out of your control, also realize that this is okay and part of being human. Take the time out that you need and start again fresh tomorrow.
 
 ```{r, fig.alt = "How was today? Was it not great? Take a second to rest
 if you need. What are things you can control to make things better next time? Be a goldfish don’t dwell on the past - try again tomorrow! Was it a good day? Take a second to celebrate! What are things you can control to make replicate what went well? Be a golden retriever - celebrate the simple wins!", out.width = "100%", echo = FALSE}
@@ -135,7 +135,7 @@ Just as with our health, we have to set up our work life in a manner that allows
 
 **In your Google Doc "Career Goals and Tasks", copy and paste the above questions and answer them for yourself** Note that as your goals or answers to these ideas change you can always edit this and re-evaluate.
 
-A successful career or even a single workday will hopefully continually involve more and more of what you are passionate as you continue along your career journey. However, you also should be aware that even the best careers have the "not fun" parts of them. In order to do what you love, you also might need to sometimes do stuff that isn't your favorite. But hopefully the career that you are building toward involves an increasing proportion of the stuff you love and less and less of the stuff you don't enjoy.
+A successful career or even a single workday will hopefully continually involve more and more of what you are passionate about as you continue along your career journey. However, you also should be aware that even the best careers have the "not fun" parts of them. In order to do what you love, you also might need to sometimes do stuff that isn't your favorite. But hopefully the career that you are building toward involves an increasing proportion of the stuff you love and less and less of the stuff you don't enjoy.
 
 ### Identifying tasks
 
@@ -168,7 +168,7 @@ Data science tasks are similar. If our goal is to "make a survey app" this might
 1) Talk to my mentor or peers about my app idea.
 2) Look for other apps online that are like what the app I want to build
 3) Think about and write down the goals of this app
-4) Get a piece of paper and pencil and sketch out a what the screen might look like for an app like this.
+4) Get a piece of paper and pencil and sketch out what the screen might look like for an app like this.
 5) Create an empty folder where I will store the code for this app.
 6) ... and so on
 
@@ -180,7 +180,7 @@ Being productive and successful involves a lot of mundane and repetitive habits.
 
 ### Time Budgeting
 
-Make it a habit that once a week and once a day, you sit down and plan your tasks for the week and for the day. Create a schedule for yourself that you can stick to of when you will get work done. Try to set up your schedule in a way that will be best suited for you in addition to your other responsibilities and situations.
+Make it a habit that once a week and once a day, you sit down and plan your tasks for the week and for the day. Create a schedule for yourself that you can stick to when you will get work done. Try to set up your schedule in a way that will be best suited for you in addition to your other responsibilities and situations.
 
 Go on to [Google Calendar](https://calendar.google.com/calendar) right now and we will set up a schedule.
 
@@ -191,7 +191,7 @@ Let's set up a schedule as well as tasks that you will complete this week.
 Having our calendar be realistic helps us time budget for the work tasks we have. Put in your calendar any known recurring items that you have -- this might be your work schedule, school pick up/drop offs if you have kids, therapist or doctor appointments. Anything that you know of that occurs on a regular basis.
 
 1. Click the `Create` button to add a new event.
-3. Put in the title of the thing. Let's say its "daycare dropoff".
+3. Put in the title of the thing. Let's say it's "daycare dropoff".
 4. Set up the recurrence. Click on the time and adjust it to whatever duration is appropriate, but then also click on `Does not repeat` to set up something that is occurring regularly. On this menu, change the repeat to be reflective of how often this should automatically show up on your calendar. For example, if "daycare dropoff" is Mondays, Wednesdays and Fridays. I will click on `Custom` and then click on the `M`, `W`, and `F` and `Repeat every 1 week`. Then I'll put for End Repeat to be `Never`, because this is something I generally expect to continue for the foreseeable future.  
 3. Click Done after you are done adding a particular item.
 
@@ -199,20 +199,20 @@ Repeat this for all of your known recurring time expenditures. Also feel free to
 
 #### Put in one-time items
 
-Make it a habit that any time you make an appointment or schedule something you put this in your calendar. If you have a a smart phone, you can download the Google apps in order to keep track of your calendar on your phone. This will make it easy to log things as you make appointments.
+Make it a habit that any time you make an appointment or schedule something you put this in your calendar. If you have a smart phone, you can download the Google apps in order to keep track of your calendar on your phone. This will make it easy to log things as you make appointments.
 
 #### Budget for data science work
 
-Now that most of calendar should be filled with the items you already know about -- its time to use the rest to fill in with when you will work on your data science work. For this course, this means when you will work on the course material and assignments. But when you enter an internship or data science job, it will be time you will devote to tasks related to those jobs.
+Now that your calendar should be filled with the items you already know about -- its time to use the rest to fill in with when you will work on your data science work. For this course, this means when you will work on the course material and assignments. But when you enter an internship or data science job, it will be time you will devote to tasks related to those jobs.
 
-Return to your [Google Calendar](https://calendar.google.com/calendar). Using the steps we discussed above set up more recurring time in between your known, immovable items that will designate when you spend time on your data science related tasks. When planning out when you will designate 'data science time' try to also consider when is the most productive time for you. Are you a night owl or an early morning bird? Set a particular recurring time and see how that works for you. Try to make sure the time you designate is in at least 1 hour long blocks if not more.
+Return to your [Google Calendar](https://calendar.google.com/calendar). Using the steps we discussed above, set up more recurring time in between your known, immovable items that will designate when you spend time on your data science related tasks. When planning out when you will designate 'data science time' try to also consider when is the most productive time for you. Are you a night owl or an early morning bird? Set a particular recurring time and see how that works for you. Try to make sure the time you designate is in at least 1 hour long blocks if not more.
 
 ### Set up your workplace
 
-When it is time to do your data science work, try have the same routine as much as possible. If possible, have a same place you go to to get work done. If you need coffee or caffeine or a snack to get your ready and fueled, bring that with you to your workplace too. Your remote workplace should be:
+When it is time to do your data science work, try to have the same routine as much as possible. If possible, have the same place you go to get work done. If you need coffee or caffeine or a snack to get you ready and fueled, bring that with you to your workplace too. Your remote workplace should be:
 
 1. Is **as free from distractions as possible** -- data science includes a lot of work that needs focus. If you cannot have a distraction free place to work due to not having childcare, you may want to seek assistance or try to set up an alternative schedule (this author for example, often gets her best work done during her children's naptime or after they go to bed).
-2. **Has a good WiFi signal**. Because data science work frequently requires internet access, wifi is essential. If you need help getting WiFi at your place of residence, ask for recommendations or assistance. Alternatively, look for public places that have free wifi: libraries, coffee shops, schools. If you need transportation assistance to get to places with good wifi, ask for help.
+2. **Has a good WiFi signal**. Because data science work frequently requires internet access, wifi is essential. If you need help getting WiFi at your place of residence, ask for recommendations or assistance. Alternatively, look for public places that have free wifi: libraries, coffee shops, chains like Starbucks and McDonalds, universities, and other schools. If you need transportation assistance to get to places with good WiFi, ask for help.
 3. **Has a reliable power source**. Your laptop battery won't last forever, so wherever you end up to work make sure you have access to power.
 4. Is **a place that keeps you alert but comfortable**. Sitting at a table or desk or otherwise sitting upright will be more conducive to focusing than laying down.
 
@@ -220,7 +220,7 @@ If you try a new place to work and you find it difficult to get work done, try t
 
 ### Plan out your tasks
 
-First thing you should do when you sit down to do your data science work is determine what tasks you would like to accomplish in this time. We will practice doing this with a Google Document. There are many task management system out there you may want to try, but a Google doc is perhaps the simplest way to get started (and its free).
+First thing you should do when you sit down to do your data science work is determine what tasks you would like to accomplish at this time. We will practice doing this with a Google Document. There are many task management system out there you may want to try, but a Google doc is perhaps the simplest way to get started (and it's free).
 
 1. In your Google Doc "Career Goals and Tasks", make a new headline section called `Task Pool`.
 2. Think about what you need to get done in order to work toward your goals. For example, if my goal is to `Create a resume` perhaps I will chunk this down into a few smaller tasks first like:
@@ -286,7 +286,7 @@ One other note, if you find that the Google Doc thing isn't working for you, the
 
 ### Reach out for help
 
-Was this week a struggle? Again, that is okay. Life happens. Do you need to ask for help for any of your tasks? Are you stuck on a particular task because you aren't sure of the next steps? Ask for help! The best way to get unstuck on a task is to talk to someone else abut it. Even if that other person has no knowledge of the task, sometimes your own verbalization of the task will help you arrive to a possible solution you hadn't thought of.
+Was this week a struggle? Again, that is okay. Life happens. Do you need to ask for help for any of your tasks? Are you stuck on a particular task because you aren't sure of the next steps? Ask for help! The best way to get unstuck on a task is to talk to someone else about it. Even if that other person has no knowledge of the task, sometimes your own verbalization of the task will help you arrive to a possible solution you hadn't thought of.
 
 ### Yay you did it!
 

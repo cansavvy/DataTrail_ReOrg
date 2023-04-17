@@ -41,3 +41,14 @@ The best way to get a response to your question is to be able to boil it down to
 * Be Specific - include words that are important to your specific search
 
 * Know specific websites where you can get help - while Google is generally a great place to start, sometimes it can be helpful to know specific websites where you can get help. <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a>, <a href="https://Basecamp.com/" target="_blank">Basecamp</a>, and the <a href="https://community.rstudio.com/c/tidyverse/6" target="_blank">RStudio Community</a> will likely be helpful places as you learn to program in R. These resources will be covered in detail in a future course; however, it's good at this point to know they exist
+
+
+## Using AI ChatBots
+
+Sometimes it can be very useful to use AI chatbots to help you find summarized information. Some examples of how you might use something like [ChatGPT](https://chat.openai.com/):
+
+1. Ask ChatGPT "Explain to me what this code is doing?" and paste into the chat some code you are confused about.
+2. Ask ChatGPT "This piece of code is throwing an error, can you explain to me what might be causing this error?"
+3. Ask ChatGPT "Can you explain to me what this error means?"
+4. Ask ChatGPT "I want to write R code that does ______" and tell it what you'd like to do. It will provide you with code but the code may not work so you will need to run it and figure out how to make it work for yourself.
+5. Ask ChatGPT anything you might ask a fellow student! It will have lots of information, but remember that you will need to check for yourself whether the information is accurate! 

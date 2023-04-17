@@ -1,0 +1,289 @@
+
+
+
+# Remote work and task management
+
+In the post-COVID world, a lot of work is done remotely, particularly for data science. Remote work can be a highly productive and flexible environment to work in if we set ourselves up for success. But being productive and happy in a remote work setting does not come naturally to a lot of people. Here we will discuss some best practices and ideas for how to work remotely in a way that promotes not only your productivity but also your well being (both for in this course and in a data science job).
+
+In the DataTrail program, we know the best data science work is done by happy and healthy people. Knowledge is important, but if we are not in a healthy or supported state to allow us to apply that knowledge, then we won't be able to do our best work. In this chapter, we'd like to discuss some principles behind what you can do to help set yourself up for success in a remote work environment.
+
+### Goals for working remotely:
+
+- Creating a comfortable and conducive work area that brings in energy so you enjoy completing tasks.  
+- Being healthy - managing self-care and making sure that our socio-emotional needs are met.
+- Being productive - Compartmental structuring and organizational charting to keep task planning, implementation and timely deadlines on schedule..
+
+These goals feed off of each other. Healthy people have their needs met in a way that they are able to be productive. Conversely, being productive and finding a peaceful balance to achieving tasks, is a direct link to feeling fulfilled and leads to a source of great happiness!
+
+## How to be healthy
+
+Being healthy not only means meeting your physical needs, but ensuring you eat and follow a nutritious and balanced meal plan; and maintaining physical activity.  Attention should also be given to your social, emotional and mental health well being to ensure a holistic approach to your total wellbeing.
+
+Remember to give yourself a pass every now and then, evaluate your time in a non-judgmentally way.  To promote the healthiest version of yourself, ask, what do you need to spend more time doing and also what things you need to do less of?  Pay attention to the level of control you have over outcomes and contributing variables; remember to  channel positivity into the way you want to spend your time.  Some things may be out of your control, but try to look for what you can control.
+
+
+Often the items that individuals need to be healthy include:
+
+- Adequate sleep and sleep patterns
+- Balance and energetic meal plans
+- Spending time with loving and supportive individuals
+- Working reasonable hours - setting up boundaries
+- Spending some time doing things you enjoy that refill your energy
+
+
+<img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c7f9f79b8_1_0.png" title="Often the items that individuals need to be healthy include: sleeping, eating well, spending time with loving and supportive individuals, working reasonable hours - setting up boundaries, and otherwise spending some time doing things you enjoy that refill your energy" alt="Often the items that individuals need to be healthy include: sleeping, eating well, spending time with loving and supportive individuals, working reasonable hours - setting up boundaries, and otherwise spending some time doing things you enjoy that refill your energy" width="100%" />
+
+### Define success
+
+To set yourself up for success in regards to your health, you will need to start by defining what looks and feels healthy for you. Identify what steps are needed to create a healthier version of yourself.  Note that being healthy includes regular medical check ups, being in tune with your body, feeling flexible and happy because you are on track with taking care of your optimum health.
+
+Tips: Ask yourself, what does a healthier version of myself look like? Does it involve getting additional sleep, eating more vegetables and adding a few exercises to my weekly routine? Changing your social environment and alleviating stress?  These are just a few of life altering tasks that could lead to a healthy way of life.
+
+<img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c7f9f79b8_1_78.png" title="What do you need to become a healthier version of yourself?" alt="What do you need to become a healthier version of yourself?" width="100%" />
+
+Remember that becoming a healthier person is a continual goal and journey. Not something that happens overnight.
+
+### Form healthy habits
+
+Habits are at the heart of setting ourselves up for success. They say humans are creatures of habit, which can be either good and bad. If the habits you have are helping you reach your goals, then great! But if you evaluate your habits and feel that they are not helping you reach your goals, then you need to make a change and create better habits for your life.
+
+[Read this article for more about how to change habits](https://www.inc.com/jeff-haden/change-any-habit-painlessly-6-tips.html).
+
+To change habits we need to make goals that are `SMART`:
+
+- **S**pecific - goals need to be simple and succinct. Elaborate goals or goals that are vague are too hard to track or understand.
+- **M**easurable - goals need to be something you can measure. If you are not able to measure it you won't be able to know if you've met your goal or not.
+- **A**chieveable - to set ourselves up for success, we need to make goals that are actually reasonable.
+- **R**elevant - goals need to be something related to what we'd like to achieve.
+- **T**ime bound - goals need to have a set amount of time that we can accomplish them in.
+
+
+**Poor goal example:** I want to be healthier
+
+This goal is too vague, it is not measurable and has no timeline. Although the sentiment may ring true to the individual, they haven't set themselves up to successfully achieve this goal because there is no specific item described.
+
+**Better goal example:** I want to go for a brisk walk for 20 minutes three times a week for 10 weeks.
+
+Although perhaps this goal is related to the "I want to be healthier" example, it is much more specific and measurable. There is a specific event and action for this goal: walking 20 minutes. And the goal is not indefinite, it is set for 10 weeks. But, this goal is still relevant to the overarching theme of wanting to promote health.
+
+### Know yourself
+
+Remote work can be super powerful for being healthy but what is healthy might be vary for different individuals. Remote work is great in that it can lend you flexibility to find routines and patterns that work best for promoting the healthiest form of you.
+
+Are you a person who is more extroverted? Do you really thrive on communication and interaction with others? Try to initiate more meetings with others – meetings don’t always have to have an agenda. Sometimes getting coffee whether virtual or in person can be a helpful way to meet your social needs and also fuel your data science brain!
+
+Are you a person who can’t sit for long periods of time? Does exercise give you energy? Schedule time in your day for exercise (Even if its only 5 minutes you need). Block it off as a meeting if you need to.
+
+Therapy is a great way to get to know yourself better. Seek out access to a therapist or counselor. Realize that you may have to take time to find a therapist that best fits with your background, personality, and goals.
+
+
+<img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c7f9f79b8_1_132.png" title="Feeling alone? cowork over a video chat or work from a coffee shop. Work with a friend. Feeling restless? Take an  exercise break, change your work scenery. Frustrated or stumped? Ask for help. Work on something else. Take a break. Feeling unmotivated? Do a small or easy task first. Cowork with a motivating person. Ill or drained? Take a rest" alt="Feeling alone? cowork over a video chat or work from a coffee shop. Work with a friend. Feeling restless? Take an  exercise break, change your work scenery. Frustrated or stumped? Ask for help. Work on something else. Take a break. Feeling unmotivated? Do a small or easy task first. Cowork with a motivating person. Ill or drained? Take a rest" width="100%" />
+
+Are you feeling unmotivated? Co-work with a person who is motivated! Or start your momentum by accomplishing a smaller or easier task. It doesn't have to be data science work related to still get you going. For example, you can take out the trash and use that momentum to move into another task which can build into tackling some tricky code!
+
+### Self-reevaluate
+
+Examine your workday. Use your science brain to improve your health. Did you have a good day? Try to examine what variables within your control may have contributed to that? Did you have a bad day? Is there anything in your bad day that is within your control that you could have changed? If your bad day was caused by something out of your control, also realize that this is okay and part of being human. Take the time out that you need and start again fresh tomorrow.
+
+<img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c7f9f79b8_1_94.png" title="How was today? Was it not great? Take a second to rest if you need. What are things you can control to make things better next time? Be a goldfish don’t dwell on the past - try again tomorrow! Was it a good day? Take a second to celebrate! What are things you can control to make replicate what went well? Be a golden retriever - celebrate the simple wins!" alt="How was today? Was it not great? Take a second to rest if you need. What are things you can control to make things better next time? Be a goldfish don’t dwell on the past - try again tomorrow! Was it a good day? Take a second to celebrate! What are things you can control to make replicate what went well? Be a golden retriever - celebrate the simple wins!" width="100%" />
+
+When it comes to your health and your work, be a goldfish for the unhelpful or bad things (the myth is that goldfish have a 3 second memory). But for even the simplest wins be a golden retriever with a tennis ball - just happy to be alive and to have found the tennis ball. It may not be complicated, but its something worth celebrating!
+
+<img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c7f9f79b8_1_94.png" title="Evaluate what is or is not in your control. Use mistakes as lessons for future improvement; not as punishment for the past. Celebrate the wins – no matter how small!" alt="Evaluate what is or is not in your control. Use mistakes as lessons for future improvement; not as punishment for the past. Celebrate the wins – no matter how small!" width="100%" />
+
+<img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c90dc92e0_0_3.png" title="This golden retriever is really celebrating" alt="This golden retriever is really celebrating" width="100%" />
+
+### Reach out for help
+
+If you have external circumstances that are affecting your health: mental health issues, housing difficulties, income instabilities, transportation issues, childcare issues, domestic partner problems or anything else; realize there are professional support systems you can reach out to.  
+
+Information you share is held in the highest level of confidentiality under the HIPPA Act.  The referrals you will receive are for License Clinical Professionals who work in your best interest.  These Clinicians have a wide range of support services that will meet your needs.  Listed below are several emergency contact numbers   
+When one reaches out for help it shows that an individual has made a CHOICE to keep themself safe and act in their own best interest.  
+
+Asking for help is one of the most meaningful things you can do to promote your own healthy living. When feeling hopeless or that nothing can be done about a particular situation, realize that it’s still helpful to talk to someone.  Someone may have a helpful solution that you weren’t aware of which is beneficial..
+
+For mental health referrals or help:  Call 311 or 911 emergency line
+988 - Suicide & Crisis life line
+
+Mobile Crisis Teams consist of mental health professionals dispatched to community locations to provide immediate assessment, intervention and treatment to people experiencing a psychiatric emergency. The teams provide services where the person is located such as home, work place, hospital emergency department, and others. Teams work in partnership with other community resources such as the police, crisis intervention agencies, shelters and others.
+
+
+## How to be productive
+
+To be productive, you need to be healthy first! So make sure you've set yourself up for health first. Then, take a look at your work habits.
+
+### Write things down
+
+Whether it is your goals, notes from a class, or tasks you need to complete, err on the side of always writing things down. Human brains are really great at being creative and thinking abstractly, but not always so great at remembering things.
+
+Even if you are sure you won't forget something, write it down anyway because you may surprise yourself how much and how quickly you forget something.
+
+For the second half of this chapter, we are going to practice using Google Docs and Google Calendar to stay organized.
+
+**Go to [Google Docs](https://docs.google.com/document/u/0/) and open up a new document. Call this document "Career Goals and Tasks". Bookmark this document (or perhaps make it your homepage) so you keep track of where it is.**
+
+### Define success
+
+Just as with our health, we have to set up our work life in a manner that allows us to be successful. That means first defining what success looks like in our career:
+
+- I find it most meaningful when I ...
+- Time flies when I am ...
+- I enjoy thinking about ...
+- I am most passionate about ...
+
+**In your Google Doc "Career Goals and Tasks", copy and paste the above questions and answer them for yourself** Note that as your goals or answers to these ideas change you can always edit this and re-evaluate.
+
+A successful career or even a single workday will hopefully continually involve more and more of what you are passionate about as you continue along your career journey. However, you also should be aware that even the best careers have the "not fun" parts of them. In order to do what you love, you also might need to sometimes do stuff that isn't your favorite. But hopefully the career that you are building toward involves an increasing proportion of the stuff you love and less and less of the stuff you don't enjoy.
+
+### Identifying tasks
+
+In the short term, what do you need to do to get to the work that you enjoy? Write down what you believe you need to accomplish to help you get there. Google about the career you want and what is recommended for you to reach that career. Talk to teachers and mentors about what you need to do to reach that career.
+
+Also realize that sometimes the steps toward the career may not be representative of the career you reach. In order to get to the career you want, sometimes the training will involve tasks that you might not really have to do again. For example, in medical school, students take lots of multiple choice exams but when they are practicing physicians, they are spending more time with working with patients and less time filling out scantron bubbles.
+
+**In your Google Doc "Career Goals and Tasks", write out ideas of what you would need to do to reach your career goals** Perhaps on your list might be: 1) Finish this DataTrail course and 2) Create a resume.
+
+### Break down tasks into bite size chunks
+
+If you are taking this course, perhaps your larger task will be "read all of this DataTrail material". And while it is helpful to write this down, you'll also need to figure out how to break this large task into manageable chunks.
+
+To put an analogy to this. Let's say your goal is to make a lasagna. If you have never made lasagna you just write down "Make a lasagna" as the instructions to yourself, you may feel so overwhelmed by this task that you wouldn't know where to start. Instead, we should break down this larger task into smaller tasks that you know how to get done.
+
+We might start with writing "make a lasagna" as our todo but then we would break this down into:
+
+1) Find a lasagna recipe online
+2) Make a list of the ingredients I need to make lasagna
+3) Find a store nearby that will have these ingredients
+4) Buy these ingredients
+5) .... and so on.
+
+<img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c90dc92e0_0_13.png" title="What steps do we need to take to get us from no lasagna to lasagna!" alt="What steps do we need to take to get us from no lasagna to lasagna!" width="100%" />
+
+Data science tasks are similar. If our goal is to "make a survey app" this might be a really intimidating task to get started on. Instead we first might want to break this task down into:
+
+1) Talk to my mentor or peers about my app idea.
+2) Look for other apps online that are like what the app I want to build
+3) Think about and write down the goals of this app
+4) Get a piece of paper and pencil and sketch out what the screen might look like for an app like this.
+5) Create an empty folder where I will store the code for this app.
+6) ... and so on
+
+If at any point it is not clear to you how to break a big task into smaller tasks, chat with a mentor, peer or other advisor. Breaking big tasks into manageable tasks is a skill that comes with practice. It can often be helpful to get other's help.
+
+### Form productive habits
+
+Being productive and successful involves a lot of mundane and repetitive habits. But productive mundanity can be highly satisfying when it works. It can be highly rewarding to reliably crank out work to get it done, day in and day out. Try to pat yourself on the back for whenever you stick to your routine and good habits.
+
+### Time Budgeting
+
+Make it a habit that once a week and once a day, you sit down and plan your tasks for the week and for the day. Create a schedule for yourself that you can stick to when you will get work done. Try to set up your schedule in a way that will be best suited for you in addition to your other responsibilities and situations.
+
+Go on to [Google Calendar](https://calendar.google.com/calendar) right now and we will set up a schedule.
+
+Let's set up a schedule as well as tasks that you will complete this week.
+
+#### Put in your known recurring items
+
+Having our calendar be realistic helps us time budget for the work tasks we have. Put in your calendar any known recurring items that you have -- this might be your work schedule, school pick up/drop offs if you have kids, therapist or doctor appointments. Anything that you know of that occurs on a regular basis.
+
+1. Click the `Create` button to add a new event.
+3. Put in the title of the thing. Let's say it's "daycare dropoff".
+4. Set up the recurrence. Click on the time and adjust it to whatever duration is appropriate, but then also click on `Does not repeat` to set up something that is occurring regularly. On this menu, change the repeat to be reflective of how often this should automatically show up on your calendar. For example, if "daycare dropoff" is Mondays, Wednesdays and Fridays. I will click on `Custom` and then click on the `M`, `W`, and `F` and `Repeat every 1 week`. Then I'll put for End Repeat to be `Never`, because this is something I generally expect to continue for the foreseeable future.  
+3. Click Done after you are done adding a particular item.
+
+Repeat this for all of your known recurring time expenditures. Also feel free to do this for social or family events that are important to you. For example, if you have dinner with your Grandma on Sundays at 6pm every week. Put that in there. The more your calendar is complete, the easier it will be for you to plan out your time. It's not only important to plan your time for your work but also perhaps even more important to plan your time for those that are important to you.
+
+#### Put in one-time items
+
+Make it a habit that any time you make an appointment or schedule something you put this in your calendar. If you have a smart phone, you can download the Google apps in order to keep track of your calendar on your phone. This will make it easy to log things as you make appointments.
+
+#### Budget for data science work
+
+Now that your calendar should be filled with the items you already know about -- its time to use the rest to fill in with when you will work on your data science work. For this course, this means when you will work on the course material and assignments. But when you enter an internship or data science job, it will be time you will devote to tasks related to those jobs.
+
+Return to your [Google Calendar](https://calendar.google.com/calendar). Using the steps we discussed above, set up more recurring time in between your known, immovable items that will designate when you spend time on your data science related tasks. When planning out when you will designate 'data science time' try to also consider when is the most productive time for you. Are you a night owl or an early morning bird? Set a particular recurring time and see how that works for you. Try to make sure the time you designate is in at least 1 hour long blocks if not more.
+
+### Set up your workplace
+
+When it is time to do your data science work, try to have the same routine as much as possible. If possible, have the same place you go to get work done. If you need coffee or caffeine or a snack to get you ready and fueled, bring that with you to your workplace too. Your remote workplace should be:
+
+1. Is **as free from distractions as possible** -- data science includes a lot of work that needs focus. If you cannot have a distraction free place to work due to not having childcare, you may want to seek assistance or try to set up an alternative schedule (this author for example, often gets her best work done during her children's naptime or after they go to bed).
+2. **Has a good WiFi signal**. Because data science work frequently requires internet access, wifi is essential. If you need help getting WiFi at your place of residence, ask for recommendations or assistance. Alternatively, look for public places that have free wifi: libraries, coffee shops, chains like Starbucks and McDonalds, universities, and other schools. If you need transportation assistance to get to places with good WiFi, ask for help.
+3. **Has a reliable power source**. Your laptop battery won't last forever, so wherever you end up to work make sure you have access to power.
+4. Is **a place that keeps you alert but comfortable**. Sitting at a table or desk or otherwise sitting upright will be more conducive to focusing than laying down.
+
+If you try a new place to work and you find it difficult to get work done, try to brainstorm where else you might try to work. Again, ask for assistance in brainstorming solutions if finding a productive workspace is a problem.
+
+### Plan out your tasks
+
+First thing you should do when you sit down to do your data science work is determine what tasks you would like to accomplish at this time. We will practice doing this with a Google Document. There are many task management system out there you may want to try, but a Google doc is perhaps the simplest way to get started (and it's free).
+
+1. In your Google Doc "Career Goals and Tasks", make a new headline section called `Task Pool`.
+2. Think about what you need to get done in order to work toward your goals. For example, if my goal is to `Create a resume` perhaps I will chunk this down into a few smaller tasks first like:
+
+```
+- Look up resume examples online
+- Open up a blank document for my resume
+- Ask a mentor for an example of their resume.
+- Write down a outline of what sections I will include in my resume
+- Fill in the sections of the resume outline
+- Polish the resume
+- Send the resume to someone else to review for me
+```
+
+Has anything else come up recently that you should add to this list?
+Now I would repeat the same chunking out exercise with each bigger task that I'm needing to work on and at that to my task pool. I might add
+
+```
+Read Chapter 6 Remote work and task management
+Read Chapter 8 The data science process
+Complete the data science process quiz
+Read Chapter 9 Types of data science questions
+Complete the data science questions quiz
+```
+
+3. Underneath your `Task Pool` write down a headline that is called `Today` and put the date.
+4. Copy and paste a few tasks from the task pool and put them underneath the `Today` headline. Try to pick a reasonable amount of tasks that you think you could give done given your time budget.
+5. Try to prioritize tasks that have deadlines.
+
+When you first sit down to work, write down all the tasks you’d like to accomplish in the upcoming weeks.  Next, and evaluate the what tasks you may have listed that you have already completed.  When you are going about your week, **write down tasks as soon as they arise so you don't forget about them.**
+
+### Do the task
+
+Now spend time working on the task.
+
+One option is using a timer to track your time. You may consider setting a timer for 30 minutes and using that as time that you will only devote to this task. When the timer goes off, take a 5 minute break doing something mindless but then return for another 30 minute session (or whatever length of time works for you).
+
+If you have achieved all the tasks you've wanted to get done for a particular day, you can reward yourself by being done early even if you haven't used your entire time allotment OR you can get started on the next day's tasks. It's very much up to you. If you feel like you have a lot of momentum, keep going! But if you think you need a break, breaks also are very necessary to productivity!
+
+### Stick to it (you can do it!)
+
+A lot of creating habits means staying disciplined with yourself. Being disciplined successfully and in a healthy way means not only sticking with the rules you've set for yourself, but also not beating yourself up over it if you didn't stick with something as well as you hoped. Have some grace for yourself while continuing to push for the best that you can be. Rather than focusing on failures, focus on improvement. How would you like to change? You owe it to yourself to do your best and to truly utilize your potential (because we believe you have endless potential!)
+
+### Self-reevaluate
+
+At the end of each day or week reflect on your task list and what you got done.
+
+- Did you accomplish more or less than what you hoped to?
+- Were there extenuating circumstances that impeded your progress? Let that go. Life happens.
+- Is there anything within your own control that you could do to improve? Try to set a SMART goal for addressing that issue.
+- Celebrate what you did accomplish even if it is less than what you hoped! Find a way to treat yourself after an accomplishment - watch a tv show, eat chocolate, whatever your thing is!
+- Realize that if you don't get all your tasks done, but you've definitely got some tasks done that is still a successful week! Sometimes some tasks take a lot longer to do than we imagine.
+
+At this point also realize that if something is not working with the routine or system of tracking your tasks you should definitely look into how you can make it work for you. Before switching your system or routine though, as yourself -- is this not working because it is not helpful for my own needs or is it not working because I haven't given it enough of a shot?
+
+<img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c7f9f79b8_1_167.png" title="Celebrate what you accomplished! Evaluate what could have been better (but don’t dwell on mistakes). Let go what is not in your control. Find opportunities for improvement" alt="Celebrate what you accomplished! Evaluate what could have been better (but don’t dwell on mistakes). Let go what is not in your control. Find opportunities for improvement" width="100%" />
+
+Task management is a highly individual thing so you will somewhat need to figure out your own path. Ask others who are doing the work you wish to do how they do it. What tips do they have for you that work for them? Is there anything you can apply to your own routine?
+
+One other note, if you find that the Google Doc thing isn't working for you, there's all kinds of apps out there for tracking tasks. Try something else until you find something that you believe will work for you and that you can stick with. [See this list of Todo list apps here](https://zapier.com/blog/best-todo-list-apps/). If you have a smartphone, it can be very useful to use an app that syncs to it so that you can track tasks even if you are away from your computer.
+
+### Reach out for help
+
+Was this week a struggle? Again, that is okay. Life happens. Do you need to ask for help for any of your tasks? Are you stuck on a particular task because you aren't sure of the next steps? Ask for help! The best way to get unstuck on a task is to talk to someone else about it. Even if that other person has no knowledge of the task, sometimes your own verbalization of the task will help you arrive to a possible solution you hadn't thought of.
+
+### Yay you did it!
+
+After you have finished something like reading this chapter for example, return to your `Career Goals and Tasks` Google Doc (or just keep it open in its own tab). Cross off that thing you just did like <s> Read Chapter 6 Remote work and task management </s>!
+
+Every time you complete a thing, return to your document and cross it off and congratulate yourself!

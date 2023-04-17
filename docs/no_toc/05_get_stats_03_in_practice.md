@@ -328,7 +328,7 @@ We can see this looks like a fairly normal distribution -- what does that mean? 
 
 #### What does it mean to be "normally distributed?"
 
-How a dataset is distributed has to do with frequency of the data. So in the example below, we've made a probability density plot using ggplot2. [See this article for details on making denisty plots](http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization). The higher the line is, the more probable that that value would occur.
+How a dataset is distributed has to do with frequency of the data. So in the example below, we've made a probability density plot using ggplot2. [See this article for details on making density plots](http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization). The higher the line is, the more probable that that value would occur.
 
 <img src="resources/images/05_get_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_12.png" title="What does a probability density plot represent" alt="What does a probability density plot represent" width="100%" />
 
@@ -387,7 +387,7 @@ In conclusion, density plots are a super handy tool to see what your data look l
 
 We're going to tell you about some common tests, but here's a flow chart to help you get started. We advise generally having an idea of tests out there but not getting caught up in the minutia of every test. If you end up using a particular test on a set of data, then might be a good time to try to get a practical understanding of the test and how to interpret it but knowing everything about all statistical tests is just not practical and not a good use of your time.
 
-The important point about choosing a test is realizing that not all tests are appropriate. Indeed, you *could* use a lot of these tests for a particular dataset, but some tests may lead you to erroneous conclusions if the test is not meant to be used on data like what you are working with. 
+The important point about choosing a test is realizing that not all tests are appropriate. Indeed, you *could* use a lot of these tests for a particular dataset, but some tests may lead you to erroneous conclusions if the test is not meant to be used on data like what you are working with.
 
 And as we mentioned with the tips above, don't be afraid to reach out to a statistician or more senior data scientist to help you choose what is appropriate!
 

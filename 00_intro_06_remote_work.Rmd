@@ -11,24 +11,27 @@ In the DataTrail program, we know the best data science work is done by happy an
 
 ### Goals for working remotely:
 
-1. Being healthy - making sure that our socio-emotional needs are met.
-2. Being productive - getting done what we need to get done in a timely manner.
+- Creating a comfortable and conducive work area that brings in energy so you enjoy completing tasks.  
+- Being healthy - managing self-care and making sure that our socio-emotional needs are met.
+- Being productive - Compartmental structuring and organizational charting to keep task planning, implementation and timely deadlines on schedule..
 
-These two goals feed off of each other. **Healthy people have their needs met in a way that they are able to be productive.** Conversely, being productive can be a source of happiness!
+These goals feed off of each other. Healthy people have their needs met in a way that they are able to be productive. Conversely, being productive and finding a peaceful balance to achieving tasks, is a direct link to feeling fulfilled and leads to a source of great happiness!
 
 ## How to be healthy
 
-Being healthy not only means physical needs: make sure to eat healthy and move your body physically and regularly, but it also means emotionally and socially healthy.
+Being healthy not only means meeting your physical needs, but ensuring you eat and follow a nutritious and balanced meal plan; and maintaining physical activity.  Attention should also be given to your social, emotional and mental health well being to ensure a holistic approach to your total wellbeing.
 
-Try to evaluate your time non-judgmentally. To promote the healthiest version of yourself: what do you need to spend more time doing and what do you need to do less time doing? How much control do you have over these variables and the way you spend your time? Some things may be out of your control, but try to look for what you can control.
+Remember to give yourself a pass every now and then, evaluate your time in a non-judgmentally way.  To promote the healthiest version of yourself, ask, what do you need to spend more time doing and also what things you need to do less of?  Pay attention to the level of control you have over outcomes and contributing variables; remember to  channel positivity into the way you want to spend your time.  Some things may be out of your control, but try to look for what you can control.
+
 
 Often the items that individuals need to be healthy include:
 
-- Sleeping
-- Eating well
+- Adequate sleep and sleep patterns
+- Balance and energetic meal plans
 - Spending time with loving and supportive individuals
 - Working reasonable hours - setting up boundaries
 - Spending some time doing things you enjoy that refill your energy
+
 
 ```{r, fig.alt = "Often the items that individuals need to be healthy include: sleeping, eating well, spending time with loving and supportive individuals, working reasonable hours - setting up boundaries, and otherwise spending some time doing things you enjoy that refill your energy", out.width = "100%", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c7f9f79b8_1_0")
@@ -36,9 +39,9 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tl
 
 ### Define success
 
-To set yourself up for success in regards to your health, you will need to start by defining what health looks like for you. What creates a healthier version of yourself? Note that being healthy includes some happiness, but health is more all encompassing than just happiness, it also implies taking care of yourself.
+To set yourself up for success in regards to your health, you will need to start by defining what looks and feels healthy for you. Identify what steps are needed to create a healthier version of yourself.  Note that being healthy includes regular medical check ups, being in tune with your body, feeling flexible and happy because you are on track with taking care of your optimum health.
 
-Ask yourself, what does a healthier version of myself look like? Does it involve you sleeping more? Eating more vegetables? Changing your social group?
+Tips: Ask yourself, what does a healthier version of myself look like? Does it involve getting additional sleep, eating more vegetables and adding a few exercises to my weekly routine? Changing your social environment and alleviating stress?  These are just a few of life altering tasks that could lead to a healthy way of life.
 
 ```{r, fig.alt = "What do you need to become a healthier version of yourself?", out.width = "100%", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c7f9f79b8_1_78")
@@ -48,7 +51,7 @@ Remember that becoming a healthier person is a continual goal and journey. Not s
 
 ### Form healthy habits
 
-Habits are at the heart of setting ourselves up for success. They say humans are creatures of habit, which can be good and bad. If the habits you have are helping you reach your goals, then great! But if you evaluate your habits and feel that they are not helping you reach your goals, how might you be able to go about changing these habits?
+Habits are at the heart of setting ourselves up for success. They say humans are creatures of habit, which can be either good and bad. If the habits you have are helping you reach your goals, then great! But if you evaluate your habits and feel that they are not helping you reach your goals, then you need to make a change and create better habits for your life.
 
 [Read this article for more about how to change habits](https://www.inc.com/jeff-haden/change-any-habit-painlessly-6-tips.html).
 
@@ -73,11 +76,12 @@ Although perhaps this goal is related to the "I want to be healthier" example, i
 
 Remote work can be super powerful for being healthy but what is healthy might be vary for different individuals. Remote work is great in that it can lend you flexibility to find routines and patterns that work best for promoting the healthiest form of you.
 
-Are you a person who is more extroverted? Do you really thrive on communication and interaction with others? Try to initiate more meetings with others -- meetings don't always have to have an agenda. Sometimes getting coffee whether virtual or in person can be a helpful way to meet your social needs and also fuel your data science brain!
+Are you a person who is more extroverted? Do you really thrive on communication and interaction with others? Try to initiate more meetings with others – meetings don’t always have to have an agenda. Sometimes getting coffee whether virtual or in person can be a helpful way to meet your social needs and also fuel your data science brain!
 
-Are you a person who can't sit for long periods of time? Does exercise give you energy? Schedule time in your day for exercise (Even if its only 5 minutes you need). Block it off as a meeting if you need to.
+Are you a person who can’t sit for long periods of time? Does exercise give you energy? Schedule time in your day for exercise (Even if its only 5 minutes you need). Block it off as a meeting if you need to.
 
 Therapy is a great way to get to know yourself better. Seek out access to a therapist or counselor. Realize that you may have to take time to find a therapist that best fits with your background, personality, and goals.
+
 
 ```{r, fig.alt = "Feeling alone? cowork over a video chat or work from a coffee shop. Work with a friend. Feeling restless? Take an  exercise break, change your work scenery. Frustrated or stumped? Ask for help. Work on something else. Take a break. Feeling unmotivated? Do a small or easy task first. Cowork with a motivating person. Ill or drained? Take a rest", out.width = "100%", echo = FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4/edit#slide=id.g22c7f9f79b8_1_132")
@@ -106,9 +110,18 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/114QYFmKuJ2M5E3tl
 
 ### Reach out for help
 
-If you have external circumstances that are affecting your health: mental health issues, housing difficulties, income instabilities, transportation issues, childcare issues, domestic problems or any thing else, realize that there are always people who want to support you. You may have to look to find them, they may not be the people you have sought out in the past, but supportive people and communities do exist. But these supportive people won't be able to help you if they are unaware that you need help.
+If you have external circumstances that are affecting your health: mental health issues, housing difficulties, income instabilities, transportation issues, childcare issues, domestic partner problems or anything else; realize there are professional support systems you can reach out to.  
 
-Asking for help is one of the most meaningful things you can do to promote your own health. Even if you feel that nothing can be done about a particular situation, realize that it's still helpful to talk to someone -- and there may be solutions that others know of that you weren't aware of.
+Information you share is held in the highest level of confidentiality under the HIPPA Act.  The referrals you will receive are for License Clinical Professionals who work in your best interest.  These Clinicians have a wide range of support services that will meet your needs.  Listed below are several emergency contact numbers   
+When one reaches out for help it shows that an individual has made a CHOICE to keep themself safe and act in their own best interest.  
+
+Asking for help is one of the most meaningful things you can do to promote your own healthy living. When feeling hopeless or that nothing can be done about a particular situation, realize that it’s still helpful to talk to someone.  Someone may have a helpful solution that you weren’t aware of which is beneficial..
+
+For mental health referrals or help:  Call 311 or 911 emergency line
+988 - Suicide & Crisis life line
+
+Mobile Crisis Teams consist of mental health professionals dispatched to community locations to provide immediate assessment, intervention and treatment to people experiencing a psychiatric emergency. The teams provide services where the person is located such as home, work place, hospital emergency department, and others. Teams work in partnership with other community resources such as the police, crisis intervention agencies, shelters and others.
+
 
 ## How to be productive
 
@@ -250,7 +263,7 @@ Complete the data science questions quiz
 4. Copy and paste a few tasks from the task pool and put them underneath the `Today` headline. Try to pick a reasonable amount of tasks that you think you could give done given your time budget.
 5. Try to prioritize tasks that have deadlines.
 
-When you first sit down to work, write down all the tasks you'd like to accomplish in the upcoming weeks and evaluate what tasks you may have listed that you've already done. When you are going about your week, **write down tasks as soon as they arise so you don't forget about them.**
+When you first sit down to work, write down all the tasks you’d like to accomplish in the upcoming weeks.  Next, and evaluate the what tasks you may have listed that you have already completed.  When you are going about your week, **write down tasks as soon as they arise so you don't forget about them.**
 
 ### Do the task
 

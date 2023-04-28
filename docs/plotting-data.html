@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 17 Data Frames | DataTrail</title>
-  <meta name="description" content="Chapter 17 Data Frames | DataTrail" />
+  <title>Chapter 38 Plotting Data | DataTrail</title>
+  <meta name="description" content="Chapter 38 Plotting Data | DataTrail" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 17 Data Frames | DataTrail" />
+  <meta property="og:title" content="Chapter 38 Plotting Data | DataTrail" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 17 Data Frames | DataTrail" />
+  <meta name="twitter:title" content="Chapter 38 Plotting Data | DataTrail" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/DataTrail_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="working-with-logicals.html"/>
-<link rel="next" href="basic-commands-in-r.html"/>
+<link rel="prev" href="cleaning-data-project.html"/>
+<link rel="next" href="good-plots.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -1168,179 +1168,135 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/DataTrail.jpg">
 </div>
-<div id="data-frames-1" class="section level1" number="17">
-<h1><span class="header-section-number">Chapter 17</span> Data Frames</h1>
-<p>A majority of the time that you are working with data in R you will have it in the form of a data frame.</p>
-<p>Data frames can contain different types of variables in a rectangular format, much like how spreadsheets are.
-A data frames’ size can be described in terms of rows (across) and columns (up/down). Rows are often called <em>observations</em> and columns are called <em>variables</em>.</p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="data-frames-1.html#cb47-1" aria-hidden="true" tabindex="-1"></a>ottrpal<span class="sc">::</span><span class="fu">include_slide</span>(<span class="st">&quot;https://docs.google.com/presentation/d/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc/edit#slide=id.g313d649efe_0_38&quot;</span>)</span></code></pre></div>
-<p><img src="resources/images/02_getting_data_04_dataframes_files/figure-html/1Q47qnIkVzE-JzCEE5Lm54P6yqReg09QJdr7kiFyCbGc_g313d649efe_0_38.png" width="100%" /></p>
-<p>*Much of this chapter is paraphrased or inspired by <a href="https://github.com/AlexsLemonade/training-modules/blob/master/intro-to-R-tidyverse/01-intro_to_base_R.Rmd">content from the Childhood Cancer Data Lab</a>.</p>
-<div id="exploring-data-frames" class="section level2" number="17.1">
-<h2><span class="header-section-number">17.1</span> Exploring data frames</h2>
-<p>In R there are built in data frames that you can use to play with. In this lesson, we will use some of these to get comfortable with data frames.</p>
-<p>As a data scientist, one of your main skills will be constantly looking at and evaluating your data! In RStudio, you can see your data frame by clicking on the name of your data frame in the <em>Environment</em> pane.</p>
-<p>Some useful functions for exploring our data frame include:</p>
+<div id="plotting-data" class="section level1" number="38">
+<h1><span class="header-section-number">Chapter 38</span> <strong>Plotting Data</strong></h1>
+<p><img src="resources/images/04_plot_the_data_00_files/figure-html/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g145cde68be4_0_98.png" title="Data Science process" alt="Data Science process" width="100%" /></p>
+<div id="learning-objectives-3" class="section level2" number="38.1">
+<h2><span class="header-section-number">38.1</span> Learning Objectives</h2>
+<p>Through the completion of this section our goal is that you will be able to:</p>
 <ul>
-<li><code>head()</code> to see the first 6 rows of a data frame. Additional arguments supplied can change the number of rows.</li>
-<li><code>tail()</code> to see the last 6 rows of a data frame. Additional arguments supplied can change the number of rows.</li>
-<li><code>names()</code> to see the column names of the data frame.</li>
-<li><code>nrow()</code> to see how many rows are in the data frame</li>
-<li><code>ncol()</code> to see how many columns are in the data frame.</li>
+<li>Understand what makes a good data visualization</li>
+<li>Use ggplot2 to make a data visualization</li>
+<li>Save a plot to a file</li>
+<li>Identify the difference between an exploratory and explanatory plot</li>
+<li>Create a data table</li>
+<li>Create a multipanel plot</li>
+<li>Use data visualizations to illustrate a facet about your data</li>
 </ul>
-<p>Try out these functions to explore your data frame by putting the iris data frame in them.</p>
-<pre><code>head(iris)
+<div id="data-visualization" class="section level3" number="38.1.1">
+<h3><span class="header-section-number">38.1.1</span> Data Visualization</h3>
+<p>The adage “A pictures worth a thousand words” is especially true in data science.</p>
+<p>When you are first handed a data set visualizing your data can help you get a handle on what’s going on in the data set. Similarly, once you’ve done your analysis and are ready to communicate your findings to your teammates, data visualizations are an effective way to communicate your results to others. In this lesson, we’ll walk through what data visualization is and define some of the basic types of data visualizations.</p>
+<p>At its core, the term ‘data visualization’ refers to any visual display of data that helps us understand the underlying data better. This can be a plot or figure of some sort or a table that summarizes the data. Generally, there are a few characteristics of all good plots.</p>
+<div id="general-features-of-plots" class="section level4" number="38.1.1.1">
+<h4><span class="header-section-number">38.1.1.1</span> General Features of Plots</h4>
+<p>Overall, a good data visualization is clear and communicates an idea. The best visualizations do not need long-winded explanations because when people look at them, they can understand what is happening.</p>
+<p>A number of features can contribute to good data visualizations. While not exhaustive, good plots have:
+1. Clearly-labeled axes.
+2. Text that are large enough to see.
+3. Axes that are not misleading.
+4. Data that are displayed appropriately considering the type of data you have.</p>
+<p>More specifically, however, there are two general approaches to data visualization: exploratory plots and explanatory plots.</p>
+</div>
+<div id="exploratory-plots" class="section level4" number="38.1.1.2">
+<h4><span class="header-section-number">38.1.1.2</span> Exploratory Plots</h4>
+<p>These are <strong>data displays to help you better understand and discover hidden patterns in the data</strong> you’re working with. These won’t be the prettiest plots, but they will be incredibly helpful. Exploratory visualizations have a number of general characteristics:</p>
+<ul>
+<li>They are made quickly.</li>
+<li>You’ll make a large number of them.</li>
+<li>The axes and legends are cleaned up.</li>
+</ul>
+<p>Below we have a graph where the axes are labeled and general pattern can be determined. This is a great example of an exploratory plot. It lets you the analyst know what’s going on in your data, but it isn’t yet ready for a big presentation.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE/export/png?id=1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE&amp;pageid=g313d6498b0_0_67" alt="" />
+<p class="caption">Exploratory Plot</p>
+</div>
+<p>As you’re trying to understand the data you have on hand, you’ll likely make a lot of plots and tables just to figure out to explore and understand the data. Because there are a lot of them and they’re for your use (rather than for communicating with others), you don’t have to spend all your time making them perfect. But, you do have to spend enough time to make sure that you’re drawing the right conclusions from this. Thus, you don’t have to spend a long time considering what colors are perfect on these, but you do want to make sure your axis are not cut off.</p>
+<p><a href="https://towardsdatascience.com/visualizing-your-exploratory-data-analysis-d2d6c2e3b30e">Other Exploratory Plotting Examples</a></p>
+</div>
+</div>
+<div id="explanatory-plots" class="section level3" number="38.1.2">
+<h3><span class="header-section-number">38.1.2</span> Explanatory Plots</h3>
+<p>These are data displays that aim to <strong>communicate insights to others</strong>. These are plots that you spend a lot of time making sure they’re easily interpretable by an audience. General characteristics of explanatory plots:</p>
+<ul>
+<li>They take a while to make.</li>
+<li>There are only a few of these for each project.</li>
+<li>You’ve spent a lot of time making sure the colors, labels, and sizes are all perfect for your needs.</li>
+</ul>
+<p>Here we see an improvement upon the exploratory plot we looked at previously. Here, the axis labels are more descriptive. All of the text is larger. The legend has been moved onto the plot. The points on the plot are larger. And, there is a title. All of these changes help to improve the plot, making it an explanatory plot that would be presentation-ready.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE/export/png?id=1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE&amp;pageid=g313d6498b0_0_73" alt="" />
+<p class="caption">Explanatory Plots</p>
+</div>
+<p>Explanatory plots are made after you’ve done an analysis and once you really understand the data you have. The goal of these plots is to communicate your findings clearly to others. To do so, you want to make sure these plots are made carefully - the axis labels should all be clear, the labels should all be large enough to read, the colors should all be carefully chosen, etc.. As this takes times and because you do not want to overwhelm your audience, you only want to have a few of these for each project. We often refer to these as “publication ready” plots. These are the plots that would make it into an article at the New York Times or in your presentation to your bosses.</p>
+<p>Other Explanatory Plotting Examples:
+<a href="https://www.nytimes.com/interactive/2014/06/05/upshot/how-the-recession-reshaped-the-economy-in-255-charts.html">How the Recession Shaped the Economy (NYT)</a>
+<a href="https://fivethirtyeight.com/features/america-should-have-stayed-home-this-flu-season/">2018 Flue Season (FiveThirtyEight)</a></p>
+</div>
+<div id="types-of-plots" class="section level3" number="38.1.3">
+<h3><span class="header-section-number">38.1.3</span> Types of Plots</h3>
+<p>Above we saw data displayed as both an exploratory plot and an explanatory plot. That plot was an example of a scatterplot. However, there are many types of plots that are helpful. We’ll discuss a few basic ones below and will include links to a few galleries where you can get a sense of the many different types of plots out there.</p>
+<p>To do this, we’ll use the “Davis” dataset which includes, height and weight information for 200 people.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE/export/png?id=1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE&amp;pageid=g313d6498b0_0_128" alt="" />
+<p class="caption">Data Set</p>
+</div>
+<div id="histogram" class="section level4" number="38.1.3.1">
+<h4><span class="header-section-number">38.1.3.1</span> Histogram</h4>
+<p>Histograms are helpful when you want to <strong>better understand what values you have in your data set for a single set of numbers</strong>. For example, if you had a dataset with information about many people, you may want to know how tall the people in your data set are. To quickly visualize this, you could use a histogram. Histograms let you know what range of values you have in your data set. For example, below you can see that in this data set, the height values range from around 50 to around 200 cm. The shape of the histogram also gives you information about the individuals in your dataset. The number of people at each height are also counted. So, the tallest bars show that there are about 40 people in the data set whose height is between 165 and 170 cm. Finally, you can quickly tell, at a glance that most people in this data set are at least 150 cm tall, but that there is at least one individually whose reported height is much lower.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE/export/png?id=1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE&amp;pageid=g313d6498b0_0_119" alt="" />
+<p class="caption">Histogram</p>
+</div>
+</div>
+<div id="scatterplot" class="section level4" number="38.1.3.2">
+<h4><span class="header-section-number">38.1.3.2</span> Scatterplot</h4>
+<p>Scatterplots are helpful when you have <strong>numerical values for two different pieces of information</strong> and you want to understand the relationship between those pieces of information. Here, each dot represents a different person in the data set. The dot’s position on the graph represents that individual’s height and weight. Overall, in this data set, we can see that, in general, the more someone weighs, the taller they are. Scatterplots, therefore help us at a glance better understand the relationship between two sets of numbers.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE/export/png?id=1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE&amp;pageid=g313d6498b0_0_98" alt="" />
+<p class="caption">Scatter Plot</p>
+</div>
+</div>
+<div id="barplot" class="section level4" number="38.1.3.3">
+<h4><span class="header-section-number">38.1.3.3</span> Barplot</h4>
+<p>When you only have <strong>one numerical piece of information</strong> and a <strong>second piece of information that can be broken down into a few categories</strong>, a barplot will help you make numerical comparisons across categories. For example if you wanted to look at how many females and how many males you have in your data set, you could use a barplot. The comparison in heights between bars clearly demonstrates that there are more females in this dataset than males.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE/export/png?id=1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE&amp;pageid=g313d6498b0_0_114" alt="" />
+<p class="caption">Barplot</p>
+</div>
+</div>
+<div id="boxplot" class="section level4" number="38.1.3.4">
+<h4><span class="header-section-number">38.1.3.4</span> Boxplot</h4>
+<p>The final basic plot we’ll talk about here is the boxplot. Boxplots also summarize <strong>numerical values across a category</strong>; however, instead of just comparing the heights of the bar, they give us an idea of the range of values that each category can take. For example, if we wanted to compare the heights of men to the heights of women, we could do that with a boxplot.</p>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE/export/png?id=1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE&amp;pageid=g313d6498b0_0_134" alt="" />
+<p class="caption">Boxplot</p>
+</div>
+<p>To interpret a boxplot, there are a few places where we’ll want to focus our attention. For each category, the horizontal line through the middle of the box corresponds to the median value for that group. So, here, we can say that the median, or most typical height for females is about 165 cm. For males, this value is higher, just under 180 cm. Outside of the colored boxes, there are dashed lines. The ends of these lines correspond to the typical range of values. Here, we can see that females tend to have heights between 150 and 180cm. Lastly, when individuals have values outside the typical range, a boxplot will show these individuals as circles. These circles are referred to as outliers.</p>
+</div>
+<div id="resources-to-look-at-these-and-other-types-of-plots" class="section level4" number="38.1.3.5">
+<h4><span class="header-section-number">38.1.3.5</span> Resources to look at these and other types of plots:</h4>
+<ul>
+<li><a href="https://www.r-graph-gallery.com/">R Graph Gallery</a></li>
+<li><a href="http://datavizproject.com/">Ferdio Data Visualization Catalog</a></li>
+</ul>
+</div>
+</div>
+<div id="tables" class="section level3" number="38.1.4">
+<h3><span class="header-section-number">38.1.4</span> Tables</h3>
+<p>While we have focused on figures here so far, tables can be incredibly informative at a glance too. If you are looking to display summary numbers, <strong>a table can also visually display information</strong>.</p>
+<p>Using this same data set, we can use a table to get a quick breakdown of how many males and females there are in the data set and what percentage of each gender there is.</p>
+<p>A few things to keep in mind when making tables is that it’s best to:</p>
+<ul>
+<li>Limit the number of digits in the table</li>
+<li>Include a caption</li>
+<li>When possible, keep it simple.</li>
+</ul>
+<div class="figure">
+<img src="https://docs.google.com/presentation/d/1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE/export/png?id=1MiYOmyqu6Et6mBVTS91gip8h-tids8Wo0JDlMfXULqE&amp;pageid=g313d6498b0_0_207" alt="" />
+<p class="caption">Table</p>
+</div>
 
-Sepal.Length Sepal.Width Petal.Length Petal.Width Species
-1          5.1         3.5          1.4         0.2  setosa
-2          4.9         3.0          1.4         0.2  setosa
-3          4.7         3.2          1.3         0.2  setosa
-4          4.6         3.1          1.5         0.2  setosa
-5          5.0         3.6          1.4         0.2  setosa
-6          5.4         3.9          1.7         0.4  setosa</code></pre>
-<p>We can additionally explore overall properties of the data frame with two different functions: <code>summary()</code> and <code>str()</code>.</p>
-<p>The <code>summary()</code> function gives us a summary of each variable in the data frame.</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="data-frames-1.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(iris)</span></code></pre></div>
-<pre><code>##   Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
-##  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
-##  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
-##  Median :5.800   Median :3.000   Median :4.350   Median :1.300  
-##  Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  
-##  3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  
-##  Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  
-##        Species  
-##  setosa    :50  
-##  versicolor:50  
-##  virginica :50  
-##                 
-##                 
-## </code></pre>
-<p><code>str()</code> function gives us information about the structure and variables included in the <code>iris</code> data frame.</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="data-frames-1.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris)</span></code></pre></div>
-<pre><code>## &#39;data.frame&#39;:    150 obs. of  5 variables:
-##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
-##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
-##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
-##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
-##  $ Species     : Factor w/ 3 levels &quot;setosa&quot;,&quot;versicolor&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...</code></pre>
-<div id="subsetting-data-frames" class="section level3" number="17.1.1">
-<h3><span class="header-section-number">17.1.1</span> Subsetting data frames</h3>
-<p>There are multiple ways you can subset your data frame if you want to only look at certain parts of it.</p>
-<div id="for-extracting-columns" class="section level4" number="17.1.1.1">
-<h4><span class="header-section-number">17.1.1.1</span> $ for extracting columns</h4>
-<p>Each column in this data frame can behave as a vector and we can easily pull it out from the data frame by using a <code>$</code>.</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="data-frames-1.html#cb53-1" aria-hidden="true" tabindex="-1"></a>iris<span class="sc">$</span>Species</span></code></pre></div>
-<pre><code>##   [1] setosa     setosa     setosa     setosa     setosa     setosa    
-##   [7] setosa     setosa     setosa     setosa     setosa     setosa    
-##  [13] setosa     setosa     setosa     setosa     setosa     setosa    
-##  [19] setosa     setosa     setosa     setosa     setosa     setosa    
-##  [25] setosa     setosa     setosa     setosa     setosa     setosa    
-##  [31] setosa     setosa     setosa     setosa     setosa     setosa    
-##  [37] setosa     setosa     setosa     setosa     setosa     setosa    
-##  [43] setosa     setosa     setosa     setosa     setosa     setosa    
-##  [49] setosa     setosa     versicolor versicolor versicolor versicolor
-##  [55] versicolor versicolor versicolor versicolor versicolor versicolor
-##  [61] versicolor versicolor versicolor versicolor versicolor versicolor
-##  [67] versicolor versicolor versicolor versicolor versicolor versicolor
-##  [73] versicolor versicolor versicolor versicolor versicolor versicolor
-##  [79] versicolor versicolor versicolor versicolor versicolor versicolor
-##  [85] versicolor versicolor versicolor versicolor versicolor versicolor
-##  [91] versicolor versicolor versicolor versicolor versicolor versicolor
-##  [97] versicolor versicolor versicolor versicolor virginica  virginica 
-## [103] virginica  virginica  virginica  virginica  virginica  virginica 
-## [109] virginica  virginica  virginica  virginica  virginica  virginica 
-## [115] virginica  virginica  virginica  virginica  virginica  virginica 
-## [121] virginica  virginica  virginica  virginica  virginica  virginica 
-## [127] virginica  virginica  virginica  virginica  virginica  virginica 
-## [133] virginica  virginica  virginica  virginica  virginica  virginica 
-## [139] virginica  virginica  virginica  virginica  virginica  virginica 
-## [145] virginica  virginica  virginica  virginica  virginica  virginica 
-## Levels: setosa versicolor virginica</code></pre>
-<p>Note that <code>$</code> work for any R objects that have column names. But don’t work if there aren’t column names. When you look at a data frame you will see that there are names to the columns. Try using the <code>colnames()</code> function to explore the column names of the <code>iris</code> data frame.</p>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="data-frames-1.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(iris)</span></code></pre></div>
-<pre><code>## [1] &quot;Sepal.Length&quot; &quot;Sepal.Width&quot;  &quot;Petal.Length&quot; &quot;Petal.Width&quot;  &quot;Species&quot;</code></pre>
-</div>
-<div id="brackets-for-indexing" class="section level4" number="17.1.1.2">
-<h4><span class="header-section-number">17.1.1.2</span> Brackets for indexing</h4>
-<p>Brackets can be used to index data frames or other objects. In the case of data frames, you can subset data frames like below:</p>
-<p>In this example, this will extract the second row’s data and the 1st column.</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="data-frames-1.html#cb57-1" aria-hidden="true" tabindex="-1"></a>iris[<span class="dv">2</span>, <span class="dv">1</span>]</span></code></pre></div>
-<pre><code>## [1] 4.9</code></pre>
-<p>Subsetting always goes <code>[row, column]</code>.</p>
-<p>If we want the whole row or whole column to be extract we can leave the other spot blank like this:</p>
-<p>In this example, the first row and all the columns of that row will be extracted.</p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="data-frames-1.html#cb59-1" aria-hidden="true" tabindex="-1"></a>iris[<span class="dv">1</span>, ]</span></code></pre></div>
-<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
-## 1          5.1         3.5          1.4         0.2  setosa</code></pre>
-<p>In this example, all rows of the 3rd column will be extracted.</p>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="data-frames-1.html#cb61-1" aria-hidden="true" tabindex="-1"></a>iris[, <span class="dv">3</span>]</span></code></pre></div>
-<pre><code>##   [1] 1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 1.5 1.6 1.4 1.1 1.2 1.5 1.3 1.4
-##  [19] 1.7 1.5 1.7 1.5 1.0 1.7 1.9 1.6 1.6 1.5 1.4 1.6 1.6 1.5 1.5 1.4 1.5 1.2
-##  [37] 1.3 1.4 1.3 1.5 1.3 1.3 1.3 1.6 1.9 1.4 1.6 1.4 1.5 1.4 4.7 4.5 4.9 4.0
-##  [55] 4.6 4.5 4.7 3.3 4.6 3.9 3.5 4.2 4.0 4.7 3.6 4.4 4.5 4.1 4.5 3.9 4.8 4.0
-##  [73] 4.9 4.7 4.3 4.4 4.8 5.0 4.5 3.5 3.8 3.7 3.9 5.1 4.5 4.5 4.7 4.4 4.1 4.0
-##  [91] 4.4 4.6 4.0 3.3 4.2 4.2 4.2 4.3 3.0 4.1 6.0 5.1 5.9 5.6 5.8 6.6 4.5 6.3
-## [109] 5.8 6.1 5.1 5.3 5.5 5.0 5.1 5.3 5.5 6.7 6.9 5.0 5.7 4.9 6.7 4.9 5.7 6.0
-## [127] 4.8 4.9 5.6 5.8 6.1 6.4 5.6 5.1 5.6 6.1 5.6 5.5 4.8 5.4 5.6 5.1 5.1 5.9
-## [145] 5.7 5.2 5.0 5.2 5.4 5.1</code></pre>
-</div>
-</div>
-<div id="first-plot" class="section level3" number="17.1.2">
-<h3><span class="header-section-number">17.1.2</span> First plot!</h3>
-<p>Now that we have some basics down, let’s preview how we can easily make visuals with R. “A picture is worth a thousand words” is also true when it comes to data!</p>
-<p>In this quick plot example, we can show how <code>Sepal Length</code> is related to <code>Sepal Width</code> by extracting the data using <code>$</code>. Additionally we can color code the data points by <code>Species</code> by using the <code>col</code> argument.</p>
-<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="data-frames-1.html#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Length, iris<span class="sc">$</span>Sepal.Width, <span class="at">col =</span> iris<span class="sc">$</span>Species)</span></code></pre></div>
-<p><img src="resources/images/02_getting_data_04_dataframes_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-<p>Don’t worry too much about the specifics of plotting. We will go into much more detail about how to make visuals of your data later. This is just to illustrate how R makes data visuals easy to make!</p>
-</div>
-<div id="what-about-matrices-and-tibbles" class="section level3" number="17.1.3">
-<h3><span class="header-section-number">17.1.3</span> What about matrices and tibbles?</h3>
-<p>At this point, we should mention some cousins of the data frame: matrices and tibbles.</p>
-<p>All three of these types of objects: data frames, matrices, and tibbles contain two dimensions: rows and columns. And often you may be able to handle them similarly. But, they do have some differences that are worth knowing about!</p>
-<div id="whats-a-matrix" class="section level4" number="17.1.3.1">
-<h4><span class="header-section-number">17.1.3.1</span> What’s a matrix?</h4>
-<p>A matrix is like a data frame but it needs to contain all the same data type. So it can be all numeric, all character or etc.</p>
-<p>A data frame by contrast can have one column that is string, another that is factor, and so on.</p>
-<p>Let’s experiment with what this means in practical terms and start out by making a very small data frame.</p>
-<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="data-frames-1.html#cb64-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">num =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">y =</span> <span class="fu">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;blue&quot;</span>, <span class="st">&quot;green&quot;</span>, <span class="st">&quot;purple&quot;</span>))</span>
-<span id="cb64-2"><a href="data-frames-1.html#cb64-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb64-3"><a href="data-frames-1.html#cb64-3" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
-<pre><code>##   num      y
-## 1   1    red
-## 2   2   blue
-## 3   3  green
-## 4   4 purple</code></pre>
-<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="data-frames-1.html#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df)</span></code></pre></div>
-<pre><code>## &#39;data.frame&#39;:    4 obs. of  2 variables:
-##  $ num: int  1 2 3 4
-##  $ y  : chr  &quot;red&quot; &quot;blue&quot; &quot;green&quot; &quot;purple&quot;</code></pre>
-<p>We’ve made our data frame with two types of data: a numeric (integer) column and a character column.</p>
-<p>Let’s see what happens if we coerce this to a matrix</p>
-<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="data-frames-1.html#cb68-1" aria-hidden="true" tabindex="-1"></a>a_matrix <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(df)</span>
-<span id="cb68-2"><a href="data-frames-1.html#cb68-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb68-3"><a href="data-frames-1.html#cb68-3" aria-hidden="true" tabindex="-1"></a>a_matrix</span></code></pre></div>
-<pre><code>##      num y       
-## [1,] &quot;1&quot; &quot;red&quot;   
-## [2,] &quot;2&quot; &quot;blue&quot;  
-## [3,] &quot;3&quot; &quot;green&quot; 
-## [4,] &quot;4&quot; &quot;purple&quot;</code></pre>
-<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="data-frames-1.html#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(a_matrix)</span></code></pre></div>
-<pre><code>##  chr [1:4, 1:2] &quot;1&quot; &quot;2&quot; &quot;3&quot; &quot;4&quot; &quot;red&quot; &quot;blue&quot; &quot;green&quot; &quot;purple&quot;
-##  - attr(*, &quot;dimnames&quot;)=List of 2
-##   ..$ : NULL
-##   ..$ : chr [1:2] &quot;num&quot; &quot;y&quot;</code></pre>
-<p>Notice that this whole matrix is now a character but still does have two dimensions!</p>
-</div>
-<div id="whats-a-tibble" class="section level4" number="17.1.3.2">
-<h4><span class="header-section-number">17.1.3.2</span> What’s a tibble?</h4>
-<p>A tibble is super similar to a data frame. It’s the tidyverse brand of data frame.</p>
-<p>According to the people who develop the tidyverse:</p>
-<blockquote>
-<p>Tibbles are data.frames that are lazy and surly: they do less (i.e. they don’t change variable names or types, and don’t do partial matching) and complain more (e.g. when a variable does not exist).</p>
-</blockquote>
-<p>They are similar enough, that for most instances, especially when you are working with tidyverse functions, you can treat them the same. However if you get a peculiar error when trying to use a tibble with a non-tidyverse function, you may need to use the <code>as.data.frame()</code> function to coerce your tibble to a data frame. But you shouldn’t encounter this problem too often.</p>
-
-</div>
 </div>
 </div>
 </div>
@@ -1357,8 +1313,8 @@ Sepal.Length Sepal.Width Petal.Length Petal.Width Species
           </div>
         </div>
       </div>
-<a href="working-with-logicals.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="basic-commands-in-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cleaning-data-project.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="good-plots.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

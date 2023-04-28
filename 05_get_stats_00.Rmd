@@ -1,4 +1,4 @@
-# (PART\*) Statistics {-}
+# (PART\*) Getting Statistics {-}
 
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()

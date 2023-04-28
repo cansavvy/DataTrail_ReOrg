@@ -1,4 +1,4 @@
-# (PART\*) Statistics {-}
+# (PART\*) Getting Statistics {-}
 
 
 

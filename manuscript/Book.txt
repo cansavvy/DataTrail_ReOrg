@@ -25,7 +25,7 @@
 25-Ethical-Data-Science.md
 26-Google-Documents.md
 27-Getting-Data-Project.md
-28-Cleaning-the-Data.md
+28-Cleaning-Data.md
 29-What-is-Tidy-Data.md
 30-Reshaping-Data.md
 31-How-to-Tidy-Data.md
@@ -35,7 +35,7 @@
 35-Working-with-Dates.md
 36-Project-Organization.md
 37-Cleaning-Data-Project.md
-38-Plotting-the-Data.md
+38-Plotting-Data.md
 39-Good-Plots.md
 40-Introduction-to-ggplot2.md
 41-Customization-in-ggplot2.md
@@ -80,7 +80,7 @@
 80-Participating-in-Meetings.md
 81-How-to-Have-a-One-on-One-Meeting.md
 82-GitHub-and-Final-Data-Project.md
-83-Building-a-Resume.md
+83-Building-Resumes.md
 84-Resumes.md
 85-Cover-Letters.md
 86-Make-Your-Own-Website.md

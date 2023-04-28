@@ -81,6 +81,8 @@ jobs:
 
           # Copy over _bookdown.yml
           svn export --force https://github.com/${GITHUB_REPOSITORY}.git/branches/${GITHUB_REF#refs/heads/}/_bookdown.yml _bookdown.yml
+          
+          mkdir "docs" -p
           svn export --force https://github.com/${GITHUB_REPOSITORY}.git/branches/${GITHUB_REF#refs/heads/}/docs/index.html docs/index.html
 
 

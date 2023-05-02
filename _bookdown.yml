@@ -40,7 +40,6 @@ rmd_files: ["index.Rmd",
             "03_cleaning_data_08_project_organization.Rmd",
             "03_cleaning_data_09_data_project.Rmd",
             "04_plotting_data_00.Rmd",
-            "04_plotting_data_00.textClipping
             "04_plotting_data_01_good_plots.Rmd",
             "04_plotting_data_02_ggplot2.Rmd",
             "04_plotting_data_03_customization.Rmd",

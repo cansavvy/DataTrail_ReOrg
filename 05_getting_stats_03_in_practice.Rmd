@@ -147,7 +147,7 @@ head(diamonds_df)
 Let's say we are interested in seeing whether the `carat` is correlated with the price of the diamond. Before we test this, we may want to test the power of our dataset to detect this correlation. For this we will use the `pwr.r.test()` function from the `pwr` library.
 
 ```{r, results='hide'}
-install.packages("pwr")
+install.packages('pwr', repos = 'http://cran.us.r-project.org')
 library(pwr)
 ```
 

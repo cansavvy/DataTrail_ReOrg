@@ -1,0 +1,428 @@
+
+# In Practice Using Stats
+
+In the upcoming chapters we will introduce you to a number of statistical terms and test types. In general, we wouldn't stress memorizing specifics of these tests, but instead trying to get an intuitive sense for how to use and interpret the stats in the context of your statistical questions.
+
+In this chapter we are going to discuss some general strategies for how to start to apply the power of stats to your dataset.
+
+## Tip number 1: Always be looking at your data
+
+Data in real life is messy. You know this because we had a whole section about cleaning data! But even after your data is "tidy" in the sense that it is ready to be used, it still may have other oddities.
+
+We've discussed that data science is all about questions! This means that a new data science endeavor often starts with a lot of unknowns. There are:
+
+- Knowns! - These are the things you know.
+- Known unknowns - these are the things that you know you don't know -- like the answers to your data science question
+- Unknown unknowns - These are the things that you don't know that you don't know -- these can be very scary if they affect your data!
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g3daea37311_0_357.png" title="Data Science is a bit messier than we originally told you." alt="Data Science is a bit messier than we originally told you." width="100%" />
+
+So how do we make unknown unknowns a little more known? We have to do lots of exploring!
+
+There are a few initial explorations that are always a great idea to do with your data. As you work on a dataset, you may want to repeat these whenever you apply a new step or transformation to your data.
+
+**Practical tips for looking at your data**  
+
+- Look at your data in the Environment tab or by printing it out.
+- Make a density plot or histogram to look at the shape of your data - more on this in a second!
+- Run the `summary()` function on your data.
+- Make sure to look into the documentation for functions that you use to transform your data so you understand what you are doing to it.
+
+As you do these things with your data, you may find some "weirdness" which brings us to our next tip.
+
+## Tip number 2: Dig into weirdness
+
+Often after you have done some initial exploration of your data or as you are generally working on your analysis, you may see things that make you go "huh?" or are generally just "weird". One of the most valuable skills of data scientist can have is digging into that weirdness. As you continue to work in the field of data science you will hone your skills of identifying and digging into weirdness. Over time you will get a "spidey sense" and learn what weirdness is worth digging into and what weirdness is actually quite normal.
+
+Digging into peculiar things can lead making unknown unknowns more known. They sometimes may shift the entire strategy of your analysis! And while this may sound like it will add your work, it is how the best data science is done!
+
+At this point, we should let you know we've been somewhat lying to you at the beginning of each section when we've shown you this map:
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_p.png" title="Data Science process involves" alt="Data Science process involves" width="100%" />
+
+In reality, good data science doesn't happen so step like.
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_29.png" title="Data Science is a bit messier than we originally told you." alt="Data Science is a bit messier than we originally told you." width="100%" />
+
+The best data science is a bit messier than this. Original questions lead to new questions; and some pursuits are dead ends; and whole new findings and cool things we never dreamed of sometimes pop up out of nowhere! Meaning that data science is never "write code once and done", it is "write code, run it, rewrite it, look at your data, learn something, rewrite it again, have new questions, etc, etc, etc".
+
+This leads us to another point. That is, the best data science is done iteratively -- you won't write your best analysis in one sitting and never come back to it. Your best analyses will be things you work on over time to incrementally improve and look at.
+
+**Practical tips for digging into weirdness:**  
+
+- Look into weird density plot shapes and points in your data (outliers)
+- Look into results and outcomes that are unexpected - are these real or a byproduct of a mistake somewhere?
+- Look out for results and outcomes that are too perfect -- real life and real data are rarely perfect
+- **Never assume why something is the way it is without proving it to yourself by digging into it more!**
+
+Ultimately, when you see weird things prove to yourself that the results are what they seem.
+
+## Tip number 3: Let the data inform you
+
+After following our first two tips, you should have a generally good sense of what your data look like and what kind of weirdness exists. Now you will be ready to use what you've learned about your data to inform you how to properly handle them!
+
+We discussed in the previous chapter how to translate your data science questions into a stats test. There's a second part of this consideration, which is taking into account how your data are behaving to know what kinds of stats and questions are appropriate.
+
+Here's some common things your data might tell you and how you might find that out:
+
+For the upcoming examples we are going to use this datasets that are included in the `ggplot2` package.
+
+
+```r
+library(ggplot2)
+library(dplyr)
+```
+
+```
+## 
+## Attaching package: 'dplyr'
+```
+
+```
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+## How to find out how much data is missing
+
+Datasets often having missing data points because the collection process can be messier than we hope. There can be very good and appropriate reasons to have `NA`s in the data. Indeed it can often be the case that `NA` is a more appropriate way to note a data point than putting some other value. But, before you start doing
+
+**Code example for finding missing data** (this is not the only way to do this)
+
+Let's use and set up the [Texas Housing sales dataset](https://ggplot2.tidyverse.org/reference/txhousing.html) from `ggplot2`.
+
+
+```r
+tx_df <- ggplot2::txhousing
+head(tx_df)
+```
+
+```
+## # A tibble: 6 x 9
+##   city     year month sales   volume median listings inventory  date
+##   <chr>   <int> <int> <dbl>    <dbl>  <dbl>    <dbl>     <dbl> <dbl>
+## 1 Abilene  2000     1    72  5380000  71400      701       6.3 2000 
+## 2 Abilene  2000     2    98  6505000  58700      746       6.6 2000.
+## 3 Abilene  2000     3   130  9285000  58100      784       6.8 2000.
+## 4 Abilene  2000     4    98  9730000  68600      785       6.9 2000.
+## 5 Abilene  2000     5   141 10590000  67300      794       6.8 2000.
+## 6 Abilene  2000     6   156 13910000  66900      780       6.6 2000.
+```
+
+If you know that all your missing data are appropriately labeled as `NA` you can just use something like:
+
+
+```r
+summary(tx_df)
+```
+
+```
+##      city                year          month            sales       
+##  Length:8602        Min.   :2000   Min.   : 1.000   Min.   :   6.0  
+##  Class :character   1st Qu.:2003   1st Qu.: 3.000   1st Qu.:  86.0  
+##  Mode  :character   Median :2007   Median : 6.000   Median : 169.0  
+##                     Mean   :2007   Mean   : 6.406   Mean   : 549.6  
+##                     3rd Qu.:2011   3rd Qu.: 9.000   3rd Qu.: 467.0  
+##                     Max.   :2015   Max.   :12.000   Max.   :8945.0  
+##                                                     NA's   :568     
+##      volume              median          listings       inventory     
+##  Min.   :8.350e+05   Min.   : 50000   Min.   :    0   Min.   : 0.000  
+##  1st Qu.:1.084e+07   1st Qu.:100000   1st Qu.:  682   1st Qu.: 4.900  
+##  Median :2.299e+07   Median :123800   Median : 1283   Median : 6.200  
+##  Mean   :1.069e+08   Mean   :128131   Mean   : 3217   Mean   : 7.175  
+##  3rd Qu.:7.512e+07   3rd Qu.:150000   3rd Qu.: 2954   3rd Qu.: 8.150  
+##  Max.   :2.568e+09   Max.   :304200   Max.   :43107   Max.   :55.900  
+##  NA's   :568         NA's   :616      NA's   :1424    NA's   :1467    
+##       date     
+##  Min.   :2000  
+##  1st Qu.:2004  
+##  Median :2008  
+##  Mean   :2008  
+##  3rd Qu.:2012  
+##  Max.   :2016  
+## 
+```
+
+You'll see this prints out the summary for each variable in this data frame, including the number of `NA`s.
+
+- However, if your missing data are not appropriately labeled NA then you will want to convert them using code [described in this article](https://www.statology.org/replace-na-with-string-in-r/).
+- [For more on finding missing values](https://www.statology.org/r-find-missing-values/).
+
+### How to find if you have outliers
+
+Outliers are data points that are extreme. They can throw off whole analyses and bring you to the wrong conclusions. You have outliers or weird samples in your data -- you may want to try removing these if appropriate and re-running the test you were using.
+
+**Code example for finding outliers** (this is not the only way to do this)
+
+Let's use and set up the [Fuel economy dataset](https://ggplot2.tidyverse.org/reference/mpg.html) from `ggplot2`.
+
+
+```r
+cars_df <- ggplot2::mpg
+head(cars_df)
+```
+
+```
+## # A tibble: 6 x 11
+##   manufacturer model displ  year   cyl trans      drv     cty   hwy fl    class 
+##   <chr>        <chr> <dbl> <int> <int> <chr>      <chr> <int> <int> <chr> <chr> 
+## 1 audi         a4      1.8  1999     4 auto(l5)   f        18    29 p     compa…
+## 2 audi         a4      1.8  1999     4 manual(m5) f        21    29 p     compa…
+## 3 audi         a4      2    2008     4 manual(m6) f        20    31 p     compa…
+## 4 audi         a4      2    2008     4 auto(av)   f        21    30 p     compa…
+## 5 audi         a4      2.8  1999     6 auto(l5)   f        16    26 p     compa…
+## 6 audi         a4      2.8  1999     6 manual(m5) f        18    26 p     compa…
+```
+
+We can make a boxplot with base R.
+
+
+```r
+boxplot(cars_df$hwy, ylab = "hwy")
+```
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+The points in this boxplot are points you would want to look into as being outliers! You could see what these points are for sure by using `dplyr::arrange()` or any other number of ways.
+
+
+```r
+cars_df %>%
+  dplyr::arrange(dplyr::desc(hwy))
+```
+
+```
+## # A tibble: 234 x 11
+##    manufacturer model   displ  year   cyl trans   drv     cty   hwy fl    class 
+##    <chr>        <chr>   <dbl> <int> <int> <chr>   <chr> <int> <int> <chr> <chr> 
+##  1 volkswagen   jetta     1.9  1999     4 manual… f        33    44 d     compa…
+##  2 volkswagen   new be…   1.9  1999     4 manual… f        35    44 d     subco…
+##  3 volkswagen   new be…   1.9  1999     4 auto(l… f        29    41 d     subco…
+##  4 toyota       corolla   1.8  2008     4 manual… f        28    37 r     compa…
+##  5 honda        civic     1.8  2008     4 auto(l… f        25    36 r     subco…
+##  6 honda        civic     1.8  2008     4 auto(l… f        24    36 c     subco…
+##  7 toyota       corolla   1.8  1999     4 manual… f        26    35 r     compa…
+##  8 toyota       corolla   1.8  2008     4 auto(l… f        26    35 r     compa…
+##  9 honda        civic     1.8  2008     4 manual… f        26    34 r     subco…
+## 10 honda        civic     1.6  1999     4 manual… f        28    33 r     subco…
+## # … with 224 more rows
+```
+
+- See this [guide for more code and tips on how to detect outliers in R](https://statsandr.com/blog/outliers-detection-in-r/)
+
+### How to know if your data is underpowered for your question
+
+In order to answer particular questions with a dataset, you need to have enough data in the first place! If you don't have enough data that means you are underpowered. This may happen if you have a lot of missing data, a painfully small dataset, or the effect you are looking for is very small. In these cases you may need to find another dataset or see if the data collector can collect more data to add to this set. So how do you know if your dataset is underpowered?
+
+**Code example exploring power** (this is not the only way to do this)
+
+Let's use and set up the [Diamonds](https://ggplot2.tidyverse.org/reference/mpg.html) from `ggplot2`.
+
+
+```r
+diamonds_df <- ggplot2::diamonds
+head(diamonds_df)
+```
+
+```
+## # A tibble: 6 x 10
+##   carat cut       color clarity depth table price     x     y     z
+##   <dbl> <ord>     <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl> <dbl>
+## 1 0.23  Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+## 2 0.21  Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+## 3 0.23  Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+## 4 0.290 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+## 5 0.31  Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+## 6 0.24  Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+```
+
+Let's say we are interested in seeing whether the `carat` is correlated with the price of the diamond. Before we test this, we may want to test the power of our dataset to detect this correlation. For this we will use the `pwr.r.test()` function from the `pwr` library.
+
+
+```r
+install.packages('pwr', repos = 'http://cran.us.r-project.org')
+```
+
+```
+## Installing package into '/usr/local/lib/R/site-library'
+## (as 'lib' is unspecified)
+```
+
+```r
+library(pwr)
+```
+
+We have to tell it a few pieces of info:   
+1) How many samples do we have?   
+2) What correlation do we expect? and...  
+3) What significance level will we want (standard is to use 0.05 or 0.01).   
+
+
+```r
+pwr.r.test(n = nrow(diamonds_df), # How many cases do we have
+           r = cor(diamonds_df$carat, diamonds_df$price),
+           sig.level = 0.01)
+```
+
+```
+## 
+##      approximate correlation power calculation (arctangh transformation) 
+## 
+##               n = 53940
+##               r = 0.9215913
+##       sig.level = 0.01
+##           power = 1
+##     alternative = two.sided
+```
+
+You'll see this prints out a `1` for power. This dataset is not underpowered at all. Power is on a scale of 0 to 1. Where 0 means you don't have the power to detect anything and 1 means you will absolutely see a significant result if there is one to be seen.  
+
+But let's look at a different hypothetical situation. Let's say instead we only had 10 rows of data and the correlation we expected would be more like 0.3.
+
+
+```r
+pwr.r.test(n = 10, # How many cases do we have
+           r = 0.3,
+           sig.level = 0.01)
+```
+
+```
+## 
+##      approximate correlation power calculation (arctangh transformation) 
+## 
+##               n = 10
+##               r = 0.3
+##       sig.level = 0.01
+##           power = 0.03600302
+##     alternative = two.sided
+```
+Now this is telling us our power is very low -- meaning even if our hypothesis is true, we don't have enough data to see this correlation.
+
+- See this [chapter of a book for code and tips for how to know if your data are underpowered by doing a power analysis in R](https://bookdown.org/daniel_dauber_io/r4np_book/power-analysis.html).
+
+### How to know how your data are distributed
+
+Perhaps you want to use a particular stats test, but when you read about this stats test, it has an _assumption_ that the data are normally distributed -- **stats assumptions are really just requirements for using a method**. So if something "assumes a normal distribution" it means in order to use the test on your data it has to be normally distributed.
+
+If you will be using a numeric variable for anything in your analysis it's a very good idea to plot its density so you know what you are working with!
+
+**Code example of looking at distributions**
+
+Let's return to the cars_df dataset we were looking at earlier. To make a density plot, we need to use `geom_density()` function.
+
+
+```r
+ggplot(cars_df, aes(x = cty)) +
+  geom_density()
+```
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/unnamed-chunk-15-1.png" width="672" />
+
+We can see this looks like a fairly normal distribution -- what does that mean? let's discuss.
+
+#### What does it mean to be "normally distributed?"
+
+How a dataset is distributed has to do with frequency of the data. So in the example below, we've made a probability density plot using ggplot2. [See this article for details on making density plots](http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization). The higher the line is, the more probable that that value would occur.
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_12.png" title="What does a probability density plot represent" alt="What does a probability density plot represent" width="100%" />
+
+If your data plot looks like that normal bell-shaped curve, then you have "normally distributed" data. You will want to know what your data distribution looks like so you know what tests are appropriate.
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_0.png" title="Normal distributions are just one type of distribution" alt="Normal distributions are just one type of distribution" width="100%" />
+
+Let's look at the distribution of a different variable, the `sales` in `tx_df` data:
+
+
+```r
+ggplot(tx_df, aes(x = sales)) +
+  geom_density()
+```
+
+```
+## Warning: Removed 568 rows containing non-finite values (stat_density).
+```
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/unnamed-chunk-18-1.png" width="672" />
+
+Is this normally distributed? There are a lot of values that are lower and only some that are higher. Looks pretty skewed. In this case, we probably don't need to test these data, but we know they aren't really normally distributed so we should keep that in mind.
+
+If we want a test rather than just using our eyes, we can use the `ks.test()` which asks for us "are my data normally distributed?" In this instance, we'll use the `iris` dataset to test its normality for the variable `Sepal.Width`.
+
+
+```r
+shapiro.test(iris$Sepal.Width)
+```
+
+```
+## 
+## 	Shapiro-Wilk normality test
+## 
+## data:  iris$Sepal.Width
+## W = 0.98492, p-value = 0.1012
+```
+
+Because this p value reported is bigger than 0.05 we can consider `Sepal.Width` to be a normally distributed variable.
+
+One other important thing to note, if you have too small of a dataset, (say 30 or less) then you can never really consider your data normally distributed and they will always fail these normality tests.
+
+- [Read more about normal distributions here](https://www.scribbr.com/statistics/normal-distribution/).
+- There are formal ways to test for normality and these methods are described in this article that has code examples: [How to Assess Normality in R](https://universeofdatascience.com/how-to-assess-normality-in-r/)
+
+In conclusion, density plots are a super handy tool to see what your data look like before you dive in to any other tests and analyses. These can inform you about what to do with your data.
+
+**Practical tips for figuring out what to do with your data:**
+
+- Make density plots to visualize your data's distribution.
+- Google and find sources that discuss the problems you are seeing with your data. It is unlikely that the dataset you are working with is the only dataset that has this weirdness and others online may weigh in.
+- Consult a more senior data scientist or statistician. Show them the the weirdness you see and ask them what they think of it and what they would do.
+- Look for other data analysis examples online that resemble your data and its weirdness. Try to see what others did and if it makes sense to apply to your situation.
+
+## How do I know what test to use?
+
+We're going to tell you about some common tests, but here's a flow chart to help you get started. We advise generally having an idea of tests out there but not getting caught up in the minutia of every test. If you end up using a particular test on a set of data, then might be a good time to try to get a practical understanding of the test and how to interpret it but knowing everything about all statistical tests is just not practical and not a good use of your time.
+
+The important point about choosing a test is realizing that not all tests are appropriate. Indeed, you *could* use a lot of these tests for a particular dataset, but some tests may lead you to erroneous conclusions if the test is not meant to be used on data like what you are working with.
+
+And as we mentioned with the tips above, don't be afraid to reach out to a statistician or more senior data scientist to help you choose what is appropriate!
+
+For this section, we're going to borrow the handy cheatsheets and [tables from this article](https://www.scribbr.com/statistics/statistical-tests/) by Rebecca Bevans. Don't worry about memorizing the specifics of these tests, just generally understand this guide and how to use it and know you can come back to it for a reference.  
+
+### Comparison tests
+
+These assume normality.
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_80.png" title="Comparison tests" alt="Comparison tests" width="100%" />
+
+### Regression tests
+
+We will talk more about regression in the upcoming chapters!
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_86.png" title="Regression tests" alt="Regression tests" width="100%" />
+
+### Correlation tests
+
+Highly similar to regression tests because they use a lot of the same math, correlation tests ask if two variables are related.
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_94.png" title="Correlation tests" alt="Correlation tests" width="100%" />
+
+### Nonparametric tests
+
+Remember how we briefly talked about data being normally distributed or not? Turns out all the tests we just mentioned above ONLY work for data that is normally distributed. Aka as statisticians like to say those tests "assume normality". But if your data isn't normal, you can still do things with it! There are non-parametric (things that don't assume normality) equivalents you can use.
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_99.png" title="Nonparametric 1" alt="Nonparametric 1" width="100%" />
+
+<img src="resources/images/05_getting_stats_03_in_practice_files/figure-html//1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_105.png" title="Nonparametric 1" alt="Nonparametric 1" width="100%" />
+
+### Additional Resources
+
+* [Which Statistical Test to Use? Follow This Cheat Sheet](https://medium.com/swlh/which-statistical-test-to-use-follow-this-cheat-sheet-92c9a26f6811)
+* [Demystifying Statistical Analysis 1: A Handy Cheat Sheet](https://towardsdatascience.com/demystifying-statistical-analysis-1-a-handy-cheat-sheet-b6229bf992cf)
+* [Open Case Studies](https://opencasestudies.github.io/), by Pei-Lun Kuo, Leah Jager, Margaret Taub, and Stephanie Hicks
+* [Health Expenditures Case Study](https://opencasestudies.github.io/casestudies/ocs-healthexpenditure.html)
+* [Case Study on GitHub](https://github.com/opencasestudies/ocs-healthexpenditure)

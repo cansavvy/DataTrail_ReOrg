@@ -1181,7 +1181,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li>Known unknowns - these are the things that you know you don’t know – like the answers to your data science question</li>
 <li>Unknown unknowns - These are the things that you don’t know that you don’t know – these can be very scary if they affect your data!</li>
 </ul>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g3daea37311_0_357.png" title="Data Science is a bit messier than we originally told you." alt="Data Science is a bit messier than we originally told you." width="100%" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g3daea37311_0_357.png" title="Data Science is a bit messier than we originally told you." alt="Data Science is a bit messier than we originally told you." width="100%" /></p>
 <p>So how do we make unknown unknowns a little more known? We have to do lots of exploring!</p>
 <p>There are a few initial explorations that are always a great idea to do with your data. As you work on a dataset, you may want to repeat these whenever you apply a new step or transformation to your data.</p>
 <p><strong>Practical tips for looking at your data</strong></p>
@@ -1198,9 +1198,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>Often after you have done some initial exploration of your data or as you are generally working on your analysis, you may see things that make you go “huh?” or are generally just “weird”. One of the most valuable skills of data scientist can have is digging into that weirdness. As you continue to work in the field of data science you will hone your skills of identifying and digging into weirdness. Over time you will get a “spidey sense” and learn what weirdness is worth digging into and what weirdness is actually quite normal.</p>
 <p>Digging into peculiar things can lead making unknown unknowns more known. They sometimes may shift the entire strategy of your analysis! And while this may sound like it will add your work, it is how the best data science is done!</p>
 <p>At this point, we should let you know we’ve been somewhat lying to you at the beginning of each section when we’ve shown you this map:</p>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_p.png" title="Data Science process involves" alt="Data Science process involves" width="100%" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_p.png" title="Data Science process involves" alt="Data Science process involves" width="100%" /></p>
 <p>In reality, good data science doesn’t happen so step like.</p>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_29.png" title="Data Science is a bit messier than we originally told you." alt="Data Science is a bit messier than we originally told you." width="100%" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_29.png" title="Data Science is a bit messier than we originally told you." alt="Data Science is a bit messier than we originally told you." width="100%" /></p>
 <p>The best data science is a bit messier than this. Original questions lead to new questions; and some pursuits are dead ends; and whole new findings and cool things we never dreamed of sometimes pop up out of nowhere! Meaning that data science is never “write code once and done”, it is “write code, run it, rewrite it, look at your data, learn something, rewrite it again, have new questions, etc, etc, etc”.</p>
 <p>This leads us to another point. That is, the best data science is done iteratively – you won’t write your best analysis in one sitting and never come back to it. Your best analyses will be things you work on over time to incrementally improve and look at.</p>
 <p><strong>Practical tips for digging into weirdness:</strong></p>
@@ -1294,7 +1294,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 ## 6 audi         a4      2.8  1999     6 manual(m5) f        18    26 p     compa…</code></pre>
 <p>We can make a boxplot with base R.</p>
 <div class="sourceCode" id="cb346"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb346-1"><a href="in-practice-using-stats.html#cb346-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(cars_df<span class="sc">$</span>hwy, <span class="at">ylab =</span> <span class="st">&quot;hwy&quot;</span>)</span></code></pre></div>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/unnamed-chunk-9-1.png" width="672" />
 The points in this boxplot are points you would want to look into as being outliers! You could see what these points are for sure by using <code>dplyr::arrange()</code> or any other number of ways.</p>
 <div class="sourceCode" id="cb347"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb347-1"><a href="in-practice-using-stats.html#cb347-1" aria-hidden="true" tabindex="-1"></a>cars_df <span class="sc">%&gt;%</span></span>
 <span id="cb347-2"><a href="in-practice-using-stats.html#cb347-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(hwy))</span></code></pre></div>
@@ -1333,7 +1333,7 @@ The points in this boxplot are points you would want to look into as being outli
 ## 5 0.31  Good      J     SI2      63.3    58   335  4.34  4.35  2.75
 ## 6 0.24  Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48</code></pre>
 <p>Let’s say we are interested in seeing whether the <code>carat</code> is correlated with the price of the diamond. Before we test this, we may want to test the power of our dataset to detect this correlation. For this we will use the <code>pwr.r.test()</code> function from the <code>pwr</code> library.</p>
-<div class="sourceCode" id="cb351"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb351-1"><a href="in-practice-using-stats.html#cb351-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;pwr&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb351"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb351-1"><a href="in-practice-using-stats.html#cb351-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;pwr&#39;</span>, <span class="at">repos =</span> <span class="st">&#39;http://cran.us.r-project.org&#39;</span>)</span></code></pre></div>
 <pre><code>## Installing package into &#39;/usr/local/lib/R/site-library&#39;
 ## (as &#39;lib&#39; is unspecified)</code></pre>
 <div class="sourceCode" id="cb353"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb353-1"><a href="in-practice-using-stats.html#cb353-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pwr)</span></code></pre></div>
@@ -1378,19 +1378,19 @@ The points in this boxplot are points you would want to look into as being outli
 <p>Let’s return to the cars_df dataset we were looking at earlier. To make a density plot, we need to use <code>geom_density()</code> function.</p>
 <div class="sourceCode" id="cb358"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb358-1"><a href="in-practice-using-stats.html#cb358-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(cars_df, <span class="fu">aes</span>(<span class="at">x =</span> cty)) <span class="sc">+</span></span>
 <span id="cb358-2"><a href="in-practice-using-stats.html#cb358-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>()</span></code></pre></div>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <p>We can see this looks like a fairly normal distribution – what does that mean? let’s discuss.</p>
 <div id="what-does-it-mean-to-be-normally-distributed" class="section level4" number="52.4.3.1">
 <h4><span class="header-section-number">52.4.3.1</span> What does it mean to be “normally distributed?”</h4>
 <p>How a dataset is distributed has to do with frequency of the data. So in the example below, we’ve made a probability density plot using ggplot2. <a href="http://www.sthda.com/english/wiki/ggplot2-density-plot-quick-start-guide-r-software-and-data-visualization">See this article for details on making density plots</a>. The higher the line is, the more probable that that value would occur.</p>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_12.png" title="What does a probability density plot represent" alt="What does a probability density plot represent" width="100%" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_12.png" title="What does a probability density plot represent" alt="What does a probability density plot represent" width="100%" /></p>
 <p>If your data plot looks like that normal bell-shaped curve, then you have “normally distributed” data. You will want to know what your data distribution looks like so you know what tests are appropriate.</p>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_0.png" title="Normal distributions are just one type of distribution" alt="Normal distributions are just one type of distribution" width="100%" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g17abdef0467_0_0.png" title="Normal distributions are just one type of distribution" alt="Normal distributions are just one type of distribution" width="100%" /></p>
 <p>Let’s look at the distribution of a different variable, the <code>sales</code> in <code>tx_df</code> data:</p>
 <div class="sourceCode" id="cb359"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb359-1"><a href="in-practice-using-stats.html#cb359-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tx_df, <span class="fu">aes</span>(<span class="at">x =</span> sales)) <span class="sc">+</span></span>
 <span id="cb359-2"><a href="in-practice-using-stats.html#cb359-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>()</span></code></pre></div>
 <pre><code>## Warning: Removed 568 rows containing non-finite values (stat_density).</code></pre>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 <p>Is this normally distributed? There are a lot of values that are lower and only some that are higher. Looks pretty skewed. In this case, we probably don’t need to test these data, but we know they aren’t really normally distributed so we should keep that in mind.</p>
 <p>If we want a test rather than just using our eyes, we can use the <code>ks.test()</code> which asks for us “are my data normally distributed?” In this instance, we’ll use the <code>iris</code> dataset to test its normality for the variable <code>Sepal.Width</code>.</p>
 <div class="sourceCode" id="cb361"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb361-1"><a href="in-practice-using-stats.html#cb361-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(iris<span class="sc">$</span>Sepal.Width)</span></code></pre></div>
@@ -1425,23 +1425,23 @@ The points in this boxplot are points you would want to look into as being outli
 <div id="comparison-tests" class="section level3" number="52.5.1">
 <h3><span class="header-section-number">52.5.1</span> Comparison tests</h3>
 <p>These assume normality.</p>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_80.png" title="Comparison tests" alt="Comparison tests" width="100%" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_80.png" title="Comparison tests" alt="Comparison tests" width="100%" /></p>
 </div>
 <div id="regression-tests" class="section level3" number="52.5.2">
 <h3><span class="header-section-number">52.5.2</span> Regression tests</h3>
 <p>We will talk more about regression in the upcoming chapters!</p>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_86.png" title="Regression tests" alt="Regression tests" width="100%" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_86.png" title="Regression tests" alt="Regression tests" width="100%" /></p>
 </div>
 <div id="correlation-tests" class="section level3" number="52.5.3">
 <h3><span class="header-section-number">52.5.3</span> Correlation tests</h3>
 <p>Highly similar to regression tests because they use a lot of the same math, correlation tests ask if two variables are related.</p>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_94.png" title="Correlation tests" alt="Correlation tests" width="100%" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_94.png" title="Correlation tests" alt="Correlation tests" width="100%" /></p>
 </div>
 <div id="nonparametric-tests" class="section level3" number="52.5.4">
 <h3><span class="header-section-number">52.5.4</span> Nonparametric tests</h3>
 <p>Remember how we briefly talked about data being normally distributed or not? Turns out all the tests we just mentioned above ONLY work for data that is normally distributed. Aka as statisticians like to say those tests “assume normality”. But if your data isn’t normal, you can still do things with it! There are non-parametric (things that don’t assume normality) equivalents you can use.</p>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_99.png" title="Nonparametric 1" alt="Nonparametric 1" width="100%" /></p>
-<p><img src="resources/images/05_get_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_105.png" title="Nonparametric 1" alt="Nonparametric 1" width="100%" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_99.png" title="Nonparametric 1" alt="Nonparametric 1" width="100%" /></p>
+<p><img src="resources/images/05_getting_stats_03_in_practice_files/figure-html/1WxkODby0YzYdZg0YuJuozT2oyH7aXGznCm61J8-NRF4_g179b57c98b7_0_105.png" title="Nonparametric 1" alt="Nonparametric 1" width="100%" /></p>
 </div>
 <div id="additional-resources-17" class="section level3" number="52.5.5">
 <h3><span class="header-section-number">52.5.5</span> Additional Resources</h3>

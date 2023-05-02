@@ -21,7 +21,7 @@ render-coursera: yes
 
 # What docker image should be used for rendering?
 # The default is jhudsl/course_template:main
-rendering-docker-image: 'jhudsl/course_template:main'
+rendering-docker-image: 'jhudsl/base_ottr:main'
 
 leanpub-params: |
   {
@@ -31,4 +31,3 @@ leanpub-params: |
     default-random-choice-order: true
     default-quiz-show-answers: none
   }
-  

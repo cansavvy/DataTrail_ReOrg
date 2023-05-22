@@ -1207,17 +1207,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb131"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb131-1"><a href="reshaping-data.html#cb131-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
 <span id="cb131-2"><a href="reshaping-data.html#cb131-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb131-3"><a href="reshaping-data.html#cb131-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(relig_income)</span></code></pre></div>
-<pre><code>## # A tibble: 6 x 11
-##   religion `&lt;$10k` `$10-20k` `$20-30k` `$30-40k` `$40-50k` `$50-75k` `$75-100k`
-##   &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;
-## 1 Agnostic      27        34        60        81        76       137        122
-## 2 Atheist       12        27        37        52        35        70         73
-## 3 Buddhist      27        21        30        34        33        58         62
-## 4 Catholic     418       617       732       670       638      1116        949
-## 5 Don’t k…      15        14        15        11        10        35         21
-## 6 Evangel…     575       869      1064       982       881      1486        949
-## # … with 3 more variables: `$100-150k` &lt;dbl&gt;, `&gt;150k` &lt;dbl&gt;, `Don&#39;t
-## #   know/refused` &lt;dbl&gt;</code></pre>
+<pre><code>## # A tibble: 6 × 11
+##   religion  `&lt;$10k` `$10-20k` `$20-30k` `$30-40k` `$40-50k` `$50-75k` `$75-100k`
+##   &lt;chr&gt;       &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;
+## 1 Agnostic       27        34        60        81        76       137        122
+## 2 Atheist        12        27        37        52        35        70         73
+## 3 Buddhist       27        21        30        34        33        58         62
+## 4 Catholic      418       617       732       670       638      1116        949
+## 5 Don’t kn…      15        14        15        11        10        35         21
+## 6 Evangeli…     575       869      1064       982       881      1486        949
+## # ℹ 3 more variables: `$100-150k` &lt;dbl&gt;, `&gt;150k` &lt;dbl&gt;,
+## #   `Don&#39;t know/refused` &lt;dbl&gt;</code></pre>
 <p>Again, wide data are easy to decipher at a glance. We can see that we have different income levels but in reality, many of those columns contain the same variable (income) so these data are not tidy.</p>
 <div id="tidyr" class="section level4" number="30.0.2.1">
 <h4><span class="header-section-number">30.0.2.1</span> tidyr</h4>
@@ -1236,17 +1236,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>The first argument in pivot_longer() tells which columns you’d like to pivot. In this case, we want to pivot all columns except the religion column</p>
 <p>Let’s take a look at this dataset to start:</p>
 <div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="reshaping-data.html#cb134-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(relig_income)</span></code></pre></div>
-<pre><code>## # A tibble: 6 x 11
-##   religion `&lt;$10k` `$10-20k` `$20-30k` `$30-40k` `$40-50k` `$50-75k` `$75-100k`
-##   &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;
-## 1 Agnostic      27        34        60        81        76       137        122
-## 2 Atheist       12        27        37        52        35        70         73
-## 3 Buddhist      27        21        30        34        33        58         62
-## 4 Catholic     418       617       732       670       638      1116        949
-## 5 Don’t k…      15        14        15        11        10        35         21
-## 6 Evangel…     575       869      1064       982       881      1486        949
-## # … with 3 more variables: `$100-150k` &lt;dbl&gt;, `&gt;150k` &lt;dbl&gt;, `Don&#39;t
-## #   know/refused` &lt;dbl&gt;</code></pre>
+<pre><code>## # A tibble: 6 × 11
+##   religion  `&lt;$10k` `$10-20k` `$20-30k` `$30-40k` `$40-50k` `$50-75k` `$75-100k`
+##   &lt;chr&gt;       &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;
+## 1 Agnostic       27        34        60        81        76       137        122
+## 2 Atheist        12        27        37        52        35        70         73
+## 3 Buddhist       27        21        30        34        33        58         62
+## 4 Catholic      418       617       732       670       638      1116        949
+## 5 Don’t kn…      15        14        15        11        10        35         21
+## 6 Evangeli…     575       869      1064       982       881      1486        949
+## # ℹ 3 more variables: `$100-150k` &lt;dbl&gt;, `&gt;150k` &lt;dbl&gt;,
+## #   `Don&#39;t know/refused` &lt;dbl&gt;</code></pre>
 <p>Now let’s <code>pivot_longer</code> and take a look again:</p>
 <div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="reshaping-data.html#cb136-1" aria-hidden="true" tabindex="-1"></a><span class="do">## use pivot_longer() to reshape from wide to long</span></span>
 <span id="cb136-2"><a href="reshaping-data.html#cb136-2" aria-hidden="true" tabindex="-1"></a>long_df <span class="ot">&lt;-</span> relig_income <span class="sc">%&gt;%</span></span>
@@ -1254,7 +1254,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb136-4"><a href="reshaping-data.html#cb136-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb136-5"><a href="reshaping-data.html#cb136-5" aria-hidden="true" tabindex="-1"></a><span class="do">## take a look at first few rows of long data</span></span>
 <span id="cb136-6"><a href="reshaping-data.html#cb136-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(long_df)</span></code></pre></div>
-<pre><code>## # A tibble: 6 x 3
+<pre><code>## # A tibble: 6 × 3
 ##   religion income  count
 ##   &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;
 ## 1 Agnostic &lt;$10k      27
@@ -1272,7 +1272,7 @@ See here for all about <a href="https://dplyr.tidyverse.org/reference/select.htm
 <div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="reshaping-data.html#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="do">## use pivot_longer() to reshape from wide to long</span></span>
 <span id="cb138-2"><a href="reshaping-data.html#cb138-2" aria-hidden="true" tabindex="-1"></a>relig_income <span class="sc">%&gt;%</span></span>
 <span id="cb138-3"><a href="reshaping-data.html#cb138-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">contains</span>(<span class="st">&quot;$&quot;</span>), <span class="at">names_to =</span> <span class="st">&quot;income&quot;</span>, <span class="at">values_to =</span> <span class="st">&quot;count&quot;</span>)</span></code></pre></div>
-<pre><code>## # A tibble: 144 x 5
+<pre><code>## # A tibble: 144 × 5
 ##    religion `&gt;150k` `Don&#39;t know/refused` income    count
 ##    &lt;chr&gt;      &lt;dbl&gt;                &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;
 ##  1 Agnostic      84                   96 &lt;$10k        27
@@ -1285,7 +1285,7 @@ See here for all about <a href="https://dplyr.tidyverse.org/reference/select.htm
 ##  8 Agnostic      84                   96 $100-150k   109
 ##  9 Atheist       74                   76 &lt;$10k        12
 ## 10 Atheist       74                   76 $10-20k      27
-## # … with 134 more rows</code></pre>
+## # ℹ 134 more rows</code></pre>
 <p>We can change the <code>names_to</code> and <code>values_to</code> arguments if we want the resulting column names to be different.</p>
 </div>
 <div id="pivot_wider" class="section level5" number="30.0.2.1.2">

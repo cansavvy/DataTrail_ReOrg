@@ -288,8 +288,6 @@ bind_cols(df_a, df_c)
 
 ```
 ## New names:
-## * sample -> sample...1
-## * sample -> sample...3
 ```
 
 ```
@@ -311,8 +309,6 @@ bind_cols(df_a, df_c) %>%
 
 ```
 ## New names:
-## * sample -> sample...1
-## * sample -> sample...3
 ```
 
 ```

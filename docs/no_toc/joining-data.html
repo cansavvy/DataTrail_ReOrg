@@ -1329,9 +1329,7 @@ Here’s <code>df_a</code>.</p>
 <pre><code>## [1] TRUE</code></pre>
 <p>Now we know we can bind_cols() of <code>df_a</code> and <code>df_c</code> safely.</p>
 <div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb212-1"><a href="joining-data.html#cb212-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bind_cols</span>(df_a, df_c)</span></code></pre></div>
-<pre><code>## New names:
-## * sample -&gt; sample...1
-## * sample -&gt; sample...3</code></pre>
+<pre><code>## New names:</code></pre>
 <pre><code>##   sample...1 number sample...3 animal
 ## 1          A    2.0          A    dog
 ## 2          B    4.0          B    cat
@@ -1341,9 +1339,7 @@ Here’s <code>df_a</code>.</p>
 <div class="sourceCode" id="cb215"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb215-1"><a href="joining-data.html#cb215-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bind_cols</span>(df_a, df_c) <span class="sc">%&gt;%</span></span>
 <span id="cb215-2"><a href="joining-data.html#cb215-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">sample =</span> sample...<span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb215-3"><a href="joining-data.html#cb215-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>sample...<span class="dv">3</span>)</span></code></pre></div>
-<pre><code>## New names:
-## * sample -&gt; sample...1
-## * sample -&gt; sample...3</code></pre>
+<pre><code>## New names:</code></pre>
 <pre><code>##   sample number animal
 ## 1      A    2.0    dog
 ## 2      B    4.0    cat

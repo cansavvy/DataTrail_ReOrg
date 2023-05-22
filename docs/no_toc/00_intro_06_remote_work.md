@@ -89,7 +89,7 @@ Examine your workday. Use your science brain to improve your health. Did you hav
 
 When it comes to your health and your work, be a goldfish for the unhelpful or bad things (the myth is that goldfish have a 3 second memory). But for even the simplest wins be a golden retriever with a tennis ball - just happy to be alive and to have found the tennis ball. It may not be complicated, but its something worth celebrating!
 
-<img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c7f9f79b8_1_94.png" title="Evaluate what is or is not in your control. Use mistakes as lessons for future improvement; not as punishment for the past. Celebrate the wins – no matter how small!" alt="Evaluate what is or is not in your control. Use mistakes as lessons for future improvement; not as punishment for the past. Celebrate the wins – no matter how small!" width="100%" />
+<img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c7f9f79b8_1_179.png" title="Evaluate what is or is not in your control. Use mistakes as lessons for future improvement; not as punishment for the past. Celebrate the wins – no matter how small!" alt="Evaluate what is or is not in your control. Use mistakes as lessons for future improvement; not as punishment for the past. Celebrate the wins – no matter how small!" width="100%" />
 
 <img src="resources/images/00_intro_06_remote_work_files/figure-html//114QYFmKuJ2M5E3tlBw8Gwu2xI09tb8gnrKrNkMY9CG4_g22c90dc92e0_0_3.png" title="This golden retriever is really celebrating" alt="This golden retriever is really celebrating" width="100%" />
 

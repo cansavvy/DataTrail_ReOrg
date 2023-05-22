@@ -48,17 +48,17 @@ head(relig_income)
 ```
 
 ```
-## # A tibble: 6 x 11
-##   religion `<$10k` `$10-20k` `$20-30k` `$30-40k` `$40-50k` `$50-75k` `$75-100k`
-##   <chr>      <dbl>     <dbl>     <dbl>     <dbl>     <dbl>     <dbl>      <dbl>
-## 1 Agnostic      27        34        60        81        76       137        122
-## 2 Atheist       12        27        37        52        35        70         73
-## 3 Buddhist      27        21        30        34        33        58         62
-## 4 Catholic     418       617       732       670       638      1116        949
-## 5 Don’t k…      15        14        15        11        10        35         21
-## 6 Evangel…     575       869      1064       982       881      1486        949
-## # … with 3 more variables: `$100-150k` <dbl>, `>150k` <dbl>, `Don't
-## #   know/refused` <dbl>
+## # A tibble: 6 × 11
+##   religion  `<$10k` `$10-20k` `$20-30k` `$30-40k` `$40-50k` `$50-75k` `$75-100k`
+##   <chr>       <dbl>     <dbl>     <dbl>     <dbl>     <dbl>     <dbl>      <dbl>
+## 1 Agnostic       27        34        60        81        76       137        122
+## 2 Atheist        12        27        37        52        35        70         73
+## 3 Buddhist       27        21        30        34        33        58         62
+## 4 Catholic      418       617       732       670       638      1116        949
+## 5 Don’t kn…      15        14        15        11        10        35         21
+## 6 Evangeli…     575       869      1064       982       881      1486        949
+## # ℹ 3 more variables: `$100-150k` <dbl>, `>150k` <dbl>,
+## #   `Don't know/refused` <dbl>
 ```
 
 Again, wide data are easy to decipher at a glance. We can see that we have different income levels but in reality, many of those columns contain the same variable (income) so these data are not tidy.
@@ -92,17 +92,17 @@ head(relig_income)
 ```
 
 ```
-## # A tibble: 6 x 11
-##   religion `<$10k` `$10-20k` `$20-30k` `$30-40k` `$40-50k` `$50-75k` `$75-100k`
-##   <chr>      <dbl>     <dbl>     <dbl>     <dbl>     <dbl>     <dbl>      <dbl>
-## 1 Agnostic      27        34        60        81        76       137        122
-## 2 Atheist       12        27        37        52        35        70         73
-## 3 Buddhist      27        21        30        34        33        58         62
-## 4 Catholic     418       617       732       670       638      1116        949
-## 5 Don’t k…      15        14        15        11        10        35         21
-## 6 Evangel…     575       869      1064       982       881      1486        949
-## # … with 3 more variables: `$100-150k` <dbl>, `>150k` <dbl>, `Don't
-## #   know/refused` <dbl>
+## # A tibble: 6 × 11
+##   religion  `<$10k` `$10-20k` `$20-30k` `$30-40k` `$40-50k` `$50-75k` `$75-100k`
+##   <chr>       <dbl>     <dbl>     <dbl>     <dbl>     <dbl>     <dbl>      <dbl>
+## 1 Agnostic       27        34        60        81        76       137        122
+## 2 Atheist        12        27        37        52        35        70         73
+## 3 Buddhist       27        21        30        34        33        58         62
+## 4 Catholic      418       617       732       670       638      1116        949
+## 5 Don’t kn…      15        14        15        11        10        35         21
+## 6 Evangeli…     575       869      1064       982       881      1486        949
+## # ℹ 3 more variables: `$100-150k` <dbl>, `>150k` <dbl>,
+## #   `Don't know/refused` <dbl>
 ```
 
 Now let's `pivot_longer` and take a look again:
@@ -118,7 +118,7 @@ head(long_df)
 ```
 
 ```
-## # A tibble: 6 x 3
+## # A tibble: 6 × 3
 ##   religion income  count
 ##   <chr>    <chr>   <dbl>
 ## 1 Agnostic <$10k      27
@@ -143,7 +143,7 @@ relig_income %>%
 ```
 
 ```
-## # A tibble: 144 x 5
+## # A tibble: 144 × 5
 ##    religion `>150k` `Don't know/refused` income    count
 ##    <chr>      <dbl>                <dbl> <chr>     <dbl>
 ##  1 Agnostic      84                   96 <$10k        27
@@ -156,7 +156,7 @@ relig_income %>%
 ##  8 Agnostic      84                   96 $100-150k   109
 ##  9 Atheist       74                   76 <$10k        12
 ## 10 Atheist       74                   76 $10-20k      27
-## # … with 134 more rows
+## # ℹ 134 more rows
 ```
 
 We can change the `names_to` and `values_to` arguments if we want the resulting column names to be different.

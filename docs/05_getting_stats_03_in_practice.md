@@ -105,7 +105,7 @@ head(tx_df)
 ```
 
 ```
-## # A tibble: 6 x 9
+## # A tibble: 6 × 9
 ##   city     year month sales   volume median listings inventory  date
 ##   <chr>   <int> <int> <dbl>    <dbl>  <dbl>    <dbl>     <dbl> <dbl>
 ## 1 Abilene  2000     1    72  5380000  71400      701       6.3 2000 
@@ -170,7 +170,7 @@ head(cars_df)
 ```
 
 ```
-## # A tibble: 6 x 11
+## # A tibble: 6 × 11
 ##   manufacturer model displ  year   cyl trans      drv     cty   hwy fl    class 
 ##   <chr>        <chr> <dbl> <int> <int> <chr>      <chr> <int> <int> <chr> <chr> 
 ## 1 audi         a4      1.8  1999     4 auto(l5)   f        18    29 p     compa…
@@ -198,20 +198,20 @@ cars_df %>%
 ```
 
 ```
-## # A tibble: 234 x 11
-##    manufacturer model   displ  year   cyl trans   drv     cty   hwy fl    class 
-##    <chr>        <chr>   <dbl> <int> <int> <chr>   <chr> <int> <int> <chr> <chr> 
-##  1 volkswagen   jetta     1.9  1999     4 manual… f        33    44 d     compa…
-##  2 volkswagen   new be…   1.9  1999     4 manual… f        35    44 d     subco…
-##  3 volkswagen   new be…   1.9  1999     4 auto(l… f        29    41 d     subco…
-##  4 toyota       corolla   1.8  2008     4 manual… f        28    37 r     compa…
-##  5 honda        civic     1.8  2008     4 auto(l… f        25    36 r     subco…
-##  6 honda        civic     1.8  2008     4 auto(l… f        24    36 c     subco…
-##  7 toyota       corolla   1.8  1999     4 manual… f        26    35 r     compa…
-##  8 toyota       corolla   1.8  2008     4 auto(l… f        26    35 r     compa…
-##  9 honda        civic     1.8  2008     4 manual… f        26    34 r     subco…
-## 10 honda        civic     1.6  1999     4 manual… f        28    33 r     subco…
-## # … with 224 more rows
+## # A tibble: 234 × 11
+##    manufacturer model      displ  year   cyl trans drv     cty   hwy fl    class
+##    <chr>        <chr>      <dbl> <int> <int> <chr> <chr> <int> <int> <chr> <chr>
+##  1 volkswagen   jetta        1.9  1999     4 manu… f        33    44 d     comp…
+##  2 volkswagen   new beetle   1.9  1999     4 manu… f        35    44 d     subc…
+##  3 volkswagen   new beetle   1.9  1999     4 auto… f        29    41 d     subc…
+##  4 toyota       corolla      1.8  2008     4 manu… f        28    37 r     comp…
+##  5 honda        civic        1.8  2008     4 auto… f        25    36 r     subc…
+##  6 honda        civic        1.8  2008     4 auto… f        24    36 c     subc…
+##  7 toyota       corolla      1.8  1999     4 manu… f        26    35 r     comp…
+##  8 toyota       corolla      1.8  2008     4 auto… f        26    35 r     comp…
+##  9 honda        civic        1.8  2008     4 manu… f        26    34 r     subc…
+## 10 honda        civic        1.6  1999     4 manu… f        28    33 r     subc…
+## # ℹ 224 more rows
 ```
 
 - See this [guide for more code and tips on how to detect outliers in R](https://statsandr.com/blog/outliers-detection-in-r/)
@@ -231,15 +231,15 @@ head(diamonds_df)
 ```
 
 ```
-## # A tibble: 6 x 10
+## # A tibble: 6 × 10
 ##   carat cut       color clarity depth table price     x     y     z
 ##   <dbl> <ord>     <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl> <dbl>
-## 1 0.23  Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
-## 2 0.21  Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
-## 3 0.23  Good      E     VS1      56.9    65   327  4.05  4.07  2.31
-## 4 0.290 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
-## 5 0.31  Good      J     SI2      63.3    58   335  4.34  4.35  2.75
-## 6 0.24  Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+## 1  0.23 Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+## 2  0.21 Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+## 3  0.23 Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+## 4  0.29 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+## 5  0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+## 6  0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
 ```
 
 Let's say we are interested in seeing whether the `carat` is correlated with the price of the diamond. Before we test this, we may want to test the power of our dataset to detect this correlation. For this we will use the `pwr.r.test()` function from the `pwr` library.

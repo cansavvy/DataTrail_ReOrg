@@ -1,0 +1,10 @@
+
+
+
+# Pre DataTrail Survey
+
+We would very much appreciate you taking this short (~ 10 minute) survey so we know about why you are interested in DataTrail and what you hope to accomplish with our coursework. This can help us improve the course.
+
+[Complete the pre DataTrail survey](https://forms.gle/g2hi5itNLR9cJFzF6)
+
+There is a post DataTrail survey that is also helpful if you can complete it after you are done using the material.

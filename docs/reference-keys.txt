@@ -6,6 +6,7 @@ what-is-datatrail
 who-is-this-program-for
 how-the-program-is-organized
 how-datatrail-is-graded
+pre-datatrail-survey
 finding-help
 searching-the-internet
 search-guidelines
@@ -1149,3 +1150,4 @@ create-your-portfolio
 your-objectives-6
 get-the-rest-of-your-projects-online-on-github
 add-links-to-your-projects-to-your-website
+post-datatrail-survey

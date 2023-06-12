@@ -3,11 +3,12 @@ chapter_name: "Chapter "
 repo: https://github.com/jhudsl/OTTR_Template/
 rmd_files: ["index.Rmd",
             "00_intro_01_welcome.Rmd",
-            "00_intro_02_finding_help.Rmd",
-            "00_intro_03_intro_to_chromebooks.Rmd",
-            "00_intro_04_working_on-offline.Rmd",
-            "00_intro_05_account_setup.Rmd",
-            "00_intro_06_remote_work.Rmd",
+            "00_intro_02_presurvey.Rmd",
+            "00_intro_03_finding_help.Rmd",
+            "00_intro_04_intro_to_chromebooks.Rmd",
+            "00_intro_05_working_on-offline.Rmd",
+            "00_intro_06_account_setup.Rmd",
+            "00_intro_07_remote_work.Rmd",
             "01_forming_questions_00.Rmd",
             "01_forming_questions_01_data_science_process.Rmd",
             "01_forming_questions_02_types_of_questions.Rmd",
@@ -98,6 +99,7 @@ rmd_files: ["index.Rmd",
             "07_building_resumes_11_interviews.Rmd",
             "07_building_resumes_12_meetups.Rmd",
             "07_building_resumes_13_make_portfolio.Rmd",
+            "07_building_resumes_14_postsurvey.Rmd",
             "About.Rmd"]
 new_session: yes
 bibliography: [book.bib]

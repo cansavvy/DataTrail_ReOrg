@@ -7,18 +7,18 @@ ottrpal::set_knitr_image_path()
 
 ## Managing Files in R
 
-In this lesson, we will continue our tour of ways in which you will be managing files as a data scientist. In the previous lesson, you learned about the Terminal and its command-based interface to the file system on RStudio Cloud. In this lesson, you will learn in small part about the R programming language and in large part about specific tools within R to manage files. You will learn much more about R for its capabilities in data science work in future courses.
+In this lesson, we will continue our tour of ways in which you will be managing files as a data scientist. In the previous lesson, you learned about the Terminal and its command-based interface to the file system on Posit Cloud. In this lesson, you will learn in small part about the R programming language and in large part about specific tools within R to manage files. You will learn much more about R for its capabilities in data science work in future courses.
 
 ### Why manage files in R?
 
 As a data scientist, you will find it very useful to automate the management and organization of files. For some tasks with larger scale data projects, it will be easier to work with files programmatically in R rather than at the Terminal. Why? Because R is programming language, you will be able to manage files in complex situations where your actions are dependent on lot of other information. For example, if you are working with hundreds of different files, moving them to a location that depends on information in the files is much easier with a programming language such as R rather than at the Terminal. Also, in order to completely document your work in going from raw files to finished products, a good approach is to combine your data work in R (to be covered in later chapters) with your file organization work in R.
 
-### Navigating to R in RStudio Cloud
+### Navigating to R in Posit Cloud
 
-When you open a project in RStudio Cloud, you will see a Console pane that is immediately next to the Terminal pane. Usually this pane is automatically open when you open a project. The `>` that you see in the R console is called the **R prompt**. It is analogous to the Terminal prompt in that it is where you can type and enter R commands.
+When you open a project in Posit Cloud, you will see a Console pane that is immediately next to the Terminal pane. Usually this pane is automatically open when you open a project. The `>` that you see in the R console is called the **R prompt**. It is analogous to the Terminal prompt in that it is where you can type and enter R commands.
 
 
-![Locating the Console in RStudio Cloud](https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&pageid=g3aa507622a_0_0)
+![Locating the Console in Posit Cloud](https://docs.google.com/presentation/d/1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc/export/png?id=1T_KaKPNffgoHSOqM65c_E5AI93KK2BYRBhJNXjOxRmc&pageid=g3aa507622a_0_0)
 
 
 ### Important functions
@@ -87,10 +87,10 @@ As was discussed in the first lesson of this course, one of the most important a
 
 ### What is the Terminal?
 
-The Terminal is an interface to the operating system of a computer. That is, it provides a way for you to type commands in order to perform actions on a computer. For example, there are commands to create new files and folders and to open files and folders. On your computer, you are familiar with using your mouse to perform such actions. When you are working with data on RStudio Cloud, however, you will not be able to use your mouse for everything that you'll want to do. It will be important for you to become comfortable with using the Terminal as a place for purely text-based commands. In RStudio Cloud, the Terminal is located in the tab next to the Console.
+The Terminal is an interface to the operating system of a computer. That is, it provides a way for you to type commands in order to perform actions on a computer. For example, there are commands to create new files and folders and to open files and folders. On your computer, you are familiar with using your mouse to perform such actions. When you are working with data on Posit Cloud, however, you will not be able to use your mouse for everything that you'll want to do. It will be important for you to become comfortable with using the Terminal as a place for purely text-based commands. In Posit Cloud, the Terminal is located in the tab next to the Console.
 
 
-![Locating the Terminal in RStudio Cloud](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_0)
+![Locating the Terminal in Posit Cloud](https://docs.google.com/presentation/d/18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY/export/png?id=18PSP0OXbduVX_qjWX87zTxyNj6OaX5pU9Sw2f83NGDY&pageid=g39e98c7b77_0_0)
 
 When you click on this tab, you will see a pane that looks as follows:
 
@@ -101,7 +101,7 @@ You will always see a string of text at the beginning of the line. This is calle
 
 ### Why manage files in the Terminal?
 
-As we've discussed, the Terminal is a command-based interface to a computer operating system. Let's say that you wanted to make a copy of a folder. Whether on RStudio Cloud or on Google Drive, you would need to go through a series of clicks and typing to find that folder, copy it, and rename it. Within the Terminal, this can all be achieved with a single command. This also allows you to have this command written down so you can more easily repeat it later.
+As we've discussed, the Terminal is a command-based interface to a computer operating system. Let's say that you wanted to make a copy of a folder. Whether on Posit Cloud or on Google Drive, you would need to go through a series of clicks and typing to find that folder, copy it, and rename it. Within the Terminal, this can all be achieved with a single command. This also allows you to have this command written down so you can more easily repeat it later.
 
 ### File system example and vocabulary
 

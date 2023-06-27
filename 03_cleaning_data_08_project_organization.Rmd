@@ -93,10 +93,10 @@ Naming and organizing files seems very boring, but it one of the most important 
 
 ### A project organization framework
 
-We will set up data science projects on RStudio Cloud. Open your web browser and navigate to the website [https://rstudio.cloud/](https://rstudio.cloud/).
+We will set up data science projects on Posit Cloud. Open your web browser and navigate to the website [https://posit.cloud/](https://posit.cloud/).
 
 
-![Go to RStudio Cloud](https://docs.google.com/presentation/d/1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70/export/png?id=1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70&pageid=g313ecd4576_0_79)
+![Go to Posit Cloud](https://docs.google.com/presentation/d/1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70/export/png?id=1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70&pageid=g313ecd4576_0_79)
 
 
 Then log in and click on the project *my_first_project*.
@@ -109,7 +109,7 @@ Then log in and click on the project *my_first_project*.
 You should now see a screen that looks like this where there are three windows. The window in the lower right hand corner of the screen is the part that shows all the files you have in your project. Right now there shouldn't be any files since we just created this project in the last lesson but didn't do anything in the project.
 
 
-![The RStudio Cloud interface showing the empty my_first_project](https://docs.google.com/presentation/d/1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70/export/png?id=1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70&pageid=g313ecd4576_0_155)
+![The Posit Cloud interface showing the empty my_first_project](https://docs.google.com/presentation/d/1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70/export/png?id=1jNeIkKjyVenNF5AEqNpspnLuKXSiXbg-I6VC_uy-b70&pageid=g313ecd4576_0_155)
 
 
 

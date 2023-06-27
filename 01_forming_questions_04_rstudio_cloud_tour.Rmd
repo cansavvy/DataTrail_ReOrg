@@ -6,19 +6,19 @@ ottrpal::set_knitr_image_path()
 
 Remember [R](https://www.r-project.org/) is the main software that we are going to use to analyze data in this class. R is one of the two most popular languages for data science. We will learn a lot more about it throughout the courses, but here we are just going to use it to take a peak at the data you have created. R is a piece of software that is used for running computer code. [RStudio](https://www.rstudio.com/) is a company that makes a piece of software that works with R. RStudio makes it easier to create, save, share, and work with R code and data sets. RStudio is also useful for organizing projects and writing, organizing, and sharing your data science work.  
 
-If you have a more traditional laptop you can download and install R and RStudio on your laptop. However, the DataTrail Program will use RStudio through a web-based version of their software called RStudio Cloud.
+If you have a more traditional laptop you can download and install R and RStudio on your laptop. However, the DataTrail Program will use RStudio through a web-based version of their software called Posit Cloud.
 
-### Logging in to RStudio Cloud
+### Logging in to Posit Cloud
 
-To use this software, open your web browser and navigate to the website <a href="https://rstudio.cloud/" target="_blank">RStudio Cloud</a>.
+To use this software, open your web browser and navigate to the website <a href="https://posit.cloud/" target="_blank">Posit Cloud</a>.
 
 
-![Navigate to RStudio Cloud in your web browser](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g2bfdb07292_0_151)
+![Navigate to Posit Cloud in your web browser](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g2bfdb07292_0_151)
 
 You should see a screen that looks like this. You can click the button in the top right to log in.
 
 
-![Log in to RStudio Cloud](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_1)
+![Log in to Posit Cloud](https://docs.google.com/presentation/d/1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig/export/png?id=1biGNswdBbE9iEzbIBsVT0anGcDXnI1UhZM1l165ixig&pageid=g313d649b28_0_1)
 
 When you click _Log In_ you will be offered options for Logging in, for our class you will log in with your Google Account so click on that option.
 
@@ -46,7 +46,7 @@ To get started working on a new project, click on the "New Project" blue icon to
 
 By starting a new project you'll be brought to a screen where three spaces are available.
 
-![RStudio Cloud Project](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_10)
+![Posit Cloud Project](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_10)
 
 If you click on the name of the project - currently it will be _Untitled Project_ - then you can rename it.
 
@@ -76,7 +76,7 @@ If you want to return to your original space, click again in the top left hand o
 ### The Tour
 
 Now that we have a project. Return to your `my_first_project` so we can get oriented to the RStudio space.
-We will go through each of the regions and describe some of their main functions, so follow along with each step and make sure you understand the function and how to access each part of RStudio Cloud on your own. But, it would be impossible to cover everything that RStudio can do, so we urge you to explore RStudio Cloud further on your own too!
+We will go through each of the regions and describe some of their main functions, so follow along with each step and make sure you understand the function and how to access each part of Posit Cloud on your own. But, it would be impossible to cover everything that RStudio can do, so we urge you to explore Posit Cloud further on your own too!
 
 To access the fourth space shown in the figure below, you'll have to start a new file. To do so, you'll click on File, hover over New File from the drop-down menu that appears, and then click "R Script" from the drop-down menu.
 
@@ -137,7 +137,7 @@ Alternatively, to run code, with your cursor on the line of code you'd like to r
 
 </div>
 
-What this code does is create an object (we'll define what that is soon!) called 'example' that has the numbers 1 through 8 in four different rows and two different columns. To see what this object looks like, we'll take a look at the environment quadrant of RStudio Cloud.
+What this code does is create an object (we'll define what that is soon!) called 'example' that has the numbers 1 through 8 in four different rows and two different columns. To see what this object looks like, we'll take a look at the environment quadrant of Posit Cloud.
 
 #### Environment (& History)
 
@@ -151,7 +151,7 @@ Then, just click anywhere on the "example" line, and a new tab on the Source qua
 
 ![Your newly made object, opened in a new tab of the source panel](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g39ceb1e717_0_0)
 
-RStudio Cloud also tells you some information about the object in the environment, like whether it is a list or a data frame or if it contains numbers, integers or characters. This is very helpful information to have as some functions only work with certain classes of data. We'll get into the details of all this later, but for now, knowing that this information is in the Environment tab is enough.
+Posit Cloud also tells you some information about the object in the environment, like whether it is a list or a data frame or if it contains numbers, integers or characters. This is very helpful information to have as some functions only work with certain classes of data. We'll get into the details of all this later, but for now, knowing that this information is in the Environment tab is enough.
 
 The quadrant has two other tabs running across the top of it. We'll just look at the History tab now. Your history tab should look something like this:
 
@@ -176,7 +176,7 @@ Now that you've created a script with code in it, you likely want to save it. To
 
 ![Save Icon](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_256)
 
-In RStudio Cloud this will open a Save File window.
+In Posit Cloud this will open a Save File window.
 
 ![Save File Window](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g39ceb1e717_0_6)
 
@@ -199,11 +199,11 @@ To move in and out of folders, you can click on folder names in the `Files` pane
 
 #### Files
 
-You can also see where this file is saved using the fourth and final quadrant in RStudio Cloud that we'll discuss. In this final quadrant you'll see five tabs: Files, Plots, Packages, Help, and Viewer.
+You can also see where this file is saved using the fourth and final quadrant in Posit Cloud that we'll discuss. In this final quadrant you'll see five tabs: Files, Plots, Packages, Help, and Viewer.
 
 ![Files, Plots, Packages, Help, Viewer](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_286)
 
-In Files, you can see everything in your RStudio Cloud project by moving around. You should now be able to see the data folder you just created.
+In Files, you can see everything in your Posit Cloud project by moving around. You should now be able to see the data folder you just created.
 
 ![code directory in Files tab](https://docs.google.com/presentation/d/17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4/export/png?id=17gq_-4nXwZRznS6OVxCwcZ6uYI_ym5mrO_3oNqqNFk4&pageid=g37c1046666_0_291)
 
@@ -294,4 +294,4 @@ After this, you will be shown a list of courses. The list will be longer than wh
 
 Note that for each quiz question you complete in `swirl`, upon completion, you'll receive a code. This code is to be entered as the answer to the quiz question on Leanpub.
 
-That's a basic introduction to using `swirl`. You'll have lots of quiz questions that require you to use swirl in this course, so be sure to walk through this introduction on RStudio Cloud now and get comfortable navigating within swirl.
+That's a basic introduction to using `swirl`. You'll have lots of quiz questions that require you to use swirl in this course, so be sure to walk through this introduction on Posit Cloud now and get comfortable navigating within swirl.

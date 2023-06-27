@@ -3,7 +3,7 @@ ottrpal::set_knitr_image_path()
 ```
 # Finding Data
 
-Now that we know what data are, how to work with them in RStudio Cloud, and how to get them *into* RStudio Cloud, if you have a question you want to answer with data, where do you find data to work with? In some cases you'll have to create your own data set but in other cases you can find data that others have already generated and start from there! In this lesson, we'll discuss the difference between public and private data and direct you to a number of resources where you can find helpful data sets for data science projects!
+Now that we know what data are, how to work with them in Posit Cloud, and how to get them *into* Posit Cloud, if you have a question you want to answer with data, where do you find data to work with? In some cases you'll have to create your own data set but in other cases you can find data that others have already generated and start from there! In this lesson, we'll discuss the difference between public and private data and direct you to a number of resources where you can find helpful data sets for data science projects!
 
 ### Public versus Private Data
 

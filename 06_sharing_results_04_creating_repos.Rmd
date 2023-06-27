@@ -34,7 +34,7 @@ When you are satisfied with these settings, click the "Create repository" button
 
 ![Setting up a new repository](https://docs.google.com/presentation/d/1Dxf8VZi4RAf4BA8Xb__gbnTxFLIJKM-mxSy_BMA48DU/export/png?id=1Dxf8VZi4RAf4BA8Xb__gbnTxFLIJKM-mxSy_BMA48DU&pageid=g38bb68a530_0_8)
 
-And you're done! You will be taken to a page that looks as below. This page contains information about the commands that will be useful when adding files to your repository later on. We will cover the use of these commands from RStudio Cloud in subsequent lessons.
+And you're done! You will be taken to a page that looks as below. This page contains information about the commands that will be useful when adding files to your repository later on. We will cover the use of these commands from Posit Cloud in subsequent lessons.
 
 
 ![Landing page](https://docs.google.com/presentation/d/1Dxf8VZi4RAf4BA8Xb__gbnTxFLIJKM-mxSy_BMA48DU/export/png?id=1Dxf8VZi4RAf4BA8Xb__gbnTxFLIJKM-mxSy_BMA48DU&pageid=g38bb68a530_0_19)

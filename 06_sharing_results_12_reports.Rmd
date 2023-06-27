@@ -169,7 +169,7 @@ The citation(s) selected will then appear in a new window. Copy this text. Note 
 
 ![Copy text for BibTeX citation](https://docs.google.com/presentation/d/1PNjgIQasekfNYkeEFj81LtsodKA4Yj2iKUCLjEcPO2A/export/png?id=1PNjgIQasekfNYkeEFj81LtsodKA4Yj2iKUCLjEcPO2A&pageid=g3d92f6b52e_0_145)
 
-Then, return to RStudio Cloud and click on "File" > "New File" > "Text File".
+Then, return to Posit Cloud and click on "File" > "New File" > "Text File".
 
 
 ![Open a new text file](https://docs.google.com/presentation/d/1PNjgIQasekfNYkeEFj81LtsodKA4Yj2iKUCLjEcPO2A/export/png?id=1PNjgIQasekfNYkeEFj81LtsodKA4Yj2iKUCLjEcPO2A&pageid=g3d92f6b52e_0_151)
@@ -262,7 +262,7 @@ While this analysis is simpler than most analyses you'll likely be doing, we're 
 
 ![Full reports contain more details but still tell a story](https://docs.google.com/presentation/d/1PNjgIQasekfNYkeEFj81LtsodKA4Yj2iKUCLjEcPO2A/export/png?id=1PNjgIQasekfNYkeEFj81LtsodKA4Yj2iKUCLjEcPO2A&pageid=g3d92f6b52e_0_70)
 
-Note: The code used to generate these reports can be viewed on RStudio Cloud [here](https://rstudio.cloud/spaces/2721/join?access_code=FJyfB5pL5GXnYTuRjFJD5BO5prpfPiMSf3%2F7OfO3).
+Note: The code used to generate these reports can be viewed on Posit Cloud [here](https://posit.cloud/spaces/2721/join?access_code=FJyfB5pL5GXnYTuRjFJD5BO5prpfPiMSf3%2F7OfO3).
 
 ### Summary
 

@@ -18,7 +18,7 @@ Through the completion of this section our goal is that you will be able to:
 - Value the importance of making your analyses reproducible
 - Understand the importance of version control
 - Navigate GitHub comfortably
-- Create a GitHub repository and link it to RStudio Cloud
+- Create a GitHub repository and link it to Posit Cloud
 - Use the basic git command to version control an analysis
 - Recognize the different methods available for communicating data science results
 - Create a data analysis results report including all the important components

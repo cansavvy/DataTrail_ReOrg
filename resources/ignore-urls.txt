@@ -7,3 +7,4 @@ https://username.github.io/
 https://github.com/your_username/newproject/
 https://github.com/your_username/newproject.git
 https://github.com/username/username.github.com.git
+http://cran.us.r-project.org)	

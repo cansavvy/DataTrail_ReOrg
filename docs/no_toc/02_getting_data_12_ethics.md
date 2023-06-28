@@ -248,11 +248,11 @@ When you sign up for an app on your computer or phone, you likely provide that c
 
 To review from the last lesson, when data are [encrypted](https://en.wikipedia.org/wiki/Encryption), all the information is jumbled into a code that can only be decoded by someone who has the key. This means that if data are intercepted while being transferred, the person who has intercepted the data will not be able to understand the data, as they won't have access to the key and will only have the completely jumbled information. It is a security measure to help keep data safe.
 
-#### Working in RStudio Cloud
+#### Working in Posit Cloud
 
-In earlier lessons, you've been working in RStudio Cloud and will continue to do so as your hone your data science skills. Data on RStudio Cloud are encrypted at rest (when they're sitting in your project) and in transit (when they're being uploaded or downloaded). This means that, if intercepted, the person who has intercepted the data will not be able to decipher the information contained, as they don't have the key.
+In earlier lessons, you've been working in Posit Cloud and will continue to do so as your hone your data science skills. Data on Posit Cloud are encrypted at rest (when they're sitting in your project) and in transit (when they're being uploaded or downloaded). This means that, if intercepted, the person who has intercepted the data will not be able to decipher the information contained, as they don't have the key.
 
-However, if you download data from RStudio Cloud and store them directly on your computer, they are no longer encrypted. If you have PII in a dataset that is stored on your laptop directly, that information is not protected. So, be careful working with datasets that contain PII that have been downloaded to your computer.
+However, if you download data from Posit Cloud and store them directly on your computer, they are no longer encrypted. If you have PII in a dataset that is stored on your laptop directly, that information is not protected. So, be careful working with datasets that contain PII that have been downloaded to your computer.
 
 #### HTTPS
 

@@ -47,7 +47,7 @@ df <- msleep
 
 Generally, the first thing you'll want to know about your dataset is how many observations and how many variables you're working with. You'll want to understand the size of your dataset.
 
-You can always look at the Environment tab in RStudio Cloud to see how many observations and variables there are in your dataset; however, once you have many objects, you'll have to scroll through or search this list to find the information you're looking for.
+You can always look at the Environment tab in Posit Cloud to see how many observations and variables there are in your dataset; however, once you have many objects, you'll have to scroll through or search this list to find the information you're looking for.
 
 
 ![Environment tab](https://docs.google.com/presentation/d/1sDojkPrY2T5_qwT2bLD-8DRGcUHie1N9I95e6U2Jimc/export/png?id=1sDojkPrY2T5_qwT2bLD-8DRGcUHie1N9I95e6U2Jimc&pageid=g3da41bd16a_0_5)

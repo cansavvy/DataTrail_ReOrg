@@ -29,7 +29,7 @@ Having this minimum age variable stored in an object can be useful later if we h
 
 ### Printing objects
 
-Often we will want to print the contents of an object to see the information it contains. We can do this by clicking in the Console in RStudio Cloud (bottom left corner). The **R prompt** is indicated by the `>` in the Console. This indicates that R is ready to accept a command from you. If we simply enter the number 21 at the R prompt, the 21 object will be printed, but you will not see an object come up under the **Environment** pane (top right corner).
+Often we will want to print the contents of an object to see the information it contains. We can do this by clicking in the Console in Posit Cloud (bottom left corner). The **R prompt** is indicated by the `>` in the Console. This indicates that R is ready to accept a command from you. If we simply enter the number 21 at the R prompt, the 21 object will be printed, but you will not see an object come up under the **Environment** pane (top right corner).
 
 ```text
 > 21

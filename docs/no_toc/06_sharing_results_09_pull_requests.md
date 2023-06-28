@@ -39,13 +39,13 @@ Pull requests are a great way to contribute to projects that are being worked on
 
 ### Forking a repo
 
-Now let's talk about how to make a pull request. The first thing that you will need to do is to create a "fork" of the repository you want to edit. This is a little different than "cloning" which you learned about in an earlier lesson. When you clone a repository you are just getting a copy of the project on RStudio Cloud. You are not creating a new version that you can work on.
+Now let's talk about how to make a pull request. The first thing that you will need to do is to create a "fork" of the repository you want to edit. This is a little different than "cloning" which you learned about in an earlier lesson. When you clone a repository you are just getting a copy of the project on Posit Cloud. You are not creating a new version that you can work on.
 
 
-![Cloning a project just gets you a copy on RStudio Cloud](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f67d7bde_0_114)
+![Cloning a project just gets you a copy on Posit Cloud](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f67d7bde_0_114)
 
 
-When you fork a repo, something different happens. First a new repo is created under your account on GitHub. You can then clone that copy to your computer. Now when you make edits to the files on RStudio Cloud and push them, they will be pushed to your fork.
+When you fork a repo, something different happens. First a new repo is created under your account on GitHub. You can then clone that copy to your computer. Now when you make edits to the files on Posit Cloud and push them, they will be pushed to your fork.
 
 
 ![Forking a repo makes a copy on GitHub that you can push and pull from](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f67d7bde_0_124)
@@ -70,17 +70,17 @@ You will see now that you have your own version of the `newproject` repository o
 ![You now have a forked copy of the repo](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f6e5b9b9_0_11)
 
 
-Now that you have a copy of this repository on your GitHub account, you can clone it to RStudio Cloud as we learned about in a previous lesson. You can clone it by navigating to the terminal in your RStudio Cloud account and typing the command
+Now that you have a copy of this repository on your GitHub account, you can clone it to Posit Cloud as we learned about in a previous lesson. You can clone it by navigating to the terminal in your Posit Cloud account and typing the command
 
 ```text
 git clone https://github.com/your_username/newproject.git
 ```
 
 
-![Go to RStudio Cloud and find the terminal in your project, and use the git clone command to get your fork](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f6e5b9b9_0_16)
+![Go to Posit Cloud and find the terminal in your project, and use the git clone command to get your fork](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f6e5b9b9_0_16)
 
 
-where you replace `your_username` with your GitHub username. This should create a folder on your RStudio Cloud account called `newproject`. You may have to enter your username and password.
+where you replace `your_username` with your GitHub username. This should create a folder on your Posit Cloud account called `newproject`. You may have to enter your username and password.
 
 
 ![You may have to use your username and password to clone](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f6e5b9b9_0_21)
@@ -89,7 +89,7 @@ where you replace `your_username` with your GitHub username. This should create 
 Now you have successfully "forked" and "cloned" the `newproject` repository.
 
 
-![Once you have cloned, you have your forked repo on RStudio Cloud](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f6e5b9b9_0_26)
+![Once you have cloned, you have your forked repo on Posit Cloud](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f6e5b9b9_0_26)
 
 
 
@@ -154,10 +154,10 @@ git commit -m "I edited myfile.Rmd to use glimpse() to summarize the cars data"
 ```
 
 
-![Use git commit to save a version of your files on RStudio Cloud](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f6e5b9b9_0_46)
+![Use git commit to save a version of your files on Posit Cloud](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f6e5b9b9_0_46)
 
 
-Now you will have saved the file on RStudio Cloud, but you still need to make the change to your fork of the repo. To do this we need to use the `git push` command.
+Now you will have saved the file on Posit Cloud, but you still need to make the change to your fork of the repo. To do this we need to use the `git push` command.
 
 ```text
 git push
@@ -176,7 +176,7 @@ You might be asked to input your username and password for GitHub to make this p
 
 ### Sending a pull request
 
-Now you have successfully forked _jtleek_'s `newproject` repo, cloned it to RStudio Cloud and made some edits. You have added, committed, and pushed those changes to your own fork. The next step is to send a pull request to the user who created the original repo. To do this you should go to the website with your fork. Now you can click on the "Pull requests" tab for your repo.
+Now you have successfully forked _jtleek_'s `newproject` repo, cloned it to Posit Cloud and made some edits. You have added, committed, and pushed those changes to your own fork. The next step is to send a pull request to the user who created the original repo. To do this you should go to the website with your fork. Now you can click on the "Pull requests" tab for your repo.
 
 
 ![Click on the pull requests tab for your forked repo](https://docs.google.com/presentation/d/1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM/export/png?id=1rAdjBMcFWTOfvlxLyq9RATYLuO6gH8kq5mMLGS4bzzM&pageid=g37f6e5b9b9_0_61)

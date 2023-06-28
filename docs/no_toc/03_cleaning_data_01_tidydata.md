@@ -185,5 +185,5 @@ To address this, these data can be split into two different spreadsheets, one fo
 - [Hadley Wickham's paper on Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
 - [Data Organization in Spreadsheets](https://peerj.com/preprints/3183/)
 - [How to Share Data for Collaboration](https://doi.org/10.7287/peerj.preprints.3139v5)
-- [Data Carpentry's Data Organization in Spreadsheets](http://www.datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/)
+- [Data Carpentry's Data Organization in Spreadsheets](http://www.datacarpentry.org/spreadsheet-ecology-lesson/)
 - [Karl Broman's Data Organization blog post](http://kbroman.org/dataorg/)

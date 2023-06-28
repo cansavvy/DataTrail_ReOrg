@@ -77,7 +77,7 @@ other-accounts-setup
 linkedin-account
 twitter-account
 basecamp-account
-rstudio-cloud-account
+posit-cloud-account
 remote-work-and-task-management
 goals-for-working-remotely
 how-to-be-healthy
@@ -129,7 +129,7 @@ the-mindset
 the-path
 asking-for-help
 rstudio-and-projects
-logging-in-to-rstudio-cloud
+logging-in-to-posit-cloud
 creating-a-new-project
 the-tour
 the-menu-bar
@@ -152,7 +152,7 @@ learning-objectives-1
 what-is-r
 introduction-to-r
 rstudio
-rstudio-cloud
+posit-cloud
 basic-history
 learning-r
 objects-in-r
@@ -202,7 +202,7 @@ additional-community-resources
 managing-files
 managing-files-in-r
 why-manage-files-in-r
-navigating-to-r-in-rstudio-cloud
+navigating-to-r-in-posit-cloud
 important-functions
 what-is-my-working-directory
 set-the-working-directory
@@ -266,13 +266,13 @@ dataset-file-types
 tabular-data-files
 csv-files
 downloading-csv-files
-reading-files-into-rstudio-cloud
-writing-csv-files-into-rstudio-cloud
+reading-files-into-posit-cloud
+writing-csv-files-into-posit-cloud
 excel-files
-reading-excel-files-into-rstudio-cloud
+reading-excel-files-into-posit-cloud
 text-files
-reading-tsv-files-into-rstudio-cloud
-reading-txt-files-into-rstudio-cloud
+reading-tsv-files-into-posit-cloud
+reading-txt-files-into-posit-cloud
 exporting-data-in-r-to-csv
 special-r-data-files
 saved-r-objects-.rda-.rdata
@@ -331,7 +331,7 @@ data-privacy
 what-is-data-privacy
 personally-identifiable-information
 what-is-encryption
-working-in-rstudio-cloud
+working-in-posit-cloud
 https
 human-security
 computer-security
@@ -823,7 +823,7 @@ creating-an-issue
 setting-up-a-project-on-github
 setting-up-a-github-repository
 creating-a-new-project-from-a-github-repository
-pushing-local-changes-to-the-remote-repository-in-rstudio-cloud
+pushing-local-changes-to-the-remote-repository-in-posit-cloud
 pull-requests
 what-is-a-pull-request
 forking-a-repo

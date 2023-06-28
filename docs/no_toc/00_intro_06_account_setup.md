@@ -25,7 +25,7 @@ To give you an idea of where we're going, the first account (and arguably the mo
 *  <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> - this is a site to share information about yourself with employers.
 *  <a href="https://twitter.com" target="_blank">Twitter</a> - this is a social media site that we will use to share our data science products and get support from the data science community.
 *  <a href="https://Basecamp.com/" target="_blank">Basecamp</a> - this is a website where you will be able to chat online with your fellow students and instructors.
-*  <a href="https://rstudio.cloud/" target="_blank">RStudio Cloud</a> - this is a website where you can use Rstudio, the main tool to learn data science.
+*  <a href="https://posit.cloud/" target="_blank">Posit Cloud</a> - this is a website where you can use Rstudio, the main tool to learn data science.
 *  <a href="https://github.com" target="_blank">GitHub</a> - this is a website where we will share the results of our data science projects with each other and the world.
 
 
@@ -396,23 +396,23 @@ Choose "Sign in with Google".
 
 We won't be signing into any workspaces yet; however, later in the program, when we do, you will have an account! That's all you need to do with Basecamp for now!
 
-### RStudio Cloud Account
+### Posit Cloud Account
 
-As a data scientist A LOT of your work will be done in something called RStudio. In this program, you will be learning the basics of the programming language, R. R is a free programming language for statistical computing and graphics. In other words, the code you write to work with data will all be done in R. RStudio Cloud is the place (or 'platform') where you will type this code and make basic plots.
+As a data scientist A LOT of your work will be done in something called RStudio. In this program, you will be learning the basics of the programming language, R. R is a free programming language for statistical computing and graphics. In other words, the code you write to work with data will all be done in R. Posit Cloud is the place (or 'platform') where you will type this code and make basic plots.
 
-Luckily, RStudio Cloud makes it easy to sign up. You will first go to ['rstudio.cloud'](https://rstudio.cloud/). Note: This web address does not start with 'www.'
+Luckily, Posit Cloud makes it easy to sign up. You will first go to ['posit.cloud'](https://posit.cloud/). Note: This web address does not start with 'www.'
 
 
-![rstudio.cloud web address](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_309)
+![posit.cloud web address](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_309)
 
 This will bring you to a screen where you can click on 'Get Started.' This will bring you to a login screen where, instead of typing in your information, since you already have a Google account, just click on 'Sign up with Google.'
 
 
-![rstudio.cloud sign up with Google](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_279)
+![posit.cloud sign up with Google](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_279)
 
 You will be prompted to choose which Google account you want to use. Choose your professional Google account. Then, you will be brought to a screen where you will have to enter a username. Again, for simplicity, try to use the same username across all accounts.
 
 
-![rstudio.cloud choose account](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_286)
+![posit.cloud choose account](https://docs.google.com/presentation/d/1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A/export/png?id=1NbqkwyE9f4__0uTHWiVDoZaVfb_sMqJw4LTNcvsVw3A&pageid=g2dda3343d9_0_286)
 
-Then, click 'Create Account' and you're all set! You now have an RStudio Cloud account!
+Then, click 'Create Account' and you're all set! You now have an Posit Cloud account!

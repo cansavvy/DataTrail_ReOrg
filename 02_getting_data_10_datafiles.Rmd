@@ -38,19 +38,19 @@ If you entered the same values used above into Google Slides first and wanted to
 ![Download as CSV file](https://docs.google.com/presentation/d/199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM/export/png?id=199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM&pageid=g399e5a917a_0_56)
 
 
-### Reading files into RStudio Cloud
+### Reading files into Posit Cloud
 
-Now that you have a CSV file, let's discuss how to get it into RStudio Cloud! Log in to your RStudio Cloud account. Create a new project. On the RStudio workspace that you see, click on *Upload* under *Files* on the bottom right corner of the screen. On the window that pops up click on *Choose File*.
+Now that you have a CSV file, let's discuss how to get it into Posit Cloud! Log in to your Posit Cloud account. Create a new project. On the RStudio workspace that you see, click on *Upload* under *Files* on the bottom right corner of the screen. On the window that pops up click on *Choose File*.
 
 
-![Upload a file on RStudio Cloud](https://docs.google.com/presentation/d/199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM/export/png?id=199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM&pageid=g399e5a917a_0_10)
+![Upload a file on Posit Cloud](https://docs.google.com/presentation/d/199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM/export/png?id=199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM&pageid=g399e5a917a_0_10)
 
-Now, find where you saved the file (for instance "Downloads") and click on *OPEN*. After this, the window closes automatically and you'll be back in your workspace on RStudio Cloud. You will see that your CSV file now appears among other files. (A reminder: if you were working on a data science project, this would go in your "raw_data" directory. For this example, however, we'll keep it in "cloud/project")
+Now, find where you saved the file (for instance "Downloads") and click on *OPEN*. After this, the window closes automatically and you'll be back in your workspace on Posit Cloud. You will see that your CSV file now appears among other files. (A reminder: if you were working on a data science project, this would go in your "raw_data" directory. For this example, however, we'll keep it in "cloud/project")
 
 
 ![Find local file](https://docs.google.com/presentation/d/199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM/export/png?id=199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM&pageid=g399e5a917a_0_1)
 
-Now, while the file has now been uploaded to your RStudio Cloud project, it's important to recognize the file is not yet imported to your R environment as an object. We'll do that now!
+Now, while the file has now been uploaded to your Posit Cloud project, it's important to recognize the file is not yet imported to your R environment as an object. We'll do that now!
 
 The best way to accomplish this is using the function `read_csv()` from the `readr` package. (Note, if you haven't installed the `readr` package, you'll have to do that first.) Inside the parenthesis of the function, write the name of the file in quotes, including the file extension (.csv). Make sure you type the exact file name. Save the imported data in a data frame called `df_csv`. Your data will now be imported into R environment. If you use the command `head(df_csv)` you will see the first several rows of your imported data frame:
 
@@ -82,7 +82,7 @@ For example, if you need to read in a **TSV** file, you can use `read_tsv()` fun
 
 **Note** that there *is* a function `read.csv` which is available by default in R. It's not quite as nice to use, but you will likely see this function in others' code, so we just want to make sure you're aware of it.
 
-### Writing CSV files into RStudio Cloud
+### Writing CSV files into Posit Cloud
 
 The `readr` family of functions also includes _writing_ functions.
 
@@ -103,16 +103,16 @@ write_csv(iris, "iris_data.csv")
 
 ### Excel files
 
-While CSV files hold plain text as a series of values separated by commas, an Excel (or .xls or .xlsx) file holds information in a workbook that comprises both values and formatting (colors, conditional formatting, font size, etc.). You can think of Excel files a fancier CSV file. While this may sound appealing, we'll remind you that CSV files can be read by many different pieces of software, Excel files can only be viewed in specific pieces of software, and thus are generally less flexible. That said, many people save their data in Excel, so it's important to know how to work with them in RStudio Cloud.
+While CSV files hold plain text as a series of values separated by commas, an Excel (or .xls or .xlsx) file holds information in a workbook that comprises both values and formatting (colors, conditional formatting, font size, etc.). You can think of Excel files a fancier CSV file. While this may sound appealing, we'll remind you that CSV files can be read by many different pieces of software, Excel files can only be viewed in specific pieces of software, and thus are generally less flexible. That said, many people save their data in Excel, so it's important to know how to work with them in Posit Cloud.
 
 Let's go back to the Google Sheet that we created and instead of downloading the file locally as as CSV, download it as *Microsoft Excel (.xlsx)* file.
 
 
 ![Download as Excel file](https://docs.google.com/presentation/d/199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM/export/png?id=199w7E8ggb0nrf40A7WvVIYmNKJdVbUkcWpgnLBysZzM&pageid=g399e5a917a_0_33)
 
-Save the file where you can find it. Similar to the CSV file, first, upload the file into your RStudio Cloud workspace.
+Save the file where you can find it. Similar to the CSV file, first, upload the file into your Posit Cloud workspace.
 
-### Reading Excel files into RStudio Cloud
+### Reading Excel files into Posit Cloud
 
 To read this file into R, we'll have to use a different function than above, as this file is not a CSV file. We'll use the `read_excel()` function from the `readxl` package. Install the package first and then use the function `read_excel()` from the package read the Excel file into your R Environment. As above, by default, `read_excel()` converts blank cells to missing data (NA).
 
@@ -135,7 +135,7 @@ head(df_excel)
 Another common form of data is text files that usually come in the form of TXT or TSV file formats. Like CSVs, text files are simple, plain-text files; however, rather than columns being separated by commas, they are separated by tabs (represented by "\t" in plain-text). Like CSVs, they don't allow text formatting (i.e. text colors in cells) and are able to be opened on many different software platforms. This makes them good candidates for storing data.
 
 
-### Reading TSV files into RStudio Cloud
+### Reading TSV files into Posit Cloud
 
 The process for reading these files into R is similar to what you've seen so far. We'll again use the `readr` package, but we'll instead use the `read_tsv()` function.
 
@@ -148,11 +148,11 @@ df_tsv <- read_tsv("sample_data - Sheet1.tsv")
 head(df_tsv)
 ```
 
-### Reading TXT files into RStudio Cloud
+### Reading TXT files into Posit Cloud
 
 Sometimes, tab-separated files are saved with the .txt file extension. TXT files can store tabular data, but they can also store simple text. Thus, while TSV is the more appropriate extension for tabular data that are tab-separated, you'll often run into tabular data that individuals have saved as a TXT file. In these cases, you'll want to use the more generic `read_delim()` function from `readr`.
 
-Google Sheets does not allow tab-separated files to be downloaded with the .txt file extension (since .tsv is more appropriate); however, if you were to have a file "sample_data.txt" uploaded into your RStudio Cloud project, you could use the following code to read it into your R Environment, where "\t" specifies that the file is tab-delimited.
+Google Sheets does not allow tab-separated files to be downloaded with the .txt file extension (since .tsv is more appropriate); however, if you were to have a file "sample_data.txt" uploaded into your Posit Cloud project, you could use the following code to read it into your R Environment, where "\t" specifies that the file is tab-delimited.
 
 ```r
 ## read TXT into R
@@ -217,7 +217,7 @@ save(mpg, cyl, file="mtcars_objects.rda")
 
 The syntax for `save` requires you to specify the objects you want to save, separated by commas. Then, the filename you want this R data file to have is specified using the `file=` argument. When this line of code is run, the specified file (here, `mtcars_objects.rda`) appears in the Files tab within RStudio, demonstrating that this file has been created.
 
-If in the future, if you were to want to load the objects `mpg` and `cyl` back into your R session, you would do this using `load()`. To do that here, we'll first have to remove these objects from RStudio. To accomplish this, click on the broom in the Environment tab of RStudio Cloud.  
+If in the future, if you were to want to load the objects `mpg` and `cyl` back into your R session, you would do this using `load()`. To do that here, we'll first have to remove these objects from RStudio. To accomplish this, click on the broom in the Environment tab of Posit Cloud.  
 
 
 ![broom icon removes all objects from R session](https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&pageid=g3c53e17c93_1_61)
@@ -278,9 +278,9 @@ Unlike with .rda objects, when you read a .rds object back in, to make the objec
 
 #### R Project files (.Rproj)
 
-R Projects are incredibly helpful files. In their simplest form, by working within an R Project and saving an .Rproj file, you are always able to pick back up on a project from where you left off. Fortunately, RStudio Cloud uses R projects automatically. You may have noticed that there is a "project.Rproj" file in your Files tab. This is an R Project file.
+R Projects are incredibly helpful files. In their simplest form, by working within an R Project and saving an .Rproj file, you are always able to pick back up on a project from where you left off. Fortunately, Posit Cloud uses R projects automatically. You may have noticed that there is a "project.Rproj" file in your Files tab. This is an R Project file.
 
-RStudio Cloud will start a "project.Rproj" file within each project you start. This file will then track your project as you write code and create objects.
+Posit Cloud will start a "project.Rproj" file within each project you start. This file will then track your project as you write code and create objects.
 
 
 ![R Project files](https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&pageid=g3c53e17c93_1_116)
@@ -300,7 +300,7 @@ Then, when you leave to work on a different project, your .RData will be saved a
 
 ### Datasets in R
 
-Now that we've covered the main types of R files you'll be working with and generating in RStudio, we'll move on to formally discussing the datasets available within R and RStudio/RStudio Cloud.
+Now that we've covered the main types of R files you'll be working with and generating in RStudio, we'll move on to formally discussing the datasets available within R and RStudio/Posit Cloud.
 
 You've previously seen and worked with datasets that are available to you in R. Specifically, you've seen examples that used the `iris` and `mtcars` datasets in previous lessons. However, we haven't covered how to find all available datasets that are included in R automatically, so we'll do that now.
 
@@ -315,7 +315,7 @@ To access a list of all the available datasets within R, you'll type `data()` in
  ?Orange
 ```
 
-This opens up an explanation in the Help tab of RStudio Cloud. Here, you can see a description of the dataset and can scroll to see what variables are included in this dataset. Finally, at the bottom of the Help window, you'll see examples of how to work with the dataset!
+This opens up an explanation in the Help tab of Posit Cloud. Here, you can see a description of the dataset and can scroll to see what variables are included in this dataset. Finally, at the bottom of the Help window, you'll see examples of how to work with the dataset!
 
 
 ![`Orange` dataset Help page](https://docs.google.com/presentation/d/1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg/export/png?id=1w7qP4LXwMUv-9mJQZgRdOqMCuUL82z7-rUGk4EoydDg&pageid=g3c53e17c93_1_127)

@@ -8,7 +8,7 @@ ottrpal::set_knitr_image_path()
 
 While you'll frequently be generating R Markdown documents where figures are generated directly as the file is knit, it is nonetheless important to know how to save an image directly. This is helpful when you have to add plots into slide presentations (using Google Slides, for example) or to send a quick update to your team.
 
-In this lesson, we'll discuss how to save plots you've generated in R within RStudio Cloud as images that you can share with others as you need.
+In this lesson, we'll discuss how to save plots you've generated in R within Posit Cloud as images that you can share with others as you need.
 
 ### Image Types
 

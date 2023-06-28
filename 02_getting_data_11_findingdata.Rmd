@@ -3,7 +3,7 @@ ottrpal::set_knitr_image_path()
 ```
 # Finding Data
 
-Now that we know what data are, how to work with them in RStudio Cloud, and how to get them *into* RStudio Cloud, if you have a question you want to answer with data, where do you find data to work with? In some cases you'll have to create your own data set but in other cases you can find data that others have already generated and start from there! In this lesson, we'll discuss the difference between public and private data and direct you to a number of resources where you can find helpful data sets for data science projects!
+Now that we know what data are, how to work with them in Posit Cloud, and how to get them *into* Posit Cloud, if you have a question you want to answer with data, where do you find data to work with? In some cases you'll have to create your own data set but in other cases you can find data that others have already generated and start from there! In this lesson, we'll discuss the difference between public and private data and direct you to a number of resources where you can find helpful data sets for data science projects!
 
 ### Public versus Private Data
 
@@ -147,7 +147,7 @@ There are endless numbers of places on the internet to get data. Above are some 
 - [Open Case Studies](https://www.opencasestudies.org/)
 - [Top 100 Open Source Datasets for Data Science](https://medium.com/analytics-vidhya/top-100-open-source-datasets-for-data-science-cd5a8d67cc3d)
 - [10 Open-Source Dataset Finders For Your Next ML Project](https://towardsdatascience.com/10-open-source-dataset-finders-for-your-next-ml-project-c8d01679160d)
-- [UCI Machine Learning repository](https://archive.ics.uci.edu/ml/datasets.php)
+- [UCI Machine Learning repository](https://archive.ics.uci.edu/ml/datasets)
 - [World Health Organization Datasets](https://www.who.int/data/collections)
 - [Mapping police violence](https://mappingpoliceviolence.us/)
 - [Center for Disease Control Data](https://www.cdc.gov/datastatistics/index.html)

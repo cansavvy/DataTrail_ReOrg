@@ -14,7 +14,7 @@ But, we will also want to practice using version control and getting our project
 1. Follow the `Creating A Repository` steps and subsequent chapters to create a new GitHub repository for this project.
 2. Follow the instructions in `Cloning A Repository` chapter to also clone this project to your RStudio workspace
 3. Work on formulating your data science question -- try to pick a topic you are interested in! You can gain inspiration by browsing some of the open source dataset websites we have discussed in the `Finding Data` chapter.
-4. When you find a dataset and question combo you are interested in, you can feel free to borrow [this R Markdown template to get you started](https://github.com/datatrail-jhu/DataTrail_Projects/blob/main/06_Share_Results/data_project_final.Rmd). You can find this same file in your `DataTrail_Projects` RStudio project.  
+4. When you find a dataset and question combo you are interested in, you can feel free to borrow [this R Markdown template to get you started](https://github.com/datatrail-jhu/DataTrail_Projects/blob/main/06_Sharing_Results/data_project_final.Rmd). You can find this same file in your `DataTrail_Projects` RStudio project.  
 
 ### Your objectives!
 

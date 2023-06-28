@@ -79,11 +79,11 @@ The link to this page on your website will be required in the quiz for this less
 In the last lesson, we set up the skeleton for a project on your website, but we didn't include any content in that project at that time. The goal of this lesson is to fill out that section of your website a little more! We'll start by adding your Final Project analyzing the American Time Use Survey Data for this Course Set as a project on your website here.
 
 
-![Final Project on RStudio Cloud](https://docs.google.com/presentation/d/1iE2IIefyB93TZkQWCZN5FORTj02SvCHZPMoqv6A8ngI/export/png?id=1iE2IIefyB93TZkQWCZN5FORTj02SvCHZPMoqv6A8ngI&pageid=g40b68f6f2d_0_21)
+![Final Project on Posit Cloud](https://docs.google.com/presentation/d/1iE2IIefyB93TZkQWCZN5FORTj02SvCHZPMoqv6A8ngI/export/png?id=1iE2IIefyB93TZkQWCZN5FORTj02SvCHZPMoqv6A8ngI&pageid=g40b68f6f2d_0_21)
 
 This write up should take what you did in your final project and turn it into a detailed but clear blog post format for inclusion on your website.
 
-To get started, return to the project on RStudio Cloud for your `blogdown` website. Navigate in the Files tab to `/cloud/project/content/project`. In here you'll see the `atus-survey.md` file we created in the last lesson.
+To get started, return to the project on Posit Cloud for your `blogdown` website. Navigate in the Files tab to `/cloud/project/content/project`. In here you'll see the `atus-survey.md` file we created in the last lesson.
 
 
 ![`atus-survey.md`](https://docs.google.com/presentation/d/1iE2IIefyB93TZkQWCZN5FORTj02SvCHZPMoqv6A8ngI/export/png?id=1iE2IIefyB93TZkQWCZN5FORTj02SvCHZPMoqv6A8ngI&pageid=g40fa7f7471_0_0)
@@ -124,7 +124,7 @@ A general framework for this project and most analyses blog posts *could* be the
 
 You could choose to use this framework or modify it to best tell the story of your analysis. But, regardless of what sections you include, you want to be sure to **explain why you're doing the analysis** and **what question you'll be answering in this post** in the introduction.
 
-Following this, it's often a good idea to explain **where the data came from** and display the code you used to get the data into RStudio Cloud. The Exploratory Data Analysis section should explain **how you wrangled the data** and maybe show an explanatory plot or two.
+Following this, it's often a good idea to explain **where the data came from** and display the code you used to get the data into Posit Cloud. The Exploratory Data Analysis section should explain **how you wrangled the data** and maybe show an explanatory plot or two.
 
 **How you analyzed the data** should be explained briefly after the data are explained. The Results section is the most important - this should summarize your findings, including figures and tables to guide the reader and help them understand your results.
 

@@ -121,13 +121,13 @@ If you want to "Unpin" or remove an App from your Shelf you should right click o
 
 ### Websites as Chrome Apps
 
-You can actually add any website you want to your shelf, not just the ones that have Chrome Apps. For example, we will be using <a href="https://rstudio.cloud" target="_blank">RStudio Cloud</a> for a lot of the work in this course. There is not a Chrome App for <a href="https://rstudio.cloud" target="_blank">RStudio Cloud</a>. But you can still add this website to your shelf.
+You can actually add any website you want to your shelf, not just the ones that have Chrome Apps. For example, we will be using <a href="https://posit.cloud" target="_blank">Posit Cloud</a> for a lot of the work in this course. There is not a Chrome App for <a href="https://posit.cloud" target="_blank">Posit Cloud</a>. But you can still add this website to your shelf.
 
 You can do this by first navigating to the website you want to add. Then clicking on the three dots in the upper right hand corner of the Chrome Browser. This will open up a menu and you can move your cursor until it hovers over _More Tools_. Then you can move your cursor over _Add to shelf..._ and let go.
 
 
 
-![Navigate to rstudio.cloud, move the cursor over More Tools, then Add to Shelf.](https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&pageid=g39f7d66caf_0_81)
+![Navigate to posit.cloud, move the cursor over More Tools, then Add to Shelf.](https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&pageid=g39f7d66caf_0_81)
 
 
 This should then open up a window where you can name the website you are linking to. Uncheck the box that says _Open as Window_ so that your Chromebook knows this is a website you want to open. Then click _Add_ to put the icon onto your shelf.
@@ -136,10 +136,10 @@ This should then open up a window where you can name the website you are linking
 ![Uncheck Open as Window and click Add to add this website as an app.](https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&pageid=g39f7d66caf_0_95)
 
 
-Once you are done you will see an icon for <a href="https://rstudio.cloud" target="_blank">RStudio Cloud</a> on your shelf so you will be able to quickly navigate to this web app in the future.
+Once you are done you will see an icon for <a href="https://posit.cloud" target="_blank">Posit Cloud</a> on your shelf so you will be able to quickly navigate to this web app in the future.
 
 
-![The rstudio.cloud icon now appears on your shelf.](https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&pageid=g39f7d66caf_0_106)
+![The posit.cloud icon now appears on your shelf.](https://docs.google.com/presentation/d/1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg/export/png?id=1_qk0_j1BDjJXLKW-G436BlxmUw3Wt9sxtlYBwA1eKLg&pageid=g39f7d66caf_0_106)
 
 
 
@@ -444,7 +444,7 @@ This screenshot also will pop up in the lower right hand corner of your screen a
 ### Zooming in and out
 
 
-Another set of useful shortcuts is to zoom your screen in and zoom your screen out. To zoom in, you can hold down `ctrl` and press the key that has the plus and equals on it (near the top right hand side of the keyboard). To zoom out, you can hold the `ctrl` key and press the key with the minus and underscore key on it (near the top right hand side of the keyboard). This will allow you to make the text on websites bigger and smaller to ease reading. For example on the website https://rstudio.cloud/ if you press `ctrl+plus/equals` four times you will zoom in 175%.
+Another set of useful shortcuts is to zoom your screen in and zoom your screen out. To zoom in, you can hold down `ctrl` and press the key that has the plus and equals on it (near the top right hand side of the keyboard). To zoom out, you can hold the `ctrl` key and press the key with the minus and underscore key on it (near the top right hand side of the keyboard). This will allow you to make the text on websites bigger and smaller to ease reading. For example on the website https://posit.cloud/ if you press `ctrl+plus/equals` four times you will zoom in 175%.
 
 
 
@@ -454,7 +454,7 @@ Another set of useful shortcuts is to zoom your screen in and zoom your screen o
 
 ### Finding a word on a page
 
-Sometimes you will need to search a webpage for a specific word or phrase. To do this you can press `ctrl+f` and a box will pop up. You can then search for the specific word, for example we could search for the word "teach" on https://rstudio.cloud/.  
+Sometimes you will need to search a webpage for a specific word or phrase. To do this you can press `ctrl+f` and a box will pop up. You can then search for the specific word, for example we could search for the word "teach" on https://posit.cloud/.  
 
 
 

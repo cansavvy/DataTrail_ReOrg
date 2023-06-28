@@ -11,8 +11,8 @@ The first step in any data science project is to come up with a question. In thi
 
 ### Starting up this project
 
-1. Go to the [DataTrail workspace](https://rstudio.cloud/spaces/3919/join?access_code=RUUQ-eEgKea0oMF7EJy4UePldyBBMu7d0amv2KFC).
-2. Go to the [Data Trail Project list](https://rstudio.cloud/spaces/3919/content/lists/2065).
+1. Go to the [DataTrail workspace](https://posit.cloud/spaces/3919/join?access_code=RUUQ-eEgKea0oMF7EJy4UePldyBBMu7d0amv2KFC).
+2. Go to the [Data Trail Project list](https://posit.cloud/spaces/3919/content/lists/2065).
 3. Go to the `DataTrail_Projects` project in this list. Click on it to start this assignment. For all future projects you will return to this same place to keep working on your projects.
 4. When you first start up your `DataTrail_Project`, you might see some red text about packages loading, but that this is normal. 
 4. For this project, go to the `01_Forming_Questions` folder.

@@ -13,7 +13,7 @@ We have gotten this data downloaded for you from Kaggle.
 
 ### Starting up this project
 
-1. Go to the [DataTrail workspace](https://rstudio.cloud/spaces/3919/join?access_code=RUUQ-eEgKea0oMF7EJy4UePldyBBMu7d0amv2KFC).
+1. Go to the [DataTrail workspace](https://posit.cloud/spaces/3919/join?access_code=RUUQ-eEgKea0oMF7EJy4UePldyBBMu7d0amv2KFC).
 2. Return to your own `DataTrail_Projects` project in RStudio.
 3. For this project, go to the `04_Plot_the_Data` folder.
 4. Click on the file `airbnb_project.Rmd` to open this file.

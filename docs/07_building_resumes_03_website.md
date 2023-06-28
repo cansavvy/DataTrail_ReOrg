@@ -11,9 +11,9 @@ Make sure this repository is public and initialize it with a README.
 
 ![](screenshots/new_repo_pages.png)
 
-2. Go to RStudio cloud.  Open up a new project using the steps to create a project from a GitHub repository. You can see these instructions here to refresh your memory: https://datatrail-jhu.github.io/DataTrail/creating-a-repository.html
+2. Go to Posit Cloud.  Open up a new project using the steps to create a project from a GitHub repository. You can see these instructions here to refresh your memory: https://datatrail-jhu.github.io/DataTrail/creating-a-repository.html
 
-3. In this new RStudio cloud project, create a RMarkdown document.  Save the R Markdown document as the name "index.Rmd" and put it in a folder called "docs". This is important for publishing purposes!
+3. In this new Posit Cloud project, create a RMarkdown document.  Save the R Markdown document as the name "index.Rmd" and put it in a folder called "docs". This is important for publishing purposes!
 
 4. Put the content you want on the website in this RMarkdown. You might want to use a template like this:
 
@@ -63,7 +63,7 @@ https://username.github.io/
 
 In this lesson, now that you have these skills and are more comfortable, we'll update the look of your website using the `blogdown` package. In this lesson, we'll cover both how to add more information to your website and how to make it more professional. In doing this, we'll provide examples from others' websites. We hope that by the end of this lesson you'll have a website is helpful to those interested in hiring you!
 
-This will be a long lesson, but it will be worth it. Go through each step in RStudio Cloud as you read through the lesson to update your professional website!
+This will be a long lesson, but it will be worth it. Go through each step in Posit Cloud as you read through the lesson to update your professional website!
 
 ### Blogdown
 
@@ -77,14 +77,14 @@ Simply though, `blogdown` allows users to generate **static websites**. This mea
 
 ### Getting Started
 
-In an earlier chapter, you developed a basic website within RStudio Cloud. At the end of that lesson, you had a website that looked something like this:
+In an earlier chapter, you developed a basic website within Posit Cloud. At the end of that lesson, you had a website that looked something like this:
 
 
 ![basic personal website](https://docs.google.com/presentation/d/1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70/export/png?id=1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70&pageid=g3f121d3764_0_164)
 
 It contained some basic information about you and had information about where to contact you; however, it was *pretty* basic and not very visually appealing. In this lesson, we'll improve both the content and look of your personal website.
 
-To get started, create a new project in RStudio Cloud! Once you've got a new project, you'll want to run the following code **in the R Console** to install blogdown and start a new site. (Note: it may take a few minutes for this code to run and for all the dependencies to install.)
+To get started, create a new project in Posit Cloud! Once you've got a new project, you'll want to run the following code **in the R Console** to install blogdown and start a new site. (Note: it may take a few minutes for this code to run and for all the dependencies to install.)
 
 ```r
 ## install packages
@@ -423,7 +423,7 @@ After these changes are saved, your Recent Posts section of your website should 
 
 ![Welcome post preview](https://docs.google.com/presentation/d/1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70/export/png?id=1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70&pageid=g3f121d3764_0_295)
 
-The last thing we'll note is the following. When you *are* ready to write a blog post, you'll want to use the "New Post" Add-in. To find this, click on "Addins" in RStudio Cloud. Then select "New Post" from the drop-down menu.
+The last thing we'll note is the following. When you *are* ready to write a blog post, you'll want to use the "New Post" Add-in. To find this, click on "Addins" in Posit Cloud. Then select "New Post" from the drop-down menu.
 
 
 ![New Post](https://docs.google.com/presentation/d/1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70/export/png?id=1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70&pageid=g40f38df3d0_0_196)
@@ -495,18 +495,18 @@ Recent posts will now be displayed *after* projects on your website:
 
 ### Deployment
 
-Your website is now ready for prime time. The only problem is it's only visible on *your* RStudio Cloud project. So, we have to **deploy** your website. There are a number of different ways to do this, but we're going to use the workflow with which we're most familiar: GitHub Pages. This is how your website is currently deployed. Your current website is hosted on GitHub at `username.github.com` and the file structure should look something like what you see here:
+Your website is now ready for prime time. The only problem is it's only visible on *your* Posit Cloud project. So, we have to **deploy** your website. There are a number of different ways to do this, but we're going to use the workflow with which we're most familiar: GitHub Pages. This is how your website is currently deployed. Your current website is hosted on GitHub at `username.github.com` and the file structure should look something like what you see here:
 
 
 ![old website GitHub repo](https://docs.google.com/presentation/d/1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70/export/png?id=1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70&pageid=g3f121d3764_0_336)
 
-We're going to delete the current website and replace it with this updated website! To do so, within your current project on RStudio Cloud (where your new blogdown website files are), **go to the Terminal** and run the following...but replace `username` with *your* GitHub username:
+We're going to delete the current website and replace it with this updated website! To do so, within your current project on Posit Cloud (where your new blogdown website files are), **go to the Terminal** and run the following...but replace `username` with *your* GitHub username:
 
 ```
 git clone https://github.com/username/username.github.com.git
 ```
 
-This will clone your current website repo into the RStudio Cloud project where your new website files are.
+This will clone your current website repo into the Posit Cloud project where your new website files are.
 
 
 ![cloned repo](https://docs.google.com/presentation/d/1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70/export/png?id=1mIrb5R60b20WdUb2wjHstb1W0fky-DUgu_rW6yP0C70&pageid=g40f38df3d0_0_24)

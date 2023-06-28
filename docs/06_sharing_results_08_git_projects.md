@@ -22,28 +22,28 @@ On the page that follows, type the repository name. Choose the name `my_first_pr
 ![Add repository information](https://docs.google.com/presentation/d/1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA/export/png?id=1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA&pageid=g39eab98346_0_0)
 
 
-The next step is to clone this repository into RStudio Cloud but as you may remember, we first need the url to this repository we just created. On the repository page, click on Clone or download and copy the link address. Make sure the address starts with `https` rather than `git`. If it starts with `git`, click on Use HTTPS on the corner of the small window to have the link starting with `https`.
+The next step is to clone this repository into Posit Cloud but as you may remember, we first need the url to this repository we just created. On the repository page, click on Clone or download and copy the link address. Make sure the address starts with `https` rather than `git`. If it starts with `git`, click on Use HTTPS on the corner of the small window to have the link starting with `https`.
 
 
 ![Repository link](https://docs.google.com/presentation/d/1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA/export/png?id=1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA&pageid=g39eab98346_0_10)
 
 ### Creating a New Project from a GitHub Repository
 
-Ok, now that we have everything set up on the GitHub end, Go to [RStudio Cloud](https://rstudio.cloud/) and login with your account. When you're redirected to your Projects page, Next to the New Project button, click on the drop down button and then click on New Project from Git Repo.
+Ok, now that we have everything set up on the GitHub end, Go to [Posit Cloud](https://posit.cloud/) and login with your account. When you're redirected to your Projects page, Next to the New Project button, click on the drop down button and then click on New Project from Git Repo.
 
 
-![Create new project from Git repo on RStudio Cloud](https://docs.google.com/presentation/d/1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA/export/png?id=1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA&pageid=g39eab98346_0_23)
+![Create new project from Git repo on Posit Cloud](https://docs.google.com/presentation/d/1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA/export/png?id=1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA&pageid=g39eab98346_0_23)
 
 On the popup window, paste the repository url that you just copied and click Ok.
 
 
 ![Enter repository url](https://docs.google.com/presentation/d/1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA/export/png?id=1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA&pageid=g39eab98346_0_40)
 
-This will automatically clone the remote repository and create a new project on RStudio Cloud. Note that the repository is still unnamed so you may want to change the name to something else. If you click on the README file under Files, you will see that the README file contains the description you added on the GitHub website.
+This will automatically clone the remote repository and create a new project on Posit Cloud. Note that the repository is still unnamed so you may want to change the name to something else. If you click on the README file under Files, you will see that the README file contains the description you added on the GitHub website.
 
 
 
-![All the files in the remote repository are cloned in RStudio Cloud](https://docs.google.com/presentation/d/1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA/export/png?id=1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA&pageid=g39eab98346_0_54)
+![All the files in the remote repository are cloned in Posit Cloud](https://docs.google.com/presentation/d/1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA/export/png?id=1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA&pageid=g39eab98346_0_54)
 
 Start editing the README file. Specifically, replace the content with the following lines.
 
@@ -57,7 +57,7 @@ The folders in this project are:
 * _products_ - this is the place where you will place any reports, presentations, or products you create for sharing with other people.
 ```
 
-### Pushing Local Changes to the Remote Repository in RStudio Cloud
+### Pushing Local Changes to the Remote Repository in Posit Cloud
 
 Now, it's time to stage, commit, and push the changes we made to the remote repository. As we've seen we should follow the steps here. Type the following commands in the terminal one by one. Note that here we're using `git add .` which means we are tracking changes in all new and modified files and folders in the project.
 
@@ -85,7 +85,7 @@ You should be able to see your changes on the repository on GitHub.com.
 
 ![Changes can be seen on the remote repository](https://docs.google.com/presentation/d/1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA/export/png?id=1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA&pageid=g39ec80b88b_0_18)
 
-We have learned about the importance of organization and folder structure in data science projects. Let's practice creating the main folders required in a data science project. As you may remember, these folders represent the four parts of any data science project: data, figures, code, and products. Let's create them on RStudio Cloud.
+We have learned about the importance of organization and folder structure in data science projects. Let's practice creating the main folders required in a data science project. As you may remember, these folders represent the four parts of any data science project: data, figures, code, and products. Let's create them on Posit Cloud.
 
 
 ![Data science project folders](https://docs.google.com/presentation/d/1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA/export/png?id=1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA&pageid=g37bc4f7f0f_0_1)

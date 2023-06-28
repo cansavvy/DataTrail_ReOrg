@@ -3,7 +3,7 @@
 
 # Cloning a Repository
 
-Now that you have learned how to create a GitHub repository, you will learn how to obtain a copy of that repository in a location that you use for writing code such as RStudio Cloud. This process is called "cloning" a repository from GitHub.
+Now that you have learned how to create a GitHub repository, you will learn how to obtain a copy of that repository in a location that you use for writing code such as Posit Cloud. This process is called "cloning" a repository from GitHub.
 
 ### Step 1: Obtain the URL for the repository to clone
 
@@ -18,7 +18,7 @@ On this page, you will see a button on the right hand side that says "Clone or d
 
 ### Step 2: Use the RStudio interface to clone the repository
 
-In RStudio cloud, go to your workspace by clicking the appropriate button on the left side navigation bar.
+In Posit Cloud, go to your workspace by clicking the appropriate button on the left side navigation bar.
 
 Click the `New Project` button and choose `New Project from Git Repository`
 
@@ -29,11 +29,11 @@ You will a `Deploying Project` progress screen, typically after a few seconds, t
 
 <img src="resources/images/06_sharing_results_05_cloning_repos_files/figure-html//1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_18.png" title="Copy the url in this box" alt="Copy the url in this box" width="480" style="display: block; margin: auto;" />
 
-Also note that in the bottom right hand corner of RStudio, in the `Files` pane, you will have the files that are in your GitHub repository, now available in this RStudio cloud workspace.
+Also note that in the bottom right hand corner of RStudio, in the `Files` pane, you will have the files that are in your GitHub repository, now available in this Posit Cloud workspace.
 
 ### Step 3: Set up GitHub Credentials
 
-In order to be able to access everything in your GitHub repository from RStudio cloud, you will need to set up GitHub credentials. You should only need to do this once per project.
+In order to be able to access everything in your GitHub repository from Posit Cloud, you will need to set up GitHub credentials. You should only need to do this once per project.
 
 1. In your RStudio interface, make sure that you are in the `Console` tab.
 
@@ -71,7 +71,7 @@ Scroll all the way down on this page and click `Generate Token`. You've created 
 
 <img src="resources/images/06_sharing_results_05_cloning_repos_files/figure-html//1bhTNTBhdXa0e0BXRZmQoHY6zTKGqgrr4wwYS8-v7ob8_g12feb92770a_0_26.png" title="Go to the Console tab" alt="Go to the Console tab" width="480" style="display: block; margin: auto;" />
 
-5. Return back to your RStudio Cloud project while keeping your PAT handy.
+5. Return back to your Posit Cloud project while keeping your PAT handy.
 In the `Console` window, run this command:
 
 ```r

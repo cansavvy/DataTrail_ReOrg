@@ -79,7 +79,7 @@ Now that we have a general understanding of what information is included in a jo
 
 #### Data Science at Airbnb
 
-At [Airbnb]((https://www.airbnb.com/?logo=1)), there are [three tracks](https://www.linkedin.com/pulse/one-data-science-job-doesnt-fit-all-elena-grewal/) for data science positions. The [Analytics Track](https://www.airbnb.com/careers/departments/position/38405), the [Algorithms Track](https://www.airbnb.com/careers/departments/position/44708), and the [Inference Track](https://www.airbnb.com/careers/departments/position/44708). Very briefly here, data scientists on the:
+At [Airbnb]((https://www.airbnb.com/?logo=1)), there are [three tracks](https://www.linkedin.com/pulse/one-data-science-job-doesnt-fit-all-elena-grewal/){target="_blank"} for data science positions. The [Analytics Track](https://www.airbnb.com/careers/departments/position/38405){target="_blank"}, the [Algorithms Track](https://www.airbnb.com/careers/departments/position/44708){target="_blank"}, and the [Inference Track](https://www.airbnb.com/careers/departments/position/44708){target="_blank"}. Very briefly here, data scientists on the:
 
 * *analytics track* focus on monitoring metrics of the company, building tools, and helping the company make data-driven decisions.
 * *algorithms track* are responsible for building and interpreting algorithms that will help to power data products at the company

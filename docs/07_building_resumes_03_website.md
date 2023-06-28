@@ -4,6 +4,8 @@
 
 Follow these instructions to make your own professional website using GitHub.
 
+**Be sure to follow along and complete this steps before moving on to the quiz**
+
 1. Make a new repository and name it `username.github.io`
 
 But put your own GitHub username where it says "username".

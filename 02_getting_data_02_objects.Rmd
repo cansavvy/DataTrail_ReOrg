@@ -295,3 +295,18 @@ For now, it's not important to understand the details of that last paragraph, bu
 ### Summary
 
 In this lesson, we've discussed that within R information can be assigned to objects. We've covered the five main classes of objects in R and have started to touch on the different types of objects in R, but will discuss this in greater detail in later lessons in this course. We've discussed how to create each class of object in R as well as each class' unique properties. Finally, we discussed how to  determine the class of an object in R using the function `class()`.
+
+<div class = "dictionary">
+
+`<-` - The assignment operator. After you run this code in R, you will see the object `min_age` show up in your **Environment** panel.
+`c()` - We can create a character vector named `my_char_vec` with multiple character objects using the **concatenate** function
+`factor()` - Can use to create a factor function (has related functions like `character()` and `numeric()`
+`as.factor()` or `as.numeric()` or `as._____()` etc - Can coerce a existing vector to be of a particular class. So for example, `as.factor()` would try to make the vector a factor. 
+`class()`
+
+TODO: finish up this chapter's functions
+
+</div>
+
+
+

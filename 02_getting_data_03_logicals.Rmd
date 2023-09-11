@@ -228,3 +228,16 @@ Here, the sum of the `meets_indiv_cut` is 4. When you sum a logical, R returns t
 ### Summary
 
 This lesson walked you through how to work with operators and logical objects. This will be incredibly helpful as you start to manipulate and clean data. Having a thorough understanding of this class of objects and how to work with them will serve you well going forward.
+
+<div class = "dictionary">
+- `logical operators`- common ways to create and combine logical objects
+- `!`: the "not" operator
+- `&`: the "and" operator
+- `|`: the "or" operator (_Shift_ + _backslash(\)_ )
+- `==`: the "equals" operator
+- `!=`: the "not equal" operator
+- `>`: the "greater than" operator
+- `>=`: the "greater than or equal to" operator
+- `<`: the "less than" operator
+- `<=`: the "less than or equal to" operator
+- `%in%`: the "contained in" operator

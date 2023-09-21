@@ -168,12 +168,11 @@ They are similar enough, that for most instances, especially when you are workin
 - `variables`- are also called columns.`
 - `Environment- where you can see your data frame.`
 - `head()`- to see the first 6 rows of a data frame.`
-Additional arguments supplied can change the number of rows.`
-- `tail()`- to see the last 6 rows of a data frame.` 
-Additional arguments supplied can change the number of rows.`
+- `tail()`- to see the last 6 rows of a data frame.`
 - `names()`- to see the column names of the data frame.`
 - `nrow()`- to see how many rows are in the data frame`
 - `ncol()`- to see how many columns are in the data frame.`
 - `summary()`- function gives us a summary of each variable in the data frame.`
 - `str()`- function gives us information about the structure and variables.`
+- `matrix - is like a data frame but it needs to contain all the same data type.`
 - `tibble- similar to a data frame. It is the tidyverse brand of data frame.`

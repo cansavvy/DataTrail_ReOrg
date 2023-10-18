@@ -172,11 +172,46 @@ in into the format you actually want them in.
 - `tabyl()` - get a helpful summary of a variable
 - `skim()` - summarize a data frame
 
-03_cleaning data_04 
+03_cleaning data_04
+- `inner_join()`: includes only rows that have matches in `df_a` and `df_b`.
+- `left_join()`: includes all rows in `df_a` but not any of `df_b` that doesn't have a match to `df_a`.
+- `right_join()`: includes all rows in `df_b` but not any of `df_a` that doesn't have a match to `df_b`.
+- `full_join()`: includes all rows in of `df_a` and `df_b`, regardless if they have matches in the other data frame or not.
 
+03_cleaning data_05
+- str_view()** - View the first occurrence in a string that matches the regex
+- str_view_all()** - View all occurrences in a string that match the regex
+- str_count()** - count the number of times a regex matches within a string
+- str_detect()** - determine if regex is found within string
+- str_subset()** - return subset of strings that match the regex
+- str_extract()** - return portion of each string that matches the regex
+- str_replace()** - replace portion of string that matches the regex with something else
 
+03_cleaning data_07
+Date-times - refer to dates plus times, specifying an exact
+moment in time
+`year()`
+`month()`
+`mday()`
+`wday()`
+`hour()`
+`minute()`
+`second()
+ 
+04_plotting data_00
+Histograms- helpful when you want to better understand what values
+you have in your data set for a single set of numbers.
+Scatterplots- helpful when you have numerical values for two 
+different pieces of information.
+Barplot- When you only have one numerical piece of information
+and a second piece of information that can be broken down into a few categories.
 
-
+ 04_plotting data_02
+ layered - layers of information add on top of each other as you build your graph.
+ `ggplot()`
+ `geom_point` is most helpful for creating scatterplots.
+ 
+ 
 
 
 

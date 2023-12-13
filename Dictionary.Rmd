@@ -1,30 +1,16 @@
 
-<div class = "dictionary">
-  
-  
+
 `<-` - The assignment operator. After you run this code in R, you will see the object `min_age` show up in your **Environment** panel.
-
 `c()` - We can create a character vector named `my_char_vec` with multiple character objects using the **concatenate** function
-
-`factor()` - Can use to create a factor function (has related functions like `character()` and `numeric()`
-                                                  
-`as.factor()` or `as.numeric()` or `as._____()` etc 
-- Can coerce a existing vector to be of a particular class. So for example, 
-- `as.factor()` would try to make the vector a factor. 
-                                                  
-`class()` - Can tell us what kind of data is being stored.
-
-`concatenate` - Can link pieces of information together.
-
-`operators` - The addition, subtraction, multiplication, division, 
+`factor()` - Can use to create a factor function (has related functions like `character()` and `numeric()`                                          
+`as.factor()` or `as.numeric()` or `as._____()` etc
+- Can coerce a existing vector to be of a particular class. So for example,
+- `as.factor()` would try to make the vector a factor.
+- `class()` - Can tell us what kind of data is being stored.
+- `concatenate` - Can link pieces of information together.
+- `operators` - The addition, subtraction, multiplication, division,
 and exponentiation operators in R are `+`, `-`, `*`, `/`, and `^` respectively.
 
-
-                                                  
-                                                  
-TODO: finish up this chapter's functions
-
-<div class = "dictionary">
 - `logical operators`- common ways to create and combine logical objects
 - `!`: the "not" operator
 - `&`: the "and" operator
@@ -37,116 +23,96 @@ TODO: finish up this chapter's functions
 - `<=`: the "less than or equal to" operator
 - `%in%`: the "contained in" operator
 
-<div class = "dictionary">
+
 - `observations`- are also called rows.`
 - `variables`- are also called columns.`
-- `Environment- where you can see your data frame.`
-- `head()`- to see the first 6 rows of a data frame.`
-- `tail()`- to see the last 6 rows of a data frame.` 
-- `names()`- to see the column names of the data frame.`
-- `nrow()`- to see how many rows are in the data frame`
-- `ncol()`- to see how many columns are in the data frame.`
-- `summary()`- function gives us a summary of each variable in the data frame.`
-- `str()`- function gives us information about the structure and variables.`
-- `tibble- similar to a data frame. It is the tidyverse brand of data frame.`
+- `Environment`- where you can see your data frame.
+- `head()`- to see the first 6 rows of a data frame.
+- `tail()`- to see the last 6 rows of a data frame.
+- `names()`- to see the column names of the data frame.
+- `nrow()`- to see how many rows are in the data frame
+- `ncol()`- to see how many columns are in the data frame.
+- `summary()`- function gives us a summary of each variable in the data frame.
+- `str()`- function gives us information about the structure and variables.
+- `tibble` - similar to a data frame. It is the tidyverse brand of data frame.
 
-<div class = "dictionary">
-- `Cloud storage` - `refers to data or document storage on the Internet 
-rather than on your personal computer.`
-- `Cloud` - `storage that is similar to having an external hard drive 
-(portable storage device).`
-- `Local` - `it isn't on the cloud but instead something stored 
-on your computer or other device.`
-- `Cloud computing` - `involves applications and software that run on shared data centers rather 
-than running on the computer sitting in front of you.`
+- `Cloud storage` - refers to data or document storage on the Internet
+rather than on your personal computer.
+- `Cloud` - storage that is similar to having an external hard drive
+(portable storage device).
+- `Local` - it isn't on the cloud but instead something stored
+on your computer or other device.
+- `Cloud computing` - involves applications and software that run on shared data centers rather than running on the computer sitting in front of you.
 
-<div class = "dictionary">
-  -06 ?
-  
-  <div class = "dictionary">
-  `SMART Goals` - 
-  - **S**pecific - goals need to be simple and succinct. Elaborate goals or goals that are vague are too hard to track or understand.
+
+### `SMART Goals`
+- **S**pecific - goals need to be simple and succinct. Elaborate goals or goals that are vague are too hard to track or understand.
 - **M**easurable - goals need to be something you can measure. If you are not able to measure it you won't be able to know if you've met your goal or not.
 - **A**chieveable - to set ourselves up for success, we need to make goals that are actually reasonable.
 - **R**elevant - goals need to be something related to what we'd like to achieve.
 - **T**ime bound - goals need to have a set amount of time that we can accomplish them in.
 
-<div class = "dictionary">
+### Data Science Process
 - **Form a question** - What is the question you hope to answer with data?
 - **Get the data** - To answer this question you'll need data!
-  - **Clean the data** - Datasets are almost never ready to analyze from the get go. As a data scientist, we'll need to do some cleaning and set up steps to get the data where we need it before we can really dig into it.
+- **Clean the data** - Datasets are almost never ready to analyze from the get go. As a data scientist, we'll need to do some cleaning and set up steps to get the data where we need it before we can really dig into it.
 - **Explore and plot the data** - After your data is clean, you'll want to do some initial exploration. What do these data look like? Plots are a great way to visual your data and start to get an idea of how the data might relate to your initial question.
 - **Get stats** - You can use statistics and models to try to use your data to get to the bottom of your question.
 - **Share results** - Given everything you are seeing with your data, how do we interpret this? What's our conclusion when it comes to our initial question?
 
- <div class = "dictionary">
- - `Descriptive`- `is to understand the components of a data set, describe what they are,
- and explain that description to others who might want to understand the data.`
- - `Exploratory` - `find unknown relationships between the different variables you have measured in your data set.`
- - `Inferential` - `to use a small sample of data to say something about what would happen if we collected more data.`
- - `Predictive` - `to use data from a large collection to predict values for new individuals.`
- 
- 02_getting data_01
- <div class = "dictionary">
+### Types of stats
+ - `Descriptive`- is to understand the components of a data set, describe what they are, and explain that description to others who might want to understand the data.
+ - `Exploratory` - find unknown relationships between the different variables you have measured in your data set.
+ - `Inferential` - to use a small sample of data to say something about what would happen if we collected more data.
+ - `Predictive` - to use data from a large collection to predict values for new individuals.
+
+### 02_getting data
  - `Scripting` - where you write your code
  - `Console` - where your code runs
  - `Environment` - where you can see what objects have been created during your analysis
  - `Files` - where you can see all the files that are part of your project
- 
- 02_getting data_07
- <div class = "dictionary">
- R prompt - The `>` that you see in the R console.
+ - R prompt - The `>` that you see in the R console.
  working directory - is the folder that you are currently in within a file system.
- `getwd()` - stands for "get working directory.
-  `cd` - command to change the current (working) directory
-  `setwd()` - stands for "set working directory.
-  `touch` - command to create a blank file.
-  `file.create()` - in R command to create a blank file.
-  `mv` - command for moving and renaming files.
-  `file.rename()` - in R command for moving and renaming files. 
-  `cp` - command for copying and renaming files.
-  `file.copy()` - in R command for copying and renaming files.
-   `rm` - command for deleting files.
-   `file.remove()` - in R command for deleting files.
-   `ls` - command to list the contents of a directory for verifying what files and folders are present.
-   `file.exists()` - in R command to list the contents of a directory for verifying what files and folders are present.
-   file path - The series of folders it takes to get to the file 
-   
-   02_getting data_08
- - packages - is a collection of functions, data, 
+- `getwd()` - stands for "get working directory.
+- `cd` - command to change the current (working) directory
+- `setwd()` - stands for "set working directory.
+- `touch` - command to create a blank file.
+- `file.create()` - in R command to create a blank file.
+- `mv` - command for moving and renaming files.
+- `file.rename()` - in R command for moving and renaming files.
+- `cp` - command for copying and renaming files.
+- `file.copy()` - in R command for copying and renaming files.
+- `rm` - command for deleting files.
+- `file.remove()` - in R command for deleting files.
+- `ls` - command to list the contents of a directory for verifying what files and folders are present.
+- `file.exists()` - in R command to list the contents of a directory for verifying what files and folders are present.
+- `file path` - The series of folders it takes to get to the file
+ - `packages` - is a collection of functions, data,
    and code conveniently provided in a nice, complete format for you.
- - library - is the place where the package is located on your computer.
- - repositories - is central location where many developed packages are located and available for download.
- - dependencies - packages required by other packages to be loaded first.
- - 
- 
- 02_getting data_10
- - Comma-separated values (CSV) - plain-text files where all the important information
- in the file is represented by text.
+ - `library` - is the place where the package is located on your computer.
+ - `repositories` - is central location where many developed packages are located and available for download.
+ - `dependencies` - packages required by other packages to be loaded first.
+ - Comma-separated values (CSV) - plain-text files where all the important information in the file is represented by text.
  - `write_csv()`-  write a  CSV.
  - `write_tsv()` - write a TSV
  - `write_rds()` - write a RDS
  - `saveRDS()`- To save a serialized R object file
  - `readRDS()` - To read a serialized object file into R
- 
- 02_getting data_11
+
 - Private data - datasets to which a limited number of people or groups have access.
-- public data - freely-available data 
+- public data - freely-available data
 - open data - after registering you'll have access to many different types of datasets.
 - Government Data - data sets cover topics from education and student loan debt to climate and weather
-
-02_getting data_13
 - Google Sheets - for holding data
 - Google Docs - for writing up non-code documents
 - spreadsheet - is a type of document where data are stored in rows and columns of a grid
 - To do this open another new tab by holding _ctrl_ and pressing _t_
 
-03_cleaning data_01
+### 03_cleaning data_01
 - Variables - Variables in a spreadsheet are the different categories of data that will be collected.
 - Observations - The measurements taken from a person for each variable
-- Types - 
 
-  03_cleaning data_02
+### 03_cleaning data_02
 - Wide Data - has a column for each variable and a row for each observation.
 - Long data - has one column indicating the type of variable contained in that row
 and then a separate row for the value for that variable.
@@ -154,7 +120,7 @@ and then a separate row for the value for that variable.
 - `pivot_longer()`
 - `pivot_wider()`
 
-03_cleaning data_03
+### 03_cleaning data_03
 - data wrangling - wrangle data from the format they're currently
 in into the format you actually want them in.
 - `%>%` - pipe operator for chaining a sequence of operations
@@ -168,57 +134,46 @@ in into the format you actually want them in.
 - `summarize()` - summarize information within a dataset
 - `unite()` - combine contents of two or more columns into a single column
 - `separate()` - separate contents of a column into two or more columns
-- clean_names()` - clean names of a data frame
+- `clean_names()` - clean names of a data frame
 - `tabyl()` - get a helpful summary of a variable
 - `skim()` - summarize a data frame
 
-03_cleaning data_04
+### 03_cleaning_data_04_joining_data.Rmd
 - `inner_join()`: includes only rows that have matches in `df_a` and `df_b`.
 - `left_join()`: includes all rows in `df_a` but not any of `df_b` that doesn't have a match to `df_a`.
 - `right_join()`: includes all rows in `df_b` but not any of `df_a` that doesn't have a match to `df_b`.
 - `full_join()`: includes all rows in of `df_a` and `df_b`, regardless if they have matches in the other data frame or not.
 
-03_cleaning data_05
-- str_view()** - View the first occurrence in a string that matches the regex
-- str_view_all()** - View all occurrences in a string that match the regex
-- str_count()** - count the number of times a regex matches within a string
-- str_detect()** - determine if regex is found within string
-- str_subset()** - return subset of strings that match the regex
-- str_extract()** - return portion of each string that matches the regex
-- str_replace()** - replace portion of string that matches the regex with something else
+### 03_cleaning_data_05_working_with_strings
+- `str_view()` - View the first occurrence in a string that matches the regex
+- `str_view_all()` - View all occurrences in a string that match the regex
+- `str_count()` - count the number of times a regex matches within a string
+- `str_detect()` - determine if regex is found within string
+- `str_subset()` - return subset of strings that match the regex
+- `str_extract()` - return portion of each string that matches the regex
+- `str_replace()` - replace portion of string that matches the regex with something else
 
-03_cleaning data_07
+### 03_cleaning_data_06_working_with_factors
 Date-times - refer to dates plus times, specifying an exact
 moment in time
-`year()`
-`month()`
-`mday()`
-`wday()`
-`hour()`
-`minute()`
-`second()
- 
-04_plotting data_00
-Histograms- helpful when you want to better understand what values
+- `year()`
+- `month()`
+- `mday()`
+- `wday()`
+- `hour()`
+- `minute()`
+- `second()`
+
+### 04_plotting data_00
+
+- `Histograms` - helpful when you want to better understand what values
 you have in your data set for a single set of numbers.
-Scatterplots- helpful when you have numerical values for two 
+- `Scatterplots` - helpful when you have numerical values for two
 different pieces of information.
-Barplot- When you only have one numerical piece of information
+- `Barplot` - When you only have one numerical piece of information
 and a second piece of information that can be broken down into a few categories.
 
- 04_plotting data_02
- layered - layers of information add on top of each other as you build your graph.
+### 04_plotting data_02
+ - `layered` - layers of information add on top of each other as you build your graph.
  `ggplot()`
  `geom_point` is most helpful for creating scatterplots.
- 
- 
-
-
-
-
-
-
-
-
-
-

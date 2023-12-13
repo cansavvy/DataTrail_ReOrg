@@ -241,3 +241,4 @@ This lesson walked you through how to work with operators and logical objects. T
 - `<`: the "less than" operator
 - `<=`: the "less than or equal to" operator
 - `%in%`: the "contained in" operator
+</div>

@@ -315,5 +315,5 @@ In this lesson, we've discussed that within R information can be assigned to obj
 
 `operators` - The addition, subtraction, multiplication, division, 
 and exponentiation operators in R are `+`, `-`, `*`, `/`, and `^` respectively.
-
+</div>
 

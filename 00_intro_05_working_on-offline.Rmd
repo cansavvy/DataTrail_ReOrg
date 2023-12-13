@@ -204,7 +204,8 @@ Usually it is a good idea to leave the file extension the same even if you renam
 rather than on your personal computer.`
 - `Cloud` - `storage that is similar to having an external hard drive 
 (portable storage device).`
-- `Local` - `it isn't on the cloud but instead something stored 
+- `Local` - it isn't on the cloud but instead something stored. 
 on your computer or other device.`
-- `Cloud computing` - `involves applications and software that run on shared data centers rather 
+- `Cloud computing` - involves applications and software that run on shared data centers rather 
 than running on the computer sitting in front of you.`
+</div>

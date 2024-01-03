@@ -162,3 +162,18 @@ According to the people who develop the tidyverse:
 > Tibbles are data.frames that are lazy and surly: they do less (i.e. they don’t change variable names or types, and don’t do partial matching) and complain more (e.g. when a variable does not exist).
 
 They are similar enough, that for most instances, especially when you are working with tidyverse functions, you can treat them the same. However if you get a peculiar error when trying to use a tibble with a non-tidyverse function, you may need to use the `as.data.frame()` function to coerce your tibble to a data frame. But you shouldn't encounter this problem too often. 
+
+<div class = "dictionary">
+- `observations`- are also called rows.
+- `variables`- are also called columns.`
+- `Environment- where you can see your data frame.`
+- `head()`- to see the first 6 rows of a data frame.`
+- `tail()`- to see the last 6 rows of a data frame.`
+- `names()`- to see the column names of the data frame.`
+- `nrow()`- to see how many rows are in the data frame`
+- `ncol()`- to see how many columns are in the data frame.`
+- `summary()`- function gives us a summary of each variable in the data frame.`
+- `str()`- function gives us information about the structure and variables.`
+- `matrix - is like a data frame but it needs to contain all the same data type.`
+- `tibble- similar to a data frame. It is the tidyverse brand of data frame.`
+</div>

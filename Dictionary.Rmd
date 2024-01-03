@@ -1,4 +1,5 @@
 
+### The basics
 
 `<-` - The assignment operator. After you run this code in R, you will see the object `min_age` show up in your **Environment** panel.
 `c()` - We can create a character vector named `my_char_vec` with multiple character objects using the **concatenate** function
@@ -10,7 +11,6 @@
 - `concatenate` - Can link pieces of information together.
 - `operators` - The addition, subtraction, multiplication, division,
 and exponentiation operators in R are `+`, `-`, `*`, `/`, and `^` respectively.
-
 - `logical operators`- common ways to create and combine logical objects
 - `!`: the "not" operator
 - `&`: the "and" operator
@@ -22,8 +22,6 @@ and exponentiation operators in R are `+`, `-`, `*`, `/`, and `^` respectively.
 - `<`: the "less than" operator
 - `<=`: the "less than or equal to" operator
 - `%in%`: the "contained in" operator
-
-
 - `observations`- are also called rows.`
 - `variables`- are also called columns.`
 - `Environment`- where you can see your data frame.
@@ -35,7 +33,6 @@ and exponentiation operators in R are `+`, `-`, `*`, `/`, and `^` respectively.
 - `summary()`- function gives us a summary of each variable in the data frame.
 - `str()`- function gives us information about the structure and variables.
 - `tibble` - similar to a data frame. It is the tidyverse brand of data frame.
-
 - `Cloud storage` - refers to data or document storage on the Internet
 rather than on your personal computer.
 - `Cloud` - storage that is similar to having an external hard drive
@@ -66,7 +63,7 @@ on your computer or other device.
  - `Inferential` - to use a small sample of data to say something about what would happen if we collected more data.
  - `Predictive` - to use data from a large collection to predict values for new individuals.
 
-### 02_getting data
+### Getting Data Terms and Functions
  - `Scripting` - where you write your code
  - `Console` - where your code runs
  - `Environment` - where you can see what objects have been created during your analysis
@@ -98,7 +95,6 @@ on your computer or other device.
  - `write_rds()` - write a RDS
  - `saveRDS()`- To save a serialized R object file
  - `readRDS()` - To read a serialized object file into R
-
 - Private data - datasets to which a limited number of people or groups have access.
 - public data - freely-available data
 - open data - after registering you'll have access to many different types of datasets.
@@ -108,19 +104,15 @@ on your computer or other device.
 - spreadsheet - is a type of document where data are stored in rows and columns of a grid
 - To do this open another new tab by holding _ctrl_ and pressing _t_
 
-### 03_cleaning data_01
+### Cleaning Data Terms and Functions
 - Variables - Variables in a spreadsheet are the different categories of data that will be collected.
 - Observations - The measurements taken from a person for each variable
-
-### 03_cleaning data_02
 - Wide Data - has a column for each variable and a row for each observation.
 - Long data - has one column indicating the type of variable contained in that row
 and then a separate row for the value for that variable.
 - Reshaping -  Converting your data from wide-to-long or from long-to-wide data formats.
 - `pivot_longer()`
 - `pivot_wider()`
-
-### 03_cleaning data_03
 - data wrangling - wrangle data from the format they're currently
 in into the format you actually want them in.
 - `%>%` - pipe operator for chaining a sequence of operations
@@ -137,14 +129,10 @@ in into the format you actually want them in.
 - `clean_names()` - clean names of a data frame
 - `tabyl()` - get a helpful summary of a variable
 - `skim()` - summarize a data frame
-
-### 03_cleaning_data_04_joining_data.Rmd
 - `inner_join()`: includes only rows that have matches in `df_a` and `df_b`.
 - `left_join()`: includes all rows in `df_a` but not any of `df_b` that doesn't have a match to `df_a`.
 - `right_join()`: includes all rows in `df_b` but not any of `df_a` that doesn't have a match to `df_b`.
 - `full_join()`: includes all rows in of `df_a` and `df_b`, regardless if they have matches in the other data frame or not.
-
-### 03_cleaning_data_05_working_with_strings
 - `str_view()` - View the first occurrence in a string that matches the regex
 - `str_view_all()` - View all occurrences in a string that match the regex
 - `str_count()` - count the number of times a regex matches within a string
@@ -152,9 +140,7 @@ in into the format you actually want them in.
 - `str_subset()` - return subset of strings that match the regex
 - `str_extract()` - return portion of each string that matches the regex
 - `str_replace()` - replace portion of string that matches the regex with something else
-
-### 03_cleaning_data_06_working_with_factors
-Date-times - refer to dates plus times, specifying an exact
+- Date-times - refer to dates plus times, specifying an exact
 moment in time
 - `year()`
 - `month()`
@@ -163,17 +149,12 @@ moment in time
 - `hour()`
 - `minute()`
 - `second()`
-
-### 04_plotting data_00
-
 - `Histograms` - helpful when you want to better understand what values
 you have in your data set for a single set of numbers.
 - `Scatterplots` - helpful when you have numerical values for two
 different pieces of information.
 - `Barplot` - When you only have one numerical piece of information
 and a second piece of information that can be broken down into a few categories.
-
-### 04_plotting data_02
  - `layered` - layers of information add on top of each other as you build your graph.
  `ggplot()`
  `geom_point` is most helpful for creating scatterplots.

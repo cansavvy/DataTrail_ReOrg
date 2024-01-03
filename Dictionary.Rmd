@@ -1,4 +1,8 @@
 
+# Dictionary
+
+This has a summary of all the terms and functions covered in the DataTrail courses! 
+
 ### The basics
 
 `<-` - The assignment operator. After you run this code in R, you will see the object `min_age` show up in your **Environment** panel.

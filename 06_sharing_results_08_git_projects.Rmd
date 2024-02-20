@@ -61,29 +61,15 @@ The folders in this project are:
 
 ### Pushing Local Changes to the Remote Repository in Posit Cloud
 
-Now, it's time to stage, commit, and push the changes we made to the remote repository. As we've seen we should follow the steps here. Type the following commands in the terminal one by one. Note that here we're using `git add .` which means we are tracking changes in all new and modified files and folders in the project.
+In the previous chapter we discussed how to add local changes to GitHub, but we will practice this again here.
 
-```text
-git add .
-git commit -m "changed readme file"
-git push
-```
+In brief, here's the steps we need to do.
 
-Once you enter `git push`, you will see a prompt asking you for your repository user name and then password. Enter those correctly and voila, you will see something similar to this which means that all the changes are pushed to the remote repository.
-
-```text
-Counting objects: 3, done.
-Delta compression using up to 16 threads.
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 338 bytes | 0 bytes/s, done.
-Total 3 (delta 1), reused 0 (delta 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/JaneEverydayDoe/my_first_project.git
-   e80844c..24fec16  master -> master
-```
+1. Check the boxes next to the file changes we want to keep
+2. Click the commit button.
+3. With the `usethis` package us the `pr_push()` function.
 
 You should be able to see your changes on the repository on GitHub.com.
-
 
 ![Changes can be seen on the remote repository](https://docs.google.com/presentation/d/1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA/export/png?id=1pmSkcf0iSQysOAMuuMK-CihaiSbtqDhg0ME2R9zqRDA&pageid=g39ec80b88b_0_18)
 
